@@ -242,12 +242,16 @@ export function assessCrisisType(params: {
     vulnText.includes("流动性");
 
   // 偿付/结构性危机特征
+  // v4.3 fix: "破产"/"倒闭"只在跌幅足够大时才触发偿付危机
+  // 小跌幅下的破产新闻（如个别经纪商）不等于系统性偿付危机
   const isSolvency =
-    (text.includes("违约") && dropMagnitude > 15) ||  // 大幅下跌+违约 → 真正的偿付危机
-    (text.includes("违约") && dropMagnitude > 8) ||   // 中度回调+违约 → 可能过度恐慌
-    text.includes("破产") || text.includes("倒闭") ||
+    (text.includes("违约") && dropMagnitude > 15) ||
+    (text.includes("违约") && dropMagnitude > 8) ||
+    (text.includes("破产") && dropMagnitude > 12) ||     // v4.3: 需要显著跌幅
+    (text.includes("倒闭") && dropMagnitude > 12) ||     // v4.3: 需要显著跌幅
     (text.includes("衰退") && dropMagnitude > 10) ||
-    vulnText.includes("违约") || vulnText.includes("破产");
+    (vulnText.includes("违约") && dropMagnitude > 8) ||
+    (vulnText.includes("破产") && dropMagnitude > 12);   // v4.3: 需要显著跌幅
 
   // 外部冲击
   const isExternalShock =
@@ -311,6 +315,6 @@ export function batchCalibrate(
 
 // ==================== 导出旧版兼容函数 ====================
 
-// 保留函数签名兼容性，标记为 deprecated
-export { calculateRSI } from "./predictionCalibrator";
-// @ts-ignore — 旧版函数保留引用
+// calculateRSI is now exported from @/lib/indicators/technical
+// Old compatibility re-export removed (circular reference)
+export { calculateRSI } from "@/lib/indicators/technical";

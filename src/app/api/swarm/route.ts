@@ -18,6 +18,37 @@ import {
   HybridPredictionResult,
 } from "@/lib/calibration/hybridPredictor";
 
+// 真实市场数据
+import { fetchRealMarketParams } from "@/lib/market-data/realMarketParams";
+
+// 集成层 — 信息不对称引擎 + 30散户 + 社交网络 + 真实技术数据
+import { runRetailLayer, getRealMarketSnapshot, runAsymmetricSwarm } from "@/lib/agents/integratedEngine";
+
+// v6.0 涌现式市场共识引擎 — 按需动态导入, 避免缺失模块阻塞编译
+
+// v9.3 正交五因子 + 诊断引擎
+import { runSwarmV9 } from "@/lib/agents/v9";
+
+// v9.5 共识度量引擎 + Agent 互动层
+import { runInteraction, computeAllMetrics, computeInteractionEffect, formatInteractionSummary } from "@/lib/agents/v9.5";
+
+// 演示容灾兜底 — DEMO_MODE 下 LLM 失败时返回预计算完整响应
+import { FALLBACK_RESPONSE } from "@/lib/demo-fallback";
+import { getAllAgents } from "@/lib/agents/v9/agentDefinitions";
+
+// v9.5.1: 连续推演时间线存储 (服务端内存, 会话级)
+interface TimelineEntry {
+  sequenceIndex: number;
+  news: string;
+  consensusScore: number;
+  polarizationScore: number;
+  fragilityScore: number;
+  consensus: number;
+  direction: string;
+  beliefStd: number;
+}
+const timelineStore = new Map<string, TimelineEntry[]>();
+
 // 错误消息映射
 const ERROR_MESSAGES: Record<LLMErrorType, { title: string; suggestion: string }> = {
   [LLMErrorType.TIMEOUT]: {
@@ -104,8 +135,8 @@ function inferMarketParams(news: string): {
   else if (dropMagnitude > 3) volatility = 0.02;
 
   // 政策响应
-  const hasPolicyResponse = !!text.match(/注入|购债|QE|量化宽松|救助|bailout|纾困|降息|宽松|刺激|stimulus|紧急|立即/);
-  const hasCentralBankAction = !!text.match(/央行|美联储|fed|ECB|BOJ|英格兰银行|降息|利率|购债|QE/);
+  const hasPolicyResponse = !!text.match(/注入|购债|QE|量化宽松|救助|bailout|纾困|降息|宽松|刺激|stimulus|紧急|立即|emergency|rate cut/);
+  const hasCentralBankAction = !!text.match(/央行|美联储|fed\b|ECB|BOJ|英格兰银行|降息|利率|购债|QE|central bank/i);
 
   // 已知脆弱性
   const knownVulnerabilities: string[] = [];
@@ -186,43 +217,374 @@ export async function POST(req: NextRequest) {
       timeout: llmConfig.timeout || 30000,
     } : undefined;
 
-    // 5. 运行 LLM 推演
-    const result = await withRetry(
-      async () => {
-        if (enableML) {
-          console.log(`[API] 运行 ML 增强型模拟，symbol: ${symbol || '无'}`);
-          return await runMLSwarmSimulation(news, rounds, config, symbol, mlOptions);
-        } else if (enableTechnicalAnalysis) {
-          console.log(`[API] 运行技术增强型模拟，symbol: ${symbol || '无'}`);
-          return await runTechnicalSwarmSimulation(news, rounds, config, symbol);
-        } else {
-          return await runSwarmSimulation(news, rounds, config);
-        }
-      },
-      {
-        maxRetries: 3,
-        initialDelay: 1000,
-        maxDelay: 10000,
-        retryableErrors: [
-          LLMErrorType.TIMEOUT,
-          LLMErrorType.NETWORK,
-          LLMErrorType.API_ERROR,
-          LLMErrorType.RATE_LIMIT,
-        ]
-      },
-      (error, attempt) => {
-        console.log(`[Retry] Attempt ${attempt} failed: ${error.message}`);
+    // ── v6.0 路径: 涌现式市场共识引擎 ──
+    const version = (body as any).version ?? "v5";
+    if (version === "v6") {
+      console.log(`[API] 🚀 启动 v6.0 涌现式市场共识引擎...`);
+      try {
+        const { runSwarmV6, analyzePowerBalance } = await import("@/lib/agents/v6");
+        const { V6_PERSONAS } = await import("@/lib/agents/v6/personas");
+        const v6Result = await runSwarmV6(news, config, rounds || 3);
+
+        // 构建 v6 响应
+        return NextResponse.json(
+          {
+            success: true,
+            version: "v6.0",
+            data: {
+              news: v6Result.news,
+              rounds: v6Result.rounds.map(r => ({
+                round: r.round,
+                consensus: r.consensus,
+                variance: r.variance,
+                regime: r.regime,
+                regimeDescription: r.regimeDescription,
+                capitalFlows: {
+                  buyPressure: r.capitalFlows.buyPressure,
+                  sellPressure: r.capitalFlows.sellPressure,
+                  netFlow: r.capitalFlows.netFlow,
+                  dominantDirection: r.capitalFlows.dominantDirection,
+                },
+                priceChange: r.price.priceChange,
+                newPrice: r.price.newPrice,
+                emergentBehaviors: r.emergentBehaviors.map(b => ({
+                  type: b.type,
+                  intensity: b.intensity,
+                  description: b.description,
+                })),
+                agentSnapshots: r.agentSnapshots,
+              })),
+              final: {
+                consensus: v6Result.finalConsensus,
+                direction: v6Result.direction,
+                totalRounds: v6Result.rounds.length,
+                regime: v6Result.finalRegime,
+                priceChange: v6Result.finalPrice.priceChange,
+                netCapitalFlow: v6Result.finalCapitalFlows.netFlow,
+              },
+              emergentBehaviors: v6Result.emergentBehaviors.map(b => ({
+                type: b.type,
+                intensity: b.intensity,
+                description: b.description,
+              })),
+              powerBalance: analyzePowerBalance(
+                v6Result.rounds[v6Result.rounds.length - 1].agents,
+                V6_PERSONAS
+              ),
+            },
+            // 兼容 hybridPredict 输入
+            hybridCompatible: v6Result.llmInput,
+            rateLimit: {
+              remaining: rateLimitResult.remaining,
+              resetTime: rateLimitResult.resetTime,
+            },
+          },
+          {
+            headers: {
+              'X-RateLimit-Remaining': String(rateLimitResult.remaining),
+              'X-RateLimit-Reset': rateLimitResult.resetTime.toISOString(),
+            }
+          }
+        );
+      } catch (v6Error) {
+        console.error("[V6] 引擎失败:", v6Error);
+        return NextResponse.json(
+          {
+            success: false,
+            error: "v6.0 引擎运行失败",
+            code: "V6_ERROR",
+            suggestion: "请检查输入参数或稍后重试",
+            details: v6Error instanceof Error ? v6Error.message : "未知错误",
+          },
+          { status: 500 }
+        );
       }
-    );
+    }
+
+    if (version === "v9") {
+      console.log(`[API] 🧬 启动 v9.3 正交五因子共识引擎...`);
+      try {
+        const marketSnapshot = await getRealMarketSnapshot();
+        const marketData = (body as any).marketData ?? {};
+        const v9Config = {
+          news,
+          marketData: {
+            vix: marketSnapshot?.vix ?? marketData.vix ?? 20,
+            rsi: marketSnapshot?.rsi ?? marketData.rsi ?? 50,
+            dropMagnitude: marketSnapshot?.dropFromPeak ?? marketData.dropMagnitude ?? 5,
+            hasPolicyResponse: marketData.hasPolicyResponse ?? false,
+            hasLeverageDamage: marketData.hasLeverageDamage ?? false,
+            hasSolvencyDamage: marketData.hasSolvencyDamage ?? false,
+          },
+          rounds: rounds || 3,
+          ablation: (body as any).ablation,
+        };
+
+        const v9Result = await runSwarmV9(v9Config, !!config);
+
+        // ── v9.5: Agent 互动层 + 共识度量 ──
+        const enableInteraction = (body as any).disableInteraction !== true;
+        const finalRound = v9Result.rounds[v9Result.rounds.length - 1];
+        const finalAgents = Object.values(finalRound.agents);
+
+        // 用 v9 真实 Agent 定义 + 最后轮的 Agent 状态运行互动
+        const v9Agents = getAllAgents(true);
+        const agentStatesMap: Record<string, any> = {};
+        for (const a of finalAgents) {
+          agentStatesMap[a.agentId] = {
+            agentId: a.agentId,
+            belief: a.belief,
+            confidence: a.confidence,
+            visibleFactors: a.visibleFactors,
+            interpretation: a.interpretation,
+            previousBelief: 0,
+          };
+        }
+        const interaction = enableInteraction
+          ? runInteraction(v9Agents, agentStatesMap)
+          : runInteraction(v9Agents, agentStatesMap, { disabled: true });
+
+        if (enableInteraction && interaction.totalRounds > 0) {
+          console.log(`[V9.5] 🧬 Agent 互动: ${interaction.totalRounds} 轮, ${interaction.convergenceType}`);
+        }
+
+        // 计算共识度量 (基于互动后的信念)
+        const finalStatesAfterInteraction: Record<string, any> = {};
+        for (const a of finalAgents) {
+          finalStatesAfterInteraction[a.agentId] = {
+            ...agentStatesMap[a.agentId],
+            belief: interaction.finalBeliefs[a.agentId] ?? a.belief,
+          };
+        }
+
+        const metrics = computeAllMetrics(
+          v9Agents,
+          finalStatesAfterInteraction,
+          v9Result.finalDecision.consensus,
+          v9Result.finalDecision.beliefStd,
+          undefined, // kuramotoR 从 metrics 内部估算
+          v9Result.diagnostics
+        );
+
+        // 互动前后对比
+        const comparison = enableInteraction && interaction.totalRounds > 0
+          ? computeInteractionEffect(
+              v9Result.finalDecision.beliefStd,
+              interaction.rounds[interaction.rounds.length - 1].beliefStd,
+              v9Result.finalDecision.consensus,
+              interaction.rounds[interaction.rounds.length - 1].meanBelief
+            )
+          : undefined;
+
+        // 🆕 v9.5.1: 连续推演时间线
+        const sessionId = (body as any).sessionId as string | undefined;
+        const sequenceIndex = (body as any).sequenceIndex as number | undefined;
+        let timeline: TimelineEntry[] | undefined;
+
+        if (sessionId && sequenceIndex !== undefined) {
+          const entry: TimelineEntry = {
+            sequenceIndex,
+            news: news.slice(0, 60),
+            consensusScore: metrics.consensusScore,
+            polarizationScore: metrics.polarizationScore,
+            fragilityScore: metrics.fragilityScore,
+            consensus: v9Result.finalDecision.consensus,
+            direction: v9Result.finalDecision.direction,
+            beliefStd: v9Result.finalDecision.beliefStd,
+          };
+
+          let session = timelineStore.get(sessionId) || [];
+          session[sequenceIndex] = entry;
+          session = session.filter(Boolean); // 去空洞
+          timelineStore.set(sessionId, session);
+          timeline = [...session];
+        }
+
+        const v9_5 = {
+          interaction: enableInteraction && interaction.totalRounds > 0 ? {
+            totalRounds: interaction.totalRounds,
+            convergenceType: interaction.convergenceType,
+            rounds: (() => {
+              // 🆕 v9.5.1: rounds > 3 时压缩 — 只保留 0/3/5/last
+              const allRounds = interaction.rounds;
+              const totalReqRounds = rounds || 3;
+              if (totalReqRounds > 3 && allRounds.length > 6) {
+                const keepIndices = new Set([0, 3, 5, allRounds.length - 1]);
+                return allRounds
+                  .filter((_, i) => keepIndices.has(i))
+                  .map(r => ({
+                    round: r.round,
+                    beliefs: r.beliefs,
+                    beliefChanges: r.beliefChanges,
+                    meanBelief: r.meanBelief,
+                    beliefStd: r.beliefStd,
+                    converged: r.converged,
+                  }));
+              }
+              return allRounds.map(r => ({
+                round: r.round,
+                beliefs: r.beliefs,
+                beliefChanges: r.beliefChanges,
+                meanBelief: r.meanBelief,
+                beliefStd: r.beliefStd,
+                converged: r.converged,
+              }));
+            })(),
+            beliefShift: interaction.beliefShift,
+            consensusFormed: interaction.consensusFormed,
+            polarizationIncreased: interaction.polarizationIncreased,
+            socialProfiles: interaction.socialProfiles.map(p => ({
+              agentId: p.agentId,
+              alpha: p.alpha,
+              visibleAgentIds: p.visibleAgentIds,
+            })),
+          } : null,
+          metrics: {
+            consensusScore: metrics.consensusScore,
+            polarizationScore: metrics.polarizationScore,
+            fragilityScore: metrics.fragilityScore,
+            stateLabel: metrics.stateLabel,
+            stateInterpretation: metrics.stateInterpretation,
+          },
+          comparison: comparison ?? undefined,
+          timeline,  // 🆕 v9.5.1: 连续推演时间线
+        };
+
+        return NextResponse.json(
+          {
+            success: true,
+            version: "v9.5",
+            data: {
+              news: v9Result.news,
+              factorVector: v9Result.rounds[0]?.factorVector,
+              rounds: v9Result.rounds.map(r => ({
+                round: r.round,
+                consensus: r.decision.consensus,
+                direction: r.decision.direction,
+                confidence: r.decision.confidence,
+                beliefStd: r.decision.beliefStd,
+                neutralTrace: r.decision.neutralTrace,
+                agents: Object.fromEntries(
+                  Object.entries(r.agents).map(([id, state]) => [
+                    id,
+                    {
+                      belief: state.belief,
+                      confidence: state.confidence,
+                      visibleFactors: state.visibleFactors?.map(f => f.category),
+                      interpretation: state.interpretation,
+                    },
+                  ])
+                ),
+              })),
+              final: {
+                consensus: v9Result.finalDecision.consensus,
+                direction: v9Result.finalDecision.direction,
+                confidence: v9Result.finalDecision.confidence,
+                beliefStd: v9Result.finalDecision.beliefStd,
+                neutralTrace: v9Result.finalDecision.neutralTrace,
+              },
+              ablationMetrics: v9Result.ablationMetrics,
+              diagnostics: v9Result.diagnostics,
+              // 🆕 v9.5 扩展
+              v9_5,
+              // v9.5 Agent info for visualization
+              v9_5Agents: v9Agents.map(a => ({
+                id: a.id,
+                name: a.name,
+                emoji: a.emoji,
+                role: a.role,
+              })),
+            },
+            rateLimit: {
+              remaining: rateLimitResult.remaining,
+              resetTime: rateLimitResult.resetTime,
+            },
+          },
+          {
+            headers: {
+              'X-RateLimit-Remaining': String(rateLimitResult.remaining),
+              'X-RateLimit-Reset': rateLimitResult.resetTime.toISOString(),
+            },
+          }
+        );
+      } catch (v9Error) {
+        console.error("[V9] 引擎失败:", v9Error);
+        // 🆕 v9.5.1: DEMO_MODE 下使用预计算兜底数据
+        if (process.env.DEMO_MODE === "true") {
+          console.log("[V9] 🛡️ DEMO_MODE: 返回预计算兜底响应");
+          return NextResponse.json(FALLBACK_RESPONSE, {
+            headers: {
+              "X-RateLimit-Remaining": String(rateLimitResult.remaining),
+              "X-RateLimit-Reset": rateLimitResult.resetTime.toISOString(),
+              "X-Demo-Fallback": "true",
+            },
+          });
+        }
+        return NextResponse.json(
+          {
+            success: false,
+            error: "v9.3 引擎运行失败",
+            code: "V9_ERROR",
+            suggestion: "请检查输入参数或稍后重试",
+            details: v9Error instanceof Error ? v9Error.message : "未知错误",
+          },
+          { status: 500 }
+        );
+      }
+    }
+
+    // ── v5.0 路径: 信息不对称 Agent 群 ──
+    console.log(`[API] 启动信息不对称 Agent 群...`);
+    const asymmetricResult = await runAsymmetricSwarm(news, config, rounds || 2);
+
+    // 兼容旧接口：构建 result 对象（用新的共识覆盖）
+    const result = {
+      rounds: asymmetricResult.rounds.map(r => ({
+        round: r.round,
+        agents: r.agents,
+        consensus: r.consensus,
+        variance: 0,
+      })),
+      final: {
+        consensus: asymmetricResult.finalConsensus,
+        direction: asymmetricResult.finalConsensus > 10 ? "up" : asymmetricResult.finalConsensus < -10 ? "down" : "neutral",
+        converged: asymmetricResult.rounds.length >= 2,
+        total_rounds: asymmetricResult.rounds.length,
+      },
+    };
 
     // 6. 混合预测 — 校准为主 + LLM 辅助
     let hybridResult: HybridPredictionResult | null = null;
+    let retailSignal: { emotion: number; greedFear: string } | null = null;
+    let dataSourceLabel = "INFERRED";
+    let marketParams: { vix: number; rsi: number; dropMagnitude: number } | null = null;
 
     try {
-      // 6a. 推断市场参数
-      const params = inferMarketParams(news);
+      // 6a. 获取市场参数 — 优先真实数据，失败降级为推断
+      let params: ReturnType<typeof inferMarketParams> & { dataSource?: string };
+      let dataSourceLabel = "INFERRED";
 
-      // 6b. 构建 MarketState（简化版）
+      const realParams = await fetchRealMarketParams(news);
+      if (realParams) {
+        params = {
+          vix: realParams.vix,
+          rsi: realParams.rsi,
+          dropMagnitude: realParams.dropMagnitude,
+          volatility: realParams.volatility,
+          hasPolicyResponse: realParams.hasPolicyResponse,
+          hasCentralBankAction: realParams.hasCentralBankAction,
+          knownVulnerabilities: realParams.knownVulnerabilities,
+          dataSource: "YAHOO_FINANCE",
+        };
+        dataSourceLabel = "YAHOO_FINANCE";
+      } else {
+        params = { ...inferMarketParams(news), dataSource: "INFERRED" };
+      }
+
+      marketParams = { vix: params.vix, rsi: params.rsi, dropMagnitude: params.dropMagnitude };
+      console.log(`[API] Market data source: ${dataSourceLabel}`);
+
+      // 6b. 构建 MarketState
       const basePrice = 3000;
       const dropRatio = params.dropMagnitude / 100;
       const marketState: MarketState = {
@@ -250,10 +612,32 @@ export async function POST(req: NextRequest) {
         reasoning: calibrated.reasoning,
       };
 
-      // 6d. LLM 输入（如果推演成功）
+      // 6d1. 30 散户情绪层（v5.0 新增）— 与核心 Agent 并行
+      try {
+        const retailOutput = await runRetailLayer(
+          news,
+          result.final.consensus,
+          -params.dropMagnitude / 100,  // price change rate
+          marketState.price,
+          config  // pass LLM config for API call
+        );
+        retailSignal = {
+          emotion: retailOutput.retailEmotionSignal,
+          greedFear: retailOutput.greedFearIndex,
+        };
+        console.log(`[Retail] 散户情绪: ${retailOutput.greedFearIndex} (${retailOutput.networkDiffusedSentiment}/100) → 信号: ${retailSignal.emotion}`);
+      } catch (e) {
+        console.warn("[Retail] 散户层跳过:", (e as Error).message);
+      }
+
+      // 6d2. LLM 输入（融合核心 Agent + 散户情绪）
+      const blendedConsensus = retailSignal
+        ? result.final.consensus * 0.7 + retailSignal.emotion * 0.3  // 70% 核心 + 30% 散户
+        : result.final.consensus;
+
       const llmInput: LLMPredictionInput = {
-        consensus: result.final.consensus,
-        direction: result.final.direction,
+        consensus: Math.round(blendedConsensus),
+        direction: blendedConsensus > 10 ? "up" : blendedConsensus < -10 ? "down" : "neutral",
         converged: result.final.converged,
         totalRounds: result.final.total_rounds,
         roundDetails: result.rounds.map(r => ({
@@ -304,6 +688,17 @@ export async function POST(req: NextRequest) {
           reasoning: hybridResult.reasoning,
           qualityScore: hybridResult.qualityScore,
           warnings: hybridResult.warnings,
+        } : null,
+        // v5.0: 集成层信号
+        retail: retailSignal ? {
+          emotion: retailSignal.emotion,
+          greedFearIndex: retailSignal.greedFear,
+        } : null,
+        marketData: marketParams ? {
+          source: dataSourceLabel,
+          vix: marketParams.vix,
+          rsi: marketParams.rsi,
+          dropMagnitude: marketParams.dropMagnitude,
         } : null,
         rateLimit: {
           remaining: rateLimitResult.remaining,
@@ -389,15 +784,50 @@ export async function GET(req: NextRequest) {
 
   return NextResponse.json({
     name: "SwarmAlpha API",
-    version: "4.0.0",
-    description: "多智能体金融共识推演系统 — 精简校准引擎",
+    version: "5.0.0",
+    v6Available: true,
+    description: "多智能体金融共识推演系统 — v5 信息不对称 + v6 涌现式共识",
     features: [
-      "5 Agent LLM 共识推演",
-      "技术指标分析",
-      "ML 增强预测 (LSTM + Transformer)",
-      "精简校准引擎 (4规则, 75%方向准确率)",
+      // v5 features
+      "5 Agent 信息不对称 LLM 共识推演",
+      "30 散户 + 社交网络扩散",
+      "技术指标分析 + ML 增强预测",
+      "校准引擎 (4规则, 75%方向准确率)",
       "危机类型检测 (流动性/偿付/外部冲击/技术性)",
+      // v6 features
+      "v6: 8 Agent 涌现式市场共识",
+      "v6: 影响力加权共识 + 资金流 + 价格形成",
+      "v6: 动态市场Regime检测",
+      "v6: 涌现行为诊断 (Herding/Panic/FOMO/Bubble)",
     ],
+    usage: {
+      v5_default: {
+        method: "POST",
+        body: { news: "string", rounds: "number" },
+        description: "v5 信息不对称 Agent 群 (2轮LLM辩论)",
+      },
+      v6_optIn: {
+        method: "POST",
+        body: { version: "v6", news: "string", rounds: "number" },
+        description: "v6 涌现式市场共识 (1次LLM种子 + 纯数学多轮演化)",
+      },
+      withMarketData: {
+        method: "POST",
+        body: {
+          version: "v5|v6",
+          news: "string",
+          rounds: "number",
+          marketData: {
+            vix: "number (optional)",
+            rsi: "number (optional)",
+            dropMagnitude: "number (optional)",
+            eventCategory: "string (optional)",
+            policyResponseSpeed: "string (optional)",
+          },
+        },
+        description: "提供真实市场数据获得更准确的分类和预测",
+      },
+    },
     calibrationEngine: {
       version: "4.0.0",
       description: "基于中性基线+逆向指标+危机分类的精简校准器",
@@ -421,28 +851,6 @@ export async function GET(req: NextRequest) {
       anthropic: ["claude-3-haiku-20240307", "claude-3-sonnet-20240229"],
       deepseek: ["deepseek-chat", "deepseek-reasoner"],
       local: ["llama3", "mistral", "qwen2"],
-    },
-    usage: {
-      basic: {
-        method: "POST",
-        body: { news: "string", rounds: "number (1-10)" },
-        description: "基础推演 + 混合预测",
-      },
-      withMarketData: {
-        method: "POST",
-        body: {
-          news: "string",
-          rounds: "number",
-          marketData: {
-            vix: "number (optional)",
-            rsi: "number (optional)",
-            dropMagnitude: "number (optional)",
-            eventCategory: "string (optional)",
-            policyResponseSpeed: "string (optional)",
-          },
-        },
-        description: "提供真实市场数据获得更准确的分类和预测",
-      },
     },
   });
 }

@@ -1,7 +1,7 @@
 import { NextRequest } from "next/server";
 import { createAgentConfigs } from "@/lib/agents/types";
 import { personas } from "@/lib/agents/personas";
-import { callLLM } from "@/lib/llm/openai";
+import { callLLM } from "@/lib/llm/providers";
 import { calculateMean, calculateVariance, checkConvergence, clampEmotion } from "@/lib/utils/emotion";
 import { AgentState, RoundData } from "@/types";
 
