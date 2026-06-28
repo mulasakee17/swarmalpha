@@ -32,7 +32,8 @@ function buildHistoryPrompt(history: RoundData[], agentId: string): string {
 
 export async function POST(req: NextRequest) {
   const body = await req.json();
-  const { news, rounds = 5 } = body;
+  const { news, rounds: rawRounds = 5 } = body;
+  const rounds = Math.max(1, Math.min(rawRounds, 10)); // 上限10轮防止滥用
 
   if (!news || typeof news !== "string" || news.trim().length === 0) {
     return new Response(JSON.stringify({ error: "新闻内容不能为空" }), {

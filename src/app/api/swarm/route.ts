@@ -1,15 +1,13 @@
 import { NextRequest, NextResponse } from "next/server";
-import { runSwarmSimulation, runTechnicalSwarmSimulation, runMLSwarmSimulation } from "@/lib/agents/engine";
 import { LLMConfig, LLMError, LLMErrorType } from "@/lib/llm/providers";
-import { withRetry, RetryableError } from "@/lib/utils/retry";
+import { RetryableError } from "@/lib/utils/retry";
 import { checkRateLimit, getClientIdentifier, RATE_LIMIT_PRESETS } from "@/lib/security/rateLimit";
-import { validateSwarmRequest, sanitizeString } from "@/lib/security/validation";
+import { validateSwarmRequest } from "@/lib/security/validation";
 
 // 校准系统导入
 import {
   calibratePrediction,
   MarketState,
-  assessCrisisType,
 } from "@/lib/calibration/predictionCalibrator";
 import {
   hybridPredict,
@@ -32,7 +30,7 @@ import { runRetailLayer, getRealMarketSnapshot, runAsymmetricSwarm } from "@/lib
 import { runSwarmV9 } from "@/lib/agents/v9";
 
 // v9.5 共识度量引擎 + Agent 互动层
-import { runInteraction, computeAllMetrics, computeInteractionEffect, formatInteractionSummary } from "@/lib/agents/v9.5";
+import { runInteraction, computeAllMetrics, computeInteractionEffect } from "@/lib/agents/v9.5";
 // 🆕 v9.5.2: 动态权重引擎
 import { computeDynamicWeights, formatDynamicWeightSummary } from "@/lib/agents/v9.5/dynamicWeights";
 
@@ -217,6 +215,7 @@ export async function POST(req: NextRequest) {
     // 2. 解析请求体
     let body;
     try {
+      // 读取请求体 (隐式受限于 Next.js 默认 4MB bodyParser)
       body = await req.json();
     } catch {
       return NextResponse.json(
