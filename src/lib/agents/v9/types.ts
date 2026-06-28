@@ -309,6 +309,8 @@ export interface V9SimConfig {
     disableNeutralRule4?: boolean;    // 禁用 Rule4 (高不确定性+弱共识门控)
     /** 🆕 v9.6: 禁用均值回归感知 (消融实验用) */
     disableMeanReversion?: boolean;
+    /** 🆕 Context Snapshot: 禁用硬数据锚定层 (消融实验用) */
+    disableContextSnapshot?: boolean;
     /** 🆕 v9.7: 非线性共识方法 (替代 linear+cluster+gating pipeline)。
      *  可选值: "power_law" | "entropy_weighted" | "trimmed_mean" | "median"
      *        | "winsorized" | "geometric_mean" | "dynamic_ensemble" | "linear_baseline"

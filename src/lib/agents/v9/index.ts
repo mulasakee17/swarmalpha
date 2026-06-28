@@ -1,4 +1,6 @@
 export { runSwarmV9 } from "./simulation";
+export { computeContextSnapshot, getAgentDataTrust } from "./contextSnapshot";
+export type { ContextSnapshot } from "./contextSnapshot";
 export { extractFactors, templateFactorExtraction } from "./factorExtraction";
 export { computeAllAgentStates, computeAgentBelief, filterVisibleFactors } from "./agentInterpretation";
 export { evaluateUncertainty, makeDecision } from "./uncertaintyEngine";

@@ -38,6 +38,7 @@ import {
   DEFAULT_NONLINEAR_CONFIG,
 } from "./nonlinearConsensus";
 import { CONSENSUS_CONFIG } from "./config";
+import { computeContextSnapshot } from "./contextSnapshot";
 import { agentLogger } from "../../utils/logger";
 import {
   runPriceFeedback,
@@ -196,6 +197,15 @@ export async function runSwarmV9(
     ? await extractFactors(config.news, config.marketData, apiKey)
     : templateFactorExtraction(config.news, config.marketData);
 
+  // ── 🆕 1.5. 情境快照 (硬数据锚定层) ──
+  const useContextSnapshot = !config.ablation?.disableContextSnapshot;
+  const contextSnapshot = useContextSnapshot
+    ? computeContextSnapshot(config.marketData)
+    : undefined;
+  if (contextSnapshot) {
+    agentLogger.debug(`[V9] 📍 Context: ${contextSnapshot.description}`);
+  }
+
   // 因子值与 uncertainty
   const dirFactors = factorVector.factors.filter(f => !META_FACTORS.includes(f.category));
   const uncFactor = factorVector.factors.find(f => f.category === "uncertainty");
@@ -245,6 +255,7 @@ export async function runSwarmV9(
       hysteresisFactor: 0.2,
       marketData: { rsi: config.marketData.rsi, vix: config.marketData.vix },
       disableMeanReversion: (config as any).disableMeanReversion === true,
+      context: contextSnapshot,
       priceSignal,
       roundNoise: config.rounds > 1,
     });

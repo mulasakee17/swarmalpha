@@ -25,6 +25,7 @@ import {
 } from "./types";
 import { META_FACTORS } from "./agentDefinitions";
 import { MARKET_AWARENESS_CONFIG } from "./config";
+import { ContextSnapshot, getAgentDataTrust } from "./contextSnapshot";
 
 // ==================== 🆕 v9.6 双层市场感知修正 ====================
 //
@@ -172,12 +173,18 @@ export function filterVisibleFactors(
  *   rawBelief = Σ(directionalFactor.value × weight × confidence/100) / Σ(|weight| × confidence/100)
  *   然后根据 interpretationStyle 做非线性变换
  *
+ * 🆕 Context Snapshot: 情境快照作为锚定层
+ *   因子向量 → "新闻在说什么" (软信号)
+ *   情境快照 → "市场实际处于什么状态" (硬数据)
+ *   两者共同决定最终信念, dataTrust 控制信任权重
+ *
  * uncertainty 因子不参与方向信念计算 — 只调节最终的 confidence。
  */
 export function computeAgentBelief(
   visibleFactors: ExtractedFactor[],
   agent: V9AgentDefinition,
-  marketData?: { rsi?: number; vix?: number; enableMeanReversion?: boolean; marketPattern?: string }
+  marketData?: { rsi?: number; vix?: number; enableMeanReversion?: boolean; marketPattern?: string },
+  context?: ContextSnapshot
 ): { belief: number; confidence: number; interpretation: string } {
   // 分离方向因子和元因子
   const directionalFactors = visibleFactors.filter(f => !META_FACTORS.includes(f.category));
@@ -211,6 +218,20 @@ export function computeAgentBelief(
     );
     if (corrected !== belief) {
       belief = corrected;
+    }
+  }
+
+  // ── 🆕 Context Snapshot 锚定 ──
+  // 硬数据情境作为"锚", 按 Agent 的 dataTrust 拉拽因子信念
+  // 极端恐惧 (RSI<30 & VIX>35, 历史准确率 68.8%) → 拉向 UP
+  // 极端贪婪 (RSI>70 & VIX<15) → 拉向 DOWN
+  if (context) {
+    const trust = getAgentDataTrust(agent.id);
+    if (trust > 0.1 && (context.isExtremeFear || context.isExtremeGreed)) {
+      const anchorSignal = context.isExtremeFear ? 55 : -45;
+      const strength = 0.7;
+      const anchored = belief * (1 - trust * strength) + anchorSignal * trust * strength;
+      belief = Math.max(-100, Math.min(100, anchored));
     }
   }
 
@@ -344,6 +365,8 @@ export function computeAllAgentStates(
     marketData?: { rsi: number; vix: number };
     /** 🆕 v9.6: 禁用均值回归 (消融实验用, 默认启用) */
     disableMeanReversion?: boolean;
+    /** 🆕 Context Snapshot: 硬数据锚定层 */
+    context?: ContextSnapshot;
     /** 🆕 v10: 价格反馈信号 */
     priceSignal?: { priceChange: number; momentumSignal: number; meanReversionSignal: number };
     /** 多轮模式下的随机噪声 */
@@ -362,7 +385,7 @@ export function computeAllAgentStates(
       vix: config.marketData?.vix,
       enableMeanReversion: !config.disableMeanReversion,
       marketPattern: (factorVector as any).metadata?.marketPattern,
-    });
+    }, config.context);
 
     // 可选的磁滞 (弱证据守卫)
     let finalBelief = belief;
