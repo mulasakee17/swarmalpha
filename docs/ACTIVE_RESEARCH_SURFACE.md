@@ -64,7 +64,7 @@ X0 的观测与公开讨论隔离、gold 离线、无 retry/resume、sensor 后�
 
 当前候选稿本地位置：`paper_rewriting_output/submission_package/aamas_2027_candidate/paper.en.md`／`paper.pdf`；PDF 为工作预览，模板、版面、匿名补充包及独立人工审阅未完成。
 DeepSeek v3 有 90 个文件／270 条臂记录，早期完整消息不足；后续机制 seed 3 的 40 个任务有逐调用提示词／响应，可供 probe 使用。原始失败、限流恢复与主运行不能混写。
-当前 `paper_rewriting_output/` 投稿包仍按 `.gitignore` 的双盲边界不进入公开 Git；历史稿件与部分实验记录已受 Git 跟踪，不能声称整个仓库不含论文。旧本地完整包在 `tmp/handoff_2026-09-17/`，早于此次工程调整，不代表最新源码。当前投稿包与完整交接包是否公开，须由所有者决定。
+当前 `paper_rewriting_output/` 投稿包仍按 `.gitignore` 的双盲边界不进入公开 Git；历史稿件与部分实验记录已受 Git 跟踪，不能声称整个仓库不含论文。旧本地完整包在 `tmp/handoff_2026-09-17/`，早于此次工程调整，不代表最新源码。2026-09-17 所有者明确决定：当前投稿包与完整交接包不公开，保持本地保留；此决定不追溯删除已经公开的历史材料。
 
 ### 6.1 最新决定
 
