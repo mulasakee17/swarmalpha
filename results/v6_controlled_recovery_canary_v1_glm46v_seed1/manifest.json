@@ -1,0 +1,18 @@
+{
+  "manifestRef": {
+    "id": "swarmalpha.manifest.v6.controlled-recovery-canary",
+    "version": "1.0.0"
+  },
+  "planHash": "sha256:5e711d77bd8d8df1edef77a9d755eeed0194d36c86a32ffdab02e3f3f54c5dca",
+  "sourceRunHash": "sha256:e0a14aa6d612f0581fdd0dfcf17f7a5e538cce67a4ac1a214743ad044996dfba",
+  "authorizationBasis": "explicit_user_authorization_2026-08-29",
+  "scientificRole": "single_task_escape_probe_development",
+  "executionBudget": {
+    "maximumProviderAttempts": 4,
+    "maximumTotalCompletionTokens": 4096,
+    "retries": "none"
+  },
+  "onlineTruthAccess": "forbidden",
+  "inferenceLimit": "escape_probe_not_causal_recoverability",
+  "contentHash": "sha256:0279f63d00ae434e979580860b757d6f039ad062098ac174e30aa1e879ddfce6"
+}

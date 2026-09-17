@@ -1,0 +1,1532 @@
+{
+  "schema": "discussion-thermometer-l4-preflight-v1",
+  "authority": {
+    "id": "swarmalpha.experiment.discussion-thermometer-l4-preflight",
+    "version": "1.0.0",
+    "targetIndependentSemanticGroups": 32,
+    "requiredAgentCount": 4,
+    "requiredOptionCount": 3,
+    "discussionRounds": 3,
+    "checkpoints": 4,
+    "publicMaxOutputTokens": 768,
+    "sensorMaxOutputTokens": 256,
+    "duplicateSensorCellsPerTask": 1
+  },
+  "contaminationSnapshot": {
+    "engineeringCanaryTaskIds": [
+      1,
+      4,
+      8,
+      9,
+      17
+    ],
+    "observedTaskIds": [
+      2,
+      6,
+      10,
+      25,
+      26,
+      30,
+      34,
+      36,
+      41,
+      42,
+      43,
+      44,
+      46,
+      48,
+      53,
+      56,
+      58,
+      59,
+      60,
+      62,
+      50,
+      57,
+      64
+    ],
+    "unreviewedCandidateTaskIds": [
+      3,
+      5,
+      7,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      27,
+      28,
+      29,
+      31,
+      32,
+      33,
+      35,
+      37,
+      38,
+      39,
+      40,
+      45,
+      47,
+      49,
+      51,
+      52,
+      54,
+      55,
+      61,
+      63,
+      65
+    ]
+  },
+  "reviewPacket": [
+    {
+      "sourceTaskId": 3,
+      "taskDefinitionHash": "sha256:4462385e24c83747dc076189deb4d4e722ee1073f9dfb6d61952698d5772f6e2",
+      "name": "evacuation_east_town",
+      "description": "You are participating in a study, acting as a community leader of a small village surrounded by mountains and rivers. Most villagers own cars, but there are also elderly people and children who may need additional assistance when walking. Earlier today, heavy rain began to fall, and the local government issued a warning about a potential disaster.\nHours ago, you requested relief supplies, but the supply truck has yet to arrive. Now, the rain has temporarily stopped, giving you and the other three community leaders a short window to decide on the safest evacuation route before the rain resumes. You don’t know how much time you have left to make this critical decision.\nYour Task:\nYou will discuss with three other participants, who are also acting as community leaders, to decide where to evacuate. You have three options:\n- West City: Accessible through a bridge over the river.\n- East Town: Accessible through a tunnel on middle ground.\n- North Hill: Accessible through a driveway and walking trails.\nUsually, it takes the same time to reach all three places by car, but some routes may be inaccessible now.\nThere is only one correct evacuation location. After the discussion:\n- If you choose the correct location, you will earn $1.\n- If all other participants also choose the correct location, you will earn an additional $1 (for a total of $2).\nThis means that coordinating with others is critical to maximize your rewards. The chat will at most take 15 minutes. However, the exact time when the chat will end is unknown.",
+      "sharedInformation": [
+        "The local government announced that hotels in West City are prepared to accommodate evacuees. These hotels are fully stocked with food and medical supplies.",
+        "The mayor of East Town has offered accommodations for any evacuees. However, she has expressed concern about a possible shortage of volunteers to assist them.",
+        "The school at North Hill can serve as a temporary evacuation center, providing a two-week supply of essentials and sleeping space in the gym.",
+        "The supply truck was supposed to come from East Town."
+      ],
+      "privateInformation": [
+        "The river level is just below the bridge to West City.",
+        "The dam upstream will release water in a minute.",
+        "The walking trails have been closed since last weekend due to fallen trees.",
+        "A mudslide just occurred, covering the driveway to North Hill."
+      ],
+      "possibleAnswers": [
+        "West City",
+        "East Town",
+        "North Hill"
+      ],
+      "agentCount": 4,
+      "optionCount": 3,
+      "shapeEligible": true,
+      "decision": {
+        "sourceTaskId": 3,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    },
+    {
+      "sourceTaskId": 5,
+      "taskDefinitionHash": "sha256:74381551b159ad6067e2cb83e845b89a64372aaeba91bab14dfb655125d031a3",
+      "name": "baker_2010",
+      "description": "You are participating in a study and are on the search team for a new president of Higher Education University, a private liberal arts college in Georgia. Highlights fromthe job posting are provided below. Three candidates have applied and information that you have gathered from resumes, reference checks, candidate interviews, and presentations are provided on the pages that follow. Read through all of the material and then identify the candidate that you think should be offered the job.\n- Job Posting for President of Higher Education University:\nHigher Education University is a small (2,500 students), private liberal arts college in Georgia. The president of the university is ultimately responsible for the administration and operation of the university. The president oversees strategic planning, fund raising, and budgeting, ensures that university polices are followed, and builds relationships with the community, alumni, and other outside constituencies.\n- Desired Qualification:\nCandidates will be evaluated based on the following criteria:\n- Evidence of academic scholarship and teaching experience or relevant, extensive, professional credentials that demonstrate an ability to lead in an academic environment;\n- Evidence of leadership in an academic or comparable setting withthe following characteristics: (1) Integrity and commitment to the highest ethical standards; (2) Commitment to shared governance and full involvement of faculty, staff and students; (3) Commitment to a diverse faculty, staff, and student body with equal opportunities for all;\n- Ability to develop a vision for the university and provide the leadership and inspiration needed to make the vision a reality;\n- Commitment to creating a culture that values excellence in scholarship, teaching, and service;\n- Commitment to and evidence of successful fundraising;\n- Ability to promote the university to outside constituents and increase support for its mission and programs\n- Commitment to improving the quality of life for students, faculty, and staff\n- Support for developing and using new technologies to enhance learning, scholarship, and the dispersion of ideas.\nYour Task:\nYou will discuss with other participants, who are also acting as members of the personnel committee, to decide who to recruit. You have three candidates:\n- Stevens\n- Roberts\n- Jones\nThere is only one best candidate. In addition to highlights from each candidate's CV, you have lists of information drawn from interviews, references, personal observations, etc. After the discussion:\n- If you choose the correct person, you will earn $1.\n- If all other participants also choose the correct one, you will earn an additional $1 (for a total of $2).\nThis means that coordinating with others is critical to maximize your rewards. However, the exact time when the chat will end is unknown.",
+      "sharedInformation": [
+        "Stevens' CV highlights:\n- Currently the provost and executive vice president of a medium-sized university in Florida\n- Previous experience as business dean of a large Mississippi university and Chair of the Information and Technology department at a large Texas University\n- Was Dean in Mississippi when plans were drawn up for a new $25 million business school building and was provost in Florida whenthe business college received $15 million\n- Has the rank of full professor of Information Technology.",
+        "Roberts' CV highlights:\n- Just completed a term as U.S. Senator for Georgia but chose not toseek a second term\n- Raised a significant amount of money in campaign for senator\n- Previous experience as Dean of the College of Arts and Sciences of a medium-sized university in Virginia and later of a large private university in Georgia\n- Had rank of full professor of public administration before becoming senator.",
+        "Jones' CV highlights:\n- Currently the senior managing partner in a large law firm in Atlanta,Georgia\n- For the past 5 years has served on the Board of Trustees of Higher Education University, and is on the steering committee for the current $150 million capital campaign\n- Has expertise in employment law and has successfully argued infront of the Federal Supreme Court\n- Served as visiting professor of law at a major university in Georgia.",
+        "Stevens' information:\n- Nationally recognized by academics for research in informationtechnology\n- Nationally recognized by business leaders for expertise in information technology\n- In an interview, Stevens emphasized the importance of collaboration with campus leaders and faculty\n- Demonstrated excellent oratory skills during presentation to faculty\n- Someone other than Stevens was primarily responsible for getting the $15 million in Florida.",
+        "Roberts' information:\n- Faculty feedback indicated that Roberts had come across as aloofduring the presentation portion of the selection process\n- Has not worked in higher education for past 6 years\n- Has a condo in Pensacola\n- Has little direct experience dealing with campus-student life issues\n- As a senator, was accused of changing positions on issues for political gain.",
+        "Jones' information:\n- Pleasant personality in social settings\n- Law partners say Jones is a strategic thinker with respect to the direction of the firm\n- Following the Supreme Court appearance, Jones success rate in litigating employment law cases fell\n- Has been one of the more active members of Higher Education University's Board of Trustees\n- Student enrollment and evaluations from classes indicate that Jonesis well-liked as a teacher."
+      ],
+      "privateInformation": [
+        "Stevens' information:\n- Stevens left the dean position at the Mississippi University beforeraising any funds for building campaign\n- As provost, Stevens teaches a class per year\n- Spouse has a PhD in Spanish and teaches a class or two at college level\nRoberts' information:\n- Has made numerous influential contacts as senator\n- Frequently volunteers for two highly respected nonprofit organiza-tions, one that provides affordable housing and another concernedwith advancing human rights\n- Is a vegetarian\n Jones' information\n- Already lives in the area\n- Is married with a grown child\n- Sources at the law firm attribute a high turnover rate at the firm toJones' somewhat abrasive leadership style",
+        "Stevens' information:\n- Comments from faculty in Florida and Mississippi indicate thatStevens tends to discourage new, innovative ideas\n- Has family in Atlanta\n- Is married with three children\nRoberts' information:\n- Previous faculty members describe Roberts as thoughtful leader andgood listener\n- Previous colleagues say Roberts uses a collaborative decision-making style\n- Enjoys golf and tennis\nJones' information\n- Has two dogs and two cats\n- Jones' spouse is a physician, specializing in internal medicine",
+        "Stevens' information:\n- Left the dean position at the Mississippi University before raisingany funds for the building campaign\n- Enjoys sports, goes to football, and basketball games\n- Stays fit by biking and running\n- Has been observed drinking heavily in public, including at univer-sity events\nRoberts' information:\n- Previous students and faculty say Roberts is an excellent teacher\n- Is divorced and remarried; has two children\n- Faculty research productivity increased while serving as dean in Georgia\nJones' information:\n- Sources at the law firm attribute a high turnover rate at the firm to Jones' somewhat abrasive leadership style\n- Plays bridge as a hobby\n- Enjoys traveling overseas on vacation\n- Feedback from other trustees indicates that there is tension between the current provost and Jones",
+        "Stevens' information:\n- Comments from faculty in Florida and Mississippi indicate thatStevens tends to discourage new, innovative ideas\n- Has been observed drinking heavily in public, including at univer-sity events\n- Does consulting work in IT\n- Likes to garden\nRoberts' information:\n- Enjoys golf and tennis\n- Is divorced and remarried; has two children\n- Increased the diversity of the faculty when dean in Georgia\n- Instrumental in securing a multimillion dollar federal grant for aGeorgia based nonprofit institution\nJones' information:\n- Feedback from other trustees indicates that there is tension betweenthe current provost and Jones\n- Law partners say Jones is a strategic thinker with respect to the direction of the firm\n- Reads mystery novels and biographies\n- Loves to cook"
+      ],
+      "possibleAnswers": [
+        "Stevens",
+        "Roberts",
+        "Jones"
+      ],
+      "agentCount": 4,
+      "optionCount": 3,
+      "shapeEligible": true,
+      "decision": {
+        "sourceTaskId": 5,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    },
+    {
+      "sourceTaskId": 7,
+      "taskDefinitionHash": "sha256:a67301fa15a72c4b89612693ad4dfee64e66244b701e8044bfdb115c3ec3158f",
+      "name": "graetz_et_al_1998",
+      "description": "You are participating in a study, acting as a member of purchasing executives reviewing three proposals for a new airborne reconnaissance system that could gather sensor readings from beacons placed on the ground. The new system was to include two parts: an air vehicle and an on board computer. Please read the request for proposals (RFP) and a check-list of information taken from proposals submitted by three companies: Franklin Enterprises, Starlight Incorporated, and Cape Industries.\nThe RFP included a general description of the desired system and a set of 10 desired operational requirements or criteria. Three of the criteria pertained to the air vehicle. The vehicle was to (a) fit on a 2-ton capacity truck, (b) sweep the entire ground sensor field in 30 minutes or less, and (c) be recovered and redeployed within 90 minutes. The next four criteria dealt with the onboard computer. The computer was to (d) process data at 100 million instructional sets per second (MIPS), (e) be no longer than 40 cubic inches, (f) be no heavier than 10 pounds, and (g) average at least 1,000 operating hours between failures. Finally, (h) the air vehicle and computer should cost $7 million or less, (i) past performance and experience with the company should be positive, and (j) the company must have the manufacturing capacity to produce the system. You have received a checklist of criteria satisfied by each of the three proposals. Each checklist displayed the 10 criteria along with an indication that (1) the proposal met the criterion (indicated by a “Y”), (2) the proposal failed to meet the criterion (indicated by an “N”) or (3) the participant had no information regarding whether the proposal met the criterion (indicated by a blank space).\nYour Task:\nYou will discuss the proposals with three other participants, who are also acting as purchasing executives, to decide which company should be awarded the contract. You have three options:\n- Franklin Enterprises\n- Starlight Incorporated\n- Cape Industries\nThere is only one best choice based on the criteria in the RFP. After the discussion:\n- If you choose the correct company, you will earn $1.\n- If all other participants also choose the correct company, you will earn an additional $1 (for a total of $2).\nThis means that coordinating with others is critical to maximize your rewards. However, the exact time when the chat will end is unknown.",
+      "sharedInformation": [
+        "Franklin Enterprises:\n- (d) Y\n- (e) Y\n- (f) Y\n- (g) Y\n- (h) Y\n- (i) N\n- (j) N\n",
+        "Starlight Incorporated:\n- (a) N\n- (c) N\n",
+        "Cape Industries:\n- (g) N"
+      ],
+      "privateInformation": [
+        "Franklin Enterprises:\n- (b) N\n- (c) N\nStarlight Incorporated:\n- (b) Y\n- (d) Y\nCape Industries:\n- (a) Y\n- (b) N\n- (d) Y\n- (e) Y\n- (f) N\n- (i) Y\n- (j) Y",
+        "Franklin Enterprises:\n- (a) N\n- (c) N\nStarlight Incorporated:\n- (e) Y\n- (h) Y\nCape Industries:\n- (a) Y\n- (b) N\n- (c) Y\n- (f) N\n- (h) N\n- (j) Y",
+        "Franklin Enterprises:\n- (a) N\n- (c) N\nStarlight Incorporated:\n- (f) Y\n- (i) Y\nCape Industries:\n- (b) N\n- (c) Y\n- (d) Y\n- (f) N\n- (h) N\n- (i) Y",
+        "Franklin Enterprises:\n- (a) N\n- (b) N\nStarlight Incorporated:\n- (g) Y\n- (j) Y\nCape Industries:\n- (c) Y\n- (d) Y\n- (e) Y\n- (h) N\n- (i) Y\n- (j) Y"
+      ],
+      "possibleAnswers": [
+        "Franklin Enterprises",
+        "Starlight Incorporated",
+        "Cape Industries"
+      ],
+      "agentCount": 4,
+      "optionCount": 3,
+      "shapeEligible": true,
+      "decision": {
+        "sourceTaskId": 7,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    },
+    {
+      "sourceTaskId": 11,
+      "taskDefinitionHash": "sha256:295e850fc93693f85b2af22909c29250e1ef74683ff84cf2a13aef6ac38f7263",
+      "name": "emergency_conference_relocation",
+      "description": "You are on a committee responsible for an emergency scientific conference that suddenly lost its main venue due to a water pipe burst. You must relocate all attendees within the next two hours—if you can't agree, the event will be canceled. Three possible venues are nearby: City Library, Community Center, and School Gym. Each venue has different facilities and issues. The weather is turning hot and humid, and power outages have recently impacted the area. Your job is to pick the only venue that will safely accommodate all attendees for the full day of events without significant risks.",
+      "sharedInformation": [
+        "The City Library has a large conference room and claims to be ready; it also has a known backup generator for power.",
+        "The Community Center is slightly smaller but centrally located; the staff report it's fully accessible and already evacuated in advance of the heat wave.",
+        "The School Gym has air conditioning, but it's older; the office says there may be issues with the restrooms. A city maintenance team is on its way but hasn't arrived yet.",
+        "Temperatures are expected to exceed 37°C (99°F) in the afternoon. Organizers worry about heat stress if backup power fails."
+      ],
+      "privateInformation": [
+        "Library staff admit privately that their backup generator only has enough fuel for 2 hours and cannot be refueled due to a citywide gasoline shortage.",
+        "The School Gym's restrooms are being restored right now. The on-site janitor confirms that at least two working restrooms (with ventilation and water) will be available within an hour.",
+        "The Community Center basement has had a chemical leak that was just discovered today; the evacuation was for this, and it's only safe for short visits, not day-long events.",
+        "The main conference hall at College Hall flooded this morning and is closed for at least a week, so it's not available."
+      ],
+      "possibleAnswers": [
+        "City Library",
+        "Community Center",
+        "School Gym"
+      ],
+      "agentCount": 4,
+      "optionCount": 3,
+      "shapeEligible": true,
+      "decision": {
+        "sourceTaskId": 11,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    },
+    {
+      "sourceTaskId": 12,
+      "taskDefinitionHash": "sha256:d813f78a77f218f7aef596c6069aed79f488f368642cca0d569ac61530d8aea5",
+      "name": "evacuate_park_dilemma",
+      "description": "You are serving on an emergency planning team for a scenic region hosting a national outdoor festival. As thunderstorms approach, authorities must evacuate everyone to safety. There are three official evacuation locations, all reportedly equipped and expecting displaced guests: Blueberry Ridge (a woodland lodge), Green Valley (a campground center), and Red Lake (a lakeside community hall). Authorities stress that time is short—you must urgently advise all festival-goers which evacuation site to use. You know that routes to all three seem open, but heavy rain may have caused unexpected damage or hazards. Only one option is safe, accessible, and prepared for immediate evacuation. Your group must recommend the best location based on the latest information, aiming to maximize the number of people evacuated safely.",
+      "sharedInformation": [
+        "Roads leading to all three evacuation sites were inspected this morning and declared passable by local highway patrols.",
+        "Blueberry Ridge lodge has emergency power generators and a medical station; you hear that the lodge has started preparing rooms for potential evacuees.",
+        "Red Lake community hall has hosted large groups before, including last year's festival overflow, and reportedly received bulk food supplies earlier today.",
+        "The Green Valley campground recently had a pest outbreak, and you notice local authorities have posted warning signs. However, you hear that the main building is preparing cots and handing out blankets for arrivals."
+      ],
+      "privateInformation": [
+        "Green Valley pest outbreak closure only applies to tourists; local officials have confirmed it remains open for emergency evacuations, with extra staff sent in.",
+        "An emergency text alert just announced that a sinkhole appeared across the only road to Red Lake, and law enforcement has closed the route.",
+        "All power at Blueberry Ridge went out midday, including backups. Emergency medical equipment is unusable and the location is only accepting those who can walk miles to reach it.",
+        "The bridge over Pine Creek, a key access point to Blueberry Ridge, collapsed in today's storm, cutting off vehicle access to the lodge."
+      ],
+      "possibleAnswers": [
+        "Blueberry Ridge",
+        "Green Valley",
+        "Red Lake"
+      ],
+      "agentCount": 4,
+      "optionCount": 3,
+      "shapeEligible": true,
+      "decision": {
+        "sourceTaskId": 12,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    },
+    {
+      "sourceTaskId": 13,
+      "taskDefinitionHash": "sha256:7795efc0eede69287c20670682581002cadfd7459bffe6b17c91bcca0c9053e9",
+      "name": "Laboratory Theft Deduction",
+      "description": "You are members of a security review panel at a major university, investigating the theft of a prototype device from a tightly controlled building. The theft took place during a two-hour window last night, and records show only three labs had access to the secure vault. University leadership wants you to identify the lab responsible for the theft before pressing charges. You have limited time to reach a consensus based on access records and witness reports. If you choose correctly, the investigation can proceed with minimal fallout. A wrong accusation will damage innocent reputations. After discussing with the three other panel members, you must jointly decide which lab committed the theft. You must be sure, as each lab head has powerful legal representation and will dispute any shaky accusations.",
+      "sharedInformation": [
+        "The theft could only have occurred using a specialized code machine. Only Lab Alpha is openly recorded as having this tool.",
+        "All labs reported their staff were present on site during the night, and security footage showed movement in all three corridors during the time of the theft.",
+        "Lab Alpha has a history of security violations, including code access issues in the past month."
+      ],
+      "privateInformation": [
+        "Security camera logs show Lab Alpha’s code machine was checked in and never left their lab during the two-hour window.",
+        "A technician’s badge from Lab Beta was used to enter the building, but building entry and exit logs show no one from Beta ever left until the morning shift change—so they could not have moved the item outside.",
+        "Lab Gamma’s staff reported one person missing from headcount, but building security specifically reports only three badge entries for Gamma during the time window—matching authorized access for device maintenance at the vault.",
+        "A janitor’s log shows all staff from Lab Alpha, including the lead technician, were visible in their break room for the entire two-hour period, and the break room is in a different building than the secure vault."
+      ],
+      "possibleAnswers": [
+        "Lab Alpha",
+        "Lab Beta",
+        "Lab Gamma"
+      ],
+      "agentCount": 4,
+      "optionCount": 3,
+      "shapeEligible": true,
+      "decision": {
+        "sourceTaskId": 13,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    },
+    {
+      "sourceTaskId": 14,
+      "taskDefinitionHash": "sha256:7c62b131b5f087963299034238eaaaef90d1648641c184c966b66e22c2fbf6dc",
+      "name": "lunch_group_decision",
+      "description": "You are a group of colleagues tasked with deciding where to host your team's celebratory lunch. The team includes vegetarians and one person with a severe shellfish allergy, all prefer a quiet atmosphere, and no one has a car, so the restaurant should be within walking distance. You have three choices: Restaurant A, Restaurant B, and Restaurant C. All are nearby and usually considered by your group. To maximize the group's enjoyment and ensure safety, you must select the only suitable option given today's circumstances.",
+      "sharedInformation": [
+        "Restaurant A is offering a new seafood combo for lunch, but also has its regular vegetarian dishes.",
+        "Restaurant B just updated its menu with more vegetarian options and is known for being very quiet at midday.",
+        "Restaurant C has recently renovated its dining area, and offers a mix of cuisines; while they're usually a bit noisy, they're walkable and easy to access."
+      ],
+      "privateInformation": [
+        "The local health department issued a warning this morning about a norovirus outbreak among cooks at Restaurant A.",
+        "Restaurant B accidentally cross-contaminated their kitchen with shellfish last night, so today it's not safe for those with shellfish allergies.",
+        "A private event has booked most of Restaurant C today, but the secondary dining room is still open to the public.",
+        "There is a known power outage at Restaurant C, affecting only the main kitchen, but their cold menu (salads/sandwiches) is fully available from a prep area with emergency backup."
+      ],
+      "possibleAnswers": [
+        "Restaurant A",
+        "Restaurant B",
+        "Restaurant C"
+      ],
+      "agentCount": 4,
+      "optionCount": 3,
+      "shapeEligible": true,
+      "decision": {
+        "sourceTaskId": 14,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    },
+    {
+      "sourceTaskId": 15,
+      "taskDefinitionHash": "sha256:cc03daaf11dafd70ecd33bbbed9577b13186b39839a683b12bfeb602a5025ab0",
+      "name": "artifact_safe_haven",
+      "description": "A priceless ancient artifact has just been unearthed in your city. Authorities task your team with deciding where to safely store it for 24 hours until the national museum can collect it. The city is experiencing rising river levels after days of storms, and several neighborhoods have intermittent power outages. You must quickly agree on the safest location for the artifact. The options are:\n- City Bank: Modern steel vault, backup generator, but in an area at risk for power outages and flooding.\n- University Library: Centrally located, 24/7 security, and not known to flood.\n- Downtown Police Station: High security, but rumored to be crowded due to emergency shelter duties.",
+      "sharedInformation": [
+        "The University Library is built on higher ground and has never experienced flooding, making it a trusted location for safe storage of rare books and documents.",
+        "The City Bank's vault is rated for both fire and water, and a backup generator was recently installed.",
+        "The Downtown Police Station is acting as a temporary shelter and has significantly more traffic than usual, including people seeking refuge from flooded homes."
+      ],
+      "privateInformation": [
+        "A government memo sent to police leadership confirms that a secure evidence room—separate from the public shelter area—remains unused and can be made accessible for artifact storage immediately.",
+        "The University Library's 24/7 security detail will be off-site for a mandatory citywide training drill tonight, and only basic staff will remain during the night.",
+        "The road to the University Library is blocked by downed trees from the storm and will not be open for at least another 24 hours.",
+        "Power company officials confirm that the City Bank's backup generator is due for repairs and has not functioned during recent outages."
+      ],
+      "possibleAnswers": [
+        "City Bank",
+        "University Library",
+        "Downtown Police Station"
+      ],
+      "agentCount": 4,
+      "optionCount": 3,
+      "shapeEligible": true,
+      "decision": {
+        "sourceTaskId": 15,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    },
+    {
+      "sourceTaskId": 16,
+      "taskDefinitionHash": "sha256:34615a984de638e3abccf4df85941bf4d34eeb44257bdafd78c4bde9f394fe85",
+      "name": "Crisis Backup Decision",
+      "description": "Your company’s IT systems have just suffered a major ransomware attack. Senior management is demanding you make an immediate group decision: choose where to send the next full backup copy of all systems. You have contracts in place with three geographically separate data centers—Alpha, Bravo, and Charlie—each with a track record of reliability. Only one can receive the backup now (due to bandwidth limitations), and there's no opportunity to create a second backup for at least a week. If the chosen center fails, company data may be permanently lost, so your group must agree which site offers the best security and continuity under urgent conditions. Each of you has received a short briefing: some details are shared; an additional confidential update has been given to each person, which might affect your assessment of the risks.",
+      "sharedInformation": [
+        "Data Center Bravo is currently rated as having the best firewall and intrusion protection according to the latest independent audit report.",
+        "Alpha, Bravo, and Charlie all report no power outages or physical damage in the past year.",
+        "The company’s legal department says any site failure could have major regulatory consequences; the primary concern is ensuring the backup stays both physically secure and rapidly accessible.",
+        "The latest IT operations dashboard reports Alpha is busiest but still within normal usage; Bravo and Charlie at normal load."
+      ],
+      "privateInformation": [
+        "Bravo has just received a legal notice from a government agency about possible asset freezes due to an ongoing investigation; details are not being shared publicly yet, and services may be disrupted pending developments.",
+        "Construction crews are scheduled to do electrical maintenance near Data Center Alpha within the next 24 hours, with a risk of power cuts (but the data center has not announced an outage).",
+        "A cable cut near Data Center Charlie last month has been fully repaired, and the center has recently passed an extra security audit prompted by that incident.",
+        "An internal alert notes Bravo’s site manager for this weekend is a temp unfamiliar with emergency protocols, but nothing has gone wrong so far."
+      ],
+      "possibleAnswers": [
+        "Alpha",
+        "Bravo",
+        "Charlie"
+      ],
+      "agentCount": 4,
+      "optionCount": 3,
+      "shapeEligible": true,
+      "decision": {
+        "sourceTaskId": 16,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    },
+    {
+      "sourceTaskId": 18,
+      "taskDefinitionHash": "sha256:b5ed3b004ec98ac61092a5aecf7212ce2ce99f7e80aa02ada71daee0eddb9457",
+      "name": "choosing_base_camp",
+      "description": "You are leaders of a multi-national research expedition in a mountainous region planning to set up your central base camp for a two-week mission. There are three candidate spots: Camp Summit (high ground near a glacier), Camp Pinecone (forest edge near a river), and Camp Meadow (open grassland below a ridge). Each has some historical data and rumored risks, but no location is perfect. Your decision must be made within the next hour before dark. Weather, animal activity, equipment delivery, and avalanche danger all affect safety and logistics.",
+      "sharedInformation": [
+        "Camp Summit is forecasted to have stable weather for the next 72 hours, making it seem the safest immediate location.",
+        "Site managers last week delivered extra cold-weather gear to Camp Summit, so supplies there should be plentiful.",
+        "Camp Pinecone had reports last year of bears near the river in early summer.",
+        "Camp Meadow is expected to get high winds tonight according to regional weather bulletins."
+      ],
+      "privateInformation": [
+        "Wind speed projections for Camp Meadow have been revised upwards—tents there may not withstand the forecasted gale.",
+        "Delivery of additional food supplies for the expedition is delayed; only Camp Pinecone currently has emergency food rations stored.",
+        "The glacier overlooking Camp Summit was reported by the last survey team to have developed new cracks, making sudden avalanches possible if temperatures rise.",
+        "Bears in the region have moved further upriver for the season, and no recent sightings have been reported at Camp Pinecone in the last two months."
+      ],
+      "possibleAnswers": [
+        "Camp Summit",
+        "Camp Pinecone",
+        "Camp Meadow"
+      ],
+      "agentCount": 4,
+      "optionCount": 3,
+      "shapeEligible": true,
+      "decision": {
+        "sourceTaskId": 18,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    },
+    {
+      "sourceTaskId": 19,
+      "taskDefinitionHash": "sha256:729d103a70a3ffd40b35bd9b25741f46cb0bccb763878375c73a4776c5814ac9",
+      "name": "city_storm_shelter_decision",
+      "description": "As city council members, you must urgently direct residents of your district to one of three official storm shelters. A category 4 hurricane is hours away. Three locations are approved shelters: Blue River Community Center, Greenfield High School, and Oakridge Library. Under typical circumstances, Greenfield High School is preferred due to its size and facilities. Only one shelter is suitable now—some may be unreachable or unsafe due to specific storm impacts.\n\nYour task: Based only on information available, discuss and agree on which shelter to send the residents to—choosing incorrectly could leave them exposed or stranded.",
+      "sharedInformation": [
+        "Greenfield High School has backup generators and is well-stocked with food, water, and medical supplies. City plans list Greenfield as the district's primary hurricane shelter.",
+        "Blue River Community Center is smaller, has old backup generators, and sits near the river. It was used during the last minor storm.",
+        "Oakridge Library is recently renovated, but there are doubts about its hurricane readiness; some reports say roof repairs are incomplete."
+      ],
+      "privateInformation": [
+        "Blue River Community Center's basement flooded an hour ago, and now the backup generators are submerged and inoperable.",
+        "Despite earlier concerns, Oakridge Library’s new roof passed emergency inspection yesterday; it is structurally sound and confirmed safe for shelter.",
+        "Floodwaters have already blocked the main avenue leading to Greenfield High School; alternate access from South Street is possible, but only for vehicles.",
+        "Trees are down blocking South Street, the only alternate access to Greenfield High School. Clearing could take hours with the storm approaching."
+      ],
+      "possibleAnswers": [
+        "Greenfield High School",
+        "Blue River Community Center",
+        "Oakridge Library"
+      ],
+      "agentCount": 4,
+      "optionCount": 3,
+      "shapeEligible": true,
+      "decision": {
+        "sourceTaskId": 19,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    },
+    {
+      "sourceTaskId": 20,
+      "taskDefinitionHash": "sha256:b8ca6d37f123e9ce75ecc2f81675299cc4f04d923d384baff0ac917b35d4baee",
+      "name": "meteor_shower_shelter",
+      "description": "You're on the surface of Mars at the research outpost 'Crimson 7'. An urgent planetary alert warns of a high-intensity meteor shower approaching. Your team's only chance of survival is to take shelter in one of three remote shelters: Alpha, Beta, or Gamma. You must choose quickly, because if you pick the wrong shelter, your entire group risks disaster. All shelters are reachably close, but previously, only one is checked per protocol at any given time. Each person has partial maintenance reports from the last safety inspection, with one unique update. Discuss and agree on which shelter to use!",
+      "sharedInformation": [
+        "Shelter Beta is certified to be the most heavily shielded against impact, with sufficient supplies stockpiled for a week.",
+        "Shelter Alpha is closest to the main base, but last month there was a minor leak that was reportedly patched.",
+        "Shelter Gamma is the farthest away but had a new air purification system installed this week."
+      ],
+      "privateInformation": [
+        "The repair log for Shelter Alpha indicates that after the leak patch, full pressure tests were completed and results were 'excellent'.",
+        "Sensors detected faint seismic vibrations beneath Shelter Beta, possibly indicating underground instability, but the report says 'requires further investigation.'",
+        "Shelter Beta's supply inventory shows a mysterious usage spike in oxygen canisters last night; the oxygen alarm system is overdue for maintenance.",
+        "Shelter Gamma's new air system was installed, but there was a recall notice for a faulty emergency ventilation back-up, and the needed replacement has not yet been delivered."
+      ],
+      "possibleAnswers": [
+        "Shelter Alpha",
+        "Shelter Beta",
+        "Shelter Gamma"
+      ],
+      "agentCount": 4,
+      "optionCount": 3,
+      "shapeEligible": true,
+      "decision": {
+        "sourceTaskId": 20,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    },
+    {
+      "sourceTaskId": 21,
+      "taskDefinitionHash": "sha256:3bc93c38adcb1c101a089ae6856487d8a68ad1b97ba677249d059e386aeea57d",
+      "name": "emergency_transportation_decision",
+      "description": "You are coordinators transporting a group of volunteers to deliver urgent medical supplies and food to a remote village experiencing a seasonal flood. Friday evening, heavy storms have blocked local highways, and lodging spots may fill quickly. You have three possible destinations with different transportation modes:\n- Aurora Train Station\n- Borealis Bus Terminal\n- Celestia Airstrip\nYour task is to choose where to send the volunteer group to best ensure safe and timely arrival.\n\nAfter everyone has voted, only one destination will actually be reachable for your group. If you pick correctly, your mission succeeds. If all participants pick correctly, you earn a bonus.",
+      "sharedInformation": [
+        "Recent track safety improvements make the train to Aurora statistically the safest and most reliable route in such storms.",
+        "The main bus line to Borealis has not reported any delays yet this season.",
+        "The Celestia Airstrip lacks permanent shelters, and recent reports questioned whether it could handle larger groups in poor weather."
+      ],
+      "privateInformation": [
+        "Local authorities just suspended all trains to Aurora after a landslide covered the main track last night.",
+        "A wildlife alert just closed the main access road to Aurora for emergency protection. No vehicle is permitted through until the alert is lifted.",
+        "The bus route to Borealis has been rerouted due to a bridge closure, with all arrivals delayed until the next day.",
+        "Celestia Airstrip completed emergency upgrades this week: it’s now able to service large groups and deliver supplies quickly. A mobile shelter and food stocks are on site."
+      ],
+      "possibleAnswers": [
+        "Aurora Train Station",
+        "Borealis Bus Terminal",
+        "Celestia Airstrip"
+      ],
+      "agentCount": 4,
+      "optionCount": 3,
+      "shapeEligible": true,
+      "decision": {
+        "sourceTaskId": 21,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    },
+    {
+      "sourceTaskId": 22,
+      "taskDefinitionHash": "sha256:46fce3a02352ac97a69be85aafae6ee21be1e385cd683f5ce09844cc4b950374",
+      "name": "Antarctic Storm Safe Haven",
+      "description": "You and three other participants are scientists at an Antarctic research station. A massive, fast-moving storm is approaching. You must rapidly decide, as a group, which facility to seek shelter in for the next 48 hours. You have snow vehicles and limited time to reach only one location before the blizzard begins. Your three choices:\n- Main Base: The largest facility, but farther away.\n- Retreat Camp: A small, nearby camp rated for storms.\n- Rescue Outpost: Smaller, medium distance, typically used for emergencies.\nWhichever location you pick, you'll be unable to contact others until the storm passes. Supplies, infrastructure, and route safety may differ. Only one option will keep you safe and supplied until rescue teams arrive.",
+      "sharedInformation": [
+        "A radio update confirms Retreat Camp is the closest shelter and is built to withstand severe weather.",
+        "Supply records say that Retreat Camp offers food, water, and sleeping bags for four people.",
+        "The snow vehicle has just enough fuel to reach any of the three locations before the storm hits, but not to try multiple.",
+        "The Rescue Outpost's exterior was recently checked and found structurally sound."
+      ],
+      "privateInformation": [
+        "The most recent supply delivery to Retreat Camp was delayed, so the promised food and water may not be there.",
+        "Main Base appears to have uninterrupted generator power, working communications, and fully stocked rations according to a direct radio call just before the storm warning.",
+        "The snow route to Rescue Outpost is fully snowed in since the last storm; the path isn't navigable even with the vehicle.",
+        "Satellite imagery from this morning shows the ice bridge leading to Retreat Camp has collapsed, making it dangerous to reach by foot or vehicle."
+      ],
+      "possibleAnswers": [
+        "Main Base",
+        "Retreat Camp",
+        "Rescue Outpost"
+      ],
+      "agentCount": 4,
+      "optionCount": 3,
+      "shapeEligible": true,
+      "decision": {
+        "sourceTaskId": 22,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    },
+    {
+      "sourceTaskId": 23,
+      "taskDefinitionHash": "sha256:ed45edb221ea9f207393319ac227275dd5236eb2c3d158872e5e81ee6a69b659",
+      "name": "community_banquet_venue_decision",
+      "description": "You are a member of a committee planning your community's annual banquet, which needs to be held this Saturday night due to scheduling conflicts. Your goal is to choose a venue that can accommodate everyone (about 90 guests), allow food catering, and is available on short notice. Three venues are under consideration:\n\n- Lakeview Resort: By the lakeside with outdoor seating for 120.\n- Grand Oak Hotel: Downtown, with a large ballroom.\n- Heritage Public Library: Spacious meeting hall, central location.\n\nYou intend to decide quickly and secure the booking together. Each person receives one unique piece of information about venue availability or restrictions.",
+      "sharedInformation": [
+        "Lakeview Resort has a history of providing excellent service and is free on most weekends, and is listed as having outdoor seating for up to 120 guests.",
+        "Grand Oak Hotel usually requires at least two weeks' notice for events but has the largest ballroom in the area and easy parking.",
+        "Heritage Public Library allows large gatherings in its event hall, but catering restrictions may apply (for non-packaged food).",
+        "All three venues are within a 15-minute drive for most community members."
+      ],
+      "privateInformation": [
+        "The only access road to Lakeview Resort is closed due to flooding after this week’s storm and is expected to remain impassable through the weekend.",
+        "Grand Oak Hotel’s event calendar shows 'unavailable' online, but the events manager reports a scheduling software failure that blocks new bookings from appearing; last-minute bookings can be accepted by phone this week.",
+        "Public notices state that Heritage Library recently reinforced its no-outside-food policy after an incident, and now only sealed, pre-packaged snacks are allowed in the meeting hall, with no catering permitted.",
+        "Local authorities have warned that lakeside events could attract mosquitoes in this season, but the health department’s primary concern for this weekend is road safety."
+      ],
+      "possibleAnswers": [
+        "Lakeview Resort",
+        "Grand Oak Hotel",
+        "Heritage Public Library"
+      ],
+      "agentCount": 4,
+      "optionCount": 3,
+      "shapeEligible": true,
+      "decision": {
+        "sourceTaskId": 23,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    },
+    {
+      "sourceTaskId": 24,
+      "taskDefinitionHash": "sha256:ddf25e397db74ade12c3554993b2bdfd634dc5fd6ce2a6cb9b8fa1874a26d94c",
+      "name": "Critical Data Backup Site Selection",
+      "description": "You are IT coordinators at a national research institute. A sophisticated cyberattack is underway, targeting all your digital assets. You must immediately choose a site to physically deliver critical data for offline backup before the attacker can permanently destroy or corrupt systems. There are three candidate facilities:\n- Mountain Server Farm (isolated, known for its robust network and backup power).\n- Valley Research Annex (onsite security team and advanced air-gapped systems).\n- City HQ Facility (main office building, older but recently renovated infrastructure).\nOnly one location is both reachable and appropriately secure under current conditions. Time is of the essence: the attacker may escalate at any moment, so the decision must be rapid and correct.",
+      "sharedInformation": [
+        "Mountain Server Farm is on an isolated network and has backup generators in the event of a main power loss.",
+        "Valley Research Annex is monitored by a live security team and is equipped with air-gapped backup systems.",
+        "City HQ Facility just completed a major infrastructure upgrade, including new firewalls and physical barriers, but remains directly connected to the internet."
+      ],
+      "privateInformation": [
+        "Emergency backup power at Mountain Server Farm was rerouted this morning to support a nearby hospital and is currently unavailable for the servers.",
+        "The Mountain Server Farm's isolated network has been down for the last 12 hours, and the local team is unable to restore connectivity.",
+        "The Valley Research Annex was bypassed by the attackers, but a security technician just discovered the main network routing switch was replaced with one loaded with hidden malware.",
+        "The City HQ Facility's recent renovation included installation of a separate, newly-laid internet line with verified security audits, and there is confirmation that the building is physically undisturbed."
+      ],
+      "possibleAnswers": [
+        "Mountain Server Farm",
+        "Valley Research Annex",
+        "City HQ Facility"
+      ],
+      "agentCount": 4,
+      "optionCount": 3,
+      "shapeEligible": true,
+      "decision": {
+        "sourceTaskId": 24,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    },
+    {
+      "sourceTaskId": 27,
+      "taskDefinitionHash": "sha256:41c1fb38296eec1522ae1b0479faad7345d7a81df2bac9aeb72d6bbbfa7fec5b",
+      "name": "research_station_site_selection",
+      "description": "You and three colleagues are members of a panel tasked with selecting the site for a new environmental research station. The government wants a location that is safe, accessible, and able to support heavy laboratory infrastructure for at least 10 years. The final decision must be made based on the facts available in today's briefing. There are three possible sites, and, while each has some drawbacks, one is the best by far. Your goal: Select the site that will allow the research station to operate safely, with minimal risk of disruption or forced relocation.",
+      "sharedInformation": [
+        "Maple Valley has flat, cleared land with existing road access. Local towns have offered logistical support for construction crews. Basic infrastructure can be connected quickly.",
+        "Copper Lake is 15km from the nearest paved road, requires some land clearing, but enjoys pristine water sources and is sheltered from wind.",
+        "Pine Ridge is the most remote, accessible only by an old logging track, but has no record of flooding or landslides."
+      ],
+      "privateInformation": [
+        "The only reliable access road to Pine Ridge has been repaired and upgraded recently for forestry vehicles, making it usable year-round for trucks as long as landslides are monitored.",
+        "Copper Lake's soil cannot support buildings taller than 1 story or heavy equipment without major reinforcement, due to deep unstable clay layers.",
+        "The geological survey revealed that Maple Valley sits directly atop a recently discovered major earthquake fault line, with significant tremors expected in the next decade.",
+        "A newly released government study says that the local community near Maple Valley is organizing protests against any new large-scale construction, as the valley is a designated cultural heritage landscape."
+      ],
+      "possibleAnswers": [
+        "Maple Valley",
+        "Copper Lake",
+        "Pine Ridge"
+      ],
+      "agentCount": 4,
+      "optionCount": 3,
+      "shapeEligible": true,
+      "decision": {
+        "sourceTaskId": 27,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    },
+    {
+      "sourceTaskId": 28,
+      "taskDefinitionHash": "sha256:cd53811a072591af4122f28eb7cf07472c5050d17ac93c78e92e902b624bc503",
+      "name": "Rescue the Lost Researchers",
+      "description": "You are part of a crisis coordination team tasked with sending help to a group of scientists lost after a sudden storm in a remote national park. Their last known location (about 18 km away) is cut off from main roads, and time is running short before nightfall. You must quickly decide which route a rescue team should use to reach them safely. There are three potential approaches: crossing the Mountain Pass, following the River Route, or hiking the Forest Trail. Each has pros and cons, and only one route is truly viable. Your reward depends on picking the correct rescue route together as a team.",
+      "sharedInformation": [
+        "The River Route has been reported as unusually calm today, and local rescue teams are already stationed at its mouth.",
+        "The Mountain Pass is well known among hikers, though prone to rockslides during storms.",
+        "The Forest Trail is the least direct path, potentially requiring extra hours of hiking.",
+        "Radio contact with the research team was lost about 5 hours after the storm began."
+      ],
+      "privateInformation": [
+        "A local ranger reported heavy bear activity on the lower end of the River Route, making the path unsafe for unarmed teams.",
+        "An emergency bulletin revealed that the bridge on the River Route washed out this morning and won’t be rebuilt for at least a week.",
+        "Weather data predicts renewed strong winds at higher elevations, making the Mountain Pass too dangerous for passage tonight.",
+        "Satellite images showed a large rockslide completely blocking the Mountain Pass early this afternoon."
+      ],
+      "possibleAnswers": [
+        "River Route",
+        "Mountain Pass",
+        "Forest Trail"
+      ],
+      "agentCount": 4,
+      "optionCount": 3,
+      "shapeEligible": true,
+      "decision": {
+        "sourceTaskId": 28,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    },
+    {
+      "sourceTaskId": 29,
+      "taskDefinitionHash": "sha256:8a03e13946f5390eca0d0a2b48995e1cbd37e711840de3fa505e1dce199a15e1",
+      "name": "Safe Shelter Selection",
+      "description": "You and three other council members must quickly choose which of three locations in your region should be officially designated as the emergency shelter for an oncoming storm. The shelter must be accessible, safe, free of environmental hazards, and have the capacity for hundreds of people. Only one site truly qualifies. Each site is in a different direction, and time is short. The three options: (a) Mountain Lodge, (b) Riverside Park, (c) Summerfield School. Your decision is urgent, as buses will soon be dispatched to one location only.",
+      "sharedInformation": [
+        "All main roads to each shelter remain open as of the last public update, 20 minutes ago.",
+        "Mountain Lodge's bridge was inspected last month and passed safety checks; there are no weather alerts for the area.",
+        "Riverside Park has undergone recent upgrades to its facilities to accommodate large groups.",
+        "Summerfield School is regularly used for community gatherings and has backup generators."
+      ],
+      "privateInformation": [
+        "Due to minor flooding on Oakcrest road, buses can only reach Riverside Park from the north side.",
+        "A landslide warning was just issued for Summerfield's region by the National Weather Service, effective immediately.",
+        "There is a confirmed chemical spill in the storage building next to Mountain Lodge reported just now by authorities; the substance is hazardous if inhaled and cleanup will take at least 12 hours to complete.",
+        "A tree has fallen on the north lane to Riverside Park, but the south lane remains clear according to a police report released five minutes ago."
+      ],
+      "possibleAnswers": [
+        "Mountain Lodge",
+        "Riverside Park",
+        "Summerfield School"
+      ],
+      "agentCount": 4,
+      "optionCount": 3,
+      "shapeEligible": true,
+      "decision": {
+        "sourceTaskId": 29,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    },
+    {
+      "sourceTaskId": 31,
+      "taskDefinitionHash": "sha256:6401b74f046eadfed23f086504cd23372c118df2f8120a4f19b0425dbb25e21d",
+      "name": "weather_sensor_deployment",
+      "description": "You are part of a scientific team deployed to investigate unusual atmospheric phenomena. You must quickly decide at which of three sites to install your advanced weather sensor. Each site comes with advantages and risks. Communications are patchy and difficult, so you must rely on available information. Whichever site the group selects must both be physically accessible and able to support the equipment for at least 48 hours. If you choose the correct site, you will enable the team to capture essential data; otherwise, the study could fail entirely.",
+      "sharedInformation": [
+        "Alpha Ridge is the highest elevation, with a flat summit suitable for equipment installation. Local forecasts predict intense atmospheric activity nearby.",
+        "Beta Valley is lower-lying and more sheltered, but there are reports of significant rainfall causing possible flooding.",
+        "Gamma Lake is accessible by road until the last 2 km, after which the only known trail becomes muddy and flooded during rainstorms."
+      ],
+      "privateInformation": [
+        "A radio transmission indicates the bridge to Beta Valley has just collapsed due to floodwaters; all vehicles and personnel must avoid this route until repaired.",
+        "A recent geologist’s note (found on a desk) says Alpha Ridge’s summit is unstable after last month's landslide, and hauling heavy equipment up could risk collapse. The note is unsigned and not yet included in central updates.",
+        "An old cache of equipment logs reveals a small boat is moored at the southern shore of Gamma Lake, which can be used to cross the flooded trail and access the intended installation point, but only if known in advance.",
+        "An urgent message states that sudden gale-force winds will hit Alpha Ridge in the next few hours, making sensor deployment and equipment stability impossible for at least two days."
+      ],
+      "possibleAnswers": [
+        "Alpha Ridge",
+        "Beta Valley",
+        "Gamma Lake"
+      ],
+      "agentCount": 4,
+      "optionCount": 3,
+      "shapeEligible": true,
+      "decision": {
+        "sourceTaskId": 31,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    },
+    {
+      "sourceTaskId": 32,
+      "taskDefinitionHash": "sha256:9de2514d8d20525dc6ba13c5715a3aa0cec1980d855762407762922b3b9b9c6a",
+      "name": "critical_vaccine_route",
+      "description": "You are a logistics coordinator for an international medical response team. A remote Arctic research base radioed in a request for an urgent shipment of a new vaccine after an outbreak. There are three delivery routes: A (Mountain Pass), B (Frozen Lake), and C (Old Supply Road). Each route has previously been used for deliveries, but recent conditions may have changed their safety. A strict delivery deadline means only one route can be chosen. The goal is for the group to decide together which route ensures the vaccine reaches the base safely and on time.",
+      "sharedInformation": [
+        "Weather stations report mild snowfall. Winds are steady but within the normal range for this season.",
+        "Route A's snowplows were deployed yesterday, and road crews reported all clear as of 6 AM.",
+        "Route B is known for its reliability, used for most winter deliveries in past years. The base just received a report that the ice is thicker than average this week.",
+        "A research team driving via Route C last week reported limited radio contact and some branches blocking half the road. No structural damage to the bridge at its main river crossing was reported."
+      ],
+      "privateInformation": [
+        "Route B is under a sudden quarantine order after a suspected case of viral hemorrhagic fever at a midway checkpoint; no unauthorized transit is allowed for at least 48 hours.",
+        "The main bridge on Route C was inspected in detail after the last snowstorm and certified as structurally safe, able to handle supply vehicles, despite local rumors.",
+        "A specialized snow rescue unit is only available for Route C tonight; for the other routes, backup would take 12+ hours to arrive.",
+        "An avalanche monitoring post flagged a fresh crack in the mountain, and geologists estimate a high risk of landslide across Route A within the next 6 hours."
+      ],
+      "possibleAnswers": [
+        "Route A (Mountain Pass)",
+        "Route B (Frozen Lake)",
+        "Route C (Old Supply Road)"
+      ],
+      "agentCount": 4,
+      "optionCount": 3,
+      "shapeEligible": true,
+      "decision": {
+        "sourceTaskId": 32,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    },
+    {
+      "sourceTaskId": 33,
+      "taskDefinitionHash": "sha256:c00e9cd8d6982113704987f9624540d472e248d4825474c1823858f3c2b13fc1",
+      "name": "Critical Sample Transfer",
+      "description": "You are a team responsible for transporting a life-saving, temperature-sensitive biological sample to a laboratory for immediate processing. The sample must be analyzed within six hours or it will be rendered useless. Three well-known research laboratories in neighboring cities have offered to help. You must quickly decide where to send the sample.",
+      "sharedInformation": [
+        "Lab Gemini processed a record number of similar emergency samples last year; its cooling systems are state-of-the-art and always monitored.",
+        "Lab Atlas has a great reputation for reliability and always keeps at least two senior technicians on duty at all times.",
+        "Lab Nova recently completed a major renovation of its analytical laboratory, but until now has received few emergency transfer requests."
+      ],
+      "privateInformation": [
+        "The main highway to Gemini is temporarily closed for repairs; only emergency vehicles are allowed through, but your sample transport van does not qualify as such.",
+        "Lab Atlas is currently undergoing scheduled maintenance on its freezers, leaving only one with a backup power supply—insufficient for samples as heat-sensitive as yours.",
+        "A city-wide power outage hit Nova two days ago, but the facility's newly installed generator fully restored functionality a few hours later, and Nova currently has all its equipment and staff available for rapid intake."
+      ],
+      "possibleAnswers": [
+        "Lab Gemini",
+        "Lab Atlas",
+        "Lab Nova"
+      ],
+      "agentCount": 3,
+      "optionCount": 3,
+      "shapeEligible": false,
+      "decision": {
+        "sourceTaskId": 33,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    },
+    {
+      "sourceTaskId": 35,
+      "taskDefinitionHash": "sha256:f9c1f014759f66310fec9d5258eba6f27d75bb2aa147c3d6c7066dd1c0ac1c37",
+      "name": "the_safe_shelter",
+      "description": "A sudden chemical spill in your city forces residents to evacuate to one of three emergency shelters. You and three other neighborhood coordinators must quickly decide which shelter is safest for your residents. The shelters are:\n- Red House: east side, has basic amenities.\n- Blue House: downtown, larger and recently renovated.\n- Green House: north side, smaller but usually reliable.\nAll key city routes are technically open and reports are still coming in about traffic or access. Your group must ensure everyone is sheltered from the chemical threat and any other potential hazards.",
+      "sharedInformation": [
+        "The city government announces that the Blue House is currently open, the lights are on, and volunteers have started arriving.",
+        "Red House suffered flooding earlier this month, which caused minor water damage, but repairs were reportedly completed last week.",
+        "Supplies are limited at Green House, but the electricity grid in the north side is usually more reliable than other areas.",
+        "There is an ongoing, but not officially confirmed, rumor about possible gas leaks near the city center."
+      ],
+      "privateInformation": [
+        "An energy company alert says a fallen line is blocking the north-side exit, making Green House temporarily inaccessible by car; repair crews estimate 4+ hours before road access returns.",
+        "The main bridge into downtown (toward Blue House) is closed for emergency inspection following a strange odor detected at the checkpoint.",
+        "A city official quietly mentions that recent renovations at Blue House did not replace the outdated gas pipes, which run underneath the main dormitory.",
+        "A Red Cross coordinator says the replacement supplies at Red House were taken by mistake by an outside organization, but backup supplies are scheduled to arrive within an hour and there is enough bottled water to last that long."
+      ],
+      "possibleAnswers": [
+        "Red House",
+        "Blue House",
+        "Green House"
+      ],
+      "agentCount": 4,
+      "optionCount": 3,
+      "shapeEligible": true,
+      "decision": {
+        "sourceTaskId": 35,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    },
+    {
+      "sourceTaskId": 37,
+      "taskDefinitionHash": "sha256:5b395eeb16d7dfbba5021f424fdefc429fd0c79fba28672aeba105f6c875c240",
+      "name": "emergency_warehouse_selection",
+      "description": "A severe storm has knocked out power and damaged roads in your region. Emergency relief supplies (food, water, blankets) must be distributed as soon as possible from one central warehouse. You and three other team leaders must pick which of three available warehouses will function best as the main distribution hub for the next week. Weather forecasts say more storms may hit, so a wrong choice could leave the region without supplies. You have verified that trucks can reach all warehouses at the moment, and each warehouse lists similar supply volumes and space. The three warehouses are: Bayview Warehouse, Central Depot, and Hilltop Storage. One choice is best. You must make your recommendation now.",
+      "sharedInformation": [
+        "Central Depot is closest to the highway and has a modern loading dock system for fast truck turnaround.",
+        "Hilltop Storage's security fence was damaged in the storm but the building appears intact.",
+        "Bayview Warehouse is further from the main population center but reports say access roads are clear.",
+        "Power has been restored in the area, but some locations still report generator issues."
+      ],
+      "privateInformation": [
+        "Bayview Warehouse lost half its roof in the storm and cannot keep supplies dry in tonight's rain.",
+        "Local government inspectors found the foundation of Central Depot is at risk after nearby flooding.",
+        "Central Depot's backup generator was destroyed by lightning and can't be fixed for several days.",
+        "Hilltop Storage is the only site that did not lose any personnel and has a full staff to unload and pack supplies."
+      ],
+      "possibleAnswers": [
+        "Bayview Warehouse",
+        "Central Depot",
+        "Hilltop Storage"
+      ],
+      "agentCount": 4,
+      "optionCount": 3,
+      "shapeEligible": true,
+      "decision": {
+        "sourceTaskId": 37,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    },
+    {
+      "sourceTaskId": 38,
+      "taskDefinitionHash": "sha256:8a7a8785b261a9b859df68e6fa1439958df592d41b3ec5ea5f0bdae59dde15aa",
+      "name": "storm_recovery_clinic_site_selection",
+      "description": "You are members of an emergency medical relief team sent to a region recently struck by a severe storm. Your role is to choose the best location for setting up a temporary medical clinic. Local authorities pushed for a quick decision to maximize the chances for rapid care delivery. There are four possible sites. You have basic facts about each one, and each of you has one additional, unique piece of local intel. Only one site will work safely and efficiently. Discuss and decide quickly: after today, the decision can't be reversed.",
+      "sharedInformation": [
+        "Site A is in an open field with a large, undamaged tent structure already set up. The field is flat and local authorities suggest this location. Road access is clear, and it is closest to the main hospital.",
+        "Site B is a community sports center on the west side of town, featuring indoor plumbing and generator power. There is some cosmetic damage to the exterior, but no reported injuries or incidents from the storm at this site.",
+        "Site C is a hilltop park, previously used for small festivals. A parking lot can accommodate vehicles, but there is no existing shelter beyond restrooms. It is further from town but visible from most directions.",
+        "Site D is the local library, which was used as a shelter during the storm. The area around it saw minor flooding, but this has receded. The building has electricity and ADA ramps."
+      ],
+      "privateInformation": [
+        "The only bridge that ambulances can use to access Site D was damaged in the storm—emergency vehicles cannot reach the library at this time.",
+        "Despite power at Site B, mold was rapidly found in the lower level and several people got sick after being there for only an hour.",
+        "Structural engineers have identified new cracks in a load-bearing wall of Site B; they say a collapse is possible if the weight on the upper floor increases sharply.",
+        "The river upstream from Site A is still rising rapidly, and flood warnings for that field have been issued for the next 24 hours."
+      ],
+      "possibleAnswers": [
+        "Site A (Open field with tent)",
+        "Site B (Community sports center)",
+        "Site C (Hilltop park)",
+        "Site D (Library)"
+      ],
+      "agentCount": 4,
+      "optionCount": 4,
+      "shapeEligible": false,
+      "decision": {
+        "sourceTaskId": 38,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    },
+    {
+      "sourceTaskId": 39,
+      "taskDefinitionHash": "sha256:7be4ee156e98bf6886c7f32cdf3b621f13a141e40a170c622dc6d899ae12c025",
+      "name": "emergency_aircraft_landing_site",
+      "description": "A passenger aircraft has experienced engine trouble and needs to make an emergency landing. There are three possible landing zones within range: LZ Alpha, LZ Bravo, and LZ Charlie. Each has its own pros and cons. Weather conditions are worsening rapidly. The pilot requests that you (the coordination team) quickly select the safest landing zone. Acting on incomplete information could result in disaster, but time is short. You must discuss and make a recommendation as a group. Only one landing zone is truly suitable; the others are too risky under current circumstances.",
+      "sharedInformation": [
+        "LZ Bravo is the only site with full fire and medical crews standing by, and it has a recently resurfaced runway.",
+        "Local ATC reports that all approaches to LZ Bravo are currently clear of air traffic.",
+        "LZ Alpha is a basic airstrip used mostly for cargo flights, with minimal ground support.",
+        "LZ Charlie is a larger airport but is undergoing some repair work to minor taxiways. The main runway, however, is reported open.",
+        "Wind speeds are moderate at all sites according to earlier updates."
+      ],
+      "privateInformation": [
+        "Despite reports of open runways, LZ Charlie's emergency power just failed, disabling all runway lighting and navigation aids.",
+        "A previously scheduled cargo flight to LZ Alpha was just diverted elsewhere, leaving the runway and landing approach completely clear for this arrival.",
+        "Flooding has just been observed at LZ Bravo, submerging the eastern third of the runway (which cannot be seen from the tower) and making safe landing impossible.",
+        "The most recent weather update now reports sudden crosswinds at LZ Charlie are exceeding safe landing limits for this aircraft type."
+      ],
+      "possibleAnswers": [
+        "LZ Alpha",
+        "LZ Bravo",
+        "LZ Charlie"
+      ],
+      "agentCount": 4,
+      "optionCount": 3,
+      "shapeEligible": true,
+      "decision": {
+        "sourceTaskId": 39,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    },
+    {
+      "sourceTaskId": 40,
+      "taskDefinitionHash": "sha256:a37eecf9c38c5b8a3f6372e68de186f06733badd4ae7e29bd05e3ffaf151d626",
+      "name": "emergency_hospital_transfer",
+      "description": "You are a team of paramedics tasked with transferring an accident victim who needs urgent surgery within the next hour. There are three hospitals in range. The patient cannot survive transport longer than 45 minutes. You must together choose which hospital to drive to. Traffic disruptions have occurred elsewhere in the city, and not all hospitals may be able to accept emergency surgeries at this time. You have only one shot—the choice is irreversible, and delay may cost the patient's life.",
+      "sharedInformation": [
+        "Lakeview Hospital is known for its large surgical team and usually has available ICU beds.",
+        "Riverbend Medical Center is smaller but specializes in trauma cases and is only 20 minutes away.",
+        "Meadow Valley General is 30 minutes away and recently upgraded its surgical facilities.",
+        "There is one ambulance with enough fuel for any of the options, and all main roads are reported open as of an hour ago."
+      ],
+      "privateInformation": [
+        "Riverbend Medical Center lost power recently and is running on backup, with non-critical operations diverted.",
+        "Lakeview’s only on-call trauma surgeon just departed on an emergency airlift and won’t be available for four hours.",
+        "Lakeview ICU beds filled up in the last thirty minutes due to a multi-car pileup; the ER is now rerouting critical patients.",
+        "The main road leading directly to Meadow Valley is closed due to flooding, but an alternate route adds only ten minutes travel time."
+      ],
+      "possibleAnswers": [
+        "Lakeview Hospital",
+        "Riverbend Medical Center",
+        "Meadow Valley General"
+      ],
+      "agentCount": 4,
+      "optionCount": 3,
+      "shapeEligible": true,
+      "decision": {
+        "sourceTaskId": 40,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    },
+    {
+      "sourceTaskId": 45,
+      "taskDefinitionHash": "sha256:4cf4b8bca0d3181c5e674b171df586adcf695efb1b3d97dee9abd00cceb7e5d2",
+      "name": "Safe Lab Choice After Earthquake",
+      "description": "You are four scientists tasked by the government to analyze a dangerous new virus as quickly as possible to inform emergency pandemic responses. Three laboratories—Lab Alpha, Lab Beta, and Lab Gamma—are available. An earthquake struck earlier today, causing possible damage throughout the facility. Time is critical: you must start the research within the next several hours.\n\nEach lab has unique equipment and safety features, but you must choose only one. All labs are typically considered safe, but the earthquake may have altered the situation. If you choose the only truly safe and operational lab, the research can proceed. If not, vital evidence could be lost, causing setbacks to containment efforts.",
+      "sharedInformation": [
+        "Lab Alpha contains specialized virology equipment but is located in the basement.",
+        "Lab Beta is on the second floor and was recently reinforced for earthquakes; all chemical storage in Beta remains secure after the quake.",
+        "Lab Gamma is on the top floor, farther from emergency exits, but has an independent air filtration system that passed government inspection last month.",
+        "Power is restored to all labs except Gamma, which is still on emergency battery backup."
+      ],
+      "privateInformation": [
+        "Structural engineers found a major crack in a supporting beam underneath Beta’s floor that worsened since initial inspections—unexpected aftershocks are expected within the next 24 hours.",
+        "All scheduled deliveries of reagents for virus research were mistakenly routed to Gamma and have now arrived there—but have not been delivered to the other labs, which now lack key supplies.",
+        "The emergency battery in Gamma has enough charge to last twelve more hours, which is enough for the critical first phase of the experiment, and the air system continues to operate independently regardless of main power.",
+        "Water is leaking into Lab Alpha from cracks in the basement wall, creating a risk of flooding and electrical hazards."
+      ],
+      "possibleAnswers": [
+        "Lab Alpha",
+        "Lab Beta",
+        "Lab Gamma"
+      ],
+      "agentCount": 4,
+      "optionCount": 3,
+      "shapeEligible": true,
+      "decision": {
+        "sourceTaskId": 45,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    },
+    {
+      "sourceTaskId": 47,
+      "taskDefinitionHash": "sha256:5c1db4b9982732f7594f5be2efa9f69d7156432122d45f07deb748b4eab7d2fe",
+      "name": "Find the Missing Prototype",
+      "description": "You are part of a crisis response team at a technology company the morning after a high-security incident: the company's new prototype device disappeared overnight. The CEO has called a meeting to coordinate the investigation and recover the prototype before the press arrives in three hours. The device is too large to have been taken out of the main office building, so it must be somewhere on this floor.\n\nYour Task:\nYou and three other team members must decide where to search first. There are three candidate locations:\n- Conference Room\n- Storage Room\n- CEO's Office\n\nYou must investigate only one location (you have one chance). If you find the prototype, the company avoids disaster and everyone gets a bonus. If not, security will sweep the other locations, but it may be too late (the press may find out).",
+      "sharedInformation": [
+        "The prototype device was last reported being wheeled down the main hallway toward the storage room late last night.",
+        "Security camera footage shows no suspicious activity in the hallways during the night.",
+        "The storage room and conference room are both located on the east side of the floor, while the CEO's office is on the west side.",
+        "The only staff authorized to enter all three locations are the four team participants (you) and the CEO."
+      ],
+      "privateInformation": [
+        "Reviewing badge swipe logs, you see none of the team members entered the storage room during the night or early morning.",
+        "According to cleaning staff schedules, the CEO's office is the only room that was not entered by any cleaning staff during the night – all others were cleaned between 2:00-5:00am.",
+        "During a maintenance inspection this morning, the building supervisor noted that the storage room door was jammed shut all night and couldn't be opened until after 8:00am – well after the prototype went missing.",
+        "The conference room was under renovation overnight and was locked from the inside with the only key held by the contractor, who signed in at 7:00am this morning."
+      ],
+      "possibleAnswers": [
+        "Conference Room",
+        "Storage Room",
+        "CEO's Office"
+      ],
+      "agentCount": 4,
+      "optionCount": 3,
+      "shapeEligible": true,
+      "decision": {
+        "sourceTaskId": 47,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    },
+    {
+      "sourceTaskId": 49,
+      "taskDefinitionHash": "sha256:51f9bf80941ff85ad27e61f75dcf8dd0a176b2bad48e96c3e7304596af2ce8cf",
+      "name": "choosing_the_safe_field_station",
+      "description": "You are part of a scientific expedition team about to cross a forested region to reach a field station for an urgent wildlife survey. Time is tight, and you can't afford to be delayed. There are three possible field stations to pick as your base: Riverside Station (accessible by the main bridge), Hilltop Cabin (accessible by a winding road), and Valley Edge Outpost (accessible via trails that split from the highway and from the riverside road). Each participant knows the base status, but different team members have received separate logistical updates from park rangers and local authorities. Only one station is reachable and safe for tonight.",
+      "sharedInformation": [
+        "A new bridge to Riverside Station was opened last month, and routine checks showed it was in good condition just this morning.",
+        "All supplies for tonight are already delivered to the three stations.",
+        "The park's main highway crosses both the river (to Riverside) and leads to the outpost (Valley Edge).",
+        "Weather this week has been unusually calm aside from some melting snow in the mountains."
+      ],
+      "privateInformation": [
+        "A fire department bulletin: the only small bridge giving alternate access to Valley Edge from the north is closed for urgent repairs until tomorrow.",
+        "A car radio alert: There's a sudden emergency at the upstream hydro dam, prompting evacuation orders for all stations directly downstream (including Riverside).",
+        "A message from a supply manager: the hiking trail connecting Riverside and Valley Edge is flooded and not passable on foot or vehicle.",
+        "A park ranger just reported a landslide has blocked the main highway leading toward Valley Edge Outpost."
+      ],
+      "possibleAnswers": [
+        "Riverside Station",
+        "Hilltop Cabin",
+        "Valley Edge Outpost"
+      ],
+      "agentCount": 4,
+      "optionCount": 3,
+      "shapeEligible": true,
+      "decision": {
+        "sourceTaskId": 49,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    },
+    {
+      "sourceTaskId": 51,
+      "taskDefinitionHash": "sha256:26062858f667ae425f9af61966a3a94e530a32fbc6497a91856410229b9e1444",
+      "name": "emergency_supply_distribution",
+      "description": "You are the logistics team for Disaster Aid Response, assigned to distribute urgent relief supplies to a small city after a severe ice storm. Three local storage sites (Alpha, Bravo, Charlie) hold different types of supplies. Your warehouse lost power several hours ago. You have one truck available, and must pick only ONE storage site to visit, loading all needed supplies in a single trip. Speed is important: another storm front may arrive within hours. The goal is to restock the local hospital and shelters with food and medicine before conditions worsen. Each of the three sites has previously reported being stocked as of two days ago. However, access and storage conditions may have changed after the ice storm. Only one site actually contains usable and deliverable supplies now. Which site should you dispatch the truck to?",
+      "sharedInformation": [
+        "Alpha Storage is the closest and is known to have backup generators for refrigeration; it is also reported to contain both food and medical supplies.",
+        "Bravo Storage is about 10km away, and only accessible via a steep road; it mostly stores canned food and dry goods.",
+        "Charlie Storage is furthest away and sits behind a rail crossing where the barrier arms sometimes get stuck during storms, causing delays.",
+        "Reports after the storm say that all three facilities experienced brief power outages, but the status of their backup systems was unconfirmed as of yesterday."
+      ],
+      "privateInformation": [
+        "Bravo Storage's power is still out, but it only contains canned/dry goods (which are not urgently needed for the hospital or shelters), and neither food needing refrigeration nor medicine.",
+        "The temperature at Alpha Storage rose above safe refrigeration levels overnight; most perishable food there has begun to spoil.",
+        "The road to Charlie Storage is passable after a city technician manually raised the crossing arms this morning; no delays are currently reported.",
+        "Alpha Storage's backup generator failed during the last refueling attempt and cannot be restarted without parts from out of town."
+      ],
+      "possibleAnswers": [
+        "Alpha Storage",
+        "Bravo Storage",
+        "Charlie Storage"
+      ],
+      "agentCount": 4,
+      "optionCount": 3,
+      "shapeEligible": true,
+      "decision": {
+        "sourceTaskId": 51,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    },
+    {
+      "sourceTaskId": 52,
+      "taskDefinitionHash": "sha256:97d258afeb4e9498fe63f979a87b4fb0d03515dc13f2ffff87e1c6ddafca094c",
+      "name": "mountain_storm_shelter",
+      "description": "Your hiking group is unexpectedly stranded in the mountains due to a rapidly approaching windstorm. You must immediately choose one place to shelter for the night before the storm intensifies. There are three well-known shelters within reach: Blue Lake Cabin, Red Cliff Lodge, and Green Valley Outpost. Only one option is safe and accessible—the others all hide serious dangers or are unreachable at present. Your team must coordinate and decide wisely; if you shelter in the only safe location, everyone survives. If you pick wrong, the outcome could be fatal.",
+      "sharedInformation": [
+        "Blue Lake Cabin has a recent delivery of emergency rations, medical kits, and blankets. It is accessible by crossing a bridge, which the ranger station repaired last week after a minor landslide.",
+        "Red Cliff Lodge is a solid stone building that usually withstands harsh weather, but contact was lost with its caretaker earlier today.",
+        "Green Valley Outpost is further away and designed primarily as a rest stop for day hikers, with basic shelter but minimal supplies.",
+        "The local ranger station’s last broadcast said the storm’s strongest winds are expected to hit somewhere north of your current location, but the reports are not exact."
+      ],
+      "privateInformation": [
+        "A sign near the Blue Lake trailhead warns that an upstream dam release is set for tonight, which will further raise water levels and could worsen the bridge collapse situation.",
+        "A new weather alert (missed in earlier updates) says the storm will hit Red Cliff Lodge directly, with extreme, possibly structural-damaging winds expected at that elevation.",
+        "A hiker coming from Blue Lake reports the bridge washed out in the last hour and is now impassable.",
+        "Green Valley Outpost, though lacking supplies, is built partially underground and is rated for emergency use in extreme weather, per a maintenance record found in your group’s gear."
+      ],
+      "possibleAnswers": [
+        "Blue Lake Cabin",
+        "Red Cliff Lodge",
+        "Green Valley Outpost"
+      ],
+      "agentCount": 4,
+      "optionCount": 3,
+      "shapeEligible": true,
+      "decision": {
+        "sourceTaskId": 52,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    },
+    {
+      "sourceTaskId": 54,
+      "taskDefinitionHash": "sha256:2c6ea8a5e2bf75a934e4c73579af41f5f51cf04ab99d86b9f32b719a739854a9",
+      "name": "island_research_base_choice",
+      "description": "You are part of a team of engineers tasked with selecting the site for a new field research base on an isolated island. The island recently experienced a major earthquake. There are three possible sites (A, B, and C), and each has its own pros and cons. All team members must agree on the safest and most viable option for the next six months. Only one site is actually safe post-earthquake. After the choice is made, the team will begin work immediately and cannot switch locations. Collaboration is crucial; only by sharing all unique information can you successfully identify the correct site.",
+      "sharedInformation": [
+        "Site A is close to the harbor and supply routes, with newly built infrastructure reportedly up to seismic standards.",
+        "Site B is located on high ground, safe from flooding, but farther from the harbor and supply routes; existing buildings are old but considered stable.",
+        "Site C is located in a valley near the center of the island, has limited road access, and is known to have patchy radio communications after storms.",
+        "Preliminary drone footage after the earthquake showed no major visible damage at any of the sites."
+      ],
+      "privateInformation": [
+        "Significant flooding and water contamination have been detected at Site B; heavy equipment cannot access the site and health risks are high.",
+        "The radio blackout at Site C is being caused by damaged antennas, not by terrain or long-term technical barriers—portable equipment can restore communications within hours.",
+        "A gas leak and flammable vapor have been detected near Site A that could create a serious explosion risk under certain weather conditions.",
+        "Unusual ground instability measurements have been found at Site A, suggesting a risk of sinkholes forming after the earthquake."
+      ],
+      "possibleAnswers": [
+        "Site A",
+        "Site B",
+        "Site C"
+      ],
+      "agentCount": 4,
+      "optionCount": 3,
+      "shapeEligible": true,
+      "decision": {
+        "sourceTaskId": 54,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    },
+    {
+      "sourceTaskId": 55,
+      "taskDefinitionHash": "sha256:1ade17408b6956aced5b42d7d3aae07662d3d0f9ef1c7db1ea308d62b18a5ad7",
+      "name": "emergency_drone_delivery",
+      "description": "A medical crisis has struck your town. An organ for a critical transplant is being delivered by special drone within the next hour. The drone pilot has requested you (the town’s response coordinators) select the landing site. There are three designated landing zones: the large public Park, the rooftop Helipad at the School, and the open lot at the Hospital. The organ must reach the patient in less than 30 minutes after landing. You have 10 minutes to decide as a group where the drone should land. Only one landing site is currently safe and available for use.",
+      "sharedInformation": [
+        "The Park’s open field is usually large enough for drone landings and has the simplest access for ground vehicles.",
+        "The School helipad was recently resurfaced and is officially cleared for use by civil defense.",
+        "The Hospital’s open lot is often kept clear, but part of it is currently being used for construction storage, possibly limiting space.",
+        "Volunteer drivers are already stationed at all three sites for fast delivery to the hospital, but only one group can be dispatched once the location is set."
+      ],
+      "privateInformation": [
+        "The school’s helipad is within 100 meters of a student sports event happening this afternoon; school policy strictly forbids landings during any outdoor student activity (violating this could delay the transplant with legal complications).",
+        "Construction equipment in the hospital lot currently blocks the main vehicle entrance, but a back alleyway (unmarked on most maps) has just been cleared for ambulances and emergency deliveries only.",
+        "Due to a malfunction, the park’s main floodlights cannot be turned on and the drone cannot safely land there after sunset. The delivery is arriving shortly after dusk.",
+        "Local authorities just issued an airspace closure over the Park due to a nearby unauthorized drone incursion—the area is off limits to all drones for the rest of the day."
+      ],
+      "possibleAnswers": [
+        "Park",
+        "School",
+        "Hospital"
+      ],
+      "agentCount": 4,
+      "optionCount": 3,
+      "shapeEligible": true,
+      "decision": {
+        "sourceTaskId": 55,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    },
+    {
+      "sourceTaskId": 61,
+      "taskDefinitionHash": "sha256:66d890f17b754dab80bd326ac184dc82fa2020a7ab676317bb8a648b4c746028",
+      "name": "power_outage_island",
+      "description": "You are a four-person technical team sent to a remote research island. Overnight, power was lost across critical systems, affecting experiments and communications. Your mission: identify the location where the root cause began, so specialist engineers can be dispatched directly. Time is critical—delays could risk irrevocable damage to ongoing research and local wildlife preservation efforts. The potential sources are: 1) the Main Generator Room, 2) the Water Pump Facility, or 3) the Communication Tower. All sites are on different parts of the island and hard to reach. You must choose exactly one source location for the engineers' immediate response.",
+      "sharedInformation": [
+        "Power readings indicate the main generator is offline. Emergency lights in the lab are still on, running on backup batteries.",
+        "Multiple research loggers lost connection to the network exactly at midnight; this is when the main generator alarms sounded.",
+        "Earlier in the evening, an engineer found nothing unusual in the Main Generator Room.",
+        "Security logs reveal that a storm struck the island at 11:30pm, with a single bolt of lightning recorded striking close to the Main Generator Room."
+      ],
+      "privateInformation": [
+        "When backup generators were switched on, communication remained down island-wide, but water pumps worked.",
+        "After midnight, instruments in the water pump facility still reported water flow until 1:15am, despite the generator already being offline.",
+        "Engineering records show the Communication Tower has a separate lightning grounding system, but the system's surge indicator was triggered during the night.",
+        "A technician dispatched to the generator room after dawn found no evidence of a fire, breach, or power relay issue."
+      ],
+      "possibleAnswers": [
+        "Main Generator Room",
+        "Water Pump Facility",
+        "Communication Tower"
+      ],
+      "agentCount": 4,
+      "optionCount": 3,
+      "shapeEligible": true,
+      "decision": {
+        "sourceTaskId": 61,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    },
+    {
+      "sourceTaskId": 63,
+      "taskDefinitionHash": "sha256:8444d9c1ec1111d6fedeb10f1c815fa5dd12850d7fb64582540feaee5fba399c",
+      "name": "Emergency Event Relocation",
+      "description": "Your team is in charge of relocating a major university event due to an unexpected power failure at the original venue. You must choose a new location from three options within the campus, each with pros and cons. Time is tight: the event is in two hours, so you must act quickly. Each possible venue must accommodate 200 attendees and provide shelter in case of sudden rain. All venues are prepared and have been used for similar events in the past. You'll lose significant event funding if your choice proves unsafe or unusable.",
+      "sharedInformation": [
+        "Garden Hall has a small roof leak reported overnight, but staff have placed buckets to catch any water. The main hall was not inspected this morning because staff prioritized the Pavilion and Lodge.",
+        "River Pavilion is fully set up, and security has confirmed it is dry and free of flooding. Pavilion staff are onsite, kitchens are stocked, and all technical equipment has been tested as working post-storm.",
+        "Mountain Lodge is on high ground and has backup power. However, heavy snow has been falling since last night, and it's uncertain whether the road will stay open."
+      ],
+      "privateInformation": [
+        "The access road to Mountain Lodge was completely blocked by fallen trees at 8am, and campus maintenance does not expect it to be cleared today. Also, the roof leak at Garden Hall is only over the storage closet; the main hall is confirmed dry and ready.",
+        "A Pavilion staff member disclosed privately that mold was discovered under the kitchen sink during setup; he worries it could affect food safety if it gets stirred up during cooking.",
+        "River Pavilion's kitchen experienced a brief electrical short circuit this morning; staff report the smell of burning wires lingered but cleared quickly.",
+        "Maintenance at River Pavilion discovered areas under the wooden floor feel spongy; one floorboard was discovered to be cracked, but staff covered the area with a mat for now."
+      ],
+      "possibleAnswers": [
+        "Garden Hall",
+        "River Pavilion",
+        "Mountain Lodge"
+      ],
+      "agentCount": 4,
+      "optionCount": 3,
+      "shapeEligible": true,
+      "decision": {
+        "sourceTaskId": 63,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    },
+    {
+      "sourceTaskId": 65,
+      "taskDefinitionHash": "sha256:f471791c3f603571c76f1f34bbe9af01b7e7fb6c12a1bc5ee291ddae02b6d8da",
+      "name": "Missing Medicine Delivery",
+      "description": "You are staff members at a small town's emergency management center. Yesterday, a medical drone dropped off a package of vital medicines intended for vulnerable families amid a local outbreak. There are three main drop-off points: the Pharmacy, the Clinic, and the School Gym (which is currently serving as a relief shelter). However, owing to a record-keeping error, it is unclear where the drone left the package. You urgently need to locate the medicines to distribute them. Each staff member has received a different piece of eyewitness or logistical information. You must quickly agree on where to send the retrieval team. Only one location is correct, so careful communication and reasoning are critical.",
+      "sharedInformation": [
+        "The Pharmacy is the established primary delivery point for urgent medicines and was originally designated to receive the package.",
+        "Staff at the Clinic and School Gym both have prior experience handling medical packages dropped by drones.",
+        "Security cameras at all three locations are malfunctioning—the footage is unavailable.",
+        "The drone made the drop-off at 7:30am to avoid crowds."
+      ],
+      "privateInformation": [
+        "A staff member at the Pharmacy discovered the medicine cart had been stolen from the loading dock before 7:00am, and was not replaced until after 9:00am.",
+        "According to the Pharmacy owner, the front entrance was locked for inventory from 7am-8am, and no deliveries were expected during that hour.",
+        "A temporary detour was in effect on the road to the Clinic at 7:30am, and morning deliveries were redirected to other sites until after 9am.",
+        "A neighbor reported seeing a package-carrying drone hover over the School Gym briefly at 7:30am, but did not see anyone retrieve a package."
+      ],
+      "possibleAnswers": [
+        "Pharmacy",
+        "Clinic",
+        "School Gym"
+      ],
+      "agentCount": 4,
+      "optionCount": 3,
+      "shapeEligible": true,
+      "decision": {
+        "sourceTaskId": 65,
+        "reviewStatus": "pending",
+        "semanticLeakageGroupId": null,
+        "crossSplitStatus": "pending",
+        "overlapSourceTaskIds": [],
+        "reviewer": null
+      }
+    }
+  ],
+  "shapeEligibleTaskIds": [
+    3,
+    5,
+    7,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    27,
+    28,
+    29,
+    31,
+    32,
+    35,
+    37,
+    39,
+    40,
+    45,
+    47,
+    49,
+    51,
+    52,
+    54,
+    55,
+    61,
+    63,
+    65
+  ],
+  "acceptedTaskIds": [],
+  "acceptedIndependentSemanticGroupCount": 0,
+  "developmentGrouping": {
+    "authority": "ai_adjudicated_development_only",
+    "scientificSplitAuthority": "none",
+    "groupCount": 7,
+    "groups": [
+      {
+        "groupId": "dev-semantic:formal-personnel-selection",
+        "sourceTaskIds": [
+          5
+        ]
+      },
+      {
+        "groupId": "dev-semantic:formal-procurement-criteria",
+        "sourceTaskIds": [
+          7
+        ]
+      },
+      {
+        "groupId": "dev-semantic:forensic-localization",
+        "sourceTaskIds": [
+          13,
+          47,
+          61,
+          65
+        ]
+      },
+      {
+        "groupId": "dev-semantic:shelter-venue-suitability",
+        "sourceTaskIds": [
+          11,
+          12,
+          15,
+          18,
+          19,
+          20,
+          22,
+          29,
+          35,
+          52,
+          63
+        ]
+      },
+      {
+        "groupId": "dev-semantic:infrastructure-site-viability",
+        "sourceTaskIds": [
+          16,
+          24,
+          27,
+          31,
+          37,
+          45,
+          51,
+          54
+        ]
+      },
+      {
+        "groupId": "dev-semantic:route-transport-accessibility",
+        "sourceTaskIds": [
+          3,
+          21,
+          28,
+          32,
+          39,
+          40,
+          49,
+          55
+        ]
+      },
+      {
+        "groupId": "dev-semantic:ordinary-event-suitability",
+        "sourceTaskIds": [
+          14,
+          23
+        ]
+      }
+    ]
+  },
+  "developmentScreen": {
+    "authority": "exploratory_only",
+    "selectionRule": "lowest_source_task_id_per_ai_adjudicated_group_before_provider_calls",
+    "stage1TaskIds": [
+      5,
+      7,
+      13,
+      11,
+      16,
+      3,
+      14
+    ],
+    "stage1Budget": {
+      "selectedTaskCount": 7,
+      "publicDiscussionCalls": 84,
+      "primarySensorCalls": 112,
+      "duplicateSensorCalls": 7,
+      "totalProviderCalls": 203,
+      "maximumOutputTokens": 94976,
+      "inputTokens": null,
+      "monetaryCost": null,
+      "unresolvedCostFields": [
+        "serialized_input_tokens",
+        "current_glm_price",
+        "user_currency_cap"
+      ]
+    },
+    "stage2SelectionRule": "second_lowest_source_task_id_for_groups_with_at_least_two_tasks",
+    "stage2TaskIds": [
+      47,
+      12,
+      24,
+      21,
+      23
+    ],
+    "stage2IncrementalBudget": {
+      "selectedTaskCount": 5,
+      "publicDiscussionCalls": 60,
+      "primarySensorCalls": 80,
+      "duplicateSensorCalls": 5,
+      "totalProviderCalls": 145,
+      "maximumOutputTokens": 67840,
+      "inputTokens": null,
+      "monetaryCost": null,
+      "unresolvedCostFields": [
+        "serialized_input_tokens",
+        "current_glm_price",
+        "user_currency_cap"
+      ]
+    }
+  },
+  "selectedTaskIds": [],
+  "duplicateSensorSchedule": [],
+  "budget": {
+    "selectedTaskCount": 32,
+    "publicDiscussionCalls": 384,
+    "primarySensorCalls": 512,
+    "duplicateSensorCalls": 32,
+    "totalProviderCalls": 928,
+    "maximumOutputTokens": 434176,
+    "inputTokens": null,
+    "monetaryCost": null,
+    "unresolvedCostFields": [
+      "serialized_input_tokens",
+      "current_glm_price",
+      "user_currency_cap"
+    ]
+  },
+  "readiness": "DEFER",
+  "blockers": [
+    "HUMAN_SEMANTIC_REVIEW_INCOMPLETE",
+    "INSUFFICIENT_INDEPENDENT_SEMANTIC_GROUPS",
+    "SERIALIZED_INPUT_TOKEN_BUDGET_NOT_FROZEN",
+    "CURRENT_GLM_PRICE_NOT_FROZEN",
+    "USER_CURRENCY_CAP_NOT_APPROVED"
+  ],
+  "contentHash": "sha256:a267f1de4a8e4f5a0a270b4b7c67a7b6e4434e653459ce24c9f99dd7da2d1dd3"
+}

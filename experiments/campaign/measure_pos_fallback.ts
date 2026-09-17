@@ -10,7 +10,7 @@
 import * as fs from "fs";
 import * as path from "path";
 import { loadAllConfigs } from "./tasks/hiddenbench/adapter";
-import { extractRanking, normalizeItemName, kendallTau } from "../v2/statsShared";
+import { extractRanking, normalizeItemName, kendallTau } from "../../legacy/experiments/v2/statsShared";
 
 /** 复制 extractRanking 核心逻辑，但跳过 263-297 位置回退块（P0c 审计用） */
 function extractRankingNoFallback(

@@ -1,0 +1,79 @@
+{
+  "evaluationRef": {
+    "id": "swarmalpha.evaluation.v6.discussion-thermometer-natural-dynamics-replication",
+    "version": "1.0.0"
+  },
+  "planHash": "sha256:d519a821a78aaa5c565274f0fe0ad50793ec4b7a35cad47f9dabe485ee5e278d",
+  "sourceAnalysisHash": "sha256:b932fe4ef94969428e422a4c252494f109cf9339484858994778310908cafa05",
+  "evidenceClass": "provider_observation",
+  "truthAccess": "none",
+  "predictionUsed": false,
+  "actionUsed": false,
+  "executionCompleteness": {
+    "taskCount": 4,
+    "checkpointCountPerTrajectory": 5,
+    "transitionCountPerTrajectory": 4,
+    "observedTransitionCount": 16
+  },
+  "registeredRules": {
+    "polarizedLateEnvelopeReplication": {
+      "requiredConsecutiveLateEnvelopeTransitionsPerBase": 2,
+      "byBase": [
+        {
+          "baseScenarioId": "thermal-loop",
+          "lateClasses": [
+            "within_repeatability_envelope_all_agents",
+            "within_repeatability_envelope_all_agents",
+            "heterogeneous_submajority_motion"
+          ],
+          "maximumConsecutiveEnvelopeTransitions": 2,
+          "pass": true
+        },
+        {
+          "baseScenarioId": "service-access",
+          "lateClasses": [
+            "within_repeatability_envelope_all_agents",
+            "within_repeatability_envelope_all_agents",
+            "within_repeatability_envelope_all_agents"
+          ],
+          "maximumConsecutiveEnvelopeTransitions": 3,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    "sharedCueMotionResourceReplication": {
+      "requiredResolvedMajorityTransitionsPerBase": 1,
+      "byBase": [
+        {
+          "baseScenarioId": "thermal-loop",
+          "transitionClasses": [
+            "heterogeneous_submajority_motion",
+            "resolved_majority_motion",
+            "within_repeatability_envelope_all_agents",
+            "within_repeatability_envelope_all_agents"
+          ],
+          "resolvedMajorityTransitionCount": 1,
+          "pass": true
+        },
+        {
+          "baseScenarioId": "service-access",
+          "transitionClasses": [
+            "resolved_majority_motion",
+            "heterogeneous_submajority_motion",
+            "within_repeatability_envelope_all_agents",
+            "within_repeatability_envelope_all_agents"
+          ],
+          "resolvedMajorityTransitionCount": 1,
+          "pass": true
+        }
+      ],
+      "pass": true
+    }
+  },
+  "overallRegisteredRulesPass": true,
+  "interpretationStatus": "TARGETED_REPLICATION_CRITERIA_PASS",
+  "identificationCeiling": "Passing these post-development, same-task criteria establishes repeatable observation resources at exact-duplicate resolution only. It does not identify transport, latent stability, dwell-time distributions, hazards, attractors, metastability, correctness, intervention effects, or governance value.",
+  "nextScientificRequirement": "Use new task instances or a new scenario family before making a transport claim; retain the same observation contract and registered rules.",
+  "contentHash": "sha256:f56588edc512d0eddff738565070a30f5d2eb46d3538fc1358427109a214f492"
+}

@@ -24,8 +24,8 @@ dotenv.config({ path: path.resolve(__dirname, "..", "..", ".env.local") });
 import { runHiddenBenchProtocol } from "./pipeline/hiddenbenchProtocol";
 import { detectLLMProvider } from "../../src/lib/llm/providers";
 import type { LLMConfig } from "../../src/lib/llm/providers";
-import { TASK_LUNAR, TASK_MA } from "../lunar_survival/config";
-import { TASK_CRISIS, TASK_CRISIS_V2 } from "../v2/task_crisis";
+import { TASK_LUNAR, TASK_MA } from "../../legacy/experiments/lunar_survival/config";
+import { TASK_CRISIS, TASK_CRISIS_V2 } from "../../legacy/experiments/v2/task_crisis";
 
 const OUT_DIR = path.resolve(__dirname, "output", "explore_hiddenbench_protocol");
 

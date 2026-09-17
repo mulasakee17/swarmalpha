@@ -8,6 +8,16 @@ import type { CategoricalEpistemicClaim } from "./types";
 
 const PROBABILITY_TOLERANCE = 1e-6;
 
+/**
+ * Tests the declared simplex tolerance while allowing only the floating-point
+ * error introduced by summing a finite number of already-validated terms.
+ * This does not renormalize or otherwise change the reported probabilities.
+ */
+export function probabilityTotalWithinTolerance(total: number, termCount: number): boolean {
+  const summationAllowance = 8 * Number.EPSILON * Math.max(1, termCount);
+  return Math.abs(total - 1) <= PROBABILITY_TOLERANCE + summationAllowance;
+}
+
 function requireNonEmpty(value: string, field: string): void {
   if (value.trim().length === 0) throw new Error(`${field} must not be empty`);
 }
@@ -119,7 +129,7 @@ const categoricalContract: BeliefContract = {
       validateProbability(probability, `belief.probabilities.${option}`);
       total += probability;
     }
-    if (Math.abs(total - 1) > PROBABILITY_TOLERANCE) {
+    if (!probabilityTotalWithinTolerance(total, expectedOptions.length)) {
       throw new Error(`Categorical belief probabilities for ${claim.id} must sum to 1`);
     }
   },
@@ -171,8 +181,8 @@ const categoricalContract: BeliefContract = {
       rightTotal += rightProbability;
       l1Distance += Math.abs(leftProbability - rightProbability);
     }
-    if (Math.abs(leftTotal - 1) > PROBABILITY_TOLERANCE
-      || Math.abs(rightTotal - 1) > PROBABILITY_TOLERANCE) {
+    if (!probabilityTotalWithinTolerance(leftTotal, leftOptions.length)
+      || !probabilityTotalWithinTolerance(rightTotal, rightOptions.length)) {
       throw new Error("Categorical distance requires probabilities that sum to 1");
     }
     return 0.5 * l1Distance;
@@ -188,7 +198,7 @@ const categoricalContract: BeliefContract = {
       total += probability;
       if (probability > 0) entropy -= probability * Math.log(probability);
     }
-    if (Math.abs(total - 1) > PROBABILITY_TOLERANCE) {
+    if (!probabilityTotalWithinTolerance(total, probabilities.length)) {
       throw new Error("Categorical uncertainty requires probabilities that sum to 1");
     }
     return entropy / Math.log(probabilities.length);

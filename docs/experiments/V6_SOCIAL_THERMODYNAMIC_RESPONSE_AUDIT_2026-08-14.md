@@ -2,7 +2,7 @@
 
 **STOP — 当前 H_E/κ V1 macrostate degeneracy；response-effect 证据 DEFER；政策授权 NO-GO**
 
-状态：FACT REPORT — 只读零 provider 分析，2026-08-14。权威契约：`docs/theory/SOCIAL_THERMODYNAMIC_RESPONSE_RESEARCH_CONTRACT_V1.md`；执行指南：`docs/plans/CLAUDE_CODE_SOCIAL_THERMODYNAMIC_RESPONSE_AUDIT_HANDOFF_2026-08-14.md`。
+状态：FACT REPORT — 只读零 provider 分析，2026-08-14。权威契约：`docs/theory/SOCIAL_THERMODYNAMIC_RESPONSE_RESEARCH_CONTRACT_V1.md`；历史执行指南：`legacy/docs/archive/plans/CLAUDE_CODE_SOCIAL_THERMODYNAMIC_RESPONSE_AUDIT_HANDOFF_2026-08-14.md`。
 
 结果：**STOP（针对当前 H_E/κ V1 macrostate degeneracy）；response-effect 证据 DEFER；政策授权 NO-GO**。在冻结的 development-to-heldout 规则下，当前证据不足以支持"高 κ 状态中 apply 相对 holdout 有方向稳定收益"的状态响应假设；也不构成对其的反证（heldout 高/低臂 point 均为负、interaction 方向与假设一致，但支持量远低于冻结 gate）。本次 STOP 仅针对当前 H_E/κ V1 macrostate degeneracy 下的状态响应评估，**不停止更广泛的 social-thermodynamics 研究计划**。
 

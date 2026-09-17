@@ -1,0 +1,193 @@
+{
+  "auditRef": {
+    "id": "swarmalpha.audit.v6.discussion-thermometer-state-space",
+    "version": "1.0.0",
+    "providerCalls": 0,
+    "tolerance": 1e-12
+  },
+  "truthAccess": "none",
+  "states": [
+    {
+      "label": "unanimous_concentrated",
+      "coverage": 1,
+      "pooled": {
+        "opt_1": 0.9,
+        "opt_2": 0.05,
+        "opt_3": 0.05
+      },
+      "meanReportEntropy": 0.3589962496465304,
+      "pooledEntropy": 0.3589962496465304,
+      "generalizedJsd": 0,
+      "concentration": 0.9,
+      "pottsStyleOrder": 0.8500000000000001,
+      "meanPairwiseTv": 0,
+      "maxPairwiseTv": 0,
+      "meanReplicateTv": null
+    },
+    {
+      "label": "unanimous_diffuse",
+      "coverage": 1,
+      "pooled": {
+        "opt_1": 0.45,
+        "opt_2": 0.3,
+        "opt_3": 0.25
+      },
+      "meanReportEntropy": 0.9713107216099232,
+      "pooledEntropy": 0.9713107216099232,
+      "generalizedJsd": 0,
+      "concentration": 0.45,
+      "pottsStyleOrder": 0.17500000000000004,
+      "meanPairwiseTv": 0,
+      "maxPairwiseTv": 0,
+      "meanReplicateTv": null
+    },
+    {
+      "label": "polarized",
+      "coverage": 1,
+      "pooled": {
+        "opt_1": 0.47500000000000003,
+        "opt_2": 0.475,
+        "opt_3": 0.05
+      },
+      "meanReportEntropy": 0.3589962496465304,
+      "pooledEntropy": 0.7800796274696701,
+      "generalizedJsd": 0.4210833778231397,
+      "concentration": 0.47500000000000003,
+      "pottsStyleOrder": 0.21250000000000002,
+      "meanPairwiseTv": 0.5666666666666667,
+      "maxPairwiseTv": 0.85,
+      "meanReplicateTv": null
+    },
+    {
+      "label": "macro_collision_a",
+      "coverage": 1,
+      "pooled": {
+        "opt_1": 0.5,
+        "opt_2": 0.5,
+        "opt_3": 0
+      },
+      "meanReportEntropy": 0.315464876785729,
+      "pooledEntropy": 0.6309297535714575,
+      "generalizedJsd": 0.31546487678572854,
+      "concentration": 0.5,
+      "pottsStyleOrder": 0.25,
+      "meanPairwiseTv": 0.5199628474155205,
+      "maxPairwiseTv": 0.7799442711232807,
+      "meanReplicateTv": null
+    },
+    {
+      "label": "macro_collision_b",
+      "coverage": 1,
+      "pooled": {
+        "opt_1": 0.5,
+        "opt_2": 0.5,
+        "opt_3": 0
+      },
+      "meanReportEntropy": 0.31546487678572877,
+      "pooledEntropy": 0.6309297535714575,
+      "generalizedJsd": 0.31546487678572877,
+      "concentration": 0.5,
+      "pottsStyleOrder": 0.25,
+      "meanPairwiseTv": 0.5,
+      "maxPairwiseTv": 1,
+      "meanReplicateTv": null
+    },
+    {
+      "label": "partial_roster",
+      "coverage": 0.75,
+      "pooled": {
+        "opt_1": 0.6,
+        "opt_2": 0.3,
+        "opt_3": 0.1
+      },
+      "meanReportEntropy": 0.8173454221465102,
+      "pooledEntropy": 0.8173454221465102,
+      "generalizedJsd": 0,
+      "concentration": 0.6,
+      "pottsStyleOrder": 0.3999999999999999,
+      "meanPairwiseTv": 0,
+      "maxPairwiseTv": 0,
+      "meanReplicateTv": null
+    }
+  ],
+  "transitions": {
+    "cancelingUpdate": {
+      "meanAgentTv": 0.1,
+      "pooledTv": 5.551115123125783e-17
+    },
+    "coherentUpdate": {
+      "meanAgentTv": 0.19999999999999998,
+      "pooledTv": 0.19999999999999998
+    },
+    "belowRepeatability": {
+      "meanAgentTv": 0.009999999999999995,
+      "endpointRepeatability": 0.019999999999999955,
+      "comparison": "not_above_reference"
+    },
+    "incompleteRoster": {
+      "completeMatchedRoster": false,
+      "meanAgentTv": 0.10000000000000002,
+      "pooledTv": null
+    }
+  },
+  "prefixCausality": {
+    "prefixReadingHashesStable": true,
+    "firstPrefixLength": 1,
+    "finalLength": 3
+  },
+  "checks": [
+    {
+      "id": "unanimous_states_separate_concentration_from_uncertainty",
+      "pass": true,
+      "detail": "Both groups agree internally, while U and concentration distinguish firm from diffuse agreement."
+    },
+    {
+      "id": "polarization_visible_beyond_pooled_concentration",
+      "pass": true,
+      "detail": "A split group has positive generalized JSD and a high pairwise-TV tail."
+    },
+    {
+      "id": "macro_projection_non_injective_but_micro_geometry_retained",
+      "pass": true,
+      "detail": "Equal q/U/J can conceal different pairwise geometry, so P_t remains part of the archived observed state."
+    },
+    {
+      "id": "canceling_updates_visible_at_agent_level",
+      "pass": true,
+      "detail": "Opposing individual updates cancel in q_t but remain visible in mean-agent TV."
+    },
+    {
+      "id": "coherent_updates_visible_in_micro_and_pool",
+      "pass": true,
+      "detail": "Aligned updates move both individual reports and the pooled vector."
+    },
+    {
+      "id": "movement_below_repeatability_not_promoted",
+      "pass": true,
+      "detail": "A cross-time movement smaller than endpoint duplicate variation is retained numerically but not labeled above-reference."
+    },
+    {
+      "id": "incomplete_roster_blocks_pooled_drift",
+      "pass": true,
+      "detail": "Matched-agent movement remains available while composition-sensitive pooled drift fails closed."
+    },
+    {
+      "id": "partial_primary_coverage_is_explicit",
+      "pass": true,
+      "detail": "Missing primary reports reduce coverage and are not imputed."
+    },
+    {
+      "id": "prefix_causality",
+      "pass": true,
+      "detail": "Appending later observations preserves every earlier reading hash."
+    }
+  ],
+  "allChecksPass": true,
+  "interpretation": [
+    "The thermometer is a multi-readout monitor; no single scalar orders all group states.",
+    "q and U summarize the macrostate, while J, concentration, order, and pairwise TV are derived diagnostics.",
+    "Agent-level activity is required because pooled drift can hide canceling internal updates.",
+    "The audit establishes mathematical resolution on constructed states, not empirical construct validity on LLM discussions."
+  ],
+  "contentHash": "sha256:0f3bceee79ac2163433681ab0ed54c90eddff2309d08531752431472860f0fe1"
+}

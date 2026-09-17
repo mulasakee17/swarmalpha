@@ -4,6 +4,7 @@ import {
 } from "./estimators";
 import {
   defaultBeliefContractRegistry,
+  probabilityTotalWithinTolerance,
   validateEpistemicClaim,
   type BeliefContractRegistry,
 } from "./contracts";
@@ -502,7 +503,9 @@ export function validateCollectiveEpistemicStateV1(state: CollectiveEpistemicSta
       requireUnitInterval(probability, `pooledBelief.probabilities.${option}`);
       total += probability;
     }
-    if (Math.abs(total - 1) > 1e-6) throw new Error("pooled categorical probabilities must sum to one");
+    if (!probabilityTotalWithinTolerance(total, entries.length)) {
+      throw new Error("pooled categorical probabilities must sum to one");
+    }
     pooledMaximum = Math.max(...entries.map(([, probability]) => probability));
     validPredictedOutcomes = entries
       .filter(([, probability]) => Math.abs(probability - pooledMaximum) <= Number.EPSILON)

@@ -1,0 +1,669 @@
+{
+  "analysisRef": {
+    "id": "swarmalpha.analysis.v6.discussion-thermometer-l4-within-channel",
+    "version": "1.2.0",
+    "estimator": "standardized_fractional_logit_ridge_v1",
+    "primaryLambda": 1,
+    "sensitivityLambdas": [
+      0.1,
+      1,
+      10
+    ],
+    "predictionCheckpoints": [
+      1,
+      2
+    ]
+  },
+  "source": {
+    "outputDirectory": "C:\\Users\\贺孟元\\Desktop\\swarmalpha\\results\\v6_discussion_thermometer_l4_development_stage1_glm46v_seed1",
+    "baseAnalysisHash": "sha256:15c18a7987feb0812a9d800c434700cb88f146e5e9877923ce9e0a0c2f7ec550"
+  },
+  "design": {
+    "authority": "development_only_not_confirmatory",
+    "truthAccess": "none",
+    "inferenceUnit": "task",
+    "observationUnit": "task_checkpoint_transition",
+    "taskCount": 7,
+    "semanticGroupCount": 7,
+    "predictionCheckpoints": [
+      1,
+      2
+    ],
+    "targetChannel": "next_primary_report_transition",
+    "estimator": "standardized_fractional_logit_ridge_v1",
+    "primaryLambda": 1,
+    "sensitivityLambdas": [
+      0.1,
+      1,
+      10
+    ],
+    "featureLadder": [
+      "BEHAVIOR",
+      "MACRO",
+      "MICROSTATE"
+    ],
+    "loss": "mean_squared_error_on_bounded_fractional_target"
+  },
+  "targets": [
+    {
+      "targetId": "next_mean_agent_total_variation",
+      "rowCount": 14,
+      "taskCount": 7,
+      "targetMean": 0.09732139285714284,
+      "zeroTargetRowCount": 7,
+      "byCheckpoint": [
+        {
+          "checkpoint": 1,
+          "rowCount": 7,
+          "meanTarget": 0.11785710714285713
+        },
+        {
+          "checkpoint": 2,
+          "rowCount": 7,
+          "meanTarget": 0.07678567857142857
+        }
+      ],
+      "structuralToBehavior": {
+        "primary": {
+          "baselineFamily": "STRUCTURAL",
+          "candidateFamily": "BEHAVIOR",
+          "estimator": "standardized_fractional_logit_ridge_v1",
+          "lambda": 1,
+          "holdoutKey": "taskId",
+          "rowCount": 14,
+          "groupCount": 7,
+          "shapeKey": "N4:K3",
+          "baselineMeanSquaredError": 0.04247240060016788,
+          "candidateMeanSquaredError": 0.04085842716573144,
+          "candidateMinusBaselineMeanSquaredError": -0.0016139734344364429,
+          "groupLossDeltas": [
+            {
+              "groupId": "task:11",
+              "candidateMinusBaseline": 0.002505043688263625
+            },
+            {
+              "groupId": "task:13",
+              "candidateMinusBaseline": 0.039149751603850404
+            },
+            {
+              "groupId": "task:14",
+              "candidateMinusBaseline": -0.0038221791085708973
+            },
+            {
+              "groupId": "task:16",
+              "candidateMinusBaseline": -0.003152306997127036
+            },
+            {
+              "groupId": "task:3",
+              "candidateMinusBaseline": -0.01159143185776371
+            },
+            {
+              "groupId": "task:5",
+              "candidateMinusBaseline": -0.011591431857763701
+            },
+            {
+              "groupId": "task:7",
+              "candidateMinusBaseline": -0.022795259511943833
+            }
+          ],
+          "signFlip": {
+            "observedMean": -0.0016139734344364496,
+            "repetitions": 128,
+            "method": "exact",
+            "nullMean": -2.981555974335137e-19,
+            "absoluteQuantile95": 0.012423292344020202,
+            "twoSidedExceedance": 0.875
+          }
+        },
+        "sensitivity": [
+          {
+            "lambda": 0.1,
+            "candidateMinusBaselineMeanSquaredError": 0.005275465427087234,
+            "pairedSignFlipTwoSidedPValue": 0.78125
+          },
+          {
+            "lambda": 1,
+            "candidateMinusBaselineMeanSquaredError": -0.0016139734344364429,
+            "pairedSignFlipTwoSidedPValue": 0.875
+          },
+          {
+            "lambda": 10,
+            "candidateMinusBaselineMeanSquaredError": -0.002903115283592564,
+            "pairedSignFlipTwoSidedPValue": 0.09375
+          }
+        ],
+        "classification": "development_directional_only"
+      },
+      "behaviorToMacro": {
+        "primary": {
+          "baselineFamily": "BEHAVIOR",
+          "candidateFamily": "MACRO",
+          "estimator": "standardized_fractional_logit_ridge_v1",
+          "lambda": 1,
+          "holdoutKey": "taskId",
+          "rowCount": 14,
+          "groupCount": 7,
+          "shapeKey": "N4:K3",
+          "baselineMeanSquaredError": 0.04085842716573144,
+          "candidateMeanSquaredError": 0.05134928042046188,
+          "candidateMinusBaselineMeanSquaredError": 0.01049085325473044,
+          "groupLossDeltas": [
+            {
+              "groupId": "task:11",
+              "candidateMinusBaseline": -0.002620423430803348
+            },
+            {
+              "groupId": "task:13",
+              "candidateMinusBaseline": 0.04377509732538623
+            },
+            {
+              "groupId": "task:14",
+              "candidateMinusBaseline": 0.020019003598157833
+            },
+            {
+              "groupId": "task:16",
+              "candidateMinusBaseline": 0.00018714121466616423
+            },
+            {
+              "groupId": "task:3",
+              "candidateMinusBaseline": -0.00030779964433941135
+            },
+            {
+              "groupId": "task:5",
+              "candidateMinusBaseline": -0.00037785526327375855
+            },
+            {
+              "groupId": "task:7",
+              "candidateMinusBaseline": 0.012760808983319383
+            }
+          ],
+          "signFlip": {
+            "observedMean": 0.010490853254730441,
+            "repetitions": 128,
+            "method": "exact",
+            "nullMean": 3.7947076036992655e-19,
+            "absoluteQuantile95": 0.011327488419056944,
+            "twoSidedExceedance": 0.234375
+          }
+        },
+        "sensitivity": [
+          {
+            "lambda": 0.1,
+            "candidateMinusBaselineMeanSquaredError": 0.049041078007791575,
+            "pairedSignFlipTwoSidedPValue": 0.296875
+          },
+          {
+            "lambda": 1,
+            "candidateMinusBaselineMeanSquaredError": 0.01049085325473044,
+            "pairedSignFlipTwoSidedPValue": 0.234375
+          },
+          {
+            "lambda": 10,
+            "candidateMinusBaselineMeanSquaredError": 0.00028296050516415927,
+            "pairedSignFlipTwoSidedPValue": 1
+          }
+        ],
+        "classification": "no_development_increment_observed"
+      },
+      "macroToMicrostate": {
+        "primary": {
+          "baselineFamily": "MACRO",
+          "candidateFamily": "MICROSTATE",
+          "estimator": "standardized_fractional_logit_ridge_v1",
+          "lambda": 1,
+          "holdoutKey": "taskId",
+          "rowCount": 14,
+          "groupCount": 7,
+          "shapeKey": "N4:K3",
+          "baselineMeanSquaredError": 0.05134928042046188,
+          "candidateMeanSquaredError": 0.06182763018476601,
+          "candidateMinusBaselineMeanSquaredError": 0.010478349764304132,
+          "groupLossDeltas": [
+            {
+              "groupId": "task:11",
+              "candidateMinusBaseline": -0.011150718306183971
+            },
+            {
+              "groupId": "task:13",
+              "candidateMinusBaseline": 0.008903307187192858
+            },
+            {
+              "groupId": "task:14",
+              "candidateMinusBaseline": 0.059737192029444997
+            },
+            {
+              "groupId": "task:16",
+              "candidateMinusBaseline": 0.00002475167893630295
+            },
+            {
+              "groupId": "task:3",
+              "candidateMinusBaseline": -0.0005646452807665915
+            },
+            {
+              "groupId": "task:5",
+              "candidateMinusBaseline": -0.0009024891584376329
+            },
+            {
+              "groupId": "task:7",
+              "candidateMinusBaseline": 0.017301050199943047
+            }
+          ],
+          "signFlip": {
+            "observedMean": 0.010478349764304144,
+            "repetitions": 128,
+            "method": "exact",
+            "nullMean": 1.0842021724855044e-19,
+            "absoluteQuantile95": 0.013915051417357088,
+            "twoSidedExceedance": 0.359375
+          }
+        },
+        "sensitivity": [
+          {
+            "lambda": 0.1,
+            "candidateMinusBaselineMeanSquaredError": 0.01675518118807233,
+            "pairedSignFlipTwoSidedPValue": 0.375
+          },
+          {
+            "lambda": 1,
+            "candidateMinusBaselineMeanSquaredError": 0.010478349764304132,
+            "pairedSignFlipTwoSidedPValue": 0.359375
+          },
+          {
+            "lambda": 10,
+            "candidateMinusBaselineMeanSquaredError": 0.0008215549384383847,
+            "pairedSignFlipTwoSidedPValue": 0.75
+          }
+        ],
+        "classification": "no_development_increment_observed"
+      },
+      "behaviorToMicrostate": {
+        "primary": {
+          "baselineFamily": "BEHAVIOR",
+          "candidateFamily": "MICROSTATE",
+          "estimator": "standardized_fractional_logit_ridge_v1",
+          "lambda": 1,
+          "holdoutKey": "taskId",
+          "rowCount": 14,
+          "groupCount": 7,
+          "shapeKey": "N4:K3",
+          "baselineMeanSquaredError": 0.04085842716573144,
+          "candidateMeanSquaredError": 0.06182763018476601,
+          "candidateMinusBaselineMeanSquaredError": 0.02096920301903457,
+          "groupLossDeltas": [
+            {
+              "groupId": "task:11",
+              "candidateMinusBaseline": -0.013771141736987319
+            },
+            {
+              "groupId": "task:13",
+              "candidateMinusBaseline": 0.05267840451257909
+            },
+            {
+              "groupId": "task:14",
+              "candidateMinusBaseline": 0.07975619562760283
+            },
+            {
+              "groupId": "task:16",
+              "candidateMinusBaseline": 0.00021189289360246718
+            },
+            {
+              "groupId": "task:3",
+              "candidateMinusBaseline": -0.0008724449251060029
+            },
+            {
+              "groupId": "task:5",
+              "candidateMinusBaseline": -0.0012803444217113914
+            },
+            {
+              "groupId": "task:7",
+              "candidateMinusBaseline": 0.03006185918326243
+            }
+          ],
+          "signFlip": {
+            "observedMean": 0.02096920301903458,
+            "repetitions": 128,
+            "method": "exact",
+            "nullMean": 3.7947076036992655e-19,
+            "absoluteQuantile95": 0.025209086809062087,
+            "twoSidedExceedance": 0.234375
+          }
+        },
+        "sensitivity": [
+          {
+            "lambda": 0.1,
+            "candidateMinusBaselineMeanSquaredError": 0.0657962591958639,
+            "pairedSignFlipTwoSidedPValue": 0.109375
+          },
+          {
+            "lambda": 1,
+            "candidateMinusBaselineMeanSquaredError": 0.02096920301903457,
+            "pairedSignFlipTwoSidedPValue": 0.234375
+          },
+          {
+            "lambda": 10,
+            "candidateMinusBaselineMeanSquaredError": 0.001104515443602544,
+            "pairedSignFlipTwoSidedPValue": 0.640625
+          }
+        ],
+        "classification": "no_development_increment_observed"
+      }
+    },
+    {
+      "targetId": "next_pooled_total_variation",
+      "rowCount": 14,
+      "taskCount": 7,
+      "targetMean": 0.09107135714285712,
+      "zeroTargetRowCount": 7,
+      "byCheckpoint": [
+        {
+          "checkpoint": 1,
+          "rowCount": 7,
+          "meanTarget": 0.1053570357142857
+        },
+        {
+          "checkpoint": 2,
+          "rowCount": 7,
+          "meanTarget": 0.07678567857142858
+        }
+      ],
+      "structuralToBehavior": {
+        "primary": {
+          "baselineFamily": "STRUCTURAL",
+          "candidateFamily": "BEHAVIOR",
+          "estimator": "standardized_fractional_logit_ridge_v1",
+          "lambda": 1,
+          "holdoutKey": "taskId",
+          "rowCount": 14,
+          "groupCount": 7,
+          "shapeKey": "N4:K3",
+          "baselineMeanSquaredError": 0.04271555545300847,
+          "candidateMeanSquaredError": 0.04435727563348346,
+          "candidateMinusBaselineMeanSquaredError": 0.0016417201804749884,
+          "groupLossDeltas": [
+            {
+              "groupId": "task:11",
+              "candidateMinusBaseline": -0.001647797532395287
+            },
+            {
+              "groupId": "task:13",
+              "candidateMinusBaseline": 0.05392956931733546
+            },
+            {
+              "groupId": "task:14",
+              "candidateMinusBaseline": -0.003075548627884882
+            },
+            {
+              "groupId": "task:16",
+              "candidateMinusBaseline": -0.0023817748196735223
+            },
+            {
+              "groupId": "task:3",
+              "candidateMinusBaseline": -0.009960951198367615
+            },
+            {
+              "groupId": "task:5",
+              "candidateMinusBaseline": -0.009960951198197947
+            },
+            {
+              "groupId": "task:7",
+              "candidateMinusBaseline": -0.015410504677491277
+            }
+          ],
+          "signFlip": {
+            "observedMean": 0.0016417201804749904,
+            "repetitions": 128,
+            "method": "exact",
+            "nullMean": -1.4907779871675686e-19,
+            "absoluteQuantile95": 0.01288800001651089,
+            "twoSidedExceedance": 1
+          }
+        },
+        "sensitivity": [
+          {
+            "lambda": 0.1,
+            "candidateMinusBaselineMeanSquaredError": 0.008936460360762469,
+            "pairedSignFlipTwoSidedPValue": 0.84375
+          },
+          {
+            "lambda": 1,
+            "candidateMinusBaselineMeanSquaredError": 0.0016417201804749884,
+            "pairedSignFlipTwoSidedPValue": 1
+          },
+          {
+            "lambda": 10,
+            "candidateMinusBaselineMeanSquaredError": -0.0015687543260205494,
+            "pairedSignFlipTwoSidedPValue": 0.40625
+          }
+        ],
+        "classification": "no_development_increment_observed"
+      },
+      "behaviorToMacro": {
+        "primary": {
+          "baselineFamily": "BEHAVIOR",
+          "candidateFamily": "MACRO",
+          "estimator": "standardized_fractional_logit_ridge_v1",
+          "lambda": 1,
+          "holdoutKey": "taskId",
+          "rowCount": 14,
+          "groupCount": 7,
+          "shapeKey": "N4:K3",
+          "baselineMeanSquaredError": 0.04435727563348346,
+          "candidateMeanSquaredError": 0.05583212820153107,
+          "candidateMinusBaselineMeanSquaredError": 0.01147485256804761,
+          "groupLossDeltas": [
+            {
+              "groupId": "task:11",
+              "candidateMinusBaseline": -0.0021726663594656276
+            },
+            {
+              "groupId": "task:13",
+              "candidateMinusBaseline": 0.05057011927378391
+            },
+            {
+              "groupId": "task:14",
+              "candidateMinusBaseline": 0.02338510983586895
+            },
+            {
+              "groupId": "task:16",
+              "candidateMinusBaseline": 0.00023186151743674653
+            },
+            {
+              "groupId": "task:3",
+              "candidateMinusBaseline": -0.00009321095120285892
+            },
+            {
+              "groupId": "task:5",
+              "candidateMinusBaseline": -0.0004936266927088077
+            },
+            {
+              "groupId": "task:7",
+              "candidateMinusBaseline": 0.008896381352620913
+            }
+          ],
+          "signFlip": {
+            "observedMean": 0.011474852568047604,
+            "repetitions": 128,
+            "method": "exact",
+            "nullMean": 0,
+            "absoluteQuantile95": 0.012170404435115514,
+            "twoSidedExceedance": 0.21875
+          }
+        },
+        "sensitivity": [
+          {
+            "lambda": 0.1,
+            "candidateMinusBaselineMeanSquaredError": 0.06034713436514589,
+            "pairedSignFlipTwoSidedPValue": 0.296875
+          },
+          {
+            "lambda": 1,
+            "candidateMinusBaselineMeanSquaredError": 0.01147485256804761,
+            "pairedSignFlipTwoSidedPValue": 0.21875
+          },
+          {
+            "lambda": 10,
+            "candidateMinusBaselineMeanSquaredError": 0.0010490656510295585,
+            "pairedSignFlipTwoSidedPValue": 0.984375
+          }
+        ],
+        "classification": "no_development_increment_observed"
+      },
+      "macroToMicrostate": {
+        "primary": {
+          "baselineFamily": "MACRO",
+          "candidateFamily": "MICROSTATE",
+          "estimator": "standardized_fractional_logit_ridge_v1",
+          "lambda": 1,
+          "holdoutKey": "taskId",
+          "rowCount": 14,
+          "groupCount": 7,
+          "shapeKey": "N4:K3",
+          "baselineMeanSquaredError": 0.05583212820153107,
+          "candidateMeanSquaredError": 0.06401019417062762,
+          "candidateMinusBaselineMeanSquaredError": 0.008178065969096544,
+          "groupLossDeltas": [
+            {
+              "groupId": "task:11",
+              "candidateMinusBaseline": -0.00912942607180875
+            },
+            {
+              "groupId": "task:13",
+              "candidateMinusBaseline": -0.006848682945415602
+            },
+            {
+              "groupId": "task:14",
+              "candidateMinusBaseline": 0.06113000867978703
+            },
+            {
+              "groupId": "task:16",
+              "candidateMinusBaseline": 0.00010121692509664198
+            },
+            {
+              "groupId": "task:3",
+              "candidateMinusBaseline": -0.0006424387437139506
+            },
+            {
+              "groupId": "task:5",
+              "candidateMinusBaseline": -0.0008078439601985763
+            },
+            {
+              "groupId": "task:7",
+              "candidateMinusBaseline": 0.013443627899928978
+            }
+          ],
+          "signFlip": {
+            "observedMean": 0.008178065969096539,
+            "repetitions": 128,
+            "method": "exact",
+            "nullMean": -9.486769009248164e-20,
+            "absoluteQuantile95": 0.012945133412618336,
+            "twoSidedExceedance": 0.609375
+          }
+        },
+        "sensitivity": [
+          {
+            "lambda": 0.1,
+            "candidateMinusBaselineMeanSquaredError": 0.003095867308396394,
+            "pairedSignFlipTwoSidedPValue": 0.875
+          },
+          {
+            "lambda": 1,
+            "candidateMinusBaselineMeanSquaredError": 0.008178065969096544,
+            "pairedSignFlipTwoSidedPValue": 0.609375
+          },
+          {
+            "lambda": 10,
+            "candidateMinusBaselineMeanSquaredError": 0.00033068745689072976,
+            "pairedSignFlipTwoSidedPValue": 0.890625
+          }
+        ],
+        "classification": "no_development_increment_observed"
+      },
+      "behaviorToMicrostate": {
+        "primary": {
+          "baselineFamily": "BEHAVIOR",
+          "candidateFamily": "MICROSTATE",
+          "estimator": "standardized_fractional_logit_ridge_v1",
+          "lambda": 1,
+          "holdoutKey": "taskId",
+          "rowCount": 14,
+          "groupCount": 7,
+          "shapeKey": "N4:K3",
+          "baselineMeanSquaredError": 0.04435727563348346,
+          "candidateMeanSquaredError": 0.06401019417062762,
+          "candidateMinusBaselineMeanSquaredError": 0.019652918537144154,
+          "groupLossDeltas": [
+            {
+              "groupId": "task:11",
+              "candidateMinusBaseline": -0.011302092431274377
+            },
+            {
+              "groupId": "task:13",
+              "candidateMinusBaseline": 0.04372143632836831
+            },
+            {
+              "groupId": "task:14",
+              "candidateMinusBaseline": 0.08451511851565599
+            },
+            {
+              "groupId": "task:16",
+              "candidateMinusBaseline": 0.0003330784425333885
+            },
+            {
+              "groupId": "task:3",
+              "candidateMinusBaseline": -0.0007356496949168095
+            },
+            {
+              "groupId": "task:5",
+              "candidateMinusBaseline": -0.0013014706529073839
+            },
+            {
+              "groupId": "task:7",
+              "candidateMinusBaseline": 0.02234000925254989
+            }
+          ],
+          "signFlip": {
+            "observedMean": 0.019652918537144144,
+            "repetitions": 128,
+            "method": "exact",
+            "nullMean": -2.710505431213761e-19,
+            "absoluteQuantile95": 0.023158771291900828,
+            "twoSidedExceedance": 0.234375
+          }
+        },
+        "sensitivity": [
+          {
+            "lambda": 0.1,
+            "candidateMinusBaselineMeanSquaredError": 0.06344300167354228,
+            "pairedSignFlipTwoSidedPValue": 0.109375
+          },
+          {
+            "lambda": 1,
+            "candidateMinusBaselineMeanSquaredError": 0.019652918537144154,
+            "pairedSignFlipTwoSidedPValue": 0.234375
+          },
+          {
+            "lambda": 10,
+            "candidateMinusBaselineMeanSquaredError": 0.0013797531079202882,
+            "pairedSignFlipTwoSidedPValue": 0.53125
+          }
+        ],
+        "classification": "no_development_increment_observed"
+      }
+    }
+  ],
+  "routing": {
+    "macroIncrement": "none",
+    "microstateBeyondMacro": "none",
+    "decision": "do_not_scale_current_macro_prediction_design"
+  },
+  "interpretation": [
+    "The targets are next-checkpoint movements of primary probability reports, not future public choices and not correctness.",
+    "All repeated checkpoints from one task remain in one held-out fold; agent and checkpoint rows do not increase the inferential task count.",
+    "BEHAVIOR, MACRO, and MICROSTATE are compared on identical eligible rows with training-fold-only standardization.",
+    "STRUCTURAL to BEHAVIOR is reported as a baseline diagnostic and does not alter the registered macro routing decision.",
+    "The primary estimator is a ridge-penalized fractional-logit GLM with a fixed lambda; the lambda grid is sensitivity analysis, not model selection.",
+    "This seven-task screen is development evidence only and cannot qualify transport, causality, recoverability, or governance."
+  ],
+  "contentHash": "sha256:774b227dc309c63584c5399d36d3feb994e87c2d4796d879741a5f89661be493"
+}

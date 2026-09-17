@@ -12,9 +12,9 @@
  * 设计原则：纯单元测试，零 LLM 调用，零 API 成本，确定性。
  */
 import { describe, it, expect, beforeEach, vi } from "vitest";
-import { NativeCognitiveEngine } from "@/lib/discussion/nativeCognitiveEngine";
-import type { AgentOpinion } from "@/lib/discussion/types";
-import type { DiscussionAgent } from "@/lib/discussion/index";
+import { NativeCognitiveEngine } from "../legacy/src/lib/discussion/nativeCognitiveEngine";
+import type { AgentOpinion } from "../legacy/src/lib/discussion/types";
+import type { DiscussionAgent } from "../legacy/src/lib/discussion/index";
 
 // ============================================================================
 // Helpers

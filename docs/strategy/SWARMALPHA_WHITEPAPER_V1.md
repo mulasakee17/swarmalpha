@@ -1,12 +1,12 @@
 # SwarmAlpha 白皮书 v1.2：异构智能的可审计认知治理层
 
 日期：2026-08-14
-状态：长期战略权威（Long-term Strategic Source of Truth；不是当前实验状态权威）
+状态：长期想法保留（DESIGN INTENT；2026-09-14 主动研究停止，不授予执行权限）
 适用范围：项目定位、研究主线、长期架构、贡献边界、发展顺序  
 
 > 本文主要回答“SwarmAlpha 为什么存在、长期要成为什么”。当前研究问题、
 > 方法论、证据状态与下一步以
-> [`CURRENT_ROUTE_AND_METHODOLOGY.md`](../research/CURRENT_ROUTE_AND_METHODOLOGY.md)
+> [`ACTIVE_RESEARCH_SURFACE.md`](../ACTIVE_RESEARCH_SURFACE.md)
 > 为权威；当前社会热力学响应假设以
 > [`SOCIAL_THERMODYNAMIC_RESPONSE_RESEARCH_CONTRACT_V1.md`](../theory/SOCIAL_THERMODYNAMIC_RESPONSE_RESEARCH_CONTRACT_V1.md)
 > 为权威。具体对象语义仍以代码、测试和对应 architecture 文档为权威。
@@ -856,7 +856,7 @@ Measurement Gate 至少要求（权威定义见 [`MEASUREMENT_VALIDITY_PROTOCOL_
 - reputation、惩罚、appeal 等规范性制度选择。
 
 详细低上下文协作方式见
-[`SWARMALPHA_STRATEGIC_EXECUTION_PLAN_V1.md`](../plans/SWARMALPHA_STRATEGIC_EXECUTION_PLAN_V1.md)。
+[`SWARMALPHA_STRATEGIC_EXECUTION_PLAN_V1.md`](../../legacy/docs/archive/plans/SWARMALPHA_STRATEGIC_EXECUTION_PLAN_V1.md)。
 
 ---
 

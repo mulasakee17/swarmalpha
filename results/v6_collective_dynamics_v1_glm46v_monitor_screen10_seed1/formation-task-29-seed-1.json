@@ -1,0 +1,1419 @@
+{
+  "artifactRef": {
+    "id": "swarmalpha.experiment.v6.collective-epistemic-dynamics.formation",
+    "version": "1.0.0"
+  },
+  "planHash": "sha256:c5b6e20b332cdf9a6d0b40964deb0249da63407111b9e415f7cee388eab449e9",
+  "runId": "collective-dynamics:29:seed-1",
+  "seed": 1,
+  "modelRef": {
+    "id": "zhipu:glm-4.6v",
+    "version": "1.0.0"
+  },
+  "onlineTask": {
+    "sourceTaskId": 29,
+    "taskId": "task:hiddenbench:29",
+    "publicContext": "You and three other council members must quickly choose which of three locations in your region should be officially designated as the emergency shelter for an oncoming storm. The shelter must be accessible, safe, free of environmental hazards, and have the capacity for hundreds of people. Only one site truly qualifies. Each site is in a different direction, and time is short. The three options: (a) Mountain Lodge, (b) Riverside Park, (c) Summerfield School. Your decision is urgent, as buses will soon be dispatched to one location only.\n\nShared information:\n1. All main roads to each shelter remain open as of the last public update, 20 minutes ago.\n2. Mountain Lodge's bridge was inspected last month and passed safety checks; there are no weather alerts for the area.\n3. Riverside Park has undergone recent upgrades to its facilities to accommodate large groups.\n4. Summerfield School is regularly used for community gatherings and has backup generators.",
+    "claim": {
+      "id": "claim:hiddenbench:29:answer",
+      "proposition": "Select the single correct answer for HiddenBench task 29 (Safe Shelter Selection).",
+      "domain": "hiddenbench-categorical-decision",
+      "createdAt": "2026-08-11T00:00:00.000Z",
+      "options": [
+        "Mountain Lodge",
+        "Riverside Park",
+        "Summerfield School"
+      ],
+      "resolutionPolicy": {
+        "kind": "categorical",
+        "resolverId": "resolver:hiddenbench-data-3be6ca16"
+      }
+    },
+    "agents": [
+      {
+        "agentId": "agent:hiddenbench:29:1",
+        "privateInformation": "Due to minor flooding on Oakcrest road, buses can only reach Riverside Park from the north side."
+      },
+      {
+        "agentId": "agent:hiddenbench:29:2",
+        "privateInformation": "A landslide warning was just issued for Summerfield's region by the National Weather Service, effective immediately."
+      },
+      {
+        "agentId": "agent:hiddenbench:29:3",
+        "privateInformation": "There is a confirmed chemical spill in the storage building next to Mountain Lodge reported just now by authorities; the substance is hazardous if inhaled and cleanup will take at least 12 hours to complete."
+      },
+      {
+        "agentId": "agent:hiddenbench:29:4",
+        "privateInformation": "A tree has fallen on the north lane to Riverside Park, but the south lane remains clear according to a police report released five minutes ago."
+      }
+    ]
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "messages": [
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:29:1",
+          "content": "Based on the information, Riverside Park is the most suitable emergency shelter. It has recently upgraded facilities for large groups, and while there is minor flooding on Oakcrest road, buses can still reach it from the north side. The other locations lack the specific upgrades or have potential accessibility issues that make Riverside Park the best choice.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:29:2",
+          "content": "Based on the landslide warning for Summerfield's region, it is unsafe. Riverside Park's upgrades and Mountain Lodge's safe bridge make them viable, but only one site qualifies. Given the urgency and the need for a single correct answer, Riverside Park is the most suitable choice.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:29:3",
+          "content": "Based on the confirmed chemical spill next to Mountain Lodge, it is unsafe for use as an emergency shelter. Riverside Park and Summerfield School remain viable options, but without further information, I cannot definitively choose between them. However, the spill makes Mountain Lodge the least suitable choice.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:29:4",
+          "content": "Based on the critical new information about the fallen tree blocking access to Riverside Park, it is no longer a viable option. Summerfield School, with its established use for gatherings and backup generators, is the most reliable choice. Mountain Lodge, while safe, lacks the specific upgrades mentioned for large-scale sheltering. Therefore, Summerfield School is the correct selection.",
+          "source": "agent"
+        }
+      ],
+      "reports": [
+        {
+          "id": "belief:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:1",
+          "claimId": "claim:hiddenbench:29:answer",
+          "agentId": "agent:hiddenbench:29:1",
+          "round": 1,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Mountain Lodge": 0.1,
+              "Riverside Park": 0.8,
+              "Summerfield School": 0.1
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:1:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:1:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:1:3",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:1:4",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:01:01.000Z"
+        },
+        {
+          "id": "belief:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:2",
+          "claimId": "claim:hiddenbench:29:answer",
+          "agentId": "agent:hiddenbench:29:2",
+          "round": 1,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Mountain Lodge": 0,
+              "Riverside Park": 1,
+              "Summerfield School": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:2:1",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:2:2",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:01:02.000Z"
+        },
+        {
+          "id": "belief:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:3",
+          "claimId": "claim:hiddenbench:29:answer",
+          "agentId": "agent:hiddenbench:29:3",
+          "round": 1,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Mountain Lodge": 0,
+              "Riverside Park": 0.5,
+              "Summerfield School": 0.5
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:3:1",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:01:03.000Z"
+        },
+        {
+          "id": "belief:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:4",
+          "claimId": "claim:hiddenbench:29:answer",
+          "agentId": "agent:hiddenbench:29:4",
+          "round": 1,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Mountain Lodge": 0.1,
+              "Riverside Park": 0,
+              "Summerfield School": 0.9
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:4:1",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:4:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:4:3",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:01:04.000Z"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "evidence:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:1:1",
+          "content": "Riverside Park has undergone recent upgrades to its facilities to accommodate large groups.",
+          "createdAt": "2026-08-24T00:01:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:29:1",
+            "contentHash": "sha256:481106150a5773e05af07d7cc42f98007c2147d4bc9e96269181f93c8b32c349"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:1:2",
+          "content": "Due to minor flooding on Oakcrest road, buses can only reach Riverside Park from the north side.",
+          "createdAt": "2026-08-24T00:01:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:29:1",
+            "contentHash": "sha256:1279829434d5c2150656cfcd38536ce5101ab0feee94634d7e06e550fa5f95fb"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:1:3",
+          "content": "Mountain Lodge's bridge was inspected last month and passed safety checks; there are no weather alerts for the area.",
+          "createdAt": "2026-08-24T00:01:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:29:1",
+            "contentHash": "sha256:dbddf078286a87aa04caf4df74ec5a76cf1345963fde1b3b8921256b7d273246"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:1:4",
+          "content": "Summerfield School is regularly used for community gatherings and has backup generators.",
+          "createdAt": "2026-08-24T00:01:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:29:1",
+            "contentHash": "sha256:13e98d5af5701b5047b2f00df49142241a2649561e00fbc8c4bd0914c7864f28"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:2:1",
+          "content": "A landslide warning was just issued for Summerfield's region by the National Weather Service, effective immediately.",
+          "createdAt": "2026-08-24T00:01:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:29:2",
+            "contentHash": "sha256:ddefd4d4f6078937fc0b76d2babe509143ae51959624d837d4f79015ea582a17"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:2:2",
+          "content": "Riverside Park has undergone recent upgrades to its facilities to accommodate large groups.",
+          "createdAt": "2026-08-24T00:01:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:29:2",
+            "contentHash": "sha256:481106150a5773e05af07d7cc42f98007c2147d4bc9e96269181f93c8b32c349"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:3:1",
+          "content": "There is a confirmed chemical spill in the storage building next to Mountain Lodge reported just now by authorities; the substance is hazardous if inhaled and cleanup will take at least 12 hours to complete.",
+          "createdAt": "2026-08-24T00:01:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:29:3",
+            "contentHash": "sha256:a673bb9060789aa026e47cc53361b6e0c176527405d1ac4a1f26ee4f1f487408"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:4:1",
+          "content": "A tree has fallen on the north lane to Riverside Park, but the south lane remains clear according to a police report released five minutes ago.",
+          "createdAt": "2026-08-24T00:01:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:29:4",
+            "contentHash": "sha256:2b06473ae1ea806c906376cc9660fe2dc93f95167b0964c3acf1649b1ef972c0"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:4:2",
+          "content": "Summerfield School is regularly used for community gatherings and has backup generators.",
+          "createdAt": "2026-08-24T00:01:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:29:4",
+            "contentHash": "sha256:13e98d5af5701b5047b2f00df49142241a2649561e00fbc8c4bd0914c7864f28"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:4:3",
+          "content": "Riverside Park has undergone recent upgrades to its facilities to accommodate large groups.",
+          "createdAt": "2026-08-24T00:01:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:29:4",
+            "contentHash": "sha256:481106150a5773e05af07d7cc42f98007c2147d4bc9e96269181f93c8b32c349"
+          }
+        }
+      ],
+      "state": {
+        "activeAgentIds": [
+          "agent:hiddenbench:29:1",
+          "agent:hiddenbench:29:2",
+          "agent:hiddenbench:29:3",
+          "agent:hiddenbench:29:4"
+        ],
+        "artifactSchemaRef": {
+          "id": "swarmalpha.collective-epistemic-state",
+          "version": "1.0.0"
+        },
+        "asOfRound": 1,
+        "beliefKind": "categorical",
+        "betweenAgentDisagreement": 0.38364634772466577,
+        "claimId": "claim:hiddenbench:29:answer",
+        "claimOptionCount": 3,
+        "contentHash": "sha256:70061e22244994be34075b64bee793854cffd3aee9867f1affc91ac76e6e70d8",
+        "declaredLineageDiversity": {
+          "completeness": "missing",
+          "distinctDeclaredLineageCount": 0,
+          "effectiveLineageCount": null,
+          "missingLineageReportIds": [
+            "belief:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:1",
+            "belief:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:2",
+            "belief:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:3",
+            "belief:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:4"
+          ],
+          "normalizedLineageEntropy": null,
+          "reportsMissingDeclaredLineage": 4,
+          "reportsWithDeclaredLineage": 0
+        },
+        "expectedAgentIds": [
+          "agent:hiddenbench:29:1",
+          "agent:hiddenbench:29:2",
+          "agent:hiddenbench:29:3",
+          "agent:hiddenbench:29:4"
+        ],
+        "exposureConditionedRevision": {
+          "meanBeliefDistance": null,
+          "revisionCount": 0,
+          "targetAgentCount": 0,
+          "totalBeliefDistance": 0
+        },
+        "inferenceStatus": "descriptive_macrostate_only",
+        "latestReportIds": [
+          "belief:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:1",
+          "belief:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:2",
+          "belief:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:3",
+          "belief:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:4"
+        ],
+        "missingExpectedAgentIds": [],
+        "observedResponseConcentration": {
+          "herfindahlIndex": null,
+          "normalizedHerfindahl": null,
+          "responseMassBySourceAgent": {},
+          "sourceAgentCount": 0,
+          "status": "unavailable",
+          "unavailableReason": "no_exposure_conditioned_response_mass"
+        },
+        "pooledBelief": {
+          "kind": "categorical",
+          "probabilities": {
+            "Mountain Lodge": 0.05,
+            "Riverside Park": 0.575,
+            "Summerfield School": 0.375
+          }
+        },
+        "pooledCertainty": 0.575,
+        "pooledPredictedOutcomes": [
+          "Riverside Park"
+        ],
+        "pooledUncertainty": 0.760772571119348,
+        "populationBasis": "declared_roster",
+        "sourceFingerprints": {
+          "claim": "sha256:b660ee9d3c1cf0bc965e60e88a132fd926f551b7b7d46b66c7340150d2947d84",
+          "evidence": "sha256:189526118a898788a1b2e4fa106d247792138a306f48299b1017422109d956b6",
+          "exposures": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "reports": "sha256:a8920641aaf51ebe9b6f650d94c3e5154491c964505cc78f9f625b15add0f8c4"
+        },
+        "withinAgentUncertainty": 0.37712622339468227
+      },
+      "updateActivityFromPrior": null
+    },
+    {
+      "round": 2,
+      "messages": [
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:29:1",
+          "content": "After analyzing the shared and private information, along with the discussion, Summerfield School is the most reliable choice. It has backup generators and is regularly used for gatherings, making it suitable for large-scale sheltering. While Riverside Park has upgrades, the fallen tree blocking access (mentioned in the discussion) makes it unreliable. Mountain Lodge is unsafe due to a chemical spill. Therefore, Summerfield School is the correct selection.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:29:2",
+          "content": "Based on the landslide warning for Summerfield's region, it is unsafe. Riverside Park's upgrades and Mountain Lodge's safe bridge make them viable, but only one site qualifies. Given the urgency and the need for a single correct answer, Riverside Park is the most suitable choice.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:29:3",
+          "content": "Based on the confirmed chemical spill next to Mountain Lodge, it is unsafe for use as an emergency shelter. Riverside Park's recent upgrades and Summerfield School's established use for gatherings and backup generators make them viable, but without further information, I cannot definitively choose between them. However, the spill makes Mountain Lodge the least suitable choice.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:29:4",
+          "content": "After analyzing all available information, Summerfield School is the most suitable emergency shelter. The fallen tree blocking access to Riverside Park eliminates it as a viable option, while Mountain Lodge lacks the specific upgrades for large-scale sheltering. Summerfield School's established use for gatherings and backup generators make it the most reliable choice.",
+          "source": "agent"
+        }
+      ],
+      "reports": [
+        {
+          "id": "belief:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:1",
+          "claimId": "claim:hiddenbench:29:answer",
+          "agentId": "agent:hiddenbench:29:1",
+          "round": 2,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Mountain Lodge": 0,
+              "Riverside Park": 0,
+              "Summerfield School": 1
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:1:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:1:2",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:1:3",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:02:01.000Z",
+          "supersedesReportId": "belief:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:1"
+        },
+        {
+          "id": "belief:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:2",
+          "claimId": "claim:hiddenbench:29:answer",
+          "agentId": "agent:hiddenbench:29:2",
+          "round": 2,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Mountain Lodge": 0,
+              "Riverside Park": 1,
+              "Summerfield School": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:2:1",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:2:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:2:3",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:02:02.000Z",
+          "supersedesReportId": "belief:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:2"
+        },
+        {
+          "id": "belief:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:3",
+          "claimId": "claim:hiddenbench:29:answer",
+          "agentId": "agent:hiddenbench:29:3",
+          "round": 2,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Mountain Lodge": 0,
+              "Riverside Park": 0.5,
+              "Summerfield School": 0.5
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:3:1",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:02:03.000Z",
+          "supersedesReportId": "belief:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:3"
+        },
+        {
+          "id": "belief:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:4",
+          "claimId": "claim:hiddenbench:29:answer",
+          "agentId": "agent:hiddenbench:29:4",
+          "round": 2,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Mountain Lodge": 0,
+              "Riverside Park": 0,
+              "Summerfield School": 1
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:4:1",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:4:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:4:3",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:4:4",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:02:04.000Z",
+          "supersedesReportId": "belief:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:4"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "evidence:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:1:1",
+          "content": "Summerfield School is regularly used for community gatherings and has backup generators.",
+          "createdAt": "2026-08-24T00:02:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:29:1",
+            "contentHash": "sha256:13e98d5af5701b5047b2f00df49142241a2649561e00fbc8c4bd0914c7864f28"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:1:2",
+          "content": "A fallen tree is blocking access to Riverside Park, making it no longer a viable option.",
+          "createdAt": "2026-08-24T00:02:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:29:1",
+            "contentHash": "sha256:bfdea05519644aa98cf5fdacfd19a74fb30d513bb348a61af988766ff014e024"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:1:3",
+          "content": "There is a confirmed chemical spill next to Mountain Lodge, making it unsafe for use as an emergency shelter.",
+          "createdAt": "2026-08-24T00:02:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:29:1",
+            "contentHash": "sha256:bda8b80c0ad0c9804b6bee7c16663e0053cb718b9b2de861d2a25f23d5650594"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:2:1",
+          "content": "A landslide warning was just issued for Summerfield's region by the National Weather Service, effective immediately.",
+          "createdAt": "2026-08-24T00:02:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:29:2",
+            "contentHash": "sha256:ddefd4d4f6078937fc0b76d2babe509143ae51959624d837d4f79015ea582a17"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:2:2",
+          "content": "Riverside Park has undergone recent upgrades to its facilities to accommodate large groups.",
+          "createdAt": "2026-08-24T00:02:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:29:2",
+            "contentHash": "sha256:481106150a5773e05af07d7cc42f98007c2147d4bc9e96269181f93c8b32c349"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:2:3",
+          "content": "Mountain Lodge's bridge was inspected last month and passed safety checks; there are no weather alerts for the area.",
+          "createdAt": "2026-08-24T00:02:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:29:2",
+            "contentHash": "sha256:dbddf078286a87aa04caf4df74ec5a76cf1345963fde1b3b8921256b7d273246"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:3:1",
+          "content": "There is a confirmed chemical spill in the storage building next to Mountain Lodge reported just now by authorities; the substance is hazardous if inhaled and cleanup will take at least 12 hours to complete.",
+          "createdAt": "2026-08-24T00:02:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:29:3",
+            "contentHash": "sha256:a673bb9060789aa026e47cc53361b6e0c176527405d1ac4a1f26ee4f1f487408"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:4:1",
+          "content": "A tree has fallen on the north lane to Riverside Park, but the south lane remains clear according to a police report released five minutes ago.",
+          "createdAt": "2026-08-24T00:02:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:29:4",
+            "contentHash": "sha256:2b06473ae1ea806c906376cc9660fe2dc93f95167b0964c3acf1649b1ef972c0"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:4:2",
+          "content": "Summerfield School is regularly used for community gatherings and has backup generators.",
+          "createdAt": "2026-08-24T00:02:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:29:4",
+            "contentHash": "sha256:13e98d5af5701b5047b2f00df49142241a2649561e00fbc8c4bd0914c7864f28"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:4:3",
+          "content": "Riverside Park has undergone recent upgrades to its facilities to accommodate large groups.",
+          "createdAt": "2026-08-24T00:02:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:29:4",
+            "contentHash": "sha256:481106150a5773e05af07d7cc42f98007c2147d4bc9e96269181f93c8b32c349"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:4:4",
+          "content": "Mountain Lodge's bridge was inspected last month and passed safety checks; there are no weather alerts for the area.",
+          "createdAt": "2026-08-24T00:02:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:29:4",
+            "contentHash": "sha256:dbddf078286a87aa04caf4df74ec5a76cf1345963fde1b3b8921256b7d273246"
+          }
+        }
+      ],
+      "state": {
+        "activeAgentIds": [
+          "agent:hiddenbench:29:1",
+          "agent:hiddenbench:29:2",
+          "agent:hiddenbench:29:3",
+          "agent:hiddenbench:29:4"
+        ],
+        "artifactSchemaRef": {
+          "id": "swarmalpha.collective-epistemic-state",
+          "version": "1.0.0"
+        },
+        "asOfRound": 2,
+        "beliefKind": "categorical",
+        "betweenAgentDisagreement": 0.44444837187280356,
+        "claimId": "claim:hiddenbench:29:answer",
+        "claimOptionCount": 3,
+        "contentHash": "sha256:c4acc00172d536868e4617a50f314e4fb86af482e8afc7fcce87091067b4ed23",
+        "declaredLineageDiversity": {
+          "completeness": "missing",
+          "distinctDeclaredLineageCount": 0,
+          "effectiveLineageCount": null,
+          "missingLineageReportIds": [
+            "belief:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:1",
+            "belief:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:2",
+            "belief:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:3",
+            "belief:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:4"
+          ],
+          "normalizedLineageEntropy": null,
+          "reportsMissingDeclaredLineage": 4,
+          "reportsWithDeclaredLineage": 0
+        },
+        "expectedAgentIds": [
+          "agent:hiddenbench:29:1",
+          "agent:hiddenbench:29:2",
+          "agent:hiddenbench:29:3",
+          "agent:hiddenbench:29:4"
+        ],
+        "exposureConditionedRevision": {
+          "meanBeliefDistance": null,
+          "revisionCount": 0,
+          "targetAgentCount": 0,
+          "totalBeliefDistance": 0
+        },
+        "inferenceStatus": "descriptive_macrostate_only",
+        "latestReportIds": [
+          "belief:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:1",
+          "belief:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:2",
+          "belief:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:3",
+          "belief:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:4"
+        ],
+        "missingExpectedAgentIds": [],
+        "observedResponseConcentration": {
+          "herfindahlIndex": null,
+          "normalizedHerfindahl": null,
+          "responseMassBySourceAgent": {},
+          "sourceAgentCount": 0,
+          "status": "unavailable",
+          "unavailableReason": "no_exposure_conditioned_response_mass"
+        },
+        "pooledBelief": {
+          "kind": "categorical",
+          "probabilities": {
+            "Mountain Lodge": 0,
+            "Riverside Park": 0.375,
+            "Summerfield School": 0.625
+          }
+        },
+        "pooledCertainty": 0.625,
+        "pooledPredictedOutcomes": [
+          "Summerfield School"
+        ],
+        "pooledUncertainty": 0.6021808102656679,
+        "populationBasis": "declared_roster",
+        "sourceFingerprints": {
+          "claim": "sha256:b660ee9d3c1cf0bc965e60e88a132fd926f551b7b7d46b66c7340150d2947d84",
+          "evidence": "sha256:89acfa68bdd0a2c1ffb60eeb05c9c754002989cbd627be653f26225981393bc0",
+          "exposures": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "reports": "sha256:8baaf90158cf09a0232195ae1191598528ba29eb81ba331557f765d1605c8372"
+        },
+        "withinAgentUncertainty": 0.15773243839286438
+      },
+      "updateActivityFromPrior": 0.25
+    },
+    {
+      "round": 3,
+      "messages": [
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:29:1",
+          "content": "After analyzing the shared and private information, along with the discussion, Riverside Park is the most reliable choice. It has recent upgrades for large groups, and while there's a fallen tree blocking access from the south, buses can reach it from the north due to minor flooding on Oakcrest road. Mountain Lodge is unsafe due to a chemical spill, and Summerfield School is unsafe due to a landslide warning. Therefore, Riverside Park is the correct selection.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:29:2",
+          "content": "After analyzing the shared and private information, Summerfield School is unsafe due to the landslide warning. Riverside Park is viable with recent upgrades, but Mountain Lodge's bridge passed safety checks and no other hazards are mentioned. However, the chemical spill (mentioned in the discussion) makes Mountain Lodge unsafe. Therefore, Riverside Park is the most suitable choice.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:29:3",
+          "content": "After analyzing all available information, Summerfield School is the most suitable emergency shelter. The fallen tree blocking access to Riverside Park eliminates it as a viable option, while Mountain Lodge lacks the specific upgrades for large-scale sheltering. Summerfield School's established use for gatherings and backup generators make it the most reliable choice.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:29:4",
+          "content": "After analyzing the shared and private information, along with the discussion, Summerfield School is the most reliable choice. It has backup generators and is regularly used for gatherings, making it suitable for large-scale sheltering. While Riverside Park has upgrades, the fallen tree blocking access (mentioned in the discussion) makes it unreliable. Mountain Lodge is unsafe due to a chemical spill. Therefore, Summerfield School is the correct selection.",
+          "source": "agent"
+        }
+      ],
+      "reports": [
+        {
+          "id": "belief:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:1",
+          "claimId": "claim:hiddenbench:29:answer",
+          "agentId": "agent:hiddenbench:29:1",
+          "round": 3,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Mountain Lodge": 0,
+              "Riverside Park": 1,
+              "Summerfield School": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:1:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:1:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:1:3",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:1:4",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:03:01.000Z",
+          "supersedesReportId": "belief:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:1"
+        },
+        {
+          "id": "belief:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:2",
+          "claimId": "claim:hiddenbench:29:answer",
+          "agentId": "agent:hiddenbench:29:2",
+          "round": 3,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Mountain Lodge": 0,
+              "Riverside Park": 1,
+              "Summerfield School": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:2:1",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:2:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:2:3",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:2:4",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:2:5",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "supersedesReportId": "belief:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:2"
+        },
+        {
+          "id": "belief:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:3",
+          "claimId": "claim:hiddenbench:29:answer",
+          "agentId": "agent:hiddenbench:29:3",
+          "round": 3,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Mountain Lodge": 0,
+              "Riverside Park": 0,
+              "Summerfield School": 1
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:3:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:3:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:3:3",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "supersedesReportId": "belief:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:3"
+        },
+        {
+          "id": "belief:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:4",
+          "claimId": "claim:hiddenbench:29:answer",
+          "agentId": "agent:hiddenbench:29:4",
+          "round": 3,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Mountain Lodge": 0,
+              "Riverside Park": 0,
+              "Summerfield School": 1
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:4:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:4:2",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:4:3",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:03:04.000Z",
+          "supersedesReportId": "belief:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:4"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "evidence:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:1:1",
+          "content": "Due to minor flooding on Oakcrest road, buses can only reach Riverside Park from the north side.",
+          "createdAt": "2026-08-24T00:03:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:29:1",
+            "contentHash": "sha256:1279829434d5c2150656cfcd38536ce5101ab0feee94634d7e06e550fa5f95fb"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:1:2",
+          "content": "Riverside Park has undergone recent upgrades to its facilities to accommodate large groups.",
+          "createdAt": "2026-08-24T00:03:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:29:1",
+            "contentHash": "sha256:481106150a5773e05af07d7cc42f98007c2147d4bc9e96269181f93c8b32c349"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:1:3",
+          "content": "Based on the confirmed chemical spill next to Mountain Lodge, it is unsafe for use as an emergency shelter.",
+          "createdAt": "2026-08-24T00:03:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:29:1",
+            "contentHash": "sha256:14ea04d3844321806a5b371e5765cd6141c67d5182088da874a4e290da421368"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:1:4",
+          "content": "Based on the landslide warning for Summerfield's region, it is unsafe.",
+          "createdAt": "2026-08-24T00:03:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:29:1",
+            "contentHash": "sha256:87dfde66a3f162679018a4a031d670db902664bceffbd7acc3ae234cf61e1f47"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:2:1",
+          "content": "A landslide warning was just issued for Summerfield's region by the National Weather Service, effective immediately.",
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:29:2",
+            "contentHash": "sha256:ddefd4d4f6078937fc0b76d2babe509143ae51959624d837d4f79015ea582a17"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:2:2",
+          "content": "Mountain Lodge's bridge was inspected last month and passed safety checks; there are no weather alerts for the area.",
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:29:2",
+            "contentHash": "sha256:dbddf078286a87aa04caf4df74ec5a76cf1345963fde1b3b8921256b7d273246"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:2:3",
+          "content": "Riverside Park has undergone recent upgrades to its facilities to accommodate large groups.",
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:29:2",
+            "contentHash": "sha256:481106150a5773e05af07d7cc42f98007c2147d4bc9e96269181f93c8b32c349"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:2:4",
+          "content": "The fallen tree blocking access to Riverside Park eliminates it as a viable option.",
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:29:2",
+            "contentHash": "sha256:3aa63232e3010aad3d832344c0b033a1ad14bde4edffd03a86d814a96ef1531d"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:2:5",
+          "content": "Mountain Lodge lacks the specific upgrades for large-scale sheltering.",
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:29:2",
+            "contentHash": "sha256:df3bf0ec25c0edad4ae09d25406398a7f08bd7afb2d6a8da4910432d4b4d7ec2"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:3:1",
+          "content": "The fallen tree blocking access to Riverside Park eliminates it as a viable option.",
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:29:3",
+            "contentHash": "sha256:3aa63232e3010aad3d832344c0b033a1ad14bde4edffd03a86d814a96ef1531d"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:3:2",
+          "content": "Mountain Lodge lacks the specific upgrades for large-scale sheltering.",
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:29:3",
+            "contentHash": "sha256:df3bf0ec25c0edad4ae09d25406398a7f08bd7afb2d6a8da4910432d4b4d7ec2"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:3:3",
+          "content": "Summerfield School's established use for gatherings and backup generators make it the most reliable choice.",
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:29:3",
+            "contentHash": "sha256:6c2108c501d2b60a5b8cb0c118b621b4894799d33a93722ed3847dc0a412c246"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:4:1",
+          "content": "Summerfield School is regularly used for community gatherings and has backup generators.",
+          "createdAt": "2026-08-24T00:03:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:29:4",
+            "contentHash": "sha256:13e98d5af5701b5047b2f00df49142241a2649561e00fbc8c4bd0914c7864f28"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:4:2",
+          "content": "A tree has fallen on the north lane to Riverside Park, but the south lane remains clear according to a police report released five minutes ago.",
+          "createdAt": "2026-08-24T00:03:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:29:4",
+            "contentHash": "sha256:2b06473ae1ea806c906376cc9660fe2dc93f95167b0964c3acf1649b1ef972c0"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:4:3",
+          "content": "Based on the confirmed chemical spill next to Mountain Lodge, it is unsafe for use as an emergency shelter.",
+          "createdAt": "2026-08-24T00:03:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:29:4",
+            "contentHash": "sha256:14ea04d3844321806a5b371e5765cd6141c67d5182088da874a4e290da421368"
+          }
+        }
+      ],
+      "state": {
+        "activeAgentIds": [
+          "agent:hiddenbench:29:1",
+          "agent:hiddenbench:29:2",
+          "agent:hiddenbench:29:3",
+          "agent:hiddenbench:29:4"
+        ],
+        "artifactSchemaRef": {
+          "id": "swarmalpha.collective-epistemic-state",
+          "version": "1.0.0"
+        },
+        "asOfRound": 3,
+        "beliefKind": "categorical",
+        "betweenAgentDisagreement": 0.6309297535714575,
+        "claimId": "claim:hiddenbench:29:answer",
+        "claimOptionCount": 3,
+        "contentHash": "sha256:95e44c8d350d3a69b417ffdd994ebdc24070fe970c2a2523891f0a73e6b0f17f",
+        "declaredLineageDiversity": {
+          "completeness": "missing",
+          "distinctDeclaredLineageCount": 0,
+          "effectiveLineageCount": null,
+          "missingLineageReportIds": [
+            "belief:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:1",
+            "belief:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:2",
+            "belief:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:3",
+            "belief:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:4"
+          ],
+          "normalizedLineageEntropy": null,
+          "reportsMissingDeclaredLineage": 4,
+          "reportsWithDeclaredLineage": 0
+        },
+        "expectedAgentIds": [
+          "agent:hiddenbench:29:1",
+          "agent:hiddenbench:29:2",
+          "agent:hiddenbench:29:3",
+          "agent:hiddenbench:29:4"
+        ],
+        "exposureConditionedRevision": {
+          "meanBeliefDistance": null,
+          "revisionCount": 0,
+          "targetAgentCount": 0,
+          "totalBeliefDistance": 0
+        },
+        "inferenceStatus": "descriptive_macrostate_only",
+        "latestReportIds": [
+          "belief:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:1",
+          "belief:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:2",
+          "belief:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:3",
+          "belief:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:4"
+        ],
+        "missingExpectedAgentIds": [],
+        "observedResponseConcentration": {
+          "herfindahlIndex": null,
+          "normalizedHerfindahl": null,
+          "responseMassBySourceAgent": {},
+          "sourceAgentCount": 0,
+          "status": "unavailable",
+          "unavailableReason": "no_exposure_conditioned_response_mass"
+        },
+        "pooledBelief": {
+          "kind": "categorical",
+          "probabilities": {
+            "Mountain Lodge": 0,
+            "Riverside Park": 0.5,
+            "Summerfield School": 0.5
+          }
+        },
+        "pooledCertainty": 0.5,
+        "pooledPredictedOutcomes": [
+          "Riverside Park",
+          "Summerfield School"
+        ],
+        "pooledUncertainty": 0.6309297535714575,
+        "populationBasis": "declared_roster",
+        "sourceFingerprints": {
+          "claim": "sha256:b660ee9d3c1cf0bc965e60e88a132fd926f551b7b7d46b66c7340150d2947d84",
+          "evidence": "sha256:e32d1380831f03e83a00bbe9c64fcef80529259e927d0c3063e923e66ec5d3f8",
+          "exposures": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "reports": "sha256:d3f6dad5374d57d906259073f2effca25ece6b1789d35470ce5967a174d975d5"
+        },
+        "withinAgentUncertainty": 0
+      },
+      "updateActivityFromPrior": 0.375
+    }
+  ],
+  "providerCalls": [
+    {
+      "requestId": "discussion:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:1",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou and three other council members must quickly choose which of three locations in your region should be officially designated as the emergency shelter for an oncoming storm. The shelter must be accessible, safe, free of environmental hazards, and have the capacity for hundreds of people. Only one site truly qualifies. Each site is in a different direction, and time is short. The three options: (a) Mountain Lodge, (b) Riverside Park, (c) Summerfield School. Your decision is urgent, as buses will soon be dispatched to one location only.\n\nShared information:\n1. All main roads to each shelter remain open as of the last public update, 20 minutes ago.\n2. Mountain Lodge's bridge was inspected last month and passed safety checks; there are no weather alerts for the area.\n3. Riverside Park has undergone recent upgrades to its facilities to accommodate large groups.\n4. Summerfield School is regularly used for community gatherings and has backup generators.\n\nYour private information:\nDue to minor flooding on Oakcrest road, buses can only reach Riverside Park from the north side.\n\nVisible discussion transcript:\n(none)\n\nClaim claim:hiddenbench:29:answer: Select the single correct answer for HiddenBench task 29 (Safe Shelter Selection).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Mountain Lodge | Riverside Park | Summerfield School. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Mountain Lodge\": 0.5, \"Riverside Park\": 0.2500, \"Summerfield School\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:39f3676ed81f9afe12c92c47f3e26157022177675a2d0c9c612adc9e339d6504",
+      "responseHash": "sha256:9c58e79d80f8707e6b20d9de508ebbf7d383da19030132849b931d911f99df6b",
+      "rawResponse": "{\"message\":\"Based on the information, Riverside Park is the most suitable emergency shelter. It has recently upgraded facilities for large groups, and while there is minor flooding on Oakcrest road, buses can still reach it from the north side. The other locations lack the specific upgrades or have potential accessibility issues that make Riverside Park the best choice.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Mountain Lodge\":0.1,\"Riverside Park\":0.8,\"Summerfield School\":0.1}},\"evidence\":[{\"content\":\"Riverside Park has undergone recent upgrades to its facilities to accommodate large groups.\",\"relation\":\"supports\"},{\"content\":\"Due to minor flooding on Oakcrest road, buses can only reach Riverside Park from the north side.\",\"relation\":\"supports\"},{\"content\":\"Mountain Lodge's bridge was inspected last month and passed safety checks; there are no weather alerts for the area.\",\"relation\":\"attacks\"},{\"content\":\"Summerfield School is regularly used for community gatherings and has backup generators.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 519,
+        "completionTokens": 278,
+        "totalTokens": 797,
+        "latencyMs": 8110
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:2",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou and three other council members must quickly choose which of three locations in your region should be officially designated as the emergency shelter for an oncoming storm. The shelter must be accessible, safe, free of environmental hazards, and have the capacity for hundreds of people. Only one site truly qualifies. Each site is in a different direction, and time is short. The three options: (a) Mountain Lodge, (b) Riverside Park, (c) Summerfield School. Your decision is urgent, as buses will soon be dispatched to one location only.\n\nShared information:\n1. All main roads to each shelter remain open as of the last public update, 20 minutes ago.\n2. Mountain Lodge's bridge was inspected last month and passed safety checks; there are no weather alerts for the area.\n3. Riverside Park has undergone recent upgrades to its facilities to accommodate large groups.\n4. Summerfield School is regularly used for community gatherings and has backup generators.\n\nYour private information:\nA landslide warning was just issued for Summerfield's region by the National Weather Service, effective immediately.\n\nVisible discussion transcript:\n(none)\n\nClaim claim:hiddenbench:29:answer: Select the single correct answer for HiddenBench task 29 (Safe Shelter Selection).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Mountain Lodge | Riverside Park | Summerfield School. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Mountain Lodge\": 0.5, \"Riverside Park\": 0.2500, \"Summerfield School\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:4a2ab3a846d69e6313dac683861610f302d6dbd8ddc56f0a8f25a36ab29810fe",
+      "responseHash": "sha256:0b27bf5f590fe2c291d0f53fd430975c99cbd897c45d62fadd7579d9d1b8852a",
+      "rawResponse": "{\"message\":\"Based on the landslide warning for Summerfield's region, it is unsafe. Riverside Park's upgrades and Mountain Lodge's safe bridge make them viable, but only one site qualifies. Given the urgency and the need for a single correct answer, Riverside Park is the most suitable choice.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Mountain Lodge\":0.0,\"Riverside Park\":1.0,\"Summerfield School\":0.0}},\"evidence\":[{\"content\":\"A landslide warning was just issued for Summerfield's region by the National Weather Service, effective immediately.\",\"relation\":\"attacks\"},{\"content\":\"Riverside Park has undergone recent upgrades to its facilities to accommodate large groups.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 519,
+        "completionTokens": 199,
+        "totalTokens": 718,
+        "latencyMs": 3157
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:3",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou and three other council members must quickly choose which of three locations in your region should be officially designated as the emergency shelter for an oncoming storm. The shelter must be accessible, safe, free of environmental hazards, and have the capacity for hundreds of people. Only one site truly qualifies. Each site is in a different direction, and time is short. The three options: (a) Mountain Lodge, (b) Riverside Park, (c) Summerfield School. Your decision is urgent, as buses will soon be dispatched to one location only.\n\nShared information:\n1. All main roads to each shelter remain open as of the last public update, 20 minutes ago.\n2. Mountain Lodge's bridge was inspected last month and passed safety checks; there are no weather alerts for the area.\n3. Riverside Park has undergone recent upgrades to its facilities to accommodate large groups.\n4. Summerfield School is regularly used for community gatherings and has backup generators.\n\nYour private information:\nThere is a confirmed chemical spill in the storage building next to Mountain Lodge reported just now by authorities; the substance is hazardous if inhaled and cleanup will take at least 12 hours to complete.\n\nVisible discussion transcript:\n(none)\n\nClaim claim:hiddenbench:29:answer: Select the single correct answer for HiddenBench task 29 (Safe Shelter Selection).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Mountain Lodge | Riverside Park | Summerfield School. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Mountain Lodge\": 0.5, \"Riverside Park\": 0.2500, \"Summerfield School\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:a12efdce02abccffdcc1e75214894183b3aefbf8095199e70ec01fe6346d7e06",
+      "responseHash": "sha256:cd3305c5e6aea3652751faf97f1f7b83a5169c3bb85586d5de756883c044cf48",
+      "rawResponse": "{\"message\":\"Based on the confirmed chemical spill next to Mountain Lodge, it is unsafe for use as an emergency shelter. Riverside Park and Summerfield School remain viable options, but without further information, I cannot definitively choose between them. However, the spill makes Mountain Lodge the least suitable choice.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Mountain Lodge\":0.0,\"Riverside Park\":0.5,\"Summerfield School\":0.5}},\"evidence\":[{\"content\":\"There is a confirmed chemical spill in the storage building next to Mountain Lodge reported just now by authorities; the substance is hazardous if inhaled and cleanup will take at least 12 hours to complete.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 538,
+        "completionTokens": 187,
+        "totalTokens": 725,
+        "latencyMs": 5246
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:29:seed-1:r1:agent:hiddenbench:29:4",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou and three other council members must quickly choose which of three locations in your region should be officially designated as the emergency shelter for an oncoming storm. The shelter must be accessible, safe, free of environmental hazards, and have the capacity for hundreds of people. Only one site truly qualifies. Each site is in a different direction, and time is short. The three options: (a) Mountain Lodge, (b) Riverside Park, (c) Summerfield School. Your decision is urgent, as buses will soon be dispatched to one location only.\n\nShared information:\n1. All main roads to each shelter remain open as of the last public update, 20 minutes ago.\n2. Mountain Lodge's bridge was inspected last month and passed safety checks; there are no weather alerts for the area.\n3. Riverside Park has undergone recent upgrades to its facilities to accommodate large groups.\n4. Summerfield School is regularly used for community gatherings and has backup generators.\n\nYour private information:\nA tree has fallen on the north lane to Riverside Park, but the south lane remains clear according to a police report released five minutes ago.\n\nVisible discussion transcript:\n(none)\n\nClaim claim:hiddenbench:29:answer: Select the single correct answer for HiddenBench task 29 (Safe Shelter Selection).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Mountain Lodge | Riverside Park | Summerfield School. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Mountain Lodge\": 0.5, \"Riverside Park\": 0.2500, \"Summerfield School\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:aa68dd2a30e5c3c716629131ed5600309a224ac655685f8a715a4f93c3b365dd",
+      "responseHash": "sha256:dbfaf4a6994c3b84b6258f8a7101e1d94b819c14aedae2eaba135de913376a6a",
+      "rawResponse": "{\"message\":\"Based on the critical new information about the fallen tree blocking access to Riverside Park, it is no longer a viable option. Summerfield School, with its established use for gatherings and backup generators, is the most reliable choice. Mountain Lodge, while safe, lacks the specific upgrades mentioned for large-scale sheltering. Therefore, Summerfield School is the correct selection.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Mountain Lodge\":0.1,\"Riverside Park\":0.0,\"Summerfield School\":0.9}},\"evidence\":[{\"content\":\"A tree has fallen on the north lane to Riverside Park, but the south lane remains clear according to a police report released five minutes ago.\",\"relation\":\"attacks\"},{\"content\":\"Summerfield School is regularly used for community gatherings and has backup generators.\",\"relation\":\"supports\"},{\"content\":\"Riverside Park has undergone recent upgrades to its facilities to accommodate large groups.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 527,
+        "completionTokens": 253,
+        "totalTokens": 780,
+        "latencyMs": 11638
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:1",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou and three other council members must quickly choose which of three locations in your region should be officially designated as the emergency shelter for an oncoming storm. The shelter must be accessible, safe, free of environmental hazards, and have the capacity for hundreds of people. Only one site truly qualifies. Each site is in a different direction, and time is short. The three options: (a) Mountain Lodge, (b) Riverside Park, (c) Summerfield School. Your decision is urgent, as buses will soon be dispatched to one location only.\n\nShared information:\n1. All main roads to each shelter remain open as of the last public update, 20 minutes ago.\n2. Mountain Lodge's bridge was inspected last month and passed safety checks; there are no weather alerts for the area.\n3. Riverside Park has undergone recent upgrades to its facilities to accommodate large groups.\n4. Summerfield School is regularly used for community gatherings and has backup generators.\n\nYour private information:\nDue to minor flooding on Oakcrest road, buses can only reach Riverside Park from the north side.\n\nVisible discussion transcript:\n[round 1] agent:hiddenbench:29:1: Based on the information, Riverside Park is the most suitable emergency shelter. It has recently upgraded facilities for large groups, and while there is minor flooding on Oakcrest road, buses can still reach it from the north side. The other locations lack the specific upgrades or have potential accessibility issues that make Riverside Park the best choice.\n[round 1] agent:hiddenbench:29:2: Based on the landslide warning for Summerfield's region, it is unsafe. Riverside Park's upgrades and Mountain Lodge's safe bridge make them viable, but only one site qualifies. Given the urgency and the need for a single correct answer, Riverside Park is the most suitable choice.\n[round 1] agent:hiddenbench:29:3: Based on the confirmed chemical spill next to Mountain Lodge, it is unsafe for use as an emergency shelter. Riverside Park and Summerfield School remain viable options, but without further information, I cannot definitively choose between them. However, the spill makes Mountain Lodge the least suitable choice.\n[round 1] agent:hiddenbench:29:4: Based on the critical new information about the fallen tree blocking access to Riverside Park, it is no longer a viable option. Summerfield School, with its established use for gatherings and backup generators, is the most reliable choice. Mountain Lodge, while safe, lacks the specific upgrades mentioned for large-scale sheltering. Therefore, Summerfield School is the correct selection.\n\nClaim claim:hiddenbench:29:answer: Select the single correct answer for HiddenBench task 29 (Safe Shelter Selection).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Mountain Lodge | Riverside Park | Summerfield School. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Mountain Lodge\": 0.5, \"Riverside Park\": 0.2500, \"Summerfield School\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:7936e6bf32515c86a21b762d51d5808558cc7c8ef4e57dba54ae4d67319a3a4e",
+      "responseHash": "sha256:c161e51e059180101d597d78492ec9a829539f6845bb697c26ac71a92cb84a21",
+      "rawResponse": "{\"message\":\"After analyzing the shared and private information, along with the discussion, Summerfield School is the most reliable choice. It has backup generators and is regularly used for gatherings, making it suitable for large-scale sheltering. While Riverside Park has upgrades, the fallen tree blocking access (mentioned in the discussion) makes it unreliable. Mountain Lodge is unsafe due to a chemical spill. Therefore, Summerfield School is the correct selection.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Mountain Lodge\":0.0,\"Riverside Park\":0.0,\"Summerfield School\":1.0}},\"evidence\":[{\"content\":\"Summerfield School is regularly used for community gatherings and has backup generators.\",\"relation\":\"supports\"},{\"content\":\"A fallen tree is blocking access to Riverside Park, making it no longer a viable option.\",\"relation\":\"attacks\"},{\"content\":\"There is a confirmed chemical spill next to Mountain Lodge, making it unsafe for use as an emergency shelter.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 814,
+        "completionTokens": 260,
+        "totalTokens": 1074,
+        "latencyMs": 7269
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:2",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou and three other council members must quickly choose which of three locations in your region should be officially designated as the emergency shelter for an oncoming storm. The shelter must be accessible, safe, free of environmental hazards, and have the capacity for hundreds of people. Only one site truly qualifies. Each site is in a different direction, and time is short. The three options: (a) Mountain Lodge, (b) Riverside Park, (c) Summerfield School. Your decision is urgent, as buses will soon be dispatched to one location only.\n\nShared information:\n1. All main roads to each shelter remain open as of the last public update, 20 minutes ago.\n2. Mountain Lodge's bridge was inspected last month and passed safety checks; there are no weather alerts for the area.\n3. Riverside Park has undergone recent upgrades to its facilities to accommodate large groups.\n4. Summerfield School is regularly used for community gatherings and has backup generators.\n\nYour private information:\nA landslide warning was just issued for Summerfield's region by the National Weather Service, effective immediately.\n\nVisible discussion transcript:\n[round 1] agent:hiddenbench:29:1: Based on the information, Riverside Park is the most suitable emergency shelter. It has recently upgraded facilities for large groups, and while there is minor flooding on Oakcrest road, buses can still reach it from the north side. The other locations lack the specific upgrades or have potential accessibility issues that make Riverside Park the best choice.\n[round 1] agent:hiddenbench:29:2: Based on the landslide warning for Summerfield's region, it is unsafe. Riverside Park's upgrades and Mountain Lodge's safe bridge make them viable, but only one site qualifies. Given the urgency and the need for a single correct answer, Riverside Park is the most suitable choice.\n[round 1] agent:hiddenbench:29:3: Based on the confirmed chemical spill next to Mountain Lodge, it is unsafe for use as an emergency shelter. Riverside Park and Summerfield School remain viable options, but without further information, I cannot definitively choose between them. However, the spill makes Mountain Lodge the least suitable choice.\n[round 1] agent:hiddenbench:29:4: Based on the critical new information about the fallen tree blocking access to Riverside Park, it is no longer a viable option. Summerfield School, with its established use for gatherings and backup generators, is the most reliable choice. Mountain Lodge, while safe, lacks the specific upgrades mentioned for large-scale sheltering. Therefore, Summerfield School is the correct selection.\n\nClaim claim:hiddenbench:29:answer: Select the single correct answer for HiddenBench task 29 (Safe Shelter Selection).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Mountain Lodge | Riverside Park | Summerfield School. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Mountain Lodge\": 0.5, \"Riverside Park\": 0.2500, \"Summerfield School\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:f6adc109a9c71b76ba435489fa28932ba8d9634e479f8a7ac20e69ba7ebb9861",
+      "responseHash": "sha256:75b6f087c5a01c13440b5c63044d37f8ce779d9a3e35e9d616fefafda55d01e3",
+      "rawResponse": "{\"message\":\"Based on the landslide warning for Summerfield's region, it is unsafe. Riverside Park's upgrades and Mountain Lodge's safe bridge make them viable, but only one site qualifies. Given the urgency and the need for a single correct answer, Riverside Park is the most suitable choice.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Mountain Lodge\":0.0,\"Riverside Park\":1.0,\"Summerfield School\":0.0}},\"evidence\":[{\"content\":\"A landslide warning was just issued for Summerfield's region by the National Weather Service, effective immediately.\",\"relation\":\"attacks\"},{\"content\":\"Riverside Park has undergone recent upgrades to its facilities to accommodate large groups.\",\"relation\":\"supports\"},{\"content\":\"Mountain Lodge's bridge was inspected last month and passed safety checks; there are no weather alerts for the area.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 814,
+        "completionTokens": 237,
+        "totalTokens": 1051,
+        "latencyMs": 8407
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:3",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou and three other council members must quickly choose which of three locations in your region should be officially designated as the emergency shelter for an oncoming storm. The shelter must be accessible, safe, free of environmental hazards, and have the capacity for hundreds of people. Only one site truly qualifies. Each site is in a different direction, and time is short. The three options: (a) Mountain Lodge, (b) Riverside Park, (c) Summerfield School. Your decision is urgent, as buses will soon be dispatched to one location only.\n\nShared information:\n1. All main roads to each shelter remain open as of the last public update, 20 minutes ago.\n2. Mountain Lodge's bridge was inspected last month and passed safety checks; there are no weather alerts for the area.\n3. Riverside Park has undergone recent upgrades to its facilities to accommodate large groups.\n4. Summerfield School is regularly used for community gatherings and has backup generators.\n\nYour private information:\nThere is a confirmed chemical spill in the storage building next to Mountain Lodge reported just now by authorities; the substance is hazardous if inhaled and cleanup will take at least 12 hours to complete.\n\nVisible discussion transcript:\n[round 1] agent:hiddenbench:29:1: Based on the information, Riverside Park is the most suitable emergency shelter. It has recently upgraded facilities for large groups, and while there is minor flooding on Oakcrest road, buses can still reach it from the north side. The other locations lack the specific upgrades or have potential accessibility issues that make Riverside Park the best choice.\n[round 1] agent:hiddenbench:29:2: Based on the landslide warning for Summerfield's region, it is unsafe. Riverside Park's upgrades and Mountain Lodge's safe bridge make them viable, but only one site qualifies. Given the urgency and the need for a single correct answer, Riverside Park is the most suitable choice.\n[round 1] agent:hiddenbench:29:3: Based on the confirmed chemical spill next to Mountain Lodge, it is unsafe for use as an emergency shelter. Riverside Park and Summerfield School remain viable options, but without further information, I cannot definitively choose between them. However, the spill makes Mountain Lodge the least suitable choice.\n[round 1] agent:hiddenbench:29:4: Based on the critical new information about the fallen tree blocking access to Riverside Park, it is no longer a viable option. Summerfield School, with its established use for gatherings and backup generators, is the most reliable choice. Mountain Lodge, while safe, lacks the specific upgrades mentioned for large-scale sheltering. Therefore, Summerfield School is the correct selection.\n\nClaim claim:hiddenbench:29:answer: Select the single correct answer for HiddenBench task 29 (Safe Shelter Selection).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Mountain Lodge | Riverside Park | Summerfield School. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Mountain Lodge\": 0.5, \"Riverside Park\": 0.2500, \"Summerfield School\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:0b7957481ba386100370d011cdc5483e6d5d6ac572d39f6aee00b0a2335d3255",
+      "responseHash": "sha256:88dcf762f81c37718ad0488ac96febace858b1757c3875526c14fc410edb0f36",
+      "rawResponse": "{\"message\":\"Based on the confirmed chemical spill next to Mountain Lodge, it is unsafe for use as an emergency shelter. Riverside Park's recent upgrades and Summerfield School's established use for gatherings and backup generators make them viable, but without further information, I cannot definitively choose between them. However, the spill makes Mountain Lodge the least suitable choice.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Mountain Lodge\":0.0,\"Riverside Park\":0.5,\"Summerfield School\":0.5}},\"evidence\":[{\"content\":\"There is a confirmed chemical spill in the storage building next to Mountain Lodge reported just now by authorities; the substance is hazardous if inhaled and cleanup will take at least 12 hours to complete.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 833,
+        "completionTokens": 198,
+        "totalTokens": 1031,
+        "latencyMs": 6369
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:29:seed-1:r2:agent:hiddenbench:29:4",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou and three other council members must quickly choose which of three locations in your region should be officially designated as the emergency shelter for an oncoming storm. The shelter must be accessible, safe, free of environmental hazards, and have the capacity for hundreds of people. Only one site truly qualifies. Each site is in a different direction, and time is short. The three options: (a) Mountain Lodge, (b) Riverside Park, (c) Summerfield School. Your decision is urgent, as buses will soon be dispatched to one location only.\n\nShared information:\n1. All main roads to each shelter remain open as of the last public update, 20 minutes ago.\n2. Mountain Lodge's bridge was inspected last month and passed safety checks; there are no weather alerts for the area.\n3. Riverside Park has undergone recent upgrades to its facilities to accommodate large groups.\n4. Summerfield School is regularly used for community gatherings and has backup generators.\n\nYour private information:\nA tree has fallen on the north lane to Riverside Park, but the south lane remains clear according to a police report released five minutes ago.\n\nVisible discussion transcript:\n[round 1] agent:hiddenbench:29:1: Based on the information, Riverside Park is the most suitable emergency shelter. It has recently upgraded facilities for large groups, and while there is minor flooding on Oakcrest road, buses can still reach it from the north side. The other locations lack the specific upgrades or have potential accessibility issues that make Riverside Park the best choice.\n[round 1] agent:hiddenbench:29:2: Based on the landslide warning for Summerfield's region, it is unsafe. Riverside Park's upgrades and Mountain Lodge's safe bridge make them viable, but only one site qualifies. Given the urgency and the need for a single correct answer, Riverside Park is the most suitable choice.\n[round 1] agent:hiddenbench:29:3: Based on the confirmed chemical spill next to Mountain Lodge, it is unsafe for use as an emergency shelter. Riverside Park and Summerfield School remain viable options, but without further information, I cannot definitively choose between them. However, the spill makes Mountain Lodge the least suitable choice.\n[round 1] agent:hiddenbench:29:4: Based on the critical new information about the fallen tree blocking access to Riverside Park, it is no longer a viable option. Summerfield School, with its established use for gatherings and backup generators, is the most reliable choice. Mountain Lodge, while safe, lacks the specific upgrades mentioned for large-scale sheltering. Therefore, Summerfield School is the correct selection.\n\nClaim claim:hiddenbench:29:answer: Select the single correct answer for HiddenBench task 29 (Safe Shelter Selection).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Mountain Lodge | Riverside Park | Summerfield School. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Mountain Lodge\": 0.5, \"Riverside Park\": 0.2500, \"Summerfield School\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:fec59bcf7db0389bd949f9b6d732ab17614cca2e790b21a5677b2121e605c335",
+      "responseHash": "sha256:6454c6d39445ccbac605ee7ea3f2f71967163d1aa99706d16d2fc4846cbcd692",
+      "rawResponse": "{\"message\":\"After analyzing all available information, Summerfield School is the most suitable emergency shelter. The fallen tree blocking access to Riverside Park eliminates it as a viable option, while Mountain Lodge lacks the specific upgrades for large-scale sheltering. Summerfield School's established use for gatherings and backup generators make it the most reliable choice.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Mountain Lodge\":0.0,\"Riverside Park\":0.0,\"Summerfield School\":1.0}},\"evidence\":[{\"content\":\"A tree has fallen on the north lane to Riverside Park, but the south lane remains clear according to a police report released five minutes ago.\",\"relation\":\"attacks\"},{\"content\":\"Summerfield School is regularly used for community gatherings and has backup generators.\",\"relation\":\"supports\"},{\"content\":\"Riverside Park has undergone recent upgrades to its facilities to accommodate large groups.\",\"relation\":\"attacks\"},{\"content\":\"Mountain Lodge's bridge was inspected last month and passed safety checks; there are no weather alerts for the area.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 822,
+        "completionTokens": 282,
+        "totalTokens": 1104,
+        "latencyMs": 7418
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:1",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou and three other council members must quickly choose which of three locations in your region should be officially designated as the emergency shelter for an oncoming storm. The shelter must be accessible, safe, free of environmental hazards, and have the capacity for hundreds of people. Only one site truly qualifies. Each site is in a different direction, and time is short. The three options: (a) Mountain Lodge, (b) Riverside Park, (c) Summerfield School. Your decision is urgent, as buses will soon be dispatched to one location only.\n\nShared information:\n1. All main roads to each shelter remain open as of the last public update, 20 minutes ago.\n2. Mountain Lodge's bridge was inspected last month and passed safety checks; there are no weather alerts for the area.\n3. Riverside Park has undergone recent upgrades to its facilities to accommodate large groups.\n4. Summerfield School is regularly used for community gatherings and has backup generators.\n\nYour private information:\nDue to minor flooding on Oakcrest road, buses can only reach Riverside Park from the north side.\n\nVisible discussion transcript:\n[round 2] agent:hiddenbench:29:1: After analyzing the shared and private information, along with the discussion, Summerfield School is the most reliable choice. It has backup generators and is regularly used for gatherings, making it suitable for large-scale sheltering. While Riverside Park has upgrades, the fallen tree blocking access (mentioned in the discussion) makes it unreliable. Mountain Lodge is unsafe due to a chemical spill. Therefore, Summerfield School is the correct selection.\n[round 2] agent:hiddenbench:29:2: Based on the landslide warning for Summerfield's region, it is unsafe. Riverside Park's upgrades and Mountain Lodge's safe bridge make them viable, but only one site qualifies. Given the urgency and the need for a single correct answer, Riverside Park is the most suitable choice.\n[round 2] agent:hiddenbench:29:3: Based on the confirmed chemical spill next to Mountain Lodge, it is unsafe for use as an emergency shelter. Riverside Park's recent upgrades and Summerfield School's established use for gatherings and backup generators make them viable, but without further information, I cannot definitively choose between them. However, the spill makes Mountain Lodge the least suitable choice.\n[round 2] agent:hiddenbench:29:4: After analyzing all available information, Summerfield School is the most suitable emergency shelter. The fallen tree blocking access to Riverside Park eliminates it as a viable option, while Mountain Lodge lacks the specific upgrades for large-scale sheltering. Summerfield School's established use for gatherings and backup generators make it the most reliable choice.\n\nClaim claim:hiddenbench:29:answer: Select the single correct answer for HiddenBench task 29 (Safe Shelter Selection).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Mountain Lodge | Riverside Park | Summerfield School. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Mountain Lodge\": 0.5, \"Riverside Park\": 0.2500, \"Summerfield School\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:24dc585d8114938d552fa318516d5a12abc3210809fdd4cad5e78048c7ab40eb",
+      "responseHash": "sha256:3544d940dcb3890b674e2eb57f9f0875bd421062aa39238df88439d72040571b",
+      "rawResponse": "{\"message\":\"After analyzing the shared and private information, along with the discussion, Riverside Park is the most reliable choice. It has recent upgrades for large groups, and while there's a fallen tree blocking access from the south, buses can reach it from the north due to minor flooding on Oakcrest road. Mountain Lodge is unsafe due to a chemical spill, and Summerfield School is unsafe due to a landslide warning. Therefore, Riverside Park is the correct selection.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Mountain Lodge\":0.0,\"Riverside Park\":1.0,\"Summerfield School\":0.0}},\"evidence\":[{\"content\":\"Due to minor flooding on Oakcrest road, buses can only reach Riverside Park from the north side.\",\"relation\":\"supports\"},{\"content\":\"Riverside Park has undergone recent upgrades to its facilities to accommodate large groups.\",\"relation\":\"supports\"},{\"content\":\"Based on the confirmed chemical spill next to Mountain Lodge, it is unsafe for use as an emergency shelter.\",\"relation\":\"attacks\"},{\"content\":\"Based on the landslide warning for Summerfield's region, it is unsafe.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 835,
+        "completionTokens": 301,
+        "totalTokens": 1136,
+        "latencyMs": 9129
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:2",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou and three other council members must quickly choose which of three locations in your region should be officially designated as the emergency shelter for an oncoming storm. The shelter must be accessible, safe, free of environmental hazards, and have the capacity for hundreds of people. Only one site truly qualifies. Each site is in a different direction, and time is short. The three options: (a) Mountain Lodge, (b) Riverside Park, (c) Summerfield School. Your decision is urgent, as buses will soon be dispatched to one location only.\n\nShared information:\n1. All main roads to each shelter remain open as of the last public update, 20 minutes ago.\n2. Mountain Lodge's bridge was inspected last month and passed safety checks; there are no weather alerts for the area.\n3. Riverside Park has undergone recent upgrades to its facilities to accommodate large groups.\n4. Summerfield School is regularly used for community gatherings and has backup generators.\n\nYour private information:\nA landslide warning was just issued for Summerfield's region by the National Weather Service, effective immediately.\n\nVisible discussion transcript:\n[round 2] agent:hiddenbench:29:1: After analyzing the shared and private information, along with the discussion, Summerfield School is the most reliable choice. It has backup generators and is regularly used for gatherings, making it suitable for large-scale sheltering. While Riverside Park has upgrades, the fallen tree blocking access (mentioned in the discussion) makes it unreliable. Mountain Lodge is unsafe due to a chemical spill. Therefore, Summerfield School is the correct selection.\n[round 2] agent:hiddenbench:29:2: Based on the landslide warning for Summerfield's region, it is unsafe. Riverside Park's upgrades and Mountain Lodge's safe bridge make them viable, but only one site qualifies. Given the urgency and the need for a single correct answer, Riverside Park is the most suitable choice.\n[round 2] agent:hiddenbench:29:3: Based on the confirmed chemical spill next to Mountain Lodge, it is unsafe for use as an emergency shelter. Riverside Park's recent upgrades and Summerfield School's established use for gatherings and backup generators make them viable, but without further information, I cannot definitively choose between them. However, the spill makes Mountain Lodge the least suitable choice.\n[round 2] agent:hiddenbench:29:4: After analyzing all available information, Summerfield School is the most suitable emergency shelter. The fallen tree blocking access to Riverside Park eliminates it as a viable option, while Mountain Lodge lacks the specific upgrades for large-scale sheltering. Summerfield School's established use for gatherings and backup generators make it the most reliable choice.\n\nClaim claim:hiddenbench:29:answer: Select the single correct answer for HiddenBench task 29 (Safe Shelter Selection).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Mountain Lodge | Riverside Park | Summerfield School. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Mountain Lodge\": 0.5, \"Riverside Park\": 0.2500, \"Summerfield School\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:ff91ef16e2463036e406692d6804c3448250e97bfcb15e4b6c07f5d5d4b825fa",
+      "responseHash": "sha256:c622a555185a0ba30d02ebe95d954e93ff102ec662393878a37bd195d21bce90",
+      "rawResponse": "{\"message\":\"After analyzing the shared and private information, Summerfield School is unsafe due to the landslide warning. Riverside Park is viable with recent upgrades, but Mountain Lodge's bridge passed safety checks and no other hazards are mentioned. However, the chemical spill (mentioned in the discussion) makes Mountain Lodge unsafe. Therefore, Riverside Park is the most suitable choice.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Mountain Lodge\":0.0,\"Riverside Park\":1.0,\"Summerfield School\":0.0}},\"evidence\":[{\"content\":\"A landslide warning was just issued for Summerfield's region by the National Weather Service, effective immediately.\",\"relation\":\"attacks\"},{\"content\":\"Mountain Lodge's bridge was inspected last month and passed safety checks; there are no weather alerts for the area.\",\"relation\":\"supports\"},{\"content\":\"Riverside Park has undergone recent upgrades to its facilities to accommodate large groups.\",\"relation\":\"supports\"},{\"content\":\"The fallen tree blocking access to Riverside Park eliminates it as a viable option.\",\"relation\":\"attacks\"},{\"content\":\"Mountain Lodge lacks the specific upgrades for large-scale sheltering.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 835,
+        "completionTokens": 309,
+        "totalTokens": 1144,
+        "latencyMs": 10219
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:3",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou and three other council members must quickly choose which of three locations in your region should be officially designated as the emergency shelter for an oncoming storm. The shelter must be accessible, safe, free of environmental hazards, and have the capacity for hundreds of people. Only one site truly qualifies. Each site is in a different direction, and time is short. The three options: (a) Mountain Lodge, (b) Riverside Park, (c) Summerfield School. Your decision is urgent, as buses will soon be dispatched to one location only.\n\nShared information:\n1. All main roads to each shelter remain open as of the last public update, 20 minutes ago.\n2. Mountain Lodge's bridge was inspected last month and passed safety checks; there are no weather alerts for the area.\n3. Riverside Park has undergone recent upgrades to its facilities to accommodate large groups.\n4. Summerfield School is regularly used for community gatherings and has backup generators.\n\nYour private information:\nThere is a confirmed chemical spill in the storage building next to Mountain Lodge reported just now by authorities; the substance is hazardous if inhaled and cleanup will take at least 12 hours to complete.\n\nVisible discussion transcript:\n[round 2] agent:hiddenbench:29:1: After analyzing the shared and private information, along with the discussion, Summerfield School is the most reliable choice. It has backup generators and is regularly used for gatherings, making it suitable for large-scale sheltering. While Riverside Park has upgrades, the fallen tree blocking access (mentioned in the discussion) makes it unreliable. Mountain Lodge is unsafe due to a chemical spill. Therefore, Summerfield School is the correct selection.\n[round 2] agent:hiddenbench:29:2: Based on the landslide warning for Summerfield's region, it is unsafe. Riverside Park's upgrades and Mountain Lodge's safe bridge make them viable, but only one site qualifies. Given the urgency and the need for a single correct answer, Riverside Park is the most suitable choice.\n[round 2] agent:hiddenbench:29:3: Based on the confirmed chemical spill next to Mountain Lodge, it is unsafe for use as an emergency shelter. Riverside Park's recent upgrades and Summerfield School's established use for gatherings and backup generators make them viable, but without further information, I cannot definitively choose between them. However, the spill makes Mountain Lodge the least suitable choice.\n[round 2] agent:hiddenbench:29:4: After analyzing all available information, Summerfield School is the most suitable emergency shelter. The fallen tree blocking access to Riverside Park eliminates it as a viable option, while Mountain Lodge lacks the specific upgrades for large-scale sheltering. Summerfield School's established use for gatherings and backup generators make it the most reliable choice.\n\nClaim claim:hiddenbench:29:answer: Select the single correct answer for HiddenBench task 29 (Safe Shelter Selection).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Mountain Lodge | Riverside Park | Summerfield School. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Mountain Lodge\": 0.5, \"Riverside Park\": 0.2500, \"Summerfield School\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:ea1123abf00471dc752d07159948e3eae9215e9bb8a4bc4aed3944ba364f5572",
+      "responseHash": "sha256:28efb038a59ce582688e1f70433a0a79d43220b9a52a8d56a3a8b33e23e8a6ad",
+      "rawResponse": "{\"message\":\"After analyzing all available information, Summerfield School is the most suitable emergency shelter. The fallen tree blocking access to Riverside Park eliminates it as a viable option, while Mountain Lodge lacks the specific upgrades for large-scale sheltering. Summerfield School's established use for gatherings and backup generators make it the most reliable choice.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Mountain Lodge\":0.0,\"Riverside Park\":0.0,\"Summerfield School\":1.0}},\"evidence\":[{\"content\":\"The fallen tree blocking access to Riverside Park eliminates it as a viable option.\",\"relation\":\"supports\"},{\"content\":\"Mountain Lodge lacks the specific upgrades for large-scale sheltering.\",\"relation\":\"supports\"},{\"content\":\"Summerfield School's established use for gatherings and backup generators make it the most reliable choice.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 854,
+        "completionTokens": 231,
+        "totalTokens": 1085,
+        "latencyMs": 6250
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:29:seed-1:r3:agent:hiddenbench:29:4",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou and three other council members must quickly choose which of three locations in your region should be officially designated as the emergency shelter for an oncoming storm. The shelter must be accessible, safe, free of environmental hazards, and have the capacity for hundreds of people. Only one site truly qualifies. Each site is in a different direction, and time is short. The three options: (a) Mountain Lodge, (b) Riverside Park, (c) Summerfield School. Your decision is urgent, as buses will soon be dispatched to one location only.\n\nShared information:\n1. All main roads to each shelter remain open as of the last public update, 20 minutes ago.\n2. Mountain Lodge's bridge was inspected last month and passed safety checks; there are no weather alerts for the area.\n3. Riverside Park has undergone recent upgrades to its facilities to accommodate large groups.\n4. Summerfield School is regularly used for community gatherings and has backup generators.\n\nYour private information:\nA tree has fallen on the north lane to Riverside Park, but the south lane remains clear according to a police report released five minutes ago.\n\nVisible discussion transcript:\n[round 2] agent:hiddenbench:29:1: After analyzing the shared and private information, along with the discussion, Summerfield School is the most reliable choice. It has backup generators and is regularly used for gatherings, making it suitable for large-scale sheltering. While Riverside Park has upgrades, the fallen tree blocking access (mentioned in the discussion) makes it unreliable. Mountain Lodge is unsafe due to a chemical spill. Therefore, Summerfield School is the correct selection.\n[round 2] agent:hiddenbench:29:2: Based on the landslide warning for Summerfield's region, it is unsafe. Riverside Park's upgrades and Mountain Lodge's safe bridge make them viable, but only one site qualifies. Given the urgency and the need for a single correct answer, Riverside Park is the most suitable choice.\n[round 2] agent:hiddenbench:29:3: Based on the confirmed chemical spill next to Mountain Lodge, it is unsafe for use as an emergency shelter. Riverside Park's recent upgrades and Summerfield School's established use for gatherings and backup generators make them viable, but without further information, I cannot definitively choose between them. However, the spill makes Mountain Lodge the least suitable choice.\n[round 2] agent:hiddenbench:29:4: After analyzing all available information, Summerfield School is the most suitable emergency shelter. The fallen tree blocking access to Riverside Park eliminates it as a viable option, while Mountain Lodge lacks the specific upgrades for large-scale sheltering. Summerfield School's established use for gatherings and backup generators make it the most reliable choice.\n\nClaim claim:hiddenbench:29:answer: Select the single correct answer for HiddenBench task 29 (Safe Shelter Selection).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Mountain Lodge | Riverside Park | Summerfield School. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Mountain Lodge\": 0.5, \"Riverside Park\": 0.2500, \"Summerfield School\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:57f2a23d24001130de7fac586903b19b79ae03536bceae50c3691441ed929e6b",
+      "responseHash": "sha256:9244107b669efe12d1de076485461a99699ecb56eaf8cf8b2e60231279b7bdd3",
+      "rawResponse": "{\"message\":\"After analyzing the shared and private information, along with the discussion, Summerfield School is the most reliable choice. It has backup generators and is regularly used for gatherings, making it suitable for large-scale sheltering. While Riverside Park has upgrades, the fallen tree blocking access (mentioned in the discussion) makes it unreliable. Mountain Lodge is unsafe due to a chemical spill. Therefore, Summerfield School is the correct selection.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Mountain Lodge\":0.0,\"Riverside Park\":0.0,\"Summerfield School\":1.0}},\"evidence\":[{\"content\":\"Summerfield School is regularly used for community gatherings and has backup generators.\",\"relation\":\"supports\"},{\"content\":\"A tree has fallen on the north lane to Riverside Park, but the south lane remains clear according to a police report released five minutes ago.\",\"relation\":\"attacks\"},{\"content\":\"Based on the confirmed chemical spill next to Mountain Lodge, it is unsafe for use as an emergency shelter.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 843,
+        "completionTokens": 270,
+        "totalTokens": 1113,
+        "latencyMs": 9680
+      }
+    }
+  ],
+  "r3SnapshotHash": "sha256:9a3e9a83b0f1072489ea076ce1ca2d31671a97c5fa176d834f7af7fe34c7d6ae",
+  "contentHash": "sha256:3b0fccbd43596d60677dc285049d9eccdb7a0a48dbcbba3ec25ec34268b37f9d"
+}

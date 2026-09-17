@@ -10,8 +10,8 @@ import {
 } from "./types";
 
 import { callLLM, LLMConfig, LLMResponse, TokenUsage } from "@/lib/llm/providers";
-import { DiscussionEngine, DiscussionAgent, DiscussionConfig } from "@/lib/discussion";
-import { GovernanceRuntime } from "@/runtime/GovernanceRuntime";
+import { DiscussionEngine, DiscussionAgent, DiscussionConfig } from "../../../legacy/src/lib/discussion";
+import { GovernanceRuntime } from "../../../legacy/src/runtime/GovernanceRuntime";
 import { mulberry32 } from "../utils/statsUtils";
 
 export interface AgentUsageStats {

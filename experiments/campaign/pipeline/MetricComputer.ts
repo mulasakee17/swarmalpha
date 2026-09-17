@@ -24,7 +24,7 @@ import {
   type ExperimentMetrics,
   type CognitiveStateSnapshot,
 } from "../types";
-import { mean, sampleStd, mulberry32, BOOTSTRAP_SEED } from "../../v2/statsShared";
+import { mean, sampleStd, mulberry32, BOOTSTRAP_SEED } from "../../../legacy/experiments/v2/statsShared";
 
 // ============================================================================
 // Utilities

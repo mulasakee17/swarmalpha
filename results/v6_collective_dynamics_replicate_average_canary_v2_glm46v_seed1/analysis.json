@@ -1,0 +1,517 @@
+{
+  "analysisRef": {
+    "id": "swarmalpha.experiment.v6.collective-dynamics-replicate-average-canary.analysis",
+    "version": "2.0.0"
+  },
+  "planHash": "sha256:656b9fc3526efa84798e54f63359d86dd22fffac30c0ce5df4b2a2dee25897d5",
+  "freezeHash": "sha256:41043a9ca5e7fe231a588c68d2e4fdd0efe7167e1b5f1a74ca4b0f71a27d6bc9",
+  "runHash": "sha256:577261d3b79a7ba8fd50f1d257a76832978aafef9ac97f5131ec47ad75fd2845",
+  "inferenceUnit": "task",
+  "pairedObservationUnit": "task_agent_frozen_view",
+  "truthAccess": "none",
+  "terminalCountsByLabel": {
+    "A1": {
+      "valid": 10
+    },
+    "B1": {
+      "valid": 10
+    },
+    "A2": {
+      "valid": 10
+    },
+    "B2": {
+      "valid": 10
+    }
+  },
+  "unitRows": [
+    {
+      "unitId": "task-8:agent-1",
+      "sourceTaskId": 8,
+      "agentId": "agent:hiddenbench:8:1",
+      "terminalStatusByLabel": {
+        "A1": "valid",
+        "B1": "valid",
+        "A2": "valid",
+        "B2": "valid"
+      },
+      "pairStatus": "valid",
+      "blockAProbabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      },
+      "blockBProbabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      },
+      "splitHalfTotalVariation": 0,
+      "absoluteNormalizedEntropyDifference": 0,
+      "blockAUniqueTop": "opt_1",
+      "blockBUniqueTop": "opt_1",
+      "uniqueTopInterpretation": "agreement"
+    },
+    {
+      "unitId": "task-8:agent-2",
+      "sourceTaskId": 8,
+      "agentId": "agent:hiddenbench:8:2",
+      "terminalStatusByLabel": {
+        "A1": "valid",
+        "B1": "valid",
+        "A2": "valid",
+        "B2": "valid"
+      },
+      "pairStatus": "valid",
+      "blockAProbabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      },
+      "blockBProbabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      },
+      "splitHalfTotalVariation": 0,
+      "absoluteNormalizedEntropyDifference": 0,
+      "blockAUniqueTop": "opt_1",
+      "blockBUniqueTop": "opt_1",
+      "uniqueTopInterpretation": "agreement"
+    },
+    {
+      "unitId": "task-8:agent-3",
+      "sourceTaskId": 8,
+      "agentId": "agent:hiddenbench:8:3",
+      "terminalStatusByLabel": {
+        "A1": "valid",
+        "B1": "valid",
+        "A2": "valid",
+        "B2": "valid"
+      },
+      "pairStatus": "valid",
+      "blockAProbabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      },
+      "blockBProbabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      },
+      "splitHalfTotalVariation": 0,
+      "absoluteNormalizedEntropyDifference": 0,
+      "blockAUniqueTop": "opt_1",
+      "blockBUniqueTop": "opt_1",
+      "uniqueTopInterpretation": "agreement"
+    },
+    {
+      "unitId": "task-29:agent-1",
+      "sourceTaskId": 29,
+      "agentId": "agent:hiddenbench:29:1",
+      "terminalStatusByLabel": {
+        "A1": "valid",
+        "B1": "valid",
+        "A2": "valid",
+        "B2": "valid"
+      },
+      "pairStatus": "valid",
+      "blockAProbabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "blockBProbabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "splitHalfTotalVariation": 0,
+      "absoluteNormalizedEntropyDifference": 0,
+      "blockAUniqueTop": "opt_2",
+      "blockBUniqueTop": "opt_2",
+      "uniqueTopInterpretation": "agreement"
+    },
+    {
+      "unitId": "task-29:agent-2",
+      "sourceTaskId": 29,
+      "agentId": "agent:hiddenbench:29:2",
+      "terminalStatusByLabel": {
+        "A1": "valid",
+        "B1": "valid",
+        "A2": "valid",
+        "B2": "valid"
+      },
+      "pairStatus": "valid",
+      "blockAProbabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "blockBProbabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "splitHalfTotalVariation": 0,
+      "absoluteNormalizedEntropyDifference": 0,
+      "blockAUniqueTop": "opt_2",
+      "blockBUniqueTop": "opt_2",
+      "uniqueTopInterpretation": "agreement"
+    },
+    {
+      "unitId": "task-29:agent-3",
+      "sourceTaskId": 29,
+      "agentId": "agent:hiddenbench:29:3",
+      "terminalStatusByLabel": {
+        "A1": "valid",
+        "B1": "valid",
+        "A2": "valid",
+        "B2": "valid"
+      },
+      "pairStatus": "valid",
+      "blockAProbabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "blockBProbabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "splitHalfTotalVariation": 0,
+      "absoluteNormalizedEntropyDifference": 0,
+      "blockAUniqueTop": "opt_3",
+      "blockBUniqueTop": "opt_3",
+      "uniqueTopInterpretation": "agreement"
+    },
+    {
+      "unitId": "task-29:agent-4",
+      "sourceTaskId": 29,
+      "agentId": "agent:hiddenbench:29:4",
+      "terminalStatusByLabel": {
+        "A1": "valid",
+        "B1": "valid",
+        "A2": "valid",
+        "B2": "valid"
+      },
+      "pairStatus": "valid",
+      "blockAProbabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "blockBProbabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "splitHalfTotalVariation": 0,
+      "absoluteNormalizedEntropyDifference": 0,
+      "blockAUniqueTop": "opt_3",
+      "blockBUniqueTop": "opt_3",
+      "uniqueTopInterpretation": "agreement"
+    },
+    {
+      "unitId": "task-50:agent-1",
+      "sourceTaskId": 50,
+      "agentId": "agent:hiddenbench:50:1",
+      "terminalStatusByLabel": {
+        "A1": "valid",
+        "B1": "valid",
+        "A2": "valid",
+        "B2": "valid"
+      },
+      "pairStatus": "valid",
+      "blockAProbabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "blockBProbabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "splitHalfTotalVariation": 0,
+      "absoluteNormalizedEntropyDifference": 0,
+      "blockAUniqueTop": "opt_3",
+      "blockBUniqueTop": "opt_3",
+      "uniqueTopInterpretation": "agreement"
+    },
+    {
+      "unitId": "task-50:agent-2",
+      "sourceTaskId": 50,
+      "agentId": "agent:hiddenbench:50:2",
+      "terminalStatusByLabel": {
+        "A1": "valid",
+        "B1": "valid",
+        "A2": "valid",
+        "B2": "valid"
+      },
+      "pairStatus": "valid",
+      "blockAProbabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "blockBProbabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "splitHalfTotalVariation": 0,
+      "absoluteNormalizedEntropyDifference": 0,
+      "blockAUniqueTop": "opt_3",
+      "blockBUniqueTop": "opt_3",
+      "uniqueTopInterpretation": "agreement"
+    },
+    {
+      "unitId": "task-50:agent-3",
+      "sourceTaskId": 50,
+      "agentId": "agent:hiddenbench:50:3",
+      "terminalStatusByLabel": {
+        "A1": "valid",
+        "B1": "valid",
+        "A2": "valid",
+        "B2": "valid"
+      },
+      "pairStatus": "valid",
+      "blockAProbabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "blockBProbabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "splitHalfTotalVariation": 0,
+      "absoluteNormalizedEntropyDifference": 0,
+      "blockAUniqueTop": "opt_2",
+      "blockBUniqueTop": "opt_2",
+      "uniqueTopInterpretation": "agreement"
+    }
+  ],
+  "unitSummary": {
+    "registeredUnitCount": 10,
+    "validUnitCount": 10,
+    "invalidOrMissingUnitCount": 0,
+    "meanSplitHalfTotalVariation": 0,
+    "p90SplitHalfTotalVariation": 0,
+    "uniqueTopAgreementCount": 10,
+    "uniqueTopDisagreementCount": 0,
+    "indeterminateTieCount": 0
+  },
+  "blockMacrostates": [
+    {
+      "sourceTaskId": 8,
+      "block": "A",
+      "expectedAgentIds": [
+        "agent:hiddenbench:8:1",
+        "agent:hiddenbench:8:2",
+        "agent:hiddenbench:8:3"
+      ],
+      "validAgentIds": [
+        "agent:hiddenbench:8:1",
+        "agent:hiddenbench:8:2",
+        "agent:hiddenbench:8:3"
+      ],
+      "missingOrInvalidAgentIds": [],
+      "rosterComplete": true,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "pooledProbabilitiesByOptionId": {
+        "opt_1": 0.6999999999999998,
+        "opt_2": 0.20000000000000004,
+        "opt_3": 0.10000000000000002
+      },
+      "meanNormalizedEntropy": 0.7298466991620977,
+      "normalizedGeneralizedJsd": 1.1102230246251565e-16
+    },
+    {
+      "sourceTaskId": 8,
+      "block": "B",
+      "expectedAgentIds": [
+        "agent:hiddenbench:8:1",
+        "agent:hiddenbench:8:2",
+        "agent:hiddenbench:8:3"
+      ],
+      "validAgentIds": [
+        "agent:hiddenbench:8:1",
+        "agent:hiddenbench:8:2",
+        "agent:hiddenbench:8:3"
+      ],
+      "missingOrInvalidAgentIds": [],
+      "rosterComplete": true,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "pooledProbabilitiesByOptionId": {
+        "opt_1": 0.6999999999999998,
+        "opt_2": 0.20000000000000004,
+        "opt_3": 0.10000000000000002
+      },
+      "meanNormalizedEntropy": 0.7298466991620977,
+      "normalizedGeneralizedJsd": 1.1102230246251565e-16
+    },
+    {
+      "sourceTaskId": 29,
+      "block": "A",
+      "expectedAgentIds": [
+        "agent:hiddenbench:29:1",
+        "agent:hiddenbench:29:2",
+        "agent:hiddenbench:29:3",
+        "agent:hiddenbench:29:4"
+      ],
+      "validAgentIds": [
+        "agent:hiddenbench:29:1",
+        "agent:hiddenbench:29:2",
+        "agent:hiddenbench:29:3",
+        "agent:hiddenbench:29:4"
+      ],
+      "missingOrInvalidAgentIds": [],
+      "rosterComplete": true,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "pooledProbabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0.5,
+        "opt_3": 0.5
+      },
+      "meanNormalizedEntropy": 0,
+      "normalizedGeneralizedJsd": 0.6309297535714575
+    },
+    {
+      "sourceTaskId": 29,
+      "block": "B",
+      "expectedAgentIds": [
+        "agent:hiddenbench:29:1",
+        "agent:hiddenbench:29:2",
+        "agent:hiddenbench:29:3",
+        "agent:hiddenbench:29:4"
+      ],
+      "validAgentIds": [
+        "agent:hiddenbench:29:1",
+        "agent:hiddenbench:29:2",
+        "agent:hiddenbench:29:3",
+        "agent:hiddenbench:29:4"
+      ],
+      "missingOrInvalidAgentIds": [],
+      "rosterComplete": true,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "pooledProbabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0.5,
+        "opt_3": 0.5
+      },
+      "meanNormalizedEntropy": 0,
+      "normalizedGeneralizedJsd": 0.6309297535714575
+    },
+    {
+      "sourceTaskId": 50,
+      "block": "A",
+      "expectedAgentIds": [
+        "agent:hiddenbench:50:1",
+        "agent:hiddenbench:50:2",
+        "agent:hiddenbench:50:3"
+      ],
+      "validAgentIds": [
+        "agent:hiddenbench:50:1",
+        "agent:hiddenbench:50:2",
+        "agent:hiddenbench:50:3"
+      ],
+      "missingOrInvalidAgentIds": [],
+      "rosterComplete": true,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "pooledProbabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0.3333333333333333,
+        "opt_3": 0.6666666666666666
+      },
+      "meanNormalizedEntropy": 0,
+      "normalizedGeneralizedJsd": 0.579380164285695
+    },
+    {
+      "sourceTaskId": 50,
+      "block": "B",
+      "expectedAgentIds": [
+        "agent:hiddenbench:50:1",
+        "agent:hiddenbench:50:2",
+        "agent:hiddenbench:50:3"
+      ],
+      "validAgentIds": [
+        "agent:hiddenbench:50:1",
+        "agent:hiddenbench:50:2",
+        "agent:hiddenbench:50:3"
+      ],
+      "missingOrInvalidAgentIds": [],
+      "rosterComplete": true,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "pooledProbabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0.3333333333333333,
+        "opt_3": 0.6666666666666666
+      },
+      "meanNormalizedEntropy": 0,
+      "normalizedGeneralizedJsd": 0.579380164285695
+    }
+  ],
+  "taskMacroDifferences": [
+    {
+      "sourceTaskId": 8,
+      "status": "available",
+      "pooledTotalVariation": 0,
+      "meanNormalizedEntropyAbsDifference": 0,
+      "normalizedGeneralizedJsdAbsDifference": 0
+    },
+    {
+      "sourceTaskId": 29,
+      "status": "available",
+      "pooledTotalVariation": 0,
+      "meanNormalizedEntropyAbsDifference": 0,
+      "normalizedGeneralizedJsdAbsDifference": 0
+    },
+    {
+      "sourceTaskId": 50,
+      "status": "available",
+      "pooledTotalVariation": 0,
+      "meanNormalizedEntropyAbsDifference": 0,
+      "normalizedGeneralizedJsdAbsDifference": 0
+    }
+  ],
+  "developmentGates": {
+    "providerExecutionValid": true,
+    "allReportsValid": true,
+    "meanUnitSplitHalfTvPass": true,
+    "p90UnitSplitHalfTvPass": true,
+    "eachTaskPooledTvPass": true,
+    "eachTaskMeanEntropyPass": true,
+    "eachTaskJsdPass": true,
+    "overall": "SENSOR_PASS"
+  },
+  "claimCeiling": "development_instrument_qualification_only",
+  "contentHash": "sha256:760439c78e5b8376e4345c988c6171de4810aea1cfd99ec0c5e6c1b79fd7350e"
+}

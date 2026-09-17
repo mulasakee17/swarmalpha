@@ -1,0 +1,2318 @@
+{
+  "runRef": {
+    "id": "swarmalpha.experiment.v6.discussion-thermometer-state-space-sensor-run",
+    "version": "1.0.0"
+  },
+  "freezeHash": "sha256:489f03bb0d9146797b41e17b29c0d4a53b63f6d6b69fcc6a92336c43436e8479",
+  "terminals": [
+    {
+      "sequence": 1,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v1:x0:agent_1:a",
+      "requestHash": "sha256:8a91d670681138494882d9952ba3fda00e95556ebb5dcbd454902578607d100d",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 2,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v1:x0:agent_1:b",
+      "requestHash": "sha256:f226e568b086181e6c89fce3c659ba432bc4f507c1256f47e17cb1f6de30271e",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 3,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v1:x1:agent_1:a",
+      "requestHash": "sha256:226f2d3fcbf6c9a00fbe16c7630d650c7dad1421dfc9eb3d998d610ec5c60160",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 4,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v1:x1:agent_1:b",
+      "requestHash": "sha256:2af9067dff65271ef586908d4800b004e7b491eb89a40bf72f231ff071c862b5",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 5,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v1:x2:agent_1:a",
+      "requestHash": "sha256:3df5c111c05fb31e7ff998efe4190443bffca14810b336d02fb4b57468360faf",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 6,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v1:x2:agent_1:b",
+      "requestHash": "sha256:46dbd4aa6b7b8056638d2d4639695b73a0952b76617a20ff44da9b7a2b1114e0",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 7,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v1:x0:agent_2:a",
+      "requestHash": "sha256:be282b1f4a7d9cea8f265b663bcde75473459c7adbdb53fc7df3606e26238510",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.55,\"opt_2\":0.3,\"opt_3\":0.15}}",
+      "responseHash": "sha256:d8dc0ead1d7eb23d70c71f491ef0f843e6ae47e22247a399d469c88f11dc3379",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.55,
+        "opt_2": 0.3,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 8,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v1:x0:agent_2:b",
+      "requestHash": "sha256:deddc799d8910f8e9bc1f8fe9abd31c8ae743daf573ff555bf235590a93d120f",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.55,\"opt_2\":0.3,\"opt_3\":0.15}}",
+      "responseHash": "sha256:d8dc0ead1d7eb23d70c71f491ef0f843e6ae47e22247a399d469c88f11dc3379",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.55,
+        "opt_2": 0.3,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 9,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v1:x1:agent_2:a",
+      "requestHash": "sha256:c34ffe99a0a772088b10558043e3f5cf211ded0814a88e6e16f08b5ffe79f9f2",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.55,\"opt_2\":0.3,\"opt_3\":0.15}}",
+      "responseHash": "sha256:d8dc0ead1d7eb23d70c71f491ef0f843e6ae47e22247a399d469c88f11dc3379",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.55,
+        "opt_2": 0.3,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 10,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v1:x1:agent_2:b",
+      "requestHash": "sha256:6f76360a0630cf98ab2f66673283b9bb454426029f5f525f6560c7dc7a89d903",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.55,\"opt_2\":0.3,\"opt_3\":0.15}}",
+      "responseHash": "sha256:d8dc0ead1d7eb23d70c71f491ef0f843e6ae47e22247a399d469c88f11dc3379",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.55,
+        "opt_2": 0.3,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 11,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v1:x2:agent_2:a",
+      "requestHash": "sha256:843e4c5729f1eadb146d83eeb82d55c202d5cfedd494a5d2390f6e17158aa6f0",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.55,\"opt_2\":0.3,\"opt_3\":0.15}}",
+      "responseHash": "sha256:d8dc0ead1d7eb23d70c71f491ef0f843e6ae47e22247a399d469c88f11dc3379",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.55,
+        "opt_2": 0.3,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 12,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v1:x2:agent_2:b",
+      "requestHash": "sha256:4374595d0c57b9dcd3125f90fb79da02c66b149470eafe7bb6801558928595d5",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.55,\"opt_2\":0.3,\"opt_3\":0.15}}",
+      "responseHash": "sha256:d8dc0ead1d7eb23d70c71f491ef0f843e6ae47e22247a399d469c88f11dc3379",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.55,
+        "opt_2": 0.3,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 13,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v1:x0:agent_3:a",
+      "requestHash": "sha256:17530f7d0a1ef83fa45eb1d84f904c99a6413fc1a3058e743b6b8fbaf17acaae",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.45,\"opt_3\":0.15}}",
+      "responseHash": "sha256:5db2c1a42b6eaeb9784e5f87f72c08649892b6cdbaab73d09463fc774d87cf2b",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.45,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 14,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v1:x0:agent_3:b",
+      "requestHash": "sha256:592c1911014275b280a4480348dd878a7aad3109de183e5f0083e56e56ab1a16",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.45,\"opt_3\":0.15}}",
+      "responseHash": "sha256:5db2c1a42b6eaeb9784e5f87f72c08649892b6cdbaab73d09463fc774d87cf2b",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.45,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 15,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v1:x1:agent_3:a",
+      "requestHash": "sha256:38af387e67745632c504637720d4129f7cdc4ae002b2f38671d78add6d3da6ea",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.45,\"opt_3\":0.15}}",
+      "responseHash": "sha256:5db2c1a42b6eaeb9784e5f87f72c08649892b6cdbaab73d09463fc774d87cf2b",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.45,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 16,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v1:x1:agent_3:b",
+      "requestHash": "sha256:68b07c980944adeceac3e739d203a8622fa85eaa7272ee0dd2edff50bf81237f",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.45,\"opt_3\":0.15}}",
+      "responseHash": "sha256:5db2c1a42b6eaeb9784e5f87f72c08649892b6cdbaab73d09463fc774d87cf2b",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.45,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 17,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v1:x2:agent_3:a",
+      "requestHash": "sha256:22dc7904294eb3520d37e5398172b2b53ddf3e666ad6a8e4c06c5ca66efa2866",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.45,\"opt_3\":0.15}}",
+      "responseHash": "sha256:5db2c1a42b6eaeb9784e5f87f72c08649892b6cdbaab73d09463fc774d87cf2b",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.45,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 18,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v1:x2:agent_3:b",
+      "requestHash": "sha256:26a12b7e5ba54f57b1ab70025d8fa353808293f334d2a0fae0e4809c74c14d18",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.45,\"opt_3\":0.15}}",
+      "responseHash": "sha256:5db2c1a42b6eaeb9784e5f87f72c08649892b6cdbaab73d09463fc774d87cf2b",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.45,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 19,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v1:x0:agent_4:a",
+      "requestHash": "sha256:f75c32455ceaf5301e391fd854e1bceb8ae90c3918fa57ae2351755b2080e40d",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.2,\"opt_3\":0.3}}",
+      "responseHash": "sha256:d2e5dcbd2c38ab3de16e68bfba76a329b522582f06d082ecc408f266851d5476",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.2,
+        "opt_3": 0.3
+      }
+    },
+    {
+      "sequence": 20,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v1:x0:agent_4:b",
+      "requestHash": "sha256:2c418fdaeb4482232e001f191b3bacf62d44baf566c06a680e60b28dbcbc5b92",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.2,\"opt_3\":0.3}}",
+      "responseHash": "sha256:d2e5dcbd2c38ab3de16e68bfba76a329b522582f06d082ecc408f266851d5476",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.2,
+        "opt_3": 0.3
+      }
+    },
+    {
+      "sequence": 21,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v1:x1:agent_4:a",
+      "requestHash": "sha256:ac3e919b643ae9299998602f2d457d4d07afc6a0f2b925c44cb5ca17b67d93e3",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.2,\"opt_3\":0.3}}",
+      "responseHash": "sha256:d2e5dcbd2c38ab3de16e68bfba76a329b522582f06d082ecc408f266851d5476",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.2,
+        "opt_3": 0.3
+      }
+    },
+    {
+      "sequence": 22,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v1:x1:agent_4:b",
+      "requestHash": "sha256:e4d09497c45248fd706e70cf20f228443d9fae2062aba90b70855172bc474875",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.2,\"opt_3\":0.3}}",
+      "responseHash": "sha256:d2e5dcbd2c38ab3de16e68bfba76a329b522582f06d082ecc408f266851d5476",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.2,
+        "opt_3": 0.3
+      }
+    },
+    {
+      "sequence": 23,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v1:x2:agent_4:a",
+      "requestHash": "sha256:128bb93382149055157d4e83cd246495f9f35f525f0cef6ec1405641827aa800",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.2,\"opt_3\":0.3}}",
+      "responseHash": "sha256:d2e5dcbd2c38ab3de16e68bfba76a329b522582f06d082ecc408f266851d5476",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.2,
+        "opt_3": 0.3
+      }
+    },
+    {
+      "sequence": 24,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v1:x2:agent_4:b",
+      "requestHash": "sha256:5db732a1fb7bb7acdfecba988a73df34d0d920c9ffbf6f080c60a0fbf844dcd6",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.2,\"opt_3\":0.3}}",
+      "responseHash": "sha256:d2e5dcbd2c38ab3de16e68bfba76a329b522582f06d082ecc408f266851d5476",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.2,
+        "opt_3": 0.3
+      }
+    },
+    {
+      "sequence": 25,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v2:x0:agent_1:a",
+      "requestHash": "sha256:373ac672ecf71922ecb7fdf73d8b7bb79ddb5fc04384ba1cdcb5205dd91c3537",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.65,\"opt_2\":0.25,\"opt_3\":0.1}}",
+      "responseHash": "sha256:887a5706f03575d01064e11aa0265b62111043d658cca36a0f2a7022b71cf331",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.65,
+        "opt_2": 0.25,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 26,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v2:x0:agent_1:b",
+      "requestHash": "sha256:13aac652487d6689faa7d76dbceb55c5fc0abf8d6772c0d1f9ce7e3b47bbb321",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.65,\"opt_2\":0.25,\"opt_3\":0.1}}",
+      "responseHash": "sha256:887a5706f03575d01064e11aa0265b62111043d658cca36a0f2a7022b71cf331",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.65,
+        "opt_2": 0.25,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 27,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v2:x1:agent_1:a",
+      "requestHash": "sha256:f1fa8d839a7dc2e75568d6a31c6dcda19a67fd814ba038b4ac87daaf3ef76494",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.65,\"opt_2\":0.25,\"opt_3\":0.1}}",
+      "responseHash": "sha256:887a5706f03575d01064e11aa0265b62111043d658cca36a0f2a7022b71cf331",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.65,
+        "opt_2": 0.25,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 28,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v2:x1:agent_1:b",
+      "requestHash": "sha256:0861705ed267571ca9c9783ad03d18227a52eeb2b6cbbde533705991723282a7",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.65,\"opt_2\":0.25,\"opt_3\":0.1}}",
+      "responseHash": "sha256:887a5706f03575d01064e11aa0265b62111043d658cca36a0f2a7022b71cf331",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.65,
+        "opt_2": 0.25,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 29,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v2:x2:agent_1:a",
+      "requestHash": "sha256:c81f4e7ecde134b93acfc1dee766dbd8ee85d35b883f49d02c96a3e3f2bfed3a",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 30,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v2:x2:agent_1:b",
+      "requestHash": "sha256:d8cb3880a9f3221c28fdbc84a01d42460ea126682685afe86e6589b0f3480e13",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 31,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v2:x0:agent_2:a",
+      "requestHash": "sha256:c4216f6460f0231dba65662e2c9c19c551da649688f753f79a6afbf3e1a0ce44",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.65,\"opt_2\":0.25,\"opt_3\":0.1}}",
+      "responseHash": "sha256:887a5706f03575d01064e11aa0265b62111043d658cca36a0f2a7022b71cf331",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.65,
+        "opt_2": 0.25,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 32,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v2:x0:agent_2:b",
+      "requestHash": "sha256:d4cab313618bee61840a689d04dfd63bad7fefd6420226b2fb0473397dd19242",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.65,\"opt_2\":0.25,\"opt_3\":0.1}}",
+      "responseHash": "sha256:887a5706f03575d01064e11aa0265b62111043d658cca36a0f2a7022b71cf331",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.65,
+        "opt_2": 0.25,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 33,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v2:x1:agent_2:a",
+      "requestHash": "sha256:e99af35945dde343beab7bbe5a91ccaafb12399308e33325df59b9f23c70ce75",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.65,\"opt_2\":0.25,\"opt_3\":0.1}}",
+      "responseHash": "sha256:887a5706f03575d01064e11aa0265b62111043d658cca36a0f2a7022b71cf331",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.65,
+        "opt_2": 0.25,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 34,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v2:x1:agent_2:b",
+      "requestHash": "sha256:9e8c39039d3c19fef822eff139b4408f9cdedd152d581eb42edab1b3f9a9cb1e",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.65,\"opt_2\":0.25,\"opt_3\":0.1}}",
+      "responseHash": "sha256:887a5706f03575d01064e11aa0265b62111043d658cca36a0f2a7022b71cf331",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.65,
+        "opt_2": 0.25,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 35,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v2:x2:agent_2:a",
+      "requestHash": "sha256:b64f8aae0588b54f23cdc2b3d6b2c02a45babf84f4f91da567fe62ec5a64adfb",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 36,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v2:x2:agent_2:b",
+      "requestHash": "sha256:5efcf4029bb08dc2eb195a4baeb11ba2b6b1603de493860f3f511aebede73d7b",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 37,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v2:x0:agent_3:a",
+      "requestHash": "sha256:d7d6ff32144f685eb00cf968bbd845e0c4bcc9021ecfe6f5a16caaa100a5b9f3",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.65,\"opt_2\":0.25,\"opt_3\":0.1}}",
+      "responseHash": "sha256:887a5706f03575d01064e11aa0265b62111043d658cca36a0f2a7022b71cf331",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.65,
+        "opt_2": 0.25,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 38,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v2:x0:agent_3:b",
+      "requestHash": "sha256:261b62a6b3e748d36f960ed251c48c6d7aebbe83907c31bc03fa68a00f377f26",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.65,\"opt_2\":0.25,\"opt_3\":0.1}}",
+      "responseHash": "sha256:887a5706f03575d01064e11aa0265b62111043d658cca36a0f2a7022b71cf331",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.65,
+        "opt_2": 0.25,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 39,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v2:x1:agent_3:a",
+      "requestHash": "sha256:ed596d9f61728ce0b2578b20ebc1ba81e09418cc4e7dec2e73c19eb85cfad7db",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.65,\"opt_2\":0.25,\"opt_3\":0.1}}",
+      "responseHash": "sha256:887a5706f03575d01064e11aa0265b62111043d658cca36a0f2a7022b71cf331",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.65,
+        "opt_2": 0.25,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 40,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v2:x1:agent_3:b",
+      "requestHash": "sha256:3834e91d7349d5edde5abf2d8e861d855dbe4156332e4e1a803dd4c52d1d3aee",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.65,\"opt_2\":0.25,\"opt_3\":0.1}}",
+      "responseHash": "sha256:887a5706f03575d01064e11aa0265b62111043d658cca36a0f2a7022b71cf331",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.65,
+        "opt_2": 0.25,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 41,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v2:x2:agent_3:a",
+      "requestHash": "sha256:a9c0953ce50c425307b721c1681d4df0644ef01ab4449522a01ca5bad7bc7db4",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 42,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v2:x2:agent_3:b",
+      "requestHash": "sha256:d974385ae9af3480a39a1905ee393e2848acdfa0fa5b649f52c42a2888f13197",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 43,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v2:x0:agent_4:a",
+      "requestHash": "sha256:3f6687be65ccf1dc57ebf697db3247795aba5479bfbab3bc96e43245911b25c2",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.65,\"opt_2\":0.25,\"opt_3\":0.1}}",
+      "responseHash": "sha256:887a5706f03575d01064e11aa0265b62111043d658cca36a0f2a7022b71cf331",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.65,
+        "opt_2": 0.25,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 44,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v2:x0:agent_4:b",
+      "requestHash": "sha256:e620bd923af641831aac9ecfc1fe863521e0463611e2d47561b2ebc48cc2e2a8",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.65,\"opt_2\":0.25,\"opt_3\":0.1}}",
+      "responseHash": "sha256:887a5706f03575d01064e11aa0265b62111043d658cca36a0f2a7022b71cf331",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.65,
+        "opt_2": 0.25,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 45,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v2:x1:agent_4:a",
+      "requestHash": "sha256:4d616688b21acc12977a5f9d02fd090ac8a2c42a7663a29634b8b470c40050bb",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.65,\"opt_2\":0.25,\"opt_3\":0.1}}",
+      "responseHash": "sha256:887a5706f03575d01064e11aa0265b62111043d658cca36a0f2a7022b71cf331",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.65,
+        "opt_2": 0.25,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 46,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v2:x1:agent_4:b",
+      "requestHash": "sha256:99c7852ddde022fa604972a9b411ae7f2f3d05f9354f3549ac459e65743dd6d2",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.65,\"opt_2\":0.25,\"opt_3\":0.1}}",
+      "responseHash": "sha256:887a5706f03575d01064e11aa0265b62111043d658cca36a0f2a7022b71cf331",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.65,
+        "opt_2": 0.25,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 47,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v2:x2:agent_4:a",
+      "requestHash": "sha256:cef0b68772482990385ae5110e4937f43c01190e992e99bafb39153fbfe76bfb",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 48,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v2:x2:agent_4:b",
+      "requestHash": "sha256:7697499857d9ed6f20fbe7f8205d2ec1f7b6e40c459a7e8e4c78934f8bbad348",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 49,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v3:x0:agent_1:a",
+      "requestHash": "sha256:5f7c49a50c8a98468965cec4daa0185086e53e679b9f0b20a8681d8cbec183ae",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.1,\"opt_3\":0.1}}",
+      "responseHash": "sha256:b0903342cd5ca041d06ed12487a88047d2af19970fbc7b29eeb255aa778f5523",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.1,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 50,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v3:x0:agent_1:b",
+      "requestHash": "sha256:683654ecda8c928d41fd26fdbaa81012f06154091f6e7663852475f96a3ed400",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.1,\"opt_3\":0.1}}",
+      "responseHash": "sha256:b0903342cd5ca041d06ed12487a88047d2af19970fbc7b29eeb255aa778f5523",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.1,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 51,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v3:x1:agent_1:a",
+      "requestHash": "sha256:bbefe8b9b1da01ec8b7dd9dcccfb65daa695152378d6f222289bf5768d2a6f02",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.1,\"opt_3\":0.1}}",
+      "responseHash": "sha256:b0903342cd5ca041d06ed12487a88047d2af19970fbc7b29eeb255aa778f5523",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.1,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 52,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v3:x1:agent_1:b",
+      "requestHash": "sha256:303cbd74e1a9c5f455d68ce37980f77f9d98af21bf1a442e4a5955e3fbdfaa8c",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.1,\"opt_3\":0.1}}",
+      "responseHash": "sha256:b0903342cd5ca041d06ed12487a88047d2af19970fbc7b29eeb255aa778f5523",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.1,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 53,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v3:x2:agent_1:a",
+      "requestHash": "sha256:41c3863126147c980b31552610f5fb93b87ab0b0f1dc0625d8e01bf6dde998e5",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.6,\"opt_2\":0.25,\"opt_3\":0.15}}",
+      "responseHash": "sha256:5e301e777860e2a38b9e5c33c408948688b4648d6e6558751104108b11f0176a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.6,
+        "opt_2": 0.25,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 54,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v3:x2:agent_1:b",
+      "requestHash": "sha256:de5f9b6ed2e15432999450950679bf5cbac2dc2b2f2a298238447c6ab7d9151c",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.6,\"opt_2\":0.25,\"opt_3\":0.15}}",
+      "responseHash": "sha256:5e301e777860e2a38b9e5c33c408948688b4648d6e6558751104108b11f0176a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.6,
+        "opt_2": 0.25,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 55,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v3:x0:agent_2:a",
+      "requestHash": "sha256:9d3f0e68dd2fedce4c8464b9cb3cd37a40972c49c6010c923639f758427f8e6a",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.1,\"opt_3\":0.1}}",
+      "responseHash": "sha256:b0903342cd5ca041d06ed12487a88047d2af19970fbc7b29eeb255aa778f5523",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.1,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 56,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v3:x0:agent_2:b",
+      "requestHash": "sha256:3d63c26a223e4b5513d4676908ebd4188f1d90193008003166438c8f51bf402a",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.1,\"opt_3\":0.1}}",
+      "responseHash": "sha256:b0903342cd5ca041d06ed12487a88047d2af19970fbc7b29eeb255aa778f5523",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.1,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 57,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v3:x1:agent_2:a",
+      "requestHash": "sha256:b074f8a5c64fbcc55d6bc70b1dc2a1db773a43d399a41775e54c592b37d21b4d",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.1,\"opt_3\":0.1}}",
+      "responseHash": "sha256:b0903342cd5ca041d06ed12487a88047d2af19970fbc7b29eeb255aa778f5523",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.1,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 58,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v3:x1:agent_2:b",
+      "requestHash": "sha256:87171ea0e50e2a3b241bc54d2581f4ddc07f0c764575a8348da233b9d65a086b",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.1,\"opt_3\":0.1}}",
+      "responseHash": "sha256:b0903342cd5ca041d06ed12487a88047d2af19970fbc7b29eeb255aa778f5523",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.1,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 59,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v3:x2:agent_2:a",
+      "requestHash": "sha256:776c7f686d800f0dd923213e81554ac8b074c205b64deb4064f9e1cfdc4c2445",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.6,\"opt_2\":0.25,\"opt_3\":0.15}}",
+      "responseHash": "sha256:5e301e777860e2a38b9e5c33c408948688b4648d6e6558751104108b11f0176a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.6,
+        "opt_2": 0.25,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 60,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v3:x2:agent_2:b",
+      "requestHash": "sha256:7457517ed864bf97f05a916226e7db71c38a917cf19403d9ffdd53f9faaa4e3f",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.6,\"opt_2\":0.25,\"opt_3\":0.15}}",
+      "responseHash": "sha256:5e301e777860e2a38b9e5c33c408948688b4648d6e6558751104108b11f0176a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.6,
+        "opt_2": 0.25,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 61,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v3:x0:agent_3:a",
+      "requestHash": "sha256:09db412f5090e413c04927613019b7b71055f09b49dcdbb336cf1931d59acbcc",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.1,\"opt_3\":0.8}}",
+      "responseHash": "sha256:7de9d305ceff8eb5833488c7d88d0d6800d602879b731297b02cfe619fbd8274",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.1,
+        "opt_2": 0.1,
+        "opt_3": 0.8
+      }
+    },
+    {
+      "sequence": 62,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v3:x0:agent_3:b",
+      "requestHash": "sha256:86d39c359cdfade3cb6f4891320b74f495a0d1592231a68b57e1d33994da51d1",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.1,\"opt_3\":0.8}}",
+      "responseHash": "sha256:7de9d305ceff8eb5833488c7d88d0d6800d602879b731297b02cfe619fbd8274",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.1,
+        "opt_2": 0.1,
+        "opt_3": 0.8
+      }
+    },
+    {
+      "sequence": 63,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v3:x1:agent_3:a",
+      "requestHash": "sha256:fbfca1d259aeda8f5929661842f9412ecba993b1eb52f18b371e2af7052ca6f8",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.1,\"opt_3\":0.8}}",
+      "responseHash": "sha256:7de9d305ceff8eb5833488c7d88d0d6800d602879b731297b02cfe619fbd8274",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.1,
+        "opt_2": 0.1,
+        "opt_3": 0.8
+      }
+    },
+    {
+      "sequence": 64,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v3:x1:agent_3:b",
+      "requestHash": "sha256:088115e08c4acf621688528930e2dfc4756a8e725ed194f88be5a447e264d15f",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.1,\"opt_3\":0.8}}",
+      "responseHash": "sha256:7de9d305ceff8eb5833488c7d88d0d6800d602879b731297b02cfe619fbd8274",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.1,
+        "opt_2": 0.1,
+        "opt_3": 0.8
+      }
+    },
+    {
+      "sequence": 65,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v3:x2:agent_3:a",
+      "requestHash": "sha256:d9f395126583feb05c5cbeaca896e0e68056f41a9b43540faefc5a370d082060",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.6,\"opt_2\":0.25,\"opt_3\":0.15}}",
+      "responseHash": "sha256:5e301e777860e2a38b9e5c33c408948688b4648d6e6558751104108b11f0176a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.6,
+        "opt_2": 0.25,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 66,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v3:x2:agent_3:b",
+      "requestHash": "sha256:e567530ae87f3a9b445fc9f84cbe78608e37d152db1b547baa9180d6df6adfd6",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.6,\"opt_2\":0.25,\"opt_3\":0.15}}",
+      "responseHash": "sha256:5e301e777860e2a38b9e5c33c408948688b4648d6e6558751104108b11f0176a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.6,
+        "opt_2": 0.25,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 67,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v3:x0:agent_4:a",
+      "requestHash": "sha256:b586f566e6258f4d43d71937c506b484298aec8d9f0f0431c0ab9fad73b4be73",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.1,\"opt_3\":0.8}}",
+      "responseHash": "sha256:7de9d305ceff8eb5833488c7d88d0d6800d602879b731297b02cfe619fbd8274",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.1,
+        "opt_2": 0.1,
+        "opt_3": 0.8
+      }
+    },
+    {
+      "sequence": 68,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v3:x0:agent_4:b",
+      "requestHash": "sha256:69939b4da39966a68c3a8a0dcdcd35761d7ab31673d0ae45533121fb979d825b",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.1,\"opt_3\":0.8}}",
+      "responseHash": "sha256:7de9d305ceff8eb5833488c7d88d0d6800d602879b731297b02cfe619fbd8274",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.1,
+        "opt_2": 0.1,
+        "opt_3": 0.8
+      }
+    },
+    {
+      "sequence": 69,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v3:x1:agent_4:a",
+      "requestHash": "sha256:e5cb5fc2073fe77425dd4cb1556dd31c35dfc069f184a4fc5ba648fed4d2a6c2",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.1,\"opt_3\":0.8}}",
+      "responseHash": "sha256:7de9d305ceff8eb5833488c7d88d0d6800d602879b731297b02cfe619fbd8274",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.1,
+        "opt_2": 0.1,
+        "opt_3": 0.8
+      }
+    },
+    {
+      "sequence": 70,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v3:x1:agent_4:b",
+      "requestHash": "sha256:bdccae89a4cd40e4356348a0dbf2cbdd5853a635be908755de68302f97b7c8ad",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.1,\"opt_3\":0.8}}",
+      "responseHash": "sha256:7de9d305ceff8eb5833488c7d88d0d6800d602879b731297b02cfe619fbd8274",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.1,
+        "opt_2": 0.1,
+        "opt_3": 0.8
+      }
+    },
+    {
+      "sequence": 71,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v3:x2:agent_4:a",
+      "requestHash": "sha256:c29f561d6d52fd62fc07726df5c17c4f90233dc599c1afcef5d513332bd473a3",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.6,\"opt_2\":0.25,\"opt_3\":0.15}}",
+      "responseHash": "sha256:5e301e777860e2a38b9e5c33c408948688b4648d6e6558751104108b11f0176a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.6,
+        "opt_2": 0.25,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 72,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v3:x2:agent_4:b",
+      "requestHash": "sha256:2ebad20ebe86cf834696425a6e05f903cc682f017900ef08eb315eb2150a6171",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.6,\"opt_2\":0.25,\"opt_3\":0.15}}",
+      "responseHash": "sha256:5e301e777860e2a38b9e5c33c408948688b4648d6e6558751104108b11f0176a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.6,
+        "opt_2": 0.25,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 73,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v4:x0:agent_1:a",
+      "requestHash": "sha256:622f14915fc705b15f9c07ef63effefc7fd8f9a2b9515254df13ea47eff90846",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.2,
+        "opt_2": 0.7,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 74,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v4:x0:agent_1:b",
+      "requestHash": "sha256:dcf1ad6983b0081e4cd0772c03ae6ea2e6925ad51cef9a4e49d6a5edd10fe975",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.2,
+        "opt_2": 0.7,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 75,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v4:x1:agent_1:a",
+      "requestHash": "sha256:97a3909c13ddd2db30085e39de28e7300ef4afc467ff42a653af52b0e91a363a",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.2,
+        "opt_2": 0.7,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 76,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v4:x1:agent_1:b",
+      "requestHash": "sha256:ffb46b56a76d8098b04e4d832b02cf7f7a394333b27c4aa0e4952fd9638d027c",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.2,
+        "opt_2": 0.7,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 77,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v4:x2:agent_1:a",
+      "requestHash": "sha256:db7cbb253dec543ebf0b88d36fa0143a1b6ea7f918c69a9183a0368f861f6502",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.2,
+        "opt_2": 0.7,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 78,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v4:x2:agent_1:b",
+      "requestHash": "sha256:4e1c8942596a59e67633712658dcf828079ac5ff378c78c0b5e8a0359e6852cb",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.2,
+        "opt_2": 0.7,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 79,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v4:x0:agent_2:a",
+      "requestHash": "sha256:2490c5289bece8bda1098423439d07cb0cd5d550fba5f4c442ca020d7453283b",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.2,
+        "opt_2": 0.7,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 80,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v4:x0:agent_2:b",
+      "requestHash": "sha256:43bed1b107c31c98d7800352ff870517e1caf12a0cf0aa11d6f75f8659979692",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.2,
+        "opt_2": 0.7,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 81,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v4:x1:agent_2:a",
+      "requestHash": "sha256:1cc9af668f6639a57bb30ff255c454e4242e5ed483dbba7a373aaec5566f4c2b",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.2,
+        "opt_2": 0.7,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 82,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v4:x1:agent_2:b",
+      "requestHash": "sha256:b6752dba95be9bd6d329e0498d40df8bbc859040d663e96c44911d720b2b58c4",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.2,
+        "opt_2": 0.7,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 83,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v4:x2:agent_2:a",
+      "requestHash": "sha256:3d0fc431f644fa7528149c0b9b3d95bb25e377b5512ea13c6f7f2bf0e38328c3",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.2,
+        "opt_2": 0.7,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 84,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v4:x2:agent_2:b",
+      "requestHash": "sha256:13910f02756163d84662212d7a0ea0cc39468d6f90f1c4ba7518ec4ce7149267",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.2,
+        "opt_2": 0.7,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 85,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v4:x0:agent_3:a",
+      "requestHash": "sha256:69d19fd559d8a562afcc8dc58d8ea757635e49fc6ccdf527467d9f10593dbe15",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.2,
+        "opt_2": 0.7,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 86,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v4:x0:agent_3:b",
+      "requestHash": "sha256:43d9bf19e48d29599662f27a3e0b8621cad238c54459ec35235a6988606b090a",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.2,
+        "opt_2": 0.7,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 87,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v4:x1:agent_3:a",
+      "requestHash": "sha256:fc7135888ca1242b7ca97c70d61e189fe561edf8b2935de3fdc6872162010c32",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.2,
+        "opt_2": 0.7,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 88,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v4:x1:agent_3:b",
+      "requestHash": "sha256:f81410456e3d6a1bca05106fd11d13dbc6db2be57532aa83c1d41b991c4b0cc6",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.2,
+        "opt_2": 0.7,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 89,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v4:x2:agent_3:a",
+      "requestHash": "sha256:75e47af0660387a754c32b9bc8d582f3c47358994fb2ae43aa2d14f9b7d331f5",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.2,
+        "opt_2": 0.7,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 90,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v4:x2:agent_3:b",
+      "requestHash": "sha256:851d6a0ebcfa7bac8e0355d71a9f4273361485c40cf2ec924db3d39d9bcf279a",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.2,
+        "opt_2": 0.7,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 91,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v4:x0:agent_4:a",
+      "requestHash": "sha256:571ef6e84a94c0ef65ce6692c91ad730b19611d1157719f9e7f2d1e1335a2287",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.1,\"opt_3\":0.1}}",
+      "responseHash": "sha256:b0903342cd5ca041d06ed12487a88047d2af19970fbc7b29eeb255aa778f5523",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.1,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 92,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v4:x0:agent_4:b",
+      "requestHash": "sha256:5344a6c8ad8e49cae5dd5431669a99c3784007c04d37cce31007ddb6f84d0e0e",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.1,\"opt_3\":0.1}}",
+      "responseHash": "sha256:b0903342cd5ca041d06ed12487a88047d2af19970fbc7b29eeb255aa778f5523",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.1,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 93,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v4:x1:agent_4:a",
+      "requestHash": "sha256:f43f934f25003e1402ad63b7b85b6a54f8d3aab56280a5b4716b6959ccef605f",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.1,\"opt_3\":0.1}}",
+      "responseHash": "sha256:b0903342cd5ca041d06ed12487a88047d2af19970fbc7b29eeb255aa778f5523",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.1,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 94,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v4:x1:agent_4:b",
+      "requestHash": "sha256:9797f4f111c74b28c3b082ca759ca6688bd89803c0d58428060a2ce28e776900",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.1,\"opt_3\":0.1}}",
+      "responseHash": "sha256:b0903342cd5ca041d06ed12487a88047d2af19970fbc7b29eeb255aa778f5523",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.1,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 95,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v4:x2:agent_4:a",
+      "requestHash": "sha256:721d19e3515b6e1c73689e5b50a7012279286461e0dec9c34be7405e2caf2014",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.1,\"opt_3\":0.1}}",
+      "responseHash": "sha256:b0903342cd5ca041d06ed12487a88047d2af19970fbc7b29eeb255aa778f5523",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.1,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 96,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:thermal-loop:v4:x2:agent_4:b",
+      "requestHash": "sha256:ad0c9f7a1c12e5e6407d8da49208f5db2362d91e3a010072478a7cff1afdfb40",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.1,\"opt_3\":0.1}}",
+      "responseHash": "sha256:b0903342cd5ca041d06ed12487a88047d2af19970fbc7b29eeb255aa778f5523",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.1,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 97,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v1:x0:agent_1:a",
+      "requestHash": "sha256:af58b035b7d1da4d8831f6fe161cb38404ca04dd2538656ccb7a30376f93c3db",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 98,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v1:x0:agent_1:b",
+      "requestHash": "sha256:6f29693ee414f93493bbd6b8e666cfda697d377536b1432d62d7b227719f1b6f",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 99,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v1:x1:agent_1:a",
+      "requestHash": "sha256:e78f41574e45faa6dbd1de1a5e2bce089144634cbb3a0bb78737cfe4f8348cfb",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 100,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v1:x1:agent_1:b",
+      "requestHash": "sha256:9ae5358d4dce1a9428c216d61b5aa9efea655c09858cffb7f0d862dc4aebe905",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 101,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v1:x2:agent_1:a",
+      "requestHash": "sha256:acf22bad6cd5c3e0f188afb6871c858f9f05a8776f8c9f06c4f11cc7fbf2bf34",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 102,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v1:x2:agent_1:b",
+      "requestHash": "sha256:116894bfe5d919036ce867e030440afecfc99e652b84950ff457b043f6d324aa",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 103,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v1:x0:agent_2:a",
+      "requestHash": "sha256:e598b93af63e18a2223f16370ca09a0b34c50016a4ed2525b6ae5fa952f3f0b4",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.55,\"opt_2\":0.3,\"opt_3\":0.15}}",
+      "responseHash": "sha256:d8dc0ead1d7eb23d70c71f491ef0f843e6ae47e22247a399d469c88f11dc3379",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.55,
+        "opt_2": 0.3,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 104,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v1:x0:agent_2:b",
+      "requestHash": "sha256:ced47d717b836afa783e6aab264b8df63d21f2c98a3f6083b5f4ba23ae752cfb",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.55,\"opt_2\":0.3,\"opt_3\":0.15}}",
+      "responseHash": "sha256:d8dc0ead1d7eb23d70c71f491ef0f843e6ae47e22247a399d469c88f11dc3379",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.55,
+        "opt_2": 0.3,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 105,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v1:x1:agent_2:a",
+      "requestHash": "sha256:07a070cbded7beacf3f063a83c3dfa59d77156d7a1425630a8962d56eeed17cc",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.55,\"opt_2\":0.3,\"opt_3\":0.15}}",
+      "responseHash": "sha256:d8dc0ead1d7eb23d70c71f491ef0f843e6ae47e22247a399d469c88f11dc3379",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.55,
+        "opt_2": 0.3,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 106,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v1:x1:agent_2:b",
+      "requestHash": "sha256:da96ff96d8d370ebd5a3260717c20fe3107338f7af782b84b637fdefea39e5b1",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.55,\"opt_2\":0.3,\"opt_3\":0.15}}",
+      "responseHash": "sha256:d8dc0ead1d7eb23d70c71f491ef0f843e6ae47e22247a399d469c88f11dc3379",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.55,
+        "opt_2": 0.3,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 107,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v1:x2:agent_2:a",
+      "requestHash": "sha256:12c10da010d09576686f9bed4836008c4835de9969dcaaef74e650ca70a8e2c4",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.55,\"opt_2\":0.3,\"opt_3\":0.15}}",
+      "responseHash": "sha256:d8dc0ead1d7eb23d70c71f491ef0f843e6ae47e22247a399d469c88f11dc3379",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.55,
+        "opt_2": 0.3,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 108,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v1:x2:agent_2:b",
+      "requestHash": "sha256:5d2c0addc69661a8e5136f4c6516ba7dda2fb882b8f625bf2f746b31093832d5",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.55,\"opt_2\":0.3,\"opt_3\":0.15}}",
+      "responseHash": "sha256:d8dc0ead1d7eb23d70c71f491ef0f843e6ae47e22247a399d469c88f11dc3379",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.55,
+        "opt_2": 0.3,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 109,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v1:x0:agent_3:a",
+      "requestHash": "sha256:65eb68cca22958c73f472d330511458071eef33573c037fdfe343ad15ec4b997",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.45,\"opt_3\":0.15}}",
+      "responseHash": "sha256:5db2c1a42b6eaeb9784e5f87f72c08649892b6cdbaab73d09463fc774d87cf2b",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.45,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 110,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v1:x0:agent_3:b",
+      "requestHash": "sha256:0249173bbecaa36a34295a08fff7d30731909c3548f5cc7ae0fee39f8f7704ad",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.45,\"opt_3\":0.15}}",
+      "responseHash": "sha256:5db2c1a42b6eaeb9784e5f87f72c08649892b6cdbaab73d09463fc774d87cf2b",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.45,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 111,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v1:x1:agent_3:a",
+      "requestHash": "sha256:2662cf88136653a48c55aab722338ae0d567125f0d5643e7b03b656c9c801b09",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.45,\"opt_3\":0.15}}",
+      "responseHash": "sha256:5db2c1a42b6eaeb9784e5f87f72c08649892b6cdbaab73d09463fc774d87cf2b",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.45,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 112,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v1:x1:agent_3:b",
+      "requestHash": "sha256:015c3c6cb59716496b13b58998e97b536b962a32cf0ee2963f8698b6f6b8a783",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.45,\"opt_3\":0.15}}",
+      "responseHash": "sha256:5db2c1a42b6eaeb9784e5f87f72c08649892b6cdbaab73d09463fc774d87cf2b",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.45,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 113,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v1:x2:agent_3:a",
+      "requestHash": "sha256:4cdaa83a9339ef28b049ce0611d95bddbbee1e1b5de1f2d95ab507a67f8176d5",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.45,\"opt_3\":0.15}}",
+      "responseHash": "sha256:5db2c1a42b6eaeb9784e5f87f72c08649892b6cdbaab73d09463fc774d87cf2b",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.45,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 114,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v1:x2:agent_3:b",
+      "requestHash": "sha256:728a3a1e2102dea57128bee41522fc6569be5ed3fdc2bee2d197b3f07e0d6871",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.45,\"opt_3\":0.15}}",
+      "responseHash": "sha256:5db2c1a42b6eaeb9784e5f87f72c08649892b6cdbaab73d09463fc774d87cf2b",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.45,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 115,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v1:x0:agent_4:a",
+      "requestHash": "sha256:70b18d2cb08f1fb3cc6131db28f20be8862e021d477283f1b5d940b694c8eaa7",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.2,\"opt_3\":0.3}}",
+      "responseHash": "sha256:d2e5dcbd2c38ab3de16e68bfba76a329b522582f06d082ecc408f266851d5476",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.2,
+        "opt_3": 0.3
+      }
+    },
+    {
+      "sequence": 116,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v1:x0:agent_4:b",
+      "requestHash": "sha256:efa387121713e7b40179e29d2db193bbcb8a40864b75eafe08bd4075780b5f7d",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.2,\"opt_3\":0.3}}",
+      "responseHash": "sha256:d2e5dcbd2c38ab3de16e68bfba76a329b522582f06d082ecc408f266851d5476",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.2,
+        "opt_3": 0.3
+      }
+    },
+    {
+      "sequence": 117,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v1:x1:agent_4:a",
+      "requestHash": "sha256:7b25e4cb4887da4834d7e02c47b5d127529ba9ef72cbc056a6c44cb5fd036f7d",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.2,\"opt_3\":0.3}}",
+      "responseHash": "sha256:d2e5dcbd2c38ab3de16e68bfba76a329b522582f06d082ecc408f266851d5476",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.2,
+        "opt_3": 0.3
+      }
+    },
+    {
+      "sequence": 118,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v1:x1:agent_4:b",
+      "requestHash": "sha256:71f108658793575fbcdadf2847d54c80c535c175d0335acdce7fc7a89add5caf",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.2,\"opt_3\":0.3}}",
+      "responseHash": "sha256:d2e5dcbd2c38ab3de16e68bfba76a329b522582f06d082ecc408f266851d5476",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.2,
+        "opt_3": 0.3
+      }
+    },
+    {
+      "sequence": 119,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v1:x2:agent_4:a",
+      "requestHash": "sha256:d44996a476fc75a1eaae83bae8c8da9ca82a81b1d40041f5dbf06f2299fef58a",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.2,\"opt_3\":0.3}}",
+      "responseHash": "sha256:d2e5dcbd2c38ab3de16e68bfba76a329b522582f06d082ecc408f266851d5476",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.2,
+        "opt_3": 0.3
+      }
+    },
+    {
+      "sequence": 120,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v1:x2:agent_4:b",
+      "requestHash": "sha256:b7d3cf8deac1161bb0cc7e990bafa43bbd05e1ae6a585358a136e5032390f61d",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.2,\"opt_3\":0.3}}",
+      "responseHash": "sha256:d2e5dcbd2c38ab3de16e68bfba76a329b522582f06d082ecc408f266851d5476",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.2,
+        "opt_3": 0.3
+      }
+    },
+    {
+      "sequence": 121,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v2:x0:agent_1:a",
+      "requestHash": "sha256:5843404d5f7d8fea19d4d59c66fb92bb6e47e33c5d2ff4eb0dc87ee75ab4b64b",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.65,\"opt_2\":0.25,\"opt_3\":0.1}}",
+      "responseHash": "sha256:887a5706f03575d01064e11aa0265b62111043d658cca36a0f2a7022b71cf331",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.65,
+        "opt_2": 0.25,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 122,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v2:x0:agent_1:b",
+      "requestHash": "sha256:6413ddbdbc76102bb5267791354882ef692d2d402f6896b7ff1f707542beb512",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.65,\"opt_2\":0.25,\"opt_3\":0.1}}",
+      "responseHash": "sha256:887a5706f03575d01064e11aa0265b62111043d658cca36a0f2a7022b71cf331",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.65,
+        "opt_2": 0.25,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 123,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v2:x1:agent_1:a",
+      "requestHash": "sha256:624e617f514967b3cef39e7e7cfa0db0fe568b2133099fef5c53b3240fe67a5d",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.65,\"opt_2\":0.25,\"opt_3\":0.1}}",
+      "responseHash": "sha256:887a5706f03575d01064e11aa0265b62111043d658cca36a0f2a7022b71cf331",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.65,
+        "opt_2": 0.25,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 124,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v2:x1:agent_1:b",
+      "requestHash": "sha256:ebe82c0782cf4953c161f6b546ab4d11f79ae69ed35a84ab8a3219bc67b52510",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.65,\"opt_2\":0.25,\"opt_3\":0.1}}",
+      "responseHash": "sha256:887a5706f03575d01064e11aa0265b62111043d658cca36a0f2a7022b71cf331",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.65,
+        "opt_2": 0.25,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 125,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v2:x2:agent_1:a",
+      "requestHash": "sha256:3c46f09a1b464a4e8946fdfc47e05c8330cdf69e7f3aec698e00a0562515b546",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 126,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v2:x2:agent_1:b",
+      "requestHash": "sha256:12af7e2ecd9692c03d28ac77a48f1c88fe235c599d2e15385192735e6c0d403d",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 127,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v2:x0:agent_2:a",
+      "requestHash": "sha256:7315af2de5df15a816422d2bd260a45956857f8c0054141fe6ea9366fc1a5482",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.65,\"opt_2\":0.25,\"opt_3\":0.1}}",
+      "responseHash": "sha256:887a5706f03575d01064e11aa0265b62111043d658cca36a0f2a7022b71cf331",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.65,
+        "opt_2": 0.25,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 128,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v2:x0:agent_2:b",
+      "requestHash": "sha256:e485366feafe6efcb989f167e25830fa8a22cd0321f1ac81d8718ee417bb2eac",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.65,\"opt_2\":0.25,\"opt_3\":0.1}}",
+      "responseHash": "sha256:887a5706f03575d01064e11aa0265b62111043d658cca36a0f2a7022b71cf331",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.65,
+        "opt_2": 0.25,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 129,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v2:x1:agent_2:a",
+      "requestHash": "sha256:6b964ea3a50c0906bb3ffccbe9ce13731c3f260400eeea55d63c820950ecf6e6",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.65,\"opt_2\":0.25,\"opt_3\":0.1}}",
+      "responseHash": "sha256:887a5706f03575d01064e11aa0265b62111043d658cca36a0f2a7022b71cf331",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.65,
+        "opt_2": 0.25,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 130,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v2:x1:agent_2:b",
+      "requestHash": "sha256:e0c26ff6092de060e0c0f0cb85d0c6af380e6bf3b152db81afab868780684aad",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.65,\"opt_2\":0.25,\"opt_3\":0.1}}",
+      "responseHash": "sha256:887a5706f03575d01064e11aa0265b62111043d658cca36a0f2a7022b71cf331",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.65,
+        "opt_2": 0.25,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 131,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v2:x2:agent_2:a",
+      "requestHash": "sha256:2e0f640360cfa8671a965c908ceb88027ea9cfef384d4e6e600360476a405e24",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 132,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v2:x2:agent_2:b",
+      "requestHash": "sha256:6477bab35645aaf4763118f73cb1f2a662b1e4f50bb578a69f28b3560f9040c8",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 133,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v2:x0:agent_3:a",
+      "requestHash": "sha256:ddd1f0889981821f6a8f33fe969a8510818fb82768ad169ae981f98619ca5e0d",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.65,\"opt_2\":0.25,\"opt_3\":0.1}}",
+      "responseHash": "sha256:887a5706f03575d01064e11aa0265b62111043d658cca36a0f2a7022b71cf331",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.65,
+        "opt_2": 0.25,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 134,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v2:x0:agent_3:b",
+      "requestHash": "sha256:71f53f04db874faf7c5e81e1a4c8e4e0606e875c9d7839cdfebbaa0d234d0c57",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.65,\"opt_2\":0.25,\"opt_3\":0.1}}",
+      "responseHash": "sha256:887a5706f03575d01064e11aa0265b62111043d658cca36a0f2a7022b71cf331",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.65,
+        "opt_2": 0.25,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 135,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v2:x1:agent_3:a",
+      "requestHash": "sha256:d38e573d1be778961bb3944d6bbad189fd220fa2c5a9c15fce2972279b71a95e",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.65,\"opt_2\":0.25,\"opt_3\":0.1}}",
+      "responseHash": "sha256:887a5706f03575d01064e11aa0265b62111043d658cca36a0f2a7022b71cf331",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.65,
+        "opt_2": 0.25,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 136,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v2:x1:agent_3:b",
+      "requestHash": "sha256:4a27e963f32b82039685d1ad5d74fe56ae949f8682cf20b201824f03b088ea41",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.65,\"opt_2\":0.25,\"opt_3\":0.1}}",
+      "responseHash": "sha256:887a5706f03575d01064e11aa0265b62111043d658cca36a0f2a7022b71cf331",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.65,
+        "opt_2": 0.25,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 137,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v2:x2:agent_3:a",
+      "requestHash": "sha256:b308852cd5a77ae3d6581bf91c49f76b884118ee867188763aa533e0559e14a3",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 138,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v2:x2:agent_3:b",
+      "requestHash": "sha256:c3fe1c70819e557976efeca4f64d576ee18c22a5cc4e4a2ee415d4933b975234",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 139,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v2:x0:agent_4:a",
+      "requestHash": "sha256:356a98a3379e3ea4f426dbc3b1fe7669fbc8ca49439b78f33a1b7de5571b4a5a",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.65,\"opt_2\":0.25,\"opt_3\":0.1}}",
+      "responseHash": "sha256:887a5706f03575d01064e11aa0265b62111043d658cca36a0f2a7022b71cf331",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.65,
+        "opt_2": 0.25,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 140,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v2:x0:agent_4:b",
+      "requestHash": "sha256:00e6f399f4a10ad2df5e395b322cbd42fc956d7677749410fef6e28589ca7bdb",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.65,\"opt_2\":0.25,\"opt_3\":0.1}}",
+      "responseHash": "sha256:887a5706f03575d01064e11aa0265b62111043d658cca36a0f2a7022b71cf331",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.65,
+        "opt_2": 0.25,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 141,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v2:x1:agent_4:a",
+      "requestHash": "sha256:2410fabc6e08593f7b0b45b42055d7b0bfc0b4c077f65b86d657b63d773a1ad7",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.65,\"opt_2\":0.25,\"opt_3\":0.1}}",
+      "responseHash": "sha256:887a5706f03575d01064e11aa0265b62111043d658cca36a0f2a7022b71cf331",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.65,
+        "opt_2": 0.25,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 142,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v2:x1:agent_4:b",
+      "requestHash": "sha256:95935489fd03e157f5bd34436d3824683cbd076441d690d8b6a84e84093c6234",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.65,\"opt_2\":0.25,\"opt_3\":0.1}}",
+      "responseHash": "sha256:887a5706f03575d01064e11aa0265b62111043d658cca36a0f2a7022b71cf331",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.65,
+        "opt_2": 0.25,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 143,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v2:x2:agent_4:a",
+      "requestHash": "sha256:a3176e5ed419cc3b36c04d0754a559af8be05d7ecd657d8e62a26fddf87636b7",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 144,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v2:x2:agent_4:b",
+      "requestHash": "sha256:e47e5cce6d86347916075edff193c6c9986da7cc5823dcae8848e749cd98d4ff",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 145,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v3:x0:agent_1:a",
+      "requestHash": "sha256:59728ec3dcc8b91e54545351e97c75bddd228b2e98d61aeefb21d4276b328110",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.1,\"opt_3\":0.1}}",
+      "responseHash": "sha256:b0903342cd5ca041d06ed12487a88047d2af19970fbc7b29eeb255aa778f5523",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.1,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 146,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v3:x0:agent_1:b",
+      "requestHash": "sha256:82727fc92c48ede45a9371cc15213a8f7149f12c6151b86bf7cfd6e76628bc10",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.1,\"opt_3\":0.1}}",
+      "responseHash": "sha256:b0903342cd5ca041d06ed12487a88047d2af19970fbc7b29eeb255aa778f5523",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.1,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 147,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v3:x1:agent_1:a",
+      "requestHash": "sha256:d452dad9aafad3054ad5e15d5d5a1f91da8da2650127c5fc1bb17c14f8320cb8",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.1,\"opt_3\":0.1}}",
+      "responseHash": "sha256:b0903342cd5ca041d06ed12487a88047d2af19970fbc7b29eeb255aa778f5523",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.1,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 148,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v3:x1:agent_1:b",
+      "requestHash": "sha256:6c6c2218bc5da2738f52b1fc27044e2c9b2389b4362c88620affa5f3995c3e82",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.1,\"opt_3\":0.1}}",
+      "responseHash": "sha256:b0903342cd5ca041d06ed12487a88047d2af19970fbc7b29eeb255aa778f5523",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.1,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 149,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v3:x2:agent_1:a",
+      "requestHash": "sha256:5bd4f81ba8c0eed7de2d68e484b5d1e924914a4d2b40ab0e5181dc90ed17fdd2",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.6,\"opt_2\":0.25,\"opt_3\":0.15}}",
+      "responseHash": "sha256:5e301e777860e2a38b9e5c33c408948688b4648d6e6558751104108b11f0176a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.6,
+        "opt_2": 0.25,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 150,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v3:x2:agent_1:b",
+      "requestHash": "sha256:b7433a367182baf2177255182cc8ee6d31cbc97a431ae0ddc682892d632f4e74",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.6,\"opt_2\":0.25,\"opt_3\":0.15}}",
+      "responseHash": "sha256:5e301e777860e2a38b9e5c33c408948688b4648d6e6558751104108b11f0176a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.6,
+        "opt_2": 0.25,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 151,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v3:x0:agent_2:a",
+      "requestHash": "sha256:54024376feb7a007032052d8daf6a412b46df8f9ac4cf141c649c96f5bfb230c",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.1,\"opt_3\":0.1}}",
+      "responseHash": "sha256:b0903342cd5ca041d06ed12487a88047d2af19970fbc7b29eeb255aa778f5523",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.1,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 152,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v3:x0:agent_2:b",
+      "requestHash": "sha256:ed316678068fdd442aeaeb1a45c16527f939459b59d58ec5949ca29e92c04a99",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.1,\"opt_3\":0.1}}",
+      "responseHash": "sha256:b0903342cd5ca041d06ed12487a88047d2af19970fbc7b29eeb255aa778f5523",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.1,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 153,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v3:x1:agent_2:a",
+      "requestHash": "sha256:2e79be54c949ffa87721b238ddbd9fb99a00835875b173dc5d830464a0d90756",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.1,\"opt_3\":0.1}}",
+      "responseHash": "sha256:b0903342cd5ca041d06ed12487a88047d2af19970fbc7b29eeb255aa778f5523",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.1,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 154,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v3:x1:agent_2:b",
+      "requestHash": "sha256:f646ed7886c11c25341fadf41939e7f100942f9a5eef6a0a1915fdb49018b137",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.1,\"opt_3\":0.1}}",
+      "responseHash": "sha256:b0903342cd5ca041d06ed12487a88047d2af19970fbc7b29eeb255aa778f5523",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.1,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 155,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v3:x2:agent_2:a",
+      "requestHash": "sha256:30ab060aaa6d85dbfb2996406d3c3f5113ccdcd1836f741a2fd125beb077b652",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.6,\"opt_2\":0.25,\"opt_3\":0.15}}",
+      "responseHash": "sha256:5e301e777860e2a38b9e5c33c408948688b4648d6e6558751104108b11f0176a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.6,
+        "opt_2": 0.25,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 156,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v3:x2:agent_2:b",
+      "requestHash": "sha256:51a2b5dd819d8a19ed145c14534ee321b77b4a36280ab6ace2f49f896c98d62f",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.6,\"opt_2\":0.25,\"opt_3\":0.15}}",
+      "responseHash": "sha256:5e301e777860e2a38b9e5c33c408948688b4648d6e6558751104108b11f0176a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.6,
+        "opt_2": 0.25,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 157,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v3:x0:agent_3:a",
+      "requestHash": "sha256:59b1af92cb06e98759b763bf8010693a0f103c04b81cc1a468c68007b325356b",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.1,\"opt_3\":0.8}}",
+      "responseHash": "sha256:7de9d305ceff8eb5833488c7d88d0d6800d602879b731297b02cfe619fbd8274",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.1,
+        "opt_2": 0.1,
+        "opt_3": 0.8
+      }
+    },
+    {
+      "sequence": 158,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v3:x0:agent_3:b",
+      "requestHash": "sha256:7fab213a736f3c470859e5e36b885b7add181da959d1b91d752324ce08d829ac",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.1,\"opt_3\":0.8}}",
+      "responseHash": "sha256:7de9d305ceff8eb5833488c7d88d0d6800d602879b731297b02cfe619fbd8274",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.1,
+        "opt_2": 0.1,
+        "opt_3": 0.8
+      }
+    },
+    {
+      "sequence": 159,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v3:x1:agent_3:a",
+      "requestHash": "sha256:90cc5457bba4b3c72f9aeb8cece1dc89b54ff6aca4b53268d90dfda4c5ea7b4c",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.1,\"opt_3\":0.8}}",
+      "responseHash": "sha256:7de9d305ceff8eb5833488c7d88d0d6800d602879b731297b02cfe619fbd8274",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.1,
+        "opt_2": 0.1,
+        "opt_3": 0.8
+      }
+    },
+    {
+      "sequence": 160,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v3:x1:agent_3:b",
+      "requestHash": "sha256:2bacaf6d402f9757b63652419173b460e145e8f748adcc90afd47a7f48baf931",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.1,\"opt_3\":0.8}}",
+      "responseHash": "sha256:7de9d305ceff8eb5833488c7d88d0d6800d602879b731297b02cfe619fbd8274",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.1,
+        "opt_2": 0.1,
+        "opt_3": 0.8
+      }
+    },
+    {
+      "sequence": 161,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v3:x2:agent_3:a",
+      "requestHash": "sha256:ba4a0491e25a40f9ca626459f0e7d4383d135636928c74dbaa48474bed5999c0",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.6,\"opt_2\":0.25,\"opt_3\":0.15}}",
+      "responseHash": "sha256:5e301e777860e2a38b9e5c33c408948688b4648d6e6558751104108b11f0176a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.6,
+        "opt_2": 0.25,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 162,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v3:x2:agent_3:b",
+      "requestHash": "sha256:5c3bc90d7a29445ed4b311e0acece05fa4f7c1ba105a854ad81dc27ccb702831",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.6,\"opt_2\":0.25,\"opt_3\":0.15}}",
+      "responseHash": "sha256:5e301e777860e2a38b9e5c33c408948688b4648d6e6558751104108b11f0176a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.6,
+        "opt_2": 0.25,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 163,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v3:x0:agent_4:a",
+      "requestHash": "sha256:8c6f7a1f1c2b62e9767b10d4a42e85e50ee8837e293519f72a073e96c6e282dd",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.1,\"opt_3\":0.8}}",
+      "responseHash": "sha256:7de9d305ceff8eb5833488c7d88d0d6800d602879b731297b02cfe619fbd8274",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.1,
+        "opt_2": 0.1,
+        "opt_3": 0.8
+      }
+    },
+    {
+      "sequence": 164,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v3:x0:agent_4:b",
+      "requestHash": "sha256:94b89f188ae87c67ed3b6d35311d51eb5d1917fb92e468c3a13ce870769ae65f",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.1,\"opt_3\":0.8}}",
+      "responseHash": "sha256:7de9d305ceff8eb5833488c7d88d0d6800d602879b731297b02cfe619fbd8274",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.1,
+        "opt_2": 0.1,
+        "opt_3": 0.8
+      }
+    },
+    {
+      "sequence": 165,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v3:x1:agent_4:a",
+      "requestHash": "sha256:ca12b92a2d9449a4c7e0cb1d02a49e40017a9dc575e490bb4fd546bff8af2d5b",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.1,\"opt_3\":0.8}}",
+      "responseHash": "sha256:7de9d305ceff8eb5833488c7d88d0d6800d602879b731297b02cfe619fbd8274",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.1,
+        "opt_2": 0.1,
+        "opt_3": 0.8
+      }
+    },
+    {
+      "sequence": 166,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v3:x1:agent_4:b",
+      "requestHash": "sha256:da7e0261b92e637890d7de401946d2cd918e9da4c77719e66cb5e48e8c1526fa",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.1,\"opt_3\":0.8}}",
+      "responseHash": "sha256:7de9d305ceff8eb5833488c7d88d0d6800d602879b731297b02cfe619fbd8274",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.1,
+        "opt_2": 0.1,
+        "opt_3": 0.8
+      }
+    },
+    {
+      "sequence": 167,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v3:x2:agent_4:a",
+      "requestHash": "sha256:0e5591aa7dd6df8764a2602a7ff0ac1afe6a3d43075fbfacd848635704ea3e25",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.6,\"opt_2\":0.25,\"opt_3\":0.15}}",
+      "responseHash": "sha256:5e301e777860e2a38b9e5c33c408948688b4648d6e6558751104108b11f0176a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.6,
+        "opt_2": 0.25,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 168,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v3:x2:agent_4:b",
+      "requestHash": "sha256:1b346541a1d5e3fa5554ae80a8686d60dbb285e48d0ec521e35b580c6766b8e8",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.6,\"opt_2\":0.25,\"opt_3\":0.15}}",
+      "responseHash": "sha256:5e301e777860e2a38b9e5c33c408948688b4648d6e6558751104108b11f0176a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.6,
+        "opt_2": 0.25,
+        "opt_3": 0.15
+      }
+    },
+    {
+      "sequence": 169,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v4:x0:agent_1:a",
+      "requestHash": "sha256:e38fc4a5577c9d8bd5aa110454bab4b1411c918ba024415bd046266947fae582",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.2,
+        "opt_2": 0.7,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 170,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v4:x0:agent_1:b",
+      "requestHash": "sha256:52df7977f6e620a848033af5f5515c820661eadacf6e628a4a3083b95da198f2",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.2,
+        "opt_2": 0.7,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 171,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v4:x1:agent_1:a",
+      "requestHash": "sha256:6f90a35c01f07a34aa3ced089d3acc3f25f7d4036fe74d715f57fe7e9f2fcb63",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.2,
+        "opt_2": 0.7,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 172,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v4:x1:agent_1:b",
+      "requestHash": "sha256:91f4fcc47ced1ca05897411cbc9609941b594a0b86a05a71c363ae513f292e79",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.2,
+        "opt_2": 0.7,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 173,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v4:x2:agent_1:a",
+      "requestHash": "sha256:4256cd1de55ce1d560c1ceda6835e3770e0cd92a18899689928163ccb402d577",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.2,
+        "opt_2": 0.7,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 174,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v4:x2:agent_1:b",
+      "requestHash": "sha256:2de067e0efca731339144e8ed6110aa17d64cede38cdedd857a7a64b3802f2f2",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.2,
+        "opt_2": 0.7,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 175,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v4:x0:agent_2:a",
+      "requestHash": "sha256:477cf156032adc6c87c681556cd2c54bb8c5b389b536c5c4fd1f90670a7768c9",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.2,
+        "opt_2": 0.7,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 176,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v4:x0:agent_2:b",
+      "requestHash": "sha256:1ebe8ea164ef09bd03a81dd27e7e2908e2eae6751c7a61a63d6675271e05404e",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.2,
+        "opt_2": 0.7,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 177,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v4:x1:agent_2:a",
+      "requestHash": "sha256:e1f9699ef5b0d9d9b983c854e862f681b48108e05a52a4e081360c8336dbe76d",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.2,
+        "opt_2": 0.7,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 178,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v4:x1:agent_2:b",
+      "requestHash": "sha256:4d40641e581360d1b54dad268c73a177bcf630aa5fe58a19cf41e7a93c6cea37",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.2,
+        "opt_2": 0.7,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 179,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v4:x2:agent_2:a",
+      "requestHash": "sha256:de38aca77aed0da357e777e916424b1b31afbd4c8915bcc1e0d94f7bd17e6389",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.2,
+        "opt_2": 0.7,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 180,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v4:x2:agent_2:b",
+      "requestHash": "sha256:f33ec6f047b410be41f85eb040aa6c72747774abab419d00848c4a4e16d70631",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.2,
+        "opt_2": 0.7,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 181,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v4:x0:agent_3:a",
+      "requestHash": "sha256:ccc9c55c9ad1e0fb770fa293d6d417c393c9aefded40fb774f16fcaec8d4626e",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.2,
+        "opt_2": 0.7,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 182,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v4:x0:agent_3:b",
+      "requestHash": "sha256:839f7bdf5ffa0368b5cfbcef901b29777010f14e3472b8227501e0b0061e2505",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.2,
+        "opt_2": 0.7,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 183,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v4:x1:agent_3:a",
+      "requestHash": "sha256:ad50e5f9d2020b804f5f8b933281f0342892d459c86b915194f906ea2e9e775a",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.2,
+        "opt_2": 0.7,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 184,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v4:x1:agent_3:b",
+      "requestHash": "sha256:e5109dc38c43fb9dc172a9d74d01c7aa699fa0ce3577f424b3b9e321d445cc2f",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.2,
+        "opt_2": 0.7,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 185,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v4:x2:agent_3:a",
+      "requestHash": "sha256:88ef5295c7c3d6a91d603568aaa52da46fe0769fb1fa9645bedbb8facf763801",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.2,
+        "opt_2": 0.7,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 186,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v4:x2:agent_3:b",
+      "requestHash": "sha256:3b5536da1e2cd4f71c979162b56ecb5e00323612415f9cedf7277f82ed496562",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.2,
+        "opt_2": 0.7,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 187,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v4:x0:agent_4:a",
+      "requestHash": "sha256:acbde1fea1b76a53c29e747fdc71db252f2cb965068874db1593cb2254c9d6e6",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.1,\"opt_3\":0.1}}",
+      "responseHash": "sha256:b0903342cd5ca041d06ed12487a88047d2af19970fbc7b29eeb255aa778f5523",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.1,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 188,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v4:x0:agent_4:b",
+      "requestHash": "sha256:e6a44f1b643205c0adbf0ceb51cb5d50e8d056fe71e761ffdbd8801a40954a95",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.1,\"opt_3\":0.1}}",
+      "responseHash": "sha256:b0903342cd5ca041d06ed12487a88047d2af19970fbc7b29eeb255aa778f5523",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.1,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 189,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v4:x1:agent_4:a",
+      "requestHash": "sha256:b4a69bff85b2422cc4b24f4405eafdcebc2c3848018bcc9844bc2fe827625da7",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.1,\"opt_3\":0.1}}",
+      "responseHash": "sha256:b0903342cd5ca041d06ed12487a88047d2af19970fbc7b29eeb255aa778f5523",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.1,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 190,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v4:x1:agent_4:b",
+      "requestHash": "sha256:6382620a5d34af57d225c33006bef28ef03042463cdec8ec8268a30d7be59805",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.1,\"opt_3\":0.1}}",
+      "responseHash": "sha256:b0903342cd5ca041d06ed12487a88047d2af19970fbc7b29eeb255aa778f5523",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.1,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 191,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v4:x2:agent_4:a",
+      "requestHash": "sha256:23765288b34bccbbd626270168d0d8f660c9873dfe8862fd84c884ed2dc64769",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.1,\"opt_3\":0.1}}",
+      "responseHash": "sha256:b0903342cd5ca041d06ed12487a88047d2af19970fbc7b29eeb255aa778f5523",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.1,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 192,
+      "cellId": "thermometer-calibration-sensor:thermometer-calibration:service-access:v4:x2:agent_4:b",
+      "requestHash": "sha256:bf42e4ef7ec4692d28783d8dfcf3a460c6cd41832e3f5b2c0249405a3f7c7bbd",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.1,\"opt_3\":0.1}}",
+      "responseHash": "sha256:b0903342cd5ca041d06ed12487a88047d2af19970fbc7b29eeb255aa778f5523",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.1,
+        "opt_3": 0.1
+      }
+    }
+  ],
+  "registeredCellCount": 192,
+  "terminalCellCount": 192,
+  "attemptsPerCell": 1,
+  "retry": "none",
+  "contentHash": "sha256:a280f33701d74466cb05e38bfcaf7f02bcd050e609142767dc9554fa3055653f"
+}

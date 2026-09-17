@@ -1,0 +1,36 @@
+{
+  "planRef": {
+    "id": "swarmalpha.experiment.v6.collective-dynamics-prompt-sensitivity",
+    "version": "1.0.0"
+  },
+  "sourceFormationDirectory": "results/v6_collective_dynamics_v1_glm46v_monitor_screen10_seed1",
+  "sourceTaskIds": [
+    1,
+    36,
+    64
+  ],
+  "sourceSeed": 1,
+  "variants": [
+    "BASELINE_A",
+    "BASELINE_B",
+    "OPTION_ORDER_REVERSED",
+    "PARAPHRASED_ELICITATION"
+  ],
+  "expectedAgentsPerTask": 4,
+  "plannedProviderCalls": 48,
+  "modelRef": {
+    "id": "zhipu:glm-4.6v",
+    "version": "1.0.0"
+  },
+  "invocation": {
+    "temperature": 0,
+    "seed": 1,
+    "maxTokens": 256,
+    "thinking": "disabled",
+    "attempts": 1,
+    "retry": "none"
+  },
+  "truthAccess": "none",
+  "responseContract": "strict_categorical_probabilities_only_v1",
+  "contentHash": "sha256:9aa073d083cdcc9095be617a9bb73a2a95475f059b259226ee78c88bb6d29914"
+}

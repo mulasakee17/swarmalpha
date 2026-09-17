@@ -1,0 +1,42 @@
+{
+  "manifestRef": {
+    "id": "swarmalpha.manifest.v6.discussion-thermometer-state-space-calibration",
+    "version": "1.0.0"
+  },
+  "planHash": "sha256:507a0c46764c966841cba600d68306d3c69cd84767b4718080262199ccdf58ec",
+  "reviewHash": "sha256:9efbca21d335b5a10f723854101a17391a62ed722273976bbce61328d7c8f5f6",
+  "acceptedAt": "2026-08-30",
+  "authority": "explicit_user_acceptance_in_current_codex_task",
+  "semanticAcceptance": {
+    "status": "ACCEPTED_DEVELOPMENT_ONLY",
+    "scope": "two_fictional_bases_eight_qualitative_information_allocations"
+  },
+  "providerBudget": {
+    "model": "zhipu:glm-4.6v",
+    "publicCalls": 64,
+    "sensorCalls": 192,
+    "maximumTotalCalls": 256,
+    "maximumCompletionTokens": 81920,
+    "retry": "none"
+  },
+  "executionPolicy": {
+    "phaseOrder": [
+      "public",
+      "freeze",
+      "sensor",
+      "offline_analysis"
+    ],
+    "attemptsPerCell": 1,
+    "backgroundExecution": "forbidden",
+    "overwrite": "forbidden",
+    "haltOnAnyFailure": true,
+    "attemptLedger": "append_before_and_after_each_provider_call"
+  },
+  "scientificBoundary": {
+    "onlineTruthAccess": "none",
+    "sensorWriteback": "none",
+    "crossRegimeCausalAuthority": "none",
+    "claimCeiling": "development_only_observation_resource_gate"
+  },
+  "contentHash": "sha256:5a1e69602a12f090c947738fb17e2c45d7b6909ecd36d17a702e61fecb583240"
+}

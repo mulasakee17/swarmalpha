@@ -1,0 +1,370 @@
+{
+  "artifactRef": {
+    "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-public-artifact",
+    "version": "1.0.0"
+  },
+  "planHash": "sha256:7212455275fefee6c988d23bdfe480775b07b8f03a86872eda2bef1f424aa528",
+  "runId": "collective-dynamics-m2:29:seed-1",
+  "seed": 1,
+  "modelRef": {
+    "id": "zhipu:glm-4.6v",
+    "version": "1.0.0"
+  },
+  "onlineTask": {
+    "sourceTaskId": 29,
+    "taskId": "task:hiddenbench:29",
+    "publicContext": "You and three other council members must quickly choose which of three locations in your region should be officially designated as the emergency shelter for an oncoming storm. The shelter must be accessible, safe, free of environmental hazards, and have the capacity for hundreds of people. Only one site truly qualifies. Each site is in a different direction, and time is short. The three options: (a) Mountain Lodge, (b) Riverside Park, (c) Summerfield School. Your decision is urgent, as buses will soon be dispatched to one location only.\n\nShared information:\n1. All main roads to each shelter remain open as of the last public update, 20 minutes ago.\n2. Mountain Lodge's bridge was inspected last month and passed safety checks; there are no weather alerts for the area.\n3. Riverside Park has undergone recent upgrades to its facilities to accommodate large groups.\n4. Summerfield School is regularly used for community gatherings and has backup generators.",
+    "claim": {
+      "id": "claim:hiddenbench:29:answer",
+      "proposition": "Select the single correct answer for HiddenBench task 29 (Safe Shelter Selection).",
+      "domain": "hiddenbench-categorical-decision",
+      "createdAt": "2026-08-11T00:00:00.000Z",
+      "options": [
+        "Mountain Lodge",
+        "Riverside Park",
+        "Summerfield School"
+      ],
+      "resolutionPolicy": {
+        "kind": "categorical",
+        "resolverId": "resolver:hiddenbench-data-3be6ca16"
+      }
+    },
+    "agents": [
+      {
+        "agentId": "agent:hiddenbench:29:1",
+        "privateInformation": "Due to minor flooding on Oakcrest road, buses can only reach Riverside Park from the north side."
+      },
+      {
+        "agentId": "agent:hiddenbench:29:2",
+        "privateInformation": "A landslide warning was just issued for Summerfield's region by the National Weather Service, effective immediately."
+      },
+      {
+        "agentId": "agent:hiddenbench:29:3",
+        "privateInformation": "There is a confirmed chemical spill in the storage building next to Mountain Lodge reported just now by authorities; the substance is hazardous if inhaled and cleanup will take at least 12 hours to complete."
+      },
+      {
+        "agentId": "agent:hiddenbench:29:4",
+        "privateInformation": "A tree has fallen on the north lane to Riverside Park, but the south lane remains clear according to a police report released five minutes ago."
+      }
+    ]
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "messages": [
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:29:1",
+          "content": "I propose we select Riverside Park as the emergency shelter. While all main roads are currently open, my private information indicates that buses can only access Riverside Park from the north due to minor flooding on Oakcrest road. This single point of access could become a critical bottleneck if the flooding worsens or if the road is blocked by debris, making it less accessible than the other options. Therefore, I recommend we choose either Mountain Lodge or Summerfield School to ensure the most reliable and accessible shelter for the community.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:29:2",
+          "content": "Based on the information provided, the correct choice is (a) Mountain Lodge.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:29:3",
+          "content": "c",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:29:4",
+          "content": "Based on the information provided, the correct choice is (c) Summerfield School.",
+          "source": "agent"
+        }
+      ],
+      "calls": [
+        {
+          "requestId": "discussion:collective-dynamics-m2:29:seed-1:r1:agent:hiddenbench:29:1",
+          "round": 1,
+          "agentId": "agent:hiddenbench:29:1",
+          "requestHash": "sha256:e0016a8bd3b63d2500d7754998cb0d5d6994314c8fb4a9854bb83b35b3934bf0",
+          "responseHash": "sha256:63bfcbb39d369f0b3c49b96c61ab58daf37579941683c2ea0fa72dd123d680b0"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2:29:seed-1:r1:agent:hiddenbench:29:2",
+          "round": 1,
+          "agentId": "agent:hiddenbench:29:2",
+          "requestHash": "sha256:862a65f6a791ff3b7920a5ed28baab521b082936a7e04382a3a3beb495496aa4",
+          "responseHash": "sha256:831c0e37f6d52bf730725e7e7aacda5076f3b911e599e80594ec319adaa91923"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2:29:seed-1:r1:agent:hiddenbench:29:3",
+          "round": 1,
+          "agentId": "agent:hiddenbench:29:3",
+          "requestHash": "sha256:0f5c6d9a1b672766efba7ef5cf058c841a1a2773595637d4286da4c8996658db",
+          "responseHash": "sha256:879923da020d1533f4d8e921ea7bac61e8ba41d3c89d17a4d14e3a89c6780d5d"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2:29:seed-1:r1:agent:hiddenbench:29:4",
+          "round": 1,
+          "agentId": "agent:hiddenbench:29:4",
+          "requestHash": "sha256:08443e3cbc63b094dc08e6888d4c5958e33f4d32a1c739aff8c2873996569c76",
+          "responseHash": "sha256:f20c366af5ca45c66618d829fb2120b34900db8eb94dbfe7d3af5354118ad7f2"
+        }
+      ],
+      "contentHash": "sha256:ac36f29f36e1a7e23bbc654e0de7c1349d316679945b26f45078c0adeb9ea028"
+    },
+    {
+      "round": 2,
+      "messages": [
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:29:1",
+          "content": "I propose we select Summerfield School as the emergency shelter. While Riverside Park has been upgraded for large groups, the private information about a single, potentially vulnerable access point due to flooding makes it a less reliable choice. Mountain Lodge's bridge passed inspection, but Summerfield School is regularly used for gatherings and has backup generators, making it a robust and proven facility for this purpose.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:29:2",
+          "content": "Based on the information provided, the correct choice is (a) Mountain Lodge.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:29:3",
+          "content": "c",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:29:4",
+          "content": "c",
+          "source": "agent"
+        }
+      ],
+      "calls": [
+        {
+          "requestId": "discussion:collective-dynamics-m2:29:seed-1:r2:agent:hiddenbench:29:1",
+          "round": 2,
+          "agentId": "agent:hiddenbench:29:1",
+          "requestHash": "sha256:5b958d9c956f2eb6a4979e7350aa12c2fcc94b4fcadbafbe7c2a8799ad3de18c",
+          "responseHash": "sha256:eba11108dbba6ed3969e69c01d9109fd243fb6d0e040048bc20df4ef3e797bff"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2:29:seed-1:r2:agent:hiddenbench:29:2",
+          "round": 2,
+          "agentId": "agent:hiddenbench:29:2",
+          "requestHash": "sha256:2eb21e22b08bc70ea05df49508f04c4f2ed7330f6490f88fcd45ab93ad366768",
+          "responseHash": "sha256:831c0e37f6d52bf730725e7e7aacda5076f3b911e599e80594ec319adaa91923"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2:29:seed-1:r2:agent:hiddenbench:29:3",
+          "round": 2,
+          "agentId": "agent:hiddenbench:29:3",
+          "requestHash": "sha256:ca8b43537218649b55770f52073054418e5b97c265dcbe0ccd4606914c215f3a",
+          "responseHash": "sha256:879923da020d1533f4d8e921ea7bac61e8ba41d3c89d17a4d14e3a89c6780d5d"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2:29:seed-1:r2:agent:hiddenbench:29:4",
+          "round": 2,
+          "agentId": "agent:hiddenbench:29:4",
+          "requestHash": "sha256:7a211f05c477b69b920497ec72b31320b206eb9612aee5437d15e3278dd36a4e",
+          "responseHash": "sha256:879923da020d1533f4d8e921ea7bac61e8ba41d3c89d17a4d14e3a89c6780d5d"
+        }
+      ],
+      "contentHash": "sha256:588db837d4a7d08068421329f71d821eee7f4a939765d6be9f77b9b716683ce4"
+    },
+    {
+      "round": 3,
+      "messages": [
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:29:1",
+          "content": "I propose we select Summerfield School as the emergency shelter. While Riverside Park has been upgraded for large groups, the private information about a single, potentially vulnerable access point due to flooding makes it a less reliable choice. Mountain Lodge's bridge passed inspection, but Summerfield School is regularly used for gatherings and has backup generators, making it a robust and proven facility for this purpose.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:29:2",
+          "content": "I must select the single correct answer for the task. Based on the information provided, the correct choice is (a) Mountain Lodge.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:29:3",
+          "content": "c",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:29:4",
+          "content": "c",
+          "source": "agent"
+        }
+      ],
+      "calls": [
+        {
+          "requestId": "discussion:collective-dynamics-m2:29:seed-1:r3:agent:hiddenbench:29:1",
+          "round": 3,
+          "agentId": "agent:hiddenbench:29:1",
+          "requestHash": "sha256:7ad5fe0f02fe88fac075e953f11a188802cf95f67f1fe26562d24c5f668c2dbe",
+          "responseHash": "sha256:eba11108dbba6ed3969e69c01d9109fd243fb6d0e040048bc20df4ef3e797bff"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2:29:seed-1:r3:agent:hiddenbench:29:2",
+          "round": 3,
+          "agentId": "agent:hiddenbench:29:2",
+          "requestHash": "sha256:9371f0b2a2f4d5ae06d9d51068c406e57f53ce2722db35b7f97a1d821d82a5ff",
+          "responseHash": "sha256:20f878cdf384e999d376066e7553c034416d18d5637b80eae2e8c6c51fbe8a84"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2:29:seed-1:r3:agent:hiddenbench:29:3",
+          "round": 3,
+          "agentId": "agent:hiddenbench:29:3",
+          "requestHash": "sha256:7ac7e20cf9b689b514b65ea3425072219cfd5a191f2ab5de83a549a8d35cdbf4",
+          "responseHash": "sha256:879923da020d1533f4d8e921ea7bac61e8ba41d3c89d17a4d14e3a89c6780d5d"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2:29:seed-1:r3:agent:hiddenbench:29:4",
+          "round": 3,
+          "agentId": "agent:hiddenbench:29:4",
+          "requestHash": "sha256:d2f293409846c112bcc0fb4d22a6b49ca4ca00a5facf23f6182e68c5d8fd0e76",
+          "responseHash": "sha256:879923da020d1533f4d8e921ea7bac61e8ba41d3c89d17a4d14e3a89c6780d5d"
+        }
+      ],
+      "contentHash": "sha256:546f7458e8b16bcd15b43d61168ca56eb409aafc69c47ac5e5ca4473e70f2009"
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointRef": {
+        "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-checkpoint",
+        "version": "1.0.0"
+      },
+      "checkpointId": "task:hiddenbench:29:collective-dynamics-m2:29:seed-1:X0",
+      "checkpointRound": 0,
+      "visibleMessages": [],
+      "sourceRequestHashes": [],
+      "contentHash": "sha256:2df0ba82ddb4109eb1168bc9fc72095ecd3a624d86f77bf048bf9005e50edcf2"
+    },
+    {
+      "checkpointRef": {
+        "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-checkpoint",
+        "version": "1.0.0"
+      },
+      "checkpointId": "task:hiddenbench:29:collective-dynamics-m2:29:seed-1:X1",
+      "checkpointRound": 1,
+      "visibleMessages": [
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:29:1",
+          "content": "I propose we select Riverside Park as the emergency shelter. While all main roads are currently open, my private information indicates that buses can only access Riverside Park from the north due to minor flooding on Oakcrest road. This single point of access could become a critical bottleneck if the flooding worsens or if the road is blocked by debris, making it less accessible than the other options. Therefore, I recommend we choose either Mountain Lodge or Summerfield School to ensure the most reliable and accessible shelter for the community.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:29:2",
+          "content": "Based on the information provided, the correct choice is (a) Mountain Lodge.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:29:3",
+          "content": "c",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:29:4",
+          "content": "Based on the information provided, the correct choice is (c) Summerfield School.",
+          "source": "agent"
+        }
+      ],
+      "sourceRequestHashes": [
+        "sha256:e0016a8bd3b63d2500d7754998cb0d5d6994314c8fb4a9854bb83b35b3934bf0",
+        "sha256:862a65f6a791ff3b7920a5ed28baab521b082936a7e04382a3a3beb495496aa4",
+        "sha256:0f5c6d9a1b672766efba7ef5cf058c841a1a2773595637d4286da4c8996658db",
+        "sha256:08443e3cbc63b094dc08e6888d4c5958e33f4d32a1c739aff8c2873996569c76"
+      ],
+      "contentHash": "sha256:4904dfc32ac6e35adce6f35ced1b569200d8af34b9e27fac77b850a9eb712c0a"
+    },
+    {
+      "checkpointRef": {
+        "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-checkpoint",
+        "version": "1.0.0"
+      },
+      "checkpointId": "task:hiddenbench:29:collective-dynamics-m2:29:seed-1:X2",
+      "checkpointRound": 2,
+      "visibleMessages": [
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:29:1",
+          "content": "I propose we select Summerfield School as the emergency shelter. While Riverside Park has been upgraded for large groups, the private information about a single, potentially vulnerable access point due to flooding makes it a less reliable choice. Mountain Lodge's bridge passed inspection, but Summerfield School is regularly used for gatherings and has backup generators, making it a robust and proven facility for this purpose.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:29:2",
+          "content": "Based on the information provided, the correct choice is (a) Mountain Lodge.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:29:3",
+          "content": "c",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:29:4",
+          "content": "c",
+          "source": "agent"
+        }
+      ],
+      "sourceRequestHashes": [
+        "sha256:5b958d9c956f2eb6a4979e7350aa12c2fcc94b4fcadbafbe7c2a8799ad3de18c",
+        "sha256:2eb21e22b08bc70ea05df49508f04c4f2ed7330f6490f88fcd45ab93ad366768",
+        "sha256:ca8b43537218649b55770f52073054418e5b97c265dcbe0ccd4606914c215f3a",
+        "sha256:7a211f05c477b69b920497ec72b31320b206eb9612aee5437d15e3278dd36a4e"
+      ],
+      "contentHash": "sha256:4f0cfc5cf1dca7632fd2c19eaa4193acf5517b3ec8966f6a521d7ceb507abbcc"
+    },
+    {
+      "checkpointRef": {
+        "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-checkpoint",
+        "version": "1.0.0"
+      },
+      "checkpointId": "task:hiddenbench:29:collective-dynamics-m2:29:seed-1:X3",
+      "checkpointRound": 3,
+      "visibleMessages": [
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:29:1",
+          "content": "I propose we select Summerfield School as the emergency shelter. While Riverside Park has been upgraded for large groups, the private information about a single, potentially vulnerable access point due to flooding makes it a less reliable choice. Mountain Lodge's bridge passed inspection, but Summerfield School is regularly used for gatherings and has backup generators, making it a robust and proven facility for this purpose.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:29:2",
+          "content": "I must select the single correct answer for the task. Based on the information provided, the correct choice is (a) Mountain Lodge.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:29:3",
+          "content": "c",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:29:4",
+          "content": "c",
+          "source": "agent"
+        }
+      ],
+      "sourceRequestHashes": [
+        "sha256:7ad5fe0f02fe88fac075e953f11a188802cf95f67f1fe26562d24c5f668c2dbe",
+        "sha256:9371f0b2a2f4d5ae06d9d51068c406e57f53ce2722db35b7f97a1d821d82a5ff",
+        "sha256:7ac7e20cf9b689b514b65ea3425072219cfd5a191f2ab5de83a549a8d35cdbf4",
+        "sha256:d2f293409846c112bcc0fb4d22a6b49ca4ca00a5facf23f6182e68c5d8fd0e76"
+      ],
+      "contentHash": "sha256:630413370477fa0f0481a38ecab69efd29b73af3edbd98c24fc34f6b7e8c1efe"
+    }
+  ],
+  "contentHash": "sha256:92000349e683aadeaf042dd337228f8446a321dd95d7f8f7a3812a853eca063f"
+}

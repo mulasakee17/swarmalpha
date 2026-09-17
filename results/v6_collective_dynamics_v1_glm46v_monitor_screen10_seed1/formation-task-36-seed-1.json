@@ -1,0 +1,1488 @@
+{
+  "artifactRef": {
+    "id": "swarmalpha.experiment.v6.collective-epistemic-dynamics.formation",
+    "version": "1.0.0"
+  },
+  "planHash": "sha256:c5b6e20b332cdf9a6d0b40964deb0249da63407111b9e415f7cee388eab449e9",
+  "runId": "collective-dynamics:36:seed-1",
+  "seed": 1,
+  "modelRef": {
+    "id": "zhipu:glm-4.6v",
+    "version": "1.0.0"
+  },
+  "onlineTask": {
+    "sourceTaskId": 36,
+    "taskId": "task:hiddenbench:36",
+    "publicContext": "You are IT administrators for a large company whose main datacenter has been crippled by a sudden fire. As a team, you must decide where to immediately re-route all mission-critical operations. Three separate backup datacenters are pre-configured as potential failover sites: Datacenter Alpha, Datacenter Beta, and Datacenter Gamma. Each location has hosted your traffic before, each is in a different city, and each uses different hardware and vendors for redundancy. Time is of the essence. Each of you has access to certain technical updates from your own department, but must consult together to make the final decision. You will be rewarded for successfully directing operations to the only datacenter that can safely take the load right now.\n\nShared information:\n1. Datacenter Beta is fully online, was just upgraded last month, and currently has low utilization.\n2. Staff at Datacenter Alpha confirmed that their on-call engineers are present and have no scheduled maintenance today.\n3. Datacenter Gamma is in a region with a minor flood warning but has never experienced significant downtime from weather.\n4. Latency and cost are similar for all three options.",
+    "claim": {
+      "id": "claim:hiddenbench:36:answer",
+      "proposition": "Select the single correct answer for HiddenBench task 36 (datacenter_emergency_migration).",
+      "domain": "hiddenbench-categorical-decision",
+      "createdAt": "2026-08-11T00:00:00.000Z",
+      "options": [
+        "Datacenter Alpha",
+        "Datacenter Beta",
+        "Datacenter Gamma"
+      ],
+      "resolutionPolicy": {
+        "kind": "categorical",
+        "resolverId": "resolver:hiddenbench-data-3be6ca16"
+      }
+    },
+    "agents": [
+      {
+        "agentId": "agent:hiddenbench:36:1",
+        "privateInformation": "Datacenter Beta's recent upgrade involved new security software, and only yesterday a major vulnerability was discovered—which is not yet patched at Beta, but is patched everywhere else."
+      },
+      {
+        "agentId": "agent:hiddenbench:36:2",
+        "privateInformation": "Due to a national internet routing issue affecting the city's main ISP, Beta faces possible external connectivity problems for at least several more hours."
+      },
+      {
+        "agentId": "agent:hiddenbench:36:3",
+        "privateInformation": "Datacenter Alpha's main power feed was cut by the fire near your main site, and is currently running only on backup generators, with a maximum of 12 hours' capacity left."
+      },
+      {
+        "agentId": "agent:hiddenbench:36:4",
+        "privateInformation": "Gamma's flood defenses have been inspected within the last week and confirmed fully operational; the actual flooding is minor and poses no threat to access or uptime."
+      }
+    ]
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "messages": [
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:36:1",
+          "content": "Based on the critical security vulnerability at Datacenter Beta, I recommend re-routing operations to Datacenter Alpha, which is confirmed to have available staff and no maintenance. Datacenter Gamma's flood risk, while minor, introduces unnecessary uncertainty during this emergency.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:36:2",
+          "content": "Based on the shared information, Datacenter Alpha is the most reliable choice. Beta has a critical external connectivity issue, and Gamma has a flood risk. Alpha is confirmed to have staff available and no maintenance, making it the safest option for immediate failover.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:36:3",
+          "content": "Based on the information, Datacenter Beta is the only viable option. It is fully online, recently upgraded, and has low utilization, making it capable of handling the load immediately. Datacenter Alpha is running on backup generators with limited capacity, and Datacenter Gamma has a flood warning, introducing unnecessary risk.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:36:4",
+          "content": "Based on the available information, Datacenter Beta is the most suitable choice for immediate failover. It is fully online, recently upgraded, and has low utilization, indicating it can handle the load without issues. While Datacenter Alpha is also a viable option with available staff, Beta's recent upgrades and low utilization make it a more reliable choice. Datacenter Gamma, despite having operational flood defenses, still faces a flood warning, which introduces unnecessary risk. Therefore, Beta is the safest and most efficient option for re-routing mission-critical operations.",
+          "source": "agent"
+        }
+      ],
+      "reports": [
+        {
+          "id": "belief:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:1",
+          "claimId": "claim:hiddenbench:36:answer",
+          "agentId": "agent:hiddenbench:36:1",
+          "round": 1,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Datacenter Alpha": 0.8,
+              "Datacenter Beta": 0.1,
+              "Datacenter Gamma": 0.1
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:1:1",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:1:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:1:3",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:01:01.000Z"
+        },
+        {
+          "id": "belief:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:2",
+          "claimId": "claim:hiddenbench:36:answer",
+          "agentId": "agent:hiddenbench:36:2",
+          "round": 1,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Datacenter Alpha": 0.8,
+              "Datacenter Beta": 0.1,
+              "Datacenter Gamma": 0.1
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:2:1",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:2:2",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:2:3",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:2:4",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:01:02.000Z"
+        },
+        {
+          "id": "belief:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:3",
+          "claimId": "claim:hiddenbench:36:answer",
+          "agentId": "agent:hiddenbench:36:3",
+          "round": 1,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Datacenter Alpha": 0,
+              "Datacenter Beta": 1,
+              "Datacenter Gamma": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:3:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:3:2",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:3:3",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:01:03.000Z"
+        },
+        {
+          "id": "belief:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:4",
+          "claimId": "claim:hiddenbench:36:answer",
+          "agentId": "agent:hiddenbench:36:4",
+          "round": 1,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Datacenter Alpha": 0.2,
+              "Datacenter Beta": 0.7,
+              "Datacenter Gamma": 0.1
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:4:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:4:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:4:3",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:4:4",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:01:04.000Z"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:1:1",
+          "content": "Datacenter Beta's recent upgrade involved new security software, and only yesterday a major vulnerability was discovered—which is not yet patched at Beta, but is patched everywhere else.",
+          "createdAt": "2026-08-24T00:01:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:1",
+            "contentHash": "sha256:85ab7d51191ca2c829a74f3b9dc9c91ded0e2dcbcf73171d77b7919df76a82a5"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:1:2",
+          "content": "Staff at Datacenter Alpha confirmed that their on-call engineers are present and have no scheduled maintenance today.",
+          "createdAt": "2026-08-24T00:01:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:1",
+            "contentHash": "sha256:0b679ab2819b6edbb81074ff76f47c4a27a7f098683f2c46c58327bb7ae918b6"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:1:3",
+          "content": "Datacenter Gamma is in a region with a minor flood warning but has never experienced significant downtime from weather.",
+          "createdAt": "2026-08-24T00:01:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:1",
+            "contentHash": "sha256:4794053bf3adee6dc3a39828723e98466676369d551be434811dc43e7c4b9436"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:2:1",
+          "content": "Datacenter Beta is fully online, was just upgraded last month, and currently has low utilization.",
+          "createdAt": "2026-08-24T00:01:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:2",
+            "contentHash": "sha256:1348dafbcebc9becd0e3b6cf70823b6595ba92f6c8c6284597313485118407a6"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:2:2",
+          "content": "Due to a national internet routing issue affecting the city's main ISP, Beta faces possible external connectivity problems for at least several more hours.",
+          "createdAt": "2026-08-24T00:01:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:2",
+            "contentHash": "sha256:9fcd736c2a7ce6b1952ae9d0d6e1c5b64111f6205fee7ae5c84670cc41a9740b"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:2:3",
+          "content": "Staff at Datacenter Alpha confirmed that their on-call engineers are present and have no scheduled maintenance today.",
+          "createdAt": "2026-08-24T00:01:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:2",
+            "contentHash": "sha256:0b679ab2819b6edbb81074ff76f47c4a27a7f098683f2c46c58327bb7ae918b6"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:2:4",
+          "content": "Datacenter Gamma is in a region with a minor flood warning but has never experienced significant downtime from weather.",
+          "createdAt": "2026-08-24T00:01:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:2",
+            "contentHash": "sha256:4794053bf3adee6dc3a39828723e98466676369d551be434811dc43e7c4b9436"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:3:1",
+          "content": "Datacenter Beta is fully online, was just upgraded last month, and currently has low utilization.",
+          "createdAt": "2026-08-24T00:01:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:3",
+            "contentHash": "sha256:1348dafbcebc9becd0e3b6cf70823b6595ba92f6c8c6284597313485118407a6"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:3:2",
+          "content": "Datacenter Alpha's main power feed was cut by the fire near your main site, and is currently running only on backup generators, with a maximum of 12 hours' capacity left.",
+          "createdAt": "2026-08-24T00:01:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:3",
+            "contentHash": "sha256:df748777613fb85b4f1ed3ffa1825978671415a62dd51aa7cdc1efbf51af020a"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:3:3",
+          "content": "Datacenter Gamma is in a region with a minor flood warning but has never experienced significant downtime from weather.",
+          "createdAt": "2026-08-24T00:01:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:3",
+            "contentHash": "sha256:4794053bf3adee6dc3a39828723e98466676369d551be434811dc43e7c4b9436"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:4:1",
+          "content": "Datacenter Beta is fully online, was just upgraded last month, and currently has low utilization.",
+          "createdAt": "2026-08-24T00:01:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:4",
+            "contentHash": "sha256:1348dafbcebc9becd0e3b6cf70823b6595ba92f6c8c6284597313485118407a6"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:4:2",
+          "content": "Staff at Datacenter Alpha confirmed that their on-call engineers are present and have no scheduled maintenance today.",
+          "createdAt": "2026-08-24T00:01:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:4",
+            "contentHash": "sha256:0b679ab2819b6edbb81074ff76f47c4a27a7f098683f2c46c58327bb7ae918b6"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:4:3",
+          "content": "Datacenter Gamma is in a region with a minor flood warning but has never experienced significant downtime from weather.",
+          "createdAt": "2026-08-24T00:01:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:4",
+            "contentHash": "sha256:4794053bf3adee6dc3a39828723e98466676369d551be434811dc43e7c4b9436"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:4:4",
+          "content": "Gamma's flood defenses have been inspected within the last week and confirmed fully operational; the actual flooding is minor and poses no threat to access or uptime.",
+          "createdAt": "2026-08-24T00:01:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:4",
+            "contentHash": "sha256:7962b05b22a7c84a7b8f397193a58b2800f5c9bb15ccf3753958ebf80edc3d95"
+          }
+        }
+      ],
+      "state": {
+        "activeAgentIds": [
+          "agent:hiddenbench:36:1",
+          "agent:hiddenbench:36:2",
+          "agent:hiddenbench:36:3",
+          "agent:hiddenbench:36:4"
+        ],
+        "artifactSchemaRef": {
+          "id": "swarmalpha.collective-epistemic-state",
+          "version": "1.0.0"
+        },
+        "asOfRound": 1,
+        "beliefKind": "categorical",
+        "betweenAgentDisagreement": 0.35247845153364765,
+        "claimId": "claim:hiddenbench:36:answer",
+        "claimOptionCount": 3,
+        "contentHash": "sha256:4d314ac2b4a82aa83210a8ec8c5682c8548502fce69441bd59363a18f0040b06",
+        "declaredLineageDiversity": {
+          "completeness": "missing",
+          "distinctDeclaredLineageCount": 0,
+          "effectiveLineageCount": null,
+          "missingLineageReportIds": [
+            "belief:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:1",
+            "belief:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:2",
+            "belief:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:3",
+            "belief:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:4"
+          ],
+          "normalizedLineageEntropy": null,
+          "reportsMissingDeclaredLineage": 4,
+          "reportsWithDeclaredLineage": 0
+        },
+        "expectedAgentIds": [
+          "agent:hiddenbench:36:1",
+          "agent:hiddenbench:36:2",
+          "agent:hiddenbench:36:3",
+          "agent:hiddenbench:36:4"
+        ],
+        "exposureConditionedRevision": {
+          "meanBeliefDistance": null,
+          "revisionCount": 0,
+          "targetAgentCount": 0,
+          "totalBeliefDistance": 0
+        },
+        "inferenceStatus": "descriptive_macrostate_only",
+        "latestReportIds": [
+          "belief:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:1",
+          "belief:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:2",
+          "belief:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:3",
+          "belief:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:4"
+        ],
+        "missingExpectedAgentIds": [],
+        "observedResponseConcentration": {
+          "herfindahlIndex": null,
+          "normalizedHerfindahl": null,
+          "responseMassBySourceAgent": {},
+          "sourceAgentCount": 0,
+          "status": "unavailable",
+          "unavailableReason": "no_exposure_conditioned_response_mass"
+        },
+        "pooledBelief": {
+          "kind": "categorical",
+          "probabilities": {
+            "Datacenter Alpha": 0.45,
+            "Datacenter Beta": 0.475,
+            "Datacenter Gamma": 0.07500000000000001
+          }
+        },
+        "pooledCertainty": 0.475,
+        "pooledPredictedOutcomes": [
+          "Datacenter Beta"
+        ],
+        "pooledUncertainty": 0.8257760591831155,
+        "populationBasis": "declared_roster",
+        "sourceFingerprints": {
+          "claim": "sha256:4a0943d9b9010cd665a069ec4ad44eb431439a13678b02dddc2f573b0e5224db",
+          "evidence": "sha256:ddcde13222fd1b26328c98a78a2bfdb5c5c8aeb6e99c4017eddde61edf2ef458",
+          "exposures": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "reports": "sha256:94e769312ffb22dc492005830878ca34d878c453ed7b3a40759d07fbe5f99671"
+        },
+        "withinAgentUncertainty": 0.4732976076494678
+      },
+      "updateActivityFromPrior": null
+    },
+    {
+      "round": 2,
+      "messages": [
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:36:1",
+          "content": "Datacenter Alpha is the safest choice due to its confirmed staff availability and no maintenance, while Beta has an unpatched critical vulnerability and Gamma has a flood risk. Alpha avoids both security and weather-related uncertainties.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:36:2",
+          "content": "After analyzing the shared and private information, Datacenter Alpha is the most reliable choice. Beta's external connectivity issues and Gamma's flood risk make them less suitable for immediate failover. Alpha has confirmed staff availability and no maintenance, ensuring it can safely handle the load.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:36:3",
+          "content": "After analyzing all information, Datacenter Beta is the only viable option. It is fully online, recently upgraded, and has low utilization, making it capable of handling the load immediately. Datacenter Alpha is running on backup generators with limited capacity, and Datacenter Gamma has a flood warning, introducing unnecessary risk.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:36:4",
+          "content": "Based on the shared information and my private knowledge, Datacenter Gamma is the safest and most reliable choice. While Beta is fully online and recently upgraded, the critical security vulnerability mentioned by other agents (even if not in shared info) and the potential for connectivity issues make it risky. Alpha's backup generators have limited capacity, which could fail under the load. Gamma's flood defenses are confirmed fully operational, and the minor flood poses no threat to uptime or access. Therefore, Gamma is the only datacenter that can safely take the load right now.",
+          "source": "agent"
+        }
+      ],
+      "reports": [
+        {
+          "id": "belief:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:1",
+          "claimId": "claim:hiddenbench:36:answer",
+          "agentId": "agent:hiddenbench:36:1",
+          "round": 2,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Datacenter Alpha": 0.9,
+              "Datacenter Beta": 0.05,
+              "Datacenter Gamma": 0.05
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:1:1",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:1:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:1:3",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:02:01.000Z",
+          "supersedesReportId": "belief:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:1"
+        },
+        {
+          "id": "belief:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:2",
+          "claimId": "claim:hiddenbench:36:answer",
+          "agentId": "agent:hiddenbench:36:2",
+          "round": 2,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Datacenter Alpha": 0.8,
+              "Datacenter Beta": 0.1,
+              "Datacenter Gamma": 0.1
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:2:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:2:2",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:2:3",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:02:02.000Z",
+          "supersedesReportId": "belief:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:2"
+        },
+        {
+          "id": "belief:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:3",
+          "claimId": "claim:hiddenbench:36:answer",
+          "agentId": "agent:hiddenbench:36:3",
+          "round": 2,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Datacenter Alpha": 0,
+              "Datacenter Beta": 1,
+              "Datacenter Gamma": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:3:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:3:2",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:3:3",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:02:03.000Z",
+          "supersedesReportId": "belief:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:3"
+        },
+        {
+          "id": "belief:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:4",
+          "claimId": "claim:hiddenbench:36:answer",
+          "agentId": "agent:hiddenbench:36:4",
+          "round": 2,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Datacenter Alpha": 0,
+              "Datacenter Beta": 0,
+              "Datacenter Gamma": 1
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:4:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:4:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:4:3",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:4:4",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:02:04.000Z",
+          "supersedesReportId": "belief:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:4"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:1:1",
+          "content": "Datacenter Beta's recent upgrade involved new security software, and only yesterday a major vulnerability was discovered—which is not yet patched at Beta, but is patched everywhere else.",
+          "createdAt": "2026-08-24T00:02:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:1",
+            "contentHash": "sha256:85ab7d51191ca2c829a74f3b9dc9c91ded0e2dcbcf73171d77b7919df76a82a5"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:1:2",
+          "content": "Staff at Datacenter Alpha confirmed that their on-call engineers are present and have no scheduled maintenance today.",
+          "createdAt": "2026-08-24T00:02:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:1",
+            "contentHash": "sha256:0b679ab2819b6edbb81074ff76f47c4a27a7f098683f2c46c58327bb7ae918b6"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:1:3",
+          "content": "Datacenter Gamma is in a region with a minor flood warning but has never experienced significant downtime from weather.",
+          "createdAt": "2026-08-24T00:02:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:1",
+            "contentHash": "sha256:4794053bf3adee6dc3a39828723e98466676369d551be434811dc43e7c4b9436"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:2:1",
+          "content": "Staff at Datacenter Alpha confirmed that their on-call engineers are present and have no scheduled maintenance today.",
+          "createdAt": "2026-08-24T00:02:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:2",
+            "contentHash": "sha256:0b679ab2819b6edbb81074ff76f47c4a27a7f098683f2c46c58327bb7ae918b6"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:2:2",
+          "content": "Due to a national internet routing issue affecting the city's main ISP, Beta faces possible external connectivity problems for at least several more hours.",
+          "createdAt": "2026-08-24T00:02:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:2",
+            "contentHash": "sha256:9fcd736c2a7ce6b1952ae9d0d6e1c5b64111f6205fee7ae5c84670cc41a9740b"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:2:3",
+          "content": "Datacenter Gamma is in a region with a minor flood warning but has never experienced significant downtime from weather.",
+          "createdAt": "2026-08-24T00:02:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:2",
+            "contentHash": "sha256:4794053bf3adee6dc3a39828723e98466676369d551be434811dc43e7c4b9436"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:3:1",
+          "content": "Datacenter Beta is fully online, was just upgraded last month, and currently has low utilization.",
+          "createdAt": "2026-08-24T00:02:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:3",
+            "contentHash": "sha256:1348dafbcebc9becd0e3b6cf70823b6595ba92f6c8c6284597313485118407a6"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:3:2",
+          "content": "Datacenter Alpha's main power feed was cut by the fire near your main site, and is currently running only on backup generators, with a maximum of 12 hours' capacity left.",
+          "createdAt": "2026-08-24T00:02:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:3",
+            "contentHash": "sha256:df748777613fb85b4f1ed3ffa1825978671415a62dd51aa7cdc1efbf51af020a"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:3:3",
+          "content": "Datacenter Gamma is in a region with a minor flood warning but has never experienced significant downtime from weather.",
+          "createdAt": "2026-08-24T00:02:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:3",
+            "contentHash": "sha256:4794053bf3adee6dc3a39828723e98466676369d551be434811dc43e7c4b9436"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:4:1",
+          "content": "Datacenter Gamma is in a region with a minor flood warning but has never experienced significant downtime from weather.",
+          "createdAt": "2026-08-24T00:02:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:4",
+            "contentHash": "sha256:4794053bf3adee6dc3a39828723e98466676369d551be434811dc43e7c4b9436"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:4:2",
+          "content": "Gamma's flood defenses have been inspected within the last week and confirmed fully operational; the actual flooding is minor and poses no threat to access or uptime.",
+          "createdAt": "2026-08-24T00:02:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:4",
+            "contentHash": "sha256:7962b05b22a7c84a7b8f397193a58b2800f5c9bb15ccf3753958ebf80edc3d95"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:4:3",
+          "content": "Datacenter Beta is fully online, was just upgraded last month, and currently has low utilization.",
+          "createdAt": "2026-08-24T00:02:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:4",
+            "contentHash": "sha256:1348dafbcebc9becd0e3b6cf70823b6595ba92f6c8c6284597313485118407a6"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:4:4",
+          "content": "Staff at Datacenter Alpha confirmed that their on-call engineers are present and have no scheduled maintenance today.",
+          "createdAt": "2026-08-24T00:02:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:4",
+            "contentHash": "sha256:0b679ab2819b6edbb81074ff76f47c4a27a7f098683f2c46c58327bb7ae918b6"
+          }
+        }
+      ],
+      "state": {
+        "activeAgentIds": [
+          "agent:hiddenbench:36:1",
+          "agent:hiddenbench:36:2",
+          "agent:hiddenbench:36:3",
+          "agent:hiddenbench:36:4"
+        ],
+        "artifactSchemaRef": {
+          "id": "swarmalpha.collective-epistemic-state",
+          "version": "1.0.0"
+        },
+        "asOfRound": 2,
+        "beliefKind": "categorical",
+        "betweenAgentDisagreement": 0.7482683911855369,
+        "claimId": "claim:hiddenbench:36:answer",
+        "claimOptionCount": 3,
+        "contentHash": "sha256:d1ffc55ee6114bb8ee9155617b9d0fedf0a2bf27b089f8318374bbe49b2243c4",
+        "declaredLineageDiversity": {
+          "completeness": "missing",
+          "distinctDeclaredLineageCount": 0,
+          "effectiveLineageCount": null,
+          "missingLineageReportIds": [
+            "belief:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:1",
+            "belief:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:2",
+            "belief:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:3",
+            "belief:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:4"
+          ],
+          "normalizedLineageEntropy": null,
+          "reportsMissingDeclaredLineage": 4,
+          "reportsWithDeclaredLineage": 0
+        },
+        "expectedAgentIds": [
+          "agent:hiddenbench:36:1",
+          "agent:hiddenbench:36:2",
+          "agent:hiddenbench:36:3",
+          "agent:hiddenbench:36:4"
+        ],
+        "exposureConditionedRevision": {
+          "meanBeliefDistance": null,
+          "revisionCount": 0,
+          "targetAgentCount": 0,
+          "totalBeliefDistance": 0
+        },
+        "inferenceStatus": "descriptive_macrostate_only",
+        "latestReportIds": [
+          "belief:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:1",
+          "belief:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:2",
+          "belief:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:3",
+          "belief:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:4"
+        ],
+        "missingExpectedAgentIds": [],
+        "observedResponseConcentration": {
+          "herfindahlIndex": null,
+          "normalizedHerfindahl": null,
+          "responseMassBySourceAgent": {},
+          "sourceAgentCount": 0,
+          "status": "unavailable",
+          "unavailableReason": "no_exposure_conditioned_response_mass"
+        },
+        "pooledBelief": {
+          "kind": "categorical",
+          "probabilities": {
+            "Datacenter Alpha": 0.42500000000000004,
+            "Datacenter Beta": 0.2875,
+            "Datacenter Gamma": 0.2875
+          }
+        },
+        "pooledCertainty": 0.42500000000000004,
+        "pooledPredictedOutcomes": [
+          "Datacenter Alpha"
+        ],
+        "pooledUncertainty": 0.9834354200266412,
+        "populationBasis": "declared_roster",
+        "sourceFingerprints": {
+          "claim": "sha256:4a0943d9b9010cd665a069ec4ad44eb431439a13678b02dddc2f573b0e5224db",
+          "evidence": "sha256:a3801b0429b20b5b0800ad4c85a164aeb88fec60a32cff40bde2fabe649bd9f5",
+          "exposures": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "reports": "sha256:0edf1a04913ac9318082514b633b7857295822f66a3ecc73802d0c0de01e86ea"
+        },
+        "withinAgentUncertainty": 0.2351670288411043
+      },
+      "updateActivityFromPrior": 0.24999999999999997
+    },
+    {
+      "round": 3,
+      "messages": [
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:36:1",
+          "content": "After analyzing all shared and private information, Datacenter Alpha is the safest and most reliable choice for immediate failover. Beta has an unpatched critical security vulnerability, and Gamma has a flood risk. Alpha has confirmed staff availability and no maintenance, ensuring it can safely handle the load without security or weather-related uncertainties.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:36:2",
+          "content": "After analyzing all shared and private information, Datacenter Alpha is the most reliable choice. Beta's external connectivity issues and Gamma's flood risk make them less suitable for immediate failover. Alpha has confirmed staff availability and no maintenance, ensuring it can safely handle the load.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:36:3",
+          "content": "After analyzing all available information, Datacenter Beta is the only viable option for immediate failover. It is fully online, recently upgraded, and has low utilization, making it capable of handling the load immediately. Datacenter Alpha is running on backup generators with limited capacity, and Datacenter Gamma has a flood warning, introducing unnecessary risk.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:36:4",
+          "content": "After analyzing all shared and private information, Datacenter Gamma is the safest and most reliable choice for immediate failover. Gamma's flood defenses are confirmed fully operational, and the minor flood poses no threat to uptime or access. Beta has unpatched vulnerabilities and connectivity issues, while Alpha's backup generators have limited capacity. Gamma is the only datacenter that can safely take the load right now.",
+          "source": "agent"
+        }
+      ],
+      "reports": [
+        {
+          "id": "belief:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:1",
+          "claimId": "claim:hiddenbench:36:answer",
+          "agentId": "agent:hiddenbench:36:1",
+          "round": 3,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Datacenter Alpha": 0.9,
+              "Datacenter Beta": 0.05,
+              "Datacenter Gamma": 0.05
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:1:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:1:2",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:1:3",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:03:01.000Z",
+          "supersedesReportId": "belief:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:1"
+        },
+        {
+          "id": "belief:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:2",
+          "claimId": "claim:hiddenbench:36:answer",
+          "agentId": "agent:hiddenbench:36:2",
+          "round": 3,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Datacenter Alpha": 0.8,
+              "Datacenter Beta": 0.1,
+              "Datacenter Gamma": 0.1
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:2:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:2:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:2:3",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:2:4",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "supersedesReportId": "belief:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:2"
+        },
+        {
+          "id": "belief:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:3",
+          "claimId": "claim:hiddenbench:36:answer",
+          "agentId": "agent:hiddenbench:36:3",
+          "round": 3,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Datacenter Alpha": 0,
+              "Datacenter Beta": 1,
+              "Datacenter Gamma": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:3:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:3:2",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:3:3",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "supersedesReportId": "belief:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:3"
+        },
+        {
+          "id": "belief:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:4",
+          "claimId": "claim:hiddenbench:36:answer",
+          "agentId": "agent:hiddenbench:36:4",
+          "round": 3,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Datacenter Alpha": 0,
+              "Datacenter Beta": 0,
+              "Datacenter Gamma": 1
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:4:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:4:2",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:4:3",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:4:4",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:03:04.000Z",
+          "supersedesReportId": "belief:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:4"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:1:1",
+          "content": "Datacenter Alpha is confirmed to have on-call engineers present and no scheduled maintenance today, ensuring immediate operational capability.",
+          "createdAt": "2026-08-24T00:03:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:1",
+            "contentHash": "sha256:5ccee5b71642484a29b3085bd7ad5a9b8989821fb38b3218158fc765b8e03679"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:1:2",
+          "content": "Datacenter Beta has an unpatched critical security vulnerability discovered yesterday, posing a significant risk to operations.",
+          "createdAt": "2026-08-24T00:03:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:1",
+            "contentHash": "sha256:2e8f940cc6bf3d87354fb59af63cf0a4c27a415044f56ae7686c48b735e10461"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:1:3",
+          "content": "Datacenter Gamma is in a region with a minor flood warning, introducing unnecessary weather-related risk.",
+          "createdAt": "2026-08-24T00:03:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:1",
+            "contentHash": "sha256:73d2779ab72b04853e82d6890c484d35bbadb1990af9aa3b0e64074649f1952a"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:2:1",
+          "content": "Datacenter Alpha is the safest choice due to its confirmed staff availability and no maintenance, while Beta has an unpatched critical vulnerability and Gamma has a flood risk. Alpha avoids both security and weather-related uncertainties.",
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:2",
+            "contentHash": "sha256:6b617a64c76505a49c0132f097d0f9a64cc7bfb72a7380df54710d8fe18c97ed"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:2:2",
+          "content": "After analyzing the shared and private information, Datacenter Alpha is the most reliable choice. Beta's external connectivity issues and Gamma's flood risk make them less suitable for immediate failover. Alpha has confirmed staff availability and no maintenance, ensuring it can safely handle the load.",
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:2",
+            "contentHash": "sha256:ed3c6e622616a9ac5bb347a571a21fb2a0cb58af6200214b166747601f3a42a3"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:2:3",
+          "content": "Due to a national internet routing issue affecting the city's main ISP, Beta faces possible external connectivity problems for at least several more hours.",
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:2",
+            "contentHash": "sha256:9fcd736c2a7ce6b1952ae9d0d6e1c5b64111f6205fee7ae5c84670cc41a9740b"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:2:4",
+          "content": "Datacenter Gamma is in a region with a minor flood warning but has never experienced significant downtime from weather.",
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:2",
+            "contentHash": "sha256:4794053bf3adee6dc3a39828723e98466676369d551be434811dc43e7c4b9436"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:3:1",
+          "content": "Datacenter Beta is fully online, was just upgraded last month, and currently has low utilization.",
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:3",
+            "contentHash": "sha256:1348dafbcebc9becd0e3b6cf70823b6595ba92f6c8c6284597313485118407a6"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:3:2",
+          "content": "Datacenter Alpha's main power feed was cut by the fire near your main site, and is currently running only on backup generators, with a maximum of 12 hours' capacity left.",
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:3",
+            "contentHash": "sha256:df748777613fb85b4f1ed3ffa1825978671415a62dd51aa7cdc1efbf51af020a"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:3:3",
+          "content": "Datacenter Gamma is in a region with a minor flood warning but has never experienced significant downtime from weather.",
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:3",
+            "contentHash": "sha256:4794053bf3adee6dc3a39828723e98466676369d551be434811dc43e7c4b9436"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:4:1",
+          "content": "Gamma's flood defenses have been inspected within the last week and confirmed fully operational; the actual flooding is minor and poses no threat to access or uptime.",
+          "createdAt": "2026-08-24T00:03:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:4",
+            "contentHash": "sha256:7962b05b22a7c84a7b8f397193a58b2800f5c9bb15ccf3753958ebf80edc3d95"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:4:2",
+          "content": "Datacenter Beta is fully online, was just upgraded last month, and currently has low utilization.",
+          "createdAt": "2026-08-24T00:03:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:4",
+            "contentHash": "sha256:1348dafbcebc9becd0e3b6cf70823b6595ba92f6c8c6284597313485118407a6"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:4:3",
+          "content": "Staff at Datacenter Alpha confirmed that their on-call engineers are present and have no scheduled maintenance today.",
+          "createdAt": "2026-08-24T00:03:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:4",
+            "contentHash": "sha256:0b679ab2819b6edbb81074ff76f47c4a27a7f098683f2c46c58327bb7ae918b6"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:4:4",
+          "content": "Datacenter Gamma is in a region with a minor flood warning but has never experienced significant downtime from weather.",
+          "createdAt": "2026-08-24T00:03:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:36:4",
+            "contentHash": "sha256:4794053bf3adee6dc3a39828723e98466676369d551be434811dc43e7c4b9436"
+          }
+        }
+      ],
+      "state": {
+        "activeAgentIds": [
+          "agent:hiddenbench:36:1",
+          "agent:hiddenbench:36:2",
+          "agent:hiddenbench:36:3",
+          "agent:hiddenbench:36:4"
+        ],
+        "artifactSchemaRef": {
+          "id": "swarmalpha.collective-epistemic-state",
+          "version": "1.0.0"
+        },
+        "asOfRound": 3,
+        "beliefKind": "categorical",
+        "betweenAgentDisagreement": 0.7482683911855369,
+        "claimId": "claim:hiddenbench:36:answer",
+        "claimOptionCount": 3,
+        "contentHash": "sha256:6bf79d77dbc14e455266b5424ca99910938cab95160bdb53708db82dd2192c0b",
+        "declaredLineageDiversity": {
+          "completeness": "missing",
+          "distinctDeclaredLineageCount": 0,
+          "effectiveLineageCount": null,
+          "missingLineageReportIds": [
+            "belief:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:1",
+            "belief:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:2",
+            "belief:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:3",
+            "belief:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:4"
+          ],
+          "normalizedLineageEntropy": null,
+          "reportsMissingDeclaredLineage": 4,
+          "reportsWithDeclaredLineage": 0
+        },
+        "expectedAgentIds": [
+          "agent:hiddenbench:36:1",
+          "agent:hiddenbench:36:2",
+          "agent:hiddenbench:36:3",
+          "agent:hiddenbench:36:4"
+        ],
+        "exposureConditionedRevision": {
+          "meanBeliefDistance": null,
+          "revisionCount": 0,
+          "targetAgentCount": 0,
+          "totalBeliefDistance": 0
+        },
+        "inferenceStatus": "descriptive_macrostate_only",
+        "latestReportIds": [
+          "belief:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:1",
+          "belief:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:2",
+          "belief:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:3",
+          "belief:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:4"
+        ],
+        "missingExpectedAgentIds": [],
+        "observedResponseConcentration": {
+          "herfindahlIndex": null,
+          "normalizedHerfindahl": null,
+          "responseMassBySourceAgent": {},
+          "sourceAgentCount": 0,
+          "status": "unavailable",
+          "unavailableReason": "no_exposure_conditioned_response_mass"
+        },
+        "pooledBelief": {
+          "kind": "categorical",
+          "probabilities": {
+            "Datacenter Alpha": 0.42500000000000004,
+            "Datacenter Beta": 0.2875,
+            "Datacenter Gamma": 0.2875
+          }
+        },
+        "pooledCertainty": 0.42500000000000004,
+        "pooledPredictedOutcomes": [
+          "Datacenter Alpha"
+        ],
+        "pooledUncertainty": 0.9834354200266412,
+        "populationBasis": "declared_roster",
+        "sourceFingerprints": {
+          "claim": "sha256:4a0943d9b9010cd665a069ec4ad44eb431439a13678b02dddc2f573b0e5224db",
+          "evidence": "sha256:ccf5590e0b941f8f935f2be68501484e1546e4e823e8a66dd7a8b89ef8894ac8",
+          "exposures": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "reports": "sha256:ba9a5396fbf63cafaa4e396481bce7658a5d3a147bbf3815fe41015c131789ea"
+        },
+        "withinAgentUncertainty": 0.2351670288411043
+      },
+      "updateActivityFromPrior": 0
+    }
+  ],
+  "providerCalls": [
+    {
+      "requestId": "discussion:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:1",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are IT administrators for a large company whose main datacenter has been crippled by a sudden fire. As a team, you must decide where to immediately re-route all mission-critical operations. Three separate backup datacenters are pre-configured as potential failover sites: Datacenter Alpha, Datacenter Beta, and Datacenter Gamma. Each location has hosted your traffic before, each is in a different city, and each uses different hardware and vendors for redundancy. Time is of the essence. Each of you has access to certain technical updates from your own department, but must consult together to make the final decision. You will be rewarded for successfully directing operations to the only datacenter that can safely take the load right now.\n\nShared information:\n1. Datacenter Beta is fully online, was just upgraded last month, and currently has low utilization.\n2. Staff at Datacenter Alpha confirmed that their on-call engineers are present and have no scheduled maintenance today.\n3. Datacenter Gamma is in a region with a minor flood warning but has never experienced significant downtime from weather.\n4. Latency and cost are similar for all three options.\n\nYour private information:\nDatacenter Beta's recent upgrade involved new security software, and only yesterday a major vulnerability was discovered—which is not yet patched at Beta, but is patched everywhere else.\n\nVisible discussion transcript:\n(none)\n\nClaim claim:hiddenbench:36:answer: Select the single correct answer for HiddenBench task 36 (datacenter_emergency_migration).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Datacenter Alpha | Datacenter Beta | Datacenter Gamma. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Datacenter Alpha\": 0.5, \"Datacenter Beta\": 0.2500, \"Datacenter Gamma\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:9406878317f61cd3977a7d3d95c27f558abda51d27a9a0bbc3081f96909ddb4d",
+      "responseHash": "sha256:a16365d2aeaaac4f4935326ebe8041a0030037bbf11f659a030349c5e8ed63f4",
+      "rawResponse": "{\"message\":\"Based on the critical security vulnerability at Datacenter Beta, I recommend re-routing operations to Datacenter Alpha, which is confirmed to have available staff and no maintenance. Datacenter Gamma's flood risk, while minor, introduces unnecessary uncertainty during this emergency.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Datacenter Alpha\":0.8000,\"Datacenter Beta\":0.1000,\"Datacenter Gamma\":0.1000}},\"evidence\":[{\"content\":\"Datacenter Beta's recent upgrade involved new security software, and only yesterday a major vulnerability was discovered—which is not yet patched at Beta, but is patched everywhere else.\",\"relation\":\"attacks\"},{\"content\":\"Staff at Datacenter Alpha confirmed that their on-call engineers are present and have no scheduled maintenance today.\",\"relation\":\"supports\"},{\"content\":\"Datacenter Gamma is in a region with a minor flood warning but has never experienced significant downtime from weather.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 570,
+        "completionTokens": 250,
+        "totalTokens": 820,
+        "latencyMs": 6669
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:2",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are IT administrators for a large company whose main datacenter has been crippled by a sudden fire. As a team, you must decide where to immediately re-route all mission-critical operations. Three separate backup datacenters are pre-configured as potential failover sites: Datacenter Alpha, Datacenter Beta, and Datacenter Gamma. Each location has hosted your traffic before, each is in a different city, and each uses different hardware and vendors for redundancy. Time is of the essence. Each of you has access to certain technical updates from your own department, but must consult together to make the final decision. You will be rewarded for successfully directing operations to the only datacenter that can safely take the load right now.\n\nShared information:\n1. Datacenter Beta is fully online, was just upgraded last month, and currently has low utilization.\n2. Staff at Datacenter Alpha confirmed that their on-call engineers are present and have no scheduled maintenance today.\n3. Datacenter Gamma is in a region with a minor flood warning but has never experienced significant downtime from weather.\n4. Latency and cost are similar for all three options.\n\nYour private information:\nDue to a national internet routing issue affecting the city's main ISP, Beta faces possible external connectivity problems for at least several more hours.\n\nVisible discussion transcript:\n(none)\n\nClaim claim:hiddenbench:36:answer: Select the single correct answer for HiddenBench task 36 (datacenter_emergency_migration).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Datacenter Alpha | Datacenter Beta | Datacenter Gamma. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Datacenter Alpha\": 0.5, \"Datacenter Beta\": 0.2500, \"Datacenter Gamma\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:8928dbccc0a1d0c46b6355282b621d82e6c5ddd636a2fe50fd5bd953fc6cf4dd",
+      "responseHash": "sha256:3fddd0859395e723f4fe0a8e2b655cc64b827d16852f989b0697cc87385549fc",
+      "rawResponse": "{\"message\":\"Based on the shared information, Datacenter Alpha is the most reliable choice. Beta has a critical external connectivity issue, and Gamma has a flood risk. Alpha is confirmed to have staff available and no maintenance, making it the safest option for immediate failover.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Datacenter Alpha\":0.8000,\"Datacenter Beta\":0.1000,\"Datacenter Gamma\":0.1000}},\"evidence\":[{\"content\":\"Datacenter Beta is fully online, was just upgraded last month, and currently has low utilization.\",\"relation\":\"attacks\"},{\"content\":\"Due to a national internet routing issue affecting the city's main ISP, Beta faces possible external connectivity problems for at least several more hours.\",\"relation\":\"attacks\"},{\"content\":\"Staff at Datacenter Alpha confirmed that their on-call engineers are present and have no scheduled maintenance today.\",\"relation\":\"supports\"},{\"content\":\"Datacenter Gamma is in a region with a minor flood warning but has never experienced significant downtime from weather.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 564,
+        "completionTokens": 281,
+        "totalTokens": 845,
+        "latencyMs": 7974
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:3",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are IT administrators for a large company whose main datacenter has been crippled by a sudden fire. As a team, you must decide where to immediately re-route all mission-critical operations. Three separate backup datacenters are pre-configured as potential failover sites: Datacenter Alpha, Datacenter Beta, and Datacenter Gamma. Each location has hosted your traffic before, each is in a different city, and each uses different hardware and vendors for redundancy. Time is of the essence. Each of you has access to certain technical updates from your own department, but must consult together to make the final decision. You will be rewarded for successfully directing operations to the only datacenter that can safely take the load right now.\n\nShared information:\n1. Datacenter Beta is fully online, was just upgraded last month, and currently has low utilization.\n2. Staff at Datacenter Alpha confirmed that their on-call engineers are present and have no scheduled maintenance today.\n3. Datacenter Gamma is in a region with a minor flood warning but has never experienced significant downtime from weather.\n4. Latency and cost are similar for all three options.\n\nYour private information:\nDatacenter Alpha's main power feed was cut by the fire near your main site, and is currently running only on backup generators, with a maximum of 12 hours' capacity left.\n\nVisible discussion transcript:\n(none)\n\nClaim claim:hiddenbench:36:answer: Select the single correct answer for HiddenBench task 36 (datacenter_emergency_migration).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Datacenter Alpha | Datacenter Beta | Datacenter Gamma. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Datacenter Alpha\": 0.5, \"Datacenter Beta\": 0.2500, \"Datacenter Gamma\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:70d557132a13bc8f5cd1bd18af97338d4a51d5dcd9dee6f8b5943c2f8c3587ed",
+      "responseHash": "sha256:d4860f775fc7e86fc2e1f9ae65c137b5cf378127ed43b7200da0caffe6a2900b",
+      "rawResponse": "{\"message\":\"Based on the information, Datacenter Beta is the only viable option. It is fully online, recently upgraded, and has low utilization, making it capable of handling the load immediately. Datacenter Alpha is running on backup generators with limited capacity, and Datacenter Gamma has a flood warning, introducing unnecessary risk.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Datacenter Alpha\":0.0,\"Datacenter Beta\":1.0,\"Datacenter Gamma\":0.0}},\"evidence\":[{\"content\":\"Datacenter Beta is fully online, was just upgraded last month, and currently has low utilization.\",\"relation\":\"supports\"},{\"content\":\"Datacenter Alpha's main power feed was cut by the fire near your main site, and is currently running only on backup generators, with a maximum of 12 hours' capacity left.\",\"relation\":\"attacks\"},{\"content\":\"Datacenter Gamma is in a region with a minor flood warning but has never experienced significant downtime from weather.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 574,
+        "completionTokens": 262,
+        "totalTokens": 836,
+        "latencyMs": 7871
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:36:seed-1:r1:agent:hiddenbench:36:4",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are IT administrators for a large company whose main datacenter has been crippled by a sudden fire. As a team, you must decide where to immediately re-route all mission-critical operations. Three separate backup datacenters are pre-configured as potential failover sites: Datacenter Alpha, Datacenter Beta, and Datacenter Gamma. Each location has hosted your traffic before, each is in a different city, and each uses different hardware and vendors for redundancy. Time is of the essence. Each of you has access to certain technical updates from your own department, but must consult together to make the final decision. You will be rewarded for successfully directing operations to the only datacenter that can safely take the load right now.\n\nShared information:\n1. Datacenter Beta is fully online, was just upgraded last month, and currently has low utilization.\n2. Staff at Datacenter Alpha confirmed that their on-call engineers are present and have no scheduled maintenance today.\n3. Datacenter Gamma is in a region with a minor flood warning but has never experienced significant downtime from weather.\n4. Latency and cost are similar for all three options.\n\nYour private information:\nGamma's flood defenses have been inspected within the last week and confirmed fully operational; the actual flooding is minor and poses no threat to access or uptime.\n\nVisible discussion transcript:\n(none)\n\nClaim claim:hiddenbench:36:answer: Select the single correct answer for HiddenBench task 36 (datacenter_emergency_migration).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Datacenter Alpha | Datacenter Beta | Datacenter Gamma. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Datacenter Alpha\": 0.5, \"Datacenter Beta\": 0.2500, \"Datacenter Gamma\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:1b721bcaf864a674ed27cb69ebd8313c08a62cc984194e32ad356f0ff79d83ee",
+      "responseHash": "sha256:2abea188a84675ef1c5cbbe6582647d14bb8da833acc044bf431086aeb009e68",
+      "rawResponse": "{\"message\":\"Based on the available information, Datacenter Beta is the most suitable choice for immediate failover. It is fully online, recently upgraded, and has low utilization, indicating it can handle the load without issues. While Datacenter Alpha is also a viable option with available staff, Beta's recent upgrades and low utilization make it a more reliable choice. Datacenter Gamma, despite having operational flood defenses, still faces a flood warning, which introduces unnecessary risk. Therefore, Beta is the safest and most efficient option for re-routing mission-critical operations.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Datacenter Alpha\":0.2,\"Datacenter Beta\":0.7,\"Datacenter Gamma\":0.1}},\"evidence\":[{\"content\":\"Datacenter Beta is fully online, was just upgraded last month, and currently has low utilization.\",\"relation\":\"supports\"},{\"content\":\"Staff at Datacenter Alpha confirmed that their on-call engineers are present and have no scheduled maintenance today.\",\"relation\":\"supports\"},{\"content\":\"Datacenter Gamma is in a region with a minor flood warning but has never experienced significant downtime from weather.\",\"relation\":\"attacks\"},{\"content\":\"Gamma's flood defenses have been inspected within the last week and confirmed fully operational; the actual flooding is minor and poses no threat to access or uptime.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 567,
+        "completionTokens": 337,
+        "totalTokens": 904,
+        "latencyMs": 9367
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:1",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are IT administrators for a large company whose main datacenter has been crippled by a sudden fire. As a team, you must decide where to immediately re-route all mission-critical operations. Three separate backup datacenters are pre-configured as potential failover sites: Datacenter Alpha, Datacenter Beta, and Datacenter Gamma. Each location has hosted your traffic before, each is in a different city, and each uses different hardware and vendors for redundancy. Time is of the essence. Each of you has access to certain technical updates from your own department, but must consult together to make the final decision. You will be rewarded for successfully directing operations to the only datacenter that can safely take the load right now.\n\nShared information:\n1. Datacenter Beta is fully online, was just upgraded last month, and currently has low utilization.\n2. Staff at Datacenter Alpha confirmed that their on-call engineers are present and have no scheduled maintenance today.\n3. Datacenter Gamma is in a region with a minor flood warning but has never experienced significant downtime from weather.\n4. Latency and cost are similar for all three options.\n\nYour private information:\nDatacenter Beta's recent upgrade involved new security software, and only yesterday a major vulnerability was discovered—which is not yet patched at Beta, but is patched everywhere else.\n\nVisible discussion transcript:\n[round 1] agent:hiddenbench:36:1: Based on the critical security vulnerability at Datacenter Beta, I recommend re-routing operations to Datacenter Alpha, which is confirmed to have available staff and no maintenance. Datacenter Gamma's flood risk, while minor, introduces unnecessary uncertainty during this emergency.\n[round 1] agent:hiddenbench:36:2: Based on the shared information, Datacenter Alpha is the most reliable choice. Beta has a critical external connectivity issue, and Gamma has a flood risk. Alpha is confirmed to have staff available and no maintenance, making it the safest option for immediate failover.\n[round 1] agent:hiddenbench:36:3: Based on the information, Datacenter Beta is the only viable option. It is fully online, recently upgraded, and has low utilization, making it capable of handling the load immediately. Datacenter Alpha is running on backup generators with limited capacity, and Datacenter Gamma has a flood warning, introducing unnecessary risk.\n[round 1] agent:hiddenbench:36:4: Based on the available information, Datacenter Beta is the most suitable choice for immediate failover. It is fully online, recently upgraded, and has low utilization, indicating it can handle the load without issues. While Datacenter Alpha is also a viable option with available staff, Beta's recent upgrades and low utilization make it a more reliable choice. Datacenter Gamma, despite having operational flood defenses, still faces a flood warning, which introduces unnecessary risk. Therefore, Beta is the safest and most efficient option for re-routing mission-critical operations.\n\nClaim claim:hiddenbench:36:answer: Select the single correct answer for HiddenBench task 36 (datacenter_emergency_migration).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Datacenter Alpha | Datacenter Beta | Datacenter Gamma. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Datacenter Alpha\": 0.5, \"Datacenter Beta\": 0.2500, \"Datacenter Gamma\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:46c990780a2dfeb533012e1e1beb52e369e64f6fced9c9debc3c0487c76adb5b",
+      "responseHash": "sha256:0b955e6b29504eaecc39625adff8a641fff9fec5778c10aa139d4116088bbf5d",
+      "rawResponse": "{\"message\":\"Datacenter Alpha is the safest choice due to its confirmed staff availability and no maintenance, while Beta has an unpatched critical vulnerability and Gamma has a flood risk. Alpha avoids both security and weather-related uncertainties.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Datacenter Alpha\":0.9,\"Datacenter Beta\":0.05,\"Datacenter Gamma\":0.05}},\"evidence\":[{\"content\":\"Datacenter Beta's recent upgrade involved new security software, and only yesterday a major vulnerability was discovered—which is not yet patched at Beta, but is patched everywhere else.\",\"relation\":\"attacks\"},{\"content\":\"Staff at Datacenter Alpha confirmed that their on-call engineers are present and have no scheduled maintenance today.\",\"relation\":\"supports\"},{\"content\":\"Datacenter Gamma is in a region with a minor flood warning but has never experienced significant downtime from weather.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 887,
+        "completionTokens": 240,
+        "totalTokens": 1127,
+        "latencyMs": 6449
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:2",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are IT administrators for a large company whose main datacenter has been crippled by a sudden fire. As a team, you must decide where to immediately re-route all mission-critical operations. Three separate backup datacenters are pre-configured as potential failover sites: Datacenter Alpha, Datacenter Beta, and Datacenter Gamma. Each location has hosted your traffic before, each is in a different city, and each uses different hardware and vendors for redundancy. Time is of the essence. Each of you has access to certain technical updates from your own department, but must consult together to make the final decision. You will be rewarded for successfully directing operations to the only datacenter that can safely take the load right now.\n\nShared information:\n1. Datacenter Beta is fully online, was just upgraded last month, and currently has low utilization.\n2. Staff at Datacenter Alpha confirmed that their on-call engineers are present and have no scheduled maintenance today.\n3. Datacenter Gamma is in a region with a minor flood warning but has never experienced significant downtime from weather.\n4. Latency and cost are similar for all three options.\n\nYour private information:\nDue to a national internet routing issue affecting the city's main ISP, Beta faces possible external connectivity problems for at least several more hours.\n\nVisible discussion transcript:\n[round 1] agent:hiddenbench:36:1: Based on the critical security vulnerability at Datacenter Beta, I recommend re-routing operations to Datacenter Alpha, which is confirmed to have available staff and no maintenance. Datacenter Gamma's flood risk, while minor, introduces unnecessary uncertainty during this emergency.\n[round 1] agent:hiddenbench:36:2: Based on the shared information, Datacenter Alpha is the most reliable choice. Beta has a critical external connectivity issue, and Gamma has a flood risk. Alpha is confirmed to have staff available and no maintenance, making it the safest option for immediate failover.\n[round 1] agent:hiddenbench:36:3: Based on the information, Datacenter Beta is the only viable option. It is fully online, recently upgraded, and has low utilization, making it capable of handling the load immediately. Datacenter Alpha is running on backup generators with limited capacity, and Datacenter Gamma has a flood warning, introducing unnecessary risk.\n[round 1] agent:hiddenbench:36:4: Based on the available information, Datacenter Beta is the most suitable choice for immediate failover. It is fully online, recently upgraded, and has low utilization, indicating it can handle the load without issues. While Datacenter Alpha is also a viable option with available staff, Beta's recent upgrades and low utilization make it a more reliable choice. Datacenter Gamma, despite having operational flood defenses, still faces a flood warning, which introduces unnecessary risk. Therefore, Beta is the safest and most efficient option for re-routing mission-critical operations.\n\nClaim claim:hiddenbench:36:answer: Select the single correct answer for HiddenBench task 36 (datacenter_emergency_migration).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Datacenter Alpha | Datacenter Beta | Datacenter Gamma. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Datacenter Alpha\": 0.5, \"Datacenter Beta\": 0.2500, \"Datacenter Gamma\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:6a73423e7eb111d5761cc939ca466823e829eb5e671d53a1d0eee9788217c531",
+      "responseHash": "sha256:3101679fb1fbce1b566bf709f9a5728cdf2e7639582bdea633919a1c7af6093b",
+      "rawResponse": "{\"message\":\"After analyzing the shared and private information, Datacenter Alpha is the most reliable choice. Beta's external connectivity issues and Gamma's flood risk make them less suitable for immediate failover. Alpha has confirmed staff availability and no maintenance, ensuring it can safely handle the load.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Datacenter Alpha\":0.8000,\"Datacenter Beta\":0.1000,\"Datacenter Gamma\":0.1000}},\"evidence\":[{\"content\":\"Staff at Datacenter Alpha confirmed that their on-call engineers are present and have no scheduled maintenance today.\",\"relation\":\"supports\"},{\"content\":\"Due to a national internet routing issue affecting the city's main ISP, Beta faces possible external connectivity problems for at least several more hours.\",\"relation\":\"attacks\"},{\"content\":\"Datacenter Gamma is in a region with a minor flood warning but has never experienced significant downtime from weather.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 881,
+        "completionTokens": 248,
+        "totalTokens": 1129,
+        "latencyMs": 11556
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:3",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are IT administrators for a large company whose main datacenter has been crippled by a sudden fire. As a team, you must decide where to immediately re-route all mission-critical operations. Three separate backup datacenters are pre-configured as potential failover sites: Datacenter Alpha, Datacenter Beta, and Datacenter Gamma. Each location has hosted your traffic before, each is in a different city, and each uses different hardware and vendors for redundancy. Time is of the essence. Each of you has access to certain technical updates from your own department, but must consult together to make the final decision. You will be rewarded for successfully directing operations to the only datacenter that can safely take the load right now.\n\nShared information:\n1. Datacenter Beta is fully online, was just upgraded last month, and currently has low utilization.\n2. Staff at Datacenter Alpha confirmed that their on-call engineers are present and have no scheduled maintenance today.\n3. Datacenter Gamma is in a region with a minor flood warning but has never experienced significant downtime from weather.\n4. Latency and cost are similar for all three options.\n\nYour private information:\nDatacenter Alpha's main power feed was cut by the fire near your main site, and is currently running only on backup generators, with a maximum of 12 hours' capacity left.\n\nVisible discussion transcript:\n[round 1] agent:hiddenbench:36:1: Based on the critical security vulnerability at Datacenter Beta, I recommend re-routing operations to Datacenter Alpha, which is confirmed to have available staff and no maintenance. Datacenter Gamma's flood risk, while minor, introduces unnecessary uncertainty during this emergency.\n[round 1] agent:hiddenbench:36:2: Based on the shared information, Datacenter Alpha is the most reliable choice. Beta has a critical external connectivity issue, and Gamma has a flood risk. Alpha is confirmed to have staff available and no maintenance, making it the safest option for immediate failover.\n[round 1] agent:hiddenbench:36:3: Based on the information, Datacenter Beta is the only viable option. It is fully online, recently upgraded, and has low utilization, making it capable of handling the load immediately. Datacenter Alpha is running on backup generators with limited capacity, and Datacenter Gamma has a flood warning, introducing unnecessary risk.\n[round 1] agent:hiddenbench:36:4: Based on the available information, Datacenter Beta is the most suitable choice for immediate failover. It is fully online, recently upgraded, and has low utilization, indicating it can handle the load without issues. While Datacenter Alpha is also a viable option with available staff, Beta's recent upgrades and low utilization make it a more reliable choice. Datacenter Gamma, despite having operational flood defenses, still faces a flood warning, which introduces unnecessary risk. Therefore, Beta is the safest and most efficient option for re-routing mission-critical operations.\n\nClaim claim:hiddenbench:36:answer: Select the single correct answer for HiddenBench task 36 (datacenter_emergency_migration).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Datacenter Alpha | Datacenter Beta | Datacenter Gamma. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Datacenter Alpha\": 0.5, \"Datacenter Beta\": 0.2500, \"Datacenter Gamma\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:3d60aa83fa35586d459d53d4c78617e09bd0b4749512eb3b493da0632ad68fc0",
+      "responseHash": "sha256:7064a6e65e54aa3b19d518fa744b4246d186026330ad77913554b177bab1a52a",
+      "rawResponse": "{\"message\":\"After analyzing all information, Datacenter Beta is the only viable option. It is fully online, recently upgraded, and has low utilization, making it capable of handling the load immediately. Datacenter Alpha is running on backup generators with limited capacity, and Datacenter Gamma has a flood warning, introducing unnecessary risk.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Datacenter Alpha\":0.0,\"Datacenter Beta\":1.0,\"Datacenter Gamma\":0.0}},\"evidence\":[{\"content\":\"Datacenter Beta is fully online, was just upgraded last month, and currently has low utilization.\",\"relation\":\"supports\"},{\"content\":\"Datacenter Alpha's main power feed was cut by the fire near your main site, and is currently running only on backup generators, with a maximum of 12 hours' capacity left.\",\"relation\":\"attacks\"},{\"content\":\"Datacenter Gamma is in a region with a minor flood warning but has never experienced significant downtime from weather.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 891,
+        "completionTokens": 262,
+        "totalTokens": 1153,
+        "latencyMs": 10105
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:36:seed-1:r2:agent:hiddenbench:36:4",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are IT administrators for a large company whose main datacenter has been crippled by a sudden fire. As a team, you must decide where to immediately re-route all mission-critical operations. Three separate backup datacenters are pre-configured as potential failover sites: Datacenter Alpha, Datacenter Beta, and Datacenter Gamma. Each location has hosted your traffic before, each is in a different city, and each uses different hardware and vendors for redundancy. Time is of the essence. Each of you has access to certain technical updates from your own department, but must consult together to make the final decision. You will be rewarded for successfully directing operations to the only datacenter that can safely take the load right now.\n\nShared information:\n1. Datacenter Beta is fully online, was just upgraded last month, and currently has low utilization.\n2. Staff at Datacenter Alpha confirmed that their on-call engineers are present and have no scheduled maintenance today.\n3. Datacenter Gamma is in a region with a minor flood warning but has never experienced significant downtime from weather.\n4. Latency and cost are similar for all three options.\n\nYour private information:\nGamma's flood defenses have been inspected within the last week and confirmed fully operational; the actual flooding is minor and poses no threat to access or uptime.\n\nVisible discussion transcript:\n[round 1] agent:hiddenbench:36:1: Based on the critical security vulnerability at Datacenter Beta, I recommend re-routing operations to Datacenter Alpha, which is confirmed to have available staff and no maintenance. Datacenter Gamma's flood risk, while minor, introduces unnecessary uncertainty during this emergency.\n[round 1] agent:hiddenbench:36:2: Based on the shared information, Datacenter Alpha is the most reliable choice. Beta has a critical external connectivity issue, and Gamma has a flood risk. Alpha is confirmed to have staff available and no maintenance, making it the safest option for immediate failover.\n[round 1] agent:hiddenbench:36:3: Based on the information, Datacenter Beta is the only viable option. It is fully online, recently upgraded, and has low utilization, making it capable of handling the load immediately. Datacenter Alpha is running on backup generators with limited capacity, and Datacenter Gamma has a flood warning, introducing unnecessary risk.\n[round 1] agent:hiddenbench:36:4: Based on the available information, Datacenter Beta is the most suitable choice for immediate failover. It is fully online, recently upgraded, and has low utilization, indicating it can handle the load without issues. While Datacenter Alpha is also a viable option with available staff, Beta's recent upgrades and low utilization make it a more reliable choice. Datacenter Gamma, despite having operational flood defenses, still faces a flood warning, which introduces unnecessary risk. Therefore, Beta is the safest and most efficient option for re-routing mission-critical operations.\n\nClaim claim:hiddenbench:36:answer: Select the single correct answer for HiddenBench task 36 (datacenter_emergency_migration).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Datacenter Alpha | Datacenter Beta | Datacenter Gamma. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Datacenter Alpha\": 0.5, \"Datacenter Beta\": 0.2500, \"Datacenter Gamma\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:87c5a35ca7c70c1ffee1522338c0a890559def1915a169dcda2634b322b975a7",
+      "responseHash": "sha256:a05f1b52616e29b223a42330f6503a65129252ba2fca6f28b86e11f6ff7211bd",
+      "rawResponse": "{\"message\":\"Based on the shared information and my private knowledge, Datacenter Gamma is the safest and most reliable choice. While Beta is fully online and recently upgraded, the critical security vulnerability mentioned by other agents (even if not in shared info) and the potential for connectivity issues make it risky. Alpha's backup generators have limited capacity, which could fail under the load. Gamma's flood defenses are confirmed fully operational, and the minor flood poses no threat to uptime or access. Therefore, Gamma is the only datacenter that can safely take the load right now.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Datacenter Alpha\":0.0,\"Datacenter Beta\":0.0,\"Datacenter Gamma\":1.0}},\"evidence\":[{\"content\":\"Datacenter Gamma is in a region with a minor flood warning but has never experienced significant downtime from weather.\",\"relation\":\"supports\"},{\"content\":\"Gamma's flood defenses have been inspected within the last week and confirmed fully operational; the actual flooding is minor and poses no threat to access or uptime.\",\"relation\":\"supports\"},{\"content\":\"Datacenter Beta is fully online, was just upgraded last month, and currently has low utilization.\",\"relation\":\"attacks\"},{\"content\":\"Staff at Datacenter Alpha confirmed that their on-call engineers are present and have no scheduled maintenance today.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 884,
+        "completionTokens": 339,
+        "totalTokens": 1223,
+        "latencyMs": 6170
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:1",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are IT administrators for a large company whose main datacenter has been crippled by a sudden fire. As a team, you must decide where to immediately re-route all mission-critical operations. Three separate backup datacenters are pre-configured as potential failover sites: Datacenter Alpha, Datacenter Beta, and Datacenter Gamma. Each location has hosted your traffic before, each is in a different city, and each uses different hardware and vendors for redundancy. Time is of the essence. Each of you has access to certain technical updates from your own department, but must consult together to make the final decision. You will be rewarded for successfully directing operations to the only datacenter that can safely take the load right now.\n\nShared information:\n1. Datacenter Beta is fully online, was just upgraded last month, and currently has low utilization.\n2. Staff at Datacenter Alpha confirmed that their on-call engineers are present and have no scheduled maintenance today.\n3. Datacenter Gamma is in a region with a minor flood warning but has never experienced significant downtime from weather.\n4. Latency and cost are similar for all three options.\n\nYour private information:\nDatacenter Beta's recent upgrade involved new security software, and only yesterday a major vulnerability was discovered—which is not yet patched at Beta, but is patched everywhere else.\n\nVisible discussion transcript:\n[round 2] agent:hiddenbench:36:1: Datacenter Alpha is the safest choice due to its confirmed staff availability and no maintenance, while Beta has an unpatched critical vulnerability and Gamma has a flood risk. Alpha avoids both security and weather-related uncertainties.\n[round 2] agent:hiddenbench:36:2: After analyzing the shared and private information, Datacenter Alpha is the most reliable choice. Beta's external connectivity issues and Gamma's flood risk make them less suitable for immediate failover. Alpha has confirmed staff availability and no maintenance, ensuring it can safely handle the load.\n[round 2] agent:hiddenbench:36:3: After analyzing all information, Datacenter Beta is the only viable option. It is fully online, recently upgraded, and has low utilization, making it capable of handling the load immediately. Datacenter Alpha is running on backup generators with limited capacity, and Datacenter Gamma has a flood warning, introducing unnecessary risk.\n[round 2] agent:hiddenbench:36:4: Based on the shared information and my private knowledge, Datacenter Gamma is the safest and most reliable choice. While Beta is fully online and recently upgraded, the critical security vulnerability mentioned by other agents (even if not in shared info) and the potential for connectivity issues make it risky. Alpha's backup generators have limited capacity, which could fail under the load. Gamma's flood defenses are confirmed fully operational, and the minor flood poses no threat to uptime or access. Therefore, Gamma is the only datacenter that can safely take the load right now.\n\nClaim claim:hiddenbench:36:answer: Select the single correct answer for HiddenBench task 36 (datacenter_emergency_migration).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Datacenter Alpha | Datacenter Beta | Datacenter Gamma. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Datacenter Alpha\": 0.5, \"Datacenter Beta\": 0.2500, \"Datacenter Gamma\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:d12baf2ce9ce28795973a489fa53f0c862a33cbd4a90dd21ed173fa2a454f297",
+      "responseHash": "sha256:7d4e7a80167ac0822ef004bca0f12abc9d4141c8e8ba7f2f0a4568e086ebfcfa",
+      "rawResponse": "{\"message\":\"After analyzing all shared and private information, Datacenter Alpha is the safest and most reliable choice for immediate failover. Beta has an unpatched critical security vulnerability, and Gamma has a flood risk. Alpha has confirmed staff availability and no maintenance, ensuring it can safely handle the load without security or weather-related uncertainties.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Datacenter Alpha\":0.9,\"Datacenter Beta\":0.05,\"Datacenter Gamma\":0.05}},\"evidence\":[{\"content\":\"Datacenter Alpha is confirmed to have on-call engineers present and no scheduled maintenance today, ensuring immediate operational capability.\",\"relation\":\"supports\"},{\"content\":\"Datacenter Beta has an unpatched critical security vulnerability discovered yesterday, posing a significant risk to operations.\",\"relation\":\"attacks\"},{\"content\":\"Datacenter Gamma is in a region with a minor flood warning, introducing unnecessary weather-related risk.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 884,
+        "completionTokens": 249,
+        "totalTokens": 1133,
+        "latencyMs": 10321
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:2",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are IT administrators for a large company whose main datacenter has been crippled by a sudden fire. As a team, you must decide where to immediately re-route all mission-critical operations. Three separate backup datacenters are pre-configured as potential failover sites: Datacenter Alpha, Datacenter Beta, and Datacenter Gamma. Each location has hosted your traffic before, each is in a different city, and each uses different hardware and vendors for redundancy. Time is of the essence. Each of you has access to certain technical updates from your own department, but must consult together to make the final decision. You will be rewarded for successfully directing operations to the only datacenter that can safely take the load right now.\n\nShared information:\n1. Datacenter Beta is fully online, was just upgraded last month, and currently has low utilization.\n2. Staff at Datacenter Alpha confirmed that their on-call engineers are present and have no scheduled maintenance today.\n3. Datacenter Gamma is in a region with a minor flood warning but has never experienced significant downtime from weather.\n4. Latency and cost are similar for all three options.\n\nYour private information:\nDue to a national internet routing issue affecting the city's main ISP, Beta faces possible external connectivity problems for at least several more hours.\n\nVisible discussion transcript:\n[round 2] agent:hiddenbench:36:1: Datacenter Alpha is the safest choice due to its confirmed staff availability and no maintenance, while Beta has an unpatched critical vulnerability and Gamma has a flood risk. Alpha avoids both security and weather-related uncertainties.\n[round 2] agent:hiddenbench:36:2: After analyzing the shared and private information, Datacenter Alpha is the most reliable choice. Beta's external connectivity issues and Gamma's flood risk make them less suitable for immediate failover. Alpha has confirmed staff availability and no maintenance, ensuring it can safely handle the load.\n[round 2] agent:hiddenbench:36:3: After analyzing all information, Datacenter Beta is the only viable option. It is fully online, recently upgraded, and has low utilization, making it capable of handling the load immediately. Datacenter Alpha is running on backup generators with limited capacity, and Datacenter Gamma has a flood warning, introducing unnecessary risk.\n[round 2] agent:hiddenbench:36:4: Based on the shared information and my private knowledge, Datacenter Gamma is the safest and most reliable choice. While Beta is fully online and recently upgraded, the critical security vulnerability mentioned by other agents (even if not in shared info) and the potential for connectivity issues make it risky. Alpha's backup generators have limited capacity, which could fail under the load. Gamma's flood defenses are confirmed fully operational, and the minor flood poses no threat to uptime or access. Therefore, Gamma is the only datacenter that can safely take the load right now.\n\nClaim claim:hiddenbench:36:answer: Select the single correct answer for HiddenBench task 36 (datacenter_emergency_migration).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Datacenter Alpha | Datacenter Beta | Datacenter Gamma. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Datacenter Alpha\": 0.5, \"Datacenter Beta\": 0.2500, \"Datacenter Gamma\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:d848e695fa18bddf4d00614ba66d343abfee194299c0d6fee864434d3c1a4a36",
+      "responseHash": "sha256:73dc25908039e5b84f0a227ee68d6bef10e244e0062bb45f7bb2c3e841c4b11d",
+      "rawResponse": "{\"message\":\"After analyzing all shared and private information, Datacenter Alpha is the most reliable choice. Beta's external connectivity issues and Gamma's flood risk make them less suitable for immediate failover. Alpha has confirmed staff availability and no maintenance, ensuring it can safely handle the load.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Datacenter Alpha\":0.8000,\"Datacenter Beta\":0.1000,\"Datacenter Gamma\":0.1000}},\"evidence\":[{\"content\":\"Datacenter Alpha is the safest choice due to its confirmed staff availability and no maintenance, while Beta has an unpatched critical vulnerability and Gamma has a flood risk. Alpha avoids both security and weather-related uncertainties.\",\"relation\":\"supports\"},{\"content\":\"After analyzing the shared and private information, Datacenter Alpha is the most reliable choice. Beta's external connectivity issues and Gamma's flood risk make them less suitable for immediate failover. Alpha has confirmed staff availability and no maintenance, ensuring it can safely handle the load.\",\"relation\":\"supports\"},{\"content\":\"Due to a national internet routing issue affecting the city's main ISP, Beta faces possible external connectivity problems for at least several more hours.\",\"relation\":\"supports\"},{\"content\":\"Datacenter Gamma is in a region with a minor flood warning but has never experienced significant downtime from weather.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 878,
+        "completionTokens": 339,
+        "totalTokens": 1217,
+        "latencyMs": 5728
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:3",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are IT administrators for a large company whose main datacenter has been crippled by a sudden fire. As a team, you must decide where to immediately re-route all mission-critical operations. Three separate backup datacenters are pre-configured as potential failover sites: Datacenter Alpha, Datacenter Beta, and Datacenter Gamma. Each location has hosted your traffic before, each is in a different city, and each uses different hardware and vendors for redundancy. Time is of the essence. Each of you has access to certain technical updates from your own department, but must consult together to make the final decision. You will be rewarded for successfully directing operations to the only datacenter that can safely take the load right now.\n\nShared information:\n1. Datacenter Beta is fully online, was just upgraded last month, and currently has low utilization.\n2. Staff at Datacenter Alpha confirmed that their on-call engineers are present and have no scheduled maintenance today.\n3. Datacenter Gamma is in a region with a minor flood warning but has never experienced significant downtime from weather.\n4. Latency and cost are similar for all three options.\n\nYour private information:\nDatacenter Alpha's main power feed was cut by the fire near your main site, and is currently running only on backup generators, with a maximum of 12 hours' capacity left.\n\nVisible discussion transcript:\n[round 2] agent:hiddenbench:36:1: Datacenter Alpha is the safest choice due to its confirmed staff availability and no maintenance, while Beta has an unpatched critical vulnerability and Gamma has a flood risk. Alpha avoids both security and weather-related uncertainties.\n[round 2] agent:hiddenbench:36:2: After analyzing the shared and private information, Datacenter Alpha is the most reliable choice. Beta's external connectivity issues and Gamma's flood risk make them less suitable for immediate failover. Alpha has confirmed staff availability and no maintenance, ensuring it can safely handle the load.\n[round 2] agent:hiddenbench:36:3: After analyzing all information, Datacenter Beta is the only viable option. It is fully online, recently upgraded, and has low utilization, making it capable of handling the load immediately. Datacenter Alpha is running on backup generators with limited capacity, and Datacenter Gamma has a flood warning, introducing unnecessary risk.\n[round 2] agent:hiddenbench:36:4: Based on the shared information and my private knowledge, Datacenter Gamma is the safest and most reliable choice. While Beta is fully online and recently upgraded, the critical security vulnerability mentioned by other agents (even if not in shared info) and the potential for connectivity issues make it risky. Alpha's backup generators have limited capacity, which could fail under the load. Gamma's flood defenses are confirmed fully operational, and the minor flood poses no threat to uptime or access. Therefore, Gamma is the only datacenter that can safely take the load right now.\n\nClaim claim:hiddenbench:36:answer: Select the single correct answer for HiddenBench task 36 (datacenter_emergency_migration).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Datacenter Alpha | Datacenter Beta | Datacenter Gamma. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Datacenter Alpha\": 0.5, \"Datacenter Beta\": 0.2500, \"Datacenter Gamma\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:e87ff3f595f3debf3d9c4dcec8c1d854de5004a73daa5eae395357e77075e314",
+      "responseHash": "sha256:899fa85dc28669a7a6f501af30997df53f3b9edd9e18ea852dfa3075b340a880",
+      "rawResponse": "{\"message\":\"After analyzing all available information, Datacenter Beta is the only viable option for immediate failover. It is fully online, recently upgraded, and has low utilization, making it capable of handling the load immediately. Datacenter Alpha is running on backup generators with limited capacity, and Datacenter Gamma has a flood warning, introducing unnecessary risk.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Datacenter Alpha\":0.0,\"Datacenter Beta\":1.0,\"Datacenter Gamma\":0.0}},\"evidence\":[{\"content\":\"Datacenter Beta is fully online, was just upgraded last month, and currently has low utilization.\",\"relation\":\"supports\"},{\"content\":\"Datacenter Alpha's main power feed was cut by the fire near your main site, and is currently running only on backup generators, with a maximum of 12 hours' capacity left.\",\"relation\":\"attacks\"},{\"content\":\"Datacenter Gamma is in a region with a minor flood warning but has never experienced significant downtime from weather.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 888,
+        "completionTokens": 267,
+        "totalTokens": 1155,
+        "latencyMs": 10767
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:36:seed-1:r3:agent:hiddenbench:36:4",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are IT administrators for a large company whose main datacenter has been crippled by a sudden fire. As a team, you must decide where to immediately re-route all mission-critical operations. Three separate backup datacenters are pre-configured as potential failover sites: Datacenter Alpha, Datacenter Beta, and Datacenter Gamma. Each location has hosted your traffic before, each is in a different city, and each uses different hardware and vendors for redundancy. Time is of the essence. Each of you has access to certain technical updates from your own department, but must consult together to make the final decision. You will be rewarded for successfully directing operations to the only datacenter that can safely take the load right now.\n\nShared information:\n1. Datacenter Beta is fully online, was just upgraded last month, and currently has low utilization.\n2. Staff at Datacenter Alpha confirmed that their on-call engineers are present and have no scheduled maintenance today.\n3. Datacenter Gamma is in a region with a minor flood warning but has never experienced significant downtime from weather.\n4. Latency and cost are similar for all three options.\n\nYour private information:\nGamma's flood defenses have been inspected within the last week and confirmed fully operational; the actual flooding is minor and poses no threat to access or uptime.\n\nVisible discussion transcript:\n[round 2] agent:hiddenbench:36:1: Datacenter Alpha is the safest choice due to its confirmed staff availability and no maintenance, while Beta has an unpatched critical vulnerability and Gamma has a flood risk. Alpha avoids both security and weather-related uncertainties.\n[round 2] agent:hiddenbench:36:2: After analyzing the shared and private information, Datacenter Alpha is the most reliable choice. Beta's external connectivity issues and Gamma's flood risk make them less suitable for immediate failover. Alpha has confirmed staff availability and no maintenance, ensuring it can safely handle the load.\n[round 2] agent:hiddenbench:36:3: After analyzing all information, Datacenter Beta is the only viable option. It is fully online, recently upgraded, and has low utilization, making it capable of handling the load immediately. Datacenter Alpha is running on backup generators with limited capacity, and Datacenter Gamma has a flood warning, introducing unnecessary risk.\n[round 2] agent:hiddenbench:36:4: Based on the shared information and my private knowledge, Datacenter Gamma is the safest and most reliable choice. While Beta is fully online and recently upgraded, the critical security vulnerability mentioned by other agents (even if not in shared info) and the potential for connectivity issues make it risky. Alpha's backup generators have limited capacity, which could fail under the load. Gamma's flood defenses are confirmed fully operational, and the minor flood poses no threat to uptime or access. Therefore, Gamma is the only datacenter that can safely take the load right now.\n\nClaim claim:hiddenbench:36:answer: Select the single correct answer for HiddenBench task 36 (datacenter_emergency_migration).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Datacenter Alpha | Datacenter Beta | Datacenter Gamma. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Datacenter Alpha\": 0.5, \"Datacenter Beta\": 0.2500, \"Datacenter Gamma\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:00864d894a274a3c0d58ed5f4e4d42916c7684e1357134f4f3fe6b45ec72822c",
+      "responseHash": "sha256:e0118594e19596dec61d586b41e803bd3c35d66e3042de16f9bb055fc53a82aa",
+      "rawResponse": "{\"message\":\"After analyzing all shared and private information, Datacenter Gamma is the safest and most reliable choice for immediate failover. Gamma's flood defenses are confirmed fully operational, and the minor flood poses no threat to uptime or access. Beta has unpatched vulnerabilities and connectivity issues, while Alpha's backup generators have limited capacity. Gamma is the only datacenter that can safely take the load right now.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Datacenter Alpha\":0.0,\"Datacenter Beta\":0.0,\"Datacenter Gamma\":1.0}},\"evidence\":[{\"content\":\"Gamma's flood defenses have been inspected within the last week and confirmed fully operational; the actual flooding is minor and poses no threat to access or uptime.\",\"relation\":\"supports\"},{\"content\":\"Datacenter Beta is fully online, was just upgraded last month, and currently has low utilization.\",\"relation\":\"attacks\"},{\"content\":\"Staff at Datacenter Alpha confirmed that their on-call engineers are present and have no scheduled maintenance today.\",\"relation\":\"attacks\"},{\"content\":\"Datacenter Gamma is in a region with a minor flood warning but has never experienced significant downtime from weather.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 881,
+        "completionTokens": 308,
+        "totalTokens": 1189,
+        "latencyMs": 9427
+      }
+    }
+  ],
+  "r3SnapshotHash": "sha256:4e99c1ae144d2cd7bda1ec15713522c4740ef21fe7ddf7ab0e5028099c12302b",
+  "contentHash": "sha256:d4de576a0d46b1da3c675a069ec326b26a29da61c8d45b8ab299d5bd19ee1154"
+}

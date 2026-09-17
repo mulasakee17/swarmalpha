@@ -1,0 +1,15 @@
+{
+  "evidenceClass": "planning_surrogate_not_provider_usage",
+  "officialPriceSource": "https://bigmodel.cn/pricing",
+  "officialPriceCheckedAt": "2026-08-30",
+  "priceTierAssumption": "each_request_below_32k_input_tokens",
+  "inputCnyPerMillionTokens": 1,
+  "outputCnyPerMillionTokens": 3,
+  "requestCount": 256,
+  "maximumObservedPromptUtf8BytesPerRequest": 3160,
+  "totalPromptUtf8Bytes": 679640,
+  "inputTokenPlanningSurrogate": "one_token_per_utf8_byte_conservative_surrogate_not_billing_measurement",
+  "maximumCompletionTokens": 81920,
+  "byteSurrogateMaximumCostCny": 0.9254,
+  "hardCurrencyGuarantee": "none_provider_billing_tokens_must_be_observed_after_execution"
+}

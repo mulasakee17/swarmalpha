@@ -1,0 +1,370 @@
+{
+  "artifactRef": {
+    "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-public-artifact",
+    "version": "1.0.0"
+  },
+  "planHash": "sha256:012fbe8b9974250820100bbaefcd04c9cf4603ea976404aa5aa5a4fa87c5413c",
+  "runId": "collective-dynamics-m2-bridge:64:seed-1",
+  "seed": 1,
+  "modelRef": {
+    "id": "zhipu:glm-4.6v",
+    "version": "1.0.0"
+  },
+  "onlineTask": {
+    "sourceTaskId": 64,
+    "taskId": "task:hiddenbench:64",
+    "publicContext": "You are employees on the safety committee of MetroLoop Inc., called together urgently to advise management after 12 people fell ill at company headquarters. The company cafeteria is under scrutiny, but the source of the outbreak isn’t yet confirmed. Your team must quickly identify the likely cause to guide containment actions. You have three leading hypotheses:\n- Food poisoning from the cafeteria\n- Contaminated water supply\n- Airborne toxin from the HVAC system\nEach of you has received reports or observations not known by others. The company needs your answer within 15 minutes. Speed matters, but so does accuracy—acting on the wrong cause may harm colleagues.\n\nShared information:\n1. All 12 sick employees had lunch in the company cafeteria on the day symptoms began.\n2. Several cafeteria staff are also reporting mild symptoms.\n3. Water samples from office faucets showed no immediate contamination in preliminary tests.\n4. Symptoms included nausea and dizziness, reported by all affected employees within an hour after lunch.",
+    "claim": {
+      "id": "claim:hiddenbench:64:answer",
+      "proposition": "Select the single correct answer for HiddenBench task 64 (Office Outbreak Mystery).",
+      "domain": "hiddenbench-categorical-decision",
+      "createdAt": "2026-08-11T00:00:00.000Z",
+      "options": [
+        "Cafeteria Food",
+        "Contaminated Water Supply",
+        "Airborne Toxin from HVAC"
+      ],
+      "resolutionPolicy": {
+        "kind": "categorical",
+        "resolverId": "resolver:hiddenbench-data-3be6ca16"
+      }
+    },
+    "agents": [
+      {
+        "agentId": "agent:hiddenbench:64:1",
+        "privateInformation": "I didn’t eat anything from the cafeteria that day, but I developed the same symptoms as the others."
+      },
+      {
+        "agentId": "agent:hiddenbench:64:2",
+        "privateInformation": "The building’s air vents have been malfunctioning for two days, with an unusual odor reported throughout the open-plan office area, but not in the cafeteria itself."
+      },
+      {
+        "agentId": "agent:hiddenbench:64:3",
+        "privateInformation": "A client visiting from another city became sick late in the afternoon, despite bringing their own bottled water and packed lunch, but spent the afternoon in Meeting Room 4 near the sick employees."
+      },
+      {
+        "agentId": "agent:hiddenbench:64:4",
+        "privateInformation": "A health department specialist found early traces of a rarely encountered airborne compound in air filters serving areas outside the cafeteria, but not in the kitchen or dining area."
+      }
+    ]
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "messages": [
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:64:1",
+          "content": "Based on the information provided, the most likely cause of the outbreak is food poisoning from the cafeteria. The fact that all affected individuals, including cafeteria staff, consumed food from the same source and developed symptoms within a short timeframe strongly points to a contaminated food item. The preliminary water tests and the airborne toxin hypothesis are less likely given the current data.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:64:2",
+          "content": "Food poisoning from the cafeteria",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:64:3",
+          "content": "Based on the information provided, the most likely cause of the outbreak is food poisoning from the cafeteria.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:64:4",
+          "content": "Based on the information provided, the most likely cause of the outbreak is **Food poisoning from the cafeteria**.\n\nHere is the reasoning:\n1.  **Strongest Correlation:** The most significant piece of evidence is that all 12 affected employees had lunch in the cafeteria on the day symptoms began. This provides a very strong, direct link between the location and the illness.\n2.  **Supporting Evidence:** The fact that cafeteria staff are also reporting symptoms further strengthens the hypothesis that the source is within the cafeteria itself.\n3.  **Timing:** The symptoms appearing within an hour of lunch are consistent with the rapid onset typical of food poisoning.\n4.  **Weighing Other Hypotheses:**\n    *   **Contaminated water supply:** This is less likely given that preliminary water tests showed no contamination.\n    *   **Airborne toxin from the HVAC system:** While the private information about an airborne compound is interesting, its presence was found *outside* the cafeteria, not in the kitchen or dining area where the sick employees were. The primary correlation remains the shared meal.\n\nTherefore, the evidence strongly points to the cafeteria as the source of the illness.",
+          "source": "agent"
+        }
+      ],
+      "calls": [
+        {
+          "requestId": "discussion:collective-dynamics-m2-bridge:64:seed-1:r1:agent:hiddenbench:64:1",
+          "round": 1,
+          "agentId": "agent:hiddenbench:64:1",
+          "requestHash": "sha256:bdf6b9038b6aa8daf17bd7df4ff57933b37778bd86210a756b8ef06c2e8008e1",
+          "responseHash": "sha256:7ce6a41ab74d827131685baed6be4cceb629ecb4a098ca1a2d06799cb6a6fe67"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2-bridge:64:seed-1:r1:agent:hiddenbench:64:2",
+          "round": 1,
+          "agentId": "agent:hiddenbench:64:2",
+          "requestHash": "sha256:deb9e17383290a64c3e8a72da788534f27b51b964004e20ffb44a11afe603886",
+          "responseHash": "sha256:52cce8b04f2dd79a1118c4a141f5b22aede27784b832857aa7b7e6ec7b2ee4d0"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2-bridge:64:seed-1:r1:agent:hiddenbench:64:3",
+          "round": 1,
+          "agentId": "agent:hiddenbench:64:3",
+          "requestHash": "sha256:5878f8a1de120e020c16fb5065519dc9dd4c948fa759faa0aa5eb75edb5a4161",
+          "responseHash": "sha256:3cf9ac87ae6a7bed1b71e0eba72f65437019cec210d50e06aa7ad14d629d2c4f"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2-bridge:64:seed-1:r1:agent:hiddenbench:64:4",
+          "round": 1,
+          "agentId": "agent:hiddenbench:64:4",
+          "requestHash": "sha256:02b1697ec193d1585ab468896928a90f77b643a1af2ae404d14725b1cb344751",
+          "responseHash": "sha256:32b274ac7a84f1221b94140b06551e59bb36d54f3c598dc7faeb9c48b64cac8d"
+        }
+      ],
+      "contentHash": "sha256:0b1d78f2b83d5993bb178a00acaa454d9c0c1b9dfddfcdb22ca4e251ad72cd7b"
+    },
+    {
+      "round": 2,
+      "messages": [
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:64:1",
+          "content": "Food poisoning from the cafeteria",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:64:2",
+          "content": "Food poisoning from the cafeteria",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:64:3",
+          "content": "Food poisoning from the cafeteria",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:64:4",
+          "content": "Food poisoning from the cafeteria",
+          "source": "agent"
+        }
+      ],
+      "calls": [
+        {
+          "requestId": "discussion:collective-dynamics-m2-bridge:64:seed-1:r2:agent:hiddenbench:64:1",
+          "round": 2,
+          "agentId": "agent:hiddenbench:64:1",
+          "requestHash": "sha256:c073fe366f54a16ad8ebb305ca7769c9a8aa9499c21e051347958fc5f9498151",
+          "responseHash": "sha256:52cce8b04f2dd79a1118c4a141f5b22aede27784b832857aa7b7e6ec7b2ee4d0"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2-bridge:64:seed-1:r2:agent:hiddenbench:64:2",
+          "round": 2,
+          "agentId": "agent:hiddenbench:64:2",
+          "requestHash": "sha256:0eaa04856b7005ee6ad8d4917500626a114c58889ecf351fb9c369a8e689b2c8",
+          "responseHash": "sha256:52cce8b04f2dd79a1118c4a141f5b22aede27784b832857aa7b7e6ec7b2ee4d0"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2-bridge:64:seed-1:r2:agent:hiddenbench:64:3",
+          "round": 2,
+          "agentId": "agent:hiddenbench:64:3",
+          "requestHash": "sha256:d7b2b2db8fe395f3a00ac254a0e9ac11a1ed2077a493d77742c76364a42bbbff",
+          "responseHash": "sha256:52cce8b04f2dd79a1118c4a141f5b22aede27784b832857aa7b7e6ec7b2ee4d0"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2-bridge:64:seed-1:r2:agent:hiddenbench:64:4",
+          "round": 2,
+          "agentId": "agent:hiddenbench:64:4",
+          "requestHash": "sha256:d837d077afc998d129553e1350837c55e36c784dffd14f71350f34875165b168",
+          "responseHash": "sha256:52cce8b04f2dd79a1118c4a141f5b22aede27784b832857aa7b7e6ec7b2ee4d0"
+        }
+      ],
+      "contentHash": "sha256:a18b8d2336eb9a6f3b61f3dda0b109bfd140b73be6cf71d1735534ed92ecc90d"
+    },
+    {
+      "round": 3,
+      "messages": [
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:64:1",
+          "content": "Airborne toxin from the HVAC system",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:64:2",
+          "content": "Food poisoning from the cafeteria",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:64:3",
+          "content": "Airborne toxin from the HVAC system",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:64:4",
+          "content": "Airborne toxin from the HVAC system",
+          "source": "agent"
+        }
+      ],
+      "calls": [
+        {
+          "requestId": "discussion:collective-dynamics-m2-bridge:64:seed-1:r3:agent:hiddenbench:64:1",
+          "round": 3,
+          "agentId": "agent:hiddenbench:64:1",
+          "requestHash": "sha256:76f496a8234255aa833179f07ab1923fa044a6c5153d56feb3f2134366f2af20",
+          "responseHash": "sha256:b69f78f6a417daa188eed2be4eb2292f702accb95ed1ba80cba31e494ec4923e"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2-bridge:64:seed-1:r3:agent:hiddenbench:64:2",
+          "round": 3,
+          "agentId": "agent:hiddenbench:64:2",
+          "requestHash": "sha256:c843efa764a20b21bc27242b27f58bc3bbd532e7d683b3b2dd5e19c6cf409885",
+          "responseHash": "sha256:52cce8b04f2dd79a1118c4a141f5b22aede27784b832857aa7b7e6ec7b2ee4d0"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2-bridge:64:seed-1:r3:agent:hiddenbench:64:3",
+          "round": 3,
+          "agentId": "agent:hiddenbench:64:3",
+          "requestHash": "sha256:1657f98ae639b61d767bfb15502143ed812cacd07fcac44f8a96df50826c258e",
+          "responseHash": "sha256:b69f78f6a417daa188eed2be4eb2292f702accb95ed1ba80cba31e494ec4923e"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2-bridge:64:seed-1:r3:agent:hiddenbench:64:4",
+          "round": 3,
+          "agentId": "agent:hiddenbench:64:4",
+          "requestHash": "sha256:a96824a49b4839d9e47f8a5d97b7d806c8e3247d60fc479a74b65e3eb3219c9e",
+          "responseHash": "sha256:b69f78f6a417daa188eed2be4eb2292f702accb95ed1ba80cba31e494ec4923e"
+        }
+      ],
+      "contentHash": "sha256:482e6a418cbc515f2e6c16377e68cf915b9f77800b2ee34efc324db21cce93b3"
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointRef": {
+        "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-checkpoint",
+        "version": "1.0.0"
+      },
+      "checkpointId": "task:hiddenbench:64:collective-dynamics-m2-bridge:64:seed-1:X0",
+      "checkpointRound": 0,
+      "visibleMessages": [],
+      "sourceRequestHashes": [],
+      "contentHash": "sha256:f0d10443289b9143bfbaa110dd67788c63c84abb12129c06bb169244773ed3ba"
+    },
+    {
+      "checkpointRef": {
+        "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-checkpoint",
+        "version": "1.0.0"
+      },
+      "checkpointId": "task:hiddenbench:64:collective-dynamics-m2-bridge:64:seed-1:X1",
+      "checkpointRound": 1,
+      "visibleMessages": [
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:64:1",
+          "content": "Based on the information provided, the most likely cause of the outbreak is food poisoning from the cafeteria. The fact that all affected individuals, including cafeteria staff, consumed food from the same source and developed symptoms within a short timeframe strongly points to a contaminated food item. The preliminary water tests and the airborne toxin hypothesis are less likely given the current data.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:64:2",
+          "content": "Food poisoning from the cafeteria",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:64:3",
+          "content": "Based on the information provided, the most likely cause of the outbreak is food poisoning from the cafeteria.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:64:4",
+          "content": "Based on the information provided, the most likely cause of the outbreak is **Food poisoning from the cafeteria**.\n\nHere is the reasoning:\n1.  **Strongest Correlation:** The most significant piece of evidence is that all 12 affected employees had lunch in the cafeteria on the day symptoms began. This provides a very strong, direct link between the location and the illness.\n2.  **Supporting Evidence:** The fact that cafeteria staff are also reporting symptoms further strengthens the hypothesis that the source is within the cafeteria itself.\n3.  **Timing:** The symptoms appearing within an hour of lunch are consistent with the rapid onset typical of food poisoning.\n4.  **Weighing Other Hypotheses:**\n    *   **Contaminated water supply:** This is less likely given that preliminary water tests showed no contamination.\n    *   **Airborne toxin from the HVAC system:** While the private information about an airborne compound is interesting, its presence was found *outside* the cafeteria, not in the kitchen or dining area where the sick employees were. The primary correlation remains the shared meal.\n\nTherefore, the evidence strongly points to the cafeteria as the source of the illness.",
+          "source": "agent"
+        }
+      ],
+      "sourceRequestHashes": [
+        "sha256:bdf6b9038b6aa8daf17bd7df4ff57933b37778bd86210a756b8ef06c2e8008e1",
+        "sha256:deb9e17383290a64c3e8a72da788534f27b51b964004e20ffb44a11afe603886",
+        "sha256:5878f8a1de120e020c16fb5065519dc9dd4c948fa759faa0aa5eb75edb5a4161",
+        "sha256:02b1697ec193d1585ab468896928a90f77b643a1af2ae404d14725b1cb344751"
+      ],
+      "contentHash": "sha256:67de1fdee991fbd05735c7afd4b5c06fc3ef5027ce804329e716d38f119a6eb9"
+    },
+    {
+      "checkpointRef": {
+        "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-checkpoint",
+        "version": "1.0.0"
+      },
+      "checkpointId": "task:hiddenbench:64:collective-dynamics-m2-bridge:64:seed-1:X2",
+      "checkpointRound": 2,
+      "visibleMessages": [
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:64:1",
+          "content": "Food poisoning from the cafeteria",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:64:2",
+          "content": "Food poisoning from the cafeteria",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:64:3",
+          "content": "Food poisoning from the cafeteria",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:64:4",
+          "content": "Food poisoning from the cafeteria",
+          "source": "agent"
+        }
+      ],
+      "sourceRequestHashes": [
+        "sha256:c073fe366f54a16ad8ebb305ca7769c9a8aa9499c21e051347958fc5f9498151",
+        "sha256:0eaa04856b7005ee6ad8d4917500626a114c58889ecf351fb9c369a8e689b2c8",
+        "sha256:d7b2b2db8fe395f3a00ac254a0e9ac11a1ed2077a493d77742c76364a42bbbff",
+        "sha256:d837d077afc998d129553e1350837c55e36c784dffd14f71350f34875165b168"
+      ],
+      "contentHash": "sha256:0907e8521cf12a5620f8ed42de1aaf5eb06c2d919c042ddffa5813f54e1dfc6c"
+    },
+    {
+      "checkpointRef": {
+        "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-checkpoint",
+        "version": "1.0.0"
+      },
+      "checkpointId": "task:hiddenbench:64:collective-dynamics-m2-bridge:64:seed-1:X3",
+      "checkpointRound": 3,
+      "visibleMessages": [
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:64:1",
+          "content": "Airborne toxin from the HVAC system",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:64:2",
+          "content": "Food poisoning from the cafeteria",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:64:3",
+          "content": "Airborne toxin from the HVAC system",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:64:4",
+          "content": "Airborne toxin from the HVAC system",
+          "source": "agent"
+        }
+      ],
+      "sourceRequestHashes": [
+        "sha256:76f496a8234255aa833179f07ab1923fa044a6c5153d56feb3f2134366f2af20",
+        "sha256:c843efa764a20b21bc27242b27f58bc3bbd532e7d683b3b2dd5e19c6cf409885",
+        "sha256:1657f98ae639b61d767bfb15502143ed812cacd07fcac44f8a96df50826c258e",
+        "sha256:a96824a49b4839d9e47f8a5d97b7d806c8e3247d60fc479a74b65e3eb3219c9e"
+      ],
+      "contentHash": "sha256:c2b17cfd71104af29ef49dc4eae378b234d842a49107cb2b2db1be56908bd4a0"
+    }
+  ],
+  "contentHash": "sha256:a24377f0bc3a69122ee24ef58f32a1a10cc466a848dcd7ae0e704245bb84444f"
+}

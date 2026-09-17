@@ -11,16 +11,16 @@
  * 7. 访问器 — getCognitiveStates, getCognitiveStateHistory, 等
  */
 import { describe, it, expect, beforeEach } from "vitest";
-import { MeasurementLayer } from "@/lib/thermodynamics/MeasurementLayer";
-import type { ThermoState } from "@/lib/thermodynamics/MeasurementLayer";
-import type { AgentOpinion } from "@/lib/discussion/types";
-import type { DiscussionAgent } from "@/lib/discussion/index";
+import { MeasurementLayer } from "../legacy/src/lib/thermodynamics/MeasurementLayer";
+import type { ThermoState } from "../legacy/src/lib/thermodynamics/MeasurementLayer";
+import type { AgentOpinion } from "../legacy/src/lib/discussion/types";
+import type { DiscussionAgent } from "../legacy/src/lib/discussion/index";
 import { observeLegacyQuantities } from "@/lib/epistemic";
 import { GovernanceEstimatorRegistry } from "@/lib/epistemic/estimators";
 import {
   progressiveEstimatorContract,
   type ProgressiveEstimates,
-} from "@/lib/thermodynamics/ProgressiveEstimator";
+} from "../legacy/src/lib/thermodynamics/ProgressiveEstimator";
 
 // ============================================================================
 // Helpers

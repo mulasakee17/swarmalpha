@@ -1,150 +1,74 @@
-# SwarmAlpha 冗杂文档清理报告
+# 文档收尾记录
 
-日期：2026-08-16
-执行依据：`docs/CLEANUP_WHITELIST.md`（2026-08-16 版）、`docs/REASONING_PROTOCOL.md`、`AGENTS.md`。
-方式：默认移动（MOVE）至 `docs/archive/`；硬删除仅 1 项（可再生字节码缓存）。
-前置事实：上一轮清理 Manifest（`docs/plans/DOCUMENTATION_CLEANUP_MANIFEST_2026-08-15.md`）的 ARCHIVE 项已全部在 `docs/archive/` 中，本轮未重复处理；其 KEEP 决策（集成指南、战略执行计划、Source Disclosure 系列）本轮逐一复核后维持。
+日期：2026-09-14。依据：所有者请求“开始做收尾、清理文档、保留我的想法”。
+当前状态与交接见 [ACTIVE_RESEARCH_SURFACE.md](ACTIVE_RESEARCH_SURFACE.md)。
+本文件替换旧累计报告；[旧报告原文](../legacy/docs/archive/closeout_2026-09-14/docs/cleanup_report.md)保留。
 
----
+## 清理结论
 
-## 1. Moved（来源 → docs/archive/ 去向，共 63 个文件）
+清理前 `docs/` 有 97 份 Markdown，其中 59 份为实验记录、16 份为架构合同；
+本地论文包有 73 份 Markdown。主要问题是入口状态冲突与过程材料混读，不能按数量删证据。
+旧引擎已在 `legacy/`；29 个 src/test 文件含相关 legacy 导入路径，仍有兼容用途。
+本次不迁移运行代码或再次拆仓。
 
-### docs/paper/ → docs/archive/paper/（5）
-被 `paper_rewriting_output/final_paper/paper.en.md`（Tier 1 唯一权威稿）取代（白名单 §docs/paper/** 明示）：
+README 中英文、项目入口与文档目录现在以停止点、保留想法和论文为接手入口。
+X0 与发展方案退出活动队列；agent 指令同步停止状态。旧计划保留全文及日期。
+研究身份新增 §13，保存模型内部/agent 架构探索意向、隔离要求与收尾决定；
+旧教授指导标为当时转述，避免与最新转述混为当前共识。
+白皮书保留正文，修正其指向已归档方法文档的“当前入口”。
 
-1. `docs/paper/PAPER_DRAFT.md` → `docs/archive/paper/PAPER_DRAFT.md`
-2. `docs/paper/PAPER_PROFESSOR_VERSION.md` → `docs/archive/paper/PAPER_PROFESSOR_VERSION.md`
-3. `docs/paper/TECHNICAL_APPENDIX.md` → `docs/archive/paper/TECHNICAL_APPENDIX.md`
-4. `docs/paper/ABLATION_PLAN.md` → `docs/archive/paper/ABLATION_PLAN.md`
-5. `docs/paper/PAPER_OPTIMIZATION_GUIDE.md` → `docs/archive/paper/PAPER_OPTIMIZATION_GUIDE.md`
+## Moved
 
-### docs/roadmap/ → docs/archive/roadmap/（2）
-旧路线图，白名单 §docs/roadmap/** 明示允许归档：
+下表文件完整归档；内容与清理前逐字节一致。历史记录中的原路径按本表定位。
 
-6. `docs/roadmap/ROADMAP_V6.md` → `docs/archive/roadmap/ROADMAP_V6.md`
-7. `docs/roadmap/future.md` → `docs/archive/roadmap/future.md`
+| 原路径 | 现位置 | 退出当前入口的依据 |
+|---|---|---|
+| `PROJECT_AUDIT_REPORT.md` | [归档](../legacy/docs/archive/closeout_2026-09-14/PROJECT_AUDIT_REPORT.md) | 自述为 7 月历史审计；当前状态由项目入口承担 |
+| `docs/paper/AAMAS_SUBMISSION_CHECKLIST.md` | [归档](../legacy/docs/archive/closeout_2026-09-14/docs/paper/AAMAS_SUBMISSION_CHECKLIST.md) | 对象是 7 月旧稿及 E1–E12 补实验路线；当前候选稿与其作者清单已取代该对象 |
+| `docs/PITCH.html` | [归档](../legacy/docs/archive/closeout_2026-09-14/docs/PITCH.html) | 旧展示含 219 tests / 89 experiments 等历史状态，不是当前成果介绍 |
+| `docs/PITCH.pdf` | [归档](../legacy/docs/archive/closeout_2026-09-14/docs/PITCH.pdf) | 与旧展示成组保留，无新展示任务 |
+| `docs/PITCH_preview.png` | [归档](../legacy/docs/archive/closeout_2026-09-14/docs/PITCH_preview.png) | 同上 |
 
-### docs/plans/ → docs/archive/plans/（9）
-带日期计划；逐文件核实无活跃引用（全仓 md + src/test/experiments 代码）。被取代者见"取代证据"列：
+另将旧 `docs/cleanup_report.md` 与 `docs/CLEANUP_WHITELIST.md` 原文复制到归档同名相对位置，
+再更新现有入口；不是删除清理史或追加一套新报告。归档文件保留原文字与历史路径，
+不把当时声明重新认证为当前事实。
 
-8. `docs/plans/V6_CALIBRATION_PILOT_TABLE_2026-08-11.md` → `docs/archive/plans/`（0 引用；Pilot 已执行，`V6_TASK_MONITORING_CALIBRATION_AUTHORITY_V1` 为现行权威）
-9. `docs/plans/V6_PRE_PILOT_FREEZE_2026-08-11.md` → `docs/archive/plans/`（0 引用；冻结已由实际 Pilot 取代）
-10. `docs/plans/MEASUREMENT_VALIDITY_V1_IMPLEMENTATION_2026-08-12.md` → `docs/archive/plans/`（实现已落地于 `experiments/campaign/measurement/`，Tier 4；文件自述"已实现"）
-11. `docs/plans/MEASUREMENT_VALIDITY_RUNNER_V1_IMPLEMENTATION_2026-08-13.md` → `docs/archive/plans/`（Runner 已实现，Tier 4 代码在位）
-12. `docs/plans/V6_VERDICT_MECHANISM_INTERPRETABILITY_AUDIT_2026-08-13.md` → `docs/archive/plans/`（0 引用；机制审计已被 `V6_PROCESS_STATE_FAILURE_PREDICTION_AUDIT_2026-08-13` 等结果文档取代）
-13. `docs/plans/V6_VERDICT_TASK_HELDOUT_REPLICATION_DESIGN_2026-08-13.md` → `docs/archive/plans/`（设计已执行，结果在 `V6_VERDICT_TASK_HELDOUT_REPLICATION_RESULTS_2026-08-13.md`；实施报告已在 archive。注意：`experiments/campaign/v6/run_v6_verdict_task_heldout_replication.ts` 注释中引用此设计文档，归档后该注释路径失效，不影响代码运行）
-14. `docs/plans/MEASUREMENT_VALIDITY_PILOT_SEMANTIC_REVIEW_PACKET_2026-08-13.md` → `docs/archive/plans/`（其所属 THREE_DAY_PILOT 计划已归档，08-14 集成指南取代该路线；无活跃引用）
-15. `docs/plans/MEASUREMENT_VALIDITY_TEST_MATRIX_V1.md` → `docs/archive/plans/`（文件自述"已实现为 `test/measurement-validity.test.ts` 65 项确定性对抗测试"，测试为 Tier 4 现行证据）
-16. `docs/plans/DOCUMENTATION_CLEANUP_MANIFEST_2026-08-15.md` → `docs/archive/plans/`（上一轮清理 Manifest，其决策已全部执行；被本报告取代）
+## Deleted
 
-### paper_rewriting_output/ → docs/archive/paper_rewriting/（25）
-白名单 §paper_rewriting_output/**（排除 Tier 1）中间产物：dossier / matrix / audit / report / check / 映射 / 清单 / 草稿：
+无硬删除。5 项为迁移，2 项为原文快照保留；思想、论文和实验结果均未删除。
 
-17. `paper_rewriting_output/source_map.md` → `docs/archive/paper_rewriting/source_map.md`
-18. `paper_rewriting_output/sota_gap_map.md` → `docs/archive/paper_rewriting/sota_gap_map.md`
-19. `paper_rewriting_output/exemplar_learning_dossier.md` → `docs/archive/paper_rewriting/exemplar_learning_dossier.md`
-20. `paper_rewriting_output/research_dossier.md` → `docs/archive/paper_rewriting/research_dossier.md`
-21. `paper_rewriting_output/style_profile.md` → `docs/archive/paper_rewriting/style_profile.md`
-22. `paper_rewriting_output/motivation_options_after_research.md` → `docs/archive/paper_rewriting/motivation_options_after_research.md`
-23. `paper_rewriting_output/citation_support_bank.md` → `docs/archive/paper_rewriting/citation_support_bank.md`
-24. `paper_rewriting_output/contribution_check.md` → `docs/archive/paper_rewriting/contribution_check.md`
-25. `paper_rewriting_output/original_logic_map.md` → `docs/archive/paper_rewriting/original_logic_map.md`
-26. `paper_rewriting_output/rewrite_matrix.md` → `docs/archive/paper_rewriting/rewrite_matrix.md`
-27. `paper_rewriting_output/humanize_matrix.md` → `docs/archive/paper_rewriting/humanize_matrix.md`
-28. `paper_rewriting_output/humanize_report.md` → `docs/archive/paper_rewriting/humanize_report.md`
-29. `paper_rewriting_output/integrity_audit.md` → `docs/archive/paper_rewriting/integrity_audit.md`
-30. `paper_rewriting_output/word_report.zh.md` → `docs/archive/paper_rewriting/word_report.zh.md`（*.zh.*，Word 生成过程报告）
-31. `paper_rewriting_output/citation_quality_audit.md` → `docs/archive/paper_rewriting/citation_quality_audit.md`
-32. `paper_rewriting_output/writing_rationale_matrix.md` → `docs/archive/paper_rewriting/writing_rationale_matrix.md`
-33. `paper_rewriting_output/artifact_check.md` → `docs/archive/paper_rewriting/artifact_check.md`
-34. `paper_rewriting_output/citation_bank_check.md` → `docs/archive/paper_rewriting/citation_bank_check.md`
-35. `paper_rewriting_output/evidence_bank.md` → `docs/archive/paper_rewriting/evidence_bank.md`
-36. `paper_rewriting_output/logic_transfer_audit.md` → `docs/archive/paper_rewriting/logic_transfer_audit.md`
-37. `paper_rewriting_output/final_artifact_manifest.md` → `docs/archive/paper_rewriting/final_artifact_manifest.md`（中间产物清单；其"required/STALE"判定作为本报告 paper.zh.docx/pdf 归档的证据，随文件一并保留于 archive）
-38. `paper_rewriting_output/confirmed_motivation.md` → `docs/archive/paper_rewriting/confirmed_motivation.md`（Tier 1 仅保护 confirmed_contribution.md，未保护本文件）
-39. `paper_rewriting_output/latex_report.md` → `docs/archive/paper_rewriting/latex_report.md`
-40. `paper_rewriting_output/progress.md` → `docs/archive/paper_rewriting/progress.md`
-41. `paper_rewriting_output/paper_spine_config.md` → `docs/archive/paper_rewriting/paper_spine_config.md`（Tier 1 仅保护 `paper_spine_config.json`；package.json 无对 paper_rewriting 路径的引用）
-42. `paper_rewriting_output/reference_materials/source_index.md` → `docs/archive/paper_rewriting/reference_materials/source_index.md`
+## Kept / 本次实际修改边界
 
-### paper_rewriting_output/pdf_qa/ → docs/archive/paper_rewriting/pdf_qa/（11）
-QA 页面渲染 PNG（白名单点名"典型冗杂"；源 PDF 已随 paper.zh.pdf 归档，可再生渲染物）：
+- 59 份实验文档、16 份架构文档、5 份 theory 文档保持原位且内容不变。
+- 论文包除 `progress.md` 导航外，正文、PDF、图表、来源、分析、冻结和构建材料不变。
+- src/test 与 V6 运行代码相对本次清理前不变；先前未提交的接口工作完整保留。
+- 顶层 AGENTS/CLAUDE、V6 AGENTS、README、两个计划的状态和研究身份新增记录属于本次
+  收尾授权的必要同步；未删原研究纪律，不声称“所有旧白名单文件未动”。
+- 更新清理边界中已过时的正文权威位置和禁止更新导航规则；不放宽秘密、代码、数据保护。
+- 历史 manifest 哈希原样保留；它们记录冻结时点，不等于活动导航今天仍有相同哈希。
 
-43. `paper_rewriting_output/pdf_qa/page-01.png` … `page-11.png` → `docs/archive/paper_rewriting/pdf_qa/`（11 个文件，逐一对应）
+## UNCERTAIN / 按来源用途保留
 
-### paper_rewriting_output/aamas_cut_pdf_qa/ → docs/archive/paper_rewriting/aamas_cut_pdf_qa/（6）
+- `docs/PLATFORM_CAPABILITY_BRIEF.md`、根目录 `PAPER_PROFESSOR_VERSION.pdf`：仍被来源材料引用，
+  保留原位，在文档目录明确旧用途，不冒充当前论文或新描述器证据。
+- 论文包的历次 freeze、dossier、matrix、review 与构建脚本：保留研究过程和来源关系，
+  不按文件名判重复，不将待核实内容包装为已完成评审。
+- 长期 theory、候选量、白皮书和发展方案：保留全部想法；存在不等于执行授权。
 
-44. `paper_rewriting_output/aamas_cut_pdf_qa/page-1.png` … `page-6.png` → `docs/archive/paper_rewriting/aamas_cut_pdf_qa/`（6 个文件，逐一对应）
+## 验证与交接边界
 
-### paper_rewriting_output/final_paper/ → docs/archive/paper_rewriting/final_paper/（4）
+清理前对选定文档、论文材料、src/test 与 V6 工作面共 839 个文件记录内容指纹。
+5 个迁移文件与 2 个旧文档快照一致；未发现意外文件丢失。
+实验文档、架构合同、理论全文、论文内容和运行代码未发生本次内容变更。
+检查修改后入口的本地链接与差异空白；本次不运行模型、实验或代码测试。
+这次检查验证保留与导航，不重新认证既有科学结果。
 
-45. `paper_rewriting_output/final_paper/paper.zh.docx` → `docs/archive/paper_rewriting/final_paper/paper.zh.docx`（final_artifact_manifest.md 声明 STALE — REGENERATE；由 build_outputs.py 从 paper.zh.md 再生成，二者均在位/在档）
-46. `paper_rewriting_output/final_paper/paper.zh.pdf` → `docs/archive/paper_rewriting/final_paper/paper.zh.pdf`（同上，manifest 声明 STALE — REGENERATE + VISUAL QA）
-47. `paper_rewriting_output/final_paper/main.tex.bak_measurement_governance` → `docs/archive/paper_rewriting/final_paper/main.tex.bak_measurement_governance`（*.bak*；被在位 Tier 1 `main.tex` 取代）
-48. `paper_rewriting_output/final_paper/aamas_cut.zh.docx.bak_fonts` → `docs/archive/paper_rewriting/final_paper/aamas_cut.zh.docx.bak_fonts`（*.bak*；被仍在位的 `aamas_cut.zh.docx` 取代）
+工作区尚未提交。论文包及旧审计受既有 Git 忽略规则影响；归档文件和 X0 新文件也尚未提交。
+因此仅传远端仓库不能假定包含完整交接材料。本次没有对外发送或删除本地材料。
 
-### 目录清理（随移动产生的空目录，已移除）
+## 2026-09-17 GitHub 交接补充
 
-- `paper_rewriting_output/__pycache__/`（删文件后为空）
-- `paper_rewriting_output/reference_materials/`（唯一文件移出后为空）
-- `paper_rewriting_output/pdf_qa/`、`paper_rewriting_output/aamas_cut_pdf_qa/`（移出后为空）
-- `docs/roadmap/`（两个文件移出后为空）
-
----
-
-## 2. Deleted（硬删除，共 1 项）
-
-| 文件 | 被谁取代的证据 |
-|---|---|
-| `paper_rewriting_output/__pycache__/build_outputs.cpython-312.pyc` | Python 字节码缓存，由仍在位的源码 `paper_rewriting_output/build_outputs.py` 在下次运行/导入时自动再生成；缓存非证据、非实验数据，删除无信息损失 |
-
-除上述 1 项外，本轮无任何硬删除。所有其余文件均以移动归档处理。
-
----
-
-## 3. Whitelist untouched（Tier 0–6 逐 Tier 确认）
-
-移动与删除全部使用显式文件名清单，无通配符触及白名单路径；执行后逐项在场核验（Test-Path）：
-
-- **Tier 0（顶层指令与密钥）**：`AGENTS.md`、`CLAUDE.md`、`package.json`、`tsconfig.json`、`next.config.js`、`.gitignore` 全部在位，未读未动 `.env*`，未执行任何 git 命令（不碰 `.git/`）。✅
-- **Tier 1（第一篇论文）**：`final_paper/paper.en.md`、`final_paper/CHANGELOG_PRE_SUBMISSION.md`、`final_paper/main.tex`、`claim_register.md`、`source_inventory.md`、`section_blueprints.md`、`figure_asset_map.md`、`confirmed_contribution.md`、`results_validation.md`、`results_validation_check.md`、`paper_spine_config.json` —— 11 项逐一在场核验通过。✅
-- **Tier 2（证据链）**：`FORK_CONFIRMATORY_RESULTS_2026-08-15.md`、`FORK_CONFIRMATORY_CHECKLIST.md`、`HIDDENBENCH_PROTOCOL_COMPARISON.md`、`EXPERIMENT_LOG.md`、`V6_FALSE_CONSENSUS_DETECTOR_2026-08-15.md`、`V6_CROSS_EVIDENCE_EXCHANGE_RESULTS_2026-08-15.md`、`REPLAY_VERIFICATION.md`、`EPISTEMIC_EXPOSURE_GOVERNANCE_THEORY_V1.md`、`COVERAGE_GAP_GOVERNANCE_RESEARCH_CONTRACT_V1.md`、`PLATFORM_CAPABILITY_BRIEF.md` 全部在位。✅
-- **Tier 3（规范/导航）**：`REASONING_PROTOCOL.md`、`ACTIVE_RESEARCH_SURFACE.md`、`AUDIT_CLAIM_VERIFICATION.md`、`CLEANUP_WHITELIST.md` 在位；`docs/architecture/**` 12 个 V1 契约逐一在场核验通过。✅
-- **Tier 4（代码）**：`src/lib/epistemic|governance|experimentation|utils/**`、`experiments/campaign/v6/**`（含 `run_v6_fork.ts`、`analyze_v6_fork.ts`、`pre_submission_analysis.mjs`、`post_submission_v3_analysis.mjs`）、`experiments/campaign/measurement/**`、`replayVerifier.ts`、`verify_replay.ts`、`test/**` 均未触碰；核验抽查通过。✅
-- **Tier 5（冻结实验数据）**：`experiments/campaign/pilot_output/**` 未触碰。✅
-- **Tier 6（LEGACY_READ_ONLY）**：`experiments/v2/**`、`experiments/lunar_survival/**`、`src/lib/discussion/asyncEngine.ts`、`run_e12*.ts`、`docs/experiments/E12_PROTOCOL_COMPARISON.md` 全部在位。✅
-
-**结论：Tier 0–6 全部未动（不删、不移、不改、不重命名）。**
-
----
-
-## 4. UNCERTAIN（未动，需人来判断）
-
-| 文件 | 原因 |
-|---|---|
-| `docs/paper/AAMAS_SUBMISSION_CHECKLIST.md` | 白名单例外条款：与投稿直接相关（README 与 source_index 均将其列为 AAMAS 审稿清单），按白名单列 UNCERTAIN，未动 |
-| `paper_rewriting_output/final_paper/paper.zh.md` | `final_artifact_manifest.md`（已归档）声明其为"权威中文正文 / required"。paper.en.md 是唯一权威稿，但中文版是否仍需要由 owner 决定，故未动 |
-| `paper_rewriting_output/final_paper/aamas_cut.zh.md`、`aamas_cut.zh.docx`、`aamas_cut.zh.pdf`、`aamas_cut.main.tex` | `aamas_cut_manifest.md` 自证"当前仍是中文切片初稿…仍需补强；AAMAS 投稿版需要英文改写和官方双栏 8 页排版"——**未被 paper.en.md 取代**，白名单"若已被取代"条件不成立；切片工作仍在进行，未动 |
-| `paper_rewriting_output/aamas_cut_manifest.md`、`build_aamas_cut.py` | 同上：属进行中的 AAMAS 切片工作（manifest 为切片说明，脚本为切片构建工具），未动 |
-| `paper_rewriting_output/build_outputs.py` | 生成保留中的 `paper.zh.md` 的 docx/pdf 的构建脚本；中文管线是否继续由 owner 决定，未动 |
-| `docs/plans/CLAUDE_CODE_SOCIAL_THERMODYNAMIC_RESPONSE_AUDIT_HANDOFF_2026-08-14.md` | 被活的 FACT 报告 `docs/experiments/V6_SOCIAL_THERMODYNAMIC_RESPONSE_AUDIT_2026-08-14.md` 引用为"执行指南"；归档会断其链接，未动 |
-| `docs/plans/MEASUREMENT_GOVERNANCE_CLOSED_LOOP_PROTOCOL_V1.md` | V1 协议（非带日期计划）；顶部 08-14 注已声明让位集成指南，但协议性质可能仍规范；无活跃引用，未动 |
-| `docs/PITCH.pdf`、`docs/PITCH.html`、`docs/PITCH_preview.png` | 项目展示物（PITCH deck），不在白名单候选范围内；疑似过时（旧产品展示），是否归档由 owner 决定 |
-| `out/PAPER_DRAFT.pdf`、`out/PAPER_PROFESSOR_VERSION.pdf`、`out/PROFESSOR_GUIDE.pdf`、`out/TECHNICAL_APPENDIX.pdf`、根目录 `PAPER_PROFESSOR_VERSION.pdf` | 旧论文草稿的 PDF 产物，内容上已被 paper.en.md 取代，但位于根目录 `out/` 与根目录，**不在白名单候选范围**（仅 docs/** 与 paper_rewriting_output/**），按"拿不准→不动"保留 |
-| 根目录 `tsconfig.tsbuildinfo` | 可再生构建缓存产物，位于根目录、不在白名单候选范围，未动 |
-| 移动引发的引用失效（未修改任何文档） | 按任务规则"不做内容修正"，被移动文件的旧路径引用未更新，涉及：`README.md`、`README_CN.md`、`docs/README.md`、`docs/architecture/CODE_MAP.md`、`docs/architecture/ARCHITECTURE.md`、`docs/AUDIT_CLAIM_VERIFICATION.md`、根目录 `PROJECT_AUDIT_REPORT.md`、`experiments/v2/detector_validation_report.md`（以上引用 docs/paper/*、docs/roadmap/* 旧路径）；`experiments/campaign/v6/run_v6_verdict_task_heldout_replication.ts` 注释引用 docs/plans 设计文档。是否更新这些引用由 owner 决定 |
-| `docs/archive/` 内部去重 | 对 `docs/archive/**` 全量 SHA-256 扫描：**未发现任何完全相同的重复文件**，故无内部去重动作 |
-
----
-
-## 5. Violations（白名单误动检查）
-
-**未发现。** 执行前未发现任何白名单文件处于被误动状态；执行中所有操作使用显式路径清单；执行后 Tier 0–6 逐项核验通过（见第 3 节）。本报告第 2 节唯一硬删除项（`.pyc` 缓存）不在白名单任何 Tier 内。
-
----
-
-## 附注（FACT）
-
-- 本轮净效果：63 个文件移动归档，1 个缓存文件删除，5 个空目录移除；未修改任何代码、任何 `.ts` 文件、`experiments/campaign/pilot_output/` 及任何实验数据。
-- 归档目标目录 `docs/archive/` 内新增 `paper_rewriting/` 子树（47 个文件，含 17 个 PNG），其余并入既有 `paper/`、`roadmap/`、`plans/` 子目录，无文件名冲突。
-- 本报告由 `docs/plans/DOCUMENTATION_CLEANUP_MANIFEST_2026-08-15.md`（已归档）所取代，成为当前清理任务的唯一记录。
+本轮按所有者追加要求收紧接手入口：README／README_CN 各 21 行，文档目录 18 行，
+权威交接页 73 行。思想全文、冻结合同与原始记录继续保留，未再移动或删除。
+新增独立离线 Jev probe 与窄工程检查；真实 provider 实验仍未执行。GitHub 的论文／
+完整运行材料分发范围仍需单独明确，当前不能把本地包存在写成公开仓库已含这些材料。

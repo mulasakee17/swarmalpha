@@ -1,0 +1,114 @@
+{
+  "base": "experiments\\campaign\\pilot_output\\v6-fork-glm46v-twoarm-v4-20260820",
+  "interpretation": "Every injected semantic corruption is scientifically expected to FAIL. PASS means a verifier gap.",
+  "cases": [
+    {
+      "name": "missing_run_file",
+      "scientificExpected": "FAIL",
+      "actual": "FAIL",
+      "verifierDetail": "missing file: run_fork-v1_task-15_seed-0.6aea874ee26d.jsonl"
+    },
+    {
+      "name": "extra_run_file",
+      "scientificExpected": "FAIL",
+      "actual": "FAIL",
+      "verifierDetail": "unregistered file: run_unregistered.jsonl"
+    },
+    {
+      "name": "final_brier_only",
+      "scientificExpected": "FAIL",
+      "actual": "FAIL",
+      "verifierDetail": "run_fork-v1_task-15_seed-0.6aea874ee26d.jsonl: finalBrier 0 does not recompute (0.875)"
+    },
+    {
+      "name": "task_file_mismatch",
+      "scientificExpected": "FAIL",
+      "actual": "FAIL",
+      "verifierDetail": "run_fork-v1_task-15_seed-0.6aea874ee26d.jsonl: row taskId 16 != 15; run_fork-v1_task-15_seed-0.6aea874ee26d.jsonl: resolvedOption Downtown Police Station != frozen outcome Charlie; run_fork-v1_task-15_seed-0.6aea874ee26d.jsonl: finalBelief option set does not match frozen task options; run_fork-v1_task-15_seed-0.6aea874ee26d.jsonl: finalBelief Alpha must be finite and within [0,1]; run_fork-v1_task-15_seed-0.6aea874ee26d.jsonl: finalBelief Bravo must be finite and within [0,1]; run_fork-v1_task-15_seed-0.6aea874ee26d.jsonl: finalBelief Charlie must be finite and within [0,1]"
+    },
+    {
+      "name": "duplicate_arm",
+      "scientificExpected": "FAIL",
+      "actual": "FAIL",
+      "verifierDetail": "run_fork-v1_task-15_seed-0.6aea874ee26d.jsonl: arm set [CONTROL] != expected [ATTACKS,CONTROL] (arm membership, not just row count)"
+    },
+    {
+      "name": "wrong_resolved_option",
+      "scientificExpected": "FAIL",
+      "actual": "FAIL",
+      "verifierDetail": "run_fork-v1_task-15_seed-0.6aea874ee26d.jsonl: resolvedOption AUDIT_WRONG != frozen outcome Downtown Police Station"
+    },
+    {
+      "name": "null_probability",
+      "scientificExpected": "FAIL",
+      "actual": "FAIL",
+      "verifierDetail": "run_fork-v1_task-15_seed-0.6aea874ee26d.jsonl: finalBelief City Bank must be finite and within [0,1]; run_fork-v1_task-15_seed-0.6aea874ee26d.jsonl: finalBelief must sum to 1 (got 0.5); run_fork-v1_task-15_seed-0.6aea874ee26d.jsonl: finalBelief does not recompute from finalAgentBeliefs (City Bank); run_fork-v1_task-15_seed-0.6aea874ee26d.jsonl: finalBrier 0.875 does not recompute (0.625)"
+    },
+    {
+      "name": "final_count_mismatch",
+      "scientificExpected": "FAIL",
+      "actual": "FAIL",
+      "verifierDetail": "run_fork-v1_task-15_seed-0.6aea874ee26d.jsonl: finalReportedCount 5 != finalAgentBeliefs length 4"
+    },
+    {
+      "name": "raw_without_hash",
+      "scientificExpected": "FAIL",
+      "actual": "FAIL",
+      "verifierDetail": "run_fork-v1_task-15_seed-0.6aea874ee26d.jsonl: final raw response hash mismatch for CONTROL/agent:hiddenbench:15:1"
+    },
+    {
+      "name": "manifest_plan_hash",
+      "scientificExpected": "FAIL",
+      "actual": "FAIL",
+      "verifierDetail": "manifest planHash does not bind plan.json"
+    },
+    {
+      "name": "swap_row_arm_labels",
+      "scientificExpected": "FAIL",
+      "actual": "PASS",
+      "verifierDetail": "verified"
+    },
+    {
+      "name": "replace_round1_state_hash",
+      "scientificExpected": "FAIL",
+      "actual": "PASS",
+      "verifierDetail": "verified"
+    },
+    {
+      "name": "replace_fork_input_hash",
+      "scientificExpected": "FAIL",
+      "actual": "PASS",
+      "verifierDetail": "verified"
+    },
+    {
+      "name": "forge_disclosure_fields",
+      "scientificExpected": "FAIL",
+      "actual": "PASS",
+      "verifierDetail": "verified"
+    },
+    {
+      "name": "forge_row_request_hash",
+      "scientificExpected": "FAIL",
+      "actual": "PASS",
+      "verifierDetail": "verified"
+    },
+    {
+      "name": "duplicate_provider_request_id",
+      "scientificExpected": "FAIL",
+      "actual": "PASS",
+      "verifierDetail": "verified"
+    },
+    {
+      "name": "wrong_provider_model",
+      "scientificExpected": "FAIL",
+      "actual": "PASS",
+      "verifierDetail": "verified"
+    },
+    {
+      "name": "raw_decoupled_from_belief",
+      "scientificExpected": "FAIL",
+      "actual": "PASS",
+      "verifierDetail": "verified"
+    }
+  ]
+}

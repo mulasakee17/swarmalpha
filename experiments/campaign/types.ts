@@ -5,7 +5,7 @@
  */
 
 import type { GovernanceEstimate } from "../../src/lib/epistemic/semantics";
-import type { ProgressiveEstimates } from "../../src/lib/thermodynamics/ProgressiveEstimator";
+import type { ProgressiveEstimates } from "../../legacy/src/lib/thermodynamics/ProgressiveEstimator";
 import type { TreatmentAssignment } from "../../src/lib/experimentation/assignment";
 import type { GovernanceStudyContract } from "../../src/lib/experimentation/governanceStudy";
 import type { GovernanceAuditTrail } from "../../src/lib/experimentation/governanceAuditTrail";

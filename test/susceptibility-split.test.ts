@@ -26,7 +26,7 @@ import {
   type Confidence,
   type Utility,
 } from "@/lib/agent/cognitiveState";
-import { MeasurementLayer } from "@/lib/thermodynamics/MeasurementLayer";
+import { MeasurementLayer } from "../legacy/src/lib/thermodynamics/MeasurementLayer";
 import { detectAuthorityBiasCognitive } from "@/lib/governance/cognitiveDetectors";
 import type { CognitiveGovernanceState } from "@/lib/governance/types";
 import { computeE8Susceptibility } from "../experiments/campaign/pipeline/MetricComputer";
@@ -97,9 +97,9 @@ describe("susceptibility split — naming & formula equivalence", () => {
   it("new production code no longer calls the deprecated computeSusceptibility", () => {
     const files = [
       "src/lib/agent/cognitiveState.ts",
-      "src/lib/thermodynamics/MeasurementLayer.ts",
-      "src/lib/discussion/nativeCognitiveEngine.ts",
-      "src/runtime/GovernanceRuntime.ts",
+      "legacy/src/lib/thermodynamics/MeasurementLayer.ts",
+      "legacy/src/lib/discussion/nativeCognitiveEngine.ts",
+      "legacy/src/runtime/GovernanceRuntime.ts",
       "experiments/campaign/pipeline/Runner.ts",
     ];
     for (const rel of files) {
@@ -149,7 +149,7 @@ describe("susceptibility split — builder provenance separation", () => {
   });
 
   it("native engine and GovernanceRuntime builders use the shared helper (no inline formula)", () => {
-    for (const rel of ["src/lib/discussion/nativeCognitiveEngine.ts", "src/runtime/GovernanceRuntime.ts"]) {
+    for (const rel of ["legacy/src/lib/discussion/nativeCognitiveEngine.ts", "legacy/src/runtime/GovernanceRuntime.ts"]) {
       const src = fs.readFileSync(path.join(process.cwd(), rel), "utf8");
       expect(src).toContain("computeSocialUpdateGain");
       // 不得再出现手写 (1-strength)*(1-overall) 内联公式。

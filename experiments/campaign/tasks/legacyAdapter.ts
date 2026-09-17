@@ -8,7 +8,7 @@
  * completeness is validated HERE (loader/audit), not in the prompt resolver.
  */
 
-import type { TaskConfig } from "../../lunar_survival/config";
+import type { TaskConfig } from "../../../legacy/experiments/lunar_survival/config";
 import {
   freezeTaskBundle,
   type ExperimentTaskBundle,

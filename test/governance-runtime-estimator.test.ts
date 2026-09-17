@@ -1,12 +1,12 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { GovernanceRuntime } from "@/runtime";
+import { GovernanceRuntime } from "../legacy/src/runtime";
 import { GovernanceEstimatorRegistry } from "@/lib/epistemic";
 import {
   PROGRESSIVE_ESTIMATOR_ID,
   progressiveEstimatorContract,
   type ProgressiveEstimates,
-} from "@/lib/thermodynamics/ProgressiveEstimator";
-import type { DiscussionMessage } from "@/runtime/types";
+} from "../legacy/src/lib/thermodynamics/ProgressiveEstimator";
+import type { DiscussionMessage } from "../legacy/src/runtime/types";
 
 const fixedEstimates: ProgressiveEstimates = {
   inertia: {

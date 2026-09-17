@@ -1,0 +1,1926 @@
+{
+  "analysisRef": {
+    "id": "swarmalpha.analysis.v6.discussion-thermometer-sensitivity",
+    "version": "1.0.0"
+  },
+  "inferenceStatus": "descriptive_instrument_sensitivity_only",
+  "truthAccess": "none",
+  "datasets": [
+    {
+      "corpusId": "M2_FIRST_FIVE",
+      "planHash": "sha256:7212455275fefee6c988d23bdfe480775b07b8f03a86872eda2bef1f424aa528",
+      "freezeHash": "sha256:1c4508b1c9979726ab64ac91db03c475c41535db3dc666338d70c33a6e58f647",
+      "runHash": "sha256:9b7c26777a11e281da57f466ae85d5380736d3509fca25ffe891c6ff0474b314",
+      "legacyAnalysisHash": "sha256:bd91fca83d9cc3bb5a2a1bfc50e99306d710d3911542cde449286cfd6667d128",
+      "rows": [
+        {
+          "sourceTaskId": 1,
+          "checkpointRound": 0,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.6,
+              "opt_2": 0.25,
+              "opt_3": 0.15
+            },
+            "meanNormalizedReportEntropy": 0.8093171345828667,
+            "normalizedGeneralizedJsd": 0.04415680881274464,
+            "pooledConcentration": 0.6,
+            "meanPairwiseTotalVariation": 0.19999999999999998,
+            "maxPairwiseTotalVariation": 0.3
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.45,
+              "opt_2": 0.3,
+              "opt_3": 0.24999999999999997
+            },
+            "meanNormalizedReportEntropy": 0.7627132174391036,
+            "normalizedGeneralizedJsd": 0.20859750417081957,
+            "pooledConcentration": 0.45,
+            "meanPairwiseTotalVariation": 0.4166666666666667,
+            "maxPairwiseTotalVariation": 0.7000000000000001
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.5249999999999999,
+              "opt_2": 0.275,
+              "opt_3": 0.19999999999999998
+            },
+            "meanNormalizedReportEntropy": 0.866922544766542,
+            "normalizedGeneralizedJsd": 0.057148373085998516,
+            "pooledConcentration": 0.5249999999999999,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 0.35
+          },
+          "pooledTvAtoB": 0.14999999999999997,
+          "primaryARepeatMeanTV": 0.19999999999999998,
+          "primaryARepeatMaxTV": 0.7
+        },
+        {
+          "sourceTaskId": 1,
+          "checkpointRound": 1,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.9,
+              "opt_2": 0.07500000000000001,
+              "opt_3": 0.025
+            },
+            "meanNormalizedReportEntropy": 0.3274497619679575,
+            "normalizedGeneralizedJsd": 0.019639463035718674,
+            "pooledConcentration": 0.9,
+            "meanPairwiseTotalVariation": 0.03333333333333333,
+            "maxPairwiseTotalVariation": 0.05
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.9,
+              "opt_2": 0.0625,
+              "opt_3": 0.037500000000000006
+            },
+            "meanNormalizedReportEntropy": 0.3432230058072439,
+            "normalizedGeneralizedJsd": 0.012898349508707552,
+            "pooledConcentration": 0.9,
+            "meanPairwiseTotalVariation": 0.025000000000000005,
+            "maxPairwiseTotalVariation": 0.05
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.9,
+              "opt_2": 0.06875,
+              "opt_3": 0.03125
+            },
+            "meanNormalizedReportEntropy": 0.3402462496465304,
+            "normalizedGeneralizedJsd": 0.012190742767217544,
+            "pooledConcentration": 0.9,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 0.05
+          },
+          "pooledTvAtoB": 0.012500000000000008,
+          "primaryARepeatMeanTV": 0.0125,
+          "primaryARepeatMaxTV": 0.05
+        },
+        {
+          "sourceTaskId": 1,
+          "checkpointRound": 2,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.92499975,
+              "opt_2": 0.037500250000000006,
+              "opt_3": 0.037500000000000006
+            },
+            "meanNormalizedReportEntropy": 0.2692505586495021,
+            "normalizedGeneralizedJsd": 0.020543490130185527,
+            "pooledConcentration": 0.92499975,
+            "meanPairwiseTotalVariation": 0.049999499999999995,
+            "maxPairwiseTotalVariation": 0.09999899999999998
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.9,
+              "opt_2": 0.0625,
+              "opt_3": 0.037500000000000006
+            },
+            "meanNormalizedReportEntropy": 0.3432230058072439,
+            "normalizedGeneralizedJsd": 0.012898349508707552,
+            "pooledConcentration": 0.9,
+            "meanPairwiseTotalVariation": 0.025000000000000005,
+            "maxPairwiseTotalVariation": 0.05
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.9124998750000001,
+              "opt_2": 0.050000125000000006,
+              "opt_3": 0.037500000000000006
+            },
+            "meanNormalizedReportEntropy": 0.3144216126464777,
+            "normalizedGeneralizedJsd": 0.010051436164544403,
+            "pooledConcentration": 0.9124998750000001,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 0.04999999999999999
+          },
+          "pooledTvAtoB": 0.02499974999999999,
+          "primaryARepeatMeanTV": 0.024999749999999994,
+          "primaryARepeatMaxTV": 0.09999899999999998
+        },
+        {
+          "sourceTaskId": 1,
+          "checkpointRound": 3,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.9249999999999999,
+              "opt_2": 0.05,
+              "opt_3": 0.025
+            },
+            "meanNormalizedReportEntropy": 0.25347394339561136,
+            "normalizedGeneralizedJsd": 0.032453156756212964,
+            "pooledConcentration": 0.9249999999999999,
+            "meanPairwiseTotalVariation": 0.06666666666666665,
+            "maxPairwiseTotalVariation": 0.09999999999999999
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.975,
+              "opt_2": 0.0125,
+              "opt_3": 0.0125
+            },
+            "meanNormalizedReportEntropy": 0.0897490624116326,
+            "normalizedGeneralizedJsd": 0.03243738137398047,
+            "pooledConcentration": 0.975,
+            "meanPairwiseTotalVariation": 0.04999999999999999,
+            "maxPairwiseTotalVariation": 0.09999999999999998
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.95,
+              "opt_2": 0.03125,
+              "opt_3": 0.018750000000000003
+            },
+            "meanNormalizedReportEntropy": 0.18798386511966855,
+            "normalizedGeneralizedJsd": 0.022821536970400375,
+            "pooledConcentration": 0.95,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 0.09999999999999998
+          },
+          "pooledTvAtoB": 0.050000000000000024,
+          "primaryARepeatMeanTV": 0.04999999999999999,
+          "primaryARepeatMaxTV": 0.09999999999999999
+        },
+        {
+          "sourceTaskId": 8,
+          "checkpointRound": 0,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.6,
+              "opt_2": 0.26666666666666666,
+              "opt_3": 0.13333333333333333
+            },
+            "meanNormalizedReportEntropy": 0.8332214550036493,
+            "normalizedGeneralizedJsd": 0.011132229999973098,
+            "pooledConcentration": 0.6,
+            "meanPairwiseTotalVariation": 0.06666666666666667,
+            "maxPairwiseTotalVariation": 0.09999999999999999
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.6333333333333333,
+              "opt_2": 0.26666666666666666,
+              "opt_3": 0.1
+            },
+            "meanNormalizedReportEntropy": 0.7881791811517059,
+            "normalizedGeneralizedJsd": 0.005555846091141681,
+            "pooledConcentration": 0.6333333333333333,
+            "meanPairwiseTotalVariation": 0.06666666666666665,
+            "maxPairwiseTotalVariation": 0.09999999999999998
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.6166666666666666,
+              "opt_2": 0.26666666666666666,
+              "opt_3": 0.11666666666666667
+            },
+            "meanNormalizedReportEntropy": 0.8138618610226548,
+            "normalizedGeneralizedJsd": 0.006474863225198635,
+            "pooledConcentration": 0.6166666666666666,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 0.09999999999999996
+          },
+          "pooledTvAtoB": 0.033333333333333326,
+          "primaryARepeatMeanTV": 0.03333333333333333,
+          "primaryARepeatMaxTV": 0.09999999999999999
+        },
+        {
+          "sourceTaskId": 8,
+          "checkpointRound": 1,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.7,
+              "opt_2": 0.2,
+              "opt_3": 0.1
+            },
+            "meanNormalizedReportEntropy": 0.7298466991620977,
+            "normalizedGeneralizedJsd": 0,
+            "pooledConcentration": 0.7,
+            "meanPairwiseTotalVariation": 0,
+            "maxPairwiseTotalVariation": 0
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.7,
+              "opt_2": 0.2,
+              "opt_3": 0.1
+            },
+            "meanNormalizedReportEntropy": 0.7298466991620977,
+            "normalizedGeneralizedJsd": 0,
+            "pooledConcentration": 0.7,
+            "meanPairwiseTotalVariation": 0,
+            "maxPairwiseTotalVariation": 0
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.7,
+              "opt_2": 0.2,
+              "opt_3": 0.1
+            },
+            "meanNormalizedReportEntropy": 0.7298466991620977,
+            "normalizedGeneralizedJsd": 0,
+            "pooledConcentration": 0.7,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 0
+          },
+          "pooledTvAtoB": 0,
+          "primaryARepeatMeanTV": 0,
+          "primaryARepeatMaxTV": 0
+        },
+        {
+          "sourceTaskId": 8,
+          "checkpointRound": 2,
+          "primaryA": {
+            "coverage": 0.6666666666666666,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.7749999999999999,
+              "opt_2": 0.15000000000000002,
+              "opt_3": 0.07500000000000001
+            },
+            "meanNormalizedReportEntropy": 0.6007600584888064,
+            "normalizedGeneralizedJsd": 0.014907120533588114,
+            "pooledConcentration": 0.7749999999999999,
+            "meanPairwiseTotalVariation": 0.15,
+            "maxPairwiseTotalVariation": 0.15
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.7333333333333333,
+              "opt_2": 0.16666666666666666,
+              "opt_3": 0.1
+            },
+            "meanNormalizedReportEntropy": 0.6804550880140273,
+            "normalizedGeneralizedJsd": 0.007987998530932794,
+            "pooledConcentration": 0.7333333333333333,
+            "meanPairwiseTotalVariation": 0.0666666666666667,
+            "maxPairwiseTotalVariation": 0.10000000000000005
+          },
+          "legacyABMean": {
+            "coverage": 0.6666666666666666,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.7374999999999999,
+              "opt_2": 0.17500000000000002,
+              "opt_3": 0.08750000000000001
+            },
+            "meanNormalizedReportEntropy": 0.6727569390922461,
+            "normalizedGeneralizedJsd": 0.0033146893881313977,
+            "pooledConcentration": 0.7374999999999999,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 0.07499999999999997
+          },
+          "pooledTvAtoB": 0.04166666666666663,
+          "primaryARepeatMeanTV": 0.075,
+          "primaryARepeatMaxTV": 0.15
+        },
+        {
+          "sourceTaskId": 8,
+          "checkpointRound": 3,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.7,
+              "opt_2": 0.2,
+              "opt_3": 0.1
+            },
+            "meanNormalizedReportEntropy": 0.7298466991620977,
+            "normalizedGeneralizedJsd": 0,
+            "pooledConcentration": 0.7,
+            "meanPairwiseTotalVariation": 0,
+            "maxPairwiseTotalVariation": 0
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.7,
+              "opt_2": 0.2,
+              "opt_3": 0.1
+            },
+            "meanNormalizedReportEntropy": 0.7298466991620977,
+            "normalizedGeneralizedJsd": 0,
+            "pooledConcentration": 0.7,
+            "meanPairwiseTotalVariation": 0,
+            "maxPairwiseTotalVariation": 0
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.7,
+              "opt_2": 0.2,
+              "opt_3": 0.1
+            },
+            "meanNormalizedReportEntropy": 0.7298466991620977,
+            "normalizedGeneralizedJsd": 0,
+            "pooledConcentration": 0.7,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 0
+          },
+          "pooledTvAtoB": 0,
+          "primaryARepeatMeanTV": 0,
+          "primaryARepeatMaxTV": 0
+        },
+        {
+          "sourceTaskId": 15,
+          "checkpointRound": 0,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.21666649999999998,
+              "opt_2": 0.44166649999999996,
+              "opt_3": 0.3416665
+            },
+            "meanNormalizedReportEntropy": 0.849754277085485,
+            "normalizedGeneralizedJsd": 0.11439056494923017,
+            "pooledConcentration": 0.44166649999999996,
+            "meanPairwiseTotalVariation": 0.3277776666666667,
+            "maxPairwiseTotalVariation": 0.5
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.23333325,
+              "opt_2": 0.40833325,
+              "opt_3": 0.35833325000000005
+            },
+            "meanNormalizedReportEntropy": 0.8398117289909826,
+            "normalizedGeneralizedJsd": 0.1369241102611095,
+            "pooledConcentration": 0.40833325,
+            "meanPairwiseTotalVariation": 0.37777774999999997,
+            "maxPairwiseTotalVariation": 0.6000000000000001
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.224999875,
+              "opt_2": 0.424999875,
+              "opt_3": 0.349999875
+            },
+            "meanNormalizedReportEntropy": 0.8473901261788006,
+            "normalizedGeneralizedJsd": 0.12357856676592704,
+            "pooledConcentration": 0.424999875,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 0.5333332500000001
+          },
+          "pooledTvAtoB": 0.033333375000000026,
+          "primaryARepeatMeanTV": 0.033333375000000005,
+          "primaryARepeatMaxTV": 0.13333350000000002
+        },
+        {
+          "sourceTaskId": 15,
+          "checkpointRound": 1,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.1325,
+              "opt_2": 0.5325,
+              "opt_3": 0.335
+            },
+            "meanNormalizedReportEntropy": 0.4693711037478354,
+            "normalizedGeneralizedJsd": 0.4133210592118115,
+            "pooledConcentration": 0.5325,
+            "meanPairwiseTotalVariation": 0.6166666666666667,
+            "maxPairwiseTotalVariation": 1
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.1,
+              "opt_2": 0.475,
+              "opt_3": 0.425
+            },
+            "meanNormalizedReportEntropy": 0.4018554597923423,
+            "normalizedGeneralizedJsd": 0.46061972043954713,
+            "pooledConcentration": 0.475,
+            "meanPairwiseTotalVariation": 0.6333333333333333,
+            "maxPairwiseTotalVariation": 1
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.11624999999999999,
+              "opt_2": 0.50375,
+              "opt_3": 0.38
+            },
+            "meanNormalizedReportEntropy": 0.45206201736535917,
+            "normalizedGeneralizedJsd": 0.42473703805177604,
+            "pooledConcentration": 0.50375,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 1
+          },
+          "pooledTvAtoB": 0.08999999999999998,
+          "primaryARepeatMeanTV": 0.09,
+          "primaryARepeatMaxTV": 0.36
+        },
+        {
+          "sourceTaskId": 15,
+          "checkpointRound": 2,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.1,
+              "opt_2": 0.5,
+              "opt_3": 0.4
+            },
+            "meanNormalizedReportEntropy": 0.4732976076494678,
+            "normalizedGeneralizedJsd": 0.38537510342378734,
+            "pooledConcentration": 0.5,
+            "meanPairwiseTotalVariation": 0.5833333333333334,
+            "maxPairwiseTotalVariation": 0.9
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.1,
+              "opt_2": 0.5,
+              "opt_3": 0.4
+            },
+            "meanNormalizedReportEntropy": 0.4732976076494678,
+            "normalizedGeneralizedJsd": 0.38537510342378734,
+            "pooledConcentration": 0.5,
+            "meanPairwiseTotalVariation": 0.5833333333333334,
+            "maxPairwiseTotalVariation": 0.9
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.1,
+              "opt_2": 0.5,
+              "opt_3": 0.4
+            },
+            "meanNormalizedReportEntropy": 0.4732976076494678,
+            "normalizedGeneralizedJsd": 0.38537510342378734,
+            "pooledConcentration": 0.5,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 0.9
+          },
+          "pooledTvAtoB": 0,
+          "primaryARepeatMeanTV": 0,
+          "primaryARepeatMaxTV": 0
+        },
+        {
+          "sourceTaskId": 15,
+          "checkpointRound": 3,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.1,
+              "opt_2": 0.5,
+              "opt_3": 0.4
+            },
+            "meanNormalizedReportEntropy": 0.4732976076494678,
+            "normalizedGeneralizedJsd": 0.38537510342378734,
+            "pooledConcentration": 0.5,
+            "meanPairwiseTotalVariation": 0.5833333333333334,
+            "maxPairwiseTotalVariation": 0.9
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.1,
+              "opt_2": 0.475,
+              "opt_3": 0.425
+            },
+            "meanNormalizedReportEntropy": 0.4018554597923423,
+            "normalizedGeneralizedJsd": 0.46061972043954713,
+            "pooledConcentration": 0.475,
+            "meanPairwiseTotalVariation": 0.6333333333333333,
+            "maxPairwiseTotalVariation": 1
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.1,
+              "opt_2": 0.48750000000000004,
+              "opt_3": 0.4125
+            },
+            "meanNormalizedReportEntropy": 0.44579799567387496,
+            "normalizedGeneralizedJsd": 0.41509425782475146,
+            "pooledConcentration": 0.48750000000000004,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 0.9500000000000001
+          },
+          "pooledTvAtoB": 0.024999999999999994,
+          "primaryARepeatMeanTV": 0.024999999999999998,
+          "primaryARepeatMaxTV": 0.09999999999999999
+        },
+        {
+          "sourceTaskId": 22,
+          "checkpointRound": 0,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.28333325,
+              "opt_2": 0.35,
+              "opt_3": 0.36666675
+            },
+            "meanNormalizedReportEntropy": 0.6989356659966142,
+            "normalizedGeneralizedJsd": 0.2956241847254176,
+            "pooledConcentration": 0.36666675,
+            "meanPairwiseTotalVariation": 0.5277778333333334,
+            "maxPairwiseTotalVariation": 0.8
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.28333325,
+              "opt_2": 0.35,
+              "opt_3": 0.36666675
+            },
+            "meanNormalizedReportEntropy": 0.6989356659966142,
+            "normalizedGeneralizedJsd": 0.2956241847254176,
+            "pooledConcentration": 0.36666675,
+            "meanPairwiseTotalVariation": 0.5277778333333334,
+            "maxPairwiseTotalVariation": 0.8
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.28333325,
+              "opt_2": 0.35,
+              "opt_3": 0.36666675
+            },
+            "meanNormalizedReportEntropy": 0.6989356659966142,
+            "normalizedGeneralizedJsd": 0.2956241847254176,
+            "pooledConcentration": 0.36666675,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 0.8
+          },
+          "pooledTvAtoB": 0,
+          "primaryARepeatMeanTV": 0,
+          "primaryARepeatMaxTV": 0
+        },
+        {
+          "sourceTaskId": 22,
+          "checkpointRound": 1,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.20833325,
+              "opt_2": 0.60833325,
+              "opt_3": 0.1833335
+            },
+            "meanNormalizedReportEntropy": 0.6725191042554872,
+            "normalizedGeneralizedJsd": 0.18326243313363189,
+            "pooledConcentration": 0.60833325,
+            "meanPairwiseTotalVariation": 0.3944446666666667,
+            "maxPairwiseTotalVariation": 0.666667
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.23333325,
+              "opt_2": 0.475,
+              "opt_3": 0.29166675
+            },
+            "meanNormalizedReportEntropy": 0.5834889848345475,
+            "normalizedGeneralizedJsd": 0.37458464967704264,
+            "pooledConcentration": 0.475,
+            "meanPairwiseTotalVariation": 0.5944444999999999,
+            "maxPairwiseTotalVariation": 1
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.22083325,
+              "opt_2": 0.541666625,
+              "opt_3": 0.237500125
+            },
+            "meanNormalizedReportEntropy": 0.6637689112291072,
+            "normalizedGeneralizedJsd": 0.25289689314013586,
+            "pooledConcentration": 0.541666625,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 0.8333335
+          },
+          "pooledTvAtoB": 0.13333325000000001,
+          "primaryARepeatMeanTV": 0.13333325,
+          "primaryARepeatMaxTV": 0.333333
+        },
+        {
+          "sourceTaskId": 22,
+          "checkpointRound": 2,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.20833325,
+              "opt_2": 0.55,
+              "opt_3": 0.24166675
+            },
+            "meanNormalizedReportEntropy": 0.5419748410527256,
+            "normalizedGeneralizedJsd": 0.3671896963436124,
+            "pooledConcentration": 0.55,
+            "meanPairwiseTotalVariation": 0.5611111666666667,
+            "maxPairwiseTotalVariation": 1
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.20833325,
+              "opt_2": 0.525,
+              "opt_3": 0.26666675
+            },
+            "meanNormalizedReportEntropy": 0.5673640927496022,
+            "normalizedGeneralizedJsd": 0.35885039658670026,
+            "pooledConcentration": 0.525,
+            "meanPairwiseTotalVariation": 0.5611111666666667,
+            "maxPairwiseTotalVariation": 1
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.20833325,
+              "opt_2": 0.5375,
+              "opt_3": 0.25416675
+            },
+            "meanNormalizedReportEntropy": 0.5572359941781853,
+            "normalizedGeneralizedJsd": 0.3608657327812753,
+            "pooledConcentration": 0.5375,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 1
+          },
+          "pooledTvAtoB": 0.02500000000000001,
+          "primaryARepeatMeanTV": 0.024999999999999998,
+          "primaryARepeatMaxTV": 0.09999999999999999
+        },
+        {
+          "sourceTaskId": 22,
+          "checkpointRound": 3,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.20833325,
+              "opt_2": 0.525,
+              "opt_3": 0.26666675
+            },
+            "meanNormalizedReportEntropy": 0.5673640927496022,
+            "normalizedGeneralizedJsd": 0.35885039658670026,
+            "pooledConcentration": 0.525,
+            "meanPairwiseTotalVariation": 0.5611111666666667,
+            "maxPairwiseTotalVariation": 1
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.18333325,
+              "opt_2": 0.375,
+              "opt_3": 0.44166675
+            },
+            "meanNormalizedReportEntropy": 0.3595131662622012,
+            "normalizedGeneralizedJsd": 0.5869140082478224,
+            "pooledConcentration": 0.44166675,
+            "meanPairwiseTotalVariation": 0.7166666666666667,
+            "maxPairwiseTotalVariation": 1
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.19583325000000001,
+              "opt_2": 0.45,
+              "opt_3": 0.35416675
+            },
+            "meanNormalizedReportEntropy": 0.5622198222298096,
+            "normalizedGeneralizedJsd": 0.3901212422300653,
+            "pooledConcentration": 0.45,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 1
+          },
+          "pooledTvAtoB": 0.175,
+          "primaryARepeatMeanTV": 0.225,
+          "primaryARepeatMaxTV": 0.8
+        },
+        {
+          "sourceTaskId": 29,
+          "checkpointRound": 0,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.24999975,
+              "opt_2": 0.37499974999999997,
+              "opt_3": 0.375
+            },
+            "meanNormalizedReportEntropy": 0.9077323935120225,
+            "normalizedGeneralizedJsd": 0.07732434526671728,
+            "pooledConcentration": 0.375,
+            "meanPairwiseTotalVariation": 0.16666683333333332,
+            "maxPairwiseTotalVariation": 0.3333335
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.24833325,
+              "opt_2": 0.29333325,
+              "opt_3": 0.45833325
+            },
+            "meanNormalizedReportEntropy": 0.8138500236895524,
+            "normalizedGeneralizedJsd": 0.1539656852123401,
+            "pooledConcentration": 0.45833325,
+            "meanPairwiseTotalVariation": 0.3011110833333333,
+            "maxPairwiseTotalVariation": 0.49000000000000005
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.24916649999999999,
+              "opt_2": 0.3341665,
+              "opt_3": 0.41666662499999996
+            },
+            "meanNormalizedReportEntropy": 0.8889575107783291,
+            "normalizedGeneralizedJsd": 0.09165602878867785,
+            "pooledConcentration": 0.41666662499999996,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 0.3333335
+          },
+          "pooledTvAtoB": 0.083333125,
+          "primaryARepeatMeanTV": 0.08333312499999998,
+          "primaryARepeatMaxTV": 0.32666649999999997
+        },
+        {
+          "sourceTaskId": 29,
+          "checkpointRound": 1,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.4141665,
+              "opt_2": 0.2941665,
+              "opt_3": 0.2916665
+            },
+            "meanNormalizedReportEntropy": 0.6704760918425183,
+            "normalizedGeneralizedJsd": 0.3165896499187004,
+            "pooledConcentration": 0.4141665,
+            "meanPairwiseTotalVariation": 0.49500000000000005,
+            "maxPairwiseTotalVariation": 0.99
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.35000000000000003,
+              "opt_2": 0.2125,
+              "opt_3": 0.4375
+            },
+            "meanNormalizedReportEntropy": 0.632956896699159,
+            "normalizedGeneralizedJsd": 0.33028778435381945,
+            "pooledConcentration": 0.4375,
+            "meanPairwiseTotalVariation": 0.5666666666666667,
+            "maxPairwiseTotalVariation": 0.9
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.38208325,
+              "opt_2": 0.25333325,
+              "opt_3": 0.36458325
+            },
+            "meanNormalizedReportEntropy": 0.6865122949012952,
+            "normalizedGeneralizedJsd": 0.2995611574642908,
+            "pooledConcentration": 0.38208325,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 0.9450000000000001
+          },
+          "pooledTvAtoB": 0.14583324999999997,
+          "primaryARepeatMeanTV": 0.1725,
+          "primaryARepeatMaxTV": 0.4666665
+        },
+        {
+          "sourceTaskId": 29,
+          "checkpointRound": 2,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.29999975,
+              "opt_2": 0.05000025,
+              "opt_3": 0.65
+            },
+            "meanNormalizedReportEntropy": 0.29083930427354776,
+            "normalizedGeneralizedJsd": 0.42914881759031653,
+            "pooledConcentration": 0.65,
+            "meanPairwiseTotalVariation": 0.533333,
+            "maxPairwiseTotalVariation": 1
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.29999975,
+              "opt_2": 0.17500025,
+              "opt_3": 0.525
+            },
+            "meanNormalizedReportEntropy": 0.4485717426664121,
+            "normalizedGeneralizedJsd": 0.46576268486369954,
+            "pooledConcentration": 0.525,
+            "meanPairwiseTotalVariation": 0.5999994999999999,
+            "maxPairwiseTotalVariation": 0.999999
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.29999975,
+              "opt_2": 0.11250025,
+              "opt_3": 0.5875
+            },
+            "meanNormalizedReportEntropy": 0.4188041810592764,
+            "normalizedGeneralizedJsd": 0.41812551589154123,
+            "pooledConcentration": 0.5875,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 0.999999
+          },
+          "pooledTvAtoB": 0.125,
+          "primaryARepeatMeanTV": 0.125,
+          "primaryARepeatMaxTV": 0.5
+        },
+        {
+          "sourceTaskId": 29,
+          "checkpointRound": 3,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.35583325,
+              "opt_2": 0.23458325,
+              "opt_3": 0.40958325000000007
+            },
+            "meanNormalizedReportEntropy": 0.5674714050962257,
+            "normalizedGeneralizedJsd": 0.4095911868686398,
+            "pooledConcentration": 0.40958325000000007,
+            "meanPairwiseTotalVariation": 0.62277775,
+            "maxPairwiseTotalVariation": 0.99
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.275,
+              "opt_2": 0.1875,
+              "opt_3": 0.5375000000000001
+            },
+            "meanNormalizedReportEntropy": 0.5383174336634404,
+            "normalizedGeneralizedJsd": 0.3742752029289138,
+            "pooledConcentration": 0.5375000000000001,
+            "meanPairwiseTotalVariation": 0.55,
+            "maxPairwiseTotalVariation": 0.9
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.315416625,
+              "opt_2": 0.21104162499999998,
+              "opt_3": 0.473541625
+            },
+            "meanNormalizedReportEntropy": 0.5843462242892821,
+            "normalizedGeneralizedJsd": 0.36798613077070863,
+            "pooledConcentration": 0.473541625,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 0.945
+          },
+          "pooledTvAtoB": 0.127916625,
+          "primaryARepeatMeanTV": 0.139166625,
+          "primaryARepeatMaxTV": 0.4666665
+        }
+      ],
+      "transitionSummary": [
+        {
+          "variant": "primary_A",
+          "transitionCount": 15,
+          "completeMatchedRosterCount": 13,
+          "meanAgentTV": 0.1504443583333333,
+          "meanPooledTV": 0.13157047115384615
+        },
+        {
+          "variant": "primary_B",
+          "transitionCount": 15,
+          "completeMatchedRosterCount": 15,
+          "meanAgentTV": 0.1272221888888889,
+          "meanPooledTV": 0.09372220555555556
+        }
+      ],
+      "qualityStratum": {
+        "duplicateTVQuantile": "empirical_p95_in_corpus",
+        "threshold": 0.4666665,
+        "validDuplicateCount": 75,
+        "highDuplicateCheckpointCount": 5,
+        "highDuplicateAgentCount": 5,
+        "handling": "retain_primary_state_report_quality_stratum"
+      }
+    },
+    {
+      "corpusId": "D1_REMAINING_FIVE",
+      "planHash": "sha256:012fbe8b9974250820100bbaefcd04c9cf4603ea976404aa5aa5a4fa87c5413c",
+      "freezeHash": "sha256:3a08f6d70158cfa22ec50136c63fcc6eedd4726d249babe409413b9befc128f7",
+      "runHash": "sha256:98d42caba3dba2cc4c3a4f3cc479bbcb88bc1083f45e00c65be18035e1fe2e04",
+      "legacyAnalysisHash": "sha256:98f29c23a84efd3e9883061d5c30a2b064f269fcb5183f69884ca022142dd72c",
+      "rows": [
+        {
+          "sourceTaskId": 36,
+          "checkpointRound": 0,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.1666665,
+              "opt_2": 0.6666665,
+              "opt_3": 0.16666675
+            },
+            "meanNormalizedReportEntropy": 0.49999997755946535,
+            "normalizedGeneralizedJsd": 0.2896901347205546,
+            "pooledConcentration": 0.6666665,
+            "meanPairwiseTotalVariation": 0.4444445833333333,
+            "maxPairwiseTotalVariation": 0.666667
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.1666665,
+              "opt_2": 0.4166665,
+              "opt_3": 0.4166665
+            },
+            "meanNormalizedReportEntropy": 0.4999999551193858,
+            "normalizedGeneralizedJsd": 0.43589324349920266,
+            "pooledConcentration": 0.4166665,
+            "meanPairwiseTotalVariation": 0.6111110000000001,
+            "maxPairwiseTotalVariation": 1
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.1666665,
+              "opt_2": 0.5416665,
+              "opt_3": 0.291666625
+            },
+            "meanNormalizedReportEntropy": 0.6577324047323754,
+            "normalizedGeneralizedJsd": 0.24349545134662964,
+            "pooledConcentration": 0.5416665,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 0.66666675
+          },
+          "pooledTvAtoB": 0.24999987500000004,
+          "primaryARepeatMeanTV": 0.250000125,
+          "primaryARepeatMaxTV": 1
+        },
+        {
+          "sourceTaskId": 36,
+          "checkpointRound": 1,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.42500000000000004,
+              "opt_2": 0.2875,
+              "opt_3": 0.2875
+            },
+            "meanNormalizedReportEntropy": 0.2351670288411043,
+            "normalizedGeneralizedJsd": 0.7482683911855369,
+            "pooledConcentration": 0.42500000000000004,
+            "meanPairwiseTotalVariation": 0.8000000000000002,
+            "maxPairwiseTotalVariation": 1
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.45,
+              "opt_2": 0.275,
+              "opt_3": 0.275
+            },
+            "meanNormalizedReportEntropy": 0.1794981248232652,
+            "normalizedGeneralizedJsd": 0.7938841812476026,
+            "pooledConcentration": 0.45,
+            "meanPairwiseTotalVariation": 0.7999999999999999,
+            "maxPairwiseTotalVariation": 1
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.4375,
+              "opt_2": 0.28125,
+              "opt_3": 0.28125
+            },
+            "meanNormalizedReportEntropy": 0.20960052646372754,
+            "normalizedGeneralizedJsd": 0.7690973339479248,
+            "pooledConcentration": 0.4375,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 1
+          },
+          "pooledTvAtoB": 0.02499999999999994,
+          "primaryARepeatMeanTV": 0.024999999999999994,
+          "primaryARepeatMaxTV": 0.09999999999999998
+        },
+        {
+          "sourceTaskId": 36,
+          "checkpointRound": 2,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.45,
+              "opt_2": 0.275,
+              "opt_3": 0.275
+            },
+            "meanNormalizedReportEntropy": 0.1794981248232652,
+            "normalizedGeneralizedJsd": 0.7938841812476026,
+            "pooledConcentration": 0.45,
+            "meanPairwiseTotalVariation": 0.7999999999999999,
+            "maxPairwiseTotalVariation": 1
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.45,
+              "opt_2": 0.275,
+              "opt_3": 0.275
+            },
+            "meanNormalizedReportEntropy": 0.1794981248232652,
+            "normalizedGeneralizedJsd": 0.7938841812476026,
+            "pooledConcentration": 0.45,
+            "meanPairwiseTotalVariation": 0.7999999999999999,
+            "maxPairwiseTotalVariation": 1
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.45,
+              "opt_2": 0.275,
+              "opt_3": 0.275
+            },
+            "meanNormalizedReportEntropy": 0.1794981248232652,
+            "normalizedGeneralizedJsd": 0.7938841812476026,
+            "pooledConcentration": 0.45,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 1
+          },
+          "pooledTvAtoB": 0,
+          "primaryARepeatMeanTV": 0,
+          "primaryARepeatMaxTV": 0
+        },
+        {
+          "sourceTaskId": 36,
+          "checkpointRound": 3,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.16583325,
+              "opt_2": 0.41583325,
+              "opt_3": 0.41833325
+            },
+            "meanNormalizedReportEntropy": 0.4999772963057104,
+            "normalizedGeneralizedJsd": 0.4352152181440241,
+            "pooledConcentration": 0.41833325,
+            "meanPairwiseTotalVariation": 0.6116665833333333,
+            "maxPairwiseTotalVariation": 1
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.165,
+              "opt_2": 0.41500000000000004,
+              "opt_3": 0.42000000000000004
+            },
+            "meanNormalizedReportEntropy": 0.4999546374920351,
+            "normalizedGeneralizedJsd": 0.43452581730145107,
+            "pooledConcentration": 0.42000000000000004,
+            "meanPairwiseTotalVariation": 0.61,
+            "maxPairwiseTotalVariation": 1
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.16541662499999998,
+              "opt_2": 0.415416625,
+              "opt_3": 0.419166625
+            },
+            "meanNormalizedReportEntropy": 0.4999716279387901,
+            "normalizedGeneralizedJsd": 0.43486627850374543,
+            "pooledConcentration": 0.419166625,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 1
+          },
+          "pooledTvAtoB": 0.001666624999999991,
+          "primaryARepeatMeanTV": 0.001666624999999998,
+          "primaryARepeatMaxTV": 0.006666499999999992
+        },
+        {
+          "sourceTaskId": 43,
+          "checkpointRound": 0,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.22499999999999998,
+              "opt_2": 0.35,
+              "opt_3": 0.425
+            },
+            "meanNormalizedReportEntropy": 0.72861062711381,
+            "normalizedGeneralizedJsd": 0.24235811101789118,
+            "pooledConcentration": 0.425,
+            "meanPairwiseTotalVariation": 0.35000000000000003,
+            "maxPairwiseTotalVariation": 0.7
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.19999999999999998,
+              "opt_2": 0.3625,
+              "opt_3": 0.4375
+            },
+            "meanNormalizedReportEntropy": 0.6704080523807503,
+            "normalizedGeneralizedJsd": 0.28661690155351005,
+            "pooledConcentration": 0.4375,
+            "meanPairwiseTotalVariation": 0.3666666666666667,
+            "maxPairwiseTotalVariation": 0.7
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.2125,
+              "opt_2": 0.35624999999999996,
+              "opt_3": 0.43125
+            },
+            "meanNormalizedReportEntropy": 0.7076955208553034,
+            "normalizedGeneralizedJsd": 0.2567272972835428,
+            "pooledConcentration": 0.43125,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 0.7
+          },
+          "pooledTvAtoB": 0.02500000000000001,
+          "primaryARepeatMeanTV": 0.024999999999999998,
+          "primaryARepeatMaxTV": 0.09999999999999999
+        },
+        {
+          "sourceTaskId": 43,
+          "checkpointRound": 1,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.19999999999999998,
+              "opt_2": 0.3625,
+              "opt_3": 0.4375
+            },
+            "meanNormalizedReportEntropy": 0.6704080523807503,
+            "normalizedGeneralizedJsd": 0.28661690155351005,
+            "pooledConcentration": 0.4375,
+            "meanPairwiseTotalVariation": 0.3666666666666667,
+            "maxPairwiseTotalVariation": 0.7
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.225,
+              "opt_2": 0.3875,
+              "opt_3": 0.3875
+            },
+            "meanNormalizedReportEntropy": 0.6768178563411247,
+            "normalizedGeneralizedJsd": 0.2974593447348679,
+            "pooledConcentration": 0.3875,
+            "meanPairwiseTotalVariation": 0.4166666666666667,
+            "maxPairwiseTotalVariation": 0.8
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.2125,
+              "opt_2": 0.375,
+              "opt_3": 0.4125
+            },
+            "meanNormalizedReportEntropy": 0.6878326363851064,
+            "normalizedGeneralizedJsd": 0.27903294739737927,
+            "pooledConcentration": 0.4125,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 0.75
+          },
+          "pooledTvAtoB": 0.05000000000000002,
+          "primaryARepeatMeanTV": 0.05000000000000001,
+          "primaryARepeatMaxTV": 0.20000000000000004
+        },
+        {
+          "sourceTaskId": 43,
+          "checkpointRound": 2,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.225,
+              "opt_2": 0.3875,
+              "opt_3": 0.3875
+            },
+            "meanNormalizedReportEntropy": 0.6768178563411247,
+            "normalizedGeneralizedJsd": 0.2974593447348679,
+            "pooledConcentration": 0.3875,
+            "meanPairwiseTotalVariation": 0.4166666666666667,
+            "maxPairwiseTotalVariation": 0.8
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.25,
+              "opt_2": 0.375,
+              "opt_3": 0.375
+            },
+            "meanNormalizedReportEntropy": 0.6211489523232855,
+            "normalizedGeneralizedJsd": 0.36390786999822233,
+            "pooledConcentration": 0.375,
+            "meanPairwiseTotalVariation": 0.4666666666666666,
+            "maxPairwiseTotalVariation": 0.9
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.23750000000000002,
+              "opt_2": 0.38125,
+              "opt_3": 0.38125
+            },
+            "meanNormalizedReportEntropy": 0.6512513539637479,
+            "normalizedGeneralizedJsd": 0.3288084833169663,
+            "pooledConcentration": 0.38125,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 0.8500000000000001
+          },
+          "pooledTvAtoB": 0.02500000000000001,
+          "primaryARepeatMeanTV": 0.024999999999999994,
+          "primaryARepeatMaxTV": 0.09999999999999998
+        },
+        {
+          "sourceTaskId": 43,
+          "checkpointRound": 3,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.25,
+              "opt_2": 0.375,
+              "opt_3": 0.375
+            },
+            "meanNormalizedReportEntropy": 0.6211489523232855,
+            "normalizedGeneralizedJsd": 0.36390786999822233,
+            "pooledConcentration": 0.375,
+            "meanPairwiseTotalVariation": 0.4666666666666666,
+            "maxPairwiseTotalVariation": 0.9
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.25,
+              "opt_2": 0.375,
+              "opt_3": 0.375
+            },
+            "meanNormalizedReportEntropy": 0.6211489523232855,
+            "normalizedGeneralizedJsd": 0.36390786999822233,
+            "pooledConcentration": 0.375,
+            "meanPairwiseTotalVariation": 0.4666666666666666,
+            "maxPairwiseTotalVariation": 0.9
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.25,
+              "opt_2": 0.375,
+              "opt_3": 0.375
+            },
+            "meanNormalizedReportEntropy": 0.6211489523232855,
+            "normalizedGeneralizedJsd": 0.36390786999822233,
+            "pooledConcentration": 0.375,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 0.9
+          },
+          "pooledTvAtoB": 0,
+          "primaryARepeatMeanTV": 0,
+          "primaryARepeatMaxTV": 0
+        },
+        {
+          "sourceTaskId": 50,
+          "checkpointRound": 0,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.111111,
+              "opt_2": 0.44444433333333333,
+              "opt_3": 0.44444466666666665
+            },
+            "meanNormalizedReportEntropy": 0.33333333333302995,
+            "normalizedGeneralizedJsd": 0.5450136312220979,
+            "pooledConcentration": 0.44444466666666665,
+            "meanPairwiseTotalVariation": 0.7777776666666667,
+            "maxPairwiseTotalVariation": 1
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.03333333333333333,
+              "opt_2": 0.3333333333333333,
+              "opt_3": 0.6333333333333333
+            },
+            "meanNormalizedReportEntropy": 0.09863442476312821,
+            "normalizedGeneralizedJsd": 0.6012099805737572,
+            "pooledConcentration": 0.6333333333333333,
+            "meanPairwiseTotalVariation": 0.7000000000000001,
+            "maxPairwiseTotalVariation": 1
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.07222216666666666,
+              "opt_2": 0.3888888333333333,
+              "opt_3": 0.538889
+            },
+            "meanNormalizedReportEntropy": 0.2816001777874816,
+            "normalizedGeneralizedJsd": 0.5287465455190796,
+            "pooledConcentration": 0.538889,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 1
+          },
+          "pooledTvAtoB": 0.18888866666666665,
+          "primaryARepeatMeanTV": 0.18888866666666668,
+          "primaryARepeatMaxTV": 0.566666
+        },
+        {
+          "sourceTaskId": 50,
+          "checkpointRound": 1,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.33,
+              "opt_2": 0.33666666666666667,
+              "opt_3": 0.3333333333333333
+            },
+            "meanNormalizedReportEntropy": 0.01699159777369084,
+            "normalizedGeneralizedJsd": 0.9829780604130464,
+            "pooledConcentration": 0.33666666666666667,
+            "meanPairwiseTotalVariation": 0.9966666666666667,
+            "maxPairwiseTotalVariation": 1
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.33,
+              "opt_2": 0.33666666666666667,
+              "opt_3": 0.3333333333333333
+            },
+            "meanNormalizedReportEntropy": 0.01699159777369084,
+            "normalizedGeneralizedJsd": 0.9829780604130464,
+            "pooledConcentration": 0.33666666666666667,
+            "meanPairwiseTotalVariation": 0.9966666666666667,
+            "maxPairwiseTotalVariation": 1
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.33,
+              "opt_2": 0.33666666666666667,
+              "opt_3": 0.3333333333333333
+            },
+            "meanNormalizedReportEntropy": 0.01699159777369084,
+            "normalizedGeneralizedJsd": 0.9829780604130464,
+            "pooledConcentration": 0.33666666666666667,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 1
+          },
+          "pooledTvAtoB": 0,
+          "primaryARepeatMeanTV": 0,
+          "primaryARepeatMaxTV": 0
+        },
+        {
+          "sourceTaskId": 50,
+          "checkpointRound": 2,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0,
+              "opt_2": 0.3333333333333333,
+              "opt_3": 0.6666666666666666
+            },
+            "meanNormalizedReportEntropy": 0,
+            "normalizedGeneralizedJsd": 0.579380164285695,
+            "pooledConcentration": 0.6666666666666666,
+            "meanPairwiseTotalVariation": 0.6666666666666666,
+            "maxPairwiseTotalVariation": 1
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0,
+              "opt_2": 0.3333333333333333,
+              "opt_3": 0.6666666666666666
+            },
+            "meanNormalizedReportEntropy": 0,
+            "normalizedGeneralizedJsd": 0.579380164285695,
+            "pooledConcentration": 0.6666666666666666,
+            "meanPairwiseTotalVariation": 0.6666666666666666,
+            "maxPairwiseTotalVariation": 1
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0,
+              "opt_2": 0.3333333333333333,
+              "opt_3": 0.6666666666666666
+            },
+            "meanNormalizedReportEntropy": 0,
+            "normalizedGeneralizedJsd": 0.579380164285695,
+            "pooledConcentration": 0.6666666666666666,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 1
+          },
+          "pooledTvAtoB": 0,
+          "primaryARepeatMeanTV": 0,
+          "primaryARepeatMaxTV": 0
+        },
+        {
+          "sourceTaskId": 50,
+          "checkpointRound": 3,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0,
+              "opt_2": 0.3333333333333333,
+              "opt_3": 0.6666666666666666
+            },
+            "meanNormalizedReportEntropy": 0,
+            "normalizedGeneralizedJsd": 0.579380164285695,
+            "pooledConcentration": 0.6666666666666666,
+            "meanPairwiseTotalVariation": 0.6666666666666666,
+            "maxPairwiseTotalVariation": 1
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0,
+              "opt_2": 0.3333333333333333,
+              "opt_3": 0.6666666666666666
+            },
+            "meanNormalizedReportEntropy": 0,
+            "normalizedGeneralizedJsd": 0.579380164285695,
+            "pooledConcentration": 0.6666666666666666,
+            "meanPairwiseTotalVariation": 0.6666666666666666,
+            "maxPairwiseTotalVariation": 1
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0,
+              "opt_2": 0.3333333333333333,
+              "opt_3": 0.6666666666666666
+            },
+            "meanNormalizedReportEntropy": 0,
+            "normalizedGeneralizedJsd": 0.579380164285695,
+            "pooledConcentration": 0.6666666666666666,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 1
+          },
+          "pooledTvAtoB": 0,
+          "primaryARepeatMeanTV": 0,
+          "primaryARepeatMaxTV": 0
+        },
+        {
+          "sourceTaskId": 57,
+          "checkpointRound": 0,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.1325,
+              "opt_2": 0.4275,
+              "opt_3": 0.44
+            },
+            "meanNormalizedReportEntropy": 0.6819464817872269,
+            "normalizedGeneralizedJsd": 0.2213082429015787,
+            "pooledConcentration": 0.44,
+            "meanPairwiseTotalVariation": 0.4283333333333334,
+            "maxPairwiseTotalVariation": 0.6900000000000001
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.07500000000000001,
+              "opt_2": 0.65,
+              "opt_3": 0.27499999999999997
+            },
+            "meanNormalizedReportEntropy": 0.6341804508646682,
+            "normalizedGeneralizedJsd": 0.12068055996173088,
+            "pooledConcentration": 0.65,
+            "meanPairwiseTotalVariation": 0.3,
+            "maxPairwiseTotalVariation": 0.5
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.10375000000000001,
+              "opt_2": 0.5387500000000001,
+              "opt_3": 0.35749999999999993
+            },
+            "meanNormalizedReportEntropy": 0.7517726879358614,
+            "normalizedGeneralizedJsd": 0.10023326389298393,
+            "pooledConcentration": 0.5387500000000001,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 0.44999999999999996
+          },
+          "pooledTvAtoB": 0.22250000000000003,
+          "primaryARepeatMeanTV": 0.22250000000000003,
+          "primaryARepeatMaxTV": 0.79
+        },
+        {
+          "sourceTaskId": 57,
+          "checkpointRound": 1,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.025,
+              "opt_2": 0.95,
+              "opt_3": 0.025
+            },
+            "meanNormalizedReportEntropy": 0.14541796642947172,
+            "normalizedGeneralizedJsd": 0.0668248828258867,
+            "pooledConcentration": 0.95,
+            "meanPairwiseTotalVariation": 0.09999999999999998,
+            "maxPairwiseTotalVariation": 0.19999999999999996
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.025,
+              "opt_2": 0.95,
+              "opt_3": 0.025
+            },
+            "meanNormalizedReportEntropy": 0.14541796642947172,
+            "normalizedGeneralizedJsd": 0.0668248828258867,
+            "pooledConcentration": 0.95,
+            "meanPairwiseTotalVariation": 0.09999999999999998,
+            "maxPairwiseTotalVariation": 0.19999999999999996
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.025,
+              "opt_2": 0.95,
+              "opt_3": 0.025
+            },
+            "meanNormalizedReportEntropy": 0.14541796642947172,
+            "normalizedGeneralizedJsd": 0.0668248828258867,
+            "pooledConcentration": 0.95,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 0.19999999999999996
+          },
+          "pooledTvAtoB": 0,
+          "primaryARepeatMeanTV": 0,
+          "primaryARepeatMaxTV": 0
+        },
+        {
+          "sourceTaskId": 57,
+          "checkpointRound": 2,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.025,
+              "opt_2": 0.95,
+              "opt_3": 0.025
+            },
+            "meanNormalizedReportEntropy": 0.14541796642947172,
+            "normalizedGeneralizedJsd": 0.0668248828258867,
+            "pooledConcentration": 0.95,
+            "meanPairwiseTotalVariation": 0.09999999999999998,
+            "maxPairwiseTotalVariation": 0.19999999999999996
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.025,
+              "opt_2": 0.95,
+              "opt_3": 0.025
+            },
+            "meanNormalizedReportEntropy": 0.14541796642947172,
+            "normalizedGeneralizedJsd": 0.0668248828258867,
+            "pooledConcentration": 0.95,
+            "meanPairwiseTotalVariation": 0.09999999999999998,
+            "maxPairwiseTotalVariation": 0.19999999999999996
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.025,
+              "opt_2": 0.95,
+              "opt_3": 0.025
+            },
+            "meanNormalizedReportEntropy": 0.14541796642947172,
+            "normalizedGeneralizedJsd": 0.0668248828258867,
+            "pooledConcentration": 0.95,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 0.19999999999999996
+          },
+          "pooledTvAtoB": 0,
+          "primaryARepeatMeanTV": 0,
+          "primaryARepeatMaxTV": 0
+        },
+        {
+          "sourceTaskId": 57,
+          "checkpointRound": 3,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.025,
+              "opt_2": 0.95,
+              "opt_3": 0.025
+            },
+            "meanNormalizedReportEntropy": 0.14541796642947172,
+            "normalizedGeneralizedJsd": 0.0668248828258867,
+            "pooledConcentration": 0.95,
+            "meanPairwiseTotalVariation": 0.09999999999999998,
+            "maxPairwiseTotalVariation": 0.19999999999999996
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.0125,
+              "opt_2": 0.9625,
+              "opt_3": 0.025
+            },
+            "meanNormalizedReportEntropy": 0.11791835445387884,
+            "normalizedGeneralizedJsd": 0.0493701771977398,
+            "pooledConcentration": 0.9625,
+            "meanPairwiseTotalVariation": 0.07500000000000001,
+            "maxPairwiseTotalVariation": 0.15000000000000002
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.018750000000000003,
+              "opt_2": 0.95625,
+              "opt_3": 0.025
+            },
+            "meanNormalizedReportEntropy": 0.13272092533414856,
+            "normalizedGeneralizedJsd": 0.058029911538289264,
+            "pooledConcentration": 0.95625,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 0.17500000000000004
+          },
+          "pooledTvAtoB": 0.012500000000000034,
+          "primaryARepeatMeanTV": 0.012499999999999992,
+          "primaryARepeatMaxTV": 0.04999999999999997
+        },
+        {
+          "sourceTaskId": 64,
+          "checkpointRound": 0,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.6749999999999999,
+              "opt_2": 0.125,
+              "opt_3": 0.2
+            },
+            "meanNormalizedReportEntropy": 0.7517213799082008,
+            "normalizedGeneralizedJsd": 0.019361859291483596,
+            "pooledConcentration": 0.6749999999999999,
+            "meanPairwiseTotalVariation": 0.09999999999999999,
+            "maxPairwiseTotalVariation": 0.19999999999999998
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.7,
+              "opt_2": 0.125,
+              "opt_3": 0.175
+            },
+            "meanNormalizedReportEntropy": 0.7298466991620977,
+            "normalizedGeneralizedJsd": 0.011654456664176083,
+            "pooledConcentration": 0.7,
+            "meanPairwiseTotalVariation": 0.05000000000000001,
+            "maxPairwiseTotalVariation": 0.1
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.6874999999999999,
+              "opt_2": 0.125,
+              "opt_3": 0.1875
+            },
+            "meanNormalizedReportEntropy": 0.7423675955382981,
+            "normalizedGeneralizedJsd": 0.014407591733254788,
+            "pooledConcentration": 0.6874999999999999,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 0.15000000000000002
+          },
+          "pooledTvAtoB": 0.025000000000000022,
+          "primaryARepeatMeanTV": 0.024999999999999994,
+          "primaryARepeatMaxTV": 0.09999999999999998
+        },
+        {
+          "sourceTaskId": 64,
+          "checkpointRound": 1,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.85,
+              "opt_2": 0.0625,
+              "opt_3": 0.0875
+            },
+            "meanNormalizedReportEntropy": 0.47167341781551536,
+            "normalizedGeneralizedJsd": 0.005827228332088152,
+            "pooledConcentration": 0.85,
+            "meanPairwiseTotalVariation": 0.025000000000000005,
+            "maxPairwiseTotalVariation": 0.05
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.85,
+              "opt_2": 0.05,
+              "opt_3": 0.1
+            },
+            "meanNormalizedReportEntropy": 0.47167341781551536,
+            "normalizedGeneralizedJsd": 0,
+            "pooledConcentration": 0.85,
+            "meanPairwiseTotalVariation": 0,
+            "maxPairwiseTotalVariation": 0
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.85,
+              "opt_2": 0.05625000000000001,
+              "opt_3": 0.09375
+            },
+            "meanNormalizedReportEntropy": 0.4736065274137315,
+            "normalizedGeneralizedJsd": 0.0014869872987798294,
+            "pooledConcentration": 0.85,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 0.025
+          },
+          "pooledTvAtoB": 0.012500000000000004,
+          "primaryARepeatMeanTV": 0.0125,
+          "primaryARepeatMaxTV": 0.05
+        },
+        {
+          "sourceTaskId": 64,
+          "checkpointRound": 2,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.75,
+              "opt_2": 0.0875,
+              "opt_3": 0.16249999999999998
+            },
+            "meanNormalizedReportEntropy": 0.6226347392349096,
+            "normalizedGeneralizedJsd": 0.036557599907262484,
+            "pooledConcentration": 0.75,
+            "meanPairwiseTotalVariation": 0.15833333333333335,
+            "maxPairwiseTotalVariation": 0.25
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.75,
+              "opt_2": 0.0875,
+              "opt_3": 0.16249999999999998
+            },
+            "meanNormalizedReportEntropy": 0.6226347392349096,
+            "normalizedGeneralizedJsd": 0.036557599907262484,
+            "pooledConcentration": 0.75,
+            "meanPairwiseTotalVariation": 0.15833333333333335,
+            "maxPairwiseTotalVariation": 0.25
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.75,
+              "opt_2": 0.0875,
+              "opt_3": 0.16249999999999998
+            },
+            "meanNormalizedReportEntropy": 0.6226347392349096,
+            "normalizedGeneralizedJsd": 0.036557599907262484,
+            "pooledConcentration": 0.75,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 0.25
+          },
+          "pooledTvAtoB": 0,
+          "primaryARepeatMeanTV": 0,
+          "primaryARepeatMaxTV": 0
+        },
+        {
+          "sourceTaskId": 64,
+          "checkpointRound": 3,
+          "primaryA": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.49999999999999994,
+              "opt_2": 0.1,
+              "opt_3": 0.4
+            },
+            "meanNormalizedReportEntropy": 0.762053202139887,
+            "normalizedGeneralizedJsd": 0.09661950893336813,
+            "pooledConcentration": 0.49999999999999994,
+            "meanPairwiseTotalVariation": 0.29999999999999993,
+            "maxPairwiseTotalVariation": 0.49999999999999994
+          },
+          "primaryB": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.44999999999999996,
+              "opt_2": 0.1,
+              "opt_3": 0.45
+            },
+            "meanNormalizedReportEntropy": 0.7298466991620977,
+            "normalizedGeneralizedJsd": 0.1338933533415988,
+            "pooledConcentration": 0.45,
+            "meanPairwiseTotalVariation": 0.3333333333333333,
+            "maxPairwiseTotalVariation": 0.49999999999999994
+          },
+          "legacyABMean": {
+            "coverage": 1,
+            "pooledProbabilitiesByOptionId": {
+              "opt_1": 0.475,
+              "opt_2": 0.1,
+              "opt_3": 0.425
+            },
+            "meanNormalizedReportEntropy": 0.7517213799082009,
+            "normalizedGeneralizedJsd": 0.11075380032368853,
+            "pooledConcentration": 0.475,
+            "meanPairwiseTotalVariation": null,
+            "maxPairwiseTotalVariation": 0.49999999999999994
+          },
+          "pooledTvAtoB": 0.04999999999999999,
+          "primaryARepeatMeanTV": 0.049999999999999996,
+          "primaryARepeatMaxTV": 0.19999999999999998
+        }
+      ],
+      "transitionSummary": [
+        {
+          "variant": "primary_A",
+          "transitionCount": 15,
+          "completeMatchedRosterCount": 15,
+          "meanAgentTV": 0.16948148888888886,
+          "meanPooledTV": 0.15920370555555557
+        },
+        {
+          "variant": "primary_B",
+          "transitionCount": 15,
+          "completeMatchedRosterCount": 15,
+          "meanAgentTV": 0.1434444388888889,
+          "meanPooledTV": 0.14261110555555553
+        }
+      ],
+      "qualityStratum": {
+        "duplicateTVQuantile": "empirical_p95_in_corpus",
+        "threshold": 0.20000000000000004,
+        "validDuplicateCount": 76,
+        "highDuplicateCheckpointCount": 4,
+        "highDuplicateAgentCount": 4,
+        "handling": "retain_primary_state_report_quality_stratum"
+      }
+    }
+  ],
+  "summary": {
+    "checkpointCount": 40,
+    "transitionCount": 30,
+    "meanPooledTVPrimaryAtoB": 0.05410761354166667,
+    "maxPooledTVPrimaryAtoB": 0.24999987500000004,
+    "primaryCoverageDifferenceCheckpointCount": 1,
+    "primaryAStateUsedWhenRepeatBMissingCount": 0,
+    "primaryBStateUsedWhenRepeatAMissingCount": 1
+  },
+  "contentHash": "sha256:8e2696a66d36bf658bac99fa35af9e883e803a13b5f14d4da920e7002e942c68"
+}

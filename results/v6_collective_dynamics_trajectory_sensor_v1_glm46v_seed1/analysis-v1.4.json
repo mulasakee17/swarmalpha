@@ -1,0 +1,6016 @@
+{
+  "analysisRef": {
+    "id": "swarmalpha.analysis.v6.collective-dynamics-trajectory",
+    "version": "1.4.0"
+  },
+  "planHash": "sha256:7212455275fefee6c988d23bdfe480775b07b8f03a86872eda2bef1f424aa528",
+  "freezeHash": "sha256:1c4508b1c9979726ab64ac91db03c475c41535db3dc666338d70c33a6e58f647",
+  "runHash": "sha256:9b7c26777a11e281da57f466ae85d5380736d3509fca25ffe891c6ff0474b314",
+  "inferenceUnit": "task",
+  "sensorUnit": "task_agent_checkpoint_exact_repeat_pair",
+  "stateTruthAccess": "none",
+  "evaluationTruthAccess": "offline_resolution_only",
+  "terminalCounts": {
+    "valid": 151,
+    "interrupted_unobserved": 1
+  },
+  "unitRows": [
+    {
+      "unitId": "1:agent:hiddenbench:1:1:X0",
+      "sourceTaskId": 1,
+      "agentId": "agent:hiddenbench:1:1",
+      "checkpointRound": 0,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.1,
+          0.2
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.1,
+          0.2
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.1,
+          0.2
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_1",
+        "B": "opt_1"
+      },
+      "averagedUniqueTop": "opt_1"
+    },
+    {
+      "unitId": "1:agent:hiddenbench:1:1:X1",
+      "sourceTaskId": 1,
+      "agentId": "agent:hiddenbench:1:1",
+      "checkpointRound": 1,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9,
+          0.1,
+          0
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9,
+          0.05,
+          0.05
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9,
+          0.07500000000000001,
+          0.025
+        ]
+      },
+      "duplicateTotalVariation": 0.05,
+      "repeatUniqueTops": {
+        "A": "opt_1",
+        "B": "opt_1"
+      },
+      "averagedUniqueTop": "opt_1"
+    },
+    {
+      "unitId": "1:agent:hiddenbench:1:1:X2",
+      "sourceTaskId": 1,
+      "agentId": "agent:hiddenbench:1:1",
+      "checkpointRound": 2,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9,
+          0.05,
+          0.05
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9,
+          0.05,
+          0.05
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9,
+          0.05,
+          0.05
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_1",
+        "B": "opt_1"
+      },
+      "averagedUniqueTop": "opt_1"
+    },
+    {
+      "unitId": "1:agent:hiddenbench:1:1:X3",
+      "sourceTaskId": 1,
+      "agentId": "agent:hiddenbench:1:1",
+      "checkpointRound": 3,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9,
+          0.05,
+          0.05
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9,
+          0.05,
+          0.05
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9,
+          0.05,
+          0.05
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_1",
+        "B": "opt_1"
+      },
+      "averagedUniqueTop": "opt_1"
+    },
+    {
+      "unitId": "1:agent:hiddenbench:1:2:X0",
+      "sourceTaskId": 1,
+      "agentId": "agent:hiddenbench:1:2",
+      "checkpointRound": 0,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.2,
+          0.1
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          0.5,
+          0.5
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.35,
+          0.35,
+          0.3
+        ]
+      },
+      "duplicateTotalVariation": 0.7,
+      "repeatUniqueTops": {
+        "A": "opt_1",
+        "B": null
+      },
+      "averagedUniqueTop": null
+    },
+    {
+      "unitId": "1:agent:hiddenbench:1:2:X1",
+      "sourceTaskId": 1,
+      "agentId": "agent:hiddenbench:1:2",
+      "checkpointRound": 1,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9,
+          0.05,
+          0.05
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9,
+          0.05,
+          0.05
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9,
+          0.05,
+          0.05
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_1",
+        "B": "opt_1"
+      },
+      "averagedUniqueTop": "opt_1"
+    },
+    {
+      "unitId": "1:agent:hiddenbench:1:2:X2",
+      "sourceTaskId": 1,
+      "agentId": "agent:hiddenbench:1:2",
+      "checkpointRound": 2,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9,
+          0.05,
+          0.05
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9,
+          0.05,
+          0.05
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9,
+          0.05,
+          0.05
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_1",
+        "B": "opt_1"
+      },
+      "averagedUniqueTop": "opt_1"
+    },
+    {
+      "unitId": "1:agent:hiddenbench:1:2:X3",
+      "sourceTaskId": 1,
+      "agentId": "agent:hiddenbench:1:2",
+      "checkpointRound": 3,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          1,
+          0,
+          0
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          1,
+          0,
+          0
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          1,
+          0,
+          0
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_1",
+        "B": "opt_1"
+      },
+      "averagedUniqueTop": "opt_1"
+    },
+    {
+      "unitId": "1:agent:hiddenbench:1:3:X0",
+      "sourceTaskId": 1,
+      "agentId": "agent:hiddenbench:1:3",
+      "checkpointRound": 0,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.4,
+          0.4,
+          0.2
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.4,
+          0.4,
+          0.2
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.4,
+          0.4,
+          0.2
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": null,
+        "B": null
+      },
+      "averagedUniqueTop": null
+    },
+    {
+      "unitId": "1:agent:hiddenbench:1:3:X1",
+      "sourceTaskId": 1,
+      "agentId": "agent:hiddenbench:1:3",
+      "checkpointRound": 1,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9,
+          0.05,
+          0.05
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9,
+          0.05,
+          0.05
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9,
+          0.05,
+          0.05
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_1",
+        "B": "opt_1"
+      },
+      "averagedUniqueTop": "opt_1"
+    },
+    {
+      "unitId": "1:agent:hiddenbench:1:3:X2",
+      "sourceTaskId": 1,
+      "agentId": "agent:hiddenbench:1:3",
+      "checkpointRound": 2,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9,
+          0.05,
+          0.05
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9,
+          0.05,
+          0.05
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9,
+          0.05,
+          0.05
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_1",
+        "B": "opt_1"
+      },
+      "averagedUniqueTop": "opt_1"
+    },
+    {
+      "unitId": "1:agent:hiddenbench:1:3:X3",
+      "sourceTaskId": 1,
+      "agentId": "agent:hiddenbench:1:3",
+      "checkpointRound": 3,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9,
+          0.05,
+          0.05
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          1,
+          0,
+          0
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.95,
+          0.025,
+          0.025
+        ]
+      },
+      "duplicateTotalVariation": 0.09999999999999998,
+      "repeatUniqueTops": {
+        "A": "opt_1",
+        "B": "opt_1"
+      },
+      "averagedUniqueTop": "opt_1"
+    },
+    {
+      "unitId": "1:agent:hiddenbench:1:4:X0",
+      "sourceTaskId": 1,
+      "agentId": "agent:hiddenbench:1:4",
+      "checkpointRound": 0,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.6,
+          0.3,
+          0.1
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.2,
+          0.1
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.6499999999999999,
+          0.25,
+          0.1
+        ]
+      },
+      "duplicateTotalVariation": 0.09999999999999998,
+      "repeatUniqueTops": {
+        "A": "opt_1",
+        "B": "opt_1"
+      },
+      "averagedUniqueTop": "opt_1"
+    },
+    {
+      "unitId": "1:agent:hiddenbench:1:4:X1",
+      "sourceTaskId": 1,
+      "agentId": "agent:hiddenbench:1:4",
+      "checkpointRound": 1,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9,
+          0.1,
+          0
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9,
+          0.1,
+          0
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9,
+          0.1,
+          0
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_1",
+        "B": "opt_1"
+      },
+      "averagedUniqueTop": "opt_1"
+    },
+    {
+      "unitId": "1:agent:hiddenbench:1:4:X2",
+      "sourceTaskId": 1,
+      "agentId": "agent:hiddenbench:1:4",
+      "checkpointRound": 2,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.999999,
+          0.000001,
+          0
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9,
+          0.1,
+          0
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9499995,
+          0.0500005,
+          0
+        ]
+      },
+      "duplicateTotalVariation": 0.09999899999999998,
+      "repeatUniqueTops": {
+        "A": "opt_1",
+        "B": "opt_1"
+      },
+      "averagedUniqueTop": "opt_1"
+    },
+    {
+      "unitId": "1:agent:hiddenbench:1:4:X3",
+      "sourceTaskId": 1,
+      "agentId": "agent:hiddenbench:1:4",
+      "checkpointRound": 3,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9,
+          0.1,
+          0
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          1,
+          0,
+          0
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.95,
+          0.05,
+          0
+        ]
+      },
+      "duplicateTotalVariation": 0.09999999999999999,
+      "repeatUniqueTops": {
+        "A": "opt_1",
+        "B": "opt_1"
+      },
+      "averagedUniqueTop": "opt_1"
+    },
+    {
+      "unitId": "8:agent:hiddenbench:8:1:X0",
+      "sourceTaskId": 8,
+      "agentId": "agent:hiddenbench:8:1",
+      "checkpointRound": 0,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.6,
+          0.3,
+          0.1
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.6,
+          0.3,
+          0.1
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.6,
+          0.3,
+          0.1
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_1",
+        "B": "opt_1"
+      },
+      "averagedUniqueTop": "opt_1"
+    },
+    {
+      "unitId": "8:agent:hiddenbench:8:1:X1",
+      "sourceTaskId": 8,
+      "agentId": "agent:hiddenbench:8:1",
+      "checkpointRound": 1,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.2,
+          0.1
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.2,
+          0.1
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.2,
+          0.1
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_1",
+        "B": "opt_1"
+      },
+      "averagedUniqueTop": "opt_1"
+    },
+    {
+      "unitId": "8:agent:hiddenbench:8:1:X2",
+      "sourceTaskId": 8,
+      "agentId": "agent:hiddenbench:8:1",
+      "checkpointRound": 2,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.2,
+          0.1
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.2,
+          0.1
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.2,
+          0.1
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_1",
+        "B": "opt_1"
+      },
+      "averagedUniqueTop": "opt_1"
+    },
+    {
+      "unitId": "8:agent:hiddenbench:8:1:X3",
+      "sourceTaskId": 8,
+      "agentId": "agent:hiddenbench:8:1",
+      "checkpointRound": 3,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.2,
+          0.1
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.2,
+          0.1
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.2,
+          0.1
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_1",
+        "B": "opt_1"
+      },
+      "averagedUniqueTop": "opt_1"
+    },
+    {
+      "unitId": "8:agent:hiddenbench:8:2:X0",
+      "sourceTaskId": 8,
+      "agentId": "agent:hiddenbench:8:2",
+      "checkpointRound": 0,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.6,
+          0.3,
+          0.1
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.6,
+          0.3,
+          0.1
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.6,
+          0.3,
+          0.1
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_1",
+        "B": "opt_1"
+      },
+      "averagedUniqueTop": "opt_1"
+    },
+    {
+      "unitId": "8:agent:hiddenbench:8:2:X1",
+      "sourceTaskId": 8,
+      "agentId": "agent:hiddenbench:8:2",
+      "checkpointRound": 1,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.2,
+          0.1
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.2,
+          0.1
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.2,
+          0.1
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_1",
+        "B": "opt_1"
+      },
+      "averagedUniqueTop": "opt_1"
+    },
+    {
+      "unitId": "8:agent:hiddenbench:8:2:X2",
+      "sourceTaskId": 8,
+      "agentId": "agent:hiddenbench:8:2",
+      "checkpointRound": 2,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.85,
+          0.1,
+          0.05
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.2,
+          0.1
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7749999999999999,
+          0.15000000000000002,
+          0.07500000000000001
+        ]
+      },
+      "duplicateTotalVariation": 0.15,
+      "repeatUniqueTops": {
+        "A": "opt_1",
+        "B": "opt_1"
+      },
+      "averagedUniqueTop": "opt_1"
+    },
+    {
+      "unitId": "8:agent:hiddenbench:8:2:X3",
+      "sourceTaskId": 8,
+      "agentId": "agent:hiddenbench:8:2",
+      "checkpointRound": 3,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.2,
+          0.1
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.2,
+          0.1
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.2,
+          0.1
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_1",
+        "B": "opt_1"
+      },
+      "averagedUniqueTop": "opt_1"
+    },
+    {
+      "unitId": "8:agent:hiddenbench:8:3:X0",
+      "sourceTaskId": 8,
+      "agentId": "agent:hiddenbench:8:3",
+      "checkpointRound": 0,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.6,
+          0.2,
+          0.2
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.2,
+          0.1
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.6499999999999999,
+          0.2,
+          0.15000000000000002
+        ]
+      },
+      "duplicateTotalVariation": 0.09999999999999999,
+      "repeatUniqueTops": {
+        "A": "opt_1",
+        "B": "opt_1"
+      },
+      "averagedUniqueTop": "opt_1"
+    },
+    {
+      "unitId": "8:agent:hiddenbench:8:3:X1",
+      "sourceTaskId": 8,
+      "agentId": "agent:hiddenbench:8:3",
+      "checkpointRound": 1,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.2,
+          0.1
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.2,
+          0.1
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.2,
+          0.1
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_1",
+        "B": "opt_1"
+      },
+      "averagedUniqueTop": "opt_1"
+    },
+    {
+      "unitId": "8:agent:hiddenbench:8:3:X2",
+      "sourceTaskId": 8,
+      "agentId": "agent:hiddenbench:8:3",
+      "checkpointRound": 2,
+      "repeatStatuses": {
+        "A": "interrupted_unobserved",
+        "B": "valid"
+      },
+      "pairStatus": "unavailable_missing_or_invalid",
+      "repeatA": null,
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.8,
+          0.1,
+          0.1
+        ]
+      },
+      "averagedReport": null,
+      "duplicateTotalVariation": null,
+      "repeatUniqueTops": null,
+      "averagedUniqueTop": null
+    },
+    {
+      "unitId": "8:agent:hiddenbench:8:3:X3",
+      "sourceTaskId": 8,
+      "agentId": "agent:hiddenbench:8:3",
+      "checkpointRound": 3,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.2,
+          0.1
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.2,
+          0.1
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.2,
+          0.1
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_1",
+        "B": "opt_1"
+      },
+      "averagedUniqueTop": "opt_1"
+    },
+    {
+      "unitId": "15:agent:hiddenbench:15:1:X0",
+      "sourceTaskId": 15,
+      "agentId": "agent:hiddenbench:15:1",
+      "checkpointRound": 0,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.3,
+          0.6
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.3,
+          0.6
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.3,
+          0.6
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_3",
+        "B": "opt_3"
+      },
+      "averagedUniqueTop": "opt_3"
+    },
+    {
+      "unitId": "15:agent:hiddenbench:15:1:X1",
+      "sourceTaskId": 15,
+      "agentId": "agent:hiddenbench:15:1",
+      "checkpointRound": 1,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.8,
+          0.1
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.8,
+          0.1
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.8,
+          0.1
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_2",
+        "B": "opt_2"
+      },
+      "averagedUniqueTop": "opt_2"
+    },
+    {
+      "unitId": "15:agent:hiddenbench:15:1:X2",
+      "sourceTaskId": 15,
+      "agentId": "agent:hiddenbench:15:1",
+      "checkpointRound": 2,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.8,
+          0.1
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.8,
+          0.1
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.8,
+          0.1
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_2",
+        "B": "opt_2"
+      },
+      "averagedUniqueTop": "opt_2"
+    },
+    {
+      "unitId": "15:agent:hiddenbench:15:1:X3",
+      "sourceTaskId": 15,
+      "agentId": "agent:hiddenbench:15:1",
+      "checkpointRound": 3,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.8,
+          0.1
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.8,
+          0.1
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.8,
+          0.1
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_2",
+        "B": "opt_2"
+      },
+      "averagedUniqueTop": "opt_2"
+    },
+    {
+      "unitId": "15:agent:hiddenbench:15:2:X0",
+      "sourceTaskId": 15,
+      "agentId": "agent:hiddenbench:15:2",
+      "checkpointRound": 0,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.333333,
+          0.333333,
+          0.333333
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.4,
+          0.2,
+          0.4
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.3666665,
+          0.26666650000000003,
+          0.3666665
+        ]
+      },
+      "duplicateTotalVariation": 0.13333350000000002,
+      "repeatUniqueTops": {
+        "A": null,
+        "B": null
+      },
+      "averagedUniqueTop": null
+    },
+    {
+      "unitId": "15:agent:hiddenbench:15:2:X1",
+      "sourceTaskId": 15,
+      "agentId": "agent:hiddenbench:15:2",
+      "checkpointRound": 1,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.33,
+          0.33,
+          0.34
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.2,
+          0.1,
+          0.7
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.265,
+          0.21500000000000002,
+          0.52
+        ]
+      },
+      "duplicateTotalVariation": 0.36,
+      "repeatUniqueTops": {
+        "A": "opt_3",
+        "B": "opt_3"
+      },
+      "averagedUniqueTop": "opt_3"
+    },
+    {
+      "unitId": "15:agent:hiddenbench:15:2:X2",
+      "sourceTaskId": 15,
+      "agentId": "agent:hiddenbench:15:2",
+      "checkpointRound": 2,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.2,
+          0.1,
+          0.7
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.2,
+          0.1,
+          0.7
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.2,
+          0.1,
+          0.7
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_3",
+        "B": "opt_3"
+      },
+      "averagedUniqueTop": "opt_3"
+    },
+    {
+      "unitId": "15:agent:hiddenbench:15:2:X3",
+      "sourceTaskId": 15,
+      "agentId": "agent:hiddenbench:15:2",
+      "checkpointRound": 3,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.2,
+          0.1,
+          0.7
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.2,
+          0.1,
+          0.7
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.2,
+          0.1,
+          0.7
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_3",
+        "B": "opt_3"
+      },
+      "averagedUniqueTop": "opt_3"
+    },
+    {
+      "unitId": "15:agent:hiddenbench:15:3:X0",
+      "sourceTaskId": 15,
+      "agentId": "agent:hiddenbench:15:3",
+      "checkpointRound": 0,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.333333,
+          0.333333,
+          0.333333
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.333333,
+          0.333333,
+          0.333333
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.333333,
+          0.333333,
+          0.333333
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": null,
+        "B": null
+      },
+      "averagedUniqueTop": null
+    },
+    {
+      "unitId": "15:agent:hiddenbench:15:3:X1",
+      "sourceTaskId": 15,
+      "agentId": "agent:hiddenbench:15:3",
+      "checkpointRound": 1,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0,
+          0.9
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0,
+          0.9
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0,
+          0.9
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_3",
+        "B": "opt_3"
+      },
+      "averagedUniqueTop": "opt_3"
+    },
+    {
+      "unitId": "15:agent:hiddenbench:15:3:X2",
+      "sourceTaskId": 15,
+      "agentId": "agent:hiddenbench:15:3",
+      "checkpointRound": 2,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.1,
+          0.8
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.1,
+          0.8
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.1,
+          0.8
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_3",
+        "B": "opt_3"
+      },
+      "averagedUniqueTop": "opt_3"
+    },
+    {
+      "unitId": "15:agent:hiddenbench:15:3:X3",
+      "sourceTaskId": 15,
+      "agentId": "agent:hiddenbench:15:3",
+      "checkpointRound": 3,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.1,
+          0.8
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0,
+          0.9
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.05,
+          0.8500000000000001
+        ]
+      },
+      "duplicateTotalVariation": 0.09999999999999999,
+      "repeatUniqueTops": {
+        "A": "opt_3",
+        "B": "opt_3"
+      },
+      "averagedUniqueTop": "opt_3"
+    },
+    {
+      "unitId": "15:agent:hiddenbench:15:4:X0",
+      "sourceTaskId": 15,
+      "agentId": "agent:hiddenbench:15:4",
+      "checkpointRound": 0,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.8,
+          0.1
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.8,
+          0.1
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.8,
+          0.1
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_2",
+        "B": "opt_2"
+      },
+      "averagedUniqueTop": "opt_2"
+    },
+    {
+      "unitId": "15:agent:hiddenbench:15:4:X1",
+      "sourceTaskId": 15,
+      "agentId": "agent:hiddenbench:15:4",
+      "checkpointRound": 1,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          1,
+          0
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          1,
+          0
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          1,
+          0
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_2",
+        "B": "opt_2"
+      },
+      "averagedUniqueTop": "opt_2"
+    },
+    {
+      "unitId": "15:agent:hiddenbench:15:4:X2",
+      "sourceTaskId": 15,
+      "agentId": "agent:hiddenbench:15:4",
+      "checkpointRound": 2,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          1,
+          0
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          1,
+          0
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          1,
+          0
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_2",
+        "B": "opt_2"
+      },
+      "averagedUniqueTop": "opt_2"
+    },
+    {
+      "unitId": "15:agent:hiddenbench:15:4:X3",
+      "sourceTaskId": 15,
+      "agentId": "agent:hiddenbench:15:4",
+      "checkpointRound": 3,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          1,
+          0
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          1,
+          0
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          1,
+          0
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_2",
+        "B": "opt_2"
+      },
+      "averagedUniqueTop": "opt_2"
+    },
+    {
+      "unitId": "22:agent:hiddenbench:22:1:X0",
+      "sourceTaskId": 22,
+      "agentId": "agent:hiddenbench:22:1",
+      "checkpointRound": 0,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.3,
+          0.6
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.3,
+          0.6
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.3,
+          0.6
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_3",
+        "B": "opt_3"
+      },
+      "averagedUniqueTop": "opt_3"
+    },
+    {
+      "unitId": "22:agent:hiddenbench:22:1:X1",
+      "sourceTaskId": 22,
+      "agentId": "agent:hiddenbench:22:1",
+      "checkpointRound": 1,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.7,
+          0.2
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.6,
+          0.3
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.6499999999999999,
+          0.25
+        ]
+      },
+      "duplicateTotalVariation": 0.09999999999999998,
+      "repeatUniqueTops": {
+        "A": "opt_2",
+        "B": "opt_2"
+      },
+      "averagedUniqueTop": "opt_2"
+    },
+    {
+      "unitId": "22:agent:hiddenbench:22:1:X2",
+      "sourceTaskId": 22,
+      "agentId": "agent:hiddenbench:22:1",
+      "checkpointRound": 2,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.7,
+          0.2
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.7,
+          0.2
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.7,
+          0.2
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_2",
+        "B": "opt_2"
+      },
+      "averagedUniqueTop": "opt_2"
+    },
+    {
+      "unitId": "22:agent:hiddenbench:22:1:X3",
+      "sourceTaskId": 22,
+      "agentId": "agent:hiddenbench:22:1",
+      "checkpointRound": 3,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.7,
+          0.2
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          0,
+          1
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.05,
+          0.35,
+          0.6
+        ]
+      },
+      "duplicateTotalVariation": 0.8,
+      "repeatUniqueTops": {
+        "A": "opt_2",
+        "B": "opt_3"
+      },
+      "averagedUniqueTop": "opt_3"
+    },
+    {
+      "unitId": "22:agent:hiddenbench:22:2:X0",
+      "sourceTaskId": 22,
+      "agentId": "agent:hiddenbench:22:2",
+      "checkpointRound": 0,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.6,
+          0.3,
+          0.1
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.6,
+          0.3,
+          0.1
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.6,
+          0.3,
+          0.1
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_1",
+        "B": "opt_1"
+      },
+      "averagedUniqueTop": "opt_1"
+    },
+    {
+      "unitId": "22:agent:hiddenbench:22:2:X1",
+      "sourceTaskId": 22,
+      "agentId": "agent:hiddenbench:22:2",
+      "checkpointRound": 1,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.4,
+          0.4,
+          0.2
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.5,
+          0.3,
+          0.2
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.45,
+          0.35,
+          0.2
+        ]
+      },
+      "duplicateTotalVariation": 0.1,
+      "repeatUniqueTops": {
+        "A": null,
+        "B": "opt_1"
+      },
+      "averagedUniqueTop": "opt_1"
+    },
+    {
+      "unitId": "22:agent:hiddenbench:22:2:X2",
+      "sourceTaskId": 22,
+      "agentId": "agent:hiddenbench:22:2",
+      "checkpointRound": 2,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.4,
+          0.5,
+          0.1
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.4,
+          0.4,
+          0.2
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.4,
+          0.45,
+          0.15000000000000002
+        ]
+      },
+      "duplicateTotalVariation": 0.09999999999999999,
+      "repeatUniqueTops": {
+        "A": "opt_2",
+        "B": null
+      },
+      "averagedUniqueTop": "opt_2"
+    },
+    {
+      "unitId": "22:agent:hiddenbench:22:2:X3",
+      "sourceTaskId": 22,
+      "agentId": "agent:hiddenbench:22:2",
+      "checkpointRound": 3,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.4,
+          0.4,
+          0.2
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.4,
+          0.5,
+          0.1
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.4,
+          0.45,
+          0.15000000000000002
+        ]
+      },
+      "duplicateTotalVariation": 0.09999999999999999,
+      "repeatUniqueTops": {
+        "A": null,
+        "B": "opt_2"
+      },
+      "averagedUniqueTop": "opt_2"
+    },
+    {
+      "unitId": "22:agent:hiddenbench:22:3:X0",
+      "sourceTaskId": 22,
+      "agentId": "agent:hiddenbench:22:3",
+      "checkpointRound": 0,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.8,
+          0.1
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.8,
+          0.1
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.8,
+          0.1
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_2",
+        "B": "opt_2"
+      },
+      "averagedUniqueTop": "opt_2"
+    },
+    {
+      "unitId": "22:agent:hiddenbench:22:3:X1",
+      "sourceTaskId": 22,
+      "agentId": "agent:hiddenbench:22:3",
+      "checkpointRound": 1,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          1,
+          0
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          1,
+          0
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          1,
+          0
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_2",
+        "B": "opt_2"
+      },
+      "averagedUniqueTop": "opt_2"
+    },
+    {
+      "unitId": "22:agent:hiddenbench:22:3:X2",
+      "sourceTaskId": 22,
+      "agentId": "agent:hiddenbench:22:3",
+      "checkpointRound": 2,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          1,
+          0
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          1,
+          0
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          1,
+          0
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_2",
+        "B": "opt_2"
+      },
+      "averagedUniqueTop": "opt_2"
+    },
+    {
+      "unitId": "22:agent:hiddenbench:22:3:X3",
+      "sourceTaskId": 22,
+      "agentId": "agent:hiddenbench:22:3",
+      "checkpointRound": 3,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          1,
+          0
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          1,
+          0
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          1,
+          0
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_2",
+        "B": "opt_2"
+      },
+      "averagedUniqueTop": "opt_2"
+    },
+    {
+      "unitId": "22:agent:hiddenbench:22:4:X0",
+      "sourceTaskId": 22,
+      "agentId": "agent:hiddenbench:22:4",
+      "checkpointRound": 0,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.333333,
+          0,
+          0.666667
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.333333,
+          0,
+          0.666667
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.333333,
+          0,
+          0.666667
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_3",
+        "B": "opt_3"
+      },
+      "averagedUniqueTop": "opt_3"
+    },
+    {
+      "unitId": "22:agent:hiddenbench:22:4:X1",
+      "sourceTaskId": 22,
+      "agentId": "agent:hiddenbench:22:4",
+      "checkpointRound": 1,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.333333,
+          0.333333,
+          0.333334
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.333333,
+          0,
+          0.666667
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.333333,
+          0.1666665,
+          0.5000005000000001
+        ]
+      },
+      "duplicateTotalVariation": 0.333333,
+      "repeatUniqueTops": {
+        "A": "opt_3",
+        "B": "opt_3"
+      },
+      "averagedUniqueTop": "opt_3"
+    },
+    {
+      "unitId": "22:agent:hiddenbench:22:4:X2",
+      "sourceTaskId": 22,
+      "agentId": "agent:hiddenbench:22:4",
+      "checkpointRound": 2,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.333333,
+          0,
+          0.666667
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.333333,
+          0,
+          0.666667
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.333333,
+          0,
+          0.666667
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_3",
+        "B": "opt_3"
+      },
+      "averagedUniqueTop": "opt_3"
+    },
+    {
+      "unitId": "22:agent:hiddenbench:22:4:X3",
+      "sourceTaskId": 22,
+      "agentId": "agent:hiddenbench:22:4",
+      "checkpointRound": 3,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.333333,
+          0,
+          0.666667
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.333333,
+          0,
+          0.666667
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.333333,
+          0,
+          0.666667
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_3",
+        "B": "opt_3"
+      },
+      "averagedUniqueTop": "opt_3"
+    },
+    {
+      "unitId": "29:agent:hiddenbench:29:1:X0",
+      "sourceTaskId": 29,
+      "agentId": "agent:hiddenbench:29:1",
+      "checkpointRound": 0,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.333333,
+          0.333333,
+          0.333333
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.333333,
+          0.333333,
+          0.333333
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.333333,
+          0.333333,
+          0.333333
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": null,
+        "B": null
+      },
+      "averagedUniqueTop": null
+    },
+    {
+      "unitId": "29:agent:hiddenbench:29:1:X1",
+      "sourceTaskId": 29,
+      "agentId": "agent:hiddenbench:29:1",
+      "checkpointRound": 1,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.333333,
+          0.333333,
+          0.333333
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.4,
+          0.2,
+          0.4
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.3666665,
+          0.26666650000000003,
+          0.3666665
+        ]
+      },
+      "duplicateTotalVariation": 0.13333350000000002,
+      "repeatUniqueTops": {
+        "A": null,
+        "B": null
+      },
+      "averagedUniqueTop": null
+    },
+    {
+      "unitId": "29:agent:hiddenbench:29:1:X2",
+      "sourceTaskId": 29,
+      "agentId": "agent:hiddenbench:29:1",
+      "checkpointRound": 2,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.1,
+          0.8
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.1,
+          0.8
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.1,
+          0.8
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_3",
+        "B": "opt_3"
+      },
+      "averagedUniqueTop": "opt_3"
+    },
+    {
+      "unitId": "29:agent:hiddenbench:29:1:X3",
+      "sourceTaskId": 29,
+      "agentId": "agent:hiddenbench:29:1",
+      "checkpointRound": 3,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.1,
+          0.8
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.1,
+          0.8
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.1,
+          0.8
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_3",
+        "B": "opt_3"
+      },
+      "averagedUniqueTop": "opt_3"
+    },
+    {
+      "unitId": "29:agent:hiddenbench:29:2:X0",
+      "sourceTaskId": 29,
+      "agentId": "agent:hiddenbench:29:2",
+      "checkpointRound": 0,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.333333,
+          0.333333,
+          0.333334
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.33,
+          0.33,
+          0.34
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.3316665,
+          0.3316665,
+          0.33666700000000005
+        ]
+      },
+      "duplicateTotalVariation": 0.0066659999999999775,
+      "repeatUniqueTops": {
+        "A": "opt_3",
+        "B": "opt_3"
+      },
+      "averagedUniqueTop": "opt_3"
+    },
+    {
+      "unitId": "29:agent:hiddenbench:29:2:X1",
+      "sourceTaskId": 29,
+      "agentId": "agent:hiddenbench:29:2",
+      "checkpointRound": 1,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.99,
+          0.01,
+          0
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9,
+          0.05,
+          0.05
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9450000000000001,
+          0.030000000000000002,
+          0.025
+        ]
+      },
+      "duplicateTotalVariation": 0.09,
+      "repeatUniqueTops": {
+        "A": "opt_1",
+        "B": "opt_1"
+      },
+      "averagedUniqueTop": "opt_1"
+    },
+    {
+      "unitId": "29:agent:hiddenbench:29:2:X2",
+      "sourceTaskId": 29,
+      "agentId": "agent:hiddenbench:29:2",
+      "checkpointRound": 2,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.999999,
+          0.000001,
+          0
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.999999,
+          0.000001,
+          0
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.999999,
+          0.000001,
+          0
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_1",
+        "B": "opt_1"
+      },
+      "averagedUniqueTop": "opt_1"
+    },
+    {
+      "unitId": "29:agent:hiddenbench:29:2:X3",
+      "sourceTaskId": 29,
+      "agentId": "agent:hiddenbench:29:2",
+      "checkpointRound": 3,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.99,
+          0.005,
+          0.005
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9,
+          0.05,
+          0.05
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9450000000000001,
+          0.0275,
+          0.0275
+        ]
+      },
+      "duplicateTotalVariation": 0.09,
+      "repeatUniqueTops": {
+        "A": "opt_1",
+        "B": "opt_1"
+      },
+      "averagedUniqueTop": "opt_1"
+    },
+    {
+      "unitId": "29:agent:hiddenbench:29:3:X0",
+      "sourceTaskId": 29,
+      "agentId": "agent:hiddenbench:29:3",
+      "checkpointRound": 0,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          0.5,
+          0.5
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          0.5,
+          0.5
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          0.5,
+          0.5
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": null,
+        "B": null
+      },
+      "averagedUniqueTop": null
+    },
+    {
+      "unitId": "29:agent:hiddenbench:29:3:X1",
+      "sourceTaskId": 29,
+      "agentId": "agent:hiddenbench:29:3",
+      "checkpointRound": 1,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          0.5,
+          0.5
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          0.5,
+          0.5
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          0.5,
+          0.5
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": null,
+        "B": null
+      },
+      "averagedUniqueTop": null
+    },
+    {
+      "unitId": "29:agent:hiddenbench:29:3:X2",
+      "sourceTaskId": 29,
+      "agentId": "agent:hiddenbench:29:3",
+      "checkpointRound": 2,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          0,
+          1
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          0.5,
+          0.5
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          0.25,
+          0.75
+        ]
+      },
+      "duplicateTotalVariation": 0.5,
+      "repeatUniqueTops": {
+        "A": "opt_3",
+        "B": null
+      },
+      "averagedUniqueTop": "opt_3"
+    },
+    {
+      "unitId": "29:agent:hiddenbench:29:3:X3",
+      "sourceTaskId": 29,
+      "agentId": "agent:hiddenbench:29:3",
+      "checkpointRound": 3,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          0.5,
+          0.5
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          0.5,
+          0.5
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          0.5,
+          0.5
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": null,
+        "B": null
+      },
+      "averagedUniqueTop": null
+    },
+    {
+      "unitId": "29:agent:hiddenbench:29:4:X0",
+      "sourceTaskId": 29,
+      "agentId": "agent:hiddenbench:29:4",
+      "checkpointRound": 0,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.333333,
+          0.333333,
+          0.333333
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.33,
+          0.01,
+          0.66
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.3316665,
+          0.1716665,
+          0.4966665
+        ]
+      },
+      "duplicateTotalVariation": 0.32666649999999997,
+      "repeatUniqueTops": {
+        "A": null,
+        "B": "opt_3"
+      },
+      "averagedUniqueTop": "opt_3"
+    },
+    {
+      "unitId": "29:agent:hiddenbench:29:4:X1",
+      "sourceTaskId": 29,
+      "agentId": "agent:hiddenbench:29:4",
+      "checkpointRound": 1,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.333333,
+          0.333333,
+          0.333333
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.1,
+          0.8
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.21666649999999998,
+          0.21666649999999998,
+          0.5666665
+        ]
+      },
+      "duplicateTotalVariation": 0.4666665,
+      "repeatUniqueTops": {
+        "A": null,
+        "B": "opt_3"
+      },
+      "averagedUniqueTop": "opt_3"
+    },
+    {
+      "unitId": "29:agent:hiddenbench:29:4:X2",
+      "sourceTaskId": 29,
+      "agentId": "agent:hiddenbench:29:4",
+      "checkpointRound": 2,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.1,
+          0.8
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.1,
+          0.8
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.1,
+          0.8
+        ]
+      },
+      "duplicateTotalVariation": 0,
+      "repeatUniqueTops": {
+        "A": "opt_3",
+        "B": "opt_3"
+      },
+      "averagedUniqueTop": "opt_3"
+    },
+    {
+      "unitId": "29:agent:hiddenbench:29:4:X3",
+      "sourceTaskId": 29,
+      "agentId": "agent:hiddenbench:29:4",
+      "checkpointRound": 3,
+      "repeatStatuses": {
+        "A": "valid",
+        "B": "valid"
+      },
+      "pairStatus": "valid",
+      "repeatA": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.333333,
+          0.333333,
+          0.333333
+        ]
+      },
+      "repeatB": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.1,
+          0.8
+        ]
+      },
+      "averagedReport": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.21666649999999998,
+          0.21666649999999998,
+          0.5666665
+        ]
+      },
+      "duplicateTotalVariation": 0.4666665,
+      "repeatUniqueTops": {
+        "A": null,
+        "B": "opt_3"
+      },
+      "averagedUniqueTop": "opt_3"
+    }
+  ],
+  "checkpointRows": [
+    {
+      "sourceTaskId": 1,
+      "checkpointRound": 0,
+      "reportedState": {
+        "comparableAgentIds": [
+          "agent:hiddenbench:1:1",
+          "agent:hiddenbench:1:2",
+          "agent:hiddenbench:1:3",
+          "agent:hiddenbench:1:4"
+        ],
+        "missingOrInvalidAgentIds": [],
+        "rosterComplete": true,
+        "pooledProbabilities": {
+          "optionIds": [
+            "opt_1",
+            "opt_2",
+            "opt_3"
+          ],
+          "values": [
+            0.5249999999999999,
+            0.275,
+            0.19999999999999998
+          ]
+        },
+        "meanNormalizedReportEntropy": 0.866922544766542,
+        "pooledNormalizedEntropy": 0.9240709178525405,
+        "normalizedGeneralizedJsd": 0.057148373085998516,
+        "pooledConcentration": 0.5249999999999999,
+        "maxPairwiseTotalVariation": 0.35,
+        "duplicateDiagnostics": {
+          "validPairCount": 4,
+          "meanDuplicateTotalVariation": 0.19999999999999998,
+          "p90DuplicateTotalVariation": 0.7,
+          "maxDuplicateTotalVariation": 0.7,
+          "uniqueTopAgreementCount": 2,
+          "uniqueTopDisagreementCount": 0,
+          "tieIndeterminateCount": 2
+        }
+      },
+      "offlineEvaluation": {
+        "outcomeOptionId": "opt_1",
+        "pooledBrier": 0.34125000000000005,
+        "meanAgentBrier": 0.3825,
+        "pooledUniqueTop": "opt_1",
+        "pooledTopCorrect": true
+      },
+      "wrongConsensus": {
+        "status": "indeterminate",
+        "consensusOptionId": null,
+        "reason": "repeat_top_tie_or_disagreement"
+      }
+    },
+    {
+      "sourceTaskId": 1,
+      "checkpointRound": 1,
+      "reportedState": {
+        "comparableAgentIds": [
+          "agent:hiddenbench:1:1",
+          "agent:hiddenbench:1:2",
+          "agent:hiddenbench:1:3",
+          "agent:hiddenbench:1:4"
+        ],
+        "missingOrInvalidAgentIds": [],
+        "rosterComplete": true,
+        "pooledProbabilities": {
+          "optionIds": [
+            "opt_1",
+            "opt_2",
+            "opt_3"
+          ],
+          "values": [
+            0.9,
+            0.06875,
+            0.03125
+          ]
+        },
+        "meanNormalizedReportEntropy": 0.3402462496465304,
+        "pooledNormalizedEntropy": 0.35243699241374793,
+        "normalizedGeneralizedJsd": 0.012190742767217544,
+        "pooledConcentration": 0.9,
+        "maxPairwiseTotalVariation": 0.05,
+        "duplicateDiagnostics": {
+          "validPairCount": 4,
+          "meanDuplicateTotalVariation": 0.0125,
+          "p90DuplicateTotalVariation": 0.05,
+          "maxDuplicateTotalVariation": 0.05,
+          "uniqueTopAgreementCount": 4,
+          "uniqueTopDisagreementCount": 0,
+          "tieIndeterminateCount": 0
+        }
+      },
+      "offlineEvaluation": {
+        "outcomeOptionId": "opt_1",
+        "pooledBrier": 0.015703124999999995,
+        "meanAgentBrier": 0.016562499999999994,
+        "pooledUniqueTop": "opt_1",
+        "pooledTopCorrect": true
+      },
+      "wrongConsensus": {
+        "status": "not_wrong_consensus",
+        "consensusOptionId": "opt_1",
+        "reason": "complete_stable_not_wrong"
+      }
+    },
+    {
+      "sourceTaskId": 1,
+      "checkpointRound": 2,
+      "reportedState": {
+        "comparableAgentIds": [
+          "agent:hiddenbench:1:1",
+          "agent:hiddenbench:1:2",
+          "agent:hiddenbench:1:3",
+          "agent:hiddenbench:1:4"
+        ],
+        "missingOrInvalidAgentIds": [],
+        "rosterComplete": true,
+        "pooledProbabilities": {
+          "optionIds": [
+            "opt_1",
+            "opt_2",
+            "opt_3"
+          ],
+          "values": [
+            0.9124998750000001,
+            0.050000125000000006,
+            0.037500000000000006
+          ]
+        },
+        "meanNormalizedReportEntropy": 0.3144216126464777,
+        "pooledNormalizedEntropy": 0.3244730488110221,
+        "normalizedGeneralizedJsd": 0.010051436164544403,
+        "pooledConcentration": 0.9124998750000001,
+        "maxPairwiseTotalVariation": 0.04999999999999999,
+        "duplicateDiagnostics": {
+          "validPairCount": 4,
+          "meanDuplicateTotalVariation": 0.024999749999999994,
+          "p90DuplicateTotalVariation": 0.09999899999999998,
+          "maxDuplicateTotalVariation": 0.09999899999999998,
+          "uniqueTopAgreementCount": 4,
+          "uniqueTopDisagreementCount": 0,
+          "tieIndeterminateCount": 0
+        }
+      },
+      "offlineEvaluation": {
+        "outcomeOptionId": "opt_1",
+        "pooledBrier": 0.011562534375031238,
+        "meanAgentBrier": 0.012500025000124997,
+        "pooledUniqueTop": "opt_1",
+        "pooledTopCorrect": true
+      },
+      "wrongConsensus": {
+        "status": "not_wrong_consensus",
+        "consensusOptionId": "opt_1",
+        "reason": "complete_stable_not_wrong"
+      }
+    },
+    {
+      "sourceTaskId": 1,
+      "checkpointRound": 3,
+      "reportedState": {
+        "comparableAgentIds": [
+          "agent:hiddenbench:1:1",
+          "agent:hiddenbench:1:2",
+          "agent:hiddenbench:1:3",
+          "agent:hiddenbench:1:4"
+        ],
+        "missingOrInvalidAgentIds": [],
+        "rosterComplete": true,
+        "pooledProbabilities": {
+          "optionIds": [
+            "opt_1",
+            "opt_2",
+            "opt_3"
+          ],
+          "values": [
+            0.95,
+            0.03125,
+            0.018750000000000003
+          ]
+        },
+        "meanNormalizedReportEntropy": 0.18798386511966855,
+        "pooledNormalizedEntropy": 0.21080540209006893,
+        "normalizedGeneralizedJsd": 0.022821536970400375,
+        "pooledConcentration": 0.95,
+        "maxPairwiseTotalVariation": 0.09999999999999998,
+        "duplicateDiagnostics": {
+          "validPairCount": 4,
+          "meanDuplicateTotalVariation": 0.04999999999999999,
+          "p90DuplicateTotalVariation": 0.09999999999999999,
+          "maxDuplicateTotalVariation": 0.09999999999999999,
+          "uniqueTopAgreementCount": 4,
+          "uniqueTopDisagreementCount": 0,
+          "tieIndeterminateCount": 0
+        }
+      },
+      "offlineEvaluation": {
+        "outcomeOptionId": "opt_1",
+        "pooledBrier": 0.0038281250000000043,
+        "meanAgentBrier": 0.005937500000000001,
+        "pooledUniqueTop": "opt_1",
+        "pooledTopCorrect": true
+      },
+      "wrongConsensus": {
+        "status": "not_wrong_consensus",
+        "consensusOptionId": "opt_1",
+        "reason": "complete_stable_not_wrong"
+      }
+    },
+    {
+      "sourceTaskId": 8,
+      "checkpointRound": 0,
+      "reportedState": {
+        "comparableAgentIds": [
+          "agent:hiddenbench:8:1",
+          "agent:hiddenbench:8:2",
+          "agent:hiddenbench:8:3"
+        ],
+        "missingOrInvalidAgentIds": [],
+        "rosterComplete": true,
+        "pooledProbabilities": {
+          "optionIds": [
+            "opt_1",
+            "opt_2",
+            "opt_3"
+          ],
+          "values": [
+            0.6166666666666666,
+            0.26666666666666666,
+            0.11666666666666667
+          ]
+        },
+        "meanNormalizedReportEntropy": 0.8138618610226548,
+        "pooledNormalizedEntropy": 0.8203367242478534,
+        "normalizedGeneralizedJsd": 0.006474863225198635,
+        "pooledConcentration": 0.6166666666666666,
+        "maxPairwiseTotalVariation": 0.09999999999999996,
+        "duplicateDiagnostics": {
+          "validPairCount": 3,
+          "meanDuplicateTotalVariation": 0.03333333333333333,
+          "p90DuplicateTotalVariation": 0.09999999999999999,
+          "maxDuplicateTotalVariation": 0.09999999999999999,
+          "uniqueTopAgreementCount": 3,
+          "uniqueTopDisagreementCount": 0,
+          "tieIndeterminateCount": 0
+        }
+      },
+      "offlineEvaluation": {
+        "outcomeOptionId": "opt_1",
+        "pooledBrier": 0.23166666666666672,
+        "meanAgentBrier": 0.23500000000000001,
+        "pooledUniqueTop": "opt_1",
+        "pooledTopCorrect": true
+      },
+      "wrongConsensus": {
+        "status": "not_wrong_consensus",
+        "consensusOptionId": "opt_1",
+        "reason": "complete_stable_not_wrong"
+      }
+    },
+    {
+      "sourceTaskId": 8,
+      "checkpointRound": 1,
+      "reportedState": {
+        "comparableAgentIds": [
+          "agent:hiddenbench:8:1",
+          "agent:hiddenbench:8:2",
+          "agent:hiddenbench:8:3"
+        ],
+        "missingOrInvalidAgentIds": [],
+        "rosterComplete": true,
+        "pooledProbabilities": {
+          "optionIds": [
+            "opt_1",
+            "opt_2",
+            "opt_3"
+          ],
+          "values": [
+            0.7,
+            0.2,
+            0.1
+          ]
+        },
+        "meanNormalizedReportEntropy": 0.7298466991620977,
+        "pooledNormalizedEntropy": 0.7298466991620975,
+        "normalizedGeneralizedJsd": 0,
+        "pooledConcentration": 0.7,
+        "maxPairwiseTotalVariation": 0,
+        "duplicateDiagnostics": {
+          "validPairCount": 3,
+          "meanDuplicateTotalVariation": 0,
+          "p90DuplicateTotalVariation": 0,
+          "maxDuplicateTotalVariation": 0,
+          "uniqueTopAgreementCount": 3,
+          "uniqueTopDisagreementCount": 0,
+          "tieIndeterminateCount": 0
+        }
+      },
+      "offlineEvaluation": {
+        "outcomeOptionId": "opt_1",
+        "pooledBrier": 0.14000000000000004,
+        "meanAgentBrier": 0.14000000000000004,
+        "pooledUniqueTop": "opt_1",
+        "pooledTopCorrect": true
+      },
+      "wrongConsensus": {
+        "status": "not_wrong_consensus",
+        "consensusOptionId": "opt_1",
+        "reason": "complete_stable_not_wrong"
+      }
+    },
+    {
+      "sourceTaskId": 8,
+      "checkpointRound": 2,
+      "reportedState": {
+        "comparableAgentIds": [
+          "agent:hiddenbench:8:1",
+          "agent:hiddenbench:8:2"
+        ],
+        "missingOrInvalidAgentIds": [
+          "agent:hiddenbench:8:3"
+        ],
+        "rosterComplete": false,
+        "pooledProbabilities": {
+          "optionIds": [
+            "opt_1",
+            "opt_2",
+            "opt_3"
+          ],
+          "values": [
+            0.7374999999999999,
+            0.17500000000000002,
+            0.08750000000000001
+          ]
+        },
+        "meanNormalizedReportEntropy": 0.6727569390922461,
+        "pooledNormalizedEntropy": 0.6760716284803775,
+        "normalizedGeneralizedJsd": 0.0033146893881313977,
+        "pooledConcentration": 0.7374999999999999,
+        "maxPairwiseTotalVariation": 0.07499999999999997,
+        "duplicateDiagnostics": {
+          "validPairCount": 2,
+          "meanDuplicateTotalVariation": 0.075,
+          "p90DuplicateTotalVariation": 0.15,
+          "maxDuplicateTotalVariation": 0.15,
+          "uniqueTopAgreementCount": 2,
+          "uniqueTopDisagreementCount": 0,
+          "tieIndeterminateCount": 0
+        }
+      },
+      "offlineEvaluation": {
+        "outcomeOptionId": "opt_1",
+        "pooledBrier": 0.10718750000000005,
+        "meanAgentBrier": 0.10937500000000006,
+        "pooledUniqueTop": "opt_1",
+        "pooledTopCorrect": true
+      },
+      "wrongConsensus": {
+        "status": "indeterminate",
+        "consensusOptionId": null,
+        "reason": "incomplete_roster"
+      }
+    },
+    {
+      "sourceTaskId": 8,
+      "checkpointRound": 3,
+      "reportedState": {
+        "comparableAgentIds": [
+          "agent:hiddenbench:8:1",
+          "agent:hiddenbench:8:2",
+          "agent:hiddenbench:8:3"
+        ],
+        "missingOrInvalidAgentIds": [],
+        "rosterComplete": true,
+        "pooledProbabilities": {
+          "optionIds": [
+            "opt_1",
+            "opt_2",
+            "opt_3"
+          ],
+          "values": [
+            0.7,
+            0.2,
+            0.1
+          ]
+        },
+        "meanNormalizedReportEntropy": 0.7298466991620977,
+        "pooledNormalizedEntropy": 0.7298466991620975,
+        "normalizedGeneralizedJsd": 0,
+        "pooledConcentration": 0.7,
+        "maxPairwiseTotalVariation": 0,
+        "duplicateDiagnostics": {
+          "validPairCount": 3,
+          "meanDuplicateTotalVariation": 0,
+          "p90DuplicateTotalVariation": 0,
+          "maxDuplicateTotalVariation": 0,
+          "uniqueTopAgreementCount": 3,
+          "uniqueTopDisagreementCount": 0,
+          "tieIndeterminateCount": 0
+        }
+      },
+      "offlineEvaluation": {
+        "outcomeOptionId": "opt_1",
+        "pooledBrier": 0.14000000000000004,
+        "meanAgentBrier": 0.14000000000000004,
+        "pooledUniqueTop": "opt_1",
+        "pooledTopCorrect": true
+      },
+      "wrongConsensus": {
+        "status": "not_wrong_consensus",
+        "consensusOptionId": "opt_1",
+        "reason": "complete_stable_not_wrong"
+      }
+    },
+    {
+      "sourceTaskId": 15,
+      "checkpointRound": 0,
+      "reportedState": {
+        "comparableAgentIds": [
+          "agent:hiddenbench:15:1",
+          "agent:hiddenbench:15:2",
+          "agent:hiddenbench:15:3",
+          "agent:hiddenbench:15:4"
+        ],
+        "missingOrInvalidAgentIds": [],
+        "rosterComplete": true,
+        "pooledProbabilities": {
+          "optionIds": [
+            "opt_1",
+            "opt_2",
+            "opt_3"
+          ],
+          "values": [
+            0.224999875,
+            0.424999875,
+            0.349999875
+          ]
+        },
+        "meanNormalizedReportEntropy": 0.8473901261788006,
+        "pooledNormalizedEntropy": 0.9709686929447277,
+        "normalizedGeneralizedJsd": 0.12357856676592704,
+        "pooledConcentration": 0.424999875,
+        "maxPairwiseTotalVariation": 0.5333332500000001,
+        "duplicateDiagnostics": {
+          "validPairCount": 4,
+          "meanDuplicateTotalVariation": 0.033333375000000005,
+          "p90DuplicateTotalVariation": 0.13333350000000002,
+          "maxDuplicateTotalVariation": 0.13333350000000002,
+          "uniqueTopAgreementCount": 2,
+          "uniqueTopDisagreementCount": 0,
+          "tieIndeterminateCount": 2
+        }
+      },
+      "offlineEvaluation": {
+        "outcomeOptionId": "opt_3",
+        "pooledBrier": 0.6537500000000469,
+        "meanAgentBrier": 0.7483333333334375,
+        "pooledUniqueTop": "opt_2",
+        "pooledTopCorrect": false
+      },
+      "wrongConsensus": {
+        "status": "indeterminate",
+        "consensusOptionId": null,
+        "reason": "repeat_top_tie_or_disagreement"
+      }
+    },
+    {
+      "sourceTaskId": 15,
+      "checkpointRound": 1,
+      "reportedState": {
+        "comparableAgentIds": [
+          "agent:hiddenbench:15:1",
+          "agent:hiddenbench:15:2",
+          "agent:hiddenbench:15:3",
+          "agent:hiddenbench:15:4"
+        ],
+        "missingOrInvalidAgentIds": [],
+        "rosterComplete": true,
+        "pooledProbabilities": {
+          "optionIds": [
+            "opt_1",
+            "opt_2",
+            "opt_3"
+          ],
+          "values": [
+            0.11624999999999999,
+            0.50375,
+            0.38
+          ]
+        },
+        "meanNormalizedReportEntropy": 0.45206201736535917,
+        "pooledNormalizedEntropy": 0.8767990554171352,
+        "normalizedGeneralizedJsd": 0.42473703805177604,
+        "pooledConcentration": 0.50375,
+        "maxPairwiseTotalVariation": 1,
+        "duplicateDiagnostics": {
+          "validPairCount": 4,
+          "meanDuplicateTotalVariation": 0.09,
+          "p90DuplicateTotalVariation": 0.36,
+          "maxDuplicateTotalVariation": 0.36,
+          "uniqueTopAgreementCount": 4,
+          "uniqueTopDisagreementCount": 0,
+          "tieIndeterminateCount": 0
+        }
+      },
+      "offlineEvaluation": {
+        "outcomeOptionId": "opt_3",
+        "pooledBrier": 0.6516781250000001,
+        "meanAgentBrier": 0.9567125000000001,
+        "pooledUniqueTop": "opt_2",
+        "pooledTopCorrect": false
+      },
+      "wrongConsensus": {
+        "status": "not_wrong_consensus",
+        "consensusOptionId": null,
+        "reason": "complete_stable_not_wrong"
+      }
+    },
+    {
+      "sourceTaskId": 15,
+      "checkpointRound": 2,
+      "reportedState": {
+        "comparableAgentIds": [
+          "agent:hiddenbench:15:1",
+          "agent:hiddenbench:15:2",
+          "agent:hiddenbench:15:3",
+          "agent:hiddenbench:15:4"
+        ],
+        "missingOrInvalidAgentIds": [],
+        "rosterComplete": true,
+        "pooledProbabilities": {
+          "optionIds": [
+            "opt_1",
+            "opt_2",
+            "opt_3"
+          ],
+          "values": [
+            0.1,
+            0.5,
+            0.4
+          ]
+        },
+        "meanNormalizedReportEntropy": 0.4732976076494678,
+        "pooledNormalizedEntropy": 0.8586727110732552,
+        "normalizedGeneralizedJsd": 0.38537510342378734,
+        "pooledConcentration": 0.5,
+        "maxPairwiseTotalVariation": 0.9,
+        "duplicateDiagnostics": {
+          "validPairCount": 4,
+          "meanDuplicateTotalVariation": 0,
+          "p90DuplicateTotalVariation": 0,
+          "maxDuplicateTotalVariation": 0,
+          "uniqueTopAgreementCount": 4,
+          "uniqueTopDisagreementCount": 0,
+          "tieIndeterminateCount": 0
+        }
+      },
+      "offlineEvaluation": {
+        "outcomeOptionId": "opt_3",
+        "pooledBrier": 0.62,
+        "meanAgentBrier": 0.915,
+        "pooledUniqueTop": "opt_2",
+        "pooledTopCorrect": false
+      },
+      "wrongConsensus": {
+        "status": "not_wrong_consensus",
+        "consensusOptionId": null,
+        "reason": "complete_stable_not_wrong"
+      }
+    },
+    {
+      "sourceTaskId": 15,
+      "checkpointRound": 3,
+      "reportedState": {
+        "comparableAgentIds": [
+          "agent:hiddenbench:15:1",
+          "agent:hiddenbench:15:2",
+          "agent:hiddenbench:15:3",
+          "agent:hiddenbench:15:4"
+        ],
+        "missingOrInvalidAgentIds": [],
+        "rosterComplete": true,
+        "pooledProbabilities": {
+          "optionIds": [
+            "opt_1",
+            "opt_2",
+            "opt_3"
+          ],
+          "values": [
+            0.1,
+            0.48750000000000004,
+            0.4125
+          ]
+        },
+        "meanNormalizedReportEntropy": 0.44579799567387496,
+        "pooledNormalizedEntropy": 0.8608922534986264,
+        "normalizedGeneralizedJsd": 0.41509425782475146,
+        "pooledConcentration": 0.48750000000000004,
+        "maxPairwiseTotalVariation": 0.9500000000000001,
+        "duplicateDiagnostics": {
+          "validPairCount": 4,
+          "meanDuplicateTotalVariation": 0.024999999999999998,
+          "p90DuplicateTotalVariation": 0.09999999999999999,
+          "maxDuplicateTotalVariation": 0.09999999999999999,
+          "uniqueTopAgreementCount": 4,
+          "uniqueTopDisagreementCount": 0,
+          "tieIndeterminateCount": 0
+        }
+      },
+      "offlineEvaluation": {
+        "outcomeOptionId": "opt_3",
+        "pooledBrier": 0.5928125000000001,
+        "meanAgentBrier": 0.9087500000000001,
+        "pooledUniqueTop": "opt_2",
+        "pooledTopCorrect": false
+      },
+      "wrongConsensus": {
+        "status": "not_wrong_consensus",
+        "consensusOptionId": null,
+        "reason": "complete_stable_not_wrong"
+      }
+    },
+    {
+      "sourceTaskId": 22,
+      "checkpointRound": 0,
+      "reportedState": {
+        "comparableAgentIds": [
+          "agent:hiddenbench:22:1",
+          "agent:hiddenbench:22:2",
+          "agent:hiddenbench:22:3",
+          "agent:hiddenbench:22:4"
+        ],
+        "missingOrInvalidAgentIds": [],
+        "rosterComplete": true,
+        "pooledProbabilities": {
+          "optionIds": [
+            "opt_1",
+            "opt_2",
+            "opt_3"
+          ],
+          "values": [
+            0.28333325,
+            0.35,
+            0.36666675
+          ]
+        },
+        "meanNormalizedReportEntropy": 0.6989356659966142,
+        "pooledNormalizedEntropy": 0.9945598507220318,
+        "normalizedGeneralizedJsd": 0.2956241847254176,
+        "pooledConcentration": 0.36666675,
+        "maxPairwiseTotalVariation": 0.8,
+        "duplicateDiagnostics": {
+          "validPairCount": 4,
+          "meanDuplicateTotalVariation": 0,
+          "p90DuplicateTotalVariation": 0,
+          "maxDuplicateTotalVariation": 0,
+          "uniqueTopAgreementCount": 4,
+          "uniqueTopDisagreementCount": 0,
+          "tieIndeterminateCount": 0
+        }
+      },
+      "offlineEvaluation": {
+        "outcomeOptionId": "opt_1",
+        "pooledBrier": 0.770555736111125,
+        "meanAgentBrier": 0.9672224444445001,
+        "pooledUniqueTop": "opt_3",
+        "pooledTopCorrect": false
+      },
+      "wrongConsensus": {
+        "status": "not_wrong_consensus",
+        "consensusOptionId": null,
+        "reason": "complete_stable_not_wrong"
+      }
+    },
+    {
+      "sourceTaskId": 22,
+      "checkpointRound": 1,
+      "reportedState": {
+        "comparableAgentIds": [
+          "agent:hiddenbench:22:1",
+          "agent:hiddenbench:22:2",
+          "agent:hiddenbench:22:3",
+          "agent:hiddenbench:22:4"
+        ],
+        "missingOrInvalidAgentIds": [],
+        "rosterComplete": true,
+        "pooledProbabilities": {
+          "optionIds": [
+            "opt_1",
+            "opt_2",
+            "opt_3"
+          ],
+          "values": [
+            0.22083325,
+            0.541666625,
+            0.237500125
+          ]
+        },
+        "meanNormalizedReportEntropy": 0.6637689112291072,
+        "pooledNormalizedEntropy": 0.916665804369243,
+        "normalizedGeneralizedJsd": 0.25289689314013586,
+        "pooledConcentration": 0.541666625,
+        "maxPairwiseTotalVariation": 0.8333335,
+        "duplicateDiagnostics": {
+          "validPairCount": 4,
+          "meanDuplicateTotalVariation": 0.13333325,
+          "p90DuplicateTotalVariation": 0.333333,
+          "maxDuplicateTotalVariation": 0.333333,
+          "uniqueTopAgreementCount": 3,
+          "uniqueTopDisagreementCount": 0,
+          "tieIndeterminateCount": 1
+        }
+      },
+      "offlineEvaluation": {
+        "outcomeOptionId": "opt_1",
+        "pooledBrier": 0.9569098663194687,
+        "meanAgentBrier": 1.120555777777875,
+        "pooledUniqueTop": "opt_2",
+        "pooledTopCorrect": false
+      },
+      "wrongConsensus": {
+        "status": "indeterminate",
+        "consensusOptionId": null,
+        "reason": "repeat_top_tie_or_disagreement"
+      }
+    },
+    {
+      "sourceTaskId": 22,
+      "checkpointRound": 2,
+      "reportedState": {
+        "comparableAgentIds": [
+          "agent:hiddenbench:22:1",
+          "agent:hiddenbench:22:2",
+          "agent:hiddenbench:22:3",
+          "agent:hiddenbench:22:4"
+        ],
+        "missingOrInvalidAgentIds": [],
+        "rosterComplete": true,
+        "pooledProbabilities": {
+          "optionIds": [
+            "opt_1",
+            "opt_2",
+            "opt_3"
+          ],
+          "values": [
+            0.20833325,
+            0.5375,
+            0.25416675
+          ]
+        },
+        "meanNormalizedReportEntropy": 0.5572359941781853,
+        "pooledNormalizedEntropy": 0.9181017269594606,
+        "normalizedGeneralizedJsd": 0.3608657327812753,
+        "pooledConcentration": 0.5375,
+        "maxPairwiseTotalVariation": 1,
+        "duplicateDiagnostics": {
+          "validPairCount": 4,
+          "meanDuplicateTotalVariation": 0.024999999999999998,
+          "p90DuplicateTotalVariation": 0.09999999999999999,
+          "maxDuplicateTotalVariation": 0.09999999999999999,
+          "uniqueTopAgreementCount": 3,
+          "uniqueTopDisagreementCount": 0,
+          "tieIndeterminateCount": 1
+        }
+      },
+      "offlineEvaluation": {
+        "outcomeOptionId": "opt_1",
+        "pooledBrier": 0.980243229861125,
+        "meanAgentBrier": 1.2034724444445,
+        "pooledUniqueTop": "opt_2",
+        "pooledTopCorrect": false
+      },
+      "wrongConsensus": {
+        "status": "indeterminate",
+        "consensusOptionId": null,
+        "reason": "repeat_top_tie_or_disagreement"
+      }
+    },
+    {
+      "sourceTaskId": 22,
+      "checkpointRound": 3,
+      "reportedState": {
+        "comparableAgentIds": [
+          "agent:hiddenbench:22:1",
+          "agent:hiddenbench:22:2",
+          "agent:hiddenbench:22:3",
+          "agent:hiddenbench:22:4"
+        ],
+        "missingOrInvalidAgentIds": [],
+        "rosterComplete": true,
+        "pooledProbabilities": {
+          "optionIds": [
+            "opt_1",
+            "opt_2",
+            "opt_3"
+          ],
+          "values": [
+            0.19583325000000001,
+            0.45,
+            0.35416675
+          ]
+        },
+        "meanNormalizedReportEntropy": 0.5622198222298096,
+        "pooledNormalizedEntropy": 0.9523410644598749,
+        "normalizedGeneralizedJsd": 0.3901212422300653,
+        "pooledConcentration": 0.45,
+        "maxPairwiseTotalVariation": 1,
+        "duplicateDiagnostics": {
+          "validPairCount": 4,
+          "meanDuplicateTotalVariation": 0.225,
+          "p90DuplicateTotalVariation": 0.8,
+          "maxDuplicateTotalVariation": 0.8,
+          "uniqueTopAgreementCount": 2,
+          "uniqueTopDisagreementCount": 1,
+          "tieIndeterminateCount": 1
+        }
+      },
+      "offlineEvaluation": {
+        "outcomeOptionId": "opt_1",
+        "pooledBrier": 0.974618248611125,
+        "meanAgentBrier": 1.2147224444445,
+        "pooledUniqueTop": "opt_2",
+        "pooledTopCorrect": false
+      },
+      "wrongConsensus": {
+        "status": "indeterminate",
+        "consensusOptionId": null,
+        "reason": "repeat_top_tie_or_disagreement"
+      }
+    },
+    {
+      "sourceTaskId": 29,
+      "checkpointRound": 0,
+      "reportedState": {
+        "comparableAgentIds": [
+          "agent:hiddenbench:29:1",
+          "agent:hiddenbench:29:2",
+          "agent:hiddenbench:29:3",
+          "agent:hiddenbench:29:4"
+        ],
+        "missingOrInvalidAgentIds": [],
+        "rosterComplete": true,
+        "pooledProbabilities": {
+          "optionIds": [
+            "opt_1",
+            "opt_2",
+            "opt_3"
+          ],
+          "values": [
+            0.24916649999999999,
+            0.3341665,
+            0.41666662499999996
+          ]
+        },
+        "meanNormalizedReportEntropy": 0.8889575107783291,
+        "pooledNormalizedEntropy": 0.9806135395670069,
+        "normalizedGeneralizedJsd": 0.09165602878867785,
+        "pooledConcentration": 0.41666662499999996,
+        "maxPairwiseTotalVariation": 0.3333335,
+        "duplicateDiagnostics": {
+          "validPairCount": 4,
+          "meanDuplicateTotalVariation": 0.08333312499999998,
+          "p90DuplicateTotalVariation": 0.32666649999999997,
+          "maxDuplicateTotalVariation": 0.32666649999999997,
+          "uniqueTopAgreementCount": 1,
+          "uniqueTopDisagreementCount": 0,
+          "tieIndeterminateCount": 3
+        }
+      },
+      "offlineEvaluation": {
+        "outcomeOptionId": "opt_2",
+        "pooledBrier": 0.6790292708333906,
+        "meanAgentBrier": 0.7198750841668126,
+        "pooledUniqueTop": "opt_3",
+        "pooledTopCorrect": false
+      },
+      "wrongConsensus": {
+        "status": "indeterminate",
+        "consensusOptionId": null,
+        "reason": "repeat_top_tie_or_disagreement"
+      }
+    },
+    {
+      "sourceTaskId": 29,
+      "checkpointRound": 1,
+      "reportedState": {
+        "comparableAgentIds": [
+          "agent:hiddenbench:29:1",
+          "agent:hiddenbench:29:2",
+          "agent:hiddenbench:29:3",
+          "agent:hiddenbench:29:4"
+        ],
+        "missingOrInvalidAgentIds": [],
+        "rosterComplete": true,
+        "pooledProbabilities": {
+          "optionIds": [
+            "opt_1",
+            "opt_2",
+            "opt_3"
+          ],
+          "values": [
+            0.38208325,
+            0.25333325,
+            0.36458325
+          ]
+        },
+        "meanNormalizedReportEntropy": 0.6865122949012952,
+        "pooledNormalizedEntropy": 0.986073452365586,
+        "normalizedGeneralizedJsd": 0.2995611574642908,
+        "pooledConcentration": 0.38208325,
+        "maxPairwiseTotalVariation": 0.9450000000000001,
+        "duplicateDiagnostics": {
+          "validPairCount": 4,
+          "meanDuplicateTotalVariation": 0.1725,
+          "p90DuplicateTotalVariation": 0.4666665,
+          "maxDuplicateTotalVariation": 0.4666665,
+          "uniqueTopAgreementCount": 1,
+          "uniqueTopDisagreementCount": 0,
+          "tieIndeterminateCount": 3
+        }
+      },
+      "offlineEvaluation": {
+        "outcomeOptionId": "opt_2",
+        "pooledBrier": 0.8364197916666873,
+        "meanAgentBrier": 1.030720833333375,
+        "pooledUniqueTop": "opt_1",
+        "pooledTopCorrect": false
+      },
+      "wrongConsensus": {
+        "status": "indeterminate",
+        "consensusOptionId": null,
+        "reason": "repeat_top_tie_or_disagreement"
+      }
+    },
+    {
+      "sourceTaskId": 29,
+      "checkpointRound": 2,
+      "reportedState": {
+        "comparableAgentIds": [
+          "agent:hiddenbench:29:1",
+          "agent:hiddenbench:29:2",
+          "agent:hiddenbench:29:3",
+          "agent:hiddenbench:29:4"
+        ],
+        "missingOrInvalidAgentIds": [],
+        "rosterComplete": true,
+        "pooledProbabilities": {
+          "optionIds": [
+            "opt_1",
+            "opt_2",
+            "opt_3"
+          ],
+          "values": [
+            0.29999975,
+            0.11250025,
+            0.5875
+          ]
+        },
+        "meanNormalizedReportEntropy": 0.4188041810592764,
+        "pooledNormalizedEntropy": 0.8369296969508176,
+        "normalizedGeneralizedJsd": 0.41812551589154123,
+        "pooledConcentration": 0.5875,
+        "maxPairwiseTotalVariation": 0.999999,
+        "duplicateDiagnostics": {
+          "validPairCount": 4,
+          "meanDuplicateTotalVariation": 0.125,
+          "p90DuplicateTotalVariation": 0.5,
+          "maxDuplicateTotalVariation": 0.5,
+          "uniqueTopAgreementCount": 3,
+          "uniqueTopDisagreementCount": 0,
+          "tieIndeterminateCount": 1
+        }
+      },
+      "offlineEvaluation": {
+        "outcomeOptionId": "opt_2",
+        "pooledBrier": 1.2228119062501253,
+        "meanAgentBrier": 1.5112490000005,
+        "pooledUniqueTop": "opt_3",
+        "pooledTopCorrect": false
+      },
+      "wrongConsensus": {
+        "status": "indeterminate",
+        "consensusOptionId": null,
+        "reason": "repeat_top_tie_or_disagreement"
+      }
+    },
+    {
+      "sourceTaskId": 29,
+      "checkpointRound": 3,
+      "reportedState": {
+        "comparableAgentIds": [
+          "agent:hiddenbench:29:1",
+          "agent:hiddenbench:29:2",
+          "agent:hiddenbench:29:3",
+          "agent:hiddenbench:29:4"
+        ],
+        "missingOrInvalidAgentIds": [],
+        "rosterComplete": true,
+        "pooledProbabilities": {
+          "optionIds": [
+            "opt_1",
+            "opt_2",
+            "opt_3"
+          ],
+          "values": [
+            0.315416625,
+            0.21104162499999998,
+            0.473541625
+          ]
+        },
+        "meanNormalizedReportEntropy": 0.5843462242892821,
+        "pooledNormalizedEntropy": 0.9523323550599907,
+        "normalizedGeneralizedJsd": 0.36798613077070863,
+        "pooledConcentration": 0.473541625,
+        "maxPairwiseTotalVariation": 0.945,
+        "duplicateDiagnostics": {
+          "validPairCount": 4,
+          "meanDuplicateTotalVariation": 0.139166625,
+          "p90DuplicateTotalVariation": 0.4666665,
+          "maxDuplicateTotalVariation": 0.4666665,
+          "uniqueTopAgreementCount": 2,
+          "uniqueTopDisagreementCount": 0,
+          "tieIndeterminateCount": 2
+        }
+      },
+      "offlineEvaluation": {
+        "outcomeOptionId": "opt_2",
+        "pooledBrier": 0.9461846354166719,
+        "meanAgentBrier": 1.1953010416666876,
+        "pooledUniqueTop": "opt_3",
+        "pooledTopCorrect": false
+      },
+      "wrongConsensus": {
+        "status": "indeterminate",
+        "consensusOptionId": null,
+        "reason": "repeat_top_tie_or_disagreement"
+      }
+    }
+  ],
+  "transitionRows": [
+    {
+      "sourceTaskId": 1,
+      "fromCheckpoint": 0,
+      "toCheckpoint": 1,
+      "comparableAgentIds": [
+        "agent:hiddenbench:1:1",
+        "agent:hiddenbench:1:2",
+        "agent:hiddenbench:1:3",
+        "agent:hiddenbench:1:4"
+      ],
+      "missingFromComparableRoster": [],
+      "completeComparableRoster": true,
+      "reportedTransition": {
+        "meanAgentActivity": 0.375,
+        "meanEndpointDuplicateTotalVariation": 0.10625,
+        "activityMinusMeanEndpointDuplicateTotalVariation": 0.26875,
+        "activityExceedsMeanEndpointDuplicateTotalVariation": true,
+        "pooledDrift": 0.37500000000000006,
+        "meanNormalizedReportEntropyDelta": -0.5266762951200116,
+        "normalizedGeneralizedJsdDelta": -0.04495763031878097,
+        "pooledConcentrationDelta": 0.3750000000000001,
+        "replicateSeparation": {
+          "eligibleAgentCount": 4,
+          "separatedAgentCount": 3,
+          "separatedAgentFraction": 0.75,
+          "medianMargin": 0.10000000000000003,
+          "minMargin": -0.4999999999999999,
+          "maxMargin": 0.5,
+          "majoritySeparated": true
+        }
+      },
+      "offlineEvaluation": {
+        "comparablePooledBrierFrom": 0.34125000000000005,
+        "comparablePooledBrierTo": 0.015703124999999995,
+        "comparablePooledBrierDelta": -0.32554687500000007
+      },
+      "wrongConsensusTransition": {
+        "from": "indeterminate",
+        "to": "not_wrong_consensus",
+        "event": "unavailable"
+      }
+    },
+    {
+      "sourceTaskId": 1,
+      "fromCheckpoint": 1,
+      "toCheckpoint": 2,
+      "comparableAgentIds": [
+        "agent:hiddenbench:1:1",
+        "agent:hiddenbench:1:2",
+        "agent:hiddenbench:1:3",
+        "agent:hiddenbench:1:4"
+      ],
+      "missingFromComparableRoster": [],
+      "completeComparableRoster": true,
+      "reportedTransition": {
+        "meanAgentActivity": 0.018749875,
+        "meanEndpointDuplicateTotalVariation": 0.018749875,
+        "activityMinusMeanEndpointDuplicateTotalVariation": 0,
+        "activityExceedsMeanEndpointDuplicateTotalVariation": false,
+        "pooledDrift": 0.018749875000000027,
+        "meanNormalizedReportEntropyDelta": -0.025824637000052664,
+        "normalizedGeneralizedJsdDelta": -0.002139306602673141,
+        "pooledConcentrationDelta": 0.01249987500000005,
+        "replicateSeparation": {
+          "eligibleAgentCount": 4,
+          "separatedAgentCount": 0,
+          "separatedAgentFraction": 0,
+          "medianMargin": -0.05,
+          "minMargin": -0.09999899999999998,
+          "maxMargin": 0,
+          "majoritySeparated": false
+        }
+      },
+      "offlineEvaluation": {
+        "comparablePooledBrierFrom": 0.015703124999999995,
+        "comparablePooledBrierTo": 0.011562534375031238,
+        "comparablePooledBrierDelta": -0.004140590624968757
+      },
+      "wrongConsensusTransition": {
+        "from": "not_wrong_consensus",
+        "to": "not_wrong_consensus",
+        "event": "none"
+      }
+    },
+    {
+      "sourceTaskId": 1,
+      "fromCheckpoint": 2,
+      "toCheckpoint": 3,
+      "comparableAgentIds": [
+        "agent:hiddenbench:1:1",
+        "agent:hiddenbench:1:2",
+        "agent:hiddenbench:1:3",
+        "agent:hiddenbench:1:4"
+      ],
+      "missingFromComparableRoster": [],
+      "completeComparableRoster": true,
+      "reportedTransition": {
+        "meanAgentActivity": 0.03750012499999998,
+        "meanEndpointDuplicateTotalVariation": 0.037499874999999995,
+        "activityMinusMeanEndpointDuplicateTotalVariation": 2.4999999998637223e-7,
+        "activityExceedsMeanEndpointDuplicateTotalVariation": true,
+        "pooledDrift": 0.03750012499999995,
+        "meanNormalizedReportEntropyDelta": -0.12643774752680917,
+        "normalizedGeneralizedJsdDelta": 0.012770100805855972,
+        "pooledConcentrationDelta": 0.037500124999999884,
+        "replicateSeparation": {
+          "eligibleAgentCount": 4,
+          "separatedAgentCount": 1,
+          "separatedAgentFraction": 0.25,
+          "medianMargin": -0.09999999999999998,
+          "minMargin": -0.09999999999999999,
+          "maxMargin": 0.09999999999999998,
+          "majoritySeparated": false
+        }
+      },
+      "offlineEvaluation": {
+        "comparablePooledBrierFrom": 0.011562534375031238,
+        "comparablePooledBrierTo": 0.0038281250000000043,
+        "comparablePooledBrierDelta": -0.007734409375031234
+      },
+      "wrongConsensusTransition": {
+        "from": "not_wrong_consensus",
+        "to": "not_wrong_consensus",
+        "event": "none"
+      }
+    },
+    {
+      "sourceTaskId": 8,
+      "fromCheckpoint": 0,
+      "toCheckpoint": 1,
+      "comparableAgentIds": [
+        "agent:hiddenbench:8:1",
+        "agent:hiddenbench:8:2",
+        "agent:hiddenbench:8:3"
+      ],
+      "missingFromComparableRoster": [],
+      "completeComparableRoster": true,
+      "reportedTransition": {
+        "meanAgentActivity": 0.08333333333333333,
+        "meanEndpointDuplicateTotalVariation": 0.016666666666666666,
+        "activityMinusMeanEndpointDuplicateTotalVariation": 0.06666666666666667,
+        "activityExceedsMeanEndpointDuplicateTotalVariation": true,
+        "pooledDrift": 0.08333333333333334,
+        "meanNormalizedReportEntropyDelta": -0.08401516186055713,
+        "normalizedGeneralizedJsdDelta": -0.006474863225198635,
+        "pooledConcentrationDelta": 0.08333333333333337,
+        "replicateSeparation": {
+          "eligibleAgentCount": 3,
+          "separatedAgentCount": 2,
+          "separatedAgentFraction": 0.6666666666666666,
+          "medianMargin": 0.09999999999999998,
+          "minMargin": -0.09999999999999999,
+          "maxMargin": 0.09999999999999998,
+          "majoritySeparated": true
+        }
+      },
+      "offlineEvaluation": {
+        "comparablePooledBrierFrom": 0.23166666666666672,
+        "comparablePooledBrierTo": 0.14000000000000004,
+        "comparablePooledBrierDelta": -0.09166666666666667
+      },
+      "wrongConsensusTransition": {
+        "from": "not_wrong_consensus",
+        "to": "not_wrong_consensus",
+        "event": "none"
+      }
+    },
+    {
+      "sourceTaskId": 8,
+      "fromCheckpoint": 1,
+      "toCheckpoint": 2,
+      "comparableAgentIds": [
+        "agent:hiddenbench:8:1",
+        "agent:hiddenbench:8:2"
+      ],
+      "missingFromComparableRoster": [
+        "agent:hiddenbench:8:3"
+      ],
+      "completeComparableRoster": false,
+      "reportedTransition": {
+        "meanAgentActivity": 0.037499999999999985,
+        "meanEndpointDuplicateTotalVariation": 0.0375,
+        "activityMinusMeanEndpointDuplicateTotalVariation": -1.3877787807814457e-17,
+        "activityExceedsMeanEndpointDuplicateTotalVariation": false,
+        "pooledDrift": 0.037499999999999985,
+        "meanNormalizedReportEntropyDelta": -0.05708976006985145,
+        "normalizedGeneralizedJsdDelta": 0.0033146893881313977,
+        "pooledConcentrationDelta": 0.03749999999999998,
+        "replicateSeparation": {
+          "eligibleAgentCount": 2,
+          "separatedAgentCount": 0,
+          "separatedAgentFraction": 0,
+          "medianMargin": -0.15,
+          "minMargin": -0.15,
+          "maxMargin": 0,
+          "majoritySeparated": false
+        }
+      },
+      "offlineEvaluation": {
+        "comparablePooledBrierFrom": 0.14000000000000004,
+        "comparablePooledBrierTo": 0.10718750000000005,
+        "comparablePooledBrierDelta": -0.032812499999999994
+      },
+      "wrongConsensusTransition": {
+        "from": "not_wrong_consensus",
+        "to": "indeterminate",
+        "event": "unavailable"
+      }
+    },
+    {
+      "sourceTaskId": 8,
+      "fromCheckpoint": 2,
+      "toCheckpoint": 3,
+      "comparableAgentIds": [
+        "agent:hiddenbench:8:1",
+        "agent:hiddenbench:8:2"
+      ],
+      "missingFromComparableRoster": [
+        "agent:hiddenbench:8:3"
+      ],
+      "completeComparableRoster": false,
+      "reportedTransition": {
+        "meanAgentActivity": 0.037499999999999985,
+        "meanEndpointDuplicateTotalVariation": 0.0375,
+        "activityMinusMeanEndpointDuplicateTotalVariation": -1.3877787807814457e-17,
+        "activityExceedsMeanEndpointDuplicateTotalVariation": false,
+        "pooledDrift": 0.037499999999999985,
+        "meanNormalizedReportEntropyDelta": 0.05708976006985145,
+        "normalizedGeneralizedJsdDelta": -0.0033146893881313977,
+        "pooledConcentrationDelta": -0.03749999999999998,
+        "replicateSeparation": {
+          "eligibleAgentCount": 2,
+          "separatedAgentCount": 0,
+          "separatedAgentFraction": 0,
+          "medianMargin": -0.15,
+          "minMargin": -0.15,
+          "maxMargin": 0,
+          "majoritySeparated": false
+        }
+      },
+      "offlineEvaluation": {
+        "comparablePooledBrierFrom": 0.10718750000000005,
+        "comparablePooledBrierTo": 0.14000000000000004,
+        "comparablePooledBrierDelta": 0.032812499999999994
+      },
+      "wrongConsensusTransition": {
+        "from": "indeterminate",
+        "to": "not_wrong_consensus",
+        "event": "unavailable"
+      }
+    },
+    {
+      "sourceTaskId": 15,
+      "fromCheckpoint": 0,
+      "toCheckpoint": 1,
+      "comparableAgentIds": [
+        "agent:hiddenbench:15:1",
+        "agent:hiddenbench:15:2",
+        "agent:hiddenbench:15:3",
+        "agent:hiddenbench:15:4"
+      ],
+      "missingFromComparableRoster": [],
+      "completeComparableRoster": true,
+      "reportedTransition": {
+        "meanAgentActivity": 0.3549999375,
+        "meanEndpointDuplicateTotalVariation": 0.0616666875,
+        "activityMinusMeanEndpointDuplicateTotalVariation": 0.29333325,
+        "activityExceedsMeanEndpointDuplicateTotalVariation": true,
+        "pooledDrift": 0.1087500625,
+        "meanNormalizedReportEntropyDelta": -0.39532810881344144,
+        "normalizedGeneralizedJsdDelta": 0.301158471285849,
+        "pooledConcentrationDelta": 0.078750125,
+        "replicateSeparation": {
+          "eligibleAgentCount": 4,
+          "separatedAgentCount": 3,
+          "separatedAgentFraction": 0.75,
+          "medianMargin": 0.19999999999999996,
+          "minMargin": -0.35333349999999997,
+          "maxMargin": 0.5666665,
+          "majoritySeparated": true
+        }
+      },
+      "offlineEvaluation": {
+        "comparablePooledBrierFrom": 0.6537500000000469,
+        "comparablePooledBrierTo": 0.6516781250000001,
+        "comparablePooledBrierDelta": -0.0020718750000467967
+      },
+      "wrongConsensusTransition": {
+        "from": "indeterminate",
+        "to": "not_wrong_consensus",
+        "event": "unavailable"
+      }
+    },
+    {
+      "sourceTaskId": 15,
+      "fromCheckpoint": 1,
+      "toCheckpoint": 2,
+      "comparableAgentIds": [
+        "agent:hiddenbench:15:1",
+        "agent:hiddenbench:15:2",
+        "agent:hiddenbench:15:3",
+        "agent:hiddenbench:15:4"
+      ],
+      "missingFromComparableRoster": [],
+      "completeComparableRoster": true,
+      "reportedTransition": {
+        "meanAgentActivity": 0.06999999999999999,
+        "meanEndpointDuplicateTotalVariation": 0.045,
+        "activityMinusMeanEndpointDuplicateTotalVariation": 0.024999999999999994,
+        "activityExceedsMeanEndpointDuplicateTotalVariation": true,
+        "pooledDrift": 0.020000000000000018,
+        "meanNormalizedReportEntropyDelta": 0.021235590284108652,
+        "normalizedGeneralizedJsdDelta": -0.039361934627988704,
+        "pooledConcentrationDelta": -0.003750000000000031,
+        "replicateSeparation": {
+          "eligibleAgentCount": 4,
+          "separatedAgentCount": 1,
+          "separatedAgentFraction": 0.25,
+          "medianMargin": 0,
+          "minMargin": -0.36,
+          "maxMargin": 0.09999999999999999,
+          "majoritySeparated": false
+        }
+      },
+      "offlineEvaluation": {
+        "comparablePooledBrierFrom": 0.6516781250000001,
+        "comparablePooledBrierTo": 0.62,
+        "comparablePooledBrierDelta": -0.03167812500000011
+      },
+      "wrongConsensusTransition": {
+        "from": "not_wrong_consensus",
+        "to": "not_wrong_consensus",
+        "event": "none"
+      }
+    },
+    {
+      "sourceTaskId": 15,
+      "fromCheckpoint": 2,
+      "toCheckpoint": 3,
+      "comparableAgentIds": [
+        "agent:hiddenbench:15:1",
+        "agent:hiddenbench:15:2",
+        "agent:hiddenbench:15:3",
+        "agent:hiddenbench:15:4"
+      ],
+      "missingFromComparableRoster": [],
+      "completeComparableRoster": true,
+      "reportedTransition": {
+        "meanAgentActivity": 0.012500000000000006,
+        "meanEndpointDuplicateTotalVariation": 0.012499999999999999,
+        "activityMinusMeanEndpointDuplicateTotalVariation": 6.938893903907228e-18,
+        "activityExceedsMeanEndpointDuplicateTotalVariation": false,
+        "pooledDrift": 0.012499999999999956,
+        "meanNormalizedReportEntropyDelta": -0.027499611975592864,
+        "normalizedGeneralizedJsdDelta": 0.02971915440096412,
+        "pooledConcentrationDelta": -0.012499999999999956,
+        "replicateSeparation": {
+          "eligibleAgentCount": 4,
+          "separatedAgentCount": 0,
+          "separatedAgentFraction": 0,
+          "medianMargin": 0,
+          "minMargin": -0.09999999999999999,
+          "maxMargin": 0,
+          "majoritySeparated": false
+        }
+      },
+      "offlineEvaluation": {
+        "comparablePooledBrierFrom": 0.62,
+        "comparablePooledBrierTo": 0.5928125000000001,
+        "comparablePooledBrierDelta": -0.02718749999999992
+      },
+      "wrongConsensusTransition": {
+        "from": "not_wrong_consensus",
+        "to": "not_wrong_consensus",
+        "event": "none"
+      }
+    },
+    {
+      "sourceTaskId": 22,
+      "fromCheckpoint": 0,
+      "toCheckpoint": 1,
+      "comparableAgentIds": [
+        "agent:hiddenbench:22:1",
+        "agent:hiddenbench:22:2",
+        "agent:hiddenbench:22:3",
+        "agent:hiddenbench:22:4"
+      ],
+      "missingFromComparableRoster": [],
+      "completeComparableRoster": true,
+      "reportedTransition": {
+        "meanAgentActivity": 0.21666662499999997,
+        "meanEndpointDuplicateTotalVariation": 0.066666625,
+        "activityMinusMeanEndpointDuplicateTotalVariation": 0.14999999999999997,
+        "activityExceedsMeanEndpointDuplicateTotalVariation": true,
+        "pooledDrift": 0.19166662499999998,
+        "meanNormalizedReportEntropyDelta": -0.03516675476750697,
+        "normalizedGeneralizedJsdDelta": -0.04272729158528177,
+        "pooledConcentrationDelta": 0.17499987499999997,
+        "replicateSeparation": {
+          "eligibleAgentCount": 4,
+          "separatedAgentCount": 2,
+          "separatedAgentFraction": 0.5,
+          "medianMargin": -1.3877787807814457e-17,
+          "minMargin": -0.333333,
+          "maxMargin": 0.2,
+          "majoritySeparated": false
+        }
+      },
+      "offlineEvaluation": {
+        "comparablePooledBrierFrom": 0.770555736111125,
+        "comparablePooledBrierTo": 0.9569098663194687,
+        "comparablePooledBrierDelta": 0.18635413020834368
+      },
+      "wrongConsensusTransition": {
+        "from": "not_wrong_consensus",
+        "to": "indeterminate",
+        "event": "unavailable"
+      }
+    },
+    {
+      "sourceTaskId": 22,
+      "fromCheckpoint": 1,
+      "toCheckpoint": 2,
+      "comparableAgentIds": [
+        "agent:hiddenbench:22:1",
+        "agent:hiddenbench:22:2",
+        "agent:hiddenbench:22:3",
+        "agent:hiddenbench:22:4"
+      ],
+      "missingFromComparableRoster": [],
+      "completeComparableRoster": true,
+      "reportedTransition": {
+        "meanAgentActivity": 0.07916662499999999,
+        "meanEndpointDuplicateTotalVariation": 0.07916662499999999,
+        "activityMinusMeanEndpointDuplicateTotalVariation": 0,
+        "activityExceedsMeanEndpointDuplicateTotalVariation": false,
+        "pooledDrift": 0.01666662499999999,
+        "meanNormalizedReportEntropyDelta": -0.10653291705092194,
+        "normalizedGeneralizedJsdDelta": 0.10796883964113946,
+        "pooledConcentrationDelta": -0.004166624999999979,
+        "replicateSeparation": {
+          "eligibleAgentCount": 4,
+          "separatedAgentCount": 0,
+          "separatedAgentFraction": 0,
+          "medianMargin": -0.1,
+          "minMargin": -0.333333,
+          "maxMargin": 0,
+          "majoritySeparated": false
+        }
+      },
+      "offlineEvaluation": {
+        "comparablePooledBrierFrom": 0.9569098663194687,
+        "comparablePooledBrierTo": 0.980243229861125,
+        "comparablePooledBrierDelta": 0.02333336354165627
+      },
+      "wrongConsensusTransition": {
+        "from": "indeterminate",
+        "to": "indeterminate",
+        "event": "unavailable"
+      }
+    },
+    {
+      "sourceTaskId": 22,
+      "fromCheckpoint": 2,
+      "toCheckpoint": 3,
+      "comparableAgentIds": [
+        "agent:hiddenbench:22:1",
+        "agent:hiddenbench:22:2",
+        "agent:hiddenbench:22:3",
+        "agent:hiddenbench:22:4"
+      ],
+      "missingFromComparableRoster": [],
+      "completeComparableRoster": true,
+      "reportedTransition": {
+        "meanAgentActivity": 0.09999999999999999,
+        "meanEndpointDuplicateTotalVariation": 0.125,
+        "activityMinusMeanEndpointDuplicateTotalVariation": -0.02500000000000001,
+        "activityExceedsMeanEndpointDuplicateTotalVariation": false,
+        "pooledDrift": 0.09999999999999996,
+        "meanNormalizedReportEntropyDelta": 0.004983828051624339,
+        "normalizedGeneralizedJsdDelta": 0.029255509448789963,
+        "pooledConcentrationDelta": -0.08749999999999997,
+        "replicateSeparation": {
+          "eligibleAgentCount": 4,
+          "separatedAgentCount": 0,
+          "separatedAgentFraction": 0,
+          "medianMargin": -0.09999999999999999,
+          "minMargin": -0.8,
+          "maxMargin": 0,
+          "majoritySeparated": false
+        }
+      },
+      "offlineEvaluation": {
+        "comparablePooledBrierFrom": 0.980243229861125,
+        "comparablePooledBrierTo": 0.974618248611125,
+        "comparablePooledBrierDelta": -0.005624981249999994
+      },
+      "wrongConsensusTransition": {
+        "from": "indeterminate",
+        "to": "indeterminate",
+        "event": "unavailable"
+      }
+    },
+    {
+      "sourceTaskId": 29,
+      "fromCheckpoint": 0,
+      "toCheckpoint": 1,
+      "comparableAgentIds": [
+        "agent:hiddenbench:29:1",
+        "agent:hiddenbench:29:2",
+        "agent:hiddenbench:29:3",
+        "agent:hiddenbench:29:4"
+      ],
+      "missingFromComparableRoster": [],
+      "completeComparableRoster": true,
+      "reportedTransition": {
+        "meanAgentActivity": 0.1987500625,
+        "meanEndpointDuplicateTotalVariation": 0.1279165625,
+        "activityMinusMeanEndpointDuplicateTotalVariation": 0.0708335,
+        "activityExceedsMeanEndpointDuplicateTotalVariation": true,
+        "pooledDrift": 0.13291668749999996,
+        "meanNormalizedReportEntropyDelta": -0.2024452158770339,
+        "normalizedGeneralizedJsdDelta": 0.20790512867561295,
+        "pooledConcentrationDelta": -0.03458337499999997,
+        "replicateSeparation": {
+          "eligibleAgentCount": 4,
+          "separatedAgentCount": 1,
+          "separatedAgentFraction": 0.25,
+          "medianMargin": -0.13333350000000002,
+          "minMargin": -0.4666665,
+          "maxMargin": 0.47666700000000006,
+          "majoritySeparated": false
+        }
+      },
+      "offlineEvaluation": {
+        "comparablePooledBrierFrom": 0.6790292708333906,
+        "comparablePooledBrierTo": 0.8364197916666873,
+        "comparablePooledBrierDelta": 0.15739052083329674
+      },
+      "wrongConsensusTransition": {
+        "from": "indeterminate",
+        "to": "indeterminate",
+        "event": "unavailable"
+      }
+    },
+    {
+      "sourceTaskId": 29,
+      "fromCheckpoint": 1,
+      "toCheckpoint": 2,
+      "comparableAgentIds": [
+        "agent:hiddenbench:29:1",
+        "agent:hiddenbench:29:2",
+        "agent:hiddenbench:29:3",
+        "agent:hiddenbench:29:4"
+      ],
+      "missingFromComparableRoster": [],
+      "completeComparableRoster": true,
+      "reportedTransition": {
+        "meanAgentActivity": 0.24291637500000002,
+        "meanEndpointDuplicateTotalVariation": 0.14875,
+        "activityMinusMeanEndpointDuplicateTotalVariation": 0.09416637500000002,
+        "activityExceedsMeanEndpointDuplicateTotalVariation": true,
+        "pooledDrift": 0.22291662499999998,
+        "meanNormalizedReportEntropyDelta": -0.26770811384201876,
+        "normalizedGeneralizedJsdDelta": 0.11856435842725044,
+        "pooledConcentrationDelta": 0.20541675000000004,
+        "replicateSeparation": {
+          "eligibleAgentCount": 4,
+          "separatedAgentCount": 1,
+          "separatedAgentFraction": 0.25,
+          "medianMargin": -0.4666665,
+          "minMargin": -0.5,
+          "maxMargin": 0.26666650000000003,
+          "majoritySeparated": false
+        }
+      },
+      "offlineEvaluation": {
+        "comparablePooledBrierFrom": 0.8364197916666873,
+        "comparablePooledBrierTo": 1.2228119062501253,
+        "comparablePooledBrierDelta": 0.3863921145834379
+      },
+      "wrongConsensusTransition": {
+        "from": "indeterminate",
+        "to": "indeterminate",
+        "event": "unavailable"
+      }
+    },
+    {
+      "sourceTaskId": 29,
+      "fromCheckpoint": 2,
+      "toCheckpoint": 3,
+      "comparableAgentIds": [
+        "agent:hiddenbench:29:1",
+        "agent:hiddenbench:29:2",
+        "agent:hiddenbench:29:3",
+        "agent:hiddenbench:29:4"
+      ],
+      "missingFromComparableRoster": [],
+      "completeComparableRoster": true,
+      "reportedTransition": {
+        "meanAgentActivity": 0.1345830625,
+        "meanEndpointDuplicateTotalVariation": 0.1320833125,
+        "activityMinusMeanEndpointDuplicateTotalVariation": 0.002499749999999995,
+        "activityExceedsMeanEndpointDuplicateTotalVariation": true,
+        "pooledDrift": 0.11395831249999999,
+        "meanNormalizedReportEntropyDelta": 0.16554204323000565,
+        "normalizedGeneralizedJsdDelta": -0.0501393851208326,
+        "pooledConcentrationDelta": -0.113958375,
+        "replicateSeparation": {
+          "eligibleAgentCount": 4,
+          "separatedAgentCount": 0,
+          "separatedAgentFraction": 0,
+          "medianMargin": -0.4666665,
+          "minMargin": -0.5,
+          "maxMargin": 0,
+          "majoritySeparated": false
+        }
+      },
+      "offlineEvaluation": {
+        "comparablePooledBrierFrom": 1.2228119062501253,
+        "comparablePooledBrierTo": 0.9461846354166719,
+        "comparablePooledBrierDelta": -0.2766272708334534
+      },
+      "wrongConsensusTransition": {
+        "from": "indeterminate",
+        "to": "indeterminate",
+        "event": "unavailable"
+      }
+    }
+  ],
+  "taskTrajectories": [
+    {
+      "sourceTaskId": 1,
+      "eventCounts": {
+        "entry": 0,
+        "persistence": 0,
+        "escape": 0,
+        "relapse": 0,
+        "none": 2,
+        "unavailable": 1
+      },
+      "x0ToX3": {
+        "sourceTaskId": 1,
+        "fromCheckpoint": 0,
+        "toCheckpoint": 3,
+        "comparableAgentIds": [
+          "agent:hiddenbench:1:1",
+          "agent:hiddenbench:1:2",
+          "agent:hiddenbench:1:3",
+          "agent:hiddenbench:1:4"
+        ],
+        "missingFromComparableRoster": [],
+        "completeComparableRoster": true,
+        "reportedTransition": {
+          "meanAgentActivity": 0.425,
+          "meanEndpointDuplicateTotalVariation": 0.12499999999999999,
+          "activityMinusMeanEndpointDuplicateTotalVariation": 0.3,
+          "activityExceedsMeanEndpointDuplicateTotalVariation": true,
+          "pooledDrift": 0.42500000000000004,
+          "meanNormalizedReportEntropyDelta": -0.6789386796468734,
+          "normalizedGeneralizedJsdDelta": -0.03432683611559814,
+          "pooledConcentrationDelta": 0.42500000000000004,
+          "replicateSeparation": {
+            "eligibleAgentCount": 4,
+            "separatedAgentCount": 3,
+            "separatedAgentFraction": 0.75,
+            "medianMargin": 0.10000000000000002,
+            "minMargin": -0.39999999999999997,
+            "maxMargin": 0.4,
+            "majoritySeparated": true
+          }
+        },
+        "offlineEvaluation": {
+          "comparablePooledBrierFrom": 0.34125000000000005,
+          "comparablePooledBrierTo": 0.0038281250000000043,
+          "comparablePooledBrierDelta": -0.33742187500000004
+        },
+        "wrongConsensusTransition": {
+          "from": "indeterminate",
+          "to": "not_wrong_consensus",
+          "event": "none"
+        }
+      },
+      "errorAmplifyingConcentrationSignature": false
+    },
+    {
+      "sourceTaskId": 8,
+      "eventCounts": {
+        "entry": 0,
+        "persistence": 0,
+        "escape": 0,
+        "relapse": 0,
+        "none": 1,
+        "unavailable": 2
+      },
+      "x0ToX3": {
+        "sourceTaskId": 8,
+        "fromCheckpoint": 0,
+        "toCheckpoint": 3,
+        "comparableAgentIds": [
+          "agent:hiddenbench:8:1",
+          "agent:hiddenbench:8:2",
+          "agent:hiddenbench:8:3"
+        ],
+        "missingFromComparableRoster": [],
+        "completeComparableRoster": true,
+        "reportedTransition": {
+          "meanAgentActivity": 0.08333333333333333,
+          "meanEndpointDuplicateTotalVariation": 0.016666666666666666,
+          "activityMinusMeanEndpointDuplicateTotalVariation": 0.06666666666666667,
+          "activityExceedsMeanEndpointDuplicateTotalVariation": true,
+          "pooledDrift": 0.08333333333333334,
+          "meanNormalizedReportEntropyDelta": -0.08401516186055713,
+          "normalizedGeneralizedJsdDelta": -0.006474863225198635,
+          "pooledConcentrationDelta": 0.08333333333333337,
+          "replicateSeparation": {
+            "eligibleAgentCount": 3,
+            "separatedAgentCount": 2,
+            "separatedAgentFraction": 0.6666666666666666,
+            "medianMargin": 0.09999999999999998,
+            "minMargin": -0.09999999999999999,
+            "maxMargin": 0.09999999999999998,
+            "majoritySeparated": true
+          }
+        },
+        "offlineEvaluation": {
+          "comparablePooledBrierFrom": 0.23166666666666672,
+          "comparablePooledBrierTo": 0.14000000000000004,
+          "comparablePooledBrierDelta": -0.09166666666666667
+        },
+        "wrongConsensusTransition": {
+          "from": "not_wrong_consensus",
+          "to": "not_wrong_consensus",
+          "event": "none"
+        }
+      },
+      "errorAmplifyingConcentrationSignature": false
+    },
+    {
+      "sourceTaskId": 15,
+      "eventCounts": {
+        "entry": 0,
+        "persistence": 0,
+        "escape": 0,
+        "relapse": 0,
+        "none": 2,
+        "unavailable": 1
+      },
+      "x0ToX3": {
+        "sourceTaskId": 15,
+        "fromCheckpoint": 0,
+        "toCheckpoint": 3,
+        "comparableAgentIds": [
+          "agent:hiddenbench:15:1",
+          "agent:hiddenbench:15:2",
+          "agent:hiddenbench:15:3",
+          "agent:hiddenbench:15:4"
+        ],
+        "missingFromComparableRoster": [],
+        "completeComparableRoster": true,
+        "reportedTransition": {
+          "meanAgentActivity": 0.38749993749999995,
+          "meanEndpointDuplicateTotalVariation": 0.029166687500000003,
+          "activityMinusMeanEndpointDuplicateTotalVariation": 0.35833324999999994,
+          "activityExceedsMeanEndpointDuplicateTotalVariation": true,
+          "pooledDrift": 0.12500006249999998,
+          "meanNormalizedReportEntropyDelta": -0.40159213050492565,
+          "normalizedGeneralizedJsdDelta": 0.2915156910588244,
+          "pooledConcentrationDelta": 0.06250012500000002,
+          "replicateSeparation": {
+            "eligibleAgentCount": 4,
+            "separatedAgentCount": 4,
+            "separatedAgentFraction": 1,
+            "medianMargin": 0.19999999999999996,
+            "minMargin": 0.16666649999999997,
+            "maxMargin": 0.5,
+            "majoritySeparated": true
+          }
+        },
+        "offlineEvaluation": {
+          "comparablePooledBrierFrom": 0.6537500000000469,
+          "comparablePooledBrierTo": 0.5928125000000001,
+          "comparablePooledBrierDelta": -0.06093750000004683
+        },
+        "wrongConsensusTransition": {
+          "from": "indeterminate",
+          "to": "not_wrong_consensus",
+          "event": "none"
+        }
+      },
+      "errorAmplifyingConcentrationSignature": false
+    },
+    {
+      "sourceTaskId": 22,
+      "eventCounts": {
+        "entry": 0,
+        "persistence": 0,
+        "escape": 0,
+        "relapse": 0,
+        "none": 0,
+        "unavailable": 3
+      },
+      "x0ToX3": {
+        "sourceTaskId": 22,
+        "fromCheckpoint": 0,
+        "toCheckpoint": 3,
+        "comparableAgentIds": [
+          "agent:hiddenbench:22:1",
+          "agent:hiddenbench:22:2",
+          "agent:hiddenbench:22:3",
+          "agent:hiddenbench:22:4"
+        ],
+        "missingFromComparableRoster": [],
+        "completeComparableRoster": true,
+        "reportedTransition": {
+          "meanAgentActivity": 0.11249999999999999,
+          "meanEndpointDuplicateTotalVariation": 0.1125,
+          "activityMinusMeanEndpointDuplicateTotalVariation": -1.3877787807814457e-17,
+          "activityExceedsMeanEndpointDuplicateTotalVariation": false,
+          "pooledDrift": 0.1,
+          "meanNormalizedReportEntropyDelta": -0.13671584376680457,
+          "normalizedGeneralizedJsdDelta": 0.09449705750464765,
+          "pooledConcentrationDelta": 0.08333325000000003,
+          "replicateSeparation": {
+            "eligibleAgentCount": 4,
+            "separatedAgentCount": 2,
+            "separatedAgentFraction": 0.5,
+            "medianMargin": 0,
+            "minMargin": -0.4000000000000001,
+            "maxMargin": 0.19999999999999996,
+            "majoritySeparated": false
+          }
+        },
+        "offlineEvaluation": {
+          "comparablePooledBrierFrom": 0.770555736111125,
+          "comparablePooledBrierTo": 0.974618248611125,
+          "comparablePooledBrierDelta": 0.20406251249999996
+        },
+        "wrongConsensusTransition": {
+          "from": "not_wrong_consensus",
+          "to": "indeterminate",
+          "event": "none"
+        }
+      },
+      "errorAmplifyingConcentrationSignature": false
+    },
+    {
+      "sourceTaskId": 29,
+      "eventCounts": {
+        "entry": 0,
+        "persistence": 0,
+        "escape": 0,
+        "relapse": 0,
+        "none": 0,
+        "unavailable": 3
+      },
+      "x0ToX3": {
+        "sourceTaskId": 29,
+        "fromCheckpoint": 0,
+        "toCheckpoint": 3,
+        "comparableAgentIds": [
+          "agent:hiddenbench:29:1",
+          "agent:hiddenbench:29:2",
+          "agent:hiddenbench:29:3",
+          "agent:hiddenbench:29:4"
+        ],
+        "missingFromComparableRoster": [],
+        "completeComparableRoster": true,
+        "reportedTransition": {
+          "meanAgentActivity": 0.29875,
+          "meanEndpointDuplicateTotalVariation": 0.111249875,
+          "activityMinusMeanEndpointDuplicateTotalVariation": 0.18750012500000002,
+          "activityExceedsMeanEndpointDuplicateTotalVariation": true,
+          "pooledDrift": 0.12312500000000004,
+          "meanNormalizedReportEntropyDelta": -0.304611286489047,
+          "normalizedGeneralizedJsdDelta": 0.2763301019820308,
+          "pooledConcentrationDelta": 0.056875000000000064,
+          "replicateSeparation": {
+            "eligibleAgentCount": 4,
+            "separatedAgentCount": 2,
+            "separatedAgentFraction": 0.5,
+            "medianMargin": 0,
+            "minMargin": -0.4666665,
+            "maxMargin": 0.47666700000000006,
+            "majoritySeparated": false
+          }
+        },
+        "offlineEvaluation": {
+          "comparablePooledBrierFrom": 0.6790292708333906,
+          "comparablePooledBrierTo": 0.9461846354166719,
+          "comparablePooledBrierDelta": 0.26715536458328126
+        },
+        "wrongConsensusTransition": {
+          "from": "indeterminate",
+          "to": "indeterminate",
+          "event": "none"
+        }
+      },
+      "errorAmplifyingConcentrationSignature": false
+    }
+  ],
+  "summary": {
+    "registeredCellCount": 152,
+    "validCellCount": 151,
+    "interruptedOrInvalidCellCount": 1,
+    "registeredUnitCount": 76,
+    "validUnitCount": 75,
+    "invalidOrMissingUnitCount": 1,
+    "completeCheckpointCount": 19,
+    "incompleteCheckpointCount": 1,
+    "completeAdjacentTransitionCount": 13,
+    "incompleteAdjacentTransitionCount": 2,
+    "adjacentTransitionCountActivityExceedsDuplicateMean": 9,
+    "taskCountWithActivityExceedingDuplicateMean": 5,
+    "adjacentTransitionCountWithMajorityReplicateSeparation": 3,
+    "taskCountWithMajorityReplicateSeparation": 3,
+    "exactDuplicatePairCount": 50,
+    "meanDuplicateTotalVariation": 0.07475552666666667,
+    "medianDuplicateTotalVariation": 0,
+    "p75DuplicateTotalVariation": 0.09999999999999998,
+    "p90DuplicateTotalVariation": 0.32666649999999997,
+    "maxDuplicateTotalVariation": 0.8,
+    "eventCounts": {
+      "entry": 0,
+      "persistence": 0,
+      "escape": 0,
+      "relapse": 0,
+      "none": 5,
+      "unavailable": 10
+    },
+    "taskCountWithEntry": 0,
+    "taskCountWithEscape": 0,
+    "taskCountWithRelapse": 0,
+    "errorAmplifyingConcentrationSignatureCount": 0,
+    "meanX0ToX3Activity": 0.26141665416666665,
+    "meanX0ToX3PooledDrift": 0.17129167916666668,
+    "meanX0ToX3JsdDelta": 0.12430823024094122,
+    "meanX0ToX3ConcentrationDelta": 0.1422083416666667,
+    "meanX0ToX3PooledBrierDelta": -0.0037616329166864637
+  },
+  "decision": {
+    "classification": "NO_TRAJECTORY_SIGNAL",
+    "observedEntryOrEscapeCount": 0,
+    "candidateDynamicsEligible": false,
+    "operationalMeaning": "no_identifiable_wrong_consensus_entry_or_escape",
+    "candidateBlockers": [
+      "five_task_development_sample",
+      "single_seed_fixed_call_order",
+      "one_interrupted_sensor_cell",
+      "indeterminate_wrong_consensus_checkpoints"
+    ]
+  },
+  "claimCeiling": "five_task_one_seed_descriptive_reported_belief_trajectory_only",
+  "contentHash": "sha256:bd91fca83d9cc3bb5a2a1bfc50e99306d710d3911542cde449286cfd6667d128"
+}

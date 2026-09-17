@@ -8,7 +8,7 @@
 import * as fs from "fs";
 import * as path from "path";
 import type { RawRunData, CognitiveStateSnapshot } from "./types";
-import { mulberry32 } from "../v2/statsShared";
+import { mulberry32 } from "../../legacy/experiments/v2/statsShared";
 
 const OUTPUT_DIR = path.resolve(__dirname, "output", "dry_run", "e1_stability", "raw");
 

@@ -1,0 +1,36 @@
+{
+  "manifestRef": {
+    "id": "swarmalpha.manifest.v6.discussion-thermometer-natural-dynamics-transport",
+    "version": "1.0.0"
+  },
+  "planHash": "sha256:b6e7bfdcbdca0f9e4ec0d70511c530ae8c48ebb080c3ae2b1fb2a5dcb54b6f64",
+  "providerBudget": {
+    "model": "zhipu:glm-4.6v",
+    "publicCalls": 64,
+    "sensorCalls": 160,
+    "maximumTotalCalls": 224,
+    "maximumCompletionTokens": 73728,
+    "retry": "none"
+  },
+  "executionPolicy": {
+    "phaseOrder": [
+      "public",
+      "freeze",
+      "sensor",
+      "offline_analysis"
+    ],
+    "attemptsPerCell": 1,
+    "backgroundExecution": "forbidden",
+    "overwrite": "forbidden",
+    "haltOnAnyFailure": true,
+    "sameBatchRequired": true
+  },
+  "scientificBoundary": {
+    "onlineTruthAccess": "none",
+    "sensorWriteback": "none",
+    "taskSelectionStatus": "prospective_before_transport_provider_observation",
+    "claimCeiling": "new_scenario_observation_resource_transport_only"
+  },
+  "executionAuthority": "none",
+  "contentHash": "sha256:1d5f870b40c82a27fc5ff4051b67e5ff1b9d297a33bb20c04bf76a561a26bc3f"
+}

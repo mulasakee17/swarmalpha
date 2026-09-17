@@ -1,0 +1,60 @@
+{
+  "auditRef": {
+    "id": "swarmalpha.analysis.v6.discussion-thermometer-mathematical-audit",
+    "version": "1.0.0"
+  },
+  "inferenceStatus": "mathematical_and_descriptive_audit_only",
+  "truthAccess": "none",
+  "sourceReprojectionHash": "sha256:7b2e9a389d42416c36d0ce631045c6f6c329c2679e0f7df109e8dc29c5e24899",
+  "empiricalIdentities": {
+    "stateCount": 40,
+    "transitionCount": 30,
+    "completeMatchedTransitionCount": 28,
+    "maxEntropyDecompositionResidual": 1.1102230246251565e-16,
+    "maxPottsOrderResidual": 0,
+    "maxPoolingContractionExcess": 5.551115123125783e-17,
+    "poolingContractionViolationCount": 0
+  },
+  "optionPermutationAudit": {
+    "optionCount": 3,
+    "scalarInvariantMaxResidual": 0,
+    "pooledVectorEquivariantMaxResidual": 0,
+    "passed": true
+  },
+  "coarseGrainingCollision": {
+    "optionCount": 2,
+    "agentCount": 4,
+    "targetWithinEntropy": 0.5,
+    "solvedPolarizedProbability": 0.8899721355616403,
+    "pooledVectorMaxDifference": 0,
+    "withinEntropyDifference": 4.440892098500626e-16,
+    "jsdDifference": 4.440892098500626e-16,
+    "maxPairwiseTvStateA": 0.7799442711232807,
+    "maxPairwiseTvStateB": 1,
+    "meanPairwiseTvStateA": 0.5199628474155205,
+    "meanPairwiseTvStateB": 0.5,
+    "collisionEstablished": true,
+    "implication": "same_q_U_J_can_hide_different_microstate_geometry"
+  },
+  "stateRepresentationDecision": {
+    "fullObservedState": "P_t_plus_declared_roster",
+    "minimalIndependentMacroCoordinates": [
+      "q_t",
+      "U_t",
+      "coverage_t"
+    ],
+    "derivedReadouts": [
+      "H_t_from_q_t",
+      "J_t_equals_H_t_minus_U_t",
+      "C_t_from_q_t",
+      "m_t_from_C_t"
+    ],
+    "retainedDiagnostics": [
+      "mean_pairwise_TV",
+      "max_pairwise_TV",
+      "repeat_TV"
+    ],
+    "warning": "macro_projection_is_not_injective"
+  },
+  "contentHash": "sha256:b3a422aa37c3e27df3079fffbcb4a22a8be6802fd6aaada33182ede0c8297088"
+}

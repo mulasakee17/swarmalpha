@@ -1,0 +1,370 @@
+{
+  "artifactRef": {
+    "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-public-artifact",
+    "version": "1.0.0"
+  },
+  "planHash": "sha256:a59b041ed048ea4f2db01b0565e37c710caf1256f36c321ce315efa1dbc0603b",
+  "runId": "collective-dynamics-l4-dev-stage1:3:seed-1",
+  "seed": 1,
+  "modelRef": {
+    "id": "zhipu:glm-4.6v",
+    "version": "1.0.0"
+  },
+  "onlineTask": {
+    "sourceTaskId": 3,
+    "taskId": "task:hiddenbench:3",
+    "publicContext": "You are participating in a study, acting as a community leader of a small village surrounded by mountains and rivers. Most villagers own cars, but there are also elderly people and children who may need additional assistance when walking. Earlier today, heavy rain began to fall, and the local government issued a warning about a potential disaster.\nHours ago, you requested relief supplies, but the supply truck has yet to arrive. Now, the rain has temporarily stopped, giving you and the other three community leaders a short window to decide on the safest evacuation route before the rain resumes. You don’t know how much time you have left to make this critical decision.\nYour Task:\nYou will discuss with three other participants, who are also acting as community leaders, to decide where to evacuate. You have three options:\n- West City: Accessible through a bridge over the river.\n- East Town: Accessible through a tunnel on middle ground.\n- North Hill: Accessible through a driveway and walking trails.\nUsually, it takes the same time to reach all three places by car, but some routes may be inaccessible now.\nThere is only one correct evacuation location. After the discussion:\n- If you choose the correct location, you will earn $1.\n- If all other participants also choose the correct location, you will earn an additional $1 (for a total of $2).\nThis means that coordinating with others is critical to maximize your rewards. The chat will at most take 15 minutes. However, the exact time when the chat will end is unknown.\n\nShared information:\n1. The local government announced that hotels in West City are prepared to accommodate evacuees. These hotels are fully stocked with food and medical supplies.\n2. The mayor of East Town has offered accommodations for any evacuees. However, she has expressed concern about a possible shortage of volunteers to assist them.\n3. The school at North Hill can serve as a temporary evacuation center, providing a two-week supply of essentials and sleeping space in the gym.\n4. The supply truck was supposed to come from East Town.",
+    "claim": {
+      "id": "claim:hiddenbench:3:answer",
+      "proposition": "Select the single correct answer for HiddenBench task 3 (evacuation_east_town).",
+      "domain": "hiddenbench-categorical-decision",
+      "createdAt": "2026-08-11T00:00:00.000Z",
+      "options": [
+        "West City",
+        "East Town",
+        "North Hill"
+      ],
+      "resolutionPolicy": {
+        "kind": "categorical",
+        "resolverId": "resolver:hiddenbench-data-3be6ca16"
+      }
+    },
+    "agents": [
+      {
+        "agentId": "agent:hiddenbench:3:1",
+        "privateInformation": "The river level is just below the bridge to West City."
+      },
+      {
+        "agentId": "agent:hiddenbench:3:2",
+        "privateInformation": "The dam upstream will release water in a minute."
+      },
+      {
+        "agentId": "agent:hiddenbench:3:3",
+        "privateInformation": "The walking trails have been closed since last weekend due to fallen trees."
+      },
+      {
+        "agentId": "agent:hiddenbench:3:4",
+        "privateInformation": "A mudslide just occurred, covering the driveway to North Hill."
+      }
+    ]
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "messages": [
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:3:1",
+          "content": "[choiceId=opt_2]\nI choose East Town because the supply truck was supposed to come from there, and the mayor has offered accommodations. While there's a concern about volunteer shortages, the town's proximity to our village and the supply truck's origin make it a practical choice. We need to coordinate with others to ensure we all agree on this location to maximize rewards.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:3:2",
+          "content": "[choiceId=opt_2]\nI choose East Town because the supply truck was supposed to come from there, and the mayor has offered accommodations. However, I'm concerned about the possible shortage of volunteers to assist evacuees, especially elderly and children. We need to ensure there's enough help available.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:3:3",
+          "content": "[choiceId=opt_2]\nI recommend evacuating to East Town. The local government has announced that hotels there are prepared to accommodate evacuees and are fully stocked with food and medical supplies. Additionally, the supply truck was supposed to come from East Town, which suggests it is a reliable and accessible location. While there are concerns about volunteer shortages, the availability of stocked hotels makes it the most secure option for our community.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:3:4",
+          "content": "[choiceId=opt_2]\nI choose East Town because the supply truck was supposed to come from there, and the mayor has offered accommodations. However, I'm concerned about the volunteer shortage. We need to confirm if the tunnel is accessible and if the supplies can still arrive.",
+          "source": "agent"
+        }
+      ],
+      "calls": [
+        {
+          "requestId": "discussion:collective-dynamics-l4-dev-stage1:3:seed-1:r1:agent:hiddenbench:3:1",
+          "round": 1,
+          "agentId": "agent:hiddenbench:3:1",
+          "requestHash": "sha256:f715df9d54de8b8a6d64b217eae0dcbfb6ad509ae99c8b23d989d6a4e8ad970f",
+          "responseHash": "sha256:51fba63ae4e7b89e723421189518da9792e65ac60b1cc8a6233f09f5c708d05e"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-l4-dev-stage1:3:seed-1:r1:agent:hiddenbench:3:2",
+          "round": 1,
+          "agentId": "agent:hiddenbench:3:2",
+          "requestHash": "sha256:8c30e3ba8ecf2a0c776851bd8fb28b54ba0e5686f5898e016490d0227c5d88ad",
+          "responseHash": "sha256:1bd51c49477a60b0a8557ad5befaca9baba53bef0e175350ac5f58cb03e2f6d5"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-l4-dev-stage1:3:seed-1:r1:agent:hiddenbench:3:3",
+          "round": 1,
+          "agentId": "agent:hiddenbench:3:3",
+          "requestHash": "sha256:f6da7ab9b581ba4e9f24665de8f4ff6267ab1364bc78b665eb53bf0b7ffc97f0",
+          "responseHash": "sha256:31661e7fc4cde9bebe8cf56e958a7a533e26004fd9fc59f639ed58a6ad6ed91f"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-l4-dev-stage1:3:seed-1:r1:agent:hiddenbench:3:4",
+          "round": 1,
+          "agentId": "agent:hiddenbench:3:4",
+          "requestHash": "sha256:0d89445450bb43b902149b5ee25ff9176f6fd0ca7e48aeef8230974724528bd4",
+          "responseHash": "sha256:03b31fefb3e9f2142b7731c615f442a4cb827082bb90425f11ef4e363fa00654"
+        }
+      ],
+      "contentHash": "sha256:60f7a05a1bc828934e68807d903020016a9ff04810027ed5fc4e845a00bd5703"
+    },
+    {
+      "round": 2,
+      "messages": [
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:3:1",
+          "content": "[choiceId=opt_2]\nI choose East Town because the supply truck was supposed to come from there, and the mayor has offered accommodations. While there's a concern about volunteer shortages, the town's proximity to our village and the supply truck's origin make it a practical choice. We need to coordinate with others to ensure we all agree on this location to maximize rewards.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:3:2",
+          "content": "[choiceId=opt_2]\nI choose East Town because the supply truck was supposed to come from there, and the mayor has offered accommodations. While there's a concern about volunteer shortages, the town's proximity to our village and the supply truck's origin make it a practical choice. We need to coordinate with others to ensure we all agree on this location to maximize rewards.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:3:3",
+          "content": "[choiceId=opt_2]\nI choose East Town because the supply truck was supposed to come from there, and the mayor has offered accommodations. While there's a concern about volunteer shortages, the town's proximity to our village and the supply truck's origin make it a practical choice. We need to coordinate with others to ensure we all agree on this location to maximize rewards.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:3:4",
+          "content": "[choiceId=opt_2]\nI choose East Town because the supply truck was supposed to come from there, and the mayor has offered accommodations. While there's a concern about volunteer shortages, the town's proximity to our village and the supply truck's origin make it a practical choice. We need to coordinate with others to ensure we all agree on this location to maximize rewards.",
+          "source": "agent"
+        }
+      ],
+      "calls": [
+        {
+          "requestId": "discussion:collective-dynamics-l4-dev-stage1:3:seed-1:r2:agent:hiddenbench:3:1",
+          "round": 2,
+          "agentId": "agent:hiddenbench:3:1",
+          "requestHash": "sha256:7411653183e2996555f9cdfa9537627c8442ca84151a64dda2b1ba267a686302",
+          "responseHash": "sha256:51fba63ae4e7b89e723421189518da9792e65ac60b1cc8a6233f09f5c708d05e"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-l4-dev-stage1:3:seed-1:r2:agent:hiddenbench:3:2",
+          "round": 2,
+          "agentId": "agent:hiddenbench:3:2",
+          "requestHash": "sha256:a6cb2670c4098f629607ef296ab2f4b5a988103f640cd5b39cfad776fa7d41a3",
+          "responseHash": "sha256:51fba63ae4e7b89e723421189518da9792e65ac60b1cc8a6233f09f5c708d05e"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-l4-dev-stage1:3:seed-1:r2:agent:hiddenbench:3:3",
+          "round": 2,
+          "agentId": "agent:hiddenbench:3:3",
+          "requestHash": "sha256:b0813a128ee4320dd2ef66269696ceaddc9ad5699a49030d002bb50803cd1b75",
+          "responseHash": "sha256:51fba63ae4e7b89e723421189518da9792e65ac60b1cc8a6233f09f5c708d05e"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-l4-dev-stage1:3:seed-1:r2:agent:hiddenbench:3:4",
+          "round": 2,
+          "agentId": "agent:hiddenbench:3:4",
+          "requestHash": "sha256:04498ce4e58a4fcfcebad10fab8c4f4e403e915003784daa01dfb9e65354e727",
+          "responseHash": "sha256:51fba63ae4e7b89e723421189518da9792e65ac60b1cc8a6233f09f5c708d05e"
+        }
+      ],
+      "contentHash": "sha256:dc92b0f4e124c8dafd3f0d8f07b2ed4a8841f5b0c768a426a530feaabd2c0844"
+    },
+    {
+      "round": 3,
+      "messages": [
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:3:1",
+          "content": "[choiceId=opt_2]\nI choose East Town because the supply truck was supposed to come from there, and the mayor has offered accommodations. While there's a concern about volunteer shortages, the town's proximity to our village and the supply truck's origin make it a practical choice. We need to coordinate with others to ensure we all agree on this location to maximize rewards.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:3:2",
+          "content": "[choiceId=opt_2]\nI choose East Town because the supply truck was supposed to come from there, and the mayor has offered accommodations. While there's a concern about volunteer shortages, the town's proximity to our village and the supply truck's origin make it a practical choice. We need to coordinate with others to ensure we all agree on this location to maximize rewards.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:3:3",
+          "content": "[choiceId=opt_2]\nI choose East Town because the supply truck was supposed to come from there, and the mayor has offered accommodations. While there's a concern about volunteer shortages, the town's proximity to our village and the supply truck's origin make it a practical choice. We need to coordinate with others to ensure we all agree on this location to maximize rewards.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:3:4",
+          "content": "[choiceId=opt_2]\nI choose East Town because the supply truck was supposed to come from there, and the mayor has offered accommodations. While there's a concern about volunteer shortages, the town's proximity to our village and the supply truck's origin make it a practical choice. We need to coordinate with others to ensure we all agree on this location to maximize rewards.",
+          "source": "agent"
+        }
+      ],
+      "calls": [
+        {
+          "requestId": "discussion:collective-dynamics-l4-dev-stage1:3:seed-1:r3:agent:hiddenbench:3:1",
+          "round": 3,
+          "agentId": "agent:hiddenbench:3:1",
+          "requestHash": "sha256:89f8f4361e4d8924dda2c0bca8fb841b46295adf4c8b160c4946a878659e7467",
+          "responseHash": "sha256:51fba63ae4e7b89e723421189518da9792e65ac60b1cc8a6233f09f5c708d05e"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-l4-dev-stage1:3:seed-1:r3:agent:hiddenbench:3:2",
+          "round": 3,
+          "agentId": "agent:hiddenbench:3:2",
+          "requestHash": "sha256:c2d8d57e8fbe4fbc9bf133af94106b1aba3b6f3b3c5255ccc8f25633a51d93e5",
+          "responseHash": "sha256:51fba63ae4e7b89e723421189518da9792e65ac60b1cc8a6233f09f5c708d05e"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-l4-dev-stage1:3:seed-1:r3:agent:hiddenbench:3:3",
+          "round": 3,
+          "agentId": "agent:hiddenbench:3:3",
+          "requestHash": "sha256:8cd185df99be409fd434b689e38043fe66beb7cc79126b665144c8cbb797f566",
+          "responseHash": "sha256:51fba63ae4e7b89e723421189518da9792e65ac60b1cc8a6233f09f5c708d05e"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-l4-dev-stage1:3:seed-1:r3:agent:hiddenbench:3:4",
+          "round": 3,
+          "agentId": "agent:hiddenbench:3:4",
+          "requestHash": "sha256:f8bc4e063e76249521e42a23d37d1a83881e21cafbb2465d8cba213303f5d41d",
+          "responseHash": "sha256:51fba63ae4e7b89e723421189518da9792e65ac60b1cc8a6233f09f5c708d05e"
+        }
+      ],
+      "contentHash": "sha256:18a19fefa3400ca9d51ecbb9b84919f5847d3c83215c444c9ff9e02a5f317551"
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointRef": {
+        "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-checkpoint",
+        "version": "1.0.0"
+      },
+      "checkpointId": "task:hiddenbench:3:collective-dynamics-l4-dev-stage1:3:seed-1:X0",
+      "checkpointRound": 0,
+      "visibleMessages": [],
+      "sourceRequestHashes": [],
+      "contentHash": "sha256:8a1275df12f10ca4edbde91ae86faa83b9855477bea15673ad0bac9d47349320"
+    },
+    {
+      "checkpointRef": {
+        "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-checkpoint",
+        "version": "1.0.0"
+      },
+      "checkpointId": "task:hiddenbench:3:collective-dynamics-l4-dev-stage1:3:seed-1:X1",
+      "checkpointRound": 1,
+      "visibleMessages": [
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:3:1",
+          "content": "[choiceId=opt_2]\nI choose East Town because the supply truck was supposed to come from there, and the mayor has offered accommodations. While there's a concern about volunteer shortages, the town's proximity to our village and the supply truck's origin make it a practical choice. We need to coordinate with others to ensure we all agree on this location to maximize rewards.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:3:2",
+          "content": "[choiceId=opt_2]\nI choose East Town because the supply truck was supposed to come from there, and the mayor has offered accommodations. However, I'm concerned about the possible shortage of volunteers to assist evacuees, especially elderly and children. We need to ensure there's enough help available.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:3:3",
+          "content": "[choiceId=opt_2]\nI recommend evacuating to East Town. The local government has announced that hotels there are prepared to accommodate evacuees and are fully stocked with food and medical supplies. Additionally, the supply truck was supposed to come from East Town, which suggests it is a reliable and accessible location. While there are concerns about volunteer shortages, the availability of stocked hotels makes it the most secure option for our community.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:3:4",
+          "content": "[choiceId=opt_2]\nI choose East Town because the supply truck was supposed to come from there, and the mayor has offered accommodations. However, I'm concerned about the volunteer shortage. We need to confirm if the tunnel is accessible and if the supplies can still arrive.",
+          "source": "agent"
+        }
+      ],
+      "sourceRequestHashes": [
+        "sha256:f715df9d54de8b8a6d64b217eae0dcbfb6ad509ae99c8b23d989d6a4e8ad970f",
+        "sha256:8c30e3ba8ecf2a0c776851bd8fb28b54ba0e5686f5898e016490d0227c5d88ad",
+        "sha256:f6da7ab9b581ba4e9f24665de8f4ff6267ab1364bc78b665eb53bf0b7ffc97f0",
+        "sha256:0d89445450bb43b902149b5ee25ff9176f6fd0ca7e48aeef8230974724528bd4"
+      ],
+      "contentHash": "sha256:bd389468e1278f77630a5a5c77c49ba243617caf16f9c87889ab7a6075052e99"
+    },
+    {
+      "checkpointRef": {
+        "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-checkpoint",
+        "version": "1.0.0"
+      },
+      "checkpointId": "task:hiddenbench:3:collective-dynamics-l4-dev-stage1:3:seed-1:X2",
+      "checkpointRound": 2,
+      "visibleMessages": [
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:3:1",
+          "content": "[choiceId=opt_2]\nI choose East Town because the supply truck was supposed to come from there, and the mayor has offered accommodations. While there's a concern about volunteer shortages, the town's proximity to our village and the supply truck's origin make it a practical choice. We need to coordinate with others to ensure we all agree on this location to maximize rewards.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:3:2",
+          "content": "[choiceId=opt_2]\nI choose East Town because the supply truck was supposed to come from there, and the mayor has offered accommodations. While there's a concern about volunteer shortages, the town's proximity to our village and the supply truck's origin make it a practical choice. We need to coordinate with others to ensure we all agree on this location to maximize rewards.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:3:3",
+          "content": "[choiceId=opt_2]\nI choose East Town because the supply truck was supposed to come from there, and the mayor has offered accommodations. While there's a concern about volunteer shortages, the town's proximity to our village and the supply truck's origin make it a practical choice. We need to coordinate with others to ensure we all agree on this location to maximize rewards.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:3:4",
+          "content": "[choiceId=opt_2]\nI choose East Town because the supply truck was supposed to come from there, and the mayor has offered accommodations. While there's a concern about volunteer shortages, the town's proximity to our village and the supply truck's origin make it a practical choice. We need to coordinate with others to ensure we all agree on this location to maximize rewards.",
+          "source": "agent"
+        }
+      ],
+      "sourceRequestHashes": [
+        "sha256:7411653183e2996555f9cdfa9537627c8442ca84151a64dda2b1ba267a686302",
+        "sha256:a6cb2670c4098f629607ef296ab2f4b5a988103f640cd5b39cfad776fa7d41a3",
+        "sha256:b0813a128ee4320dd2ef66269696ceaddc9ad5699a49030d002bb50803cd1b75",
+        "sha256:04498ce4e58a4fcfcebad10fab8c4f4e403e915003784daa01dfb9e65354e727"
+      ],
+      "contentHash": "sha256:74d8bcd921077e706ad13207b4e2da21fef06d0173f153dfeaca7bcb55a8aa0f"
+    },
+    {
+      "checkpointRef": {
+        "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-checkpoint",
+        "version": "1.0.0"
+      },
+      "checkpointId": "task:hiddenbench:3:collective-dynamics-l4-dev-stage1:3:seed-1:X3",
+      "checkpointRound": 3,
+      "visibleMessages": [
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:3:1",
+          "content": "[choiceId=opt_2]\nI choose East Town because the supply truck was supposed to come from there, and the mayor has offered accommodations. While there's a concern about volunteer shortages, the town's proximity to our village and the supply truck's origin make it a practical choice. We need to coordinate with others to ensure we all agree on this location to maximize rewards.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:3:2",
+          "content": "[choiceId=opt_2]\nI choose East Town because the supply truck was supposed to come from there, and the mayor has offered accommodations. While there's a concern about volunteer shortages, the town's proximity to our village and the supply truck's origin make it a practical choice. We need to coordinate with others to ensure we all agree on this location to maximize rewards.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:3:3",
+          "content": "[choiceId=opt_2]\nI choose East Town because the supply truck was supposed to come from there, and the mayor has offered accommodations. While there's a concern about volunteer shortages, the town's proximity to our village and the supply truck's origin make it a practical choice. We need to coordinate with others to ensure we all agree on this location to maximize rewards.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:3:4",
+          "content": "[choiceId=opt_2]\nI choose East Town because the supply truck was supposed to come from there, and the mayor has offered accommodations. While there's a concern about volunteer shortages, the town's proximity to our village and the supply truck's origin make it a practical choice. We need to coordinate with others to ensure we all agree on this location to maximize rewards.",
+          "source": "agent"
+        }
+      ],
+      "sourceRequestHashes": [
+        "sha256:89f8f4361e4d8924dda2c0bca8fb841b46295adf4c8b160c4946a878659e7467",
+        "sha256:c2d8d57e8fbe4fbc9bf133af94106b1aba3b6f3b3c5255ccc8f25633a51d93e5",
+        "sha256:8cd185df99be409fd434b689e38043fe66beb7cc79126b665144c8cbb797f566",
+        "sha256:f8bc4e063e76249521e42a23d37d1a83881e21cafbb2465d8cba213303f5d41d"
+      ],
+      "contentHash": "sha256:9a0f5688032aee0b32f2016c349a5ce3b04b36295ad90190fd6872b88ecae9e0"
+    }
+  ],
+  "contentHash": "sha256:33069b0df52706e272297d47a23fcd60ee6acdb29c77baadddfa5a27b7ee889a"
+}

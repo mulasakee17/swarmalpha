@@ -9,16 +9,16 @@ import dotenv from "dotenv";
 dotenv.config({ path: path.resolve(__dirname, "..", "..", "..", ".env.local") });
 
 import { CustomAgent } from "../../../src/lib/adapters/custom";
-import { NativeCognitiveEngine } from "../../../src/lib/discussion/nativeCognitiveEngine";
-import type { DiscussionAgent } from "../../../src/lib/discussion";
+import { NativeCognitiveEngine } from "../../../legacy/src/lib/discussion/nativeCognitiveEngine";
+import type { DiscussionAgent } from "../../../legacy/src/lib/discussion";
 import type { LLMConfig } from "../../../src/lib/llm/providers";
-import { mulberry32 } from "../../v2/statsShared";
+import { mulberry32 } from "../../../legacy/experiments/v2/statsShared";
 
 async function main() {
   console.log("=== E9 Minimal Validation ===\n");
 
   // 1. Load crisis scenario
-  const { TASK_CRISIS } = require("../../v2/task_crisis");
+  const { TASK_CRISIS } = require("../../../legacy/experiments/v2/task_crisis");
   const task = TASK_CRISIS;
 
   // 2. Create agents

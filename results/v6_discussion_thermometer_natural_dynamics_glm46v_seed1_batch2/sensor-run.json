@@ -1,0 +1,3054 @@
+{
+  "runRef": {
+    "id": "swarmalpha.experiment.v6.discussion-thermometer-natural-dynamics-sensor-run",
+    "version": "1.0.0"
+  },
+  "freezeHash": "sha256:5a278a82438d6a0858eccc00977bb5ff62fcc4129b24a9a16d3b3ae8b2adcf20",
+  "terminals": [
+    {
+      "sequence": 1,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x0:agent_1:a",
+      "requestHash": "sha256:694d66565f4b6ca8e5fffe073d97a1ed487f8ae166f146fcf4cea0cb08a1235f",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.2,\"opt_3\":0.0}}",
+      "responseHash": "sha256:a0efc8b4fea545a7f60f7a55192d83df866bc3406b08e296849739c145f22387",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.2,
+        "opt_3": 0
+      },
+      "usage": {
+        "promptTokens": 563,
+        "completionTokens": 41,
+        "totalTokens": 604,
+        "cachedPromptTokens": 60,
+        "latencyMs": 3282
+      }
+    },
+    {
+      "sequence": 2,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x0:agent_1:b",
+      "requestHash": "sha256:983eba315c835d744c9cbb77508b3d5e9997148520e67f0a4c1063f54705fa15",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      },
+      "usage": {
+        "promptTokens": 563,
+        "completionTokens": 39,
+        "totalTokens": 602,
+        "cachedPromptTokens": 60,
+        "latencyMs": 1316
+      }
+    },
+    {
+      "sequence": 3,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x1:agent_1:a",
+      "requestHash": "sha256:45ebcd263ca4d61d5fcaa2702964e1a69e256735213a6ec71c864a9a93cc8fdb",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      },
+      "usage": {
+        "promptTokens": 945,
+        "completionTokens": 39,
+        "totalTokens": 984,
+        "cachedPromptTokens": 60,
+        "latencyMs": 1420
+      }
+    },
+    {
+      "sequence": 4,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x1:agent_1:b",
+      "requestHash": "sha256:c6e69c7d5127f431020cd8444edfc136cf5b4384189f0aa7073a4643970d7eb4",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      },
+      "usage": {
+        "promptTokens": 945,
+        "completionTokens": 39,
+        "totalTokens": 984,
+        "cachedPromptTokens": 60,
+        "latencyMs": 1764
+      }
+    },
+    {
+      "sequence": 5,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x2:agent_1:a",
+      "requestHash": "sha256:4899d2be202d99ca0b53337c959e85be357618fe06d1099c50bd3700b33adb4f",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.9,\"opt_2\":0.05,\"opt_3\":0.05}}",
+      "responseHash": "sha256:791a8e2be1edc05243e1ce06e92f8f98639947dabb5d1d317a3da56cc327e53a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.9,
+        "opt_2": 0.05,
+        "opt_3": 0.05
+      },
+      "usage": {
+        "promptTokens": 1022,
+        "completionTokens": 39,
+        "totalTokens": 1061,
+        "cachedPromptTokens": 60,
+        "latencyMs": 1644
+      }
+    },
+    {
+      "sequence": 6,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x2:agent_1:b",
+      "requestHash": "sha256:36f9bba145598d3e7e2fa4513249b8162b2f11611a626045449a5cd8ff49e81d",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.9,\"opt_2\":0.05,\"opt_3\":0.05}}",
+      "responseHash": "sha256:791a8e2be1edc05243e1ce06e92f8f98639947dabb5d1d317a3da56cc327e53a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.9,
+        "opt_2": 0.05,
+        "opt_3": 0.05
+      },
+      "usage": {
+        "promptTokens": 1022,
+        "completionTokens": 39,
+        "totalTokens": 1061,
+        "cachedPromptTokens": 60,
+        "latencyMs": 1749
+      }
+    },
+    {
+      "sequence": 7,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x3:agent_1:a",
+      "requestHash": "sha256:b68c999e3c0d48e343a9d771a6e0acef6f407875082a5b32c2b3a9f26a548313",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.9,\"opt_2\":0.05,\"opt_3\":0.05}}",
+      "responseHash": "sha256:791a8e2be1edc05243e1ce06e92f8f98639947dabb5d1d317a3da56cc327e53a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.9,
+        "opt_2": 0.05,
+        "opt_3": 0.05
+      },
+      "usage": {
+        "promptTokens": 1018,
+        "completionTokens": 39,
+        "totalTokens": 1057,
+        "cachedPromptTokens": 60,
+        "latencyMs": 1771
+      }
+    },
+    {
+      "sequence": 8,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x3:agent_1:b",
+      "requestHash": "sha256:df98cbcbf08dd67f3110efd107cd04f3c02baa5cdf141c70de9bc3aecb0e7999",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.9,\"opt_2\":0.05,\"opt_3\":0.05}}",
+      "responseHash": "sha256:791a8e2be1edc05243e1ce06e92f8f98639947dabb5d1d317a3da56cc327e53a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.9,
+        "opt_2": 0.05,
+        "opt_3": 0.05
+      },
+      "usage": {
+        "promptTokens": 1018,
+        "completionTokens": 48,
+        "totalTokens": 1066,
+        "cachedPromptTokens": 331,
+        "latencyMs": 2146
+      }
+    },
+    {
+      "sequence": 9,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x4:agent_1:a",
+      "requestHash": "sha256:94c8391bf23e3d96c235489f5d670f69ab3035ccefd52d2211b142ab71340671",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.9,\"opt_2\":0.05,\"opt_3\":0.05}}",
+      "responseHash": "sha256:791a8e2be1edc05243e1ce06e92f8f98639947dabb5d1d317a3da56cc327e53a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.9,
+        "opt_2": 0.05,
+        "opt_3": 0.05
+      },
+      "usage": {
+        "promptTokens": 1018,
+        "completionTokens": 41,
+        "totalTokens": 1059,
+        "cachedPromptTokens": 331,
+        "latencyMs": 3596
+      }
+    },
+    {
+      "sequence": 10,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x4:agent_1:b",
+      "requestHash": "sha256:f656075a954f21e0baf432eb2ef278e8425fb773148fde0f5b78606c16a56ce1",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.9,\"opt_2\":0.05,\"opt_3\":0.05}}",
+      "responseHash": "sha256:791a8e2be1edc05243e1ce06e92f8f98639947dabb5d1d317a3da56cc327e53a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.9,
+        "opt_2": 0.05,
+        "opt_3": 0.05
+      },
+      "usage": {
+        "promptTokens": 1018,
+        "completionTokens": 41,
+        "totalTokens": 1059,
+        "cachedPromptTokens": 331,
+        "latencyMs": 2252
+      }
+    },
+    {
+      "sequence": 11,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x0:agent_2:a",
+      "requestHash": "sha256:7db1b6dfe7ebd43d1afe907808f570a035f5a04c8a5a221c5b9ae612933ab90a",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.8,\"opt_3\":0.1}}",
+      "responseHash": "sha256:2d3bd5149eab2e398dc0a13853061706b052f394013f2752cdbe4a9da66dd8e6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.1,
+        "opt_2": 0.8,
+        "opt_3": 0.1
+      },
+      "usage": {
+        "promptTokens": 557,
+        "completionTokens": 39,
+        "totalTokens": 596,
+        "cachedPromptTokens": 292,
+        "latencyMs": 2147
+      }
+    },
+    {
+      "sequence": 12,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x0:agent_2:b",
+      "requestHash": "sha256:011b33f86920655917e846739031b3e0c6360d32646a854deea6f4db612e0bd1",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.3,\"opt_3\":0.0}}",
+      "responseHash": "sha256:405f6c10a9b1bf338ece82bce32d7b388d5698691ed40961c08003d49b91111d",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.3,
+        "opt_3": 0
+      },
+      "usage": {
+        "promptTokens": 557,
+        "completionTokens": 48,
+        "totalTokens": 605,
+        "cachedPromptTokens": 292,
+        "latencyMs": 2315
+      }
+    },
+    {
+      "sequence": 13,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x1:agent_2:a",
+      "requestHash": "sha256:4fe0402378c17cd0443110d42915b53a6b77a4509c15e4c740f31cceefd7284c",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      },
+      "usage": {
+        "promptTokens": 939,
+        "completionTokens": 39,
+        "totalTokens": 978,
+        "cachedPromptTokens": 292,
+        "latencyMs": 1724
+      }
+    },
+    {
+      "sequence": 14,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x1:agent_2:b",
+      "requestHash": "sha256:eacc8bd1cf1ba2e03730a47f6e91fe816dd604385def6b77391cb5f049411146",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      },
+      "usage": {
+        "promptTokens": 939,
+        "completionTokens": 39,
+        "totalTokens": 978,
+        "cachedPromptTokens": 60,
+        "latencyMs": 1500
+      }
+    },
+    {
+      "sequence": 15,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x2:agent_2:a",
+      "requestHash": "sha256:4c83259bdcb725b7856c55141c9124bf91a872baa5bcdbc67d2dc6d96ac27735",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.9,\"opt_2\":0.05,\"opt_3\":0.05}}",
+      "responseHash": "sha256:791a8e2be1edc05243e1ce06e92f8f98639947dabb5d1d317a3da56cc327e53a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.9,
+        "opt_2": 0.05,
+        "opt_3": 0.05
+      },
+      "usage": {
+        "promptTokens": 1016,
+        "completionTokens": 41,
+        "totalTokens": 1057,
+        "cachedPromptTokens": 322,
+        "latencyMs": 1450
+      }
+    },
+    {
+      "sequence": 16,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x2:agent_2:b",
+      "requestHash": "sha256:ac428052ae87b31ceb9d9407158c088d6361457b7536cffa13fa02e377c855bc",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.9,\"opt_2\":0.05,\"opt_3\":0.05}}",
+      "responseHash": "sha256:791a8e2be1edc05243e1ce06e92f8f98639947dabb5d1d317a3da56cc327e53a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.9,
+        "opt_2": 0.05,
+        "opt_3": 0.05
+      },
+      "usage": {
+        "promptTokens": 1016,
+        "completionTokens": 39,
+        "totalTokens": 1055,
+        "cachedPromptTokens": 60,
+        "latencyMs": 1924
+      }
+    },
+    {
+      "sequence": 17,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x3:agent_2:a",
+      "requestHash": "sha256:32c5c5325f190eccaadc8cef3e2c27974754e2019bb4e1efa5098cbc6282b561",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.9,\"opt_2\":0.05,\"opt_3\":0.05}}",
+      "responseHash": "sha256:791a8e2be1edc05243e1ce06e92f8f98639947dabb5d1d317a3da56cc327e53a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.9,
+        "opt_2": 0.05,
+        "opt_3": 0.05
+      },
+      "usage": {
+        "promptTokens": 1012,
+        "completionTokens": 39,
+        "totalTokens": 1051,
+        "cachedPromptTokens": 325,
+        "latencyMs": 1963
+      }
+    },
+    {
+      "sequence": 18,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x3:agent_2:b",
+      "requestHash": "sha256:6ce7a68337d13708ebfc9866de761a210bfa3aa84af36ed8579d3af4ea408619",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.9,\"opt_2\":0.05,\"opt_3\":0.05}}",
+      "responseHash": "sha256:791a8e2be1edc05243e1ce06e92f8f98639947dabb5d1d317a3da56cc327e53a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.9,
+        "opt_2": 0.05,
+        "opt_3": 0.05
+      },
+      "usage": {
+        "promptTokens": 1012,
+        "completionTokens": 41,
+        "totalTokens": 1053,
+        "cachedPromptTokens": 322,
+        "latencyMs": 1476
+      }
+    },
+    {
+      "sequence": 19,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x4:agent_2:a",
+      "requestHash": "sha256:4ea29f0deaaa280c57c08e24806aa0a78e13650784a877862bb8f6c6827c99d6",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.9,\"opt_2\":0.05,\"opt_3\":0.05}}",
+      "responseHash": "sha256:791a8e2be1edc05243e1ce06e92f8f98639947dabb5d1d317a3da56cc327e53a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.9,
+        "opt_2": 0.05,
+        "opt_3": 0.05
+      },
+      "usage": {
+        "promptTokens": 1012,
+        "completionTokens": 41,
+        "totalTokens": 1053,
+        "cachedPromptTokens": 325,
+        "latencyMs": 2233
+      }
+    },
+    {
+      "sequence": 20,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x4:agent_2:b",
+      "requestHash": "sha256:303626f78bb7decea68aa0f370d56352119c52168ec35e7126e163c2e657160d",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.9,\"opt_2\":0.05,\"opt_3\":0.05}}",
+      "responseHash": "sha256:791a8e2be1edc05243e1ce06e92f8f98639947dabb5d1d317a3da56cc327e53a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.9,
+        "opt_2": 0.05,
+        "opt_3": 0.05
+      },
+      "usage": {
+        "promptTokens": 1012,
+        "completionTokens": 39,
+        "totalTokens": 1051,
+        "cachedPromptTokens": 325,
+        "latencyMs": 1454
+      }
+    },
+    {
+      "sequence": 21,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x0:agent_3:a",
+      "requestHash": "sha256:81e04d9b5e9158bcf31d9ebf39faba2882fea0966d28af742a959a4207a9b2b6",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.8,\"opt_3\":0.1}}",
+      "responseHash": "sha256:2d3bd5149eab2e398dc0a13853061706b052f394013f2752cdbe4a9da66dd8e6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.1,
+        "opt_2": 0.8,
+        "opt_3": 0.1
+      },
+      "usage": {
+        "promptTokens": 563,
+        "completionTokens": 41,
+        "totalTokens": 604,
+        "cachedPromptTokens": 292,
+        "latencyMs": 5487
+      }
+    },
+    {
+      "sequence": 22,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x0:agent_3:b",
+      "requestHash": "sha256:f61006f4c3785fdea20d96524550711d328268d77107fd0607967021a5de4bdc",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.8,\"opt_3\":0.1}}",
+      "responseHash": "sha256:2d3bd5149eab2e398dc0a13853061706b052f394013f2752cdbe4a9da66dd8e6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.1,
+        "opt_2": 0.8,
+        "opt_3": 0.1
+      },
+      "usage": {
+        "promptTokens": 563,
+        "completionTokens": 39,
+        "totalTokens": 602,
+        "cachedPromptTokens": 562,
+        "latencyMs": 4155
+      }
+    },
+    {
+      "sequence": 23,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x1:agent_3:a",
+      "requestHash": "sha256:9fadd344411cd5cd93554806ae23cb6233259a5747e3df5a4abd9839b5ee7681",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.45,\"opt_2\":0.45,\"opt_3\":0.1}}",
+      "responseHash": "sha256:efed2d3c344c19ef27ca66079ab63671d6bc56cda13816943dc154fc37a87a84",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.45,
+        "opt_2": 0.45,
+        "opt_3": 0.1
+      },
+      "usage": {
+        "promptTokens": 945,
+        "completionTokens": 41,
+        "totalTokens": 986,
+        "cachedPromptTokens": 292,
+        "latencyMs": 4933
+      }
+    },
+    {
+      "sequence": 24,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x1:agent_3:b",
+      "requestHash": "sha256:edd5e813c58fdec50e710694badaa2f16688ce383b40ecddd2699a462606b9df",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.4,\"opt_3\":0.2}}",
+      "responseHash": "sha256:3f4c917cc5a1858d0a6fe42c4cab63db0df7cb13bd256c2888a19cd3c908e0e8",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.4,
+        "opt_3": 0.2
+      },
+      "usage": {
+        "promptTokens": 945,
+        "completionTokens": 39,
+        "totalTokens": 984,
+        "cachedPromptTokens": 292,
+        "latencyMs": 1426
+      }
+    },
+    {
+      "sequence": 25,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x2:agent_3:a",
+      "requestHash": "sha256:57aca79006b4c523c5bdfeb22486d467b46d995691a7d9b49041225bb826f491",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      },
+      "usage": {
+        "promptTokens": 1022,
+        "completionTokens": 39,
+        "totalTokens": 1061,
+        "cachedPromptTokens": 331,
+        "latencyMs": 1296
+      }
+    },
+    {
+      "sequence": 26,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x2:agent_3:b",
+      "requestHash": "sha256:d7a1e9651933586171933b142f687ef4080cde0d573045626786a4c7fc5c1a91",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      },
+      "usage": {
+        "promptTokens": 1022,
+        "completionTokens": 41,
+        "totalTokens": 1063,
+        "cachedPromptTokens": 292,
+        "latencyMs": 2044
+      }
+    },
+    {
+      "sequence": 27,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x3:agent_3:a",
+      "requestHash": "sha256:84a02e26de9fb6abe85b350e68f963fc2abdb8ff913616bc3da32e2ddf208b4e",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.9,\"opt_2\":0.1,\"opt_3\":0.0}}",
+      "responseHash": "sha256:9c59b31f1d6b35860143a4198ae5790bfd7c3eea48a9a6b7f39aa7abcf06d5fe",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.9,
+        "opt_2": 0.1,
+        "opt_3": 0
+      },
+      "usage": {
+        "promptTokens": 1018,
+        "completionTokens": 39,
+        "totalTokens": 1057,
+        "cachedPromptTokens": 292,
+        "latencyMs": 3707
+      }
+    },
+    {
+      "sequence": 28,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x3:agent_3:b",
+      "requestHash": "sha256:bb476f6491be368053ee52d874a1098b140fed99d7eb007445d50e3c67968f2f",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      },
+      "usage": {
+        "promptTokens": 1018,
+        "completionTokens": 39,
+        "totalTokens": 1057,
+        "cachedPromptTokens": 58,
+        "latencyMs": 1962
+      }
+    },
+    {
+      "sequence": 29,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x4:agent_3:a",
+      "requestHash": "sha256:e6aad4e660180d5165548c524f5c0b8f8236a23da18d299761c15b3fd5ef0640",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.85,\"opt_2\":0.1,\"opt_3\":0.05}}",
+      "responseHash": "sha256:ec4cb39e811438cd9bd7e42b4bd53b012358816b632da0d63b85ed028cf6f2e9",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.85,
+        "opt_2": 0.1,
+        "opt_3": 0.05
+      },
+      "usage": {
+        "promptTokens": 1018,
+        "completionTokens": 39,
+        "totalTokens": 1057,
+        "cachedPromptTokens": 331,
+        "latencyMs": 1671
+      }
+    },
+    {
+      "sequence": 30,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x4:agent_3:b",
+      "requestHash": "sha256:21cc560e99d073f3f273bf80f71e6bb130a5dff8243abe342ea2103c8ae51f31",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.85,\"opt_2\":0.1,\"opt_3\":0.05}}",
+      "responseHash": "sha256:ec4cb39e811438cd9bd7e42b4bd53b012358816b632da0d63b85ed028cf6f2e9",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.85,
+        "opt_2": 0.1,
+        "opt_3": 0.05
+      },
+      "usage": {
+        "promptTokens": 1018,
+        "completionTokens": 48,
+        "totalTokens": 1066,
+        "cachedPromptTokens": 331,
+        "latencyMs": 2241
+      }
+    },
+    {
+      "sequence": 31,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x0:agent_4:a",
+      "requestHash": "sha256:6c21a0d1e0faf146675e294faef8f961dcb6e1e58b62b2fda01e2804781edc20",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "usage": {
+        "promptTokens": 560,
+        "completionTokens": 39,
+        "totalTokens": 599,
+        "cachedPromptTokens": 293,
+        "latencyMs": 1595
+      }
+    },
+    {
+      "sequence": 32,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x0:agent_4:b",
+      "requestHash": "sha256:e1364119cf182a35233c3b615ef1d54951334b20c654b5d8109b27fb1c98434c",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "usage": {
+        "promptTokens": 560,
+        "completionTokens": 39,
+        "totalTokens": 599,
+        "cachedPromptTokens": 293,
+        "latencyMs": 1163
+      }
+    },
+    {
+      "sequence": 33,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x1:agent_4:a",
+      "requestHash": "sha256:7c7001e36735550d5a87e47b6582ca3f0ce3e9dd9303a357b31430f06d6e0363",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.6,\"opt_2\":0.3,\"opt_3\":0.1}}",
+      "responseHash": "sha256:aa75a6a6813ea0c6d234fd4e23dcab1e9f8760247ef9791d915a7c9949c96152",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.6,
+        "opt_2": 0.3,
+        "opt_3": 0.1
+      },
+      "usage": {
+        "promptTokens": 942,
+        "completionTokens": 39,
+        "totalTokens": 981,
+        "cachedPromptTokens": 292,
+        "latencyMs": 2783
+      }
+    },
+    {
+      "sequence": 34,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x1:agent_4:b",
+      "requestHash": "sha256:44fb235fd3b1bb2da1784400646183b2313ab7713a300957acf462e21d4962dc",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.4,\"opt_3\":0.2}}",
+      "responseHash": "sha256:3f4c917cc5a1858d0a6fe42c4cab63db0df7cb13bd256c2888a19cd3c908e0e8",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.4,
+        "opt_3": 0.2
+      },
+      "usage": {
+        "promptTokens": 942,
+        "completionTokens": 39,
+        "totalTokens": 981,
+        "cachedPromptTokens": 293,
+        "latencyMs": 1619
+      }
+    },
+    {
+      "sequence": 35,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x2:agent_4:a",
+      "requestHash": "sha256:ba64a840be065fb6404b0abff13b7c3d058d2f9e72cac2e2f5f67b0a434bf7ef",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.9,\"opt_2\":0.05,\"opt_3\":0.05}}",
+      "responseHash": "sha256:791a8e2be1edc05243e1ce06e92f8f98639947dabb5d1d317a3da56cc327e53a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.9,
+        "opt_2": 0.05,
+        "opt_3": 0.05
+      },
+      "usage": {
+        "promptTokens": 1019,
+        "completionTokens": 39,
+        "totalTokens": 1058,
+        "cachedPromptTokens": 325,
+        "latencyMs": 1372
+      }
+    },
+    {
+      "sequence": 36,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x2:agent_4:b",
+      "requestHash": "sha256:1b534f3a4b2de707faa510ffdfcbdd0bafbdf25101f0da8602440a0e1d378154",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.95,\"opt_2\":0.04,\"opt_3\":0.01}}",
+      "responseHash": "sha256:213ccfc5d55cb878cb3d538b4f4a2fe01d97723a66d05df21623398f2957955e",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.95,
+        "opt_2": 0.04,
+        "opt_3": 0.01
+      },
+      "usage": {
+        "promptTokens": 1019,
+        "completionTokens": 39,
+        "totalTokens": 1058,
+        "cachedPromptTokens": 328,
+        "latencyMs": 1733
+      }
+    },
+    {
+      "sequence": 37,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x3:agent_4:a",
+      "requestHash": "sha256:d7f576f36f12915a42dd30968e83207689cfa52d274a7d81ef9da6ff78ddf0c0",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.9,\"opt_2\":0.05,\"opt_3\":0.05}}",
+      "responseHash": "sha256:791a8e2be1edc05243e1ce06e92f8f98639947dabb5d1d317a3da56cc327e53a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.9,
+        "opt_2": 0.05,
+        "opt_3": 0.05
+      },
+      "usage": {
+        "promptTokens": 1015,
+        "completionTokens": 48,
+        "totalTokens": 1063,
+        "cachedPromptTokens": 293,
+        "latencyMs": 3082
+      }
+    },
+    {
+      "sequence": 38,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x3:agent_4:b",
+      "requestHash": "sha256:e90b74414d92687fde042fb60bef346890a3295c02da954426bd2366288833e2",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.95,\"opt_2\":0.04,\"opt_3\":0.01}}",
+      "responseHash": "sha256:213ccfc5d55cb878cb3d538b4f4a2fe01d97723a66d05df21623398f2957955e",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.95,
+        "opt_2": 0.04,
+        "opt_3": 0.01
+      },
+      "usage": {
+        "promptTokens": 1015,
+        "completionTokens": 41,
+        "totalTokens": 1056,
+        "cachedPromptTokens": 292,
+        "latencyMs": 2080
+      }
+    },
+    {
+      "sequence": 39,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x4:agent_4:a",
+      "requestHash": "sha256:33ba533dc977b53964d28bba7f9d174db05689f694abe5c8b80572122412e4f6",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.9,\"opt_2\":0.05,\"opt_3\":0.05}}",
+      "responseHash": "sha256:791a8e2be1edc05243e1ce06e92f8f98639947dabb5d1d317a3da56cc327e53a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.9,
+        "opt_2": 0.05,
+        "opt_3": 0.05
+      },
+      "usage": {
+        "promptTokens": 1015,
+        "completionTokens": 48,
+        "totalTokens": 1063,
+        "cachedPromptTokens": 328,
+        "latencyMs": 2067
+      }
+    },
+    {
+      "sequence": 40,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v2:x4:agent_4:b",
+      "requestHash": "sha256:069774f022eb408469acd416809eb60196e24dbbf7e8787b42dfa01b3332667c",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.9,\"opt_2\":0.05,\"opt_3\":0.05}}",
+      "responseHash": "sha256:791a8e2be1edc05243e1ce06e92f8f98639947dabb5d1d317a3da56cc327e53a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.9,
+        "opt_2": 0.05,
+        "opt_3": 0.05
+      },
+      "usage": {
+        "promptTokens": 1015,
+        "completionTokens": 48,
+        "totalTokens": 1063,
+        "cachedPromptTokens": 1014,
+        "latencyMs": 3624
+      }
+    },
+    {
+      "sequence": 41,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x0:agent_1:a",
+      "requestHash": "sha256:cbe6f243db9e21617454656b598eab2f7a8653e4080bf9041439012d7f8e6c22",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.1,\"opt_3\":0.1}}",
+      "responseHash": "sha256:b0903342cd5ca041d06ed12487a88047d2af19970fbc7b29eeb255aa778f5523",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.1,
+        "opt_3": 0.1
+      },
+      "usage": {
+        "promptTokens": 555,
+        "completionTokens": 39,
+        "totalTokens": 594,
+        "cachedPromptTokens": 274,
+        "latencyMs": 2124
+      }
+    },
+    {
+      "sequence": 42,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x0:agent_1:b",
+      "requestHash": "sha256:4ff8b8f2d356129f9cfd4398e727ecbe440f40f283c1124658e157824eb05d17",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.15,\"opt_3\":0.05}}",
+      "responseHash": "sha256:4ddea2c6c42badcfeb82877f8cf0cfdfed6c5951c33b9c87ceaae6a4e68e8393",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.15,
+        "opt_3": 0.05
+      },
+      "usage": {
+        "promptTokens": 555,
+        "completionTokens": 39,
+        "totalTokens": 594,
+        "cachedPromptTokens": 274,
+        "latencyMs": 1669
+      }
+    },
+    {
+      "sequence": 43,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x1:agent_1:a",
+      "requestHash": "sha256:f9505631780de871a26f71e9d545bf6155af548974caab355a4e13b708f5ec12",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.1,\"opt_3\":0.1}}",
+      "responseHash": "sha256:b0903342cd5ca041d06ed12487a88047d2af19970fbc7b29eeb255aa778f5523",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.1,
+        "opt_3": 0.1
+      },
+      "usage": {
+        "promptTokens": 834,
+        "completionTokens": 39,
+        "totalTokens": 873,
+        "cachedPromptTokens": 274,
+        "latencyMs": 1607
+      }
+    },
+    {
+      "sequence": 44,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x1:agent_1:b",
+      "requestHash": "sha256:e10a1e7d25031d4ca7e66b4ebe3547dc908cc8e54709f157672a4980757bc13d",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.1,\"opt_3\":0.1}}",
+      "responseHash": "sha256:b0903342cd5ca041d06ed12487a88047d2af19970fbc7b29eeb255aa778f5523",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.1,
+        "opt_3": 0.1
+      },
+      "usage": {
+        "promptTokens": 834,
+        "completionTokens": 50,
+        "totalTokens": 884,
+        "cachedPromptTokens": 274,
+        "latencyMs": 2092
+      }
+    },
+    {
+      "sequence": 45,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x2:agent_1:a",
+      "requestHash": "sha256:a380828bb257368ee895d3cb838159c8b305b2c029279eefa09aa57ed05c4d51",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.1,\"opt_3\":0.1}}",
+      "responseHash": "sha256:b0903342cd5ca041d06ed12487a88047d2af19970fbc7b29eeb255aa778f5523",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.1,
+        "opt_3": 0.1
+      },
+      "usage": {
+        "promptTokens": 845,
+        "completionTokens": 39,
+        "totalTokens": 884,
+        "cachedPromptTokens": 320,
+        "latencyMs": 1896
+      }
+    },
+    {
+      "sequence": 46,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x2:agent_1:b",
+      "requestHash": "sha256:95998e993f6be2150c6444ed1bef9d64d4964e72e3b85eba7302672a64f9675f",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.85,\"opt_2\":0.10,\"opt_3\":0.05}}",
+      "responseHash": "sha256:b37fc5255cecf1a5bc7a21788ab06efc87fa42c4a925299874d2a09935525b92",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.85,
+        "opt_2": 0.1,
+        "opt_3": 0.05
+      },
+      "usage": {
+        "promptTokens": 845,
+        "completionTokens": 50,
+        "totalTokens": 895,
+        "cachedPromptTokens": 58,
+        "latencyMs": 3575
+      }
+    },
+    {
+      "sequence": 47,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x3:agent_1:a",
+      "requestHash": "sha256:89f8443f24a40aeb9ede5df43c5adce2d98d98189cc6dcfaa7d492a536a1d5ac",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.1,\"opt_3\":0.1}}",
+      "responseHash": "sha256:b0903342cd5ca041d06ed12487a88047d2af19970fbc7b29eeb255aa778f5523",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.1,
+        "opt_3": 0.1
+      },
+      "usage": {
+        "promptTokens": 845,
+        "completionTokens": 39,
+        "totalTokens": 884,
+        "cachedPromptTokens": 323,
+        "latencyMs": 1774
+      }
+    },
+    {
+      "sequence": 48,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x3:agent_1:b",
+      "requestHash": "sha256:6c22ed437a96d3d431cdfee33bbc9790f53410c318457479574376b49192d035",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.9,\"opt_2\":0.05,\"opt_3\":0.05}}",
+      "responseHash": "sha256:791a8e2be1edc05243e1ce06e92f8f98639947dabb5d1d317a3da56cc327e53a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.9,
+        "opt_2": 0.05,
+        "opt_3": 0.05
+      },
+      "usage": {
+        "promptTokens": 845,
+        "completionTokens": 39,
+        "totalTokens": 884,
+        "cachedPromptTokens": 274,
+        "latencyMs": 1332
+      }
+    },
+    {
+      "sequence": 49,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x4:agent_1:a",
+      "requestHash": "sha256:3e93e5b57b884343d0341eb495fc88d2c6d923eefbf59c9f2932c83e9cd980c6",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.9,\"opt_2\":0.05,\"opt_3\":0.05}}",
+      "responseHash": "sha256:791a8e2be1edc05243e1ce06e92f8f98639947dabb5d1d317a3da56cc327e53a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.9,
+        "opt_2": 0.05,
+        "opt_3": 0.05
+      },
+      "usage": {
+        "promptTokens": 845,
+        "completionTokens": 39,
+        "totalTokens": 884,
+        "cachedPromptTokens": 274,
+        "latencyMs": 2585
+      }
+    },
+    {
+      "sequence": 50,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x4:agent_1:b",
+      "requestHash": "sha256:3cac20334e7be2e7923eb484dc79c7089754a17507843ddb0d5e1bfd7f913af7",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.9,\"opt_2\":0.05,\"opt_3\":0.05}}",
+      "responseHash": "sha256:791a8e2be1edc05243e1ce06e92f8f98639947dabb5d1d317a3da56cc327e53a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.9,
+        "opt_2": 0.05,
+        "opt_3": 0.05
+      },
+      "usage": {
+        "promptTokens": 845,
+        "completionTokens": 39,
+        "totalTokens": 884,
+        "cachedPromptTokens": 274,
+        "latencyMs": 1730
+      }
+    },
+    {
+      "sequence": 51,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x0:agent_2:a",
+      "requestHash": "sha256:dd78537928ad25b0bed1906129fd801ce7a20ee7f4729d1597a7bb8dd8faa65a",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.9,\"opt_2\":0.1,\"opt_3\":0.0}}",
+      "responseHash": "sha256:9c59b31f1d6b35860143a4198ae5790bfd7c3eea48a9a6b7f39aa7abcf06d5fe",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.9,
+        "opt_2": 0.1,
+        "opt_3": 0
+      },
+      "usage": {
+        "promptTokens": 555,
+        "completionTokens": 48,
+        "totalTokens": 603,
+        "cachedPromptTokens": 320,
+        "latencyMs": 1966
+      }
+    },
+    {
+      "sequence": 52,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x0:agent_2:b",
+      "requestHash": "sha256:843ece37c0659ed568b9f0dbaa9c9889f5cb7a67429a70b99596f3eae5b6845c",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.9,\"opt_2\":0.1,\"opt_3\":0.0}}",
+      "responseHash": "sha256:9c59b31f1d6b35860143a4198ae5790bfd7c3eea48a9a6b7f39aa7abcf06d5fe",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.9,
+        "opt_2": 0.1,
+        "opt_3": 0
+      },
+      "usage": {
+        "promptTokens": 555,
+        "completionTokens": 39,
+        "totalTokens": 594,
+        "cachedPromptTokens": 554,
+        "latencyMs": 1822
+      }
+    },
+    {
+      "sequence": 53,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x1:agent_2:a",
+      "requestHash": "sha256:854fcd6a50c3b23414d2d0bf1921fcfbbc89fdc317713d21133c64353d3e8fd4",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.9,\"opt_2\":0.05,\"opt_3\":0.05}}",
+      "responseHash": "sha256:791a8e2be1edc05243e1ce06e92f8f98639947dabb5d1d317a3da56cc327e53a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.9,
+        "opt_2": 0.05,
+        "opt_3": 0.05
+      },
+      "usage": {
+        "promptTokens": 834,
+        "completionTokens": 39,
+        "totalTokens": 873,
+        "cachedPromptTokens": 274,
+        "latencyMs": 1825
+      }
+    },
+    {
+      "sequence": 54,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x1:agent_2:b",
+      "requestHash": "sha256:37d8d926fcd86b044e230ec9ecfdaf206214b56a5d703fef26d17bf382ac4f38",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.9,\"opt_2\":0.05,\"opt_3\":0.05}}",
+      "responseHash": "sha256:791a8e2be1edc05243e1ce06e92f8f98639947dabb5d1d317a3da56cc327e53a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.9,
+        "opt_2": 0.05,
+        "opt_3": 0.05
+      },
+      "usage": {
+        "promptTokens": 834,
+        "completionTokens": 39,
+        "totalTokens": 873,
+        "cachedPromptTokens": 833,
+        "latencyMs": 2688
+      }
+    },
+    {
+      "sequence": 55,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x2:agent_2:a",
+      "requestHash": "sha256:9e37224c7e8ca82040c8b334c1c3dfadd2cd81dcb59530fba69349e58c0d25f6",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.9,\"opt_2\":0.05,\"opt_3\":0.05}}",
+      "responseHash": "sha256:791a8e2be1edc05243e1ce06e92f8f98639947dabb5d1d317a3da56cc327e53a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.9,
+        "opt_2": 0.05,
+        "opt_3": 0.05
+      },
+      "usage": {
+        "promptTokens": 845,
+        "completionTokens": 39,
+        "totalTokens": 884,
+        "cachedPromptTokens": 323,
+        "latencyMs": 2457
+      }
+    },
+    {
+      "sequence": 56,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x2:agent_2:b",
+      "requestHash": "sha256:4188001bf9ab66882674fa3c9559fb5c9bb38a0668c8afa23751d8367753c255",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.1,\"opt_3\":0.1}}",
+      "responseHash": "sha256:b0903342cd5ca041d06ed12487a88047d2af19970fbc7b29eeb255aa778f5523",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.1,
+        "opt_3": 0.1
+      },
+      "usage": {
+        "promptTokens": 845,
+        "completionTokens": 39,
+        "totalTokens": 884,
+        "cachedPromptTokens": 323,
+        "latencyMs": 1778
+      }
+    },
+    {
+      "sequence": 57,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x3:agent_2:a",
+      "requestHash": "sha256:0f5630090bddd12cd134ad152103e631465d883fac604e6d3025cc8483d916e7",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.9,\"opt_2\":0.05,\"opt_3\":0.05}}",
+      "responseHash": "sha256:791a8e2be1edc05243e1ce06e92f8f98639947dabb5d1d317a3da56cc327e53a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.9,
+        "opt_2": 0.05,
+        "opt_3": 0.05
+      },
+      "usage": {
+        "promptTokens": 845,
+        "completionTokens": 39,
+        "totalTokens": 884,
+        "cachedPromptTokens": 320,
+        "latencyMs": 1761
+      }
+    },
+    {
+      "sequence": 58,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x3:agent_2:b",
+      "requestHash": "sha256:55bcd36ce6cb73e1c2e5742c97feb724101887516db516682c1d3b2501166ef6",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.9,\"opt_2\":0.05,\"opt_3\":0.05}}",
+      "responseHash": "sha256:791a8e2be1edc05243e1ce06e92f8f98639947dabb5d1d317a3da56cc327e53a",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.9,
+        "opt_2": 0.05,
+        "opt_3": 0.05
+      },
+      "usage": {
+        "promptTokens": 845,
+        "completionTokens": 50,
+        "totalTokens": 895,
+        "cachedPromptTokens": 274,
+        "latencyMs": 1249
+      }
+    },
+    {
+      "sequence": 59,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x4:agent_2:a",
+      "requestHash": "sha256:370cc57522b3e0fedacf002872c31a3dc2b047547c5b3932be30bd5dccbaca6b",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.1,\"opt_3\":0.1}}",
+      "responseHash": "sha256:b0903342cd5ca041d06ed12487a88047d2af19970fbc7b29eeb255aa778f5523",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.1,
+        "opt_3": 0.1
+      },
+      "usage": {
+        "promptTokens": 845,
+        "completionTokens": 39,
+        "totalTokens": 884,
+        "cachedPromptTokens": 323,
+        "latencyMs": 5034
+      }
+    },
+    {
+      "sequence": 60,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x4:agent_2:b",
+      "requestHash": "sha256:65d5f5c3498354a52c0b818c91c66df93730349e43f3e8a23b8b0d429a9c8ef6",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.8,\"opt_2\":0.1,\"opt_3\":0.1}}",
+      "responseHash": "sha256:b0903342cd5ca041d06ed12487a88047d2af19970fbc7b29eeb255aa778f5523",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.8,
+        "opt_2": 0.1,
+        "opt_3": 0.1
+      },
+      "usage": {
+        "promptTokens": 845,
+        "completionTokens": 39,
+        "totalTokens": 884,
+        "cachedPromptTokens": 330,
+        "latencyMs": 1669
+      }
+    },
+    {
+      "sequence": 61,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x0:agent_3:a",
+      "requestHash": "sha256:88b5e82e88b77b9d3ce4eeaf311f6ec3b104bb1691bb5d7c557dc242d3a14d0b",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.01,\"opt_2\":0.01,\"opt_3\":0.98}}",
+      "responseHash": "sha256:fc85d4cc09887ca7de1d3e6087bff8ad783aea22f53b9e93dab26ca025995254",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.01,
+        "opt_2": 0.01,
+        "opt_3": 0.98
+      },
+      "usage": {
+        "promptTokens": 567,
+        "completionTokens": 39,
+        "totalTokens": 606,
+        "cachedPromptTokens": 273,
+        "latencyMs": 1718
+      }
+    },
+    {
+      "sequence": 62,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x0:agent_3:b",
+      "requestHash": "sha256:df78631d11d9d3ff3457ddde3032d771321fddb97fe3e3d140e3f2b00119f1b9",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.01,\"opt_2\":0.01,\"opt_3\":0.98}}",
+      "responseHash": "sha256:fc85d4cc09887ca7de1d3e6087bff8ad783aea22f53b9e93dab26ca025995254",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.01,
+        "opt_2": 0.01,
+        "opt_3": 0.98
+      },
+      "usage": {
+        "promptTokens": 567,
+        "completionTokens": 48,
+        "totalTokens": 615,
+        "cachedPromptTokens": 566,
+        "latencyMs": 2135
+      }
+    },
+    {
+      "sequence": 63,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x1:agent_3:a",
+      "requestHash": "sha256:ca956886066aa0a5dcd56ce20ac5ebdc57a57105f60cddb0cd16f0255db099ad",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 846,
+        "completionTokens": 41,
+        "totalTokens": 887,
+        "cachedPromptTokens": 273,
+        "latencyMs": 3687
+      }
+    },
+    {
+      "sequence": 64,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x1:agent_3:b",
+      "requestHash": "sha256:e842a75acd4204eafd598d6025ef314c613f28dd89d6cc0c735aeb183d9475f9",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 846,
+        "completionTokens": 48,
+        "totalTokens": 894,
+        "cachedPromptTokens": 332,
+        "latencyMs": 4478
+      }
+    },
+    {
+      "sequence": 65,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x2:agent_3:a",
+      "requestHash": "sha256:cdd13200b3e6c32f2e4e08a619a8b949e9487c11b68e90386be67f7d905accab",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 857,
+        "completionTokens": 50,
+        "totalTokens": 907,
+        "cachedPromptTokens": 273,
+        "latencyMs": 2466
+      }
+    },
+    {
+      "sequence": 66,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x2:agent_3:b",
+      "requestHash": "sha256:48f6d393b6fa51a5908350a20c13601e702d966933edf428a3a6ef08066d40e2",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.01,\"opt_2\":0.01,\"opt_3\":0.98}}",
+      "responseHash": "sha256:fc85d4cc09887ca7de1d3e6087bff8ad783aea22f53b9e93dab26ca025995254",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.01,
+        "opt_2": 0.01,
+        "opt_3": 0.98
+      },
+      "usage": {
+        "promptTokens": 857,
+        "completionTokens": 48,
+        "totalTokens": 905,
+        "cachedPromptTokens": 856,
+        "latencyMs": 2266
+      }
+    },
+    {
+      "sequence": 67,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x3:agent_3:a",
+      "requestHash": "sha256:12217d446b15b1572a7aae9b4c95c2a1ff7ce6c03f83ade614873fb2a9749967",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 857,
+        "completionTokens": 41,
+        "totalTokens": 898,
+        "cachedPromptTokens": 273,
+        "latencyMs": 1400
+      }
+    },
+    {
+      "sequence": 68,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x3:agent_3:b",
+      "requestHash": "sha256:28d7eeddfd5f29b2c2f585921908731b9b84dd830e4f0f5f7252383257bd64cd",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 857,
+        "completionTokens": 39,
+        "totalTokens": 896,
+        "cachedPromptTokens": 273,
+        "latencyMs": 1717
+      }
+    },
+    {
+      "sequence": 69,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x4:agent_3:a",
+      "requestHash": "sha256:31cdfab6b79fea4fb1a739771e55fa76beb3d66b27322ce582bb8d719fc7737e",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 857,
+        "completionTokens": 39,
+        "totalTokens": 896,
+        "cachedPromptTokens": 273,
+        "latencyMs": 1206
+      }
+    },
+    {
+      "sequence": 70,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x4:agent_3:b",
+      "requestHash": "sha256:e901f68518e4db6c330968c253c087dddb3c61961dfb1ff816c656c78c74ff49",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 857,
+        "completionTokens": 39,
+        "totalTokens": 896,
+        "cachedPromptTokens": 335,
+        "latencyMs": 2656
+      }
+    },
+    {
+      "sequence": 71,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x0:agent_4:a",
+      "requestHash": "sha256:d30c2412a38f2dead4790a39e2c2e69aae806f47dba4a03cbe6bf7e27492e300",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.01,\"opt_2\":0.01,\"opt_3\":0.98}}",
+      "responseHash": "sha256:fc85d4cc09887ca7de1d3e6087bff8ad783aea22f53b9e93dab26ca025995254",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.01,
+        "opt_2": 0.01,
+        "opt_3": 0.98
+      },
+      "usage": {
+        "promptTokens": 567,
+        "completionTokens": 39,
+        "totalTokens": 606,
+        "cachedPromptTokens": 332,
+        "latencyMs": 1428
+      }
+    },
+    {
+      "sequence": 72,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x0:agent_4:b",
+      "requestHash": "sha256:16d0086206910f16c9823d6cdefa2a4a9d8eb90fdbc8cbdf4eb1c1c190d88117",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 567,
+        "completionTokens": 39,
+        "totalTokens": 606,
+        "cachedPromptTokens": 273,
+        "latencyMs": 4177
+      }
+    },
+    {
+      "sequence": 73,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x1:agent_4:a",
+      "requestHash": "sha256:66e966db1de8884651db977a54dac6accf4a8243c63a8dd7aa4e9561cc5e87c8",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 846,
+        "completionTokens": 39,
+        "totalTokens": 885,
+        "cachedPromptTokens": 342,
+        "latencyMs": 1859
+      }
+    },
+    {
+      "sequence": 74,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x1:agent_4:b",
+      "requestHash": "sha256:1057d1fe67d97683d15bd3616fe2d08eca6a2e646458d8102081bdeeed02e651",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 846,
+        "completionTokens": 39,
+        "totalTokens": 885,
+        "cachedPromptTokens": 845,
+        "latencyMs": 1656
+      }
+    },
+    {
+      "sequence": 75,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x2:agent_4:a",
+      "requestHash": "sha256:2ed32c85f6b89be452f3ee48c7ae4db393cc9ce44d473af44070bff660d01653",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 857,
+        "completionTokens": 39,
+        "totalTokens": 896,
+        "cachedPromptTokens": 335,
+        "latencyMs": 1654
+      }
+    },
+    {
+      "sequence": 76,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x2:agent_4:b",
+      "requestHash": "sha256:a329d7e9e3e5aab192d3b11d0a5c3a35fd75076e7d160255fbfeab0f4c913bfc",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 857,
+        "completionTokens": 39,
+        "totalTokens": 896,
+        "cachedPromptTokens": 332,
+        "latencyMs": 1620
+      }
+    },
+    {
+      "sequence": 77,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x3:agent_4:a",
+      "requestHash": "sha256:741a976a19bf4f91df94743c90b59ded396e1e20ac9a0419444352c1b0531ddb",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 857,
+        "completionTokens": 39,
+        "totalTokens": 896,
+        "cachedPromptTokens": 273,
+        "latencyMs": 3365
+      }
+    },
+    {
+      "sequence": 78,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x3:agent_4:b",
+      "requestHash": "sha256:2d75dd1b3459651c22809f5b2e8c59da09761562ebd89bf9bac8a764cb6a69e6",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 857,
+        "completionTokens": 39,
+        "totalTokens": 896,
+        "cachedPromptTokens": 856,
+        "latencyMs": 1593
+      }
+    },
+    {
+      "sequence": 79,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x4:agent_4:a",
+      "requestHash": "sha256:fdad4a4485265758733b5146e5c93292a2537717d74ec63b810c4009b7346b15",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 857,
+        "completionTokens": 48,
+        "totalTokens": 905,
+        "cachedPromptTokens": 342,
+        "latencyMs": 1672
+      }
+    },
+    {
+      "sequence": 80,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:thermal-loop:v3:x4:agent_4:b",
+      "requestHash": "sha256:cb3550ea754c45ba9d9dbad7e842e9a56e6be0eb6dec3093509ed5761059a216",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 857,
+        "completionTokens": 39,
+        "totalTokens": 896,
+        "cachedPromptTokens": 335,
+        "latencyMs": 1552
+      }
+    },
+    {
+      "sequence": 81,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x0:agent_1:a",
+      "requestHash": "sha256:7c1f7afec85acf1ef6819227daa824e65d672eb7712d2f5f878310ba2598e7c9",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.8,\"opt_3\":0.1}}",
+      "responseHash": "sha256:2d3bd5149eab2e398dc0a13853061706b052f394013f2752cdbe4a9da66dd8e6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.1,
+        "opt_2": 0.8,
+        "opt_3": 0.1
+      },
+      "usage": {
+        "promptTokens": 550,
+        "completionTokens": 41,
+        "totalTokens": 591,
+        "cachedPromptTokens": 155,
+        "latencyMs": 1978
+      }
+    },
+    {
+      "sequence": 82,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x0:agent_1:b",
+      "requestHash": "sha256:e041786026537af94990549b0c38c27ef69e810584b40c31573c4bf0a2b23d0b",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.8,\"opt_3\":0.1}}",
+      "responseHash": "sha256:2d3bd5149eab2e398dc0a13853061706b052f394013f2752cdbe4a9da66dd8e6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.1,
+        "opt_2": 0.8,
+        "opt_3": 0.1
+      },
+      "usage": {
+        "promptTokens": 550,
+        "completionTokens": 48,
+        "totalTokens": 598,
+        "cachedPromptTokens": 155,
+        "latencyMs": 1698
+      }
+    },
+    {
+      "sequence": 83,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x1:agent_1:a",
+      "requestHash": "sha256:6b4a40eb9b88e807b21a74828f04013cf140279fea5a1859076d08a5f85c35c5",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "usage": {
+        "promptTokens": 895,
+        "completionTokens": 39,
+        "totalTokens": 934,
+        "cachedPromptTokens": 155,
+        "latencyMs": 1763
+      }
+    },
+    {
+      "sequence": 84,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x1:agent_1:b",
+      "requestHash": "sha256:c082590560f88103843ad8e472baacd46fb429d4938cbb6312666b600fd815a2",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.05,\"opt_2\":0.85,\"opt_3\":0.1}}",
+      "responseHash": "sha256:c2fb0ed93fedca612800e782fc6065bb7d2fd13d884853450fe4417014ac91c1",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.05,
+        "opt_2": 0.85,
+        "opt_3": 0.1
+      },
+      "usage": {
+        "promptTokens": 895,
+        "completionTokens": 39,
+        "totalTokens": 934,
+        "cachedPromptTokens": 894,
+        "latencyMs": 1628
+      }
+    },
+    {
+      "sequence": 85,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x2:agent_1:a",
+      "requestHash": "sha256:c53860099c67831d1ed8c2c8caf767107cb3d3738fffc1d7e3c4cd1ce66f310f",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.01,\"opt_2\":0.98,\"opt_3\":0.01}}",
+      "responseHash": "sha256:c97e7ca2a766d1accdfc35c68e0fbe3f16084663f68fa09a029fe5475ef33614",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.01,
+        "opt_2": 0.98,
+        "opt_3": 0.01
+      },
+      "usage": {
+        "promptTokens": 925,
+        "completionTokens": 48,
+        "totalTokens": 973,
+        "cachedPromptTokens": 322,
+        "latencyMs": 2149
+      }
+    },
+    {
+      "sequence": 86,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x2:agent_1:b",
+      "requestHash": "sha256:428a70a663c1daf2b88898f232253ee4e38377e9683bf77ca9eac20746d998e5",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.05,\"opt_2\":0.9,\"opt_3\":0.05}}",
+      "responseHash": "sha256:0339fd8938e8c2337af354724bcd070056b1309d8074c5fcfc1ee579d5736019",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.05,
+        "opt_2": 0.9,
+        "opt_3": 0.05
+      },
+      "usage": {
+        "promptTokens": 925,
+        "completionTokens": 41,
+        "totalTokens": 966,
+        "cachedPromptTokens": 60,
+        "latencyMs": 1414
+      }
+    },
+    {
+      "sequence": 87,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x3:agent_1:a",
+      "requestHash": "sha256:691d604983306d60794ba43a8fcfb9b3a4b6bb044c2f1262853d01834d80246e",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.01,\"opt_2\":0.98,\"opt_3\":0.01}}",
+      "responseHash": "sha256:c97e7ca2a766d1accdfc35c68e0fbe3f16084663f68fa09a029fe5475ef33614",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.01,
+        "opt_2": 0.98,
+        "opt_3": 0.01
+      },
+      "usage": {
+        "promptTokens": 924,
+        "completionTokens": 48,
+        "totalTokens": 972,
+        "cachedPromptTokens": 155,
+        "latencyMs": 2512
+      }
+    },
+    {
+      "sequence": 88,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x3:agent_1:b",
+      "requestHash": "sha256:761e7b606b85c6a224ee411356e8c90501291f4ce4578c1c582a7bfab563e0d9",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.01,\"opt_2\":0.98,\"opt_3\":0.01}}",
+      "responseHash": "sha256:c97e7ca2a766d1accdfc35c68e0fbe3f16084663f68fa09a029fe5475ef33614",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.01,
+        "opt_2": 0.98,
+        "opt_3": 0.01
+      },
+      "usage": {
+        "promptTokens": 924,
+        "completionTokens": 48,
+        "totalTokens": 972,
+        "cachedPromptTokens": 155,
+        "latencyMs": 1353
+      }
+    },
+    {
+      "sequence": 89,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x4:agent_1:a",
+      "requestHash": "sha256:b021575e619e7d41b1a3502945a273c997b0deb530f13cc9300b1376771267a2",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.01,\"opt_2\":0.98,\"opt_3\":0.01}}",
+      "responseHash": "sha256:c97e7ca2a766d1accdfc35c68e0fbe3f16084663f68fa09a029fe5475ef33614",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.01,
+        "opt_2": 0.98,
+        "opt_3": 0.01
+      },
+      "usage": {
+        "promptTokens": 924,
+        "completionTokens": 48,
+        "totalTokens": 972,
+        "cachedPromptTokens": 155,
+        "latencyMs": 2039
+      }
+    },
+    {
+      "sequence": 90,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x4:agent_1:b",
+      "requestHash": "sha256:330119d91ddb78aff59ce488375ecc2663c3c72c5d178f0e2fab9e34ca7cc61b",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.05,\"opt_2\":0.9,\"opt_3\":0.05}}",
+      "responseHash": "sha256:0339fd8938e8c2337af354724bcd070056b1309d8074c5fcfc1ee579d5736019",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.05,
+        "opt_2": 0.9,
+        "opt_3": 0.05
+      },
+      "usage": {
+        "promptTokens": 924,
+        "completionTokens": 39,
+        "totalTokens": 963,
+        "cachedPromptTokens": 155,
+        "latencyMs": 1491
+      }
+    },
+    {
+      "sequence": 91,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x0:agent_2:a",
+      "requestHash": "sha256:2c5959d74949895d112da83a3afef47347b0ee5abd08c159c7551a9554e6a04a",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.7,\"opt_3\":0.2}}",
+      "responseHash": "sha256:9cbe18175692a4da108b785427643122c8d7949d96132971a45d1030d7e7a8f4",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.1,
+        "opt_2": 0.7,
+        "opt_3": 0.2
+      },
+      "usage": {
+        "promptTokens": 548,
+        "completionTokens": 41,
+        "totalTokens": 589,
+        "cachedPromptTokens": 290,
+        "latencyMs": 2325
+      }
+    },
+    {
+      "sequence": 92,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x0:agent_2:b",
+      "requestHash": "sha256:46a9db656d19f8d14e21c141506ab7da1f5eb9e727b057324e2eeab334354996",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.7,\"opt_3\":0.2}}",
+      "responseHash": "sha256:9cbe18175692a4da108b785427643122c8d7949d96132971a45d1030d7e7a8f4",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.1,
+        "opt_2": 0.7,
+        "opt_3": 0.2
+      },
+      "usage": {
+        "promptTokens": 548,
+        "completionTokens": 39,
+        "totalTokens": 587,
+        "cachedPromptTokens": 547,
+        "latencyMs": 1735
+      }
+    },
+    {
+      "sequence": 93,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x1:agent_2:a",
+      "requestHash": "sha256:655f5fb3c0176513ff59052b7eeacdff4d6e508575e8141dea4bbec523ed2995",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "usage": {
+        "promptTokens": 893,
+        "completionTokens": 48,
+        "totalTokens": 941,
+        "cachedPromptTokens": 290,
+        "latencyMs": 1711
+      }
+    },
+    {
+      "sequence": 94,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x1:agent_2:b",
+      "requestHash": "sha256:7be9aac7e51f07b0bea509baa04d537f6167023ea27de53ec47ec52493f79af4",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "usage": {
+        "promptTokens": 893,
+        "completionTokens": 48,
+        "totalTokens": 941,
+        "cachedPromptTokens": 155,
+        "latencyMs": 2314
+      }
+    },
+    {
+      "sequence": 95,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x2:agent_2:a",
+      "requestHash": "sha256:408aba2a92111eaacd856513aa464bd71f0b09fea3bd9e1e0af1afb26f442f69",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.01,\"opt_2\":0.98,\"opt_3\":0.01}}",
+      "responseHash": "sha256:c97e7ca2a766d1accdfc35c68e0fbe3f16084663f68fa09a029fe5475ef33614",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.01,
+        "opt_2": 0.98,
+        "opt_3": 0.01
+      },
+      "usage": {
+        "promptTokens": 923,
+        "completionTokens": 39,
+        "totalTokens": 962,
+        "cachedPromptTokens": 60,
+        "latencyMs": 1855
+      }
+    },
+    {
+      "sequence": 96,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x2:agent_2:b",
+      "requestHash": "sha256:f2c25c79d377703ecb51c7c5933b6e04bd80a4c3ead770e1fffdb5c9902b0fff",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "usage": {
+        "promptTokens": 923,
+        "completionTokens": 50,
+        "totalTokens": 973,
+        "cachedPromptTokens": 155,
+        "latencyMs": 1300
+      }
+    },
+    {
+      "sequence": 97,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x3:agent_2:a",
+      "requestHash": "sha256:6d333e01a5a78eda5c8de1590bb6e6b7c9c2c5ec5a6ce4af8c117f2a8f2f758a",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.01,\"opt_2\":0.98,\"opt_3\":0.01}}",
+      "responseHash": "sha256:c97e7ca2a766d1accdfc35c68e0fbe3f16084663f68fa09a029fe5475ef33614",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.01,
+        "opt_2": 0.98,
+        "opt_3": 0.01
+      },
+      "usage": {
+        "promptTokens": 922,
+        "completionTokens": 39,
+        "totalTokens": 961,
+        "cachedPromptTokens": 320,
+        "latencyMs": 2804
+      }
+    },
+    {
+      "sequence": 98,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x3:agent_2:b",
+      "requestHash": "sha256:adf4a9832087a9f87cd123bbe4de2059845cb09e3220337f8574832ae8c1e664",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.01,\"opt_2\":0.98,\"opt_3\":0.01}}",
+      "responseHash": "sha256:c97e7ca2a766d1accdfc35c68e0fbe3f16084663f68fa09a029fe5475ef33614",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.01,
+        "opt_2": 0.98,
+        "opt_3": 0.01
+      },
+      "usage": {
+        "promptTokens": 922,
+        "completionTokens": 39,
+        "totalTokens": 961,
+        "cachedPromptTokens": 290,
+        "latencyMs": 3425
+      }
+    },
+    {
+      "sequence": 99,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x4:agent_2:a",
+      "requestHash": "sha256:9f352bbff3dafd15fe680742246b40f63dcbdfe68dad750f45949d4104a32916",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.01,\"opt_2\":0.98,\"opt_3\":0.01}}",
+      "responseHash": "sha256:c97e7ca2a766d1accdfc35c68e0fbe3f16084663f68fa09a029fe5475ef33614",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.01,
+        "opt_2": 0.98,
+        "opt_3": 0.01
+      },
+      "usage": {
+        "promptTokens": 922,
+        "completionTokens": 39,
+        "totalTokens": 961,
+        "cachedPromptTokens": 323,
+        "latencyMs": 1695
+      }
+    },
+    {
+      "sequence": 100,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x4:agent_2:b",
+      "requestHash": "sha256:f82cb4ac30232bde1a9dc68e6b91aea8bb5e1c8e59c47648d33b5cd03ba98958",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.01,\"opt_2\":0.98,\"opt_3\":0.01}}",
+      "responseHash": "sha256:c97e7ca2a766d1accdfc35c68e0fbe3f16084663f68fa09a029fe5475ef33614",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.01,
+        "opt_2": 0.98,
+        "opt_3": 0.01
+      },
+      "usage": {
+        "promptTokens": 922,
+        "completionTokens": 48,
+        "totalTokens": 970,
+        "cachedPromptTokens": 290,
+        "latencyMs": 2937
+      }
+    },
+    {
+      "sequence": 101,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x0:agent_3:a",
+      "requestHash": "sha256:7881bec658ffae993466698447f306cb347b983635dfaf45b4f9abcc2d7314db",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 549,
+        "completionTokens": 39,
+        "totalTokens": 588,
+        "cachedPromptTokens": 291,
+        "latencyMs": 1556
+      }
+    },
+    {
+      "sequence": 102,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x0:agent_3:b",
+      "requestHash": "sha256:48d347d1a9a66b94fefb40ba0b9fc6813b760eadb03a6688befd016c4b2666c4",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.01,\"opt_2\":0.01,\"opt_3\":0.98}}",
+      "responseHash": "sha256:fc85d4cc09887ca7de1d3e6087bff8ad783aea22f53b9e93dab26ca025995254",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.01,
+        "opt_2": 0.01,
+        "opt_3": 0.98
+      },
+      "usage": {
+        "promptTokens": 549,
+        "completionTokens": 39,
+        "totalTokens": 588,
+        "cachedPromptTokens": 291,
+        "latencyMs": 2690
+      }
+    },
+    {
+      "sequence": 103,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x1:agent_3:a",
+      "requestHash": "sha256:47725e358fe54674a1311089a82378d66b42bddaddd7c115faab26f578771031",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 894,
+        "completionTokens": 48,
+        "totalTokens": 942,
+        "cachedPromptTokens": 291,
+        "latencyMs": 4368
+      }
+    },
+    {
+      "sequence": 104,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x1:agent_3:b",
+      "requestHash": "sha256:9bdf8c3eba7044fcf645f7f3480236b465bbd4d4b9881d882cd48f9abb8b19ea",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 894,
+        "completionTokens": 39,
+        "totalTokens": 933,
+        "cachedPromptTokens": 291,
+        "latencyMs": 1964
+      }
+    },
+    {
+      "sequence": 105,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x2:agent_3:a",
+      "requestHash": "sha256:a908fb6eb60e01e2d9aa93c8df0a371f304b1cc3ceeb634d84ac6ba2eb635e09",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.01,\"opt_2\":0.98,\"opt_3\":0.01}}",
+      "responseHash": "sha256:c97e7ca2a766d1accdfc35c68e0fbe3f16084663f68fa09a029fe5475ef33614",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.01,
+        "opt_2": 0.98,
+        "opt_3": 0.01
+      },
+      "usage": {
+        "promptTokens": 924,
+        "completionTokens": 39,
+        "totalTokens": 963,
+        "cachedPromptTokens": 324,
+        "latencyMs": 2368
+      }
+    },
+    {
+      "sequence": 106,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x2:agent_3:b",
+      "requestHash": "sha256:68ab1847f445638df0ee6792c27299f4ad9350825cc15f657ff1c434c0771a9e",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "usage": {
+        "promptTokens": 924,
+        "completionTokens": 39,
+        "totalTokens": 963,
+        "cachedPromptTokens": 321,
+        "latencyMs": 4282
+      }
+    },
+    {
+      "sequence": 107,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x3:agent_3:a",
+      "requestHash": "sha256:06e73c617c98e991b253c6f3f0bc1250f25152062933d4da209fb00fc98b715a",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.01,\"opt_2\":0.98,\"opt_3\":0.01}}",
+      "responseHash": "sha256:c97e7ca2a766d1accdfc35c68e0fbe3f16084663f68fa09a029fe5475ef33614",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.01,
+        "opt_2": 0.98,
+        "opt_3": 0.01
+      },
+      "usage": {
+        "promptTokens": 923,
+        "completionTokens": 48,
+        "totalTokens": 971,
+        "cachedPromptTokens": 324,
+        "latencyMs": 2252
+      }
+    },
+    {
+      "sequence": 108,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x3:agent_3:b",
+      "requestHash": "sha256:e97c34c5f2a77d7805e73c6ecd78cc76e7cfb26f9637486ca115b1873d9b9671",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.01,\"opt_2\":0.98,\"opt_3\":0.01}}",
+      "responseHash": "sha256:c97e7ca2a766d1accdfc35c68e0fbe3f16084663f68fa09a029fe5475ef33614",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.01,
+        "opt_2": 0.98,
+        "opt_3": 0.01
+      },
+      "usage": {
+        "promptTokens": 923,
+        "completionTokens": 39,
+        "totalTokens": 962,
+        "cachedPromptTokens": 324,
+        "latencyMs": 1799
+      }
+    },
+    {
+      "sequence": 109,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x4:agent_3:a",
+      "requestHash": "sha256:69d436435716cd9af3ffe8ea0cdcae107d2033c372c5c2774502f3c0afef243b",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.01,\"opt_2\":0.98,\"opt_3\":0.01}}",
+      "responseHash": "sha256:c97e7ca2a766d1accdfc35c68e0fbe3f16084663f68fa09a029fe5475ef33614",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.01,
+        "opt_2": 0.98,
+        "opt_3": 0.01
+      },
+      "usage": {
+        "promptTokens": 923,
+        "completionTokens": 48,
+        "totalTokens": 971,
+        "cachedPromptTokens": 324,
+        "latencyMs": 2341
+      }
+    },
+    {
+      "sequence": 110,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x4:agent_3:b",
+      "requestHash": "sha256:04f654c6b3a55e170cca34f94ac55399e688693cb936d5afd411ef88276af1a3",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "usage": {
+        "promptTokens": 923,
+        "completionTokens": 39,
+        "totalTokens": 962,
+        "cachedPromptTokens": 922,
+        "latencyMs": 2381
+      }
+    },
+    {
+      "sequence": 111,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x0:agent_4:a",
+      "requestHash": "sha256:627731b5fc69f416dd0c4510e45984db27d9aea52e8a4374cee3a943e7d129ce",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 548,
+        "completionTokens": 50,
+        "totalTokens": 598,
+        "cachedPromptTokens": 291,
+        "latencyMs": 2797
+      }
+    },
+    {
+      "sequence": 112,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x0:agent_4:b",
+      "requestHash": "sha256:1fa0c0f9c5900d515d38449517a8070bea1388aa169051287eeb4ebd47c0de36",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 548,
+        "completionTokens": 50,
+        "totalTokens": 598,
+        "cachedPromptTokens": 290,
+        "latencyMs": 1323
+      }
+    },
+    {
+      "sequence": 113,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x1:agent_4:a",
+      "requestHash": "sha256:3e9a9a7e857a628b44d290aba7717353241dce6e53ff246601a7a73ea456abb2",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "usage": {
+        "promptTokens": 893,
+        "completionTokens": 50,
+        "totalTokens": 943,
+        "cachedPromptTokens": 291,
+        "latencyMs": 1919
+      }
+    },
+    {
+      "sequence": 114,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x1:agent_4:b",
+      "requestHash": "sha256:8260c26189e7e8f03e07768d9e971e3a3a8a19da23ce4f3a45551b3192dc4a0a",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.05,\"opt_2\":0.85,\"opt_3\":0.1}}",
+      "responseHash": "sha256:c2fb0ed93fedca612800e782fc6065bb7d2fd13d884853450fe4417014ac91c1",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.05,
+        "opt_2": 0.85,
+        "opt_3": 0.1
+      },
+      "usage": {
+        "promptTokens": 893,
+        "completionTokens": 39,
+        "totalTokens": 932,
+        "cachedPromptTokens": 290,
+        "latencyMs": 1199
+      }
+    },
+    {
+      "sequence": 115,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x2:agent_4:a",
+      "requestHash": "sha256:f671c1aad192ad0c49b38d3d2065bb89d908439a0889c5a40688b52e07fc78b8",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "usage": {
+        "promptTokens": 923,
+        "completionTokens": 39,
+        "totalTokens": 962,
+        "cachedPromptTokens": 291,
+        "latencyMs": 2603
+      }
+    },
+    {
+      "sequence": 116,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x2:agent_4:b",
+      "requestHash": "sha256:3207340938f122119e7673e65d4cd23f43e0b0e7be051b23d54b68d08a463899",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "usage": {
+        "promptTokens": 923,
+        "completionTokens": 48,
+        "totalTokens": 971,
+        "cachedPromptTokens": 323,
+        "latencyMs": 1266
+      }
+    },
+    {
+      "sequence": 117,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x3:agent_4:a",
+      "requestHash": "sha256:fac0512f6246791e3402519a203061f96b23c91c82a36446b75273b717f57373",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "usage": {
+        "promptTokens": 922,
+        "completionTokens": 39,
+        "totalTokens": 961,
+        "cachedPromptTokens": 320,
+        "latencyMs": 1605
+      }
+    },
+    {
+      "sequence": 118,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x3:agent_4:b",
+      "requestHash": "sha256:e9f9fd6f2f0bfbe83e11ae29865ddff6c5c78ef0d24e9f8b4454c0b3fa8f34d8",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "usage": {
+        "promptTokens": 922,
+        "completionTokens": 39,
+        "totalTokens": 961,
+        "cachedPromptTokens": 921,
+        "latencyMs": 1593
+      }
+    },
+    {
+      "sequence": 119,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x4:agent_4:a",
+      "requestHash": "sha256:342f183b8111e0ddd244e004a4eb0fc0d2a05c3accc2a581429870bca19d1461",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "usage": {
+        "promptTokens": 922,
+        "completionTokens": 48,
+        "totalTokens": 970,
+        "cachedPromptTokens": 323,
+        "latencyMs": 2450
+      }
+    },
+    {
+      "sequence": 120,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v2:x4:agent_4:b",
+      "requestHash": "sha256:fc615087a741f4c35de2b59719b55bb0bc6d366cc253a8fc661f4657c80bfa0b",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "usage": {
+        "promptTokens": 922,
+        "completionTokens": 39,
+        "totalTokens": 961,
+        "cachedPromptTokens": 323,
+        "latencyMs": 1921
+      }
+    },
+    {
+      "sequence": 121,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x0:agent_1:a",
+      "requestHash": "sha256:589ff290964635f3012f47279ae89acd8913fd5db4d834391a6ccd3e8a63e662",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.01,\"opt_2\":0.01,\"opt_3\":0.98}}",
+      "responseHash": "sha256:fc85d4cc09887ca7de1d3e6087bff8ad783aea22f53b9e93dab26ca025995254",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.01,
+        "opt_2": 0.01,
+        "opt_3": 0.98
+      },
+      "usage": {
+        "promptTokens": 553,
+        "completionTokens": 39,
+        "totalTokens": 592,
+        "cachedPromptTokens": 273,
+        "latencyMs": 1266
+      }
+    },
+    {
+      "sequence": 122,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x0:agent_1:b",
+      "requestHash": "sha256:0d735f819c92ad5f8bb3171960e09300d803413bf17791a33e677c93bd7e1258",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 553,
+        "completionTokens": 48,
+        "totalTokens": 601,
+        "cachedPromptTokens": 273,
+        "latencyMs": 1233
+      }
+    },
+    {
+      "sequence": 123,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x1:agent_1:a",
+      "requestHash": "sha256:1d82c7f84f38f9d4d2496bffe9bb29efa0c7963e07e1367e29b24b13089faee7",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 872,
+        "completionTokens": 50,
+        "totalTokens": 922,
+        "cachedPromptTokens": 273,
+        "latencyMs": 2030
+      }
+    },
+    {
+      "sequence": 124,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x1:agent_1:b",
+      "requestHash": "sha256:83bc08d8bae9a77678b2f265ddc480e79fbc8cc363ba6e57a8f9328415ccbdee",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 872,
+        "completionTokens": 48,
+        "totalTokens": 920,
+        "cachedPromptTokens": 273,
+        "latencyMs": 3032
+      }
+    },
+    {
+      "sequence": 125,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x2:agent_1:a",
+      "requestHash": "sha256:481f1ffd2f45089e159cde5f2ac591a494c0a2e13547b1c8d89b7ab324af0881",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 875,
+        "completionTokens": 39,
+        "totalTokens": 914,
+        "cachedPromptTokens": 273,
+        "latencyMs": 1688
+      }
+    },
+    {
+      "sequence": 126,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x2:agent_1:b",
+      "requestHash": "sha256:5234c7bd20abd2752dbca5621e8642f0213442bff75984c32b80411349e08184",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 875,
+        "completionTokens": 41,
+        "totalTokens": 916,
+        "cachedPromptTokens": 273,
+        "latencyMs": 2261
+      }
+    },
+    {
+      "sequence": 127,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x3:agent_1:a",
+      "requestHash": "sha256:d621c9f8f954ea87efa8c9576325e6849804c2a664b2ed3103530ec89bf93208",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 875,
+        "completionTokens": 39,
+        "totalTokens": 914,
+        "cachedPromptTokens": 273,
+        "latencyMs": 1879
+      }
+    },
+    {
+      "sequence": 128,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x3:agent_1:b",
+      "requestHash": "sha256:d284267ea0f536ec9fa7f3670cf5796bdb00e7fd91f721b67f561e2bd47bc251",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 875,
+        "completionTokens": 39,
+        "totalTokens": 914,
+        "cachedPromptTokens": 328,
+        "latencyMs": 1800
+      }
+    },
+    {
+      "sequence": 129,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x4:agent_1:a",
+      "requestHash": "sha256:32cfb78d573945669a9207505a4b2f5a96cb188d2adee02a20de1f3fd23095e8",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 875,
+        "completionTokens": 39,
+        "totalTokens": 914,
+        "cachedPromptTokens": 328,
+        "latencyMs": 2341
+      }
+    },
+    {
+      "sequence": 130,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x4:agent_1:b",
+      "requestHash": "sha256:b32eb3416b57e9f9651f5dcd05317c305954d5fcb43c88c130e9ab08a4987202",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 875,
+        "completionTokens": 39,
+        "totalTokens": 914,
+        "cachedPromptTokens": 874,
+        "latencyMs": 2456
+      }
+    },
+    {
+      "sequence": 131,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x0:agent_2:a",
+      "requestHash": "sha256:881c0d8fc3a46840ab020304d58277303673f84093d202188f2ee2cff57b4972",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.01,\"opt_2\":0.01,\"opt_3\":0.98}}",
+      "responseHash": "sha256:fc85d4cc09887ca7de1d3e6087bff8ad783aea22f53b9e93dab26ca025995254",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.01,
+        "opt_2": 0.01,
+        "opt_3": 0.98
+      },
+      "usage": {
+        "promptTokens": 553,
+        "completionTokens": 41,
+        "totalTokens": 594,
+        "cachedPromptTokens": 155,
+        "latencyMs": 1504
+      }
+    },
+    {
+      "sequence": 132,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x0:agent_2:b",
+      "requestHash": "sha256:ffdecfcd8e28cdaeed5137f993e9871f4ba563af8b4e124d4cffedcb2d1dd22d",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 553,
+        "completionTokens": 48,
+        "totalTokens": 601,
+        "cachedPromptTokens": 273,
+        "latencyMs": 3059
+      }
+    },
+    {
+      "sequence": 133,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x1:agent_2:a",
+      "requestHash": "sha256:282622f345d232318551b925fcd5beafc110173c7f34227f56ef9338e03df3b9",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 872,
+        "completionTokens": 50,
+        "totalTokens": 922,
+        "cachedPromptTokens": 325,
+        "latencyMs": 2914
+      }
+    },
+    {
+      "sequence": 134,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x1:agent_2:b",
+      "requestHash": "sha256:aa8b34aaceff4fcc59491e7614f905ef05f83c8a94bd66bbfb11fc8e8e1f5706",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 872,
+        "completionTokens": 39,
+        "totalTokens": 911,
+        "cachedPromptTokens": 155,
+        "latencyMs": 1314
+      }
+    },
+    {
+      "sequence": 135,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x2:agent_2:a",
+      "requestHash": "sha256:86c2a2fda3d73a6a39531fcf6d982b9368bb17ef38b5368f51561fc2cbb9bb0d",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 875,
+        "completionTokens": 39,
+        "totalTokens": 914,
+        "cachedPromptTokens": 335,
+        "latencyMs": 1838
+      }
+    },
+    {
+      "sequence": 136,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x2:agent_2:b",
+      "requestHash": "sha256:5b19f50a70abaeb9db0410b5f98ed2ddf6d888ad25849d6e200f59ae38674938",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 875,
+        "completionTokens": 39,
+        "totalTokens": 914,
+        "cachedPromptTokens": 328,
+        "latencyMs": 1833
+      }
+    },
+    {
+      "sequence": 137,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x3:agent_2:a",
+      "requestHash": "sha256:b78b122ca0824a61ca23fcb790494e0078db26040afa3560cae44c7d10567496",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 875,
+        "completionTokens": 41,
+        "totalTokens": 916,
+        "cachedPromptTokens": 328,
+        "latencyMs": 2051
+      }
+    },
+    {
+      "sequence": 138,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x3:agent_2:b",
+      "requestHash": "sha256:771738131be678b7c0fd93e5e5468cb32dc234732d4328b1ce8ff4df2725ce27",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 875,
+        "completionTokens": 48,
+        "totalTokens": 923,
+        "cachedPromptTokens": 328,
+        "latencyMs": 2834
+      }
+    },
+    {
+      "sequence": 139,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x4:agent_2:a",
+      "requestHash": "sha256:19d56a374eda7d03a2c5441060e26b5f403fb71c4e395a8e186bdd9391bf43a9",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 875,
+        "completionTokens": 39,
+        "totalTokens": 914,
+        "cachedPromptTokens": 328,
+        "latencyMs": 1331
+      }
+    },
+    {
+      "sequence": 140,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x4:agent_2:b",
+      "requestHash": "sha256:b1090d2795f356cb9184348338c05c24d2355503d33bf867ddcccd1fef38094a",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 0,
+        "opt_3": 1
+      },
+      "usage": {
+        "promptTokens": 875,
+        "completionTokens": 39,
+        "totalTokens": 914,
+        "cachedPromptTokens": 328,
+        "latencyMs": 2008
+      }
+    },
+    {
+      "sequence": 141,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x0:agent_3:a",
+      "requestHash": "sha256:d8298ce2215f6dbb651d77aaf200c3c5c1948c85e1b6e471a298e0d4ea4aaee7",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.01,\"opt_2\":0.98,\"opt_3\":0.01}}",
+      "responseHash": "sha256:c97e7ca2a766d1accdfc35c68e0fbe3f16084663f68fa09a029fe5475ef33614",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.01,
+        "opt_2": 0.98,
+        "opt_3": 0.01
+      },
+      "usage": {
+        "promptTokens": 551,
+        "completionTokens": 39,
+        "totalTokens": 590,
+        "cachedPromptTokens": 272,
+        "latencyMs": 1745
+      }
+    },
+    {
+      "sequence": 142,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x0:agent_3:b",
+      "requestHash": "sha256:385e962c9f3d34f214338919a758c2506043ce47d469b23bef5da25e1a63cd7d",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.01,\"opt_2\":0.98,\"opt_3\":0.01}}",
+      "responseHash": "sha256:c97e7ca2a766d1accdfc35c68e0fbe3f16084663f68fa09a029fe5475ef33614",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.01,
+        "opt_2": 0.98,
+        "opt_3": 0.01
+      },
+      "usage": {
+        "promptTokens": 551,
+        "completionTokens": 39,
+        "totalTokens": 590,
+        "cachedPromptTokens": 550,
+        "latencyMs": 1697
+      }
+    },
+    {
+      "sequence": 143,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x1:agent_3:a",
+      "requestHash": "sha256:df89c30fa53c0e208085a2ef2351b47373d6ed560b2a8dfcfcf1b5359bdd096b",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "usage": {
+        "promptTokens": 870,
+        "completionTokens": 39,
+        "totalTokens": 909,
+        "cachedPromptTokens": 272,
+        "latencyMs": 1858
+      }
+    },
+    {
+      "sequence": 144,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x1:agent_3:b",
+      "requestHash": "sha256:35dba64ee4eb79ee9667e1b06913b139a38928926aaa89bfae7814b85dae07dc",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "usage": {
+        "promptTokens": 870,
+        "completionTokens": 41,
+        "totalTokens": 911,
+        "cachedPromptTokens": 272,
+        "latencyMs": 1549
+      }
+    },
+    {
+      "sequence": 145,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x2:agent_3:a",
+      "requestHash": "sha256:8ac87693f56ca26c76c327a6021c36079f10b817af0470822df09327979e7ab7",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "usage": {
+        "promptTokens": 873,
+        "completionTokens": 39,
+        "totalTokens": 912,
+        "cachedPromptTokens": 272,
+        "latencyMs": 2240
+      }
+    },
+    {
+      "sequence": 146,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x2:agent_3:b",
+      "requestHash": "sha256:4eb67bac64cdbd418dc4ac8a47f981b5318ab9709918db02a57ada19a5bff339",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "usage": {
+        "promptTokens": 873,
+        "completionTokens": 41,
+        "totalTokens": 914,
+        "cachedPromptTokens": 272,
+        "latencyMs": 1414
+      }
+    },
+    {
+      "sequence": 147,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x3:agent_3:a",
+      "requestHash": "sha256:8e0800c02e6cab6b458fbbb0b57c907e21ba7fdf45a46137aed1e3b94fcdefc8",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "usage": {
+        "promptTokens": 873,
+        "completionTokens": 41,
+        "totalTokens": 914,
+        "cachedPromptTokens": 272,
+        "latencyMs": 3648
+      }
+    },
+    {
+      "sequence": 148,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x3:agent_3:b",
+      "requestHash": "sha256:63cd9b1e5e78cc133e376401d185c7e7a7af05961395975fee761abb64a2c3d6",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "usage": {
+        "promptTokens": 873,
+        "completionTokens": 39,
+        "totalTokens": 912,
+        "cachedPromptTokens": 872,
+        "latencyMs": 6048
+      }
+    },
+    {
+      "sequence": 149,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x4:agent_3:a",
+      "requestHash": "sha256:c09ebd252a066328c7de1578a43bf3737cae349df5cc31d9cc3a4fc51198b6be",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "usage": {
+        "promptTokens": 873,
+        "completionTokens": 41,
+        "totalTokens": 914,
+        "cachedPromptTokens": 272,
+        "latencyMs": 2326
+      }
+    },
+    {
+      "sequence": 150,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x4:agent_3:b",
+      "requestHash": "sha256:1e9760f5b57254d27ebae33537e0b4f07030c7c2ae8e211c627bc8a40c37c334",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "usage": {
+        "promptTokens": 873,
+        "completionTokens": 39,
+        "totalTokens": 912,
+        "cachedPromptTokens": 272,
+        "latencyMs": 1182
+      }
+    },
+    {
+      "sequence": 151,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x0:agent_4:a",
+      "requestHash": "sha256:36b9c25a9242d78e3963a0adfe769f706ddcd983de4b009a53642f194d4dac65",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.01,\"opt_2\":0.98,\"opt_3\":0.01}}",
+      "responseHash": "sha256:c97e7ca2a766d1accdfc35c68e0fbe3f16084663f68fa09a029fe5475ef33614",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.01,
+        "opt_2": 0.98,
+        "opt_3": 0.01
+      },
+      "usage": {
+        "promptTokens": 551,
+        "completionTokens": 48,
+        "totalTokens": 599,
+        "cachedPromptTokens": 323,
+        "latencyMs": 2022
+      }
+    },
+    {
+      "sequence": 152,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x0:agent_4:b",
+      "requestHash": "sha256:6581e2782dfb1a8b4dcf2ca5a6fec857b7f64e4576af0af171c86b77318338d1",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.01,\"opt_2\":0.98,\"opt_3\":0.01}}",
+      "responseHash": "sha256:c97e7ca2a766d1accdfc35c68e0fbe3f16084663f68fa09a029fe5475ef33614",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.01,
+        "opt_2": 0.98,
+        "opt_3": 0.01
+      },
+      "usage": {
+        "promptTokens": 551,
+        "completionTokens": 39,
+        "totalTokens": 590,
+        "cachedPromptTokens": 550,
+        "latencyMs": 1663
+      }
+    },
+    {
+      "sequence": 153,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x1:agent_4:a",
+      "requestHash": "sha256:a7c51787919e53ec955a2731e3c73e41273022c66ddae6882a210d8c23ec8a1b",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.01,\"opt_2\":0.98,\"opt_3\":0.01}}",
+      "responseHash": "sha256:c97e7ca2a766d1accdfc35c68e0fbe3f16084663f68fa09a029fe5475ef33614",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.01,
+        "opt_2": 0.98,
+        "opt_3": 0.01
+      },
+      "usage": {
+        "promptTokens": 870,
+        "completionTokens": 50,
+        "totalTokens": 920,
+        "cachedPromptTokens": 333,
+        "latencyMs": 1696
+      }
+    },
+    {
+      "sequence": 154,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x1:agent_4:b",
+      "requestHash": "sha256:0673e78fe49fbe927289f8be994d5d0dce99797a1d9f80d6cacf984156bb67db",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "usage": {
+        "promptTokens": 870,
+        "completionTokens": 41,
+        "totalTokens": 911,
+        "cachedPromptTokens": 323,
+        "latencyMs": 2447
+      }
+    },
+    {
+      "sequence": 155,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x2:agent_4:a",
+      "requestHash": "sha256:48fc8797ade8e4defa3eafa32f5ccb6ca1e3ff440311dd43fcc440e7ba34da71",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.01,\"opt_2\":0.98,\"opt_3\":0.01}}",
+      "responseHash": "sha256:c97e7ca2a766d1accdfc35c68e0fbe3f16084663f68fa09a029fe5475ef33614",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.01,
+        "opt_2": 0.98,
+        "opt_3": 0.01
+      },
+      "usage": {
+        "promptTokens": 873,
+        "completionTokens": 48,
+        "totalTokens": 921,
+        "cachedPromptTokens": 326,
+        "latencyMs": 3164
+      }
+    },
+    {
+      "sequence": 156,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x2:agent_4:b",
+      "requestHash": "sha256:83cb2448cac9ab4876fb944d9319a685371374080100b7410e7f3921fb9821dd",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "usage": {
+        "promptTokens": 873,
+        "completionTokens": 41,
+        "totalTokens": 914,
+        "cachedPromptTokens": 326,
+        "latencyMs": 1904
+      }
+    },
+    {
+      "sequence": 157,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x3:agent_4:a",
+      "requestHash": "sha256:e1f906a21797213132d65a8ba15e89a6d6137693f19bf9287e791cd9aba89f8b",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "usage": {
+        "promptTokens": 873,
+        "completionTokens": 41,
+        "totalTokens": 914,
+        "cachedPromptTokens": 326,
+        "latencyMs": 2626
+      }
+    },
+    {
+      "sequence": 158,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x3:agent_4:b",
+      "requestHash": "sha256:83dbf47e4e27e1927beb2f6235159f9f4dc9428e4cdc6eefa3e61eadab015db0",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "usage": {
+        "promptTokens": 873,
+        "completionTokens": 39,
+        "totalTokens": 912,
+        "cachedPromptTokens": 326,
+        "latencyMs": 2373
+      }
+    },
+    {
+      "sequence": 159,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x4:agent_4:a",
+      "requestHash": "sha256:41c761a9a7a675f096695a05fb6cb31c104d89dd49a24031b99ef7b8270f5a62",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "usage": {
+        "promptTokens": 873,
+        "completionTokens": 39,
+        "totalTokens": 912,
+        "cachedPromptTokens": 326,
+        "latencyMs": 1535
+      }
+    },
+    {
+      "sequence": 160,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-calibration:service-access:v3:x4:agent_4:b",
+      "requestHash": "sha256:cad7888f37cfced954e2735da0c21d3c51fb91e96b967f69d69a5611912b8900",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "probabilitiesByOptionId": {
+        "opt_1": 0,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "usage": {
+        "promptTokens": 873,
+        "completionTokens": 39,
+        "totalTokens": 912,
+        "cachedPromptTokens": 333,
+        "latencyMs": 3519
+      }
+    }
+  ],
+  "registeredCellCount": 160,
+  "terminalCellCount": 160,
+  "attemptsPerCell": 1,
+  "retry": "none",
+  "contentHash": "sha256:904291a793a6385605567a6ec2a3257db58ceb34cfdb3d1a3f900b889c8e624d"
+}

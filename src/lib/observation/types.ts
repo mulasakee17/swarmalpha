@@ -1,4 +1,4 @@
-import type { AgentOpinion, DiscussionTask, DiscussionMemoryEntry } from "../discussion/types";
+import type { AgentOpinion, DiscussionTask, DiscussionMemoryEntry } from "../../../legacy/src/lib/discussion/types";
 
 export interface ObserverAgent {
   id: string;

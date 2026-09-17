@@ -1,0 +1,1018 @@
+{
+  "analysisRef": {
+    "id": "swarmalpha.experiment.v6.collective-dynamics-prompt-sensitivity.analysis",
+    "version": "1.0.0"
+  },
+  "freezeHash": "sha256:9de5dc9409328f3622499b13cc92b68204cd716374de85518e9700d71b5999c3",
+  "runHash": "sha256:80dc1edb2bb906892de420726d126504011942941b5dc5929ad57ebec12f9796",
+  "inferenceUnit": "task",
+  "pairedObservationUnit": "task_agent_frozen_view",
+  "truthAccess": "none",
+  "terminalCountsByVariant": {
+    "BASELINE_A": {
+      "provider_network": 12
+    },
+    "BASELINE_B": {
+      "provider_network": 12
+    },
+    "OPTION_ORDER_REVERSED": {
+      "provider_network": 12
+    },
+    "PARAPHRASED_ELICITATION": {
+      "provider_network": 12
+    }
+  },
+  "pairedRows": [
+    {
+      "unitId": "task-1:agent-1",
+      "sourceTaskId": 1,
+      "agentId": "agent:hiddenbench:1:1",
+      "comparisonVariant": "BASELINE_B",
+      "baselineStatus": "provider_network",
+      "comparisonStatus": "provider_network",
+      "pairStatus": "missing_or_invalid",
+      "totalVariation": null,
+      "absoluteNormalizedEntropyDifference": null,
+      "baselineUniqueTop": null,
+      "comparisonUniqueTop": null,
+      "uniqueTopAgreement": null
+    },
+    {
+      "unitId": "task-1:agent-1",
+      "sourceTaskId": 1,
+      "agentId": "agent:hiddenbench:1:1",
+      "comparisonVariant": "OPTION_ORDER_REVERSED",
+      "baselineStatus": "provider_network",
+      "comparisonStatus": "provider_network",
+      "pairStatus": "missing_or_invalid",
+      "totalVariation": null,
+      "absoluteNormalizedEntropyDifference": null,
+      "baselineUniqueTop": null,
+      "comparisonUniqueTop": null,
+      "uniqueTopAgreement": null
+    },
+    {
+      "unitId": "task-1:agent-1",
+      "sourceTaskId": 1,
+      "agentId": "agent:hiddenbench:1:1",
+      "comparisonVariant": "PARAPHRASED_ELICITATION",
+      "baselineStatus": "provider_network",
+      "comparisonStatus": "provider_network",
+      "pairStatus": "missing_or_invalid",
+      "totalVariation": null,
+      "absoluteNormalizedEntropyDifference": null,
+      "baselineUniqueTop": null,
+      "comparisonUniqueTop": null,
+      "uniqueTopAgreement": null
+    },
+    {
+      "unitId": "task-1:agent-2",
+      "sourceTaskId": 1,
+      "agentId": "agent:hiddenbench:1:2",
+      "comparisonVariant": "BASELINE_B",
+      "baselineStatus": "provider_network",
+      "comparisonStatus": "provider_network",
+      "pairStatus": "missing_or_invalid",
+      "totalVariation": null,
+      "absoluteNormalizedEntropyDifference": null,
+      "baselineUniqueTop": null,
+      "comparisonUniqueTop": null,
+      "uniqueTopAgreement": null
+    },
+    {
+      "unitId": "task-1:agent-2",
+      "sourceTaskId": 1,
+      "agentId": "agent:hiddenbench:1:2",
+      "comparisonVariant": "OPTION_ORDER_REVERSED",
+      "baselineStatus": "provider_network",
+      "comparisonStatus": "provider_network",
+      "pairStatus": "missing_or_invalid",
+      "totalVariation": null,
+      "absoluteNormalizedEntropyDifference": null,
+      "baselineUniqueTop": null,
+      "comparisonUniqueTop": null,
+      "uniqueTopAgreement": null
+    },
+    {
+      "unitId": "task-1:agent-2",
+      "sourceTaskId": 1,
+      "agentId": "agent:hiddenbench:1:2",
+      "comparisonVariant": "PARAPHRASED_ELICITATION",
+      "baselineStatus": "provider_network",
+      "comparisonStatus": "provider_network",
+      "pairStatus": "missing_or_invalid",
+      "totalVariation": null,
+      "absoluteNormalizedEntropyDifference": null,
+      "baselineUniqueTop": null,
+      "comparisonUniqueTop": null,
+      "uniqueTopAgreement": null
+    },
+    {
+      "unitId": "task-1:agent-3",
+      "sourceTaskId": 1,
+      "agentId": "agent:hiddenbench:1:3",
+      "comparisonVariant": "BASELINE_B",
+      "baselineStatus": "provider_network",
+      "comparisonStatus": "provider_network",
+      "pairStatus": "missing_or_invalid",
+      "totalVariation": null,
+      "absoluteNormalizedEntropyDifference": null,
+      "baselineUniqueTop": null,
+      "comparisonUniqueTop": null,
+      "uniqueTopAgreement": null
+    },
+    {
+      "unitId": "task-1:agent-3",
+      "sourceTaskId": 1,
+      "agentId": "agent:hiddenbench:1:3",
+      "comparisonVariant": "OPTION_ORDER_REVERSED",
+      "baselineStatus": "provider_network",
+      "comparisonStatus": "provider_network",
+      "pairStatus": "missing_or_invalid",
+      "totalVariation": null,
+      "absoluteNormalizedEntropyDifference": null,
+      "baselineUniqueTop": null,
+      "comparisonUniqueTop": null,
+      "uniqueTopAgreement": null
+    },
+    {
+      "unitId": "task-1:agent-3",
+      "sourceTaskId": 1,
+      "agentId": "agent:hiddenbench:1:3",
+      "comparisonVariant": "PARAPHRASED_ELICITATION",
+      "baselineStatus": "provider_network",
+      "comparisonStatus": "provider_network",
+      "pairStatus": "missing_or_invalid",
+      "totalVariation": null,
+      "absoluteNormalizedEntropyDifference": null,
+      "baselineUniqueTop": null,
+      "comparisonUniqueTop": null,
+      "uniqueTopAgreement": null
+    },
+    {
+      "unitId": "task-1:agent-4",
+      "sourceTaskId": 1,
+      "agentId": "agent:hiddenbench:1:4",
+      "comparisonVariant": "BASELINE_B",
+      "baselineStatus": "provider_network",
+      "comparisonStatus": "provider_network",
+      "pairStatus": "missing_or_invalid",
+      "totalVariation": null,
+      "absoluteNormalizedEntropyDifference": null,
+      "baselineUniqueTop": null,
+      "comparisonUniqueTop": null,
+      "uniqueTopAgreement": null
+    },
+    {
+      "unitId": "task-1:agent-4",
+      "sourceTaskId": 1,
+      "agentId": "agent:hiddenbench:1:4",
+      "comparisonVariant": "OPTION_ORDER_REVERSED",
+      "baselineStatus": "provider_network",
+      "comparisonStatus": "provider_network",
+      "pairStatus": "missing_or_invalid",
+      "totalVariation": null,
+      "absoluteNormalizedEntropyDifference": null,
+      "baselineUniqueTop": null,
+      "comparisonUniqueTop": null,
+      "uniqueTopAgreement": null
+    },
+    {
+      "unitId": "task-1:agent-4",
+      "sourceTaskId": 1,
+      "agentId": "agent:hiddenbench:1:4",
+      "comparisonVariant": "PARAPHRASED_ELICITATION",
+      "baselineStatus": "provider_network",
+      "comparisonStatus": "provider_network",
+      "pairStatus": "missing_or_invalid",
+      "totalVariation": null,
+      "absoluteNormalizedEntropyDifference": null,
+      "baselineUniqueTop": null,
+      "comparisonUniqueTop": null,
+      "uniqueTopAgreement": null
+    },
+    {
+      "unitId": "task-36:agent-1",
+      "sourceTaskId": 36,
+      "agentId": "agent:hiddenbench:36:1",
+      "comparisonVariant": "BASELINE_B",
+      "baselineStatus": "provider_network",
+      "comparisonStatus": "provider_network",
+      "pairStatus": "missing_or_invalid",
+      "totalVariation": null,
+      "absoluteNormalizedEntropyDifference": null,
+      "baselineUniqueTop": null,
+      "comparisonUniqueTop": null,
+      "uniqueTopAgreement": null
+    },
+    {
+      "unitId": "task-36:agent-1",
+      "sourceTaskId": 36,
+      "agentId": "agent:hiddenbench:36:1",
+      "comparisonVariant": "OPTION_ORDER_REVERSED",
+      "baselineStatus": "provider_network",
+      "comparisonStatus": "provider_network",
+      "pairStatus": "missing_or_invalid",
+      "totalVariation": null,
+      "absoluteNormalizedEntropyDifference": null,
+      "baselineUniqueTop": null,
+      "comparisonUniqueTop": null,
+      "uniqueTopAgreement": null
+    },
+    {
+      "unitId": "task-36:agent-1",
+      "sourceTaskId": 36,
+      "agentId": "agent:hiddenbench:36:1",
+      "comparisonVariant": "PARAPHRASED_ELICITATION",
+      "baselineStatus": "provider_network",
+      "comparisonStatus": "provider_network",
+      "pairStatus": "missing_or_invalid",
+      "totalVariation": null,
+      "absoluteNormalizedEntropyDifference": null,
+      "baselineUniqueTop": null,
+      "comparisonUniqueTop": null,
+      "uniqueTopAgreement": null
+    },
+    {
+      "unitId": "task-36:agent-2",
+      "sourceTaskId": 36,
+      "agentId": "agent:hiddenbench:36:2",
+      "comparisonVariant": "BASELINE_B",
+      "baselineStatus": "provider_network",
+      "comparisonStatus": "provider_network",
+      "pairStatus": "missing_or_invalid",
+      "totalVariation": null,
+      "absoluteNormalizedEntropyDifference": null,
+      "baselineUniqueTop": null,
+      "comparisonUniqueTop": null,
+      "uniqueTopAgreement": null
+    },
+    {
+      "unitId": "task-36:agent-2",
+      "sourceTaskId": 36,
+      "agentId": "agent:hiddenbench:36:2",
+      "comparisonVariant": "OPTION_ORDER_REVERSED",
+      "baselineStatus": "provider_network",
+      "comparisonStatus": "provider_network",
+      "pairStatus": "missing_or_invalid",
+      "totalVariation": null,
+      "absoluteNormalizedEntropyDifference": null,
+      "baselineUniqueTop": null,
+      "comparisonUniqueTop": null,
+      "uniqueTopAgreement": null
+    },
+    {
+      "unitId": "task-36:agent-2",
+      "sourceTaskId": 36,
+      "agentId": "agent:hiddenbench:36:2",
+      "comparisonVariant": "PARAPHRASED_ELICITATION",
+      "baselineStatus": "provider_network",
+      "comparisonStatus": "provider_network",
+      "pairStatus": "missing_or_invalid",
+      "totalVariation": null,
+      "absoluteNormalizedEntropyDifference": null,
+      "baselineUniqueTop": null,
+      "comparisonUniqueTop": null,
+      "uniqueTopAgreement": null
+    },
+    {
+      "unitId": "task-36:agent-3",
+      "sourceTaskId": 36,
+      "agentId": "agent:hiddenbench:36:3",
+      "comparisonVariant": "BASELINE_B",
+      "baselineStatus": "provider_network",
+      "comparisonStatus": "provider_network",
+      "pairStatus": "missing_or_invalid",
+      "totalVariation": null,
+      "absoluteNormalizedEntropyDifference": null,
+      "baselineUniqueTop": null,
+      "comparisonUniqueTop": null,
+      "uniqueTopAgreement": null
+    },
+    {
+      "unitId": "task-36:agent-3",
+      "sourceTaskId": 36,
+      "agentId": "agent:hiddenbench:36:3",
+      "comparisonVariant": "OPTION_ORDER_REVERSED",
+      "baselineStatus": "provider_network",
+      "comparisonStatus": "provider_network",
+      "pairStatus": "missing_or_invalid",
+      "totalVariation": null,
+      "absoluteNormalizedEntropyDifference": null,
+      "baselineUniqueTop": null,
+      "comparisonUniqueTop": null,
+      "uniqueTopAgreement": null
+    },
+    {
+      "unitId": "task-36:agent-3",
+      "sourceTaskId": 36,
+      "agentId": "agent:hiddenbench:36:3",
+      "comparisonVariant": "PARAPHRASED_ELICITATION",
+      "baselineStatus": "provider_network",
+      "comparisonStatus": "provider_network",
+      "pairStatus": "missing_or_invalid",
+      "totalVariation": null,
+      "absoluteNormalizedEntropyDifference": null,
+      "baselineUniqueTop": null,
+      "comparisonUniqueTop": null,
+      "uniqueTopAgreement": null
+    },
+    {
+      "unitId": "task-36:agent-4",
+      "sourceTaskId": 36,
+      "agentId": "agent:hiddenbench:36:4",
+      "comparisonVariant": "BASELINE_B",
+      "baselineStatus": "provider_network",
+      "comparisonStatus": "provider_network",
+      "pairStatus": "missing_or_invalid",
+      "totalVariation": null,
+      "absoluteNormalizedEntropyDifference": null,
+      "baselineUniqueTop": null,
+      "comparisonUniqueTop": null,
+      "uniqueTopAgreement": null
+    },
+    {
+      "unitId": "task-36:agent-4",
+      "sourceTaskId": 36,
+      "agentId": "agent:hiddenbench:36:4",
+      "comparisonVariant": "OPTION_ORDER_REVERSED",
+      "baselineStatus": "provider_network",
+      "comparisonStatus": "provider_network",
+      "pairStatus": "missing_or_invalid",
+      "totalVariation": null,
+      "absoluteNormalizedEntropyDifference": null,
+      "baselineUniqueTop": null,
+      "comparisonUniqueTop": null,
+      "uniqueTopAgreement": null
+    },
+    {
+      "unitId": "task-36:agent-4",
+      "sourceTaskId": 36,
+      "agentId": "agent:hiddenbench:36:4",
+      "comparisonVariant": "PARAPHRASED_ELICITATION",
+      "baselineStatus": "provider_network",
+      "comparisonStatus": "provider_network",
+      "pairStatus": "missing_or_invalid",
+      "totalVariation": null,
+      "absoluteNormalizedEntropyDifference": null,
+      "baselineUniqueTop": null,
+      "comparisonUniqueTop": null,
+      "uniqueTopAgreement": null
+    },
+    {
+      "unitId": "task-64:agent-1",
+      "sourceTaskId": 64,
+      "agentId": "agent:hiddenbench:64:1",
+      "comparisonVariant": "BASELINE_B",
+      "baselineStatus": "provider_network",
+      "comparisonStatus": "provider_network",
+      "pairStatus": "missing_or_invalid",
+      "totalVariation": null,
+      "absoluteNormalizedEntropyDifference": null,
+      "baselineUniqueTop": null,
+      "comparisonUniqueTop": null,
+      "uniqueTopAgreement": null
+    },
+    {
+      "unitId": "task-64:agent-1",
+      "sourceTaskId": 64,
+      "agentId": "agent:hiddenbench:64:1",
+      "comparisonVariant": "OPTION_ORDER_REVERSED",
+      "baselineStatus": "provider_network",
+      "comparisonStatus": "provider_network",
+      "pairStatus": "missing_or_invalid",
+      "totalVariation": null,
+      "absoluteNormalizedEntropyDifference": null,
+      "baselineUniqueTop": null,
+      "comparisonUniqueTop": null,
+      "uniqueTopAgreement": null
+    },
+    {
+      "unitId": "task-64:agent-1",
+      "sourceTaskId": 64,
+      "agentId": "agent:hiddenbench:64:1",
+      "comparisonVariant": "PARAPHRASED_ELICITATION",
+      "baselineStatus": "provider_network",
+      "comparisonStatus": "provider_network",
+      "pairStatus": "missing_or_invalid",
+      "totalVariation": null,
+      "absoluteNormalizedEntropyDifference": null,
+      "baselineUniqueTop": null,
+      "comparisonUniqueTop": null,
+      "uniqueTopAgreement": null
+    },
+    {
+      "unitId": "task-64:agent-2",
+      "sourceTaskId": 64,
+      "agentId": "agent:hiddenbench:64:2",
+      "comparisonVariant": "BASELINE_B",
+      "baselineStatus": "provider_network",
+      "comparisonStatus": "provider_network",
+      "pairStatus": "missing_or_invalid",
+      "totalVariation": null,
+      "absoluteNormalizedEntropyDifference": null,
+      "baselineUniqueTop": null,
+      "comparisonUniqueTop": null,
+      "uniqueTopAgreement": null
+    },
+    {
+      "unitId": "task-64:agent-2",
+      "sourceTaskId": 64,
+      "agentId": "agent:hiddenbench:64:2",
+      "comparisonVariant": "OPTION_ORDER_REVERSED",
+      "baselineStatus": "provider_network",
+      "comparisonStatus": "provider_network",
+      "pairStatus": "missing_or_invalid",
+      "totalVariation": null,
+      "absoluteNormalizedEntropyDifference": null,
+      "baselineUniqueTop": null,
+      "comparisonUniqueTop": null,
+      "uniqueTopAgreement": null
+    },
+    {
+      "unitId": "task-64:agent-2",
+      "sourceTaskId": 64,
+      "agentId": "agent:hiddenbench:64:2",
+      "comparisonVariant": "PARAPHRASED_ELICITATION",
+      "baselineStatus": "provider_network",
+      "comparisonStatus": "provider_network",
+      "pairStatus": "missing_or_invalid",
+      "totalVariation": null,
+      "absoluteNormalizedEntropyDifference": null,
+      "baselineUniqueTop": null,
+      "comparisonUniqueTop": null,
+      "uniqueTopAgreement": null
+    },
+    {
+      "unitId": "task-64:agent-3",
+      "sourceTaskId": 64,
+      "agentId": "agent:hiddenbench:64:3",
+      "comparisonVariant": "BASELINE_B",
+      "baselineStatus": "provider_network",
+      "comparisonStatus": "provider_network",
+      "pairStatus": "missing_or_invalid",
+      "totalVariation": null,
+      "absoluteNormalizedEntropyDifference": null,
+      "baselineUniqueTop": null,
+      "comparisonUniqueTop": null,
+      "uniqueTopAgreement": null
+    },
+    {
+      "unitId": "task-64:agent-3",
+      "sourceTaskId": 64,
+      "agentId": "agent:hiddenbench:64:3",
+      "comparisonVariant": "OPTION_ORDER_REVERSED",
+      "baselineStatus": "provider_network",
+      "comparisonStatus": "provider_network",
+      "pairStatus": "missing_or_invalid",
+      "totalVariation": null,
+      "absoluteNormalizedEntropyDifference": null,
+      "baselineUniqueTop": null,
+      "comparisonUniqueTop": null,
+      "uniqueTopAgreement": null
+    },
+    {
+      "unitId": "task-64:agent-3",
+      "sourceTaskId": 64,
+      "agentId": "agent:hiddenbench:64:3",
+      "comparisonVariant": "PARAPHRASED_ELICITATION",
+      "baselineStatus": "provider_network",
+      "comparisonStatus": "provider_network",
+      "pairStatus": "missing_or_invalid",
+      "totalVariation": null,
+      "absoluteNormalizedEntropyDifference": null,
+      "baselineUniqueTop": null,
+      "comparisonUniqueTop": null,
+      "uniqueTopAgreement": null
+    },
+    {
+      "unitId": "task-64:agent-4",
+      "sourceTaskId": 64,
+      "agentId": "agent:hiddenbench:64:4",
+      "comparisonVariant": "BASELINE_B",
+      "baselineStatus": "provider_network",
+      "comparisonStatus": "provider_network",
+      "pairStatus": "missing_or_invalid",
+      "totalVariation": null,
+      "absoluteNormalizedEntropyDifference": null,
+      "baselineUniqueTop": null,
+      "comparisonUniqueTop": null,
+      "uniqueTopAgreement": null
+    },
+    {
+      "unitId": "task-64:agent-4",
+      "sourceTaskId": 64,
+      "agentId": "agent:hiddenbench:64:4",
+      "comparisonVariant": "OPTION_ORDER_REVERSED",
+      "baselineStatus": "provider_network",
+      "comparisonStatus": "provider_network",
+      "pairStatus": "missing_or_invalid",
+      "totalVariation": null,
+      "absoluteNormalizedEntropyDifference": null,
+      "baselineUniqueTop": null,
+      "comparisonUniqueTop": null,
+      "uniqueTopAgreement": null
+    },
+    {
+      "unitId": "task-64:agent-4",
+      "sourceTaskId": 64,
+      "agentId": "agent:hiddenbench:64:4",
+      "comparisonVariant": "PARAPHRASED_ELICITATION",
+      "baselineStatus": "provider_network",
+      "comparisonStatus": "provider_network",
+      "pairStatus": "missing_or_invalid",
+      "totalVariation": null,
+      "absoluteNormalizedEntropyDifference": null,
+      "baselineUniqueTop": null,
+      "comparisonUniqueTop": null,
+      "uniqueTopAgreement": null
+    }
+  ],
+  "pairSummaries": {
+    "BASELINE_B": {
+      "comparisonVariant": "BASELINE_B",
+      "registeredPairCount": 12,
+      "validPairCount": 0,
+      "invalidOrMissingPairCount": 12,
+      "meanTotalVariation": null,
+      "medianTotalVariation": null,
+      "maximumTotalVariation": null,
+      "taskClusterBootstrap95MeanTv": null,
+      "meanAbsoluteNormalizedEntropyDifference": null,
+      "uniqueTopAgreementCount": 0,
+      "uniqueTopEligibleCount": 0,
+      "pairCountWithAnyTie": 0
+    },
+    "OPTION_ORDER_REVERSED": {
+      "comparisonVariant": "OPTION_ORDER_REVERSED",
+      "registeredPairCount": 12,
+      "validPairCount": 0,
+      "invalidOrMissingPairCount": 12,
+      "meanTotalVariation": null,
+      "medianTotalVariation": null,
+      "maximumTotalVariation": null,
+      "taskClusterBootstrap95MeanTv": null,
+      "meanAbsoluteNormalizedEntropyDifference": null,
+      "uniqueTopAgreementCount": 0,
+      "uniqueTopEligibleCount": 0,
+      "pairCountWithAnyTie": 0
+    },
+    "PARAPHRASED_ELICITATION": {
+      "comparisonVariant": "PARAPHRASED_ELICITATION",
+      "registeredPairCount": 12,
+      "validPairCount": 0,
+      "invalidOrMissingPairCount": 12,
+      "meanTotalVariation": null,
+      "medianTotalVariation": null,
+      "maximumTotalVariation": null,
+      "taskClusterBootstrap95MeanTv": null,
+      "meanAbsoluteNormalizedEntropyDifference": null,
+      "uniqueTopAgreementCount": 0,
+      "uniqueTopEligibleCount": 0,
+      "pairCountWithAnyTie": 0
+    }
+  },
+  "macrostates": [
+    {
+      "sourceTaskId": 1,
+      "variant": "BASELINE_A",
+      "expectedAgentIds": [
+        "agent:hiddenbench:1:1",
+        "agent:hiddenbench:1:2",
+        "agent:hiddenbench:1:3",
+        "agent:hiddenbench:1:4"
+      ],
+      "validAgentIds": [],
+      "missingOrInvalidAgentIds": [
+        "agent:hiddenbench:1:1",
+        "agent:hiddenbench:1:2",
+        "agent:hiddenbench:1:3",
+        "agent:hiddenbench:1:4"
+      ],
+      "rosterComplete": false,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "pooledProbabilitiesByOptionId": null,
+      "meanNormalizedEntropy": null,
+      "normalizedGeneralizedJsd": null,
+      "pooledNormalizedEntropy": null,
+      "pooledConcentration": null,
+      "decompositionResidual": null
+    },
+    {
+      "sourceTaskId": 1,
+      "variant": "BASELINE_B",
+      "expectedAgentIds": [
+        "agent:hiddenbench:1:1",
+        "agent:hiddenbench:1:2",
+        "agent:hiddenbench:1:3",
+        "agent:hiddenbench:1:4"
+      ],
+      "validAgentIds": [],
+      "missingOrInvalidAgentIds": [
+        "agent:hiddenbench:1:1",
+        "agent:hiddenbench:1:2",
+        "agent:hiddenbench:1:3",
+        "agent:hiddenbench:1:4"
+      ],
+      "rosterComplete": false,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "pooledProbabilitiesByOptionId": null,
+      "meanNormalizedEntropy": null,
+      "normalizedGeneralizedJsd": null,
+      "pooledNormalizedEntropy": null,
+      "pooledConcentration": null,
+      "decompositionResidual": null
+    },
+    {
+      "sourceTaskId": 1,
+      "variant": "OPTION_ORDER_REVERSED",
+      "expectedAgentIds": [
+        "agent:hiddenbench:1:1",
+        "agent:hiddenbench:1:2",
+        "agent:hiddenbench:1:3",
+        "agent:hiddenbench:1:4"
+      ],
+      "validAgentIds": [],
+      "missingOrInvalidAgentIds": [
+        "agent:hiddenbench:1:1",
+        "agent:hiddenbench:1:2",
+        "agent:hiddenbench:1:3",
+        "agent:hiddenbench:1:4"
+      ],
+      "rosterComplete": false,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "pooledProbabilitiesByOptionId": null,
+      "meanNormalizedEntropy": null,
+      "normalizedGeneralizedJsd": null,
+      "pooledNormalizedEntropy": null,
+      "pooledConcentration": null,
+      "decompositionResidual": null
+    },
+    {
+      "sourceTaskId": 1,
+      "variant": "PARAPHRASED_ELICITATION",
+      "expectedAgentIds": [
+        "agent:hiddenbench:1:1",
+        "agent:hiddenbench:1:2",
+        "agent:hiddenbench:1:3",
+        "agent:hiddenbench:1:4"
+      ],
+      "validAgentIds": [],
+      "missingOrInvalidAgentIds": [
+        "agent:hiddenbench:1:1",
+        "agent:hiddenbench:1:2",
+        "agent:hiddenbench:1:3",
+        "agent:hiddenbench:1:4"
+      ],
+      "rosterComplete": false,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "pooledProbabilitiesByOptionId": null,
+      "meanNormalizedEntropy": null,
+      "normalizedGeneralizedJsd": null,
+      "pooledNormalizedEntropy": null,
+      "pooledConcentration": null,
+      "decompositionResidual": null
+    },
+    {
+      "sourceTaskId": 36,
+      "variant": "BASELINE_A",
+      "expectedAgentIds": [
+        "agent:hiddenbench:36:1",
+        "agent:hiddenbench:36:2",
+        "agent:hiddenbench:36:3",
+        "agent:hiddenbench:36:4"
+      ],
+      "validAgentIds": [],
+      "missingOrInvalidAgentIds": [
+        "agent:hiddenbench:36:1",
+        "agent:hiddenbench:36:2",
+        "agent:hiddenbench:36:3",
+        "agent:hiddenbench:36:4"
+      ],
+      "rosterComplete": false,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "pooledProbabilitiesByOptionId": null,
+      "meanNormalizedEntropy": null,
+      "normalizedGeneralizedJsd": null,
+      "pooledNormalizedEntropy": null,
+      "pooledConcentration": null,
+      "decompositionResidual": null
+    },
+    {
+      "sourceTaskId": 36,
+      "variant": "BASELINE_B",
+      "expectedAgentIds": [
+        "agent:hiddenbench:36:1",
+        "agent:hiddenbench:36:2",
+        "agent:hiddenbench:36:3",
+        "agent:hiddenbench:36:4"
+      ],
+      "validAgentIds": [],
+      "missingOrInvalidAgentIds": [
+        "agent:hiddenbench:36:1",
+        "agent:hiddenbench:36:2",
+        "agent:hiddenbench:36:3",
+        "agent:hiddenbench:36:4"
+      ],
+      "rosterComplete": false,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "pooledProbabilitiesByOptionId": null,
+      "meanNormalizedEntropy": null,
+      "normalizedGeneralizedJsd": null,
+      "pooledNormalizedEntropy": null,
+      "pooledConcentration": null,
+      "decompositionResidual": null
+    },
+    {
+      "sourceTaskId": 36,
+      "variant": "OPTION_ORDER_REVERSED",
+      "expectedAgentIds": [
+        "agent:hiddenbench:36:1",
+        "agent:hiddenbench:36:2",
+        "agent:hiddenbench:36:3",
+        "agent:hiddenbench:36:4"
+      ],
+      "validAgentIds": [],
+      "missingOrInvalidAgentIds": [
+        "agent:hiddenbench:36:1",
+        "agent:hiddenbench:36:2",
+        "agent:hiddenbench:36:3",
+        "agent:hiddenbench:36:4"
+      ],
+      "rosterComplete": false,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "pooledProbabilitiesByOptionId": null,
+      "meanNormalizedEntropy": null,
+      "normalizedGeneralizedJsd": null,
+      "pooledNormalizedEntropy": null,
+      "pooledConcentration": null,
+      "decompositionResidual": null
+    },
+    {
+      "sourceTaskId": 36,
+      "variant": "PARAPHRASED_ELICITATION",
+      "expectedAgentIds": [
+        "agent:hiddenbench:36:1",
+        "agent:hiddenbench:36:2",
+        "agent:hiddenbench:36:3",
+        "agent:hiddenbench:36:4"
+      ],
+      "validAgentIds": [],
+      "missingOrInvalidAgentIds": [
+        "agent:hiddenbench:36:1",
+        "agent:hiddenbench:36:2",
+        "agent:hiddenbench:36:3",
+        "agent:hiddenbench:36:4"
+      ],
+      "rosterComplete": false,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "pooledProbabilitiesByOptionId": null,
+      "meanNormalizedEntropy": null,
+      "normalizedGeneralizedJsd": null,
+      "pooledNormalizedEntropy": null,
+      "pooledConcentration": null,
+      "decompositionResidual": null
+    },
+    {
+      "sourceTaskId": 64,
+      "variant": "BASELINE_A",
+      "expectedAgentIds": [
+        "agent:hiddenbench:64:1",
+        "agent:hiddenbench:64:2",
+        "agent:hiddenbench:64:3",
+        "agent:hiddenbench:64:4"
+      ],
+      "validAgentIds": [],
+      "missingOrInvalidAgentIds": [
+        "agent:hiddenbench:64:1",
+        "agent:hiddenbench:64:2",
+        "agent:hiddenbench:64:3",
+        "agent:hiddenbench:64:4"
+      ],
+      "rosterComplete": false,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "pooledProbabilitiesByOptionId": null,
+      "meanNormalizedEntropy": null,
+      "normalizedGeneralizedJsd": null,
+      "pooledNormalizedEntropy": null,
+      "pooledConcentration": null,
+      "decompositionResidual": null
+    },
+    {
+      "sourceTaskId": 64,
+      "variant": "BASELINE_B",
+      "expectedAgentIds": [
+        "agent:hiddenbench:64:1",
+        "agent:hiddenbench:64:2",
+        "agent:hiddenbench:64:3",
+        "agent:hiddenbench:64:4"
+      ],
+      "validAgentIds": [],
+      "missingOrInvalidAgentIds": [
+        "agent:hiddenbench:64:1",
+        "agent:hiddenbench:64:2",
+        "agent:hiddenbench:64:3",
+        "agent:hiddenbench:64:4"
+      ],
+      "rosterComplete": false,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "pooledProbabilitiesByOptionId": null,
+      "meanNormalizedEntropy": null,
+      "normalizedGeneralizedJsd": null,
+      "pooledNormalizedEntropy": null,
+      "pooledConcentration": null,
+      "decompositionResidual": null
+    },
+    {
+      "sourceTaskId": 64,
+      "variant": "OPTION_ORDER_REVERSED",
+      "expectedAgentIds": [
+        "agent:hiddenbench:64:1",
+        "agent:hiddenbench:64:2",
+        "agent:hiddenbench:64:3",
+        "agent:hiddenbench:64:4"
+      ],
+      "validAgentIds": [],
+      "missingOrInvalidAgentIds": [
+        "agent:hiddenbench:64:1",
+        "agent:hiddenbench:64:2",
+        "agent:hiddenbench:64:3",
+        "agent:hiddenbench:64:4"
+      ],
+      "rosterComplete": false,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "pooledProbabilitiesByOptionId": null,
+      "meanNormalizedEntropy": null,
+      "normalizedGeneralizedJsd": null,
+      "pooledNormalizedEntropy": null,
+      "pooledConcentration": null,
+      "decompositionResidual": null
+    },
+    {
+      "sourceTaskId": 64,
+      "variant": "PARAPHRASED_ELICITATION",
+      "expectedAgentIds": [
+        "agent:hiddenbench:64:1",
+        "agent:hiddenbench:64:2",
+        "agent:hiddenbench:64:3",
+        "agent:hiddenbench:64:4"
+      ],
+      "validAgentIds": [],
+      "missingOrInvalidAgentIds": [
+        "agent:hiddenbench:64:1",
+        "agent:hiddenbench:64:2",
+        "agent:hiddenbench:64:3",
+        "agent:hiddenbench:64:4"
+      ],
+      "rosterComplete": false,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "pooledProbabilitiesByOptionId": null,
+      "meanNormalizedEntropy": null,
+      "normalizedGeneralizedJsd": null,
+      "pooledNormalizedEntropy": null,
+      "pooledConcentration": null,
+      "decompositionResidual": null
+    }
+  ],
+  "macroDifferences": [
+    {
+      "sourceTaskId": 1,
+      "comparisonVariant": "BASELINE_B",
+      "status": "unavailable_incomplete_roster",
+      "pooledTotalVariation": null,
+      "meanNormalizedEntropyDifference": null,
+      "normalizedGeneralizedJsdDifference": null,
+      "pooledConcentrationDifference": null
+    },
+    {
+      "sourceTaskId": 1,
+      "comparisonVariant": "OPTION_ORDER_REVERSED",
+      "status": "unavailable_incomplete_roster",
+      "pooledTotalVariation": null,
+      "meanNormalizedEntropyDifference": null,
+      "normalizedGeneralizedJsdDifference": null,
+      "pooledConcentrationDifference": null
+    },
+    {
+      "sourceTaskId": 1,
+      "comparisonVariant": "PARAPHRASED_ELICITATION",
+      "status": "unavailable_incomplete_roster",
+      "pooledTotalVariation": null,
+      "meanNormalizedEntropyDifference": null,
+      "normalizedGeneralizedJsdDifference": null,
+      "pooledConcentrationDifference": null
+    },
+    {
+      "sourceTaskId": 36,
+      "comparisonVariant": "BASELINE_B",
+      "status": "unavailable_incomplete_roster",
+      "pooledTotalVariation": null,
+      "meanNormalizedEntropyDifference": null,
+      "normalizedGeneralizedJsdDifference": null,
+      "pooledConcentrationDifference": null
+    },
+    {
+      "sourceTaskId": 36,
+      "comparisonVariant": "OPTION_ORDER_REVERSED",
+      "status": "unavailable_incomplete_roster",
+      "pooledTotalVariation": null,
+      "meanNormalizedEntropyDifference": null,
+      "normalizedGeneralizedJsdDifference": null,
+      "pooledConcentrationDifference": null
+    },
+    {
+      "sourceTaskId": 36,
+      "comparisonVariant": "PARAPHRASED_ELICITATION",
+      "status": "unavailable_incomplete_roster",
+      "pooledTotalVariation": null,
+      "meanNormalizedEntropyDifference": null,
+      "normalizedGeneralizedJsdDifference": null,
+      "pooledConcentrationDifference": null
+    },
+    {
+      "sourceTaskId": 64,
+      "comparisonVariant": "BASELINE_B",
+      "status": "unavailable_incomplete_roster",
+      "pooledTotalVariation": null,
+      "meanNormalizedEntropyDifference": null,
+      "normalizedGeneralizedJsdDifference": null,
+      "pooledConcentrationDifference": null
+    },
+    {
+      "sourceTaskId": 64,
+      "comparisonVariant": "OPTION_ORDER_REVERSED",
+      "status": "unavailable_incomplete_roster",
+      "pooledTotalVariation": null,
+      "meanNormalizedEntropyDifference": null,
+      "normalizedGeneralizedJsdDifference": null,
+      "pooledConcentrationDifference": null
+    },
+    {
+      "sourceTaskId": 64,
+      "comparisonVariant": "PARAPHRASED_ELICITATION",
+      "status": "unavailable_incomplete_roster",
+      "pooledTotalVariation": null,
+      "meanNormalizedEntropyDifference": null,
+      "normalizedGeneralizedJsdDifference": null,
+      "pooledConcentrationDifference": null
+    }
+  ],
+  "developmentGates": {
+    "providerExecutionValid": false,
+    "allReportsValid": false,
+    "exactRepeatPass": false,
+    "optionOrderPass": false,
+    "paraphrasePass": false,
+    "overall": "CANARY_INVALID_PROVIDER"
+  },
+  "claimCeiling": "development_instrument_qualification_only",
+  "contentHash": "sha256:9ad35cbbf99634af10722ec03e329e1093cb1e8eeacc694103799c07a36cc70a"
+}

@@ -28,7 +28,7 @@
  *   a5 综合规划师：经济 + 环境的粗略信息（交叉验证）
  */
 
-import type { TaskConfig } from "../../lunar_survival/config";
+import type { TaskConfig } from "../../../legacy/experiments/lunar_survival/config";
 
 export const TASK_OPTIMIZED: TaskConfig = {
   id: "optimized",

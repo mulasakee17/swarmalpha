@@ -28,7 +28,7 @@
  * - 注：不注入"倾向某方案"的初始偏差（HiddenBench 场景依赖讨论中揭示的独有事实）
  */
 
-import type { TaskConfig } from "../../../lunar_survival/config";
+import type { TaskConfig } from "../../../../legacy/experiments/lunar_survival/config";
 import * as fs from "fs";
 import * as path from "path";
 

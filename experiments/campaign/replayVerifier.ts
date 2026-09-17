@@ -30,7 +30,7 @@ import { hasReplayableEstimatorSchema } from "./types";
 import {
   defaultProgressiveEstimatorRegistry,
   PROGRESSIVE_ESTIMATOR_ID,
-} from "../../src/lib/thermodynamics/ProgressiveEstimator";
+} from "../../legacy/src/lib/thermodynamics/ProgressiveEstimator";
 import { validateTreatmentAssignment } from "../../src/lib/experimentation/assignment";
 import {
   validateApplicationReceipt,

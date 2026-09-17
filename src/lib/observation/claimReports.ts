@@ -1,4 +1,4 @@
-import type { ClaimBeliefSubmission } from "../discussion/types";
+import type { ClaimBeliefSubmission } from "../../../legacy/src/lib/discussion/types";
 
 export interface ParsedClaimReports {
   claimReports?: ClaimBeliefSubmission[];

@@ -1,0 +1,842 @@
+[
+  {
+    "schemaRef": {
+      "id": "swarmalpha.experiment.v6.discussion-thermometer-state-space-task-bank",
+      "version": "1.0.0"
+    },
+    "taskId": "thermometer-calibration:thermal-loop:v1",
+    "baseScenarioId": "thermal-loop",
+    "designRegime": "DISTRIBUTED_COMPLEMENTARY",
+    "publicContext": "A sealed industrial cooling loop has one primary fault. Determine which listed fault best explains the supplied observations.\n\nThe service guide says a coolant-flow restriction usually combines weak downstream flow with increased pump effort. Heat-exchanger fouling usually preserves circuit flow while heat rejection worsens and exchanger surface gradients rise. A temperature-sensor offset usually creates disagreement between electronic temperature channels and independent physical proxies while hydraulic signs remain ordinary.\n\nEvery observation is fallible. A single observation is not conclusive, and no source identity should be treated as statistical independence without further evidence.",
+    "claim": {
+      "claimId": "claim:thermal-loop",
+      "proposition": "Which primary fault generated the cooling-loop incident?",
+      "options": [
+        {
+          "optionId": "opt_1",
+          "label": "coolant-flow restriction"
+        },
+        {
+          "optionId": "opt_2",
+          "label": "heat-exchanger fouling"
+        },
+        {
+          "optionId": "opt_3",
+          "label": "temperature-sensor offset"
+        }
+      ]
+    },
+    "agents": [
+      {
+        "agentId": "agent_1",
+        "privateEvidence": [
+          {
+            "evidenceId": "th-dc-1a",
+            "sourceId": "ultrasonic-meter",
+            "lineageId": "flow-meter-lineage",
+            "statement": "A portable ultrasonic check found downstream flow weaker than the upstream reference."
+          },
+          {
+            "evidenceId": "th-dc-1b",
+            "sourceId": "shift-log",
+            "lineageId": "operations-log-lineage",
+            "statement": "Operators heard the pump labor continuously after the loop warmed."
+          }
+        ]
+      },
+      {
+        "agentId": "agent_2",
+        "privateEvidence": [
+          {
+            "evidenceId": "th-dc-2a",
+            "sourceId": "pump-controller",
+            "lineageId": "pump-control-lineage",
+            "statement": "The pump controller recorded unusually sustained effort after startup."
+          },
+          {
+            "evidenceId": "th-dc-2b",
+            "sourceId": "bypass-inspection",
+            "lineageId": "mechanical-inspection-lineage",
+            "statement": "The bypass valve was found seated rather than open during inspection."
+          }
+        ]
+      },
+      {
+        "agentId": "agent_3",
+        "privateEvidence": [
+          {
+            "evidenceId": "th-dc-3a",
+            "sourceId": "contact-probe",
+            "lineageId": "physical-temperature-lineage",
+            "statement": "An independent contact probe confirmed that the outlet pipe warmed beyond its usual range."
+          },
+          {
+            "evidenceId": "th-dc-3b",
+            "sourceId": "surface-scan",
+            "lineageId": "surface-scan-lineage",
+            "statement": "The exchanger face did not show a persistent hot-side gradient."
+          }
+        ]
+      },
+      {
+        "agentId": "agent_4",
+        "privateEvidence": [
+          {
+            "evidenceId": "th-dc-4a",
+            "sourceId": "channel-comparison",
+            "lineageId": "electronic-sensor-lineage",
+            "statement": "The two installed electronic temperature channels agreed closely throughout the alert."
+          },
+          {
+            "evidenceId": "th-dc-4b",
+            "sourceId": "maintenance-note",
+            "lineageId": "maintenance-lineage",
+            "statement": "The most recent sensor calibration check had no recorded discrepancy."
+          }
+        ]
+      }
+    ],
+    "offlineDesignRecord": {
+      "latentOutcomeOptionId": "opt_1",
+      "role": "semantic_coherence_review_only_not_monitor_input",
+      "causalComparisonAcrossRegimes": "not_authorized"
+    },
+    "humanSemanticReview": "PENDING",
+    "contentHash": "sha256:a82210d471dafdec62830bddb769424c07b07f74e18e1336639532b6a57be6ae"
+  },
+  {
+    "schemaRef": {
+      "id": "swarmalpha.experiment.v6.discussion-thermometer-state-space-task-bank",
+      "version": "1.0.0"
+    },
+    "taskId": "thermometer-calibration:thermal-loop:v2",
+    "baseScenarioId": "thermal-loop",
+    "designRegime": "SHARED_CUE_PRIVATE_CORRECTION",
+    "publicContext": "A sealed industrial cooling loop has one primary fault. Determine which listed fault best explains the supplied observations.\n\nThe service guide says a coolant-flow restriction usually combines weak downstream flow with increased pump effort. Heat-exchanger fouling usually preserves circuit flow while heat rejection worsens and exchanger surface gradients rise. A temperature-sensor offset usually creates disagreement between electronic temperature channels and independent physical proxies while hydraulic signs remain ordinary.\n\nEvery observation is fallible. A single observation is not conclusive, and no source identity should be treated as statistical independence without further evidence.",
+    "claim": {
+      "claimId": "claim:thermal-loop",
+      "proposition": "Which primary fault generated the cooling-loop incident?",
+      "options": [
+        {
+          "optionId": "opt_1",
+          "label": "coolant-flow restriction"
+        },
+        {
+          "optionId": "opt_2",
+          "label": "heat-exchanger fouling"
+        },
+        {
+          "optionId": "opt_3",
+          "label": "temperature-sensor offset"
+        }
+      ]
+    },
+    "agents": [
+      {
+        "agentId": "agent_1",
+        "privateEvidence": [
+          {
+            "evidenceId": "th-sc-1a",
+            "sourceId": "main-dashboard",
+            "lineageId": "dashboard-derived-lineage",
+            "statement": "The main dashboard flagged reduced heat-exchanger efficiency during the incident."
+          },
+          {
+            "evidenceId": "th-sc-1b",
+            "sourceId": "ultrasonic-meter",
+            "lineageId": "flow-meter-lineage",
+            "statement": "A portable ultrasonic check found downstream flow weaker than the upstream reference."
+          }
+        ]
+      },
+      {
+        "agentId": "agent_2",
+        "privateEvidence": [
+          {
+            "evidenceId": "th-sc-2a",
+            "sourceId": "main-dashboard",
+            "lineageId": "dashboard-derived-lineage",
+            "statement": "The main dashboard flagged reduced heat-exchanger efficiency during the incident."
+          },
+          {
+            "evidenceId": "th-sc-2b",
+            "sourceId": "pump-controller",
+            "lineageId": "pump-control-lineage",
+            "statement": "The pump controller recorded unusually sustained effort after startup."
+          }
+        ]
+      },
+      {
+        "agentId": "agent_3",
+        "privateEvidence": [
+          {
+            "evidenceId": "th-sc-3a",
+            "sourceId": "main-dashboard",
+            "lineageId": "dashboard-derived-lineage",
+            "statement": "The main dashboard flagged reduced heat-exchanger efficiency during the incident."
+          },
+          {
+            "evidenceId": "th-sc-3b",
+            "sourceId": "surface-scan",
+            "lineageId": "surface-scan-lineage",
+            "statement": "The exchanger face showed no persistent hot-side gradient during a manual scan."
+          }
+        ]
+      },
+      {
+        "agentId": "agent_4",
+        "privateEvidence": [
+          {
+            "evidenceId": "th-sc-4a",
+            "sourceId": "main-dashboard",
+            "lineageId": "dashboard-derived-lineage",
+            "statement": "The main dashboard flagged reduced heat-exchanger efficiency during the incident."
+          },
+          {
+            "evidenceId": "th-sc-4b",
+            "sourceId": "channel-comparison",
+            "lineageId": "electronic-sensor-lineage",
+            "statement": "The two installed electronic temperature channels agreed closely throughout the alert."
+          }
+        ]
+      }
+    ],
+    "offlineDesignRecord": {
+      "latentOutcomeOptionId": "opt_1",
+      "role": "semantic_coherence_review_only_not_monitor_input",
+      "causalComparisonAcrossRegimes": "not_authorized"
+    },
+    "humanSemanticReview": "PENDING",
+    "contentHash": "sha256:9b423185a907255fc43217b114c8311fcd4adabac7ee55f208a518cba5f2032d"
+  },
+  {
+    "schemaRef": {
+      "id": "swarmalpha.experiment.v6.discussion-thermometer-state-space-task-bank",
+      "version": "1.0.0"
+    },
+    "taskId": "thermometer-calibration:thermal-loop:v3",
+    "baseScenarioId": "thermal-loop",
+    "designRegime": "POLARIZED_PRIVATE_BLOCKS",
+    "publicContext": "A sealed industrial cooling loop has one primary fault. Determine which listed fault best explains the supplied observations.\n\nThe service guide says a coolant-flow restriction usually combines weak downstream flow with increased pump effort. Heat-exchanger fouling usually preserves circuit flow while heat rejection worsens and exchanger surface gradients rise. A temperature-sensor offset usually creates disagreement between electronic temperature channels and independent physical proxies while hydraulic signs remain ordinary.\n\nEvery observation is fallible. A single observation is not conclusive, and no source identity should be treated as statistical independence without further evidence.",
+    "claim": {
+      "claimId": "claim:thermal-loop",
+      "proposition": "Which primary fault generated the cooling-loop incident?",
+      "options": [
+        {
+          "optionId": "opt_1",
+          "label": "coolant-flow restriction"
+        },
+        {
+          "optionId": "opt_2",
+          "label": "heat-exchanger fouling"
+        },
+        {
+          "optionId": "opt_3",
+          "label": "temperature-sensor offset"
+        }
+      ]
+    },
+    "agents": [
+      {
+        "agentId": "agent_1",
+        "privateEvidence": [
+          {
+            "evidenceId": "th-pb-1a",
+            "sourceId": "hydraulic-brief-a",
+            "lineageId": "hydraulic-brief-lineage",
+            "statement": "A hydraulic brief reported weak downstream flow."
+          },
+          {
+            "evidenceId": "th-pb-1b",
+            "sourceId": "pump-brief-a",
+            "lineageId": "pump-brief-lineage",
+            "statement": "A pump brief reported sustained extra effort."
+          }
+        ]
+      },
+      {
+        "agentId": "agent_2",
+        "privateEvidence": [
+          {
+            "evidenceId": "th-pb-2a",
+            "sourceId": "hydraulic-brief-a",
+            "lineageId": "hydraulic-brief-lineage",
+            "statement": "A hydraulic brief reported weak downstream flow."
+          },
+          {
+            "evidenceId": "th-pb-2b",
+            "sourceId": "pump-brief-a",
+            "lineageId": "pump-brief-lineage",
+            "statement": "A pump brief reported sustained extra effort."
+          }
+        ]
+      },
+      {
+        "agentId": "agent_3",
+        "privateEvidence": [
+          {
+            "evidenceId": "th-pb-3a",
+            "sourceId": "sensor-brief-b",
+            "lineageId": "sensor-brief-lineage",
+            "statement": "A sensor brief reported that the electronic outlet channel jumped while a contact probe stayed steady."
+          },
+          {
+            "evidenceId": "th-pb-3b",
+            "sourceId": "stability-brief-b",
+            "lineageId": "stability-brief-lineage",
+            "statement": "A stability brief reported ordinary hydraulic behavior during the alert."
+          }
+        ]
+      },
+      {
+        "agentId": "agent_4",
+        "privateEvidence": [
+          {
+            "evidenceId": "th-pb-4a",
+            "sourceId": "sensor-brief-b",
+            "lineageId": "sensor-brief-lineage",
+            "statement": "A sensor brief reported that the electronic outlet channel jumped while a contact probe stayed steady."
+          },
+          {
+            "evidenceId": "th-pb-4b",
+            "sourceId": "stability-brief-b",
+            "lineageId": "stability-brief-lineage",
+            "statement": "A stability brief reported ordinary hydraulic behavior during the alert."
+          }
+        ]
+      }
+    ],
+    "offlineDesignRecord": {
+      "latentOutcomeOptionId": "opt_1",
+      "role": "semantic_coherence_review_only_not_monitor_input",
+      "causalComparisonAcrossRegimes": "not_authorized"
+    },
+    "humanSemanticReview": "PENDING",
+    "contentHash": "sha256:edabd3a7365d3a00068dacf917c2e371698d851d06caee7c62bc9e17e89a6f5b"
+  },
+  {
+    "schemaRef": {
+      "id": "swarmalpha.experiment.v6.discussion-thermometer-state-space-task-bank",
+      "version": "1.0.0"
+    },
+    "taskId": "thermometer-calibration:thermal-loop:v4",
+    "baseScenarioId": "thermal-loop",
+    "designRegime": "ASYMMETRIC_INFORMED_MINORITY",
+    "publicContext": "A sealed industrial cooling loop has one primary fault. Determine which listed fault best explains the supplied observations.\n\nThe service guide says a coolant-flow restriction usually combines weak downstream flow with increased pump effort. Heat-exchanger fouling usually preserves circuit flow while heat rejection worsens and exchanger surface gradients rise. A temperature-sensor offset usually creates disagreement between electronic temperature channels and independent physical proxies while hydraulic signs remain ordinary.\n\nEvery observation is fallible. A single observation is not conclusive, and no source identity should be treated as statistical independence without further evidence.",
+    "claim": {
+      "claimId": "claim:thermal-loop",
+      "proposition": "Which primary fault generated the cooling-loop incident?",
+      "options": [
+        {
+          "optionId": "opt_1",
+          "label": "coolant-flow restriction"
+        },
+        {
+          "optionId": "opt_2",
+          "label": "heat-exchanger fouling"
+        },
+        {
+          "optionId": "opt_3",
+          "label": "temperature-sensor offset"
+        }
+      ]
+    },
+    "agents": [
+      {
+        "agentId": "agent_1",
+        "privateEvidence": [
+          {
+            "evidenceId": "th-am-1a",
+            "sourceId": "shift-bulletin",
+            "lineageId": "shared-bulletin-lineage",
+            "statement": "A shift bulletin described slower heat rejection than usual."
+          },
+          {
+            "evidenceId": "th-am-1b",
+            "sourceId": "surface-bulletin",
+            "lineageId": "shared-surface-lineage",
+            "statement": "A surface bulletin described a mildly warmer exchanger face."
+          }
+        ]
+      },
+      {
+        "agentId": "agent_2",
+        "privateEvidence": [
+          {
+            "evidenceId": "th-am-2a",
+            "sourceId": "shift-bulletin",
+            "lineageId": "shared-bulletin-lineage",
+            "statement": "A shift bulletin described slower heat rejection than usual."
+          },
+          {
+            "evidenceId": "th-am-2b",
+            "sourceId": "surface-bulletin",
+            "lineageId": "shared-surface-lineage",
+            "statement": "A surface bulletin described a mildly warmer exchanger face."
+          }
+        ]
+      },
+      {
+        "agentId": "agent_3",
+        "privateEvidence": [
+          {
+            "evidenceId": "th-am-3a",
+            "sourceId": "shift-bulletin",
+            "lineageId": "shared-bulletin-lineage",
+            "statement": "A shift bulletin described slower heat rejection than usual."
+          },
+          {
+            "evidenceId": "th-am-3b",
+            "sourceId": "surface-bulletin",
+            "lineageId": "shared-surface-lineage",
+            "statement": "A surface bulletin described a mildly warmer exchanger face."
+          }
+        ]
+      },
+      {
+        "agentId": "agent_4",
+        "privateEvidence": [
+          {
+            "evidenceId": "th-am-4a",
+            "sourceId": "ultrasonic-meter",
+            "lineageId": "flow-meter-lineage",
+            "statement": "A portable ultrasonic check found a persistent downstream flow loss."
+          },
+          {
+            "evidenceId": "th-am-4b",
+            "sourceId": "pump-controller",
+            "lineageId": "pump-control-lineage",
+            "statement": "The pump controller recorded sustained extra effort during the same interval."
+          }
+        ]
+      }
+    ],
+    "offlineDesignRecord": {
+      "latentOutcomeOptionId": "opt_1",
+      "role": "semantic_coherence_review_only_not_monitor_input",
+      "causalComparisonAcrossRegimes": "not_authorized"
+    },
+    "humanSemanticReview": "PENDING",
+    "contentHash": "sha256:b222e7873cffaa28c21c8e47b1c3c7dc966d64a01475c1038826f71a4c7c5608"
+  },
+  {
+    "schemaRef": {
+      "id": "swarmalpha.experiment.v6.discussion-thermometer-state-space-task-bank",
+      "version": "1.0.0"
+    },
+    "taskId": "thermometer-calibration:service-access:v1",
+    "baseScenarioId": "service-access",
+    "designRegime": "DISTRIBUTED_COMPLEMENTARY",
+    "publicContext": "A customer-facing service has one primary access failure. Determine which listed failure best explains the supplied observations.\n\nThe operations guide says credential replay usually produces valid-token use from unfamiliar origins and identity-specific access anomalies. A routing loop usually produces repeating hop patterns and loss of packet lifetime while service capacity remains ordinary. Capacity saturation usually produces broad queue growth and high resource use across many legitimate sessions without a repeating path signature.\n\nEvery observation is fallible. A single observation is not conclusive, and no source identity should be treated as statistical independence without further evidence.",
+    "claim": {
+      "claimId": "claim:service-access",
+      "proposition": "Which primary failure generated the service-access incident?",
+      "options": [
+        {
+          "optionId": "opt_1",
+          "label": "credential replay"
+        },
+        {
+          "optionId": "opt_2",
+          "label": "routing loop"
+        },
+        {
+          "optionId": "opt_3",
+          "label": "capacity saturation"
+        }
+      ]
+    },
+    "agents": [
+      {
+        "agentId": "agent_1",
+        "privateEvidence": [
+          {
+            "evidenceId": "sv-dc-1a",
+            "sourceId": "edge-trace",
+            "lineageId": "path-trace-lineage",
+            "statement": "An edge trace revisited the same intermediate hops before failing."
+          },
+          {
+            "evidenceId": "sv-dc-1b",
+            "sourceId": "session-sample",
+            "lineageId": "session-lineage",
+            "statement": "A sampled legitimate session failed before reaching the application tier."
+          }
+        ]
+      },
+      {
+        "agentId": "agent_2",
+        "privateEvidence": [
+          {
+            "evidenceId": "sv-dc-2a",
+            "sourceId": "packet-capture",
+            "lineageId": "packet-capture-lineage",
+            "statement": "Captured packets repeatedly exhausted their remaining lifetime."
+          },
+          {
+            "evidenceId": "sv-dc-2b",
+            "sourceId": "resolver-log",
+            "lineageId": "resolver-lineage",
+            "statement": "Name resolution completed normally during the incident."
+          }
+        ]
+      },
+      {
+        "agentId": "agent_3",
+        "privateEvidence": [
+          {
+            "evidenceId": "sv-dc-3a",
+            "sourceId": "capacity-monitor",
+            "lineageId": "capacity-lineage",
+            "statement": "Application and worker utilization remained within their ordinary operating band."
+          },
+          {
+            "evidenceId": "sv-dc-3b",
+            "sourceId": "queue-monitor",
+            "lineageId": "queue-lineage",
+            "statement": "Application request queues did not grow broadly across services."
+          }
+        ]
+      },
+      {
+        "agentId": "agent_4",
+        "privateEvidence": [
+          {
+            "evidenceId": "sv-dc-4a",
+            "sourceId": "identity-audit",
+            "lineageId": "identity-lineage",
+            "statement": "The identity audit found no concentration of failures around particular accounts."
+          },
+          {
+            "evidenceId": "sv-dc-4b",
+            "sourceId": "origin-audit",
+            "lineageId": "origin-lineage",
+            "statement": "Valid-token use did not shift toward unfamiliar network origins."
+          }
+        ]
+      }
+    ],
+    "offlineDesignRecord": {
+      "latentOutcomeOptionId": "opt_2",
+      "role": "semantic_coherence_review_only_not_monitor_input",
+      "causalComparisonAcrossRegimes": "not_authorized"
+    },
+    "humanSemanticReview": "PENDING",
+    "contentHash": "sha256:92f9fc79068e170f94d178ac4612350e99920457907fe8656376bcfe7621d6fc"
+  },
+  {
+    "schemaRef": {
+      "id": "swarmalpha.experiment.v6.discussion-thermometer-state-space-task-bank",
+      "version": "1.0.0"
+    },
+    "taskId": "thermometer-calibration:service-access:v2",
+    "baseScenarioId": "service-access",
+    "designRegime": "SHARED_CUE_PRIVATE_CORRECTION",
+    "publicContext": "A customer-facing service has one primary access failure. Determine which listed failure best explains the supplied observations.\n\nThe operations guide says credential replay usually produces valid-token use from unfamiliar origins and identity-specific access anomalies. A routing loop usually produces repeating hop patterns and loss of packet lifetime while service capacity remains ordinary. Capacity saturation usually produces broad queue growth and high resource use across many legitimate sessions without a repeating path signature.\n\nEvery observation is fallible. A single observation is not conclusive, and no source identity should be treated as statistical independence without further evidence.",
+    "claim": {
+      "claimId": "claim:service-access",
+      "proposition": "Which primary failure generated the service-access incident?",
+      "options": [
+        {
+          "optionId": "opt_1",
+          "label": "credential replay"
+        },
+        {
+          "optionId": "opt_2",
+          "label": "routing loop"
+        },
+        {
+          "optionId": "opt_3",
+          "label": "capacity saturation"
+        }
+      ]
+    },
+    "agents": [
+      {
+        "agentId": "agent_1",
+        "privateEvidence": [
+          {
+            "evidenceId": "sv-sc-1a",
+            "sourceId": "central-dashboard",
+            "lineageId": "dashboard-derived-lineage",
+            "statement": "The central dashboard flagged broad queue latency during the access failure."
+          },
+          {
+            "evidenceId": "sv-sc-1b",
+            "sourceId": "edge-trace",
+            "lineageId": "path-trace-lineage",
+            "statement": "An edge trace revisited the same intermediate hops before failing."
+          }
+        ]
+      },
+      {
+        "agentId": "agent_2",
+        "privateEvidence": [
+          {
+            "evidenceId": "sv-sc-2a",
+            "sourceId": "central-dashboard",
+            "lineageId": "dashboard-derived-lineage",
+            "statement": "The central dashboard flagged broad queue latency during the access failure."
+          },
+          {
+            "evidenceId": "sv-sc-2b",
+            "sourceId": "packet-capture",
+            "lineageId": "packet-capture-lineage",
+            "statement": "Captured packets repeatedly exhausted their remaining lifetime."
+          }
+        ]
+      },
+      {
+        "agentId": "agent_3",
+        "privateEvidence": [
+          {
+            "evidenceId": "sv-sc-3a",
+            "sourceId": "central-dashboard",
+            "lineageId": "dashboard-derived-lineage",
+            "statement": "The central dashboard flagged broad queue latency during the access failure."
+          },
+          {
+            "evidenceId": "sv-sc-3b",
+            "sourceId": "capacity-monitor",
+            "lineageId": "capacity-lineage",
+            "statement": "Application and worker utilization remained within their ordinary operating band."
+          }
+        ]
+      },
+      {
+        "agentId": "agent_4",
+        "privateEvidence": [
+          {
+            "evidenceId": "sv-sc-4a",
+            "sourceId": "central-dashboard",
+            "lineageId": "dashboard-derived-lineage",
+            "statement": "The central dashboard flagged broad queue latency during the access failure."
+          },
+          {
+            "evidenceId": "sv-sc-4b",
+            "sourceId": "queue-monitor",
+            "lineageId": "queue-lineage",
+            "statement": "Application request queues did not grow broadly across services."
+          }
+        ]
+      }
+    ],
+    "offlineDesignRecord": {
+      "latentOutcomeOptionId": "opt_2",
+      "role": "semantic_coherence_review_only_not_monitor_input",
+      "causalComparisonAcrossRegimes": "not_authorized"
+    },
+    "humanSemanticReview": "PENDING",
+    "contentHash": "sha256:6dc93e2d75256b29eb62d6f7625765cfeec15f18bb1ada63c21537c5fc74408f"
+  },
+  {
+    "schemaRef": {
+      "id": "swarmalpha.experiment.v6.discussion-thermometer-state-space-task-bank",
+      "version": "1.0.0"
+    },
+    "taskId": "thermometer-calibration:service-access:v3",
+    "baseScenarioId": "service-access",
+    "designRegime": "POLARIZED_PRIVATE_BLOCKS",
+    "publicContext": "A customer-facing service has one primary access failure. Determine which listed failure best explains the supplied observations.\n\nThe operations guide says credential replay usually produces valid-token use from unfamiliar origins and identity-specific access anomalies. A routing loop usually produces repeating hop patterns and loss of packet lifetime while service capacity remains ordinary. Capacity saturation usually produces broad queue growth and high resource use across many legitimate sessions without a repeating path signature.\n\nEvery observation is fallible. A single observation is not conclusive, and no source identity should be treated as statistical independence without further evidence.",
+    "claim": {
+      "claimId": "claim:service-access",
+      "proposition": "Which primary failure generated the service-access incident?",
+      "options": [
+        {
+          "optionId": "opt_1",
+          "label": "credential replay"
+        },
+        {
+          "optionId": "opt_2",
+          "label": "routing loop"
+        },
+        {
+          "optionId": "opt_3",
+          "label": "capacity saturation"
+        }
+      ]
+    },
+    "agents": [
+      {
+        "agentId": "agent_1",
+        "privateEvidence": [
+          {
+            "evidenceId": "sv-pb-1a",
+            "sourceId": "capacity-brief-a",
+            "lineageId": "capacity-brief-lineage",
+            "statement": "A capacity brief described widespread worker utilization near its alert boundary."
+          },
+          {
+            "evidenceId": "sv-pb-1b",
+            "sourceId": "queue-brief-a",
+            "lineageId": "queue-brief-lineage",
+            "statement": "A queue brief described request backlog across several application workers."
+          }
+        ]
+      },
+      {
+        "agentId": "agent_2",
+        "privateEvidence": [
+          {
+            "evidenceId": "sv-pb-2a",
+            "sourceId": "capacity-brief-a",
+            "lineageId": "capacity-brief-lineage",
+            "statement": "A capacity brief described widespread worker utilization near its alert boundary."
+          },
+          {
+            "evidenceId": "sv-pb-2b",
+            "sourceId": "queue-brief-a",
+            "lineageId": "queue-brief-lineage",
+            "statement": "A queue brief described request backlog across several application workers."
+          }
+        ]
+      },
+      {
+        "agentId": "agent_3",
+        "privateEvidence": [
+          {
+            "evidenceId": "sv-pb-3a",
+            "sourceId": "path-brief-b",
+            "lineageId": "path-brief-lineage",
+            "statement": "A path brief showed the same intermediate hops repeating before failure."
+          },
+          {
+            "evidenceId": "sv-pb-3b",
+            "sourceId": "lifetime-brief-b",
+            "lineageId": "lifetime-brief-lineage",
+            "statement": "A packet brief showed repeated exhaustion of packet lifetime."
+          }
+        ]
+      },
+      {
+        "agentId": "agent_4",
+        "privateEvidence": [
+          {
+            "evidenceId": "sv-pb-4a",
+            "sourceId": "path-brief-b",
+            "lineageId": "path-brief-lineage",
+            "statement": "A path brief showed the same intermediate hops repeating before failure."
+          },
+          {
+            "evidenceId": "sv-pb-4b",
+            "sourceId": "lifetime-brief-b",
+            "lineageId": "lifetime-brief-lineage",
+            "statement": "A packet brief showed repeated exhaustion of packet lifetime."
+          }
+        ]
+      }
+    ],
+    "offlineDesignRecord": {
+      "latentOutcomeOptionId": "opt_2",
+      "role": "semantic_coherence_review_only_not_monitor_input",
+      "causalComparisonAcrossRegimes": "not_authorized"
+    },
+    "humanSemanticReview": "PENDING",
+    "contentHash": "sha256:98c3a5cf9ef054fbea4dba1bedae2ed4b69f785430b72e742e6354399dbc2ac9"
+  },
+  {
+    "schemaRef": {
+      "id": "swarmalpha.experiment.v6.discussion-thermometer-state-space-task-bank",
+      "version": "1.0.0"
+    },
+    "taskId": "thermometer-calibration:service-access:v4",
+    "baseScenarioId": "service-access",
+    "designRegime": "ASYMMETRIC_INFORMED_MINORITY",
+    "publicContext": "A customer-facing service has one primary access failure. Determine which listed failure best explains the supplied observations.\n\nThe operations guide says credential replay usually produces valid-token use from unfamiliar origins and identity-specific access anomalies. A routing loop usually produces repeating hop patterns and loss of packet lifetime while service capacity remains ordinary. Capacity saturation usually produces broad queue growth and high resource use across many legitimate sessions without a repeating path signature.\n\nEvery observation is fallible. A single observation is not conclusive, and no source identity should be treated as statistical independence without further evidence.",
+    "claim": {
+      "claimId": "claim:service-access",
+      "proposition": "Which primary failure generated the service-access incident?",
+      "options": [
+        {
+          "optionId": "opt_1",
+          "label": "credential replay"
+        },
+        {
+          "optionId": "opt_2",
+          "label": "routing loop"
+        },
+        {
+          "optionId": "opt_3",
+          "label": "capacity saturation"
+        }
+      ]
+    },
+    "agents": [
+      {
+        "agentId": "agent_1",
+        "privateEvidence": [
+          {
+            "evidenceId": "sv-am-1a",
+            "sourceId": "identity-bulletin",
+            "lineageId": "shared-identity-lineage",
+            "statement": "An identity bulletin mentioned a small rise in rejected token refreshes."
+          },
+          {
+            "evidenceId": "sv-am-1b",
+            "sourceId": "origin-bulletin",
+            "lineageId": "shared-origin-lineage",
+            "statement": "An origin bulletin mentioned a few sessions from unfamiliar networks."
+          }
+        ]
+      },
+      {
+        "agentId": "agent_2",
+        "privateEvidence": [
+          {
+            "evidenceId": "sv-am-2a",
+            "sourceId": "identity-bulletin",
+            "lineageId": "shared-identity-lineage",
+            "statement": "An identity bulletin mentioned a small rise in rejected token refreshes."
+          },
+          {
+            "evidenceId": "sv-am-2b",
+            "sourceId": "origin-bulletin",
+            "lineageId": "shared-origin-lineage",
+            "statement": "An origin bulletin mentioned a few sessions from unfamiliar networks."
+          }
+        ]
+      },
+      {
+        "agentId": "agent_3",
+        "privateEvidence": [
+          {
+            "evidenceId": "sv-am-3a",
+            "sourceId": "identity-bulletin",
+            "lineageId": "shared-identity-lineage",
+            "statement": "An identity bulletin mentioned a small rise in rejected token refreshes."
+          },
+          {
+            "evidenceId": "sv-am-3b",
+            "sourceId": "origin-bulletin",
+            "lineageId": "shared-origin-lineage",
+            "statement": "An origin bulletin mentioned a few sessions from unfamiliar networks."
+          }
+        ]
+      },
+      {
+        "agentId": "agent_4",
+        "privateEvidence": [
+          {
+            "evidenceId": "sv-am-4a",
+            "sourceId": "edge-trace",
+            "lineageId": "path-trace-lineage",
+            "statement": "An edge trace revisited the same intermediate hops before failing."
+          },
+          {
+            "evidenceId": "sv-am-4b",
+            "sourceId": "packet-capture",
+            "lineageId": "packet-capture-lineage",
+            "statement": "Captured packets repeatedly exhausted their remaining lifetime while service capacity remained ordinary."
+          }
+        ]
+      }
+    ],
+    "offlineDesignRecord": {
+      "latentOutcomeOptionId": "opt_2",
+      "role": "semantic_coherence_review_only_not_monitor_input",
+      "causalComparisonAcrossRegimes": "not_authorized"
+    },
+    "humanSemanticReview": "PENDING",
+    "contentHash": "sha256:648e957a16d77e47ae8077e477a72c2ca38d92c35f8371e778efb9477a6b30fe"
+  }
+]

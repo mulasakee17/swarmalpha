@@ -1,0 +1,70 @@
+{
+  "planRef": {
+    "id": "swarmalpha.experiment.v6.collective-dynamics-matched-sham-canary",
+    "version": "1.0.0"
+  },
+  "sourceFormationDirectory": "results/v6_collective_dynamics_v1_glm46v_monitor_screen10_seed1",
+  "sourceTaskIds": [
+    1,
+    8,
+    15,
+    22,
+    29,
+    36,
+    43,
+    50,
+    57,
+    64
+  ],
+  "sourceAgentCounts": [
+    4,
+    3,
+    4,
+    4,
+    4,
+    4,
+    4,
+    3,
+    4,
+    4
+  ],
+  "sourceTaskSelection": "preexisting_truth_free_systematic_dev10_order",
+  "sourceSeed": 1,
+  "checkpointRound": 1,
+  "registeredUnitCount": 38,
+  "variants": [
+    "NO_PEER_A",
+    "NO_PEER_B",
+    "PEER_A",
+    "PEER_B",
+    "SHAM_A",
+    "SHAM_B"
+  ],
+  "plannedProviderCalls": 228,
+  "modelRef": {
+    "id": "zhipu:glm-4.6v",
+    "version": "1.0.0"
+  },
+  "promptRef": {
+    "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+    "version": "1.1.0"
+  },
+  "parserRef": {
+    "id": "swarmalpha.experiment.v6.shadow-probability-sensor-parser",
+    "version": "1.1.0"
+  },
+  "invocation": {
+    "temperature": 0,
+    "seed": 1,
+    "maxTokens": 256,
+    "thinking": "disabled",
+    "attemptsPerCell": 1,
+    "retry": "none"
+  },
+  "orderingPolicy": "six_condition_cyclic_near_balance_v1",
+  "primaryComparison": "peer_minus_sham_and_no_peer_bundle_response",
+  "inferenceUnit": "task",
+  "pairedObservationUnit": "task_agent_frozen_view",
+  "truthAccess": "none",
+  "contentHash": "sha256:3ce082f405520dbc0093bf68e30df9b7f74de32aea6f843722b4e53047074bd2"
+}

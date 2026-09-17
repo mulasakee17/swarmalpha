@@ -1,0 +1,1934 @@
+{
+  "runRef": {
+    "id": "swarmalpha.experiment.v6.discussion-thermometer-natural-dynamics-sensor-run",
+    "version": "1.0.0"
+  },
+  "freezeHash": "sha256:dba1ff472bcbcdd1470597446fd4ba854b25c4597a77be63c9fd1e6908dd8961",
+  "terminals": [
+    {
+      "sequence": 1,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x0:agent_1:a",
+      "requestHash": "sha256:275b106b8cbb394fc582b61e618e02e51e10c5eaaddb43d9d27efcb15f1cc64e",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 2,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x0:agent_1:b",
+      "requestHash": "sha256:95fcc3c235d23f6512b21293ea5ae1c95e578692598b60fbf0859ba88f39a094",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 3,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x1:agent_1:a",
+      "requestHash": "sha256:bc0a1be216f9cf2b12b3e160e82ef6761205258f03cf08cd578427c44e8c5e28",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 4,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x1:agent_1:b",
+      "requestHash": "sha256:69edd395d03484e9f4e5c10a30fed78dc19ab7d4e5efd57846c6a1688585bd7c",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 5,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x2:agent_1:a",
+      "requestHash": "sha256:66a748810f922477e668f17983d76f19b638b3d750d9e350c669902d3a82506d",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.4,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ffac85929d335d537b592d07f27cc597602c425bc970286caf2484bee45072b1",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.4,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 6,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x2:agent_1:b",
+      "requestHash": "sha256:0667027424b38564334fdb0e2d10ee5a3eea9120f4ba496293dafa6a469d9b07",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.4,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ffac85929d335d537b592d07f27cc597602c425bc970286caf2484bee45072b1",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.4,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 7,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x3:agent_1:a",
+      "requestHash": "sha256:2e700944211233b0a4e996fda57e21be79a75715daceaa6d975deb6307a656a8",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 8,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x3:agent_1:b",
+      "requestHash": "sha256:b44aa11fc03a3e0689c45b599278c524c5168e6b894457f23bc3839f451fe1b0",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 9,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x4:agent_1:a",
+      "requestHash": "sha256:c1f70434d7d4d340398189f5c9d4fb56b7e484efcf9a1e53c254b739a8d7874c",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 10,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x4:agent_1:b",
+      "requestHash": "sha256:cebc21be8bbb89b72da7bba3e32de1fb61b3da28a7fc06957f011a30340a0d60",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 11,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x0:agent_2:a",
+      "requestHash": "sha256:8647fd01f5df2cf42ab48a91f24cbb380e5bc304dab6268f09d94884746faed8",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 12,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x0:agent_2:b",
+      "requestHash": "sha256:15e5d92e3a62a412b4a138bfadba124663000f3ace75cf60fe9e5f60076d9ef2",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 13,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x1:agent_2:a",
+      "requestHash": "sha256:b073edff2b2eb5c6d9fcfe19d6a2866b14d76ec6fabe9127bf493ede823571b1",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 14,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x1:agent_2:b",
+      "requestHash": "sha256:efef627de5e0cfb95cfb7ebf152bfc7f6042db7aeca9b149beb971bc7f086a32",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 15,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x2:agent_2:a",
+      "requestHash": "sha256:b43670e319f7785d1de75d849f96a2d1b4bbc7d9d313733627cff8f46f9feba3",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.4,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ffac85929d335d537b592d07f27cc597602c425bc970286caf2484bee45072b1",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.4,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 16,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x2:agent_2:b",
+      "requestHash": "sha256:cfc5c6405048ab7b952b8386d9d9a4f3bffab4fd252a56a60372de929e6b4843",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.4,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ffac85929d335d537b592d07f27cc597602c425bc970286caf2484bee45072b1",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.4,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 17,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x3:agent_2:a",
+      "requestHash": "sha256:c5a97cd5e9738d451ac51f7f288dc1b04ebc461ca2d7d5ae20901f6a6748e41b",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 18,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x3:agent_2:b",
+      "requestHash": "sha256:9ab9dec5b5a98922557bbcc3e5de8c5afa8780f32ae5395a3b20c45e4580f431",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 19,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x4:agent_2:a",
+      "requestHash": "sha256:9768ee8f2a5e727d4a4f9002970ca1251fe421c5eba3c419ee8de4fce9d52857",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 20,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x4:agent_2:b",
+      "requestHash": "sha256:0babf0550f633d32fc06d89230ecd1c251965393bea418fac59aea919da0ae7f",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 21,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x0:agent_3:a",
+      "requestHash": "sha256:e42439e5c936a9d3f909da86e384b19b92dfe18ee52c6fc84afedd3798e538ec",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 22,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x0:agent_3:b",
+      "requestHash": "sha256:18826aa9ffad13ccf4940c2f164858e50fc75be1ad9ae53639c74e1956ab2d99",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 23,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x1:agent_3:a",
+      "requestHash": "sha256:fac99044bd62e3186eb1ceb617fcaa98c90438a6275980c83590582dc8e4a0d0",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 24,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x1:agent_3:b",
+      "requestHash": "sha256:61256601bfe5dd5de4c505df6c99d214e6166fd944316472b382706ba4c71298",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 25,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x2:agent_3:a",
+      "requestHash": "sha256:3b5cd375dac3dc0a746fc060593743f4d168c6894aad94158033a55e81e52a16",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.4,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ffac85929d335d537b592d07f27cc597602c425bc970286caf2484bee45072b1",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.4,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 26,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x2:agent_3:b",
+      "requestHash": "sha256:f10e3fb7cb24345bac780d085fe7e0cfade40a29c2248a0c84d49b34bc475f2c",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.4,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ffac85929d335d537b592d07f27cc597602c425bc970286caf2484bee45072b1",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.4,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 27,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x3:agent_3:a",
+      "requestHash": "sha256:2228fd0e2d880a88a150c38d4d2c29d0e0e17cc0a6d75c7eb14b8385b07743f6",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 28,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x3:agent_3:b",
+      "requestHash": "sha256:c802c67af7c648f453e39c618a460a5786aa70f37cd5770200c9e02cff89f35c",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 29,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x4:agent_3:a",
+      "requestHash": "sha256:ebc22bec6186a7f35711426c1562058b7c7a8c945296b45c128498e2d488c41f",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 30,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x4:agent_3:b",
+      "requestHash": "sha256:ad51f09dec5da92a14c1585074bc6a112cbaa0133a7b897ac59a633dd3b401fb",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 31,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x0:agent_4:a",
+      "requestHash": "sha256:70bf37222b2d65b15d5c5d7ca7be96f87940b5875aa30b0baeda1067cd3836bf",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 32,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x0:agent_4:b",
+      "requestHash": "sha256:325053cb5f21232909dc1a88fde932422170f96c6823438963958be046d933c4",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 33,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x1:agent_4:a",
+      "requestHash": "sha256:071c0732018c47e871175bca9913efdf5f2c1011e5e818aef7808b6748c01c9e",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 34,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x1:agent_4:b",
+      "requestHash": "sha256:3291eef31065d9485ea3ac03ea0768ff81f1423d98b369088d71bfecd070af81",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 35,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x2:agent_4:a",
+      "requestHash": "sha256:54449712967994e815ad6cc216b9122170e55514005634324b54743687557ee1",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.4,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ffac85929d335d537b592d07f27cc597602c425bc970286caf2484bee45072b1",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.4,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 36,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x2:agent_4:b",
+      "requestHash": "sha256:389cd30a6cbb65b0bf02e57542f6de5dc63be9896e876f59023354b46b3ee3e1",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.4,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ffac85929d335d537b592d07f27cc597602c425bc970286caf2484bee45072b1",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.4,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 37,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x3:agent_4:a",
+      "requestHash": "sha256:feca5910089a762dcccbf3a9bfc280c1b42983d277084a5dd7a06997fa389d2e",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 38,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x3:agent_4:b",
+      "requestHash": "sha256:ff03b266e4a28fe7ad74fe8bb7f2b4f29a68e1bfa8322932c41b7fcc4f77addf",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 39,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x4:agent_4:a",
+      "requestHash": "sha256:35b3f34a88e5cb1e48c59c6f059a1885a2343ea8379a214c446d47b827d60b53",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 40,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q1:x4:agent_4:b",
+      "requestHash": "sha256:902ea0e3d03de701871fb0ef581379aa8ffa9d14545aa5d7c111e65124bc38cb",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 41,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x0:agent_1:a",
+      "requestHash": "sha256:2804d170c4ac211b821809c331e7f42fc7d79f5698e3610394891594d79de8e0",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 42,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x0:agent_1:b",
+      "requestHash": "sha256:b1e096dc8d0d6a91d0bf3aeb6293a2a9c8f9d9930de6b596a681412ea9b6c0cb",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 43,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x1:agent_1:a",
+      "requestHash": "sha256:30ba231d4077ea12d6274725520841c4be9c659cd484e87aca53f5c3da7ae208",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 44,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x1:agent_1:b",
+      "requestHash": "sha256:faee3a3579dcaebd41a4f69273540cccb2e2bec7a3396ea929de0c4c660b63e9",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 45,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x2:agent_1:a",
+      "requestHash": "sha256:3ada23bee7f1513579a3b705b3044d824d865df1d1508c9ebcce6a8d9299fcf5",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.4,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ffac85929d335d537b592d07f27cc597602c425bc970286caf2484bee45072b1",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.4,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 46,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x2:agent_1:b",
+      "requestHash": "sha256:c1b1692894f05d8889471fe9eec3a377160d528dbe6e61ad5e13064232e1c15f",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.4,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ffac85929d335d537b592d07f27cc597602c425bc970286caf2484bee45072b1",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.4,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 47,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x3:agent_1:a",
+      "requestHash": "sha256:9569b7199254bf96ac764acfb000ac2d27adcf98f692162596188fda171d1c60",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 48,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x3:agent_1:b",
+      "requestHash": "sha256:0c2500a348f098f831fff4a8c70c1c31a30d10ab8a671a0d3d34561ba106bea6",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 49,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x4:agent_1:a",
+      "requestHash": "sha256:5e4ea643d6d29c878d49dc45a164aa3ec40a27017eda156b9e90ed057f675ef1",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 50,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x4:agent_1:b",
+      "requestHash": "sha256:72e12bfbe5becab0d7267e5d70a28963989532e843bfbdb4c3eee723dad32962",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 51,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x0:agent_2:a",
+      "requestHash": "sha256:fcc97136ceedd853048570e9cfdfc3f4a5ad2caf129ecf8a31ca64680c2e4436",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 52,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x0:agent_2:b",
+      "requestHash": "sha256:1d9bfde06d2d98dc53401d8650fd217644e4ecd185bfc6c56b696f8628bd0e5d",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 53,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x1:agent_2:a",
+      "requestHash": "sha256:19e1f19259ff9a8de0dc8040e6ad66a80b1f075baca3648e6b637ca5e07b2c77",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 54,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x1:agent_2:b",
+      "requestHash": "sha256:ceef67b8f79df58f98de54cab3da0e58c7ec6dfd49a7254f01fa7612a652a32e",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 55,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x2:agent_2:a",
+      "requestHash": "sha256:de0e5d19b6c21e7d41d3ff224cadbdb44f9a4a5414f21c1e283988512d6f7c44",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.4,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ffac85929d335d537b592d07f27cc597602c425bc970286caf2484bee45072b1",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.4,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 56,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x2:agent_2:b",
+      "requestHash": "sha256:33a049b5f464d464a88317a8671de552e1183df544b000f3ada44bce992655a1",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.4,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ffac85929d335d537b592d07f27cc597602c425bc970286caf2484bee45072b1",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.4,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 57,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x3:agent_2:a",
+      "requestHash": "sha256:42429350d488319fc1eeda66f24c8e81e25ce99c1500fc30f6c2e65d565fb5fa",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 58,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x3:agent_2:b",
+      "requestHash": "sha256:241bd948ef5052f47a3a057e267d321919d1f4733ac8b06604f8887d869e7160",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 59,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x4:agent_2:a",
+      "requestHash": "sha256:b69685bc331dedce0ce2d3a79bd1b9ae663fd77e0e0457b5ac8d56a60b889d9c",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 60,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x4:agent_2:b",
+      "requestHash": "sha256:f5265f54c3279b30860329de51098181731761a9f57a1de1d3a4491ccb4d0e92",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 61,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x0:agent_3:a",
+      "requestHash": "sha256:b1435f11852943842ef9caf27d81a5abdfc82bd6f5200ac68e88fbe94e7d120b",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 62,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x0:agent_3:b",
+      "requestHash": "sha256:ce94e837cb11744b14cff3386d95747a2c3ccdba55e84d890712fc94da80fa69",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 63,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x1:agent_3:a",
+      "requestHash": "sha256:effebe4b91ab9f6b721d74d6503d09d9f74c3ac5994dcbc05fe88298e9c0f72d",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 64,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x1:agent_3:b",
+      "requestHash": "sha256:d8a0bbafe2fd3dc76b4aaa5d80b8a2f1c2618f930b19ec31690b67f108b37e79",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 65,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x2:agent_3:a",
+      "requestHash": "sha256:92e2648d25117631be2091e3a67ca31ef795bdbf49b3583918ac443d94c458b3",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.4,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ffac85929d335d537b592d07f27cc597602c425bc970286caf2484bee45072b1",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.4,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 66,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x2:agent_3:b",
+      "requestHash": "sha256:c3cc134461f0d8054b8aae62c1bb29c4dbebd3469f3c304b0a6beddd0725e27c",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.4,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ffac85929d335d537b592d07f27cc597602c425bc970286caf2484bee45072b1",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.4,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 67,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x3:agent_3:a",
+      "requestHash": "sha256:5a83768e5a1767ae61f9ef2d2e064f76cf130c268c44a8814409edabddd1c509",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 68,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x3:agent_3:b",
+      "requestHash": "sha256:ccd3c362357180356246e1ac14cb05332dd30f165bc47d7b740dd007cf897fc3",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 69,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x4:agent_3:a",
+      "requestHash": "sha256:66ba28b637089ee87ef84312ed5673d936503f73407083b15618ac1eb4c7f9ea",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 70,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x4:agent_3:b",
+      "requestHash": "sha256:b2ab4017377aa9ec37c7f79f93a0b8ace6d8aff57fed02821da5914f6211ac41",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 71,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x0:agent_4:a",
+      "requestHash": "sha256:6f8506d2fe73bc44bd994b64b22886184e8810d62d086fbf6aad42006987d04e",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 72,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x0:agent_4:b",
+      "requestHash": "sha256:a9a90e6b9c96a759e40ee34f13db2542eef9dec23bd8437ee280a853e9aa5150",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 73,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x1:agent_4:a",
+      "requestHash": "sha256:88c2c0c4959f0430edc51799ab32e766a2ba6e036b23009d81e31939287aba5b",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 74,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x1:agent_4:b",
+      "requestHash": "sha256:9b97ad4d9ade6eaaa060d37702eba4399252ce0db2904c8254c7ff6d1a960259",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 75,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x2:agent_4:a",
+      "requestHash": "sha256:0b39088865c1680e1ae124a73a42118f3df9c85f727938d2bdf21ab2a89879e2",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.4,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ffac85929d335d537b592d07f27cc597602c425bc970286caf2484bee45072b1",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.4,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 76,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x2:agent_4:b",
+      "requestHash": "sha256:de8d794cc5de5941b5f72fdd172b282eb668e443729042e1f7967c276b7d7c5a",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.4,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ffac85929d335d537b592d07f27cc597602c425bc970286caf2484bee45072b1",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.4,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 77,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x3:agent_4:a",
+      "requestHash": "sha256:1cb388af8a40d220eaaaad9b9e779c4a6ed852a4ab1d6725a4b820132ec31594",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 78,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x3:agent_4:b",
+      "requestHash": "sha256:b13d781cf3004f24b8b9847b3402849c5180fc8faee1aa110b804b211f087173",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 79,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x4:agent_4:a",
+      "requestHash": "sha256:24c52003a77d0446cff17fddd61501d63c339e36d7e31612454b48c20800f5ce",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 80,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:backup-power:q2:x4:agent_4:b",
+      "requestHash": "sha256:9df9d9aed27999645b0ff0987b12610caa18db544001d355f1858ba63a7daabd",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 81,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x0:agent_1:a",
+      "requestHash": "sha256:940a26ed0fbffe899f89862c4773505f7b968898b252b48e683f8a073589b8f0",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 82,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x0:agent_1:b",
+      "requestHash": "sha256:1e8cdceafb5ed6d0bcb5d2a6fb81fd9daefc0409d6091401baccb24d87a2d8d6",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 83,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x1:agent_1:a",
+      "requestHash": "sha256:0f0d1171e4b4da66ce9c2a4fa5aa52238374c30ae7a2032cad31ba56030f9713",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 84,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x1:agent_1:b",
+      "requestHash": "sha256:1930c9b3dae2dfab706a27f8286596d54f7b337a41eccce877c3aa194b843c88",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 85,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x2:agent_1:a",
+      "requestHash": "sha256:1751d2eb31f138962ae17c08d83ed775156a0f52377334a9865407add6b8d18f",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.4,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ffac85929d335d537b592d07f27cc597602c425bc970286caf2484bee45072b1",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.4,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 86,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x2:agent_1:b",
+      "requestHash": "sha256:41a007cfc67012f5b7cd969ebc8a0b1b3443988c63682f8976d95e95d46e9fbe",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.4,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ffac85929d335d537b592d07f27cc597602c425bc970286caf2484bee45072b1",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.4,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 87,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x3:agent_1:a",
+      "requestHash": "sha256:493800fcc13bf75cd92b689ff746af718b2bd25a2f1140c2db651ccf8666fed2",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 88,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x3:agent_1:b",
+      "requestHash": "sha256:b5181415289648fee4fa219291a0eda1c76c685997c4f12ae84367eb70c41bac",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 89,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x4:agent_1:a",
+      "requestHash": "sha256:3dd8c03f072d32b4773c4b976e55dacbccea6b9efded6933f83ad08566433db9",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 90,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x4:agent_1:b",
+      "requestHash": "sha256:f7a8d0af62f4e5e2539f264acaa432fb351a064ac94cc70f0215d6ef7c44144f",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 91,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x0:agent_2:a",
+      "requestHash": "sha256:72b50e95855132d8677adb43cdbb39e435b2a6829f5e028429eaccb01a9fd90e",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 92,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x0:agent_2:b",
+      "requestHash": "sha256:6bf745f88a850f532f49bff5db2d3e39a4cf1d9021c1514a025222a3d740586c",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 93,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x1:agent_2:a",
+      "requestHash": "sha256:4ca45aa42bf0b80f93e2cc40aa55b0c2f2facb05ebd90a2722c5ac5efe86706d",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 94,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x1:agent_2:b",
+      "requestHash": "sha256:3d73278362361feab156e6dd4024063156158e747447e6c6e89b8b0aec790df9",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 95,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x2:agent_2:a",
+      "requestHash": "sha256:15421dd99906d1bc452438d094c045ffdedacddd81d6d57308966875e88437dd",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.4,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ffac85929d335d537b592d07f27cc597602c425bc970286caf2484bee45072b1",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.4,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 96,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x2:agent_2:b",
+      "requestHash": "sha256:94b0ca4cdae72d53e5a9e95ef61825d5268e1a8470640b27c199c28ec92213ec",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.4,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ffac85929d335d537b592d07f27cc597602c425bc970286caf2484bee45072b1",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.4,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 97,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x3:agent_2:a",
+      "requestHash": "sha256:5b9ed0dda0b56d17fe4c60480fda0a6d2c9b10381c1ac6a13e9372168372c233",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 98,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x3:agent_2:b",
+      "requestHash": "sha256:335542bc2bee5cbf61c002b9cccc56c6b1d43053ba3344e20b7a817e5b63962b",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 99,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x4:agent_2:a",
+      "requestHash": "sha256:0fa2997de5eb13a6b88202e66215be059f135399b1661f444b1f15865a7eccc8",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 100,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x4:agent_2:b",
+      "requestHash": "sha256:d2f8d343be841cfd58989d7e370068ca69160b57cfc4a179cbd8303f80cd0e56",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 101,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x0:agent_3:a",
+      "requestHash": "sha256:277b1b8f5b2f79d32bcd1bca36ebc91c7e08a3852272e465700c34194ec17fd6",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 102,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x0:agent_3:b",
+      "requestHash": "sha256:68f8aa49b60d405971a47c91189f95726ed82edbc4556447da7f4a195fcab87d",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 103,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x1:agent_3:a",
+      "requestHash": "sha256:c10511584b97e91f0dbaa05cc075e46ae80766937e0e506a962cbe95bcc8136d",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 104,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x1:agent_3:b",
+      "requestHash": "sha256:6e1eece0f51b9a9c9dd582b3b675566ce85dc961d717608be974421a8a7330ea",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 105,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x2:agent_3:a",
+      "requestHash": "sha256:1d8b09510116f69d38869f25444b3adb2ccdc93b287d1705250ac7d2b94804bc",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.4,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ffac85929d335d537b592d07f27cc597602c425bc970286caf2484bee45072b1",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.4,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 106,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x2:agent_3:b",
+      "requestHash": "sha256:1ab079367d361c01759475b5eedbb3feea625bf9ae63ed0a4c99046145f5158d",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.4,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ffac85929d335d537b592d07f27cc597602c425bc970286caf2484bee45072b1",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.4,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 107,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x3:agent_3:a",
+      "requestHash": "sha256:2f53ccdd634367ee0ef977e7b91f292a29f1b664fadd18ff28c59beca3afb45b",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 108,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x3:agent_3:b",
+      "requestHash": "sha256:da2e4c499f06a2238e5f15aaab04aac24ef9e9e08ed73ffffea56bbc27c69c2e",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 109,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x4:agent_3:a",
+      "requestHash": "sha256:aaa07e5677967faccbcb635c1b5900a5a1f892324e6bcf7f50424933d2eb07c0",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 110,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x4:agent_3:b",
+      "requestHash": "sha256:033b0a8ea8f32dc86c450d250e843596f8584e4e8a6e6e34d27e9bd2f360cbf4",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 111,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x0:agent_4:a",
+      "requestHash": "sha256:987b79a3c907829541d4433e55d0a4217f2f4625923dd4d3549e47ced3b736d7",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 112,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x0:agent_4:b",
+      "requestHash": "sha256:feaf0b97b40ff7b9e23bf2caa4a1ff38080971383cecdbec487cc41f94a3ac08",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 113,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x1:agent_4:a",
+      "requestHash": "sha256:51a15ad93c6ab3952e7df0736506eeddb4eca8440d64a1211003be03f5fd8e6b",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 114,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x1:agent_4:b",
+      "requestHash": "sha256:71bdae6fdbedfda6fec8b2211aebfe195de0ed973834e95ce94c0802efecff14",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 115,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x2:agent_4:a",
+      "requestHash": "sha256:3d4b50f3d4434b9da994956939015e7f87029966d19ccfacf82cf536f919738d",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.4,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ffac85929d335d537b592d07f27cc597602c425bc970286caf2484bee45072b1",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.4,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 116,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x2:agent_4:b",
+      "requestHash": "sha256:9550f99df8675b015a66e167be566616da1dd1c339e7f63638a76840a604ee6f",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.4,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ffac85929d335d537b592d07f27cc597602c425bc970286caf2484bee45072b1",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.4,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 117,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x3:agent_4:a",
+      "requestHash": "sha256:a7671e1f13b256d43d9ac13adc17df19111850143ccbc05b88d40846033aa832",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 118,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x3:agent_4:b",
+      "requestHash": "sha256:ab4b7a3646a5f08e23bb658304786c06c36746fc99feae56fb31f97d168b3716",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 119,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x4:agent_4:a",
+      "requestHash": "sha256:c85641fa7708074b818e465066fb4b57667d1f2c65983416394aef577d479da5",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 120,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q1:x4:agent_4:b",
+      "requestHash": "sha256:a58e08c3fa83351bef3bf7c7bd444c715d35ae45e2c20ef718ea70e700e459d6",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 121,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x0:agent_1:a",
+      "requestHash": "sha256:be9ec22977c424c1c77295260a24543ee94b1573f212db5b42e5216d4ece6ca6",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 122,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x0:agent_1:b",
+      "requestHash": "sha256:1b85f056f8fbf0f5058297b9a81beb34abb05faebaec4c8845897c0a1fcf9c75",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 123,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x1:agent_1:a",
+      "requestHash": "sha256:7b96e3fe22a69897698fe970da1aa4ccee00d2ad64bc63fc7f8a19d6d720090d",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 124,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x1:agent_1:b",
+      "requestHash": "sha256:b2f4d82f9262200cf278dc991bc760c7873b6f1c106ee3418541490037fc5b38",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 125,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x2:agent_1:a",
+      "requestHash": "sha256:0853696f37ad6c1fcf4c6e6fcdd30a33b1849f8aee2542bb464b87877b9265ec",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.4,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ffac85929d335d537b592d07f27cc597602c425bc970286caf2484bee45072b1",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.4,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 126,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x2:agent_1:b",
+      "requestHash": "sha256:371a8a35548ba7499d966e69537d8871b5f587a68b9e80019ebe26f811d964e3",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.4,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ffac85929d335d537b592d07f27cc597602c425bc970286caf2484bee45072b1",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.4,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 127,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x3:agent_1:a",
+      "requestHash": "sha256:65139e87eba4117aba5c3db1a9dbc795282ecd63828da7ac320ec46362619ca9",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 128,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x3:agent_1:b",
+      "requestHash": "sha256:f5af8d1457776713eb8bb73d6e92ff400b5895f29b486a0b80c24c025c662371",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 129,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x4:agent_1:a",
+      "requestHash": "sha256:eba335e722918dc3aee3887ddf3e4269a7688e0d0cf318205add566fb41a1b39",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 130,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x4:agent_1:b",
+      "requestHash": "sha256:ff2ec909dc754e5a62e76561f6adce917cf4e6250d5886fa9b75e84ae72bd094",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 131,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x0:agent_2:a",
+      "requestHash": "sha256:e34c57c238d0c4dea9ef182d9202454557beb82ed098736bb3ce400513dedba3",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 132,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x0:agent_2:b",
+      "requestHash": "sha256:166e106041ccfcfea68f55cdf5d4949809ac2d3a33fad1df7adb64860d8e862b",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 133,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x1:agent_2:a",
+      "requestHash": "sha256:db3b2bc3a87d2d346963e7dca7981555095f4b4e6775340506f48fc4b4dd3b1f",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 134,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x1:agent_2:b",
+      "requestHash": "sha256:c9e220cfa8e2951a52397e728e08a155ce5cb07f85981dee0966b8094145fe32",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 135,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x2:agent_2:a",
+      "requestHash": "sha256:603658d8390b00da4ab22f5d42689754143ede0e218426e3da04fbeb9da7831a",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.4,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ffac85929d335d537b592d07f27cc597602c425bc970286caf2484bee45072b1",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.4,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 136,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x2:agent_2:b",
+      "requestHash": "sha256:85f105779386fdfc0e497f65d489393db6ec9484f82c69b6585a4c7a020afa08",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.4,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ffac85929d335d537b592d07f27cc597602c425bc970286caf2484bee45072b1",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.4,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 137,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x3:agent_2:a",
+      "requestHash": "sha256:67d10bd876aacaee710e6e8ca7913325058fba3200430054d32935f30a2dd2ff",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 138,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x3:agent_2:b",
+      "requestHash": "sha256:e657c6e8ac48906708511dc9293d811d64bb1f40c1a4b9a7155a759c75eb04d1",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 139,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x4:agent_2:a",
+      "requestHash": "sha256:7320572ae54e63f65d8b2b548280199990c019a8d32390413b8e9c232f595a58",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 140,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x4:agent_2:b",
+      "requestHash": "sha256:76b7df868cc110d3733c76c8c3586fcaf393eed0f6686bb2d973478f6c488a6c",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 141,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x0:agent_3:a",
+      "requestHash": "sha256:5f32b87333e4be848d7b8e1a35ee09b80255251b9f06359c7b707d6037d8c172",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 142,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x0:agent_3:b",
+      "requestHash": "sha256:ebb6b9ae45426ac26f7d35945a7afbbdd3d570edf669235a212ceefdfb3a4df2",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 143,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x1:agent_3:a",
+      "requestHash": "sha256:4c2e98d81acd7511ef7541596590a55caa0591be5176e82dd2dd1a617d6eee8b",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 144,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x1:agent_3:b",
+      "requestHash": "sha256:df8923e4d2a287d8cd8e69933ecf609b00baa0dc5d3720e07f860c9b39c6c695",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 145,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x2:agent_3:a",
+      "requestHash": "sha256:4899dede009b4d0f1dfc093613111290e596dbc01433ad4191880c1c8d2600c6",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.4,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ffac85929d335d537b592d07f27cc597602c425bc970286caf2484bee45072b1",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.4,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 146,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x2:agent_3:b",
+      "requestHash": "sha256:dd2860b5b4bc58064ee45141caefde7af1eb8bba45e5b80094ae09f0bf12ec99",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.4,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ffac85929d335d537b592d07f27cc597602c425bc970286caf2484bee45072b1",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.4,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 147,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x3:agent_3:a",
+      "requestHash": "sha256:7f2ef22f54464568353190dbbc8db2cc69ce91818ef88c19f0db6ae685e5753a",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 148,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x3:agent_3:b",
+      "requestHash": "sha256:3826df067951f4bed8e544911ac6af39251dc8d5466cf4cb0299aadcea4c9fce",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 149,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x4:agent_3:a",
+      "requestHash": "sha256:69ece96555a159540c09062ffc68d60c628e2fdc5623f62095ee52905a9f105a",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 150,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x4:agent_3:b",
+      "requestHash": "sha256:f8047e76c76172f110fb28128dbe7af5c67b19c358797315e1ace59f635994bb",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 151,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x0:agent_4:a",
+      "requestHash": "sha256:cfdd55cb4e05ce02543e0e48c403a474754ac4f1dc5a8f0934595cd72daf4d2e",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 152,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x0:agent_4:b",
+      "requestHash": "sha256:2350772cb209caca4c63454c9910b8d4c4d254637e657da6b63bd5c00308043f",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 153,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x1:agent_4:a",
+      "requestHash": "sha256:c6f336ad59811b9e23d181c2964d3be931e75bfbeb99fd5c4470355a65888730",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 154,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x1:agent_4:b",
+      "requestHash": "sha256:d86f94610e2e4fa881f5c54da3232a9824b43867bd650fed1fa6dd0c3e6f3b87",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.7,
+        "opt_2": 0.2,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 155,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x2:agent_4:a",
+      "requestHash": "sha256:f784e36ca4f0775e7c2a69c36df8154a9ab1cacd746c9b44c6beb2c624d5aa80",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.4,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ffac85929d335d537b592d07f27cc597602c425bc970286caf2484bee45072b1",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.4,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 156,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x2:agent_4:b",
+      "requestHash": "sha256:dcb095fc7b3d021b20789b4a66db3e7ad4876e9db926b7c7ba89999ae43aba45",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.5,\"opt_2\":0.4,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ffac85929d335d537b592d07f27cc597602c425bc970286caf2484bee45072b1",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.5,
+        "opt_2": 0.4,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 157,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x3:agent_4:a",
+      "requestHash": "sha256:aa8827eabfc88b29ed08568467734799eee597bf2ae03d6ec048049bb66f943b",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 158,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x3:agent_4:b",
+      "requestHash": "sha256:c09f9fe94e2991cb4bfa608478b8a523608eea8f49469b65a953e760549ad3c2",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 159,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x4:agent_4:a",
+      "requestHash": "sha256:1e865a0b97971c34aa283361a39ca02bf9b1c0085a64ccdc6aaa66ba7ab7a8fa",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    },
+    {
+      "sequence": 160,
+      "cellId": "thermometer-natural-dynamics-sensor:thermometer-transport:aerial-navigation:q2:x4:agent_4:b",
+      "requestHash": "sha256:6f247a5abd3dbbedd4e14207d58b0303473628ceb39e00d88d7bd4e581a1c08e",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.5,\"opt_3\":0.1}}",
+      "responseHash": "sha256:951a6b86f2a382ca3a7ec5db297b4cb37447d93dd88222682e3994aae86b4dc6",
+      "probabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      }
+    }
+  ],
+  "registeredCellCount": 160,
+  "terminalCellCount": 160,
+  "attemptsPerCell": 1,
+  "retry": "none",
+  "contentHash": "sha256:567852da6cd056a80c6526ce231b05f9558f2481a93736f1e583f4026c5cf15f"
+}

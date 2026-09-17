@@ -31,6 +31,9 @@ export class LLMError extends Error {
 // 超时配置（与 constants.ts 保持同步，避免多处硬编码）
 const DEFAULT_TIMEOUT = LLM_DEFAULT_TIMEOUT_MS;
 
+/** Zhipu GLM reasoning-tier thinking switch. Only affects Zhipu requests. */
+export type LLMThinkingMode = "enabled" | "disabled";
+
 export interface LLMConfig {
   provider: LLMProvider;
   model: string;
@@ -40,6 +43,18 @@ export interface LLMConfig {
   responseFormat?: "json" | "text";
   /** Optional provider-side completion cap. */
   maxTokens?: number;
+  /**
+   * Reasoning-tier thinking control (GLM-4.6V / glm-4.5-air etc.).
+   * Mapped to the Zhipu API body as `{ thinking: { type } }`; ignored by every
+   * other provider path (DeepSeek/OpenAI/Anthropic/Qwen/local request bodies
+   * never gain a `thinking` key from this field).
+   */
+  thinking?: LLMThinkingMode;
+  /**
+   * Raw Zhipu consumers may require the visible completion channel only.
+   * The default retains the existing generic raw behavior for non-X0 callers.
+   */
+  rawContentSource?: "content_or_reasoning" | "content_only";
   timeout?: number;   // 超时时间（毫秒）
   temperature?: number; // 温度参数 (0-2)
   seed?: number;       // 随机种子（DeepSeek/OpenAI 支持，用于可复现性）
@@ -49,6 +64,8 @@ export interface TokenUsage {
   promptTokens: number;
   completionTokens: number;
   totalTokens: number;
+  /** Provider-reported prompt tokens served from context cache, when exposed. */
+  cachedPromptTokens?: number;
 }
 
 export interface LLMResponse {
@@ -60,6 +77,23 @@ export interface LLMResponse {
   usage?: TokenUsage;
   /** LLM call latency in milliseconds */
   latencyMs?: number;
+  /** Provider-returned model identifier; evidence about server-side routing. */
+  providerModel?: string;
+  /** Provider-returned request identifier for console/support reconciliation. */
+  providerRequestId?: string;
+}
+
+/**
+ * Provider completion before any task-level parsing or response repair.
+ * Measurement instruments use this boundary when malformed or fenced output
+ * must remain observable rather than being normalized upstream.
+ */
+export interface RawLLMResponse {
+  rawContent: string;
+  usage?: TokenUsage;
+  latencyMs?: number;
+  providerModel?: string;
+  providerRequestId?: string;
 }
 
 // 带超时的 fetch
@@ -105,6 +139,52 @@ export async function callDeepSeekOnce(
     ...config,
     provider: "deepseek",
     model: config?.model || "deepseek-chat",
+  }, signal);
+}
+
+/**
+ * One Zhipu network attempt with no retry, backoff, response repair, or
+ * fallback — the exact Zhipu counterpart of callDeepSeekOnce. This is the
+ * provider primitive used by auditable v6 cross-model runs (the GLM-4.6V
+ * two-arm gate): one `invoke` must correspond to at most one HTTP request,
+ * so retryable-looking failures surface as explicit provider errors instead
+ * of being silently re-sampled.
+ */
+export async function callZhipuOnce(
+  systemPrompt: string,
+  userPrompt: string,
+  config?: LLMConfig,
+  signal?: AbortSignal,
+): Promise<LLMResponse> {
+  if (config?.provider !== undefined && config.provider !== "zhipu") {
+    throw new LLMError("callZhipuOnce only accepts provider=zhipu", LLMErrorType.UNKNOWN, undefined, false);
+  }
+  return callZhipu(systemPrompt, userPrompt, {
+    ...config,
+    provider: "zhipu",
+    model: config?.model || "glm-4-flash",
+  }, signal);
+}
+
+/**
+ * One raw Zhipu network attempt. Unlike `callZhipuOnce`, this path never runs
+ * `parseLLMResponse`, strips markdown fences, extracts JSON, or rejects a
+ * non-empty completion merely because a legacy emotion/reasoning parser cannot
+ * interpret it. The caller owns the complete response contract.
+ */
+export async function callZhipuRawOnce(
+  systemPrompt: string,
+  userPrompt: string,
+  config?: LLMConfig,
+  signal?: AbortSignal,
+): Promise<RawLLMResponse> {
+  if (config?.provider !== undefined && config.provider !== "zhipu") {
+    throw new LLMError("callZhipuRawOnce only accepts provider=zhipu", LLMErrorType.UNKNOWN, undefined, false);
+  }
+  return requestZhipuRaw(systemPrompt, userPrompt, {
+    ...config,
+    provider: "zhipu",
+    model: config?.model || "glm-4-flash",
   }, signal);
 }
 
@@ -561,15 +641,36 @@ async function callDeepSeek(
   }
 }
 
-async function callZhipu(
+async function requestZhipuRaw(
   systemPrompt: string,
   userPrompt: string,
-  config?: LLMConfig
-): Promise<LLMResponse> {
+  config?: LLMConfig,
+  signal?: AbortSignal,
+): Promise<RawLLMResponse> {
   const apiKey = config?.apiKey || process.env.ZHIPU_API_KEY;
   const model = config?.model || "glm-4-flash";
   const timeout = config?.timeout || DEFAULT_TIMEOUT;
   const temperature = config?.temperature ?? 0.7;
+
+  // Input validation: config errors are client errors, never retried.
+  if (config?.maxTokens !== undefined
+    && (!Number.isSafeInteger(config.maxTokens) || config.maxTokens < 1)) {
+    throw new LLMError(
+      `智谱 maxTokens 必须为正整数（received ${config.maxTokens}）`,
+      LLMErrorType.UNKNOWN,
+      undefined,
+      false,
+    );
+  }
+  if (config?.thinking !== undefined
+    && config.thinking !== "enabled" && config.thinking !== "disabled") {
+    throw new LLMError(
+      `智谱 thinking 必须是 "enabled" 或 "disabled"（received ${JSON.stringify(config.thinking)}）`,
+      LLMErrorType.UNKNOWN,
+      undefined,
+      false,
+    );
+  }
 
   if (!apiKey) {
     throw new LLMError(
@@ -597,10 +698,20 @@ async function callZhipu(
             { role: "user", content: userPrompt },
           ],
           temperature,
+          // The V6 adapters already distinguish JSON from plain-text calls.
+          // Preserve that declared wire contract for Zhipu: without this
+          // field GLM may emit a JSON-looking response that is truncated or
+          // syntactically invalid even though the caller requested JSON.
+          ...(config?.responseFormat === "json"
+            ? { response_format: { type: "json_object" } }
+            : {}),
+          ...(config?.maxTokens !== undefined ? { max_tokens: config.maxTokens } : {}),
+          ...(config?.thinking !== undefined ? { thinking: { type: config.thinking } } : {}),
           ...(config?.seed !== undefined ? { seed: config.seed } : {}),
         }),
       },
-      timeout
+      timeout,
+      signal,
     );
 
     if (!response.ok) {
@@ -615,11 +726,21 @@ async function callZhipu(
     }
 
     const data = await response.json();
-    // glm-4.5-air 等推理模型将输出放在 reasoning_content 中
+    // Generic raw callers retain the old fallback. X0 can require visible content only.
     const msg = data.choices?.[0]?.message;
-    const content = msg?.content || msg?.reasoning_content || "";
+    if (config?.rawContentSource === "content_only" && msg?.reasoning_content !== undefined
+      && msg.reasoning_content !== null && msg.reasoning_content !== "") {
+      throw new LLMError("智谱在禁用思考后仍返回 reasoning_content", LLMErrorType.INVALID_RESPONSE, undefined, false);
+    }
+    const visibleContent = typeof msg?.content === "string" ? msg.content : undefined;
+    const reasoningContent = typeof msg?.reasoning_content === "string" ? msg.reasoning_content : undefined;
+    // Preserve the legacy generic fallback exactly. The measurement-only route
+    // deliberately records even an empty visible completion for strict parsing.
+    const content = config?.rawContentSource === "content_only"
+      ? visibleContent
+      : (visibleContent || reasoningContent);
 
-    if (!content) {
+    if (content === undefined || (config?.rawContentSource !== "content_only" && content.length === 0)) {
       throw new LLMError(
         '智谱 返回内容为空',
         LLMErrorType.INVALID_RESPONSE,
@@ -628,14 +749,42 @@ async function callZhipu(
       );
     }
 
-    const result = parseLLMResponse(content, '智谱');
-    result.latencyMs = Date.now() - startTime;
-    if (data.usage) {
-      result.usage = {
-        promptTokens: data.usage.prompt_tokens ?? 0,
-        completionTokens: data.usage.completion_tokens ?? 0,
-        totalTokens: data.usage.total_tokens ?? 0,
-      };
+    const result: RawLLMResponse = {
+      rawContent: content,
+      latencyMs: Date.now() - startTime,
+    };
+    if (typeof data.model === "string" && data.model.length > 0) {
+      result.providerModel = data.model;
+    }
+    const providerRequestId = typeof data.request_id === "string"
+      ? data.request_id
+      : (typeof data.id === "string" ? data.id : undefined);
+    if (providerRequestId && providerRequestId.length > 0) {
+      result.providerRequestId = providerRequestId;
+    }
+    if (data.usage !== undefined) {
+      if (data.usage === null || typeof data.usage !== "object" || Array.isArray(data.usage)) {
+        throw new LLMError("智谱 usage 响应无效", LLMErrorType.INVALID_RESPONSE, undefined, false);
+      }
+      const usage = data.usage as Record<string, unknown>;
+      const tokens = [usage.prompt_tokens, usage.completion_tokens, usage.total_tokens];
+      if (tokens.some(token => token !== undefined && (!Number.isSafeInteger(token) || (token as number) < 0))) {
+        throw new LLMError("智谱 usage token 无效", LLMErrorType.INVALID_RESPONSE, undefined, false);
+      }
+      if (tokens.every(token => token !== undefined)) {
+        const cached = (usage.prompt_tokens_details !== null && typeof usage.prompt_tokens_details === "object")
+          ? (usage.prompt_tokens_details as Record<string, unknown>).cached_tokens
+          : undefined;
+        if (cached !== undefined && (!Number.isSafeInteger(cached) || (cached as number) < 0)) {
+          throw new LLMError("智谱 cached token 无效", LLMErrorType.INVALID_RESPONSE, undefined, false);
+        }
+        result.usage = {
+          promptTokens: usage.prompt_tokens as number,
+          completionTokens: usage.completion_tokens as number,
+          totalTokens: usage.total_tokens as number,
+          ...(cached !== undefined ? { cachedPromptTokens: cached as number } : {}),
+        };
+      }
     }
     return result;
   } catch (error) {
@@ -670,6 +819,23 @@ async function callZhipu(
       true
     );
   }
+}
+
+export async function callZhipu(
+  systemPrompt: string,
+  userPrompt: string,
+  config?: LLMConfig,
+  signal?: AbortSignal,
+): Promise<LLMResponse> {
+  const raw = await requestZhipuRaw(systemPrompt, userPrompt, config, signal);
+  const parsed = parseLLMResponse(raw.rawContent, '智谱');
+  return {
+    ...parsed,
+    ...(raw.usage ? { usage: raw.usage } : {}),
+    ...(raw.latencyMs !== undefined ? { latencyMs: raw.latencyMs } : {}),
+    ...(raw.providerModel !== undefined ? { providerModel: raw.providerModel } : {}),
+    ...(raw.providerRequestId !== undefined ? { providerRequestId: raw.providerRequestId } : {}),
+  };
 }
 
 // Qwen (阿里云 DashScope, OpenAI 兼容格式)
@@ -885,7 +1051,7 @@ export const availableModels: Record<LLMProvider, string[]> = {
   openai: ["gpt-4o-mini", "gpt-4o", "gpt-4-turbo", "gpt-3.5-turbo"],
   anthropic: ["claude-3-haiku-20240307", "claude-3-sonnet-20240229", "claude-3-opus-20240229"],
   deepseek: ["deepseek-chat", "deepseek-reasoner"],
-  zhipu: ["glm-4-flash", "glm-4-air", "glm-4.5-air", "glm-4", "glm-4-plus"],
+  zhipu: ["glm-4-flash", "glm-4-air", "glm-4.5-air", "glm-4.6v", "glm-4", "glm-4-plus"],
   qwen: ["qwen-flash", "qwen-plus", "qwen-max", "qwen-turbo"],
   local: ["llama3", "mistral", "qwen2"],
 };

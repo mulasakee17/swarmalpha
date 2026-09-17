@@ -1,0 +1,122 @@
+{
+  "manifestRef": {
+    "id": "swarmalpha.experiment.v6.collective-epistemic-dynamics.manifest",
+    "version": "1.0.0"
+  },
+  "planHash": "sha256:c5b6e20b332cdf9a6d0b40964deb0249da63407111b9e415f7cee388eab449e9",
+  "formations": [
+    {
+      "taskId": "task:hiddenbench:1",
+      "seed": 1,
+      "contentHash": "sha256:9aaf470e55946c22600854b5fce8eb6bb8c3778c3cff2a38f88e66bb28fdf0d8"
+    },
+    {
+      "taskId": "task:hiddenbench:15",
+      "seed": 1,
+      "contentHash": "sha256:64ed84a98b0527ecab7d97aab7c006a2f852d048815fe4275c7f383b2c4b9d41"
+    },
+    {
+      "taskId": "task:hiddenbench:22",
+      "seed": 1,
+      "contentHash": "sha256:c0a1ab2fe43cd1f097cb64c26ce1849ac20c36492f6444586c4637b5ce00dcca"
+    },
+    {
+      "taskId": "task:hiddenbench:29",
+      "seed": 1,
+      "contentHash": "sha256:3b0fccbd43596d60677dc285049d9eccdb7a0a48dbcbba3ec25ec34268b37f9d"
+    },
+    {
+      "taskId": "task:hiddenbench:36",
+      "seed": 1,
+      "contentHash": "sha256:d4de576a0d46b1da3c675a069ec326b26a29da61c8d45b8ab299d5bd19ee1154"
+    },
+    {
+      "taskId": "task:hiddenbench:43",
+      "seed": 1,
+      "contentHash": "sha256:82f66c700e2d685c16fcdce1aec213f345f08eebd20148af26dba4befb740e4f"
+    },
+    {
+      "taskId": "task:hiddenbench:50",
+      "seed": 1,
+      "contentHash": "sha256:2a34b83faa37a1ce5c3df2a71c0c76abc7e6d8ab7eae467a059dc1a8160dc181"
+    },
+    {
+      "taskId": "task:hiddenbench:57",
+      "seed": 1,
+      "contentHash": "sha256:63d8c1422a8591dc394a967e6c128d778df1c1ffc8aa3d67b50f754068e32254"
+    },
+    {
+      "taskId": "task:hiddenbench:64",
+      "seed": 1,
+      "contentHash": "sha256:87a987c1bd981b2caed56a309e0a74c393d1835fb362e1bc350ff16cc47a21b3"
+    },
+    {
+      "taskId": "task:hiddenbench:8",
+      "seed": 1,
+      "contentHash": "sha256:d349551a63d77e717679d5cc4e5d8ae35eeb45e526135943ff0cf627e5578928"
+    }
+  ],
+  "responses": [
+    {
+      "taskId": "task:hiddenbench:1",
+      "seed": 1,
+      "formationHash": "sha256:9aaf470e55946c22600854b5fce8eb6bb8c3778c3cff2a38f88e66bb28fdf0d8",
+      "contentHash": "sha256:0e11ab0fb144746d0538c68cb6b932390ec845b0fe11d5b45634490947ac22d7"
+    },
+    {
+      "taskId": "task:hiddenbench:15",
+      "seed": 1,
+      "formationHash": "sha256:64ed84a98b0527ecab7d97aab7c006a2f852d048815fe4275c7f383b2c4b9d41",
+      "contentHash": "sha256:28e809dc2dd61e960a179c792676043b06a470c2e5d098fa24a521104a2aa8d3"
+    },
+    {
+      "taskId": "task:hiddenbench:22",
+      "seed": 1,
+      "formationHash": "sha256:c0a1ab2fe43cd1f097cb64c26ce1849ac20c36492f6444586c4637b5ce00dcca",
+      "contentHash": "sha256:70d2effbcc2c41ad48d9d9a2941a0027e8999249db69b5eed9d47c256e2f2fb4"
+    },
+    {
+      "taskId": "task:hiddenbench:29",
+      "seed": 1,
+      "formationHash": "sha256:3b0fccbd43596d60677dc285049d9eccdb7a0a48dbcbba3ec25ec34268b37f9d",
+      "contentHash": "sha256:5eaaa57b22e5c7a860e3742368dcf8dd73ba2f8df3a42eaa09c3bcef60733220"
+    },
+    {
+      "taskId": "task:hiddenbench:36",
+      "seed": 1,
+      "formationHash": "sha256:d4de576a0d46b1da3c675a069ec326b26a29da61c8d45b8ab299d5bd19ee1154",
+      "contentHash": "sha256:c52cdfc3e7f6dfde0671bdb6a9da801fc3916e03744982b7cf63eec1363caf02"
+    },
+    {
+      "taskId": "task:hiddenbench:43",
+      "seed": 1,
+      "formationHash": "sha256:82f66c700e2d685c16fcdce1aec213f345f08eebd20148af26dba4befb740e4f",
+      "contentHash": "sha256:035fbae64f50bbd79df77043f902d070cb490d4144cbc01bfd8333bf63c1d7eb"
+    },
+    {
+      "taskId": "task:hiddenbench:50",
+      "seed": 1,
+      "formationHash": "sha256:2a34b83faa37a1ce5c3df2a71c0c76abc7e6d8ab7eae467a059dc1a8160dc181",
+      "contentHash": "sha256:212b042aeae746536b53a1b13fe2c15964371ae07e8b147605459bf074f375cd"
+    },
+    {
+      "taskId": "task:hiddenbench:57",
+      "seed": 1,
+      "formationHash": "sha256:63d8c1422a8591dc394a967e6c128d778df1c1ffc8aa3d67b50f754068e32254",
+      "contentHash": "sha256:63769f1a24e54fa652a49f9c283ee39820f5904af4f31e1e1fdeb60fe6789840"
+    },
+    {
+      "taskId": "task:hiddenbench:64",
+      "seed": 1,
+      "formationHash": "sha256:87a987c1bd981b2caed56a309e0a74c393d1835fb362e1bc350ff16cc47a21b3",
+      "contentHash": "sha256:b1b20127e2174c8cb4c1e72982448f88e90c74bff7483855c8d71c1bf851c972"
+    },
+    {
+      "taskId": "task:hiddenbench:8",
+      "seed": 1,
+      "formationHash": "sha256:d349551a63d77e717679d5cc4e5d8ae35eeb45e526135943ff0cf627e5578928",
+      "contentHash": "sha256:9efc8fa872e316f3d9c079024741b19851fb5f6292176cb028cc9e4beb1bb051"
+    }
+  ],
+  "contentHash": "sha256:9edc829c374cbb681d3e06616afa638c9d87b07d0a92cb5bf14ef25b7c462e04"
+}

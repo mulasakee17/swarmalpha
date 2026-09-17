@@ -1,0 +1,36 @@
+{
+  "manifestRef": {
+    "id": "swarmalpha.manifest.v6.discussion-thermometer-natural-dynamics-literature-canary",
+    "version": "1.0.0"
+  },
+  "planHash": "sha256:ffdd7c4f48cab5c2f874f9075ecd3fb6709bee4c16456a6f346db0a491c591cf",
+  "providerBudget": {
+    "model": "zhipu:glm-4.6v",
+    "publicCalls": 24,
+    "sensorCalls": 60,
+    "maximumTotalCalls": 84,
+    "maximumCompletionTokens": 27360,
+    "retry": "none"
+  },
+  "executionPolicy": {
+    "phaseOrder": [
+      "public",
+      "freeze",
+      "sensor",
+      "offline_analysis"
+    ],
+    "attemptsPerCell": 1,
+    "backgroundExecution": "forbidden",
+    "overwrite": "forbidden",
+    "haltOnAnyFailure": true,
+    "sameBatchRequired": true
+  },
+  "scientificBoundary": {
+    "onlineTruthAccess": "none",
+    "sensorWriteback": "none",
+    "taskSelectionStatus": "official_hiddenbench_manual_adapted_tasks",
+    "claimCeiling": "literature_task_measurement_canary_only"
+  },
+  "executionAuthority": "none",
+  "contentHash": "sha256:c614018f13c11b5e9435135949bb2af67e11174d3371c83b00835131a6fd6625"
+}

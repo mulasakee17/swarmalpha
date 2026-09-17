@@ -1,0 +1,38 @@
+{
+  "planRef": {
+    "id": "swarmalpha.experiment.v6.collective-epistemic-dynamics.plan",
+    "version": "1.0.0"
+  },
+  "taskIds": [
+    1,
+    8,
+    15,
+    22,
+    29,
+    36,
+    43,
+    50,
+    57,
+    64
+  ],
+  "seeds": [
+    1
+  ],
+  "modelRef": {
+    "id": "zhipu:glm-4.6v",
+    "version": "1.0.0"
+  },
+  "formationRounds": 3,
+  "responseRound": 4,
+  "privateFinalRound": 5,
+  "interaction": "synchronous_previous_round_only",
+  "arms": [
+    "CONTROL",
+    "RANDOM_MATCHED",
+    "ATTACKS_NEUTRAL"
+  ],
+  "temperature": 0,
+  "maxTokens": 768,
+  "truthAccess": "offline_analyzer_only",
+  "contentHash": "sha256:c5b6e20b332cdf9a6d0b40964deb0249da63407111b9e415f7cee388eab449e9"
+}

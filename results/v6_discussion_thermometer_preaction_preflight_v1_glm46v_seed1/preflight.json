@@ -1,0 +1,18 @@
+{
+  "preflightRef": {
+    "id": "swarmalpha.preflight.v6.discussion-thermometer-preaction-qualification",
+    "version": "1.0.0"
+  },
+  "freezeHash": "sha256:800814749e1ac732beeff4d0b3bb4620d8f1a9b11c7ac06dc94ddddd888ff81e",
+  "sourcePublicRunHash": "sha256:ab102c9c198304c434506cd487b1b8eaea58f3080c35ea1bada8a7b0d6784a74",
+  "providerCallsExecuted": 0,
+  "registeredSensorCallCount": 84,
+  "futurePublicChoiceComparisonCount": 56,
+  "observedSwitchCount": 3,
+  "bestCaseAssumption": "sensor_correct_on_every_switch_and_never_worse_than_persistence",
+  "bestCaseExactTwoSidedPairedSignPValue": 0.25,
+  "alpha": 0.05,
+  "providerExecutionDecision": "no_go_insufficient_frozen_switch_information",
+  "implication": "sensor_execution_cannot_pass_the_frozen_incremental_pairwise_gate_on_this_public_run",
+  "contentHash": "sha256:37e6a9b4ef5ff7b2fa15f48351f35b5b744a7438984757247a011cf0d1ab9c46"
+}

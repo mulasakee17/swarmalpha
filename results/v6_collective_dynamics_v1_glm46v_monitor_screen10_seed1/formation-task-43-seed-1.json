@@ -1,0 +1,1698 @@
+{
+  "artifactRef": {
+    "id": "swarmalpha.experiment.v6.collective-epistemic-dynamics.formation",
+    "version": "1.0.0"
+  },
+  "planHash": "sha256:c5b6e20b332cdf9a6d0b40964deb0249da63407111b9e415f7cee388eab449e9",
+  "runId": "collective-dynamics:43:seed-1",
+  "seed": 1,
+  "modelRef": {
+    "id": "zhipu:glm-4.6v",
+    "version": "1.0.0"
+  },
+  "onlineTask": {
+    "sourceTaskId": 43,
+    "taskId": "task:hiddenbench:43",
+    "publicContext": "Your team is tasked with ensuring the safe delivery of a vital energy artifact needed to restore the region's power grid after a blackout. There are three facilities that could receive the artifact: Aurora Station, Beacon Post, and Canyon Depot. Each site has been used for similar deliveries in the past, but complex conditions due to the blackout make this delivery especially difficult. Communications are partially down, so each of you receives a special update from a different source on the ground, but you have only a few minutes to make a final delivery decision as power must be restored urgently. The artifact will only function if delivered to a location that meets precise criteria for access, security, and operational readiness.\n\nShared information:\n1. Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.\n2. Road sensors suggest recent vehicular traffic toward Aurora Station but not toward other sites.\n3. Beacon Post and Canyon Depot both lacked updated communication logs as of an hour ago.\n4. Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.",
+    "claim": {
+      "id": "claim:hiddenbench:43:answer",
+      "proposition": "Select the single correct answer for HiddenBench task 43 (The Artifact Delivery).",
+      "domain": "hiddenbench-categorical-decision",
+      "createdAt": "2026-08-11T00:00:00.000Z",
+      "options": [
+        "Aurora Station",
+        "Beacon Post",
+        "Canyon Depot"
+      ],
+      "resolutionPolicy": {
+        "kind": "categorical",
+        "resolverId": "resolver:hiddenbench-data-3be6ca16"
+      }
+    },
+    "agents": [
+      {
+        "agentId": "agent:hiddenbench:43:1",
+        "privateInformation": "Security personnel at Aurora Station were evacuated in the last 30 minutes due to a hazardous chemical leak."
+      },
+      {
+        "agentId": "agent:hiddenbench:43:2",
+        "privateInformation": "Beacon Post's loading bay was blocked by a landslide this morning; only Canyon Depot has an accessible loading area."
+      },
+      {
+        "agentId": "agent:hiddenbench:43:3",
+        "privateInformation": "The energy artifact requires a functioning climate control system: Aurora Station's system failed during the blackout and is still offline."
+      },
+      {
+        "agentId": "agent:hiddenbench:43:4",
+        "privateInformation": "The only bridge leading to Aurora Station was reported collapsed an hour ago by a search drone."
+      }
+    ]
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "messages": [
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:43:1",
+          "content": "Aurora Station is the most likely delivery site despite the chemical leak, as it is the only one with an active emergency signal and official records prioritize it. The leak reduces its security readiness, but no better alternatives exist.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:43:2",
+          "content": "Based on the evidence, Aurora Station is the most likely correct delivery site. It is the only location with an active emergency signal, recent traffic, and official records as the primary emergency storage site. While Canyon Depot has an accessible loading bay, the lack of an active signal and traffic makes it less likely. Beacon Post is ruled out due to the blocked loading bay.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:43:3",
+          "content": "Aurora Station is the primary candidate per official records and has an active emergency signal, but its climate control system is offline, which is a critical requirement for the artifact. Beacon Post and Canyon Depot lack recent communication updates, making them less reliable. Given the urgent need to restore power and the lack of better alternatives, I lean toward Aurora Station despite the climate control issue, as it is the only site with active communication and security presence.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:43:4",
+          "content": "Aurora Station is the primary candidate per official records and has an active emergency signal, but the collapsed bridge makes it inaccessible. Beacon Post and Canyon Depot lack recent communication, but without the bridge issue, Aurora remains the most likely intended site. Given the urgency, I prioritize the official primary candidate despite the obstacle, as the other sites have no active signals.",
+          "source": "agent"
+        }
+      ],
+      "reports": [
+        {
+          "id": "belief:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:1",
+          "claimId": "claim:hiddenbench:43:answer",
+          "agentId": "agent:hiddenbench:43:1",
+          "round": 1,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Aurora Station": 0.6,
+              "Beacon Post": 0.2,
+              "Canyon Depot": 0.2
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:1:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:1:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:1:3",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:1:4",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:01:01.000Z"
+        },
+        {
+          "id": "belief:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:2",
+          "claimId": "claim:hiddenbench:43:answer",
+          "agentId": "agent:hiddenbench:43:2",
+          "round": 1,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Aurora Station": 0.8,
+              "Beacon Post": 0.1,
+              "Canyon Depot": 0.1
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:2:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:2:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:2:3",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:2:4",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:01:02.000Z"
+        },
+        {
+          "id": "belief:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:3",
+          "claimId": "claim:hiddenbench:43:answer",
+          "agentId": "agent:hiddenbench:43:3",
+          "round": 1,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Aurora Station": 0.6,
+              "Beacon Post": 0.2,
+              "Canyon Depot": 0.2
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:3:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:3:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:3:3",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:3:4",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:3:5",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:01:03.000Z"
+        },
+        {
+          "id": "belief:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:4",
+          "claimId": "claim:hiddenbench:43:answer",
+          "agentId": "agent:hiddenbench:43:4",
+          "round": 1,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Aurora Station": 0.6,
+              "Beacon Post": 0.2,
+              "Canyon Depot": 0.2
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:4:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:4:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:4:3",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:4:4",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:01:04.000Z"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:1:1",
+          "content": "Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.",
+          "createdAt": "2026-08-24T00:01:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:1",
+            "contentHash": "sha256:29e05609ca813a1aee6fd475c871c2da7b4e20166fe27d8a46e92edacf0fa41f"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:1:2",
+          "content": "Road sensors suggest recent vehicular traffic toward Aurora Station but not toward other sites.",
+          "createdAt": "2026-08-24T00:01:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:1",
+            "contentHash": "sha256:622f8cf54d5929aca2253cb7b0fc7647020fc48a407d561ce219c5eaf88f2564"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:1:3",
+          "content": "Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.",
+          "createdAt": "2026-08-24T00:01:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:1",
+            "contentHash": "sha256:993e749214038e32e48f3c801f820c9b001f0f590ec953cad9b6bc0744ca12ec"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:1:4",
+          "content": "Security personnel at Aurora Station were evacuated in the last 30 minutes due to a hazardous chemical leak.",
+          "createdAt": "2026-08-24T00:01:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:1",
+            "contentHash": "sha256:0be9063c8dc825c0f0fbf4b2d6b8347a326f71a9778d654d3c476545daac5a86"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:2:1",
+          "content": "Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.",
+          "createdAt": "2026-08-24T00:01:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:2",
+            "contentHash": "sha256:29e05609ca813a1aee6fd475c871c2da7b4e20166fe27d8a46e92edacf0fa41f"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:2:2",
+          "content": "Road sensors suggest recent vehicular traffic toward Aurora Station but not toward other sites.",
+          "createdAt": "2026-08-24T00:01:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:2",
+            "contentHash": "sha256:622f8cf54d5929aca2253cb7b0fc7647020fc48a407d561ce219c5eaf88f2564"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:2:3",
+          "content": "Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.",
+          "createdAt": "2026-08-24T00:01:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:2",
+            "contentHash": "sha256:993e749214038e32e48f3c801f820c9b001f0f590ec953cad9b6bc0744ca12ec"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:2:4",
+          "content": "Beacon Post's loading bay was blocked by a landslide this morning; only Canyon Depot has an accessible loading area.",
+          "createdAt": "2026-08-24T00:01:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:2",
+            "contentHash": "sha256:c4dd4f22cc0d2bd2a46b5bf7a400f4d9c9f36508764199908631502746be162a"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:3:1",
+          "content": "Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.",
+          "createdAt": "2026-08-24T00:01:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:3",
+            "contentHash": "sha256:29e05609ca813a1aee6fd475c871c2da7b4e20166fe27d8a46e92edacf0fa41f"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:3:2",
+          "content": "Road sensors suggest recent vehicular traffic toward Aurora Station but not toward other sites.",
+          "createdAt": "2026-08-24T00:01:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:3",
+            "contentHash": "sha256:622f8cf54d5929aca2253cb7b0fc7647020fc48a407d561ce219c5eaf88f2564"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:3:3",
+          "content": "Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.",
+          "createdAt": "2026-08-24T00:01:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:3",
+            "contentHash": "sha256:993e749214038e32e48f3c801f820c9b001f0f590ec953cad9b6bc0744ca12ec"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:3:4",
+          "content": "The energy artifact requires a functioning climate control system: Aurora Station's system failed during the blackout and is still offline.",
+          "createdAt": "2026-08-24T00:01:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:3",
+            "contentHash": "sha256:47af980083d25598d2cc22e20b61903a3148a37bb182d8edc8b3806d9b0f24d3"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:3:5",
+          "content": "Beacon Post and Canyon Depot both lacked updated communication logs as of an hour ago.",
+          "createdAt": "2026-08-24T00:01:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:3",
+            "contentHash": "sha256:4c350677aa46488a609e1033fcf5c4e62dd7a5143373e639798de471350ce4ef"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:4:1",
+          "content": "Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.",
+          "createdAt": "2026-08-24T00:01:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:4",
+            "contentHash": "sha256:29e05609ca813a1aee6fd475c871c2da7b4e20166fe27d8a46e92edacf0fa41f"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:4:2",
+          "content": "Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.",
+          "createdAt": "2026-08-24T00:01:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:4",
+            "contentHash": "sha256:993e749214038e32e48f3c801f820c9b001f0f590ec953cad9b6bc0744ca12ec"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:4:3",
+          "content": "The only bridge leading to Aurora Station was reported collapsed an hour ago by a search drone.",
+          "createdAt": "2026-08-24T00:01:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:4",
+            "contentHash": "sha256:ea9fbed3823f9ee391801506bb0917b34ad0ca1ac94337e94fad5eae5283e9f6"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:4:4",
+          "content": "Beacon Post and Canyon Depot both lacked updated communication logs as of an hour ago.",
+          "createdAt": "2026-08-24T00:01:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:4",
+            "contentHash": "sha256:4c350677aa46488a609e1033fcf5c4e62dd7a5143373e639798de471350ce4ef"
+          }
+        }
+      ],
+      "state": {
+        "activeAgentIds": [
+          "agent:hiddenbench:43:1",
+          "agent:hiddenbench:43:2",
+          "agent:hiddenbench:43:3",
+          "agent:hiddenbench:43:4"
+        ],
+        "artifactSchemaRef": {
+          "id": "swarmalpha.collective-epistemic-state",
+          "version": "1.0.0"
+        },
+        "asOfRound": 1,
+        "beliefKind": "categorical",
+        "betweenAgentDisagreement": 0.016008634779121955,
+        "claimId": "claim:hiddenbench:43:answer",
+        "claimOptionCount": 3,
+        "contentHash": "sha256:162fe56c887c697f8dfce7a3741e003544c9ef9994ea10a13d30c5807b007ead",
+        "declaredLineageDiversity": {
+          "completeness": "missing",
+          "distinctDeclaredLineageCount": 0,
+          "effectiveLineageCount": null,
+          "missingLineageReportIds": [
+            "belief:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:1",
+            "belief:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:2",
+            "belief:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:3",
+            "belief:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:4"
+          ],
+          "normalizedLineageEntropy": null,
+          "reportsMissingDeclaredLineage": 4,
+          "reportsWithDeclaredLineage": 0
+        },
+        "expectedAgentIds": [
+          "agent:hiddenbench:43:1",
+          "agent:hiddenbench:43:2",
+          "agent:hiddenbench:43:3",
+          "agent:hiddenbench:43:4"
+        ],
+        "exposureConditionedRevision": {
+          "meanBeliefDistance": null,
+          "revisionCount": 0,
+          "targetAgentCount": 0,
+          "totalBeliefDistance": 0
+        },
+        "inferenceStatus": "descriptive_macrostate_only",
+        "latestReportIds": [
+          "belief:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:1",
+          "belief:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:2",
+          "belief:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:3",
+          "belief:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:4"
+        ],
+        "missingExpectedAgentIds": [],
+        "observedResponseConcentration": {
+          "herfindahlIndex": null,
+          "normalizedHerfindahl": null,
+          "responseMassBySourceAgent": {},
+          "sourceAgentCount": 0,
+          "status": "unavailable",
+          "unavailableReason": "no_exposure_conditioned_response_mass"
+        },
+        "pooledBelief": {
+          "kind": "categorical",
+          "probabilities": {
+            "Aurora Station": 0.65,
+            "Beacon Post": 0.175,
+            "Canyon Depot": 0.175
+          }
+        },
+        "pooledCertainty": 0.65,
+        "pooledPredictedOutcomes": [
+          "Aurora Station"
+        ],
+        "pooledUncertainty": 0.8101567417470392,
+        "populationBasis": "declared_roster",
+        "sourceFingerprints": {
+          "claim": "sha256:965fb23ee53aa27030ad15df570f8a56659cd0df0028cff048039bd704f876c5",
+          "evidence": "sha256:6ffac115bcd5935f6e97098a5f3ff5ee424b96d54ff695346d1c12190723a5ee",
+          "exposures": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "reports": "sha256:73294b21d398b497845c9bee583aa542dc33ebc37acce606f6aa240682b9cb05"
+        },
+        "withinAgentUncertainty": 0.7941481069679173
+      },
+      "updateActivityFromPrior": null
+    },
+    {
+      "round": 2,
+      "messages": [
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:43:1",
+          "content": "Aurora Station remains the most probable delivery site despite the chemical leak, as it is the only location with an active emergency signal, recent traffic, and official records as the primary emergency storage site. The leak reduces security readiness but does not eliminate it, and no better alternatives exist.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:43:2",
+          "content": "Aurora Station is the most likely delivery site due to its active emergency signal, official records, and security presence, despite accessibility challenges. Canyon Depot is a fallback with an accessible loading bay but lacks active communication. Beacon Post is ruled out due to a blocked loading bay.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:43:3",
+          "content": "Aurora Station is the most likely delivery site due to its active emergency signal, official records, and security presence, despite the climate control issue. Beacon Post and Canyon Depot lack recent communication, making them less reliable. The urgency of power restoration and lack of better alternatives support prioritizing Aurora Station.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:43:4",
+          "content": "Aurora Station is the most likely delivery site due to its active emergency signal, official records, and security presence, despite the collapsed bridge. The bridge collapse is a critical obstacle, but no other site has active communication or traffic, making Aurora the only viable option under urgency.",
+          "source": "agent"
+        }
+      ],
+      "reports": [
+        {
+          "id": "belief:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:1",
+          "claimId": "claim:hiddenbench:43:answer",
+          "agentId": "agent:hiddenbench:43:1",
+          "round": 2,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Aurora Station": 0.8,
+              "Beacon Post": 0.1,
+              "Canyon Depot": 0.1
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:1:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:1:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:1:3",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:1:4",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:02:01.000Z",
+          "supersedesReportId": "belief:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:1"
+        },
+        {
+          "id": "belief:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:2",
+          "claimId": "claim:hiddenbench:43:answer",
+          "agentId": "agent:hiddenbench:43:2",
+          "round": 2,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Aurora Station": 0.7,
+              "Beacon Post": 0.05,
+              "Canyon Depot": 0.25
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:2:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:2:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:2:3",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:2:4",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:2:5",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:02:02.000Z",
+          "supersedesReportId": "belief:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:2"
+        },
+        {
+          "id": "belief:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:3",
+          "claimId": "claim:hiddenbench:43:answer",
+          "agentId": "agent:hiddenbench:43:3",
+          "round": 2,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Aurora Station": 0.7,
+              "Beacon Post": 0.15,
+              "Canyon Depot": 0.15
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:3:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:3:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:3:3",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:3:4",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:3:5",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:02:03.000Z",
+          "supersedesReportId": "belief:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:3"
+        },
+        {
+          "id": "belief:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:4",
+          "claimId": "claim:hiddenbench:43:answer",
+          "agentId": "agent:hiddenbench:43:4",
+          "round": 2,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Aurora Station": 0.7,
+              "Beacon Post": 0.15,
+              "Canyon Depot": 0.15
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:4:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:4:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:4:3",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:4:4",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:4:5",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:02:04.000Z",
+          "supersedesReportId": "belief:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:4"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:1:1",
+          "content": "Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.",
+          "createdAt": "2026-08-24T00:02:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:1",
+            "contentHash": "sha256:29e05609ca813a1aee6fd475c871c2da7b4e20166fe27d8a46e92edacf0fa41f"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:1:2",
+          "content": "Road sensors suggest recent vehicular traffic toward Aurora Station but not toward other sites.",
+          "createdAt": "2026-08-24T00:02:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:1",
+            "contentHash": "sha256:622f8cf54d5929aca2253cb7b0fc7647020fc48a407d561ce219c5eaf88f2564"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:1:3",
+          "content": "Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.",
+          "createdAt": "2026-08-24T00:02:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:1",
+            "contentHash": "sha256:993e749214038e32e48f3c801f820c9b001f0f590ec953cad9b6bc0744ca12ec"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:1:4",
+          "content": "Security personnel at Aurora Station were evacuated in the last 30 minutes due to a hazardous chemical leak.",
+          "createdAt": "2026-08-24T00:02:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:1",
+            "contentHash": "sha256:0be9063c8dc825c0f0fbf4b2d6b8347a326f71a9778d654d3c476545daac5a86"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:2:1",
+          "content": "Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.",
+          "createdAt": "2026-08-24T00:02:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:2",
+            "contentHash": "sha256:29e05609ca813a1aee6fd475c871c2da7b4e20166fe27d8a46e92edacf0fa41f"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:2:2",
+          "content": "Road sensors suggest recent vehicular traffic toward Aurora Station but not toward other sites.",
+          "createdAt": "2026-08-24T00:02:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:2",
+            "contentHash": "sha256:622f8cf54d5929aca2253cb7b0fc7647020fc48a407d561ce219c5eaf88f2564"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:2:3",
+          "content": "Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.",
+          "createdAt": "2026-08-24T00:02:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:2",
+            "contentHash": "sha256:993e749214038e32e48f3c801f820c9b001f0f590ec953cad9b6bc0744ca12ec"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:2:4",
+          "content": "Beacon Post's loading bay was blocked by a landslide this morning; only Canyon Depot has an accessible loading area.",
+          "createdAt": "2026-08-24T00:02:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:2",
+            "contentHash": "sha256:c4dd4f22cc0d2bd2a46b5bf7a400f4d9c9f36508764199908631502746be162a"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:2:5",
+          "content": "Beacon Post and Canyon Depot both lacked updated communication logs as of an hour ago.",
+          "createdAt": "2026-08-24T00:02:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:2",
+            "contentHash": "sha256:4c350677aa46488a609e1033fcf5c4e62dd7a5143373e639798de471350ce4ef"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:3:1",
+          "content": "Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.",
+          "createdAt": "2026-08-24T00:02:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:3",
+            "contentHash": "sha256:29e05609ca813a1aee6fd475c871c2da7b4e20166fe27d8a46e92edacf0fa41f"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:3:2",
+          "content": "Road sensors suggest recent vehicular traffic toward Aurora Station but not toward other sites.",
+          "createdAt": "2026-08-24T00:02:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:3",
+            "contentHash": "sha256:622f8cf54d5929aca2253cb7b0fc7647020fc48a407d561ce219c5eaf88f2564"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:3:3",
+          "content": "Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.",
+          "createdAt": "2026-08-24T00:02:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:3",
+            "contentHash": "sha256:993e749214038e32e48f3c801f820c9b001f0f590ec953cad9b6bc0744ca12ec"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:3:4",
+          "content": "The energy artifact requires a functioning climate control system: Aurora Station's system failed during the blackout and is still offline.",
+          "createdAt": "2026-08-24T00:02:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:3",
+            "contentHash": "sha256:47af980083d25598d2cc22e20b61903a3148a37bb182d8edc8b3806d9b0f24d3"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:3:5",
+          "content": "Beacon Post and Canyon Depot both lacked updated communication logs as of an hour ago.",
+          "createdAt": "2026-08-24T00:02:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:3",
+            "contentHash": "sha256:4c350677aa46488a609e1033fcf5c4e62dd7a5143373e639798de471350ce4ef"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:4:1",
+          "content": "Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.",
+          "createdAt": "2026-08-24T00:02:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:4",
+            "contentHash": "sha256:29e05609ca813a1aee6fd475c871c2da7b4e20166fe27d8a46e92edacf0fa41f"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:4:2",
+          "content": "Road sensors suggest recent vehicular traffic toward Aurora Station but not toward other sites.",
+          "createdAt": "2026-08-24T00:02:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:4",
+            "contentHash": "sha256:622f8cf54d5929aca2253cb7b0fc7647020fc48a407d561ce219c5eaf88f2564"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:4:3",
+          "content": "Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.",
+          "createdAt": "2026-08-24T00:02:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:4",
+            "contentHash": "sha256:993e749214038e32e48f3c801f820c9b001f0f590ec953cad9b6bc0744ca12ec"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:4:4",
+          "content": "The only bridge leading to Aurora Station was reported collapsed an hour ago by a search drone.",
+          "createdAt": "2026-08-24T00:02:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:4",
+            "contentHash": "sha256:ea9fbed3823f9ee391801506bb0917b34ad0ca1ac94337e94fad5eae5283e9f6"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:4:5",
+          "content": "Beacon Post and Canyon Depot both lacked updated communication logs as of an hour ago.",
+          "createdAt": "2026-08-24T00:02:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:4",
+            "contentHash": "sha256:4c350677aa46488a609e1033fcf5c4e62dd7a5143373e639798de471350ce4ef"
+          }
+        }
+      ],
+      "state": {
+        "activeAgentIds": [
+          "agent:hiddenbench:43:1",
+          "agent:hiddenbench:43:2",
+          "agent:hiddenbench:43:3",
+          "agent:hiddenbench:43:4"
+        ],
+        "artifactSchemaRef": {
+          "id": "swarmalpha.collective-epistemic-state",
+          "version": "1.0.0"
+        },
+        "asOfRound": 2,
+        "beliefKind": "categorical",
+        "betweenAgentDisagreement": 0.016878618124420153,
+        "claimId": "claim:hiddenbench:43:answer",
+        "claimOptionCount": 3,
+        "contentHash": "sha256:811bf57ae9fac427c7d21a883b24f19162a4d1d329acd88ce64e8a886fbdc7d8",
+        "declaredLineageDiversity": {
+          "completeness": "missing",
+          "distinctDeclaredLineageCount": 0,
+          "effectiveLineageCount": null,
+          "missingLineageReportIds": [
+            "belief:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:1",
+            "belief:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:2",
+            "belief:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:3",
+            "belief:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:4"
+          ],
+          "normalizedLineageEntropy": null,
+          "reportsMissingDeclaredLineage": 4,
+          "reportsWithDeclaredLineage": 0
+        },
+        "expectedAgentIds": [
+          "agent:hiddenbench:43:1",
+          "agent:hiddenbench:43:2",
+          "agent:hiddenbench:43:3",
+          "agent:hiddenbench:43:4"
+        ],
+        "exposureConditionedRevision": {
+          "meanBeliefDistance": null,
+          "revisionCount": 0,
+          "targetAgentCount": 0,
+          "totalBeliefDistance": 0
+        },
+        "inferenceStatus": "descriptive_macrostate_only",
+        "latestReportIds": [
+          "belief:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:1",
+          "belief:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:2",
+          "belief:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:3",
+          "belief:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:4"
+        ],
+        "missingExpectedAgentIds": [],
+        "observedResponseConcentration": {
+          "herfindahlIndex": null,
+          "normalizedHerfindahl": null,
+          "responseMassBySourceAgent": {},
+          "sourceAgentCount": 0,
+          "status": "unavailable",
+          "unavailableReason": "no_exposure_conditioned_response_mass"
+        },
+        "pooledBelief": {
+          "kind": "categorical",
+          "probabilities": {
+            "Aurora Station": 0.7250000000000001,
+            "Beacon Post": 0.11250000000000002,
+            "Canyon Depot": 0.1625
+          }
+        },
+        "pooledCertainty": 0.7250000000000001,
+        "pooledPredictedOutcomes": [
+          "Aurora Station"
+        ],
+        "pooledUncertainty": 0.7047194214698912,
+        "populationBasis": "declared_roster",
+        "sourceFingerprints": {
+          "claim": "sha256:965fb23ee53aa27030ad15df570f8a56659cd0df0028cff048039bd704f876c5",
+          "evidence": "sha256:385673ec0bbd2c8793e034fbb72ab40d1f44a4d5f072a1e9e3d00b23c8b828bf",
+          "exposures": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "reports": "sha256:5fa2f95ff31ef5e9268d7207142754c95c84f55b8bb4c6ddbcadeef136b1ed13"
+        },
+        "withinAgentUncertainty": 0.687840803345471
+      },
+      "updateActivityFromPrior": 0.1375
+    },
+    {
+      "round": 3,
+      "messages": [
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:43:1",
+          "content": "Aurora Station is the most probable delivery site due to its active emergency signal, official records, and recent traffic, despite the chemical leak reducing security readiness. No other site has active communication or viable alternatives under urgency.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:43:2",
+          "content": "Aurora Station is the most probable delivery site due to its active emergency signal, recent traffic, and official records as the primary emergency storage site. While accessibility challenges exist, no other site has active communication or traffic, making it the only viable option under urgency.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:43:3",
+          "content": "Aurora Station is the most probable delivery site due to its active emergency signal, official records, and security presence, despite the climate control issue. The urgency of power restoration and lack of better alternatives support prioritizing Aurora Station.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:43:4",
+          "content": "Aurora Station is the most likely delivery site despite the collapsed bridge, as it is the only location with an active emergency signal, recent traffic, and official records as the primary emergency storage site. The bridge collapse is a critical obstacle, but no other site has active communication or traffic, making Aurora the only viable option under urgency.",
+          "source": "agent"
+        }
+      ],
+      "reports": [
+        {
+          "id": "belief:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:1",
+          "claimId": "claim:hiddenbench:43:answer",
+          "agentId": "agent:hiddenbench:43:1",
+          "round": 3,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Aurora Station": 0.8,
+              "Beacon Post": 0.1,
+              "Canyon Depot": 0.1
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:1:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:1:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:1:3",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:1:4",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:1:5",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:03:01.000Z",
+          "supersedesReportId": "belief:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:1"
+        },
+        {
+          "id": "belief:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:2",
+          "claimId": "claim:hiddenbench:43:answer",
+          "agentId": "agent:hiddenbench:43:2",
+          "round": 3,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Aurora Station": 0.8,
+              "Beacon Post": 0.1,
+              "Canyon Depot": 0.1
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:2:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:2:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:2:3",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:2:4",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:2:5",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "supersedesReportId": "belief:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:2"
+        },
+        {
+          "id": "belief:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:3",
+          "claimId": "claim:hiddenbench:43:answer",
+          "agentId": "agent:hiddenbench:43:3",
+          "round": 3,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Aurora Station": 0.7,
+              "Beacon Post": 0.15,
+              "Canyon Depot": 0.15
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:3:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:3:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:3:3",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:3:4",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:3:5",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "supersedesReportId": "belief:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:3"
+        },
+        {
+          "id": "belief:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:4",
+          "claimId": "claim:hiddenbench:43:answer",
+          "agentId": "agent:hiddenbench:43:4",
+          "round": 3,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Aurora Station": 0.8,
+              "Beacon Post": 0.1,
+              "Canyon Depot": 0.1
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:4:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:4:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:4:3",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:4:4",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:4:5",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:03:04.000Z",
+          "supersedesReportId": "belief:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:4"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:1:1",
+          "content": "Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.",
+          "createdAt": "2026-08-24T00:03:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:1",
+            "contentHash": "sha256:29e05609ca813a1aee6fd475c871c2da7b4e20166fe27d8a46e92edacf0fa41f"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:1:2",
+          "content": "Road sensors suggest recent vehicular traffic toward Aurora Station but not toward other sites.",
+          "createdAt": "2026-08-24T00:03:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:1",
+            "contentHash": "sha256:622f8cf54d5929aca2253cb7b0fc7647020fc48a407d561ce219c5eaf88f2564"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:1:3",
+          "content": "Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.",
+          "createdAt": "2026-08-24T00:03:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:1",
+            "contentHash": "sha256:993e749214038e32e48f3c801f820c9b001f0f590ec953cad9b6bc0744ca12ec"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:1:4",
+          "content": "Security personnel at Aurora Station were evacuated in the last 30 minutes due to a hazardous chemical leak.",
+          "createdAt": "2026-08-24T00:03:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:1",
+            "contentHash": "sha256:0be9063c8dc825c0f0fbf4b2d6b8347a326f71a9778d654d3c476545daac5a86"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:1:5",
+          "content": "Beacon Post and Canyon Depot both lacked updated communication logs as of an hour ago.",
+          "createdAt": "2026-08-24T00:03:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:1",
+            "contentHash": "sha256:4c350677aa46488a609e1033fcf5c4e62dd7a5143373e639798de471350ce4ef"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:2:1",
+          "content": "Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.",
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:2",
+            "contentHash": "sha256:29e05609ca813a1aee6fd475c871c2da7b4e20166fe27d8a46e92edacf0fa41f"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:2:2",
+          "content": "Road sensors suggest recent vehicular traffic toward Aurora Station but not toward other sites.",
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:2",
+            "contentHash": "sha256:622f8cf54d5929aca2253cb7b0fc7647020fc48a407d561ce219c5eaf88f2564"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:2:3",
+          "content": "Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.",
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:2",
+            "contentHash": "sha256:993e749214038e32e48f3c801f820c9b001f0f590ec953cad9b6bc0744ca12ec"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:2:4",
+          "content": "Beacon Post and Canyon Depot both lacked updated communication logs as of an hour ago.",
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:2",
+            "contentHash": "sha256:4c350677aa46488a609e1033fcf5c4e62dd7a5143373e639798de471350ce4ef"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:2:5",
+          "content": "Beacon Post's loading bay was blocked by a landslide this morning; only Canyon Depot has an accessible loading area.",
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:2",
+            "contentHash": "sha256:c4dd4f22cc0d2bd2a46b5bf7a400f4d9c9f36508764199908631502746be162a"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:3:1",
+          "content": "Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.",
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:3",
+            "contentHash": "sha256:29e05609ca813a1aee6fd475c871c2da7b4e20166fe27d8a46e92edacf0fa41f"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:3:2",
+          "content": "Road sensors suggest recent vehicular traffic toward Aurora Station but not toward other sites.",
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:3",
+            "contentHash": "sha256:622f8cf54d5929aca2253cb7b0fc7647020fc48a407d561ce219c5eaf88f2564"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:3:3",
+          "content": "Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.",
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:3",
+            "contentHash": "sha256:993e749214038e32e48f3c801f820c9b001f0f590ec953cad9b6bc0744ca12ec"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:3:4",
+          "content": "The energy artifact requires a functioning climate control system: Aurora Station's system failed during the blackout and is still offline.",
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:3",
+            "contentHash": "sha256:47af980083d25598d2cc22e20b61903a3148a37bb182d8edc8b3806d9b0f24d3"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:3:5",
+          "content": "Beacon Post and Canyon Depot both lacked updated communication logs as of an hour ago.",
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:3",
+            "contentHash": "sha256:4c350677aa46488a609e1033fcf5c4e62dd7a5143373e639798de471350ce4ef"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:4:1",
+          "content": "Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.",
+          "createdAt": "2026-08-24T00:03:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:4",
+            "contentHash": "sha256:29e05609ca813a1aee6fd475c871c2da7b4e20166fe27d8a46e92edacf0fa41f"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:4:2",
+          "content": "Road sensors suggest recent vehicular traffic toward Aurora Station but not toward other sites.",
+          "createdAt": "2026-08-24T00:03:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:4",
+            "contentHash": "sha256:622f8cf54d5929aca2253cb7b0fc7647020fc48a407d561ce219c5eaf88f2564"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:4:3",
+          "content": "Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.",
+          "createdAt": "2026-08-24T00:03:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:4",
+            "contentHash": "sha256:993e749214038e32e48f3c801f820c9b001f0f590ec953cad9b6bc0744ca12ec"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:4:4",
+          "content": "The only bridge leading to Aurora Station was reported collapsed an hour ago by a search drone.",
+          "createdAt": "2026-08-24T00:03:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:4",
+            "contentHash": "sha256:ea9fbed3823f9ee391801506bb0917b34ad0ca1ac94337e94fad5eae5283e9f6"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:4:5",
+          "content": "Beacon Post and Canyon Depot both lacked updated communication logs as of an hour ago.",
+          "createdAt": "2026-08-24T00:03:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:43:4",
+            "contentHash": "sha256:4c350677aa46488a609e1033fcf5c4e62dd7a5143373e639798de471350ce4ef"
+          }
+        }
+      ],
+      "state": {
+        "activeAgentIds": [
+          "agent:hiddenbench:43:1",
+          "agent:hiddenbench:43:2",
+          "agent:hiddenbench:43:3",
+          "agent:hiddenbench:43:4"
+        ],
+        "artifactSchemaRef": {
+          "id": "swarmalpha.collective-epistemic-state",
+          "version": "1.0.0"
+        },
+        "asOfRound": 3,
+        "beliefKind": "categorical",
+        "betweenAgentDisagreement": 0.004684043336319443,
+        "claimId": "claim:hiddenbench:43:answer",
+        "claimOptionCount": 3,
+        "contentHash": "sha256:47071dc96f628e389fe2bf8bd49c14fb5d56c558bc5ea75174fd071064057adb",
+        "declaredLineageDiversity": {
+          "completeness": "missing",
+          "distinctDeclaredLineageCount": 0,
+          "effectiveLineageCount": null,
+          "missingLineageReportIds": [
+            "belief:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:1",
+            "belief:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:2",
+            "belief:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:3",
+            "belief:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:4"
+          ],
+          "normalizedLineageEntropy": null,
+          "reportsMissingDeclaredLineage": 4,
+          "reportsWithDeclaredLineage": 0
+        },
+        "expectedAgentIds": [
+          "agent:hiddenbench:43:1",
+          "agent:hiddenbench:43:2",
+          "agent:hiddenbench:43:3",
+          "agent:hiddenbench:43:4"
+        ],
+        "exposureConditionedRevision": {
+          "meanBeliefDistance": null,
+          "revisionCount": 0,
+          "targetAgentCount": 0,
+          "totalBeliefDistance": 0
+        },
+        "inferenceStatus": "descriptive_macrostate_only",
+        "latestReportIds": [
+          "belief:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:1",
+          "belief:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:2",
+          "belief:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:3",
+          "belief:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:4"
+        ],
+        "missingExpectedAgentIds": [],
+        "observedResponseConcentration": {
+          "herfindahlIndex": null,
+          "normalizedHerfindahl": null,
+          "responseMassBySourceAgent": {},
+          "sourceAgentCount": 0,
+          "status": "unavailable",
+          "unavailableReason": "no_exposure_conditioned_response_mass"
+        },
+        "pooledBelief": {
+          "kind": "categorical",
+          "probabilities": {
+            "Aurora Station": 0.7749999999999999,
+            "Beacon Post": 0.11249999999999999,
+            "Canyon Depot": 0.11249999999999999
+          }
+        },
+        "pooledCertainty": 0.7749999999999999,
+        "pooledPredictedOutcomes": [
+          "Aurora Station"
+        ],
+        "pooledUncertainty": 0.6272658366116911,
+        "populationBasis": "declared_roster",
+        "sourceFingerprints": {
+          "claim": "sha256:965fb23ee53aa27030ad15df570f8a56659cd0df0028cff048039bd704f876c5",
+          "evidence": "sha256:83e1e4ff1214838718fd74d2743a8e45498919d0fdde2ba767f6655ba3c6c534",
+          "exposures": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "reports": "sha256:50f448aa22e62690eed7beb24c044b241c7a6ecfbe24b0b2a6eb612608baefb7"
+        },
+        "withinAgentUncertainty": 0.6225817932753717
+      },
+      "updateActivityFromPrior": 0.06250000000000001
+    }
+  ],
+  "providerCalls": [
+    {
+      "requestId": "discussion:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:1",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYour team is tasked with ensuring the safe delivery of a vital energy artifact needed to restore the region's power grid after a blackout. There are three facilities that could receive the artifact: Aurora Station, Beacon Post, and Canyon Depot. Each site has been used for similar deliveries in the past, but complex conditions due to the blackout make this delivery especially difficult. Communications are partially down, so each of you receives a special update from a different source on the ground, but you have only a few minutes to make a final delivery decision as power must be restored urgently. The artifact will only function if delivered to a location that meets precise criteria for access, security, and operational readiness.\n\nShared information:\n1. Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.\n2. Road sensors suggest recent vehicular traffic toward Aurora Station but not toward other sites.\n3. Beacon Post and Canyon Depot both lacked updated communication logs as of an hour ago.\n4. Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.\n\nYour private information:\nSecurity personnel at Aurora Station were evacuated in the last 30 minutes due to a hazardous chemical leak.\n\nVisible discussion transcript:\n(none)\n\nClaim claim:hiddenbench:43:answer: Select the single correct answer for HiddenBench task 43 (The Artifact Delivery).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Aurora Station | Beacon Post | Canyon Depot. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Aurora Station\": 0.5, \"Beacon Post\": 0.2500, \"Canyon Depot\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:5479908881aa3dbf0c85b417513de26f5a02b15690d054ce1f52e375db8ce8e2",
+      "responseHash": "sha256:9b3845d18fae32dc057e37f27f407cdda1ae1d4d1bd76c2871c51d460e98502a",
+      "rawResponse": "{\"message\":\"Aurora Station is the most likely delivery site despite the chemical leak, as it is the only one with an active emergency signal and official records prioritize it. The leak reduces its security readiness, but no better alternatives exist.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Aurora Station\":0.6000,\"Beacon Post\":0.2000,\"Canyon Depot\":0.2000}},\"evidence\":[{\"content\":\"Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.\",\"relation\":\"supports\"},{\"content\":\"Road sensors suggest recent vehicular traffic toward Aurora Station but not toward other sites.\",\"relation\":\"supports\"},{\"content\":\"Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.\",\"relation\":\"supports\"},{\"content\":\"Security personnel at Aurora Station were evacuated in the last 30 minutes due to a hazardous chemical leak.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 543,
+        "completionTokens": 264,
+        "totalTokens": 807,
+        "latencyMs": 11231
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:2",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYour team is tasked with ensuring the safe delivery of a vital energy artifact needed to restore the region's power grid after a blackout. There are three facilities that could receive the artifact: Aurora Station, Beacon Post, and Canyon Depot. Each site has been used for similar deliveries in the past, but complex conditions due to the blackout make this delivery especially difficult. Communications are partially down, so each of you receives a special update from a different source on the ground, but you have only a few minutes to make a final delivery decision as power must be restored urgently. The artifact will only function if delivered to a location that meets precise criteria for access, security, and operational readiness.\n\nShared information:\n1. Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.\n2. Road sensors suggest recent vehicular traffic toward Aurora Station but not toward other sites.\n3. Beacon Post and Canyon Depot both lacked updated communication logs as of an hour ago.\n4. Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.\n\nYour private information:\nBeacon Post's loading bay was blocked by a landslide this morning; only Canyon Depot has an accessible loading area.\n\nVisible discussion transcript:\n(none)\n\nClaim claim:hiddenbench:43:answer: Select the single correct answer for HiddenBench task 43 (The Artifact Delivery).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Aurora Station | Beacon Post | Canyon Depot. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Aurora Station\": 0.5, \"Beacon Post\": 0.2500, \"Canyon Depot\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:1979f9902bca88058f7611f580a7ba125b006874916a9dc54630a8dc5a9370f1",
+      "responseHash": "sha256:14e89deff6401697dece1ce071ec84215bbcf3188ad4cbaf67d99c2e1b2e135c",
+      "rawResponse": "{\"message\":\"Based on the evidence, Aurora Station is the most likely correct delivery site. It is the only location with an active emergency signal, recent traffic, and official records as the primary emergency storage site. While Canyon Depot has an accessible loading bay, the lack of an active signal and traffic makes it less likely. Beacon Post is ruled out due to the blocked loading bay.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Aurora Station\":0.8000,\"Beacon Post\":0.1000,\"Canyon Depot\":0.1000}},\"evidence\":[{\"content\":\"Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.\",\"relation\":\"supports\"},{\"content\":\"Road sensors suggest recent vehicular traffic toward Aurora Station but not toward other sites.\",\"relation\":\"supports\"},{\"content\":\"Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.\",\"relation\":\"supports\"},{\"content\":\"Beacon Post's loading bay was blocked by a landslide this morning; only Canyon Depot has an accessible loading area.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 546,
+        "completionTokens": 295,
+        "totalTokens": 841,
+        "latencyMs": 12636
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:3",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYour team is tasked with ensuring the safe delivery of a vital energy artifact needed to restore the region's power grid after a blackout. There are three facilities that could receive the artifact: Aurora Station, Beacon Post, and Canyon Depot. Each site has been used for similar deliveries in the past, but complex conditions due to the blackout make this delivery especially difficult. Communications are partially down, so each of you receives a special update from a different source on the ground, but you have only a few minutes to make a final delivery decision as power must be restored urgently. The artifact will only function if delivered to a location that meets precise criteria for access, security, and operational readiness.\n\nShared information:\n1. Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.\n2. Road sensors suggest recent vehicular traffic toward Aurora Station but not toward other sites.\n3. Beacon Post and Canyon Depot both lacked updated communication logs as of an hour ago.\n4. Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.\n\nYour private information:\nThe energy artifact requires a functioning climate control system: Aurora Station's system failed during the blackout and is still offline.\n\nVisible discussion transcript:\n(none)\n\nClaim claim:hiddenbench:43:answer: Select the single correct answer for HiddenBench task 43 (The Artifact Delivery).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Aurora Station | Beacon Post | Canyon Depot. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Aurora Station\": 0.5, \"Beacon Post\": 0.2500, \"Canyon Depot\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:45ddb9aa647ad7324669a6755e12ef9d97e27529b7951bf8f16e622b1aceae57",
+      "responseHash": "sha256:25e249c6116b3f3c32b660eb177df1dd22c7ec35eb100ace55677c9ccc74a8ea",
+      "rawResponse": "{\"message\":\"Aurora Station is the primary candidate per official records and has an active emergency signal, but its climate control system is offline, which is a critical requirement for the artifact. Beacon Post and Canyon Depot lack recent communication updates, making them less reliable. Given the urgent need to restore power and the lack of better alternatives, I lean toward Aurora Station despite the climate control issue, as it is the only site with active communication and security presence.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Aurora Station\":0.6000,\"Beacon Post\":0.2000,\"Canyon Depot\":0.2000}},\"evidence\":[{\"content\":\"Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.\",\"relation\":\"supports\"},{\"content\":\"Road sensors suggest recent vehicular traffic toward Aurora Station but not toward other sites.\",\"relation\":\"supports\"},{\"content\":\"Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.\",\"relation\":\"supports\"},{\"content\":\"The energy artifact requires a functioning climate control system: Aurora Station's system failed during the blackout and is still offline.\",\"relation\":\"attacks\"},{\"content\":\"Beacon Post and Canyon Depot both lacked updated communication logs as of an hour ago.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 546,
+        "completionTokens": 343,
+        "totalTokens": 889,
+        "latencyMs": 7756
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:43:seed-1:r1:agent:hiddenbench:43:4",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYour team is tasked with ensuring the safe delivery of a vital energy artifact needed to restore the region's power grid after a blackout. There are three facilities that could receive the artifact: Aurora Station, Beacon Post, and Canyon Depot. Each site has been used for similar deliveries in the past, but complex conditions due to the blackout make this delivery especially difficult. Communications are partially down, so each of you receives a special update from a different source on the ground, but you have only a few minutes to make a final delivery decision as power must be restored urgently. The artifact will only function if delivered to a location that meets precise criteria for access, security, and operational readiness.\n\nShared information:\n1. Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.\n2. Road sensors suggest recent vehicular traffic toward Aurora Station but not toward other sites.\n3. Beacon Post and Canyon Depot both lacked updated communication logs as of an hour ago.\n4. Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.\n\nYour private information:\nThe only bridge leading to Aurora Station was reported collapsed an hour ago by a search drone.\n\nVisible discussion transcript:\n(none)\n\nClaim claim:hiddenbench:43:answer: Select the single correct answer for HiddenBench task 43 (The Artifact Delivery).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Aurora Station | Beacon Post | Canyon Depot. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Aurora Station\": 0.5, \"Beacon Post\": 0.2500, \"Canyon Depot\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:0768dfeb66c676b8fef473a455023ab931a00a85ddee112f70c235905d55ff46",
+      "responseHash": "sha256:bc3c677368293cb4db80910876e22b007fae23c3bb235228e9873f0e1162c7e4",
+      "rawResponse": "{\"message\":\"Aurora Station is the primary candidate per official records and has an active emergency signal, but the collapsed bridge makes it inaccessible. Beacon Post and Canyon Depot lack recent communication, but without the bridge issue, Aurora remains the most likely intended site. Given the urgency, I prioritize the official primary candidate despite the obstacle, as the other sites have no active signals.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Aurora Station\":0.6000,\"Beacon Post\":0.2000,\"Canyon Depot\":0.2000}},\"evidence\":[{\"content\":\"Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.\",\"relation\":\"supports\"},{\"content\":\"Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.\",\"relation\":\"supports\"},{\"content\":\"The only bridge leading to Aurora Station was reported collapsed an hour ago by a search drone.\",\"relation\":\"attacks\"},{\"content\":\"Beacon Post and Canyon Depot both lacked updated communication logs as of an hour ago.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 541,
+        "completionTokens": 290,
+        "totalTokens": 831,
+        "latencyMs": 8148
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:1",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYour team is tasked with ensuring the safe delivery of a vital energy artifact needed to restore the region's power grid after a blackout. There are three facilities that could receive the artifact: Aurora Station, Beacon Post, and Canyon Depot. Each site has been used for similar deliveries in the past, but complex conditions due to the blackout make this delivery especially difficult. Communications are partially down, so each of you receives a special update from a different source on the ground, but you have only a few minutes to make a final delivery decision as power must be restored urgently. The artifact will only function if delivered to a location that meets precise criteria for access, security, and operational readiness.\n\nShared information:\n1. Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.\n2. Road sensors suggest recent vehicular traffic toward Aurora Station but not toward other sites.\n3. Beacon Post and Canyon Depot both lacked updated communication logs as of an hour ago.\n4. Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.\n\nYour private information:\nSecurity personnel at Aurora Station were evacuated in the last 30 minutes due to a hazardous chemical leak.\n\nVisible discussion transcript:\n[round 1] agent:hiddenbench:43:1: Aurora Station is the most likely delivery site despite the chemical leak, as it is the only one with an active emergency signal and official records prioritize it. The leak reduces its security readiness, but no better alternatives exist.\n[round 1] agent:hiddenbench:43:2: Based on the evidence, Aurora Station is the most likely correct delivery site. It is the only location with an active emergency signal, recent traffic, and official records as the primary emergency storage site. While Canyon Depot has an accessible loading bay, the lack of an active signal and traffic makes it less likely. Beacon Post is ruled out due to the blocked loading bay.\n[round 1] agent:hiddenbench:43:3: Aurora Station is the primary candidate per official records and has an active emergency signal, but its climate control system is offline, which is a critical requirement for the artifact. Beacon Post and Canyon Depot lack recent communication updates, making them less reliable. Given the urgent need to restore power and the lack of better alternatives, I lean toward Aurora Station despite the climate control issue, as it is the only site with active communication and security presence.\n[round 1] agent:hiddenbench:43:4: Aurora Station is the primary candidate per official records and has an active emergency signal, but the collapsed bridge makes it inaccessible. Beacon Post and Canyon Depot lack recent communication, but without the bridge issue, Aurora remains the most likely intended site. Given the urgency, I prioritize the official primary candidate despite the obstacle, as the other sites have no active signals.\n\nClaim claim:hiddenbench:43:answer: Select the single correct answer for HiddenBench task 43 (The Artifact Delivery).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Aurora Station | Beacon Post | Canyon Depot. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Aurora Station\": 0.5, \"Beacon Post\": 0.2500, \"Canyon Depot\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:73b08de5b37ccaf47f18f386491ab19b1dada7e70bbccdf9a6c69a580e6cb8ec",
+      "responseHash": "sha256:1b9e026fb73ad477c3da03bc287cfb7fcb6d254fabc1978a0a1b0499a7394475",
+      "rawResponse": "{\"message\":\"Aurora Station remains the most probable delivery site despite the chemical leak, as it is the only location with an active emergency signal, recent traffic, and official records as the primary emergency storage site. The leak reduces security readiness but does not eliminate it, and no better alternatives exist.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Aurora Station\":0.8000,\"Beacon Post\":0.1000,\"Canyon Depot\":0.1000}},\"evidence\":[{\"content\":\"Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.\",\"relation\":\"supports\"},{\"content\":\"Road sensors suggest recent vehicular traffic toward Aurora Station but not toward other sites.\",\"relation\":\"supports\"},{\"content\":\"Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.\",\"relation\":\"supports\"},{\"content\":\"Security personnel at Aurora Station were evacuated in the last 30 minutes due to a hazardous chemical leak.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 864,
+        "completionTokens": 276,
+        "totalTokens": 1140,
+        "latencyMs": 5726
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:2",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYour team is tasked with ensuring the safe delivery of a vital energy artifact needed to restore the region's power grid after a blackout. There are three facilities that could receive the artifact: Aurora Station, Beacon Post, and Canyon Depot. Each site has been used for similar deliveries in the past, but complex conditions due to the blackout make this delivery especially difficult. Communications are partially down, so each of you receives a special update from a different source on the ground, but you have only a few minutes to make a final delivery decision as power must be restored urgently. The artifact will only function if delivered to a location that meets precise criteria for access, security, and operational readiness.\n\nShared information:\n1. Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.\n2. Road sensors suggest recent vehicular traffic toward Aurora Station but not toward other sites.\n3. Beacon Post and Canyon Depot both lacked updated communication logs as of an hour ago.\n4. Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.\n\nYour private information:\nBeacon Post's loading bay was blocked by a landslide this morning; only Canyon Depot has an accessible loading area.\n\nVisible discussion transcript:\n[round 1] agent:hiddenbench:43:1: Aurora Station is the most likely delivery site despite the chemical leak, as it is the only one with an active emergency signal and official records prioritize it. The leak reduces its security readiness, but no better alternatives exist.\n[round 1] agent:hiddenbench:43:2: Based on the evidence, Aurora Station is the most likely correct delivery site. It is the only location with an active emergency signal, recent traffic, and official records as the primary emergency storage site. While Canyon Depot has an accessible loading bay, the lack of an active signal and traffic makes it less likely. Beacon Post is ruled out due to the blocked loading bay.\n[round 1] agent:hiddenbench:43:3: Aurora Station is the primary candidate per official records and has an active emergency signal, but its climate control system is offline, which is a critical requirement for the artifact. Beacon Post and Canyon Depot lack recent communication updates, making them less reliable. Given the urgent need to restore power and the lack of better alternatives, I lean toward Aurora Station despite the climate control issue, as it is the only site with active communication and security presence.\n[round 1] agent:hiddenbench:43:4: Aurora Station is the primary candidate per official records and has an active emergency signal, but the collapsed bridge makes it inaccessible. Beacon Post and Canyon Depot lack recent communication, but without the bridge issue, Aurora remains the most likely intended site. Given the urgency, I prioritize the official primary candidate despite the obstacle, as the other sites have no active signals.\n\nClaim claim:hiddenbench:43:answer: Select the single correct answer for HiddenBench task 43 (The Artifact Delivery).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Aurora Station | Beacon Post | Canyon Depot. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Aurora Station\": 0.5, \"Beacon Post\": 0.2500, \"Canyon Depot\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:49aac3102a53f59a6d6636efcbc94b3818cd1be29a0bb39fb94627caf728d5a9",
+      "responseHash": "sha256:c840d3dfc466d418b7973cb39ff3d84b853ca3c59f9d24cfa23f4ab50463006e",
+      "rawResponse": "{\"message\":\"Aurora Station is the most likely delivery site due to its active emergency signal, official records, and security presence, despite accessibility challenges. Canyon Depot is a fallback with an accessible loading bay but lacks active communication. Beacon Post is ruled out due to a blocked loading bay.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Aurora Station\":0.7000,\"Canyon Depot\":0.2500,\"Beacon Post\":0.0500}},\"evidence\":[{\"content\":\"Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.\",\"relation\":\"supports\"},{\"content\":\"Road sensors suggest recent vehicular traffic toward Aurora Station but not toward other sites.\",\"relation\":\"supports\"},{\"content\":\"Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.\",\"relation\":\"supports\"},{\"content\":\"Beacon Post's loading bay was blocked by a landslide this morning; only Canyon Depot has an accessible loading area.\",\"relation\":\"attacks\"},{\"content\":\"Beacon Post and Canyon Depot both lacked updated communication logs as of an hour ago.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 867,
+        "completionTokens": 311,
+        "totalTokens": 1178,
+        "latencyMs": 10157
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:3",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYour team is tasked with ensuring the safe delivery of a vital energy artifact needed to restore the region's power grid after a blackout. There are three facilities that could receive the artifact: Aurora Station, Beacon Post, and Canyon Depot. Each site has been used for similar deliveries in the past, but complex conditions due to the blackout make this delivery especially difficult. Communications are partially down, so each of you receives a special update from a different source on the ground, but you have only a few minutes to make a final delivery decision as power must be restored urgently. The artifact will only function if delivered to a location that meets precise criteria for access, security, and operational readiness.\n\nShared information:\n1. Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.\n2. Road sensors suggest recent vehicular traffic toward Aurora Station but not toward other sites.\n3. Beacon Post and Canyon Depot both lacked updated communication logs as of an hour ago.\n4. Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.\n\nYour private information:\nThe energy artifact requires a functioning climate control system: Aurora Station's system failed during the blackout and is still offline.\n\nVisible discussion transcript:\n[round 1] agent:hiddenbench:43:1: Aurora Station is the most likely delivery site despite the chemical leak, as it is the only one with an active emergency signal and official records prioritize it. The leak reduces its security readiness, but no better alternatives exist.\n[round 1] agent:hiddenbench:43:2: Based on the evidence, Aurora Station is the most likely correct delivery site. It is the only location with an active emergency signal, recent traffic, and official records as the primary emergency storage site. While Canyon Depot has an accessible loading bay, the lack of an active signal and traffic makes it less likely. Beacon Post is ruled out due to the blocked loading bay.\n[round 1] agent:hiddenbench:43:3: Aurora Station is the primary candidate per official records and has an active emergency signal, but its climate control system is offline, which is a critical requirement for the artifact. Beacon Post and Canyon Depot lack recent communication updates, making them less reliable. Given the urgent need to restore power and the lack of better alternatives, I lean toward Aurora Station despite the climate control issue, as it is the only site with active communication and security presence.\n[round 1] agent:hiddenbench:43:4: Aurora Station is the primary candidate per official records and has an active emergency signal, but the collapsed bridge makes it inaccessible. Beacon Post and Canyon Depot lack recent communication, but without the bridge issue, Aurora remains the most likely intended site. Given the urgency, I prioritize the official primary candidate despite the obstacle, as the other sites have no active signals.\n\nClaim claim:hiddenbench:43:answer: Select the single correct answer for HiddenBench task 43 (The Artifact Delivery).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Aurora Station | Beacon Post | Canyon Depot. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Aurora Station\": 0.5, \"Beacon Post\": 0.2500, \"Canyon Depot\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:db861f8400eb42596399c8af1779e56f2f67f14c6a163cdc90b33749e85e4380",
+      "responseHash": "sha256:6169612e52cfdcf81b304bfb2ce2adff0eb4d3414b52df381ca518868ff3ab03",
+      "rawResponse": "{\"message\":\"Aurora Station is the most likely delivery site due to its active emergency signal, official records, and security presence, despite the climate control issue. Beacon Post and Canyon Depot lack recent communication, making them less reliable. The urgency of power restoration and lack of better alternatives support prioritizing Aurora Station.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Aurora Station\":0.7000,\"Beacon Post\":0.1500,\"Canyon Depot\":0.1500}},\"evidence\":[{\"content\":\"Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.\",\"relation\":\"supports\"},{\"content\":\"Road sensors suggest recent vehicular traffic toward Aurora Station but not toward other sites.\",\"relation\":\"supports\"},{\"content\":\"Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.\",\"relation\":\"supports\"},{\"content\":\"The energy artifact requires a functioning climate control system: Aurora Station's system failed during the blackout and is still offline.\",\"relation\":\"attacks\"},{\"content\":\"Beacon Post and Canyon Depot both lacked updated communication logs as of an hour ago.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 867,
+        "completionTokens": 315,
+        "totalTokens": 1182,
+        "latencyMs": 11433
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:43:seed-1:r2:agent:hiddenbench:43:4",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYour team is tasked with ensuring the safe delivery of a vital energy artifact needed to restore the region's power grid after a blackout. There are three facilities that could receive the artifact: Aurora Station, Beacon Post, and Canyon Depot. Each site has been used for similar deliveries in the past, but complex conditions due to the blackout make this delivery especially difficult. Communications are partially down, so each of you receives a special update from a different source on the ground, but you have only a few minutes to make a final delivery decision as power must be restored urgently. The artifact will only function if delivered to a location that meets precise criteria for access, security, and operational readiness.\n\nShared information:\n1. Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.\n2. Road sensors suggest recent vehicular traffic toward Aurora Station but not toward other sites.\n3. Beacon Post and Canyon Depot both lacked updated communication logs as of an hour ago.\n4. Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.\n\nYour private information:\nThe only bridge leading to Aurora Station was reported collapsed an hour ago by a search drone.\n\nVisible discussion transcript:\n[round 1] agent:hiddenbench:43:1: Aurora Station is the most likely delivery site despite the chemical leak, as it is the only one with an active emergency signal and official records prioritize it. The leak reduces its security readiness, but no better alternatives exist.\n[round 1] agent:hiddenbench:43:2: Based on the evidence, Aurora Station is the most likely correct delivery site. It is the only location with an active emergency signal, recent traffic, and official records as the primary emergency storage site. While Canyon Depot has an accessible loading bay, the lack of an active signal and traffic makes it less likely. Beacon Post is ruled out due to the blocked loading bay.\n[round 1] agent:hiddenbench:43:3: Aurora Station is the primary candidate per official records and has an active emergency signal, but its climate control system is offline, which is a critical requirement for the artifact. Beacon Post and Canyon Depot lack recent communication updates, making them less reliable. Given the urgent need to restore power and the lack of better alternatives, I lean toward Aurora Station despite the climate control issue, as it is the only site with active communication and security presence.\n[round 1] agent:hiddenbench:43:4: Aurora Station is the primary candidate per official records and has an active emergency signal, but the collapsed bridge makes it inaccessible. Beacon Post and Canyon Depot lack recent communication, but without the bridge issue, Aurora remains the most likely intended site. Given the urgency, I prioritize the official primary candidate despite the obstacle, as the other sites have no active signals.\n\nClaim claim:hiddenbench:43:answer: Select the single correct answer for HiddenBench task 43 (The Artifact Delivery).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Aurora Station | Beacon Post | Canyon Depot. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Aurora Station\": 0.5, \"Beacon Post\": 0.2500, \"Canyon Depot\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:4e3a72aece105060c8b30931eb9742003178bdd2d6a206df3b4400e34404597e",
+      "responseHash": "sha256:8db43fc7049b2000d4bbe50645ddd355956be7e0f1f709b27aa4d290826dc2d0",
+      "rawResponse": "{\"message\":\"Aurora Station is the most likely delivery site due to its active emergency signal, official records, and security presence, despite the collapsed bridge. The bridge collapse is a critical obstacle, but no other site has active communication or traffic, making Aurora the only viable option under urgency.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Aurora Station\":0.7000,\"Beacon Post\":0.1500,\"Canyon Depot\":0.1500}},\"evidence\":[{\"content\":\"Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.\",\"relation\":\"supports\"},{\"content\":\"Road sensors suggest recent vehicular traffic toward Aurora Station but not toward other sites.\",\"relation\":\"supports\"},{\"content\":\"Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.\",\"relation\":\"supports\"},{\"content\":\"The only bridge leading to Aurora Station was reported collapsed an hour ago by a search drone.\",\"relation\":\"attacks\"},{\"content\":\"Beacon Post and Canyon Depot both lacked updated communication logs as of an hour ago.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 862,
+        "completionTokens": 306,
+        "totalTokens": 1168,
+        "latencyMs": 6105
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:1",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYour team is tasked with ensuring the safe delivery of a vital energy artifact needed to restore the region's power grid after a blackout. There are three facilities that could receive the artifact: Aurora Station, Beacon Post, and Canyon Depot. Each site has been used for similar deliveries in the past, but complex conditions due to the blackout make this delivery especially difficult. Communications are partially down, so each of you receives a special update from a different source on the ground, but you have only a few minutes to make a final delivery decision as power must be restored urgently. The artifact will only function if delivered to a location that meets precise criteria for access, security, and operational readiness.\n\nShared information:\n1. Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.\n2. Road sensors suggest recent vehicular traffic toward Aurora Station but not toward other sites.\n3. Beacon Post and Canyon Depot both lacked updated communication logs as of an hour ago.\n4. Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.\n\nYour private information:\nSecurity personnel at Aurora Station were evacuated in the last 30 minutes due to a hazardous chemical leak.\n\nVisible discussion transcript:\n[round 2] agent:hiddenbench:43:1: Aurora Station remains the most probable delivery site despite the chemical leak, as it is the only location with an active emergency signal, recent traffic, and official records as the primary emergency storage site. The leak reduces security readiness but does not eliminate it, and no better alternatives exist.\n[round 2] agent:hiddenbench:43:2: Aurora Station is the most likely delivery site due to its active emergency signal, official records, and security presence, despite accessibility challenges. Canyon Depot is a fallback with an accessible loading bay but lacks active communication. Beacon Post is ruled out due to a blocked loading bay.\n[round 2] agent:hiddenbench:43:3: Aurora Station is the most likely delivery site due to its active emergency signal, official records, and security presence, despite the climate control issue. Beacon Post and Canyon Depot lack recent communication, making them less reliable. The urgency of power restoration and lack of better alternatives support prioritizing Aurora Station.\n[round 2] agent:hiddenbench:43:4: Aurora Station is the most likely delivery site due to its active emergency signal, official records, and security presence, despite the collapsed bridge. The bridge collapse is a critical obstacle, but no other site has active communication or traffic, making Aurora the only viable option under urgency.\n\nClaim claim:hiddenbench:43:answer: Select the single correct answer for HiddenBench task 43 (The Artifact Delivery).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Aurora Station | Beacon Post | Canyon Depot. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Aurora Station\": 0.5, \"Beacon Post\": 0.2500, \"Canyon Depot\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:4e213be5740c96064008dd666715860de8af1541f79261f152c8dd33246230bb",
+      "responseHash": "sha256:f49f7bc1464088564c97001d4cf4521364b7af7da1f6d5d6d8204fa16f5981b0",
+      "rawResponse": "{\"message\":\"Aurora Station is the most probable delivery site due to its active emergency signal, official records, and recent traffic, despite the chemical leak reducing security readiness. No other site has active communication or viable alternatives under urgency.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Aurora Station\":0.8000,\"Beacon Post\":0.1000,\"Canyon Depot\":0.1000}},\"evidence\":[{\"content\":\"Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.\",\"relation\":\"supports\"},{\"content\":\"Road sensors suggest recent vehicular traffic toward Aurora Station but not toward other sites.\",\"relation\":\"supports\"},{\"content\":\"Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.\",\"relation\":\"supports\"},{\"content\":\"Security personnel at Aurora Station were evacuated in the last 30 minutes due to a hazardous chemical leak.\",\"relation\":\"attacks\"},{\"content\":\"Beacon Post and Canyon Depot both lacked updated communication logs as of an hour ago.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 812,
+        "completionTokens": 296,
+        "totalTokens": 1108,
+        "latencyMs": 13191
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:2",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYour team is tasked with ensuring the safe delivery of a vital energy artifact needed to restore the region's power grid after a blackout. There are three facilities that could receive the artifact: Aurora Station, Beacon Post, and Canyon Depot. Each site has been used for similar deliveries in the past, but complex conditions due to the blackout make this delivery especially difficult. Communications are partially down, so each of you receives a special update from a different source on the ground, but you have only a few minutes to make a final delivery decision as power must be restored urgently. The artifact will only function if delivered to a location that meets precise criteria for access, security, and operational readiness.\n\nShared information:\n1. Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.\n2. Road sensors suggest recent vehicular traffic toward Aurora Station but not toward other sites.\n3. Beacon Post and Canyon Depot both lacked updated communication logs as of an hour ago.\n4. Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.\n\nYour private information:\nBeacon Post's loading bay was blocked by a landslide this morning; only Canyon Depot has an accessible loading area.\n\nVisible discussion transcript:\n[round 2] agent:hiddenbench:43:1: Aurora Station remains the most probable delivery site despite the chemical leak, as it is the only location with an active emergency signal, recent traffic, and official records as the primary emergency storage site. The leak reduces security readiness but does not eliminate it, and no better alternatives exist.\n[round 2] agent:hiddenbench:43:2: Aurora Station is the most likely delivery site due to its active emergency signal, official records, and security presence, despite accessibility challenges. Canyon Depot is a fallback with an accessible loading bay but lacks active communication. Beacon Post is ruled out due to a blocked loading bay.\n[round 2] agent:hiddenbench:43:3: Aurora Station is the most likely delivery site due to its active emergency signal, official records, and security presence, despite the climate control issue. Beacon Post and Canyon Depot lack recent communication, making them less reliable. The urgency of power restoration and lack of better alternatives support prioritizing Aurora Station.\n[round 2] agent:hiddenbench:43:4: Aurora Station is the most likely delivery site due to its active emergency signal, official records, and security presence, despite the collapsed bridge. The bridge collapse is a critical obstacle, but no other site has active communication or traffic, making Aurora the only viable option under urgency.\n\nClaim claim:hiddenbench:43:answer: Select the single correct answer for HiddenBench task 43 (The Artifact Delivery).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Aurora Station | Beacon Post | Canyon Depot. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Aurora Station\": 0.5, \"Beacon Post\": 0.2500, \"Canyon Depot\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:8f495a2408a2edd162de9c4a0b75c4491a45b86905ed46dd2003ffd7bfd2aecf",
+      "responseHash": "sha256:9c06e3c189fea2f8fd62d9c4097f9da088f6ebd73e55443eb521cb9be4bc4f41",
+      "rawResponse": "{\"message\":\"Aurora Station is the most probable delivery site due to its active emergency signal, recent traffic, and official records as the primary emergency storage site. While accessibility challenges exist, no other site has active communication or traffic, making it the only viable option under urgency.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Aurora Station\":0.8,\"Beacon Post\":0.1,\"Canyon Depot\":0.1}},\"evidence\":[{\"content\":\"Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.\",\"relation\":\"supports\"},{\"content\":\"Road sensors suggest recent vehicular traffic toward Aurora Station but not toward other sites.\",\"relation\":\"supports\"},{\"content\":\"Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.\",\"relation\":\"supports\"},{\"content\":\"Beacon Post and Canyon Depot both lacked updated communication logs as of an hour ago.\",\"relation\":\"attacks\"},{\"content\":\"Beacon Post's loading bay was blocked by a landslide this morning; only Canyon Depot has an accessible loading area.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 815,
+        "completionTokens": 307,
+        "totalTokens": 1122,
+        "latencyMs": 7683
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:3",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYour team is tasked with ensuring the safe delivery of a vital energy artifact needed to restore the region's power grid after a blackout. There are three facilities that could receive the artifact: Aurora Station, Beacon Post, and Canyon Depot. Each site has been used for similar deliveries in the past, but complex conditions due to the blackout make this delivery especially difficult. Communications are partially down, so each of you receives a special update from a different source on the ground, but you have only a few minutes to make a final delivery decision as power must be restored urgently. The artifact will only function if delivered to a location that meets precise criteria for access, security, and operational readiness.\n\nShared information:\n1. Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.\n2. Road sensors suggest recent vehicular traffic toward Aurora Station but not toward other sites.\n3. Beacon Post and Canyon Depot both lacked updated communication logs as of an hour ago.\n4. Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.\n\nYour private information:\nThe energy artifact requires a functioning climate control system: Aurora Station's system failed during the blackout and is still offline.\n\nVisible discussion transcript:\n[round 2] agent:hiddenbench:43:1: Aurora Station remains the most probable delivery site despite the chemical leak, as it is the only location with an active emergency signal, recent traffic, and official records as the primary emergency storage site. The leak reduces security readiness but does not eliminate it, and no better alternatives exist.\n[round 2] agent:hiddenbench:43:2: Aurora Station is the most likely delivery site due to its active emergency signal, official records, and security presence, despite accessibility challenges. Canyon Depot is a fallback with an accessible loading bay but lacks active communication. Beacon Post is ruled out due to a blocked loading bay.\n[round 2] agent:hiddenbench:43:3: Aurora Station is the most likely delivery site due to its active emergency signal, official records, and security presence, despite the climate control issue. Beacon Post and Canyon Depot lack recent communication, making them less reliable. The urgency of power restoration and lack of better alternatives support prioritizing Aurora Station.\n[round 2] agent:hiddenbench:43:4: Aurora Station is the most likely delivery site due to its active emergency signal, official records, and security presence, despite the collapsed bridge. The bridge collapse is a critical obstacle, but no other site has active communication or traffic, making Aurora the only viable option under urgency.\n\nClaim claim:hiddenbench:43:answer: Select the single correct answer for HiddenBench task 43 (The Artifact Delivery).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Aurora Station | Beacon Post | Canyon Depot. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Aurora Station\": 0.5, \"Beacon Post\": 0.2500, \"Canyon Depot\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:71f0e9a5b38e75199b1d6f741f947fc29b1a3b760827b4d8fc43de99db08f4da",
+      "responseHash": "sha256:1fb4ef5bafd79af766910cedb05c56f46dad7ca455639a1b208d666206cb4c83",
+      "rawResponse": "{\"message\":\"Aurora Station is the most probable delivery site due to its active emergency signal, official records, and security presence, despite the climate control issue. The urgency of power restoration and lack of better alternatives support prioritizing Aurora Station.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Aurora Station\":0.7000,\"Beacon Post\":0.1500,\"Canyon Depot\":0.1500}},\"evidence\":[{\"content\":\"Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.\",\"relation\":\"supports\"},{\"content\":\"Road sensors suggest recent vehicular traffic toward Aurora Station but not toward other sites.\",\"relation\":\"supports\"},{\"content\":\"Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.\",\"relation\":\"supports\"},{\"content\":\"The energy artifact requires a functioning climate control system: Aurora Station's system failed during the blackout and is still offline.\",\"relation\":\"attacks\"},{\"content\":\"Beacon Post and Canyon Depot both lacked updated communication logs as of an hour ago.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 815,
+        "completionTokens": 301,
+        "totalTokens": 1116,
+        "latencyMs": 9958
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:43:seed-1:r3:agent:hiddenbench:43:4",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYour team is tasked with ensuring the safe delivery of a vital energy artifact needed to restore the region's power grid after a blackout. There are three facilities that could receive the artifact: Aurora Station, Beacon Post, and Canyon Depot. Each site has been used for similar deliveries in the past, but complex conditions due to the blackout make this delivery especially difficult. Communications are partially down, so each of you receives a special update from a different source on the ground, but you have only a few minutes to make a final delivery decision as power must be restored urgently. The artifact will only function if delivered to a location that meets precise criteria for access, security, and operational readiness.\n\nShared information:\n1. Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.\n2. Road sensors suggest recent vehicular traffic toward Aurora Station but not toward other sites.\n3. Beacon Post and Canyon Depot both lacked updated communication logs as of an hour ago.\n4. Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.\n\nYour private information:\nThe only bridge leading to Aurora Station was reported collapsed an hour ago by a search drone.\n\nVisible discussion transcript:\n[round 2] agent:hiddenbench:43:1: Aurora Station remains the most probable delivery site despite the chemical leak, as it is the only location with an active emergency signal, recent traffic, and official records as the primary emergency storage site. The leak reduces security readiness but does not eliminate it, and no better alternatives exist.\n[round 2] agent:hiddenbench:43:2: Aurora Station is the most likely delivery site due to its active emergency signal, official records, and security presence, despite accessibility challenges. Canyon Depot is a fallback with an accessible loading bay but lacks active communication. Beacon Post is ruled out due to a blocked loading bay.\n[round 2] agent:hiddenbench:43:3: Aurora Station is the most likely delivery site due to its active emergency signal, official records, and security presence, despite the climate control issue. Beacon Post and Canyon Depot lack recent communication, making them less reliable. The urgency of power restoration and lack of better alternatives support prioritizing Aurora Station.\n[round 2] agent:hiddenbench:43:4: Aurora Station is the most likely delivery site due to its active emergency signal, official records, and security presence, despite the collapsed bridge. The bridge collapse is a critical obstacle, but no other site has active communication or traffic, making Aurora the only viable option under urgency.\n\nClaim claim:hiddenbench:43:answer: Select the single correct answer for HiddenBench task 43 (The Artifact Delivery).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Aurora Station | Beacon Post | Canyon Depot. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Aurora Station\": 0.5, \"Beacon Post\": 0.2500, \"Canyon Depot\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:6f89927cba8e9e021169191076a74bebf970657bfd660962af5b7f7233ef19ed",
+      "responseHash": "sha256:67c212910003922394a321972900a29fb8a6635fc23454045622c7b333817cb0",
+      "rawResponse": "{\"message\":\"Aurora Station is the most likely delivery site despite the collapsed bridge, as it is the only location with an active emergency signal, recent traffic, and official records as the primary emergency storage site. The bridge collapse is a critical obstacle, but no other site has active communication or traffic, making Aurora the only viable option under urgency.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Aurora Station\":0.8,\"Beacon Post\":0.1,\"Canyon Depot\":0.1}},\"evidence\":[{\"content\":\"Aurora Station broadcasts the only still-active emergency signal requesting delivery and appears to have security personnel on-site.\",\"relation\":\"supports\"},{\"content\":\"Road sensors suggest recent vehicular traffic toward Aurora Station but not toward other sites.\",\"relation\":\"supports\"},{\"content\":\"Official logistics records list Aurora Station as the primary candidate for artifact storage during emergencies.\",\"relation\":\"supports\"},{\"content\":\"The only bridge leading to Aurora Station was reported collapsed an hour ago by a search drone.\",\"relation\":\"attacks\"},{\"content\":\"Beacon Post and Canyon Depot both lacked updated communication logs as of an hour ago.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 810,
+        "completionTokens": 314,
+        "totalTokens": 1124,
+        "latencyMs": 8833
+      }
+    }
+  ],
+  "r3SnapshotHash": "sha256:67b4f2f7d4d3cd963b226f605455e2da6053034696bfa6cb3f8964273b487a40",
+  "contentHash": "sha256:82f66c700e2d685c16fcdce1aec213f345f08eebd20148af26dba4befb740e4f"
+}

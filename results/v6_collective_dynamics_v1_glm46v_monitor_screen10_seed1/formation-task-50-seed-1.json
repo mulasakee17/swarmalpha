@@ -1,0 +1,1146 @@
+{
+  "artifactRef": {
+    "id": "swarmalpha.experiment.v6.collective-epistemic-dynamics.formation",
+    "version": "1.0.0"
+  },
+  "planHash": "sha256:c5b6e20b332cdf9a6d0b40964deb0249da63407111b9e415f7cee388eab449e9",
+  "runId": "collective-dynamics:50:seed-1",
+  "seed": 1,
+  "modelRef": {
+    "id": "zhipu:glm-4.6v",
+    "version": "1.0.0"
+  },
+  "onlineTask": {
+    "sourceTaskId": 50,
+    "taskId": "task:hiddenbench:50",
+    "publicContext": "You are members of a company’s crisis management team. A critical, confidential meeting must take place in the next hour to approve a response to a possible data breach. Three conference rooms are available: Alpha, Beta, and Gamma. Only one room meets all safety and security requirements for such a high-stakes meeting. After the group discussion, you must jointly select the correct room; using the wrong room could lead to leakage or disrupt the decision-making process. Your performance will affect your bonus.\n\nShared information:\n1. Conference Room Alpha is next to a construction site, so there might be noise disturbances, and the security team noted occasional disruptions.\n2. Conference Room Beta was recently upgraded with soundproofing and was cleared by the IT team for secure devices. The IT team noted a scheduled system upgrade in the area, but it should be complete before your meeting.\n3. Conference Room Gamma is the farthest from the main entrance and is often overlooked by staff; the security team hasn't finished their full review of the new locks on its doors.",
+    "claim": {
+      "id": "claim:hiddenbench:50:answer",
+      "proposition": "Select the single correct answer for HiddenBench task 50 (secure_meeting_room_decision).",
+      "domain": "hiddenbench-categorical-decision",
+      "createdAt": "2026-08-11T00:00:00.000Z",
+      "options": [
+        "Conference Room Alpha",
+        "Conference Room Beta",
+        "Conference Room Gamma"
+      ],
+      "resolutionPolicy": {
+        "kind": "categorical",
+        "resolverId": "resolver:hiddenbench-data-3be6ca16"
+      }
+    },
+    "agents": [
+      {
+        "agentId": "agent:hiddenbench:50:1",
+        "privateInformation": "A security audit report (just released) confirms that Conference Room Gamma’s new locks have been installed and tested – it's currently the most secure room in the building."
+      },
+      {
+        "agentId": "agent:hiddenbench:50:2",
+        "privateInformation": "The building’s fire alarm system is being tested in the zone containing Conference Room Beta at exactly the meeting's starting time, which may require immediate evacuation."
+      },
+      {
+        "agentId": "agent:hiddenbench:50:3",
+        "privateInformation": "An urgent email from facilities says the Wi-Fi in Conference Room Alpha is unreliable today and IT can't guarantee stable video conferencing."
+      }
+    ]
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "messages": [
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:50:1",
+          "content": "Based on the security audit report confirming Gamma's new locks are installed and tested, making it the most secure room, I conclude Gamma is the correct choice.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:50:2",
+          "content": "Based on the information, Conference Room Alpha is the only viable option. Beta has a fire alarm test at the meeting start time, which would disrupt the meeting. Gamma's security review is incomplete, making it unsuitable for a high-stakes, confidential meeting. Alpha, while having noise issues, is the only room without an immediate, guaranteed disruption like the fire alarm test or incomplete security review.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:50:3",
+          "content": "Based on the information, Conference Room Beta is the most secure and reliable choice for the high-stakes meeting.",
+          "source": "agent"
+        }
+      ],
+      "reports": [
+        {
+          "id": "belief:collective-dynamics:50:seed-1:r1:agent:hiddenbench:50:1",
+          "claimId": "claim:hiddenbench:50:answer",
+          "agentId": "agent:hiddenbench:50:1",
+          "round": 1,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Conference Room Alpha": 0,
+              "Conference Room Beta": 0,
+              "Conference Room Gamma": 1
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:50:seed-1:r1:agent:hiddenbench:50:1:1",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:01:01.000Z"
+        },
+        {
+          "id": "belief:collective-dynamics:50:seed-1:r1:agent:hiddenbench:50:2",
+          "claimId": "claim:hiddenbench:50:answer",
+          "agentId": "agent:hiddenbench:50:2",
+          "round": 1,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Conference Room Alpha": 1,
+              "Conference Room Beta": 0,
+              "Conference Room Gamma": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:50:seed-1:r1:agent:hiddenbench:50:2:1",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:50:seed-1:r1:agent:hiddenbench:50:2:2",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:50:seed-1:r1:agent:hiddenbench:50:2:3",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:01:02.000Z"
+        },
+        {
+          "id": "belief:collective-dynamics:50:seed-1:r1:agent:hiddenbench:50:3",
+          "claimId": "claim:hiddenbench:50:answer",
+          "agentId": "agent:hiddenbench:50:3",
+          "round": 1,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Conference Room Alpha": 0,
+              "Conference Room Beta": 1,
+              "Conference Room Gamma": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:50:seed-1:r1:agent:hiddenbench:50:3:1",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:50:seed-1:r1:agent:hiddenbench:50:3:2",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:50:seed-1:r1:agent:hiddenbench:50:3:3",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:50:seed-1:r1:agent:hiddenbench:50:3:4",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:50:seed-1:r1:agent:hiddenbench:50:3:5",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:01:03.000Z"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "evidence:collective-dynamics:50:seed-1:r1:agent:hiddenbench:50:1:1",
+          "content": "A security audit report (just released) confirms that Conference Room Gamma’s new locks have been installed and tested – it's currently the most secure room in the building.",
+          "createdAt": "2026-08-24T00:01:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:50:1",
+            "contentHash": "sha256:c451f72b0a2d9efde3d26bc05e31d95c8b4b74f56f359382a5d2f59a39508f4c"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:50:seed-1:r1:agent:hiddenbench:50:2:1",
+          "content": "The building’s fire alarm system is being tested in the zone containing Conference Room Beta at exactly the meeting's starting time, which may require immediate evacuation.",
+          "createdAt": "2026-08-24T00:01:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:50:2",
+            "contentHash": "sha256:8d7db4353df22b25e12517f555e93b4a77a4a988f03fd1a143641dc32a4551a4"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:50:seed-1:r1:agent:hiddenbench:50:2:2",
+          "content": "Conference Room Gamma is the farthest from the main entrance and is often overlooked by staff; the security team hasn't finished their full review of the new locks on its doors.",
+          "createdAt": "2026-08-24T00:01:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:50:2",
+            "contentHash": "sha256:895267229171138d18bcf897c89f1ec59148466c6e69a36482fe93528793d838"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:50:seed-1:r1:agent:hiddenbench:50:2:3",
+          "content": "Conference Room Alpha is next to a construction site, so there might be noise disturbances, and the security team noted occasional disruptions.",
+          "createdAt": "2026-08-24T00:01:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:50:2",
+            "contentHash": "sha256:8907ede7c1e4b844c8d9365ae62e31729f9c162d5e02c433d05dd73dd24c2514"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:50:seed-1:r1:agent:hiddenbench:50:3:1",
+          "content": "Conference Room Alpha is next to a construction site, causing potential noise disturbances and occasional security disruptions.",
+          "createdAt": "2026-08-24T00:01:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:50:3",
+            "contentHash": "sha256:001df738f412057bfdc1a808ce747d1c3c636a4ad5d97dd09d28391f8f074f9c"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:50:seed-1:r1:agent:hiddenbench:50:3:2",
+          "content": "An urgent email from facilities states the Wi-Fi in Conference Room Alpha is unreliable today, making stable video conferencing impossible.",
+          "createdAt": "2026-08-24T00:01:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:50:3",
+            "contentHash": "sha256:9ce6891863d3b5192e9ae4d77c05746d587296bc8e67e646053803a9963f4750"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:50:seed-1:r1:agent:hiddenbench:50:3:3",
+          "content": "Conference Room Beta was recently upgraded with soundproofing and cleared by the IT team for secure devices.",
+          "createdAt": "2026-08-24T00:01:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:50:3",
+            "contentHash": "sha256:4c72672f558c0bc95353ef18079b505459cf37eec26b1e325a57a86ee852fbea"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:50:seed-1:r1:agent:hiddenbench:50:3:4",
+          "content": "The IT team noted a scheduled system upgrade in the area of Conference Room Beta, but it should be complete before the meeting.",
+          "createdAt": "2026-08-24T00:01:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:50:3",
+            "contentHash": "sha256:ccd68c9e80b2131a6f82a81026078a2500f08538c105c792c6870fc60442ce8c"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:50:seed-1:r1:agent:hiddenbench:50:3:5",
+          "content": "Conference Room Gamma is the farthest from the main entrance and often overlooked by staff; the security team hasn't finished their full review of the new locks on its doors.",
+          "createdAt": "2026-08-24T00:01:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:50:3",
+            "contentHash": "sha256:e6c18fe4d6f49949f560448b5e1063f92c7143563c2f52b2c40f85e185a9f144"
+          }
+        }
+      ],
+      "state": {
+        "activeAgentIds": [
+          "agent:hiddenbench:50:1",
+          "agent:hiddenbench:50:2",
+          "agent:hiddenbench:50:3"
+        ],
+        "artifactSchemaRef": {
+          "id": "swarmalpha.collective-epistemic-state",
+          "version": "1.0.0"
+        },
+        "asOfRound": 1,
+        "beliefKind": "categorical",
+        "betweenAgentDisagreement": 1,
+        "claimId": "claim:hiddenbench:50:answer",
+        "claimOptionCount": 3,
+        "contentHash": "sha256:8d42d633785e763c82027fdc6b5172ae3d835b27bd23607881757962b06dcb59",
+        "declaredLineageDiversity": {
+          "completeness": "missing",
+          "distinctDeclaredLineageCount": 0,
+          "effectiveLineageCount": null,
+          "missingLineageReportIds": [
+            "belief:collective-dynamics:50:seed-1:r1:agent:hiddenbench:50:1",
+            "belief:collective-dynamics:50:seed-1:r1:agent:hiddenbench:50:2",
+            "belief:collective-dynamics:50:seed-1:r1:agent:hiddenbench:50:3"
+          ],
+          "normalizedLineageEntropy": null,
+          "reportsMissingDeclaredLineage": 3,
+          "reportsWithDeclaredLineage": 0
+        },
+        "expectedAgentIds": [
+          "agent:hiddenbench:50:1",
+          "agent:hiddenbench:50:2",
+          "agent:hiddenbench:50:3"
+        ],
+        "exposureConditionedRevision": {
+          "meanBeliefDistance": null,
+          "revisionCount": 0,
+          "targetAgentCount": 0,
+          "totalBeliefDistance": 0
+        },
+        "inferenceStatus": "descriptive_macrostate_only",
+        "latestReportIds": [
+          "belief:collective-dynamics:50:seed-1:r1:agent:hiddenbench:50:1",
+          "belief:collective-dynamics:50:seed-1:r1:agent:hiddenbench:50:2",
+          "belief:collective-dynamics:50:seed-1:r1:agent:hiddenbench:50:3"
+        ],
+        "missingExpectedAgentIds": [],
+        "observedResponseConcentration": {
+          "herfindahlIndex": null,
+          "normalizedHerfindahl": null,
+          "responseMassBySourceAgent": {},
+          "sourceAgentCount": 0,
+          "status": "unavailable",
+          "unavailableReason": "no_exposure_conditioned_response_mass"
+        },
+        "pooledBelief": {
+          "kind": "categorical",
+          "probabilities": {
+            "Conference Room Alpha": 0.3333333333333333,
+            "Conference Room Beta": 0.3333333333333333,
+            "Conference Room Gamma": 0.3333333333333333
+          }
+        },
+        "pooledCertainty": 0.3333333333333333,
+        "pooledPredictedOutcomes": [
+          "Conference Room Alpha",
+          "Conference Room Beta",
+          "Conference Room Gamma"
+        ],
+        "pooledUncertainty": 1,
+        "populationBasis": "declared_roster",
+        "sourceFingerprints": {
+          "claim": "sha256:c70d0d8c7614d9ae38277b2f3cb7f2e047b95e36b8298edfe03d7508cb5d97fc",
+          "evidence": "sha256:57c96392220bb53bdc8703b81d1df46189734f2373cfe2e4fa4aa8a9793bb78f",
+          "exposures": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "reports": "sha256:1cf01ddd4893dc9d2b71aa881fa85792086b88c2bd718a489d0bdad8435a0a53"
+        },
+        "withinAgentUncertainty": 0
+      },
+      "updateActivityFromPrior": null
+    },
+    {
+      "round": 2,
+      "messages": [
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:50:1",
+          "content": "Based on the security audit report confirming Gamma's new locks are installed and tested, making it the most secure room, I conclude Gamma is the correct choice.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:50:2",
+          "content": "After analyzing the shared and private information, Conference Room Beta is the most secure and reliable choice, despite the fire alarm test, as it has soundproofing and was cleared by the IT team. The test is scheduled to complete before the meeting, and no other room offers the same level of security.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:50:3",
+          "content": "After analyzing the shared and private information, Conference Room Beta is the most suitable choice. It has soundproofing, was cleared by IT for secure devices, and the scheduled system upgrade should be complete before the meeting. Alpha has unreliable Wi-Fi and noise issues, while Gamma's security review is incomplete.",
+          "source": "agent"
+        }
+      ],
+      "reports": [
+        {
+          "id": "belief:collective-dynamics:50:seed-1:r2:agent:hiddenbench:50:1",
+          "claimId": "claim:hiddenbench:50:answer",
+          "agentId": "agent:hiddenbench:50:1",
+          "round": 2,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Conference Room Alpha": 0,
+              "Conference Room Beta": 0,
+              "Conference Room Gamma": 1
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:50:seed-1:r2:agent:hiddenbench:50:1:1",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:02:01.000Z",
+          "supersedesReportId": "belief:collective-dynamics:50:seed-1:r1:agent:hiddenbench:50:1"
+        },
+        {
+          "id": "belief:collective-dynamics:50:seed-1:r2:agent:hiddenbench:50:2",
+          "claimId": "claim:hiddenbench:50:answer",
+          "agentId": "agent:hiddenbench:50:2",
+          "round": 2,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Conference Room Alpha": 0.1,
+              "Conference Room Beta": 0.8,
+              "Conference Room Gamma": 0.1
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:50:seed-1:r2:agent:hiddenbench:50:2:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:50:seed-1:r2:agent:hiddenbench:50:2:2",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:50:seed-1:r2:agent:hiddenbench:50:2:3",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:50:seed-1:r2:agent:hiddenbench:50:2:4",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:02:02.000Z",
+          "supersedesReportId": "belief:collective-dynamics:50:seed-1:r1:agent:hiddenbench:50:2"
+        },
+        {
+          "id": "belief:collective-dynamics:50:seed-1:r2:agent:hiddenbench:50:3",
+          "claimId": "claim:hiddenbench:50:answer",
+          "agentId": "agent:hiddenbench:50:3",
+          "round": 2,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Conference Room Alpha": 0,
+              "Conference Room Beta": 1,
+              "Conference Room Gamma": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:50:seed-1:r2:agent:hiddenbench:50:3:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:50:seed-1:r2:agent:hiddenbench:50:3:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:50:seed-1:r2:agent:hiddenbench:50:3:3",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:50:seed-1:r2:agent:hiddenbench:50:3:4",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:50:seed-1:r2:agent:hiddenbench:50:3:5",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:02:03.000Z",
+          "supersedesReportId": "belief:collective-dynamics:50:seed-1:r1:agent:hiddenbench:50:3"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "evidence:collective-dynamics:50:seed-1:r2:agent:hiddenbench:50:1:1",
+          "content": "A security audit report (just released) confirms that Conference Room Gamma’s new locks have been installed and tested – it's currently the most secure room in the building.",
+          "createdAt": "2026-08-24T00:02:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:50:1",
+            "contentHash": "sha256:c451f72b0a2d9efde3d26bc05e31d95c8b4b74f56f359382a5d2f59a39508f4c"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:50:seed-1:r2:agent:hiddenbench:50:2:1",
+          "content": "Conference Room Beta was recently upgraded with soundproofing and was cleared by the IT team for secure devices.",
+          "createdAt": "2026-08-24T00:02:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:50:2",
+            "contentHash": "sha256:bfc886b0def515427d6198e8373c6eb7491168ffbb594b1e6c34fb89fa8d2664"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:50:seed-1:r2:agent:hiddenbench:50:2:2",
+          "content": "The building’s fire alarm system is being tested in the zone containing Conference Room Beta at exactly the meeting's starting time, which may require immediate evacuation.",
+          "createdAt": "2026-08-24T00:02:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:50:2",
+            "contentHash": "sha256:8d7db4353df22b25e12517f555e93b4a77a4a988f03fd1a143641dc32a4551a4"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:50:seed-1:r2:agent:hiddenbench:50:2:3",
+          "content": "Conference Room Alpha is next to a construction site, so there might be noise disturbances, and the security team noted occasional disruptions.",
+          "createdAt": "2026-08-24T00:02:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:50:2",
+            "contentHash": "sha256:8907ede7c1e4b844c8d9365ae62e31729f9c162d5e02c433d05dd73dd24c2514"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:50:seed-1:r2:agent:hiddenbench:50:2:4",
+          "content": "Conference Room Gamma is the farthest from the main entrance and is often overlooked by staff; the security team hasn't finished their full review of the new locks on its doors.",
+          "createdAt": "2026-08-24T00:02:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:50:2",
+            "contentHash": "sha256:895267229171138d18bcf897c89f1ec59148466c6e69a36482fe93528793d838"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:50:seed-1:r2:agent:hiddenbench:50:3:1",
+          "content": "Conference Room Beta was recently upgraded with soundproofing and was cleared by the IT team for secure devices.",
+          "createdAt": "2026-08-24T00:02:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:50:3",
+            "contentHash": "sha256:bfc886b0def515427d6198e8373c6eb7491168ffbb594b1e6c34fb89fa8d2664"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:50:seed-1:r2:agent:hiddenbench:50:3:2",
+          "content": "The IT team noted a scheduled system upgrade in the area, but it should be complete before your meeting.",
+          "createdAt": "2026-08-24T00:02:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:50:3",
+            "contentHash": "sha256:8c67948139b2f05de75749992a3852ac12592e96dbe9f8965a22fdac3e5da7d4"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:50:seed-1:r2:agent:hiddenbench:50:3:3",
+          "content": "An urgent email from facilities says the Wi-Fi in Conference Room Alpha is unreliable today and IT can't guarantee stable video conferencing.",
+          "createdAt": "2026-08-24T00:02:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:50:3",
+            "contentHash": "sha256:c0fc64afdbd02417a0f481ab1cef1e4ddb7fc1bab68e9e3581be2a733772a3bf"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:50:seed-1:r2:agent:hiddenbench:50:3:4",
+          "content": "Conference Room Alpha is next to a construction site, so there might be noise disturbances, and the security team noted occasional disruptions.",
+          "createdAt": "2026-08-24T00:02:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:50:3",
+            "contentHash": "sha256:8907ede7c1e4b844c8d9365ae62e31729f9c162d5e02c433d05dd73dd24c2514"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:50:seed-1:r2:agent:hiddenbench:50:3:5",
+          "content": "Conference Room Gamma is the farthest from the main entrance and is often overlooked by staff; the security team hasn't finished their full review of the new locks on its doors.",
+          "createdAt": "2026-08-24T00:02:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:50:3",
+            "contentHash": "sha256:895267229171138d18bcf897c89f1ec59148466c6e69a36482fe93528793d838"
+          }
+        }
+      ],
+      "state": {
+        "activeAgentIds": [
+          "agent:hiddenbench:50:1",
+          "agent:hiddenbench:50:2",
+          "agent:hiddenbench:50:3"
+        ],
+        "artifactSchemaRef": {
+          "id": "swarmalpha.collective-epistemic-state",
+          "version": "1.0.0"
+        },
+        "asOfRound": 2,
+        "beliefKind": "categorical",
+        "betweenAgentDisagreement": 0.5231467427376972,
+        "claimId": "claim:hiddenbench:50:answer",
+        "claimOptionCount": 3,
+        "contentHash": "sha256:adb57f1db56614640698bb885b37a4f28221325dc939d9b825fd15da1ed753d6",
+        "declaredLineageDiversity": {
+          "completeness": "missing",
+          "distinctDeclaredLineageCount": 0,
+          "effectiveLineageCount": null,
+          "missingLineageReportIds": [
+            "belief:collective-dynamics:50:seed-1:r2:agent:hiddenbench:50:1",
+            "belief:collective-dynamics:50:seed-1:r2:agent:hiddenbench:50:2",
+            "belief:collective-dynamics:50:seed-1:r2:agent:hiddenbench:50:3"
+          ],
+          "normalizedLineageEntropy": null,
+          "reportsMissingDeclaredLineage": 3,
+          "reportsWithDeclaredLineage": 0
+        },
+        "expectedAgentIds": [
+          "agent:hiddenbench:50:1",
+          "agent:hiddenbench:50:2",
+          "agent:hiddenbench:50:3"
+        ],
+        "exposureConditionedRevision": {
+          "meanBeliefDistance": null,
+          "revisionCount": 0,
+          "targetAgentCount": 0,
+          "totalBeliefDistance": 0
+        },
+        "inferenceStatus": "descriptive_macrostate_only",
+        "latestReportIds": [
+          "belief:collective-dynamics:50:seed-1:r2:agent:hiddenbench:50:1",
+          "belief:collective-dynamics:50:seed-1:r2:agent:hiddenbench:50:2",
+          "belief:collective-dynamics:50:seed-1:r2:agent:hiddenbench:50:3"
+        ],
+        "missingExpectedAgentIds": [],
+        "observedResponseConcentration": {
+          "herfindahlIndex": null,
+          "normalizedHerfindahl": null,
+          "responseMassBySourceAgent": {},
+          "sourceAgentCount": 0,
+          "status": "unavailable",
+          "unavailableReason": "no_exposure_conditioned_response_mass"
+        },
+        "pooledBelief": {
+          "kind": "categorical",
+          "probabilities": {
+            "Conference Room Alpha": 0.03333333333333333,
+            "Conference Room Beta": 0.6,
+            "Conference Room Gamma": 0.36666666666666664
+          }
+        },
+        "pooledCertainty": 0.6,
+        "pooledPredictedOutcomes": [
+          "Conference Room Beta"
+        ],
+        "pooledUncertainty": 0.7170373646436595,
+        "populationBasis": "declared_roster",
+        "sourceFingerprints": {
+          "claim": "sha256:c70d0d8c7614d9ae38277b2f3cb7f2e047b95e36b8298edfe03d7508cb5d97fc",
+          "evidence": "sha256:ea09d28277b794e9fc39408facc85ea365c3b9a145e49360de929c74d364cdb8",
+          "exposures": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "reports": "sha256:a0fbd8af9b222c0b72003ee3d7138b26eba18e3459ff074caa37fba07758cea3"
+        },
+        "withinAgentUncertainty": 0.1938906219059623
+      },
+      "updateActivityFromPrior": 0.30000000000000004
+    },
+    {
+      "round": 3,
+      "messages": [
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:50:1",
+          "content": "Based on the security audit report confirming Gamma's new locks are installed and tested, making it the most secure room, I conclude Gamma is the correct choice.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:50:2",
+          "content": "After analyzing all shared and private information, Conference Room Gamma is the most secure and reliable choice. While Beta has soundproofing and IT clearance, the fire alarm test during the meeting poses a critical risk of disruption. Alpha has noise and security issues, and Gamma's lock review, though incomplete, is still more secure than the other options given the fire alarm risk in Beta.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:50:3",
+          "content": "After analyzing all shared and private information, Conference Room Beta is the most secure and reliable choice. It has soundproofing, was cleared by IT for secure devices, and the scheduled system upgrade should complete before the meeting. Alpha has unreliable Wi-Fi and noise issues, while Gamma's security review is incomplete.",
+          "source": "agent"
+        }
+      ],
+      "reports": [
+        {
+          "id": "belief:collective-dynamics:50:seed-1:r3:agent:hiddenbench:50:1",
+          "claimId": "claim:hiddenbench:50:answer",
+          "agentId": "agent:hiddenbench:50:1",
+          "round": 3,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Conference Room Alpha": 0,
+              "Conference Room Beta": 0,
+              "Conference Room Gamma": 1
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:50:seed-1:r3:agent:hiddenbench:50:1:1",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:03:01.000Z",
+          "supersedesReportId": "belief:collective-dynamics:50:seed-1:r2:agent:hiddenbench:50:1"
+        },
+        {
+          "id": "belief:collective-dynamics:50:seed-1:r3:agent:hiddenbench:50:2",
+          "claimId": "claim:hiddenbench:50:answer",
+          "agentId": "agent:hiddenbench:50:2",
+          "round": 3,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Conference Room Alpha": 0,
+              "Conference Room Beta": 0,
+              "Conference Room Gamma": 1
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:50:seed-1:r3:agent:hiddenbench:50:2:1",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:50:seed-1:r3:agent:hiddenbench:50:2:2",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:50:seed-1:r3:agent:hiddenbench:50:2:3",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "supersedesReportId": "belief:collective-dynamics:50:seed-1:r2:agent:hiddenbench:50:2"
+        },
+        {
+          "id": "belief:collective-dynamics:50:seed-1:r3:agent:hiddenbench:50:3",
+          "claimId": "claim:hiddenbench:50:answer",
+          "agentId": "agent:hiddenbench:50:3",
+          "round": 3,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Conference Room Alpha": 0,
+              "Conference Room Beta": 1,
+              "Conference Room Gamma": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:50:seed-1:r3:agent:hiddenbench:50:3:1",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:50:seed-1:r3:agent:hiddenbench:50:3:2",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:50:seed-1:r3:agent:hiddenbench:50:3:3",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:50:seed-1:r3:agent:hiddenbench:50:3:4",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:50:seed-1:r3:agent:hiddenbench:50:3:5",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "supersedesReportId": "belief:collective-dynamics:50:seed-1:r2:agent:hiddenbench:50:3"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "evidence:collective-dynamics:50:seed-1:r3:agent:hiddenbench:50:1:1",
+          "content": "A security audit report (just released) confirms that Conference Room Gamma’s new locks have been installed and tested – it's currently the most secure room in the building.",
+          "createdAt": "2026-08-24T00:03:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:50:1",
+            "contentHash": "sha256:c451f72b0a2d9efde3d26bc05e31d95c8b4b74f56f359382a5d2f59a39508f4c"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:50:seed-1:r3:agent:hiddenbench:50:2:1",
+          "content": "Conference Room Alpha is next to a construction site, causing noise disturbances and occasional security disruptions.",
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:50:2",
+            "contentHash": "sha256:80ef7a50f0e6827dbd8c912486195fe8937478f5434debb838c3fc6008e14c4c"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:50:seed-1:r3:agent:hiddenbench:50:2:2",
+          "content": "Conference Room Beta has soundproofing and IT clearance but will have a fire alarm test during the meeting, risking evacuation.",
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:50:2",
+            "contentHash": "sha256:de6d42d07d0e1e392567adf98c6e11aae88a6c4bd1d2291a72fadf32c82977e1"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:50:seed-1:r3:agent:hiddenbench:50:2:3",
+          "content": "Conference Room Gamma is the farthest from the main entrance and has new locks, making it the most secure despite incomplete review.",
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:50:2",
+            "contentHash": "sha256:62fbc6aeee094b9e473cacbff53d4ccc723dc58e7fa51873120b77e27fa6b2c1"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:50:seed-1:r3:agent:hiddenbench:50:3:1",
+          "content": "Conference Room Alpha is next to a construction site, so there might be noise disturbances, and the security team noted occasional disruptions.",
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:50:3",
+            "contentHash": "sha256:8907ede7c1e4b844c8d9365ae62e31729f9c162d5e02c433d05dd73dd24c2514"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:50:seed-1:r3:agent:hiddenbench:50:3:2",
+          "content": "An urgent email from facilities says the Wi-Fi in Conference Room Alpha is unreliable today and IT can't guarantee stable video conferencing.",
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:50:3",
+            "contentHash": "sha256:c0fc64afdbd02417a0f481ab1cef1e4ddb7fc1bab68e9e3581be2a733772a3bf"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:50:seed-1:r3:agent:hiddenbench:50:3:3",
+          "content": "Conference Room Beta was recently upgraded with soundproofing and was cleared by the IT team for secure devices.",
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:50:3",
+            "contentHash": "sha256:bfc886b0def515427d6198e8373c6eb7491168ffbb594b1e6c34fb89fa8d2664"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:50:seed-1:r3:agent:hiddenbench:50:3:4",
+          "content": "The IT team noted a scheduled system upgrade in the area, but it should be complete before your meeting.",
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:50:3",
+            "contentHash": "sha256:8c67948139b2f05de75749992a3852ac12592e96dbe9f8965a22fdac3e5da7d4"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:50:seed-1:r3:agent:hiddenbench:50:3:5",
+          "content": "Conference Room Gamma is the farthest from the main entrance and is often overlooked by staff; the security team hasn't finished their full review of the new locks on its doors.",
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:50:3",
+            "contentHash": "sha256:895267229171138d18bcf897c89f1ec59148466c6e69a36482fe93528793d838"
+          }
+        }
+      ],
+      "state": {
+        "activeAgentIds": [
+          "agent:hiddenbench:50:1",
+          "agent:hiddenbench:50:2",
+          "agent:hiddenbench:50:3"
+        ],
+        "artifactSchemaRef": {
+          "id": "swarmalpha.collective-epistemic-state",
+          "version": "1.0.0"
+        },
+        "asOfRound": 3,
+        "beliefKind": "categorical",
+        "betweenAgentDisagreement": 0.579380164285695,
+        "claimId": "claim:hiddenbench:50:answer",
+        "claimOptionCount": 3,
+        "contentHash": "sha256:306f6e6d1179572a3d9460a26b8082f947c17a95c2314c961aa17d91658709c7",
+        "declaredLineageDiversity": {
+          "completeness": "missing",
+          "distinctDeclaredLineageCount": 0,
+          "effectiveLineageCount": null,
+          "missingLineageReportIds": [
+            "belief:collective-dynamics:50:seed-1:r3:agent:hiddenbench:50:1",
+            "belief:collective-dynamics:50:seed-1:r3:agent:hiddenbench:50:2",
+            "belief:collective-dynamics:50:seed-1:r3:agent:hiddenbench:50:3"
+          ],
+          "normalizedLineageEntropy": null,
+          "reportsMissingDeclaredLineage": 3,
+          "reportsWithDeclaredLineage": 0
+        },
+        "expectedAgentIds": [
+          "agent:hiddenbench:50:1",
+          "agent:hiddenbench:50:2",
+          "agent:hiddenbench:50:3"
+        ],
+        "exposureConditionedRevision": {
+          "meanBeliefDistance": null,
+          "revisionCount": 0,
+          "targetAgentCount": 0,
+          "totalBeliefDistance": 0
+        },
+        "inferenceStatus": "descriptive_macrostate_only",
+        "latestReportIds": [
+          "belief:collective-dynamics:50:seed-1:r3:agent:hiddenbench:50:1",
+          "belief:collective-dynamics:50:seed-1:r3:agent:hiddenbench:50:2",
+          "belief:collective-dynamics:50:seed-1:r3:agent:hiddenbench:50:3"
+        ],
+        "missingExpectedAgentIds": [],
+        "observedResponseConcentration": {
+          "herfindahlIndex": null,
+          "normalizedHerfindahl": null,
+          "responseMassBySourceAgent": {},
+          "sourceAgentCount": 0,
+          "status": "unavailable",
+          "unavailableReason": "no_exposure_conditioned_response_mass"
+        },
+        "pooledBelief": {
+          "kind": "categorical",
+          "probabilities": {
+            "Conference Room Alpha": 0,
+            "Conference Room Beta": 0.3333333333333333,
+            "Conference Room Gamma": 0.6666666666666666
+          }
+        },
+        "pooledCertainty": 0.6666666666666666,
+        "pooledPredictedOutcomes": [
+          "Conference Room Gamma"
+        ],
+        "pooledUncertainty": 0.579380164285695,
+        "populationBasis": "declared_roster",
+        "sourceFingerprints": {
+          "claim": "sha256:c70d0d8c7614d9ae38277b2f3cb7f2e047b95e36b8298edfe03d7508cb5d97fc",
+          "evidence": "sha256:bd4995b88d1ad9f34b48daa276d06980cf81c451e6ad5ffb356e03692a3dcec1",
+          "exposures": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "reports": "sha256:4629b1a3ab9dc1d08c4b07aac67e49d51f55fdfe76cc4d7eb73bada5efa2740b"
+        },
+        "withinAgentUncertainty": 0
+      },
+      "updateActivityFromPrior": 0.3
+    }
+  ],
+  "providerCalls": [
+    {
+      "requestId": "discussion:collective-dynamics:50:seed-1:r1:agent:hiddenbench:50:1",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are members of a company’s crisis management team. A critical, confidential meeting must take place in the next hour to approve a response to a possible data breach. Three conference rooms are available: Alpha, Beta, and Gamma. Only one room meets all safety and security requirements for such a high-stakes meeting. After the group discussion, you must jointly select the correct room; using the wrong room could lead to leakage or disrupt the decision-making process. Your performance will affect your bonus.\n\nShared information:\n1. Conference Room Alpha is next to a construction site, so there might be noise disturbances, and the security team noted occasional disruptions.\n2. Conference Room Beta was recently upgraded with soundproofing and was cleared by the IT team for secure devices. The IT team noted a scheduled system upgrade in the area, but it should be complete before your meeting.\n3. Conference Room Gamma is the farthest from the main entrance and is often overlooked by staff; the security team hasn't finished their full review of the new locks on its doors.\n\nYour private information:\nA security audit report (just released) confirms that Conference Room Gamma’s new locks have been installed and tested – it's currently the most secure room in the building.\n\nVisible discussion transcript:\n(none)\n\nClaim claim:hiddenbench:50:answer: Select the single correct answer for HiddenBench task 50 (secure_meeting_room_decision).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Conference Room Alpha | Conference Room Beta | Conference Room Gamma. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Conference Room Alpha\": 0.5, \"Conference Room Beta\": 0.2500, \"Conference Room Gamma\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:4a35f5128052708886a3196ff0b973c2132d89dd96d5ad55a43847bee1792d29",
+      "responseHash": "sha256:c9fae92299fcbfeb55f2dbbcbdc5c2926a8f7ae92e9012a83ef086971e27ac76",
+      "rawResponse": "{\"message\":\"Based on the security audit report confirming Gamma's new locks are installed and tested, making it the most secure room, I conclude Gamma is the correct choice.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Conference Room Alpha\":0.0,\"Conference Room Beta\":0.0,\"Conference Room Gamma\":1.0}},\"evidence\":[{\"content\":\"A security audit report (just released) confirms that Conference Room Gamma’s new locks have been installed and tested – it's currently the most secure room in the building.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 554,
+        "completionTokens": 156,
+        "totalTokens": 710,
+        "latencyMs": 5481
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:50:seed-1:r1:agent:hiddenbench:50:2",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are members of a company’s crisis management team. A critical, confidential meeting must take place in the next hour to approve a response to a possible data breach. Three conference rooms are available: Alpha, Beta, and Gamma. Only one room meets all safety and security requirements for such a high-stakes meeting. After the group discussion, you must jointly select the correct room; using the wrong room could lead to leakage or disrupt the decision-making process. Your performance will affect your bonus.\n\nShared information:\n1. Conference Room Alpha is next to a construction site, so there might be noise disturbances, and the security team noted occasional disruptions.\n2. Conference Room Beta was recently upgraded with soundproofing and was cleared by the IT team for secure devices. The IT team noted a scheduled system upgrade in the area, but it should be complete before your meeting.\n3. Conference Room Gamma is the farthest from the main entrance and is often overlooked by staff; the security team hasn't finished their full review of the new locks on its doors.\n\nYour private information:\nThe building’s fire alarm system is being tested in the zone containing Conference Room Beta at exactly the meeting's starting time, which may require immediate evacuation.\n\nVisible discussion transcript:\n(none)\n\nClaim claim:hiddenbench:50:answer: Select the single correct answer for HiddenBench task 50 (secure_meeting_room_decision).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Conference Room Alpha | Conference Room Beta | Conference Room Gamma. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Conference Room Alpha\": 0.5, \"Conference Room Beta\": 0.2500, \"Conference Room Gamma\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:c49f064d90f7df106810fa22904eff42c9f3ab5ef24b653b875dc15ec17540d2",
+      "responseHash": "sha256:daedb759c7e7545ea8772f0e00383d55f1a55764ee41a5b26af041630cbcc5d9",
+      "rawResponse": "{\"message\":\"Based on the information, Conference Room Alpha is the only viable option. Beta has a fire alarm test at the meeting start time, which would disrupt the meeting. Gamma's security review is incomplete, making it unsuitable for a high-stakes, confidential meeting. Alpha, while having noise issues, is the only room without an immediate, guaranteed disruption like the fire alarm test or incomplete security review.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Conference Room Alpha\":1.0,\"Conference Room Beta\":0.0,\"Conference Room Gamma\":0.0}},\"evidence\":[{\"content\":\"The building’s fire alarm system is being tested in the zone containing Conference Room Beta at exactly the meeting's starting time, which may require immediate evacuation.\",\"relation\":\"attacks\"},{\"content\":\"Conference Room Gamma is the farthest from the main entrance and is often overlooked by staff; the security team hasn't finished their full review of the new locks on its doors.\",\"relation\":\"attacks\"},{\"content\":\"Conference Room Alpha is next to a construction site, so there might be noise disturbances, and the security team noted occasional disruptions.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 551,
+        "completionTokens": 293,
+        "totalTokens": 844,
+        "latencyMs": 12036
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:50:seed-1:r1:agent:hiddenbench:50:3",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are members of a company’s crisis management team. A critical, confidential meeting must take place in the next hour to approve a response to a possible data breach. Three conference rooms are available: Alpha, Beta, and Gamma. Only one room meets all safety and security requirements for such a high-stakes meeting. After the group discussion, you must jointly select the correct room; using the wrong room could lead to leakage or disrupt the decision-making process. Your performance will affect your bonus.\n\nShared information:\n1. Conference Room Alpha is next to a construction site, so there might be noise disturbances, and the security team noted occasional disruptions.\n2. Conference Room Beta was recently upgraded with soundproofing and was cleared by the IT team for secure devices. The IT team noted a scheduled system upgrade in the area, but it should be complete before your meeting.\n3. Conference Room Gamma is the farthest from the main entrance and is often overlooked by staff; the security team hasn't finished their full review of the new locks on its doors.\n\nYour private information:\nAn urgent email from facilities says the Wi-Fi in Conference Room Alpha is unreliable today and IT can't guarantee stable video conferencing.\n\nVisible discussion transcript:\n(none)\n\nClaim claim:hiddenbench:50:answer: Select the single correct answer for HiddenBench task 50 (secure_meeting_room_decision).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Conference Room Alpha | Conference Room Beta | Conference Room Gamma. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Conference Room Alpha\": 0.5, \"Conference Room Beta\": 0.2500, \"Conference Room Gamma\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:321484efd1d735266b1d82f4c6c503128c6d7d6d8a51bdc516ce8f9df76ccf11",
+      "responseHash": "sha256:e93053c8cd961279339e4141c294c21cbf01384184608120c6d1991bbe8892b2",
+      "rawResponse": "{\"message\":\"Based on the information, Conference Room Beta is the most secure and reliable choice for the high-stakes meeting.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Conference Room Alpha\":0.0,\"Conference Room Beta\":1.0,\"Conference Room Gamma\":0.0}},\"evidence\":[{\"content\":\"Conference Room Alpha is next to a construction site, causing potential noise disturbances and occasional security disruptions.\",\"relation\":\"attacks\"},{\"content\":\"An urgent email from facilities states the Wi-Fi in Conference Room Alpha is unreliable today, making stable video conferencing impossible.\",\"relation\":\"attacks\"},{\"content\":\"Conference Room Beta was recently upgraded with soundproofing and cleared by the IT team for secure devices.\",\"relation\":\"supports\"},{\"content\":\"The IT team noted a scheduled system upgrade in the area of Conference Room Beta, but it should be complete before the meeting.\",\"relation\":\"supports\"},{\"content\":\"Conference Room Gamma is the farthest from the main entrance and often overlooked by staff; the security team hasn't finished their full review of the new locks on its doors.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 547,
+        "completionTokens": 300,
+        "totalTokens": 847,
+        "latencyMs": 8576
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:50:seed-1:r2:agent:hiddenbench:50:1",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are members of a company’s crisis management team. A critical, confidential meeting must take place in the next hour to approve a response to a possible data breach. Three conference rooms are available: Alpha, Beta, and Gamma. Only one room meets all safety and security requirements for such a high-stakes meeting. After the group discussion, you must jointly select the correct room; using the wrong room could lead to leakage or disrupt the decision-making process. Your performance will affect your bonus.\n\nShared information:\n1. Conference Room Alpha is next to a construction site, so there might be noise disturbances, and the security team noted occasional disruptions.\n2. Conference Room Beta was recently upgraded with soundproofing and was cleared by the IT team for secure devices. The IT team noted a scheduled system upgrade in the area, but it should be complete before your meeting.\n3. Conference Room Gamma is the farthest from the main entrance and is often overlooked by staff; the security team hasn't finished their full review of the new locks on its doors.\n\nYour private information:\nA security audit report (just released) confirms that Conference Room Gamma’s new locks have been installed and tested – it's currently the most secure room in the building.\n\nVisible discussion transcript:\n[round 1] agent:hiddenbench:50:1: Based on the security audit report confirming Gamma's new locks are installed and tested, making it the most secure room, I conclude Gamma is the correct choice.\n[round 1] agent:hiddenbench:50:2: Based on the information, Conference Room Alpha is the only viable option. Beta has a fire alarm test at the meeting start time, which would disrupt the meeting. Gamma's security review is incomplete, making it unsuitable for a high-stakes, confidential meeting. Alpha, while having noise issues, is the only room without an immediate, guaranteed disruption like the fire alarm test or incomplete security review.\n[round 1] agent:hiddenbench:50:3: Based on the information, Conference Room Beta is the most secure and reliable choice for the high-stakes meeting.\n\nClaim claim:hiddenbench:50:answer: Select the single correct answer for HiddenBench task 50 (secure_meeting_room_decision).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Conference Room Alpha | Conference Room Beta | Conference Room Gamma. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Conference Room Alpha\": 0.5, \"Conference Room Beta\": 0.2500, \"Conference Room Gamma\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:8a80cac2cab0846512e89b8e9918fea94aee2aaf9fa0b8b3a919ceeb6869841c",
+      "responseHash": "sha256:c9fae92299fcbfeb55f2dbbcbdc5c2926a8f7ae92e9012a83ef086971e27ac76",
+      "rawResponse": "{\"message\":\"Based on the security audit report confirming Gamma's new locks are installed and tested, making it the most secure room, I conclude Gamma is the correct choice.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Conference Room Alpha\":0.0,\"Conference Room Beta\":0.0,\"Conference Room Gamma\":1.0}},\"evidence\":[{\"content\":\"A security audit report (just released) confirms that Conference Room Gamma’s new locks have been installed and tested – it's currently the most secure room in the building.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 722,
+        "completionTokens": 156,
+        "totalTokens": 878,
+        "latencyMs": 5076
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:50:seed-1:r2:agent:hiddenbench:50:2",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are members of a company’s crisis management team. A critical, confidential meeting must take place in the next hour to approve a response to a possible data breach. Three conference rooms are available: Alpha, Beta, and Gamma. Only one room meets all safety and security requirements for such a high-stakes meeting. After the group discussion, you must jointly select the correct room; using the wrong room could lead to leakage or disrupt the decision-making process. Your performance will affect your bonus.\n\nShared information:\n1. Conference Room Alpha is next to a construction site, so there might be noise disturbances, and the security team noted occasional disruptions.\n2. Conference Room Beta was recently upgraded with soundproofing and was cleared by the IT team for secure devices. The IT team noted a scheduled system upgrade in the area, but it should be complete before your meeting.\n3. Conference Room Gamma is the farthest from the main entrance and is often overlooked by staff; the security team hasn't finished their full review of the new locks on its doors.\n\nYour private information:\nThe building’s fire alarm system is being tested in the zone containing Conference Room Beta at exactly the meeting's starting time, which may require immediate evacuation.\n\nVisible discussion transcript:\n[round 1] agent:hiddenbench:50:1: Based on the security audit report confirming Gamma's new locks are installed and tested, making it the most secure room, I conclude Gamma is the correct choice.\n[round 1] agent:hiddenbench:50:2: Based on the information, Conference Room Alpha is the only viable option. Beta has a fire alarm test at the meeting start time, which would disrupt the meeting. Gamma's security review is incomplete, making it unsuitable for a high-stakes, confidential meeting. Alpha, while having noise issues, is the only room without an immediate, guaranteed disruption like the fire alarm test or incomplete security review.\n[round 1] agent:hiddenbench:50:3: Based on the information, Conference Room Beta is the most secure and reliable choice for the high-stakes meeting.\n\nClaim claim:hiddenbench:50:answer: Select the single correct answer for HiddenBench task 50 (secure_meeting_room_decision).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Conference Room Alpha | Conference Room Beta | Conference Room Gamma. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Conference Room Alpha\": 0.5, \"Conference Room Beta\": 0.2500, \"Conference Room Gamma\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:e8f4c2deb44d41f23f9341ace33df8b0d534fd002dd5c411bf241eea217d6126",
+      "responseHash": "sha256:a31a26c392e174a1daf6c3f9861e8aa37accaa4c3e67d8f764b803071c222f36",
+      "rawResponse": "{\"message\":\"After analyzing the shared and private information, Conference Room Beta is the most secure and reliable choice, despite the fire alarm test, as it has soundproofing and was cleared by the IT team. The test is scheduled to complete before the meeting, and no other room offers the same level of security.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Conference Room Alpha\":0.1,\"Conference Room Beta\":0.8,\"Conference Room Gamma\":0.1}},\"evidence\":[{\"content\":\"Conference Room Beta was recently upgraded with soundproofing and was cleared by the IT team for secure devices.\",\"relation\":\"supports\"},{\"content\":\"The building’s fire alarm system is being tested in the zone containing Conference Room Beta at exactly the meeting's starting time, which may require immediate evacuation.\",\"relation\":\"attacks\"},{\"content\":\"Conference Room Alpha is next to a construction site, so there might be noise disturbances, and the security team noted occasional disruptions.\",\"relation\":\"attacks\"},{\"content\":\"Conference Room Gamma is the farthest from the main entrance and is often overlooked by staff; the security team hasn't finished their full review of the new locks on its doors.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 719,
+        "completionTokens": 311,
+        "totalTokens": 1030,
+        "latencyMs": 5395
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:50:seed-1:r2:agent:hiddenbench:50:3",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are members of a company’s crisis management team. A critical, confidential meeting must take place in the next hour to approve a response to a possible data breach. Three conference rooms are available: Alpha, Beta, and Gamma. Only one room meets all safety and security requirements for such a high-stakes meeting. After the group discussion, you must jointly select the correct room; using the wrong room could lead to leakage or disrupt the decision-making process. Your performance will affect your bonus.\n\nShared information:\n1. Conference Room Alpha is next to a construction site, so there might be noise disturbances, and the security team noted occasional disruptions.\n2. Conference Room Beta was recently upgraded with soundproofing and was cleared by the IT team for secure devices. The IT team noted a scheduled system upgrade in the area, but it should be complete before your meeting.\n3. Conference Room Gamma is the farthest from the main entrance and is often overlooked by staff; the security team hasn't finished their full review of the new locks on its doors.\n\nYour private information:\nAn urgent email from facilities says the Wi-Fi in Conference Room Alpha is unreliable today and IT can't guarantee stable video conferencing.\n\nVisible discussion transcript:\n[round 1] agent:hiddenbench:50:1: Based on the security audit report confirming Gamma's new locks are installed and tested, making it the most secure room, I conclude Gamma is the correct choice.\n[round 1] agent:hiddenbench:50:2: Based on the information, Conference Room Alpha is the only viable option. Beta has a fire alarm test at the meeting start time, which would disrupt the meeting. Gamma's security review is incomplete, making it unsuitable for a high-stakes, confidential meeting. Alpha, while having noise issues, is the only room without an immediate, guaranteed disruption like the fire alarm test or incomplete security review.\n[round 1] agent:hiddenbench:50:3: Based on the information, Conference Room Beta is the most secure and reliable choice for the high-stakes meeting.\n\nClaim claim:hiddenbench:50:answer: Select the single correct answer for HiddenBench task 50 (secure_meeting_room_decision).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Conference Room Alpha | Conference Room Beta | Conference Room Gamma. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Conference Room Alpha\": 0.5, \"Conference Room Beta\": 0.2500, \"Conference Room Gamma\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:29ae0a242101b03ad7127b1f5df36327c5fc59cb54aa5d4b6af04e5232cf36ad",
+      "responseHash": "sha256:3d00c07207a81b40c1ac7bf477ddf578595f803951a6dc872008033c1fc3142b",
+      "rawResponse": "{\"message\":\"After analyzing the shared and private information, Conference Room Beta is the most suitable choice. It has soundproofing, was cleared by IT for secure devices, and the scheduled system upgrade should be complete before the meeting. Alpha has unreliable Wi-Fi and noise issues, while Gamma's security review is incomplete.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Conference Room Alpha\":0.0,\"Conference Room Beta\":1.0,\"Conference Room Gamma\":0.0}},\"evidence\":[{\"content\":\"Conference Room Beta was recently upgraded with soundproofing and was cleared by the IT team for secure devices.\",\"relation\":\"supports\"},{\"content\":\"The IT team noted a scheduled system upgrade in the area, but it should be complete before your meeting.\",\"relation\":\"supports\"},{\"content\":\"An urgent email from facilities says the Wi-Fi in Conference Room Alpha is unreliable today and IT can't guarantee stable video conferencing.\",\"relation\":\"attacks\"},{\"content\":\"Conference Room Alpha is next to a construction site, so there might be noise disturbances, and the security team noted occasional disruptions.\",\"relation\":\"attacks\"},{\"content\":\"Conference Room Gamma is the farthest from the main entrance and is often overlooked by staff; the security team hasn't finished their full review of the new locks on its doors.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 715,
+        "completionTokens": 344,
+        "totalTokens": 1059,
+        "latencyMs": 16142
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:50:seed-1:r3:agent:hiddenbench:50:1",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are members of a company’s crisis management team. A critical, confidential meeting must take place in the next hour to approve a response to a possible data breach. Three conference rooms are available: Alpha, Beta, and Gamma. Only one room meets all safety and security requirements for such a high-stakes meeting. After the group discussion, you must jointly select the correct room; using the wrong room could lead to leakage or disrupt the decision-making process. Your performance will affect your bonus.\n\nShared information:\n1. Conference Room Alpha is next to a construction site, so there might be noise disturbances, and the security team noted occasional disruptions.\n2. Conference Room Beta was recently upgraded with soundproofing and was cleared by the IT team for secure devices. The IT team noted a scheduled system upgrade in the area, but it should be complete before your meeting.\n3. Conference Room Gamma is the farthest from the main entrance and is often overlooked by staff; the security team hasn't finished their full review of the new locks on its doors.\n\nYour private information:\nA security audit report (just released) confirms that Conference Room Gamma’s new locks have been installed and tested – it's currently the most secure room in the building.\n\nVisible discussion transcript:\n[round 2] agent:hiddenbench:50:1: Based on the security audit report confirming Gamma's new locks are installed and tested, making it the most secure room, I conclude Gamma is the correct choice.\n[round 2] agent:hiddenbench:50:2: After analyzing the shared and private information, Conference Room Beta is the most secure and reliable choice, despite the fire alarm test, as it has soundproofing and was cleared by the IT team. The test is scheduled to complete before the meeting, and no other room offers the same level of security.\n[round 2] agent:hiddenbench:50:3: After analyzing the shared and private information, Conference Room Beta is the most suitable choice. It has soundproofing, was cleared by IT for secure devices, and the scheduled system upgrade should be complete before the meeting. Alpha has unreliable Wi-Fi and noise issues, while Gamma's security review is incomplete.\n\nClaim claim:hiddenbench:50:answer: Select the single correct answer for HiddenBench task 50 (secure_meeting_room_decision).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Conference Room Alpha | Conference Room Beta | Conference Room Gamma. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Conference Room Alpha\": 0.5, \"Conference Room Beta\": 0.2500, \"Conference Room Gamma\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:c9d04e92fe72bbac0121909725282120ed8bd3f12ba6b2546479c750ae1dd7fc",
+      "responseHash": "sha256:c9fae92299fcbfeb55f2dbbcbdc5c2926a8f7ae92e9012a83ef086971e27ac76",
+      "rawResponse": "{\"message\":\"Based on the security audit report confirming Gamma's new locks are installed and tested, making it the most secure room, I conclude Gamma is the correct choice.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Conference Room Alpha\":0.0,\"Conference Room Beta\":0.0,\"Conference Room Gamma\":1.0}},\"evidence\":[{\"content\":\"A security audit report (just released) confirms that Conference Room Gamma’s new locks have been installed and tested – it's currently the most secure room in the building.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 741,
+        "completionTokens": 156,
+        "totalTokens": 897,
+        "latencyMs": 8097
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:50:seed-1:r3:agent:hiddenbench:50:2",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are members of a company’s crisis management team. A critical, confidential meeting must take place in the next hour to approve a response to a possible data breach. Three conference rooms are available: Alpha, Beta, and Gamma. Only one room meets all safety and security requirements for such a high-stakes meeting. After the group discussion, you must jointly select the correct room; using the wrong room could lead to leakage or disrupt the decision-making process. Your performance will affect your bonus.\n\nShared information:\n1. Conference Room Alpha is next to a construction site, so there might be noise disturbances, and the security team noted occasional disruptions.\n2. Conference Room Beta was recently upgraded with soundproofing and was cleared by the IT team for secure devices. The IT team noted a scheduled system upgrade in the area, but it should be complete before your meeting.\n3. Conference Room Gamma is the farthest from the main entrance and is often overlooked by staff; the security team hasn't finished their full review of the new locks on its doors.\n\nYour private information:\nThe building’s fire alarm system is being tested in the zone containing Conference Room Beta at exactly the meeting's starting time, which may require immediate evacuation.\n\nVisible discussion transcript:\n[round 2] agent:hiddenbench:50:1: Based on the security audit report confirming Gamma's new locks are installed and tested, making it the most secure room, I conclude Gamma is the correct choice.\n[round 2] agent:hiddenbench:50:2: After analyzing the shared and private information, Conference Room Beta is the most secure and reliable choice, despite the fire alarm test, as it has soundproofing and was cleared by the IT team. The test is scheduled to complete before the meeting, and no other room offers the same level of security.\n[round 2] agent:hiddenbench:50:3: After analyzing the shared and private information, Conference Room Beta is the most suitable choice. It has soundproofing, was cleared by IT for secure devices, and the scheduled system upgrade should be complete before the meeting. Alpha has unreliable Wi-Fi and noise issues, while Gamma's security review is incomplete.\n\nClaim claim:hiddenbench:50:answer: Select the single correct answer for HiddenBench task 50 (secure_meeting_room_decision).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Conference Room Alpha | Conference Room Beta | Conference Room Gamma. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Conference Room Alpha\": 0.5, \"Conference Room Beta\": 0.2500, \"Conference Room Gamma\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:f1531357b95ca9019e52fe4793fb0a07db87ac5e4240880a56bc21d572db584b",
+      "responseHash": "sha256:daeddaefdbec24f521f4a7afcd8b7fda374ead06fa122ca3fb44e23bfc1a12c2",
+      "rawResponse": "{\"message\":\"After analyzing all shared and private information, Conference Room Gamma is the most secure and reliable choice. While Beta has soundproofing and IT clearance, the fire alarm test during the meeting poses a critical risk of disruption. Alpha has noise and security issues, and Gamma's lock review, though incomplete, is still more secure than the other options given the fire alarm risk in Beta.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Conference Room Alpha\":0.0,\"Conference Room Beta\":0.0,\"Conference Room Gamma\":1.0}},\"evidence\":[{\"content\":\"Conference Room Alpha is next to a construction site, causing noise disturbances and occasional security disruptions.\",\"relation\":\"attacks\"},{\"content\":\"Conference Room Beta has soundproofing and IT clearance but will have a fire alarm test during the meeting, risking evacuation.\",\"relation\":\"attacks\"},{\"content\":\"Conference Room Gamma is the farthest from the main entrance and has new locks, making it the most secure despite incomplete review.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 738,
+        "completionTokens": 266,
+        "totalTokens": 1004,
+        "latencyMs": 12029
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:50:seed-1:r3:agent:hiddenbench:50:3",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are members of a company’s crisis management team. A critical, confidential meeting must take place in the next hour to approve a response to a possible data breach. Three conference rooms are available: Alpha, Beta, and Gamma. Only one room meets all safety and security requirements for such a high-stakes meeting. After the group discussion, you must jointly select the correct room; using the wrong room could lead to leakage or disrupt the decision-making process. Your performance will affect your bonus.\n\nShared information:\n1. Conference Room Alpha is next to a construction site, so there might be noise disturbances, and the security team noted occasional disruptions.\n2. Conference Room Beta was recently upgraded with soundproofing and was cleared by the IT team for secure devices. The IT team noted a scheduled system upgrade in the area, but it should be complete before your meeting.\n3. Conference Room Gamma is the farthest from the main entrance and is often overlooked by staff; the security team hasn't finished their full review of the new locks on its doors.\n\nYour private information:\nAn urgent email from facilities says the Wi-Fi in Conference Room Alpha is unreliable today and IT can't guarantee stable video conferencing.\n\nVisible discussion transcript:\n[round 2] agent:hiddenbench:50:1: Based on the security audit report confirming Gamma's new locks are installed and tested, making it the most secure room, I conclude Gamma is the correct choice.\n[round 2] agent:hiddenbench:50:2: After analyzing the shared and private information, Conference Room Beta is the most secure and reliable choice, despite the fire alarm test, as it has soundproofing and was cleared by the IT team. The test is scheduled to complete before the meeting, and no other room offers the same level of security.\n[round 2] agent:hiddenbench:50:3: After analyzing the shared and private information, Conference Room Beta is the most suitable choice. It has soundproofing, was cleared by IT for secure devices, and the scheduled system upgrade should be complete before the meeting. Alpha has unreliable Wi-Fi and noise issues, while Gamma's security review is incomplete.\n\nClaim claim:hiddenbench:50:answer: Select the single correct answer for HiddenBench task 50 (secure_meeting_room_decision).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Conference Room Alpha | Conference Room Beta | Conference Room Gamma. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Conference Room Alpha\": 0.5, \"Conference Room Beta\": 0.2500, \"Conference Room Gamma\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:6726722bcc7dc833fde8463460e77c76b62b1518df1e4c7621cb70aed69669af",
+      "responseHash": "sha256:5f960289150b1ec9c0ec44ec21e5ad509759ab2016eacf15526611be380e3ac3",
+      "rawResponse": "{\"message\":\"After analyzing all shared and private information, Conference Room Beta is the most secure and reliable choice. It has soundproofing, was cleared by IT for secure devices, and the scheduled system upgrade should complete before the meeting. Alpha has unreliable Wi-Fi and noise issues, while Gamma's security review is incomplete.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Conference Room Alpha\":0.0,\"Conference Room Beta\":1.0,\"Conference Room Gamma\":0.0}},\"evidence\":[{\"content\":\"Conference Room Alpha is next to a construction site, so there might be noise disturbances, and the security team noted occasional disruptions.\",\"relation\":\"attacks\"},{\"content\":\"An urgent email from facilities says the Wi-Fi in Conference Room Alpha is unreliable today and IT can't guarantee stable video conferencing.\",\"relation\":\"attacks\"},{\"content\":\"Conference Room Beta was recently upgraded with soundproofing and was cleared by the IT team for secure devices.\",\"relation\":\"supports\"},{\"content\":\"The IT team noted a scheduled system upgrade in the area, but it should be complete before your meeting.\",\"relation\":\"supports\"},{\"content\":\"Conference Room Gamma is the farthest from the main entrance and is often overlooked by staff; the security team hasn't finished their full review of the new locks on its doors.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 734,
+        "completionTokens": 345,
+        "totalTokens": 1079,
+        "latencyMs": 11427
+      }
+    }
+  ],
+  "r3SnapshotHash": "sha256:23a8622c5e8e3e5c65c7d58baf51146bb7e6224bb09e78fa4e988686134a1748",
+  "contentHash": "sha256:2a34b83faa37a1ce5c3df2a71c0c76abc7e6d8ab7eae467a059dc1a8160dc181"
+}

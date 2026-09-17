@@ -2,7 +2,7 @@ import { describe, it, expect, beforeEach } from "vitest";
 import {
   TerminationDecider,
   DEFAULT_TERMINATION_THRESHOLDS,
-} from "@/lib/thermodynamics/TerminationDecider";
+} from "../legacy/src/lib/thermodynamics/TerminationDecider";
 
 describe("TerminationDecider", () => {
   let decider: TerminationDecider;

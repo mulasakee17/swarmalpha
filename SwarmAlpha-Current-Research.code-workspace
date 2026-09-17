@@ -9,8 +9,7 @@
     "files.exclude": {
       "**/.next": true,
       "**/node_modules": true,
-      "experiments/v2": true,
-      "experiments/lunar_survival": true,
+      "legacy": true,
       "experiments/campaign/output": true,
       "experiments/campaign/pilot_output": true,
       "out": true
@@ -18,11 +17,12 @@
     "search.exclude": {
       "**/.next": true,
       "**/node_modules": true,
-      "experiments/v2/**": true,
-      "experiments/lunar_survival/**": true,
+      "legacy/**": true,
+      "experiments/campaign/scratch/**": true,
       "experiments/campaign/output/**": true,
       "experiments/campaign/pilot_output/**": true,
-      "docs/archive/**": true
+      "results/**": true,
+      "paper_rewriting_output/**": true
     }
   }
 }

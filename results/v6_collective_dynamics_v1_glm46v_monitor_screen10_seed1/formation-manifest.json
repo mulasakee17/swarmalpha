@@ -1,0 +1,61 @@
+{
+  "manifestRef": {
+    "id": "swarmalpha.experiment.v6.collective-epistemic-dynamics.manifest",
+    "version": "1.0.0"
+  },
+  "planHash": "sha256:c5b6e20b332cdf9a6d0b40964deb0249da63407111b9e415f7cee388eab449e9",
+  "formations": [
+    {
+      "taskId": "task:hiddenbench:1",
+      "seed": 1,
+      "contentHash": "sha256:9aaf470e55946c22600854b5fce8eb6bb8c3778c3cff2a38f88e66bb28fdf0d8"
+    },
+    {
+      "taskId": "task:hiddenbench:15",
+      "seed": 1,
+      "contentHash": "sha256:64ed84a98b0527ecab7d97aab7c006a2f852d048815fe4275c7f383b2c4b9d41"
+    },
+    {
+      "taskId": "task:hiddenbench:22",
+      "seed": 1,
+      "contentHash": "sha256:c0a1ab2fe43cd1f097cb64c26ce1849ac20c36492f6444586c4637b5ce00dcca"
+    },
+    {
+      "taskId": "task:hiddenbench:29",
+      "seed": 1,
+      "contentHash": "sha256:3b0fccbd43596d60677dc285049d9eccdb7a0a48dbcbba3ec25ec34268b37f9d"
+    },
+    {
+      "taskId": "task:hiddenbench:36",
+      "seed": 1,
+      "contentHash": "sha256:d4de576a0d46b1da3c675a069ec326b26a29da61c8d45b8ab299d5bd19ee1154"
+    },
+    {
+      "taskId": "task:hiddenbench:43",
+      "seed": 1,
+      "contentHash": "sha256:82f66c700e2d685c16fcdce1aec213f345f08eebd20148af26dba4befb740e4f"
+    },
+    {
+      "taskId": "task:hiddenbench:50",
+      "seed": 1,
+      "contentHash": "sha256:2a34b83faa37a1ce5c3df2a71c0c76abc7e6d8ab7eae467a059dc1a8160dc181"
+    },
+    {
+      "taskId": "task:hiddenbench:57",
+      "seed": 1,
+      "contentHash": "sha256:63d8c1422a8591dc394a967e6c128d778df1c1ffc8aa3d67b50f754068e32254"
+    },
+    {
+      "taskId": "task:hiddenbench:64",
+      "seed": 1,
+      "contentHash": "sha256:87a987c1bd981b2caed56a309e0a74c393d1835fb362e1bc350ff16cc47a21b3"
+    },
+    {
+      "taskId": "task:hiddenbench:8",
+      "seed": 1,
+      "contentHash": "sha256:d349551a63d77e717679d5cc4e5d8ae35eeb45e526135943ff0cf627e5578928"
+    }
+  ],
+  "responses": [],
+  "contentHash": "sha256:d835899509dc8e2d20816e43c4a6846b01054d15dcdf00314e0e6cbc2801a22e"
+}

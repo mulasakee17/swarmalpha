@@ -18,7 +18,7 @@ dotenv.config({ path: path.resolve(__dirname, "..", "..", "..", ".env.local") })
 
 import { runSingle } from "../pipeline/Runner";
 import type { ExperimentConfig } from "../types";
-import { mean, sampleStd } from "../../v2/statsShared";
+import { mean, sampleStd } from "../../../legacy/experiments/v2/statsShared";
 
 const OUTPUT_DIR = path.resolve(__dirname, "..", "output", "phase1_5_probe");
 

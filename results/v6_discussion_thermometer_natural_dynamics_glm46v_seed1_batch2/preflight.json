@@ -1,0 +1,62 @@
+{
+  "preflightRef": {
+    "id": "swarmalpha.preflight.v6.discussion-thermometer-natural-dynamics",
+    "version": "1.0.0",
+    "providerCalls": 0
+  },
+  "planHash": "sha256:d519a821a78aaa5c565274f0fe0ad50793ec4b7a35cad47f9dabe485ee5e278d",
+  "manifestHash": "sha256:3862d94bff2e5f02d836851d1120b184dc45c2bacc5681c8d7423d784e035e6e",
+  "taskBankHash": "sha256:3e1c92b39aab5772628e3cc6f812795e5f74e843dd707635f311ab5fbfacff22",
+  "providerCalls": 0,
+  "checks": [
+    {
+      "id": "TARGET_TASK_COUNT",
+      "pass": true,
+      "detail": "4/4 targeted tasks are registered."
+    },
+    {
+      "id": "WITHIN_BATCH_ROUND_DEPTH",
+      "pass": true,
+      "detail": "Four public rounds and five observed checkpoints are predeclared."
+    },
+    {
+      "id": "CALL_BUDGET_ARITHMETIC",
+      "pass": true,
+      "detail": "64 public + 160 sensor = 224 calls; completion ceiling 73,728 tokens."
+    },
+    {
+      "id": "DUPLICATE_RESOLUTION_COVERAGE",
+      "pass": true,
+      "detail": "Primary and exact duplicate are retained at every checkpoint."
+    },
+    {
+      "id": "TRUTH_FIREWALL_AND_NO_WRITEBACK",
+      "pass": true,
+      "detail": "The proposed run has no online truth, prediction target, or action output."
+    },
+    {
+      "id": "NO_EXECUTION_AUTHORITY",
+      "pass": true,
+      "detail": "Preflight cannot authorize provider calls."
+    },
+    {
+      "id": "TASK_BANK_BINDING",
+      "pass": true,
+      "detail": "Target plan binds the current task-bank hash without changing task content."
+    },
+    {
+      "id": "SAME_BATCH_REQUIREMENT",
+      "pass": true,
+      "detail": "Historical X2 cannot be silently extended with a later X3/X4 batch."
+    },
+    {
+      "id": "MANIFEST_BINDING",
+      "pass": true,
+      "detail": "Versioned manifest binds the plan and leaves execution authority unset."
+    }
+  ],
+  "allChecksPass": true,
+  "executionReady": false,
+  "nextRequiredStep": "MANUAL_SEMANTIC_REVIEW_AND_EXPLICIT_EXECUTION_AUTHORITY",
+  "contentHash": "sha256:54714f8949da11212e7ba1f497df5f5059d3912967fc111c76c1bf293bd975bc"
+}

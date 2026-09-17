@@ -1,0 +1,16 @@
+{
+  "manifestRef": {
+    "id": "swarmalpha.experiment.v6.collective-epistemic-dynamics.manifest",
+    "version": "1.0.0"
+  },
+  "planHash": "sha256:cde31cc0f515b6faaefe31a68f232695fb8bec9eb3c1edf4dd8cbaaa436dfaeb",
+  "formations": [
+    {
+      "taskId": "task:hiddenbench:14",
+      "seed": 1,
+      "contentHash": "sha256:b49632a5692aac0a541ece744ada0274212ad4932794cfb0d87f79a0de438552"
+    }
+  ],
+  "responses": [],
+  "contentHash": "sha256:41a26bd12204966aeaa0e7d4a86ad7002541d01799933568e69f343829cb9756"
+}

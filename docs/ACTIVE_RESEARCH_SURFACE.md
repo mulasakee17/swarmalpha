@@ -1,206 +1,73 @@
-# SwarmAlpha Active Research Surface
+# SwarmAlpha：接手只读这一页
 
-Status: normative repository navigation map
-Date: 2026-08-14
+Status: normative navigation / RESEARCH STOPPED — HANDOFF ENGINEERING ONLY
+Updated: 2026-09-17
 
-This document identifies the current research authority. It is a navigation
-contract, not evidence that the proposed measurements or interventions are
-empirically valid. When an older README, plan, or script conflicts with current
-implementation and replayable artifacts, follow the evidence hierarchy in
-[`REASONING_PROTOCOL.md`](REASONING_PROTOCOL.md).
+## 1. 当前到底是什么
 
-## 1. Current research question
+已有实证问题：非对称信息的有限选项任务中，从共同讨论起点改变材料曝光包或标签呈现，如何改变概率报告与离线 Brier 损失。
+第一篇有 DeepSeek／GLM 的记录条件下比较；固定臂顺序、缺失及一般重呈现对照不足限制机制解释。
+它没有证明模型内部认知、纯社会影响、通用救援规则或在线治理策略。
 
-**HYPOTHESIS** — Under a strict online/offline truth firewall, observable
-pre-action micro-level reports and information flow may define a low-dimensional
-collective state that predicts when an independently randomized information
-intervention helps, does nothing, or harms final decision quality.
+V0 多通道描述器已实现，Q2-S 的 15 对合成状态只支持观察 canary 资格。X0 调用／隔离／持久记录边界已实现，无本轮真实结果。
+本次授权仅为薄离线 probe、交接检查、文档压缩与 GitHub 推送；不自动恢复 X0、引擎扩建、provider 调用或投稿。
 
-The current empirical priority is the zero-provider social-thermodynamic
-response audit defined by
-[`theory/SOCIAL_THERMODYNAMIC_RESPONSE_RESEARCH_CONTRACT_V1.md`](theory/SOCIAL_THERMODYNAMIC_RESPONSE_RESEARCH_CONTRACT_V1.md).
-The frozen task-heldout verification replication is `DEFER`: observed
-apply-minus-holdout pooled Brier was `+0.0985`, opposite the favorable
-development direction, with interval `[-0.3697, +0.7424]`. The earlier
-four-feature failure predictor is also `DEFER`. Therefore no process-state
-predictor, thermodynamic projection, active-information kernel, or selective
-router has control permission.
+## 2. 安装与无网络检查
 
-The current route and methodological boundaries are summarized in
-[`research/CURRENT_ROUTE_AND_METHODOLOGY.md`](research/CURRENT_ROUTE_AND_METHODOLOGY.md).
+建议 Node 22 LTS（22.13+）或 Node 24；在仓库根目录执行：
 
-## 2. Authoritative path
-
-```text
-Research and measurement contracts
-  -> epistemic / governance / experimentation kernels
-  -> V6 schema-5 vertical slice
-  -> Measurement Validity authority and runner
-  -> frozen experiment plan
-  -> replay and analysis
+```sh
+npm ci
+npm run check:handoff
+npm run probe:semantic -- --help
 ```
 
-| Role | Authoritative location | Current status |
-|---|---|---|
-| reasoning discipline | `docs/REASONING_PROTOCOL.md` | normative |
-| current route/methodology | `docs/research/CURRENT_ROUTE_AND_METHODOLOGY.md` | current research authority |
-| strategic scope | `docs/strategy/SWARMALPHA_WHITEPAPER_V1.md` | long-term design narrative; not current empirical status |
-| active research contract | `docs/theory/SOCIAL_THERMODYNAMIC_RESPONSE_RESEARCH_CONTRACT_V1.md` | current hypothesis, state, response, and stop/go boundary |
-| future heterogeneous-governance contract | `docs/theory/HETEROGENEOUS_EPISTEMIC_GOVERNANCE_RESEARCH_CONTRACT_V1.md` | future hypothesis; does not govern the first-paper experiment |
-| epistemic state kernel | `src/lib/epistemic/` | implemented and deterministically tested; not direct access to latent belief |
-| governance control kernel | `src/lib/governance/` | implemented and deterministically tested; empirical efficacy not established |
-| truth-blind active information kernel | `src/lib/governance/activeInformationGovernance.ts` | core semantics implemented; adversarial tests + deterministic offline fixture (`experiments/campaign/v6/truthBlindPolicyFixtureV1.ts`) added; no production Runner connection or empirical validity |
-| experimental authority | `src/lib/experimentation/` | implemented and replay-oriented |
-| V6 execution | `experiments/campaign/v6/` | current schema-5 execution path |
-| measurement validity | `experiments/campaign/measurement/` | authority, analysis, runner, and development wiring implemented |
-| run-level replay | `experiments/campaign/replayVerifier.ts` and `verify_replay.ts` | current verifier/CLI |
-| current tests | V6, governance, epistemic, experimentation, and measurement tests under `test/` | deterministic evidence about implementation invariants |
+检查覆盖 V0、X0、共享调用边界、机制任务 mock 和 semantic probe，并执行类型检查。测试阶段不需要密钥、不调用模型。
 
-## 3. Authority classes
+## 3. Jev 薄接口：只做离线配对
 
-### CURRENT
+先用仓库自带合成样例检查路径；它不是研究数据或模型效果证据：
 
-Safe default reading and modification surface:
-
-- `src/lib/epistemic/`
-- the contract/decision/audit parts of `src/lib/governance/`
-- `src/lib/experimentation/`
-- `experiments/campaign/v6/`
-- `experiments/campaign/measurement/`
-- current architecture, theory, strategy, and experiment-result documents
-- tests directly covering those areas
-
-### LEGACY_READ_ONLY
-
-Preserved for provenance, comparison, and old-artifact replay. These paths are
-not current V6 authority and must not silently supply confirmatory evidence:
-
-- `experiments/v2/`
-- `experiments/lunar_survival/`
-- `src/lib/discussion/asyncEngine.ts`
-- legacy governance/runtime and social-thermodynamic execution paths
-- `experiments/campaign/run_e12*.ts` and corresponding historical analyses
-
-Legacy code still imports shared `src` modules. It is therefore historically
-isolated but not a self-contained package that can be moved to another
-repository without dependency work.
-
-### SCRATCH_CANDIDATE
-
-One-off `debug_*`, `probe_*`, and obsolete inspection scripts under
-`experiments/campaign/` are candidates for physical quarantine. Do not infer
-that every `analyze_*` or `verify_*` script is disposable: the current replay
-CLI and recorded V6 analyses remain authoritative consumers.
-
-The current V6/Measurement change set was committed as `6eae9a3`. After a
-zero-reference audit, 15 `debug_*.ts` scripts were moved to
-`experiments/campaign/scratch/`; cited audit/protocol probes remain in place.
-Further physical moves still require the same importer and evidence-reference
-audit.
-
-### DEMO_OR_PRODUCT_PROTOTYPE
-
-- `src/app/`
-- `src/runtime/`
-- framework/demo adapters
-
-These may illustrate earlier product ambitions. They are not evidence for the
-current paper and are not the default research runtime.
-
-### ACTIVE_THEORY_AND_FUTURE_EXTENSIONS
-
-Social thermodynamics is now the active scientific lens for a zero-provider
-state-response audit. Existing legacy entropy/temperature/free-energy
-implementations are not automatically valid constructs or control signals. The
-current relationship is:
-
-```text
-auditable pre-action microstate
-  -> frozen macro projection
-  -> randomized intervention response
-  -> development-to-heldout falsification
-  -> optional one-pilot permission
+```sh
+npm run probe:semantic -- --artifact test/fixtures/semantic-probe-task.json --out results/semantic_probe/prepare-synthetic
 ```
 
-Until those gates pass, `R/T/H_E/G_E/kappa` are descriptive or exploratory
-only. No universal free-energy score is authorized.
+换成完整真实机制 artifact 路径即可复用旧记录；合成／真实来源在输出中明确区分。
+默认零网络；输入／输出目录由操作者指定，输出目录必须全新。真实调用需另行明确批准，配置 `TYPESAFE_API_KEY`，并显式追加 `--execute --max-calls 12`（本例），另用全新输出目录。
+只支持单任务完整记录，最多 24 次调用，无 retry/resume；中断的 started 保持未知，调用失败即停止。
+probe 使用该 agent 原始第二轮提示词；不把整份快照、其他人的私有包、原始答案响应或答案键发送给 Jev。比较同轮 CONTROL／NEUTRAL／LABELED 报告，保留缺失与原始 probe 响应。
+`ΔAgent − ΔProbe` 仅为外部模型响应差异，不是社会影响。当前不做 outcome scoring、控制建议或通用 observer。
 
-The earlier no-ground-truth and heterogeneous-governance contracts remain
-supporting/future theory. The active contract is
-[`theory/SOCIAL_THERMODYNAMIC_RESPONSE_RESEARCH_CONTRACT_V1.md`](theory/SOCIAL_THERMODYNAMIC_RESPONSE_RESEARCH_CONTRACT_V1.md).
-Declared or verified-distinct source identity is not statistical independence,
-and public-only reanalysis is not independent verification.
+复用官方 MIT `@typesafe-ai/sdk@0.6.0`（无运行时依赖、支持 Node／Windows），固定 host、关闭日志与重试；Python adapter 不适合此 TypeScript 路径。
+SDK 刚发布、维护历史短，尚未建立本项目效度或安全保证；接口依据[官方 API](https://docs.typesafe.ai/api)，模型使用移动别名 `jev-latest`，记录返回模型但不能排除别名内部更新。
+接手人先证伪关键证据敏感性、干扰稳健性及相对普通结构化判读／简单基线的增量价值，失败即放弃该工具。
 
-## 4. Supported commands
+## 4. 按任务找代码／合同
 
-Current, zero-provider defaults:
+| 要做什么 | 唯一入口 |
+|---|---|
+| 看／改 probe | `src/lib/experimentation/semanticProbe.ts`；`experiments/campaign/probe_semantic.ts`；`test/semantic-probe.test.ts` |
+| 核对 V0 语义 | `src/lib/epistemic/collectiveDecisionProcessState.ts`；[V0 合同](architecture/COLLECTIVE_DECISION_PROCESS_STATE_V0.md) |
+| 核对 X0 隔离条件 | `collectiveDecisionProcessObservationX0{,Execution}.ts`（V6）；[冻结合同](plans/COLLECTIVE_DECISION_PROCESS_DESCRIPTOR_ENGINEERING_FIRST_PLAN_V1_2026-09-02.md) |
+| 核对合成资格 | [Q0/Q2 合同 §8](plans/COLLECTIVE_DECISION_PROCESS_STATE_Q0_QUALIFICATION_CONTRACT_V1_2026-09-07.md) |
+| 看所有者想法 | [研究身份 §13／14](research/SWARMALPHA_RESEARCH_IDENTITY_AND_DESIGN_PHILOSOPHY.md#14-2026-09-17-交接前方向审查与jev候选边界)，不要求通读历史 |
+| 查特定实验／其他想法 | [按需目录](README.md)；修改科学解释前读[推理协议](REASONING_PROTOCOL.md) |
 
-```bash
-npm run measurement:plan
-npm run measurement:mock
-npm run verify:replay -- <artifact-or-directory>
-npm run test:measurement
-npm run test:v6
-```
+## 5. 刻意设计与仓库边界
 
-`measurement:mock` writes development artifacts and proves wiring/replay only.
-It is not measurement-validity evidence.
+缺失不是零；注册覆盖不是真相覆盖；来源身份不是独立证据；讨论回应不是因果影响；可观测不是有控制价值。
+X0 的观测与公开讨论隔离、gold 离线、无 retry/resume、sensor 后置、P1 行为反应属于处理，都是刻意设计；隔离合同不是 OS 沙箱。
+当前核心为 `src/lib/{epistemic,governance,experimentation}` 与 V6／measurement 支持。新 probe 是独立离线读者，仅复用冻结机制 artifact 读取／验证模块，不恢复其运行器，不回流 V0 或 agent。
+`legacy/` 只作历史保留和既有兼容依赖；不新增旧引擎依赖或用旧结果背书。仍保留单仓；拆仓须满足提交可追溯、接口与依赖清点、论文材料、秘密／许可、兼容与 CI 责任门槛。
 
-Current V6 smoke planning/execution CLI:
+## 6. 交接材料与负责人边界
 
-```bash
-npm run v6:smoke -- --dry-run
-```
+当前候选稿本地位置：`paper_rewriting_output/submission_package/aamas_2027_candidate/paper.en.md`／`paper.pdf`；PDF 为工作预览，模板、版面、匿名补充包及独立人工审阅未完成。
+DeepSeek v3 有 90 个文件／270 条臂记录，早期完整消息不足；后续机制 seed 3 的 40 个任务有逐调用提示词／响应，可供 probe 使用。原始失败、限流恢复与主运行不能混写。
+当前 `paper_rewriting_output/` 投稿包仍按 `.gitignore` 的双盲边界不进入公开 Git；历史稿件与部分实验记录已受 Git 跟踪，不能声称整个仓库不含论文。旧本地完整包在 `tmp/handoff_2026-09-17/`，早于此次工程调整，不代表最新源码。当前投稿包与完整交接包是否公开，须由所有者决定。
 
-Real provider execution always requires an explicit execution flag or a
-dedicated frozen experiment runner. No generic current command is allowed to
-silently fall back to a legacy paid experiment.
+### 6.1 最新决定
 
-Historical commands are namespaced:
-
-```bash
-npm run legacy:v2:run
-npm run legacy:v2:analyze
-npm run legacy:v2:sensitivity
-npm run legacy:demo
-```
-
-Their outputs remain historical/exploratory unless a current contract explicitly
-admits and replays them.
-
-## 5. Repository split policy
-
-**Current decision:** retain one research repository.
-
-Do not split V6, Measurement Validity, epistemic contracts, governance
-contracts, and replay into separate repositories. They share one paper-level
-evidence chain and should be pinned by one commit.
-
-A future split is permitted only after all of the following hold:
-
-1. the current V6/Measurement working tree is committed and reproducible;
-2. public kernel APIs and schema-version policy are frozen;
-3. legacy imports of shared `src` code are inventoried or vendored;
-4. one commit/tag can still reconstruct every paper artifact;
-5. secret scanning and license checks pass;
-6. cross-repository CI and compatibility ownership are explicit.
-
-The preferred future topology is at most:
-
-- `swarmalpha-research` — current kernel, V6, measurement, experiments, paper;
-- `swarmalpha-legacy-experiments` — read-only history and manifests;
-- optional `swarmalpha-demo` — UI/product prototype.
-
-It is not one live repository per historical engine version.
-
-## 6. Claim ceiling
-
-The current repository supports claims about implemented contracts,
-deterministic replay, artifact integrity within the repository, preliminary
-measurement characterization, and exploratory observations under recorded
-conditions.
-
-It does not yet establish general measurement validity, general governance
-efficacy, source-error independence, latent-belief access, tamper-proof external
-provenance, marginal cognitive value, or a universal runtime for heterogeneous
-intelligence.
+负责人完成窄工程调整与交接，保留模型内部、agent 架构、信息传播／放大／衰减／失真的想法；这些愿望仍未立项。Jev 是外部工具，不是模型内部研究的替代成果。
+接手人可决定停止、保留、改投或明确恢复。若恢复 X0，先重核模型／区域／费用／预算／runId／phase，首批是 66-call canary，不直接扩跑或当作效应样本。
+交接不以新实验成功、Jev 测量合格或投稿完成为前提；旧 NEXT／ACTIVE／AUTHORIZED 与旧会议时间表不构成执行指令。

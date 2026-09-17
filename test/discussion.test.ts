@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { DiscussionEngine, RuleBasedInfluence, DecisionTraceBuilder } from "@/lib/discussion";
+import { DiscussionEngine, RuleBasedInfluence, DecisionTraceBuilder } from "../legacy/src/lib/discussion";
 
 class MockAgent {
   constructor(

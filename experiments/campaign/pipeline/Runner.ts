@@ -8,8 +8,8 @@
 import * as fs from "fs";
 import * as path from "path";
 import { CustomAgent } from "../../../src/lib/adapters/custom";
-import { DiscussionEngine, type DiscussionAgent } from "../../../src/lib/discussion";
-import { NativeCognitiveEngine } from "../../../src/lib/discussion/nativeCognitiveEngine";
+import { DiscussionEngine, type DiscussionAgent } from "../../../legacy/src/lib/discussion";
+import { NativeCognitiveEngine } from "../../../legacy/src/lib/discussion/nativeCognitiveEngine";
 import type { LLMConfig } from "../../../src/lib/llm/providers";
 import { detectLLMProvider } from "../../../src/lib/llm/providers";
 import type {
@@ -24,7 +24,7 @@ import {
   extractRanking,
   kendallTau,
   mulberry32,
-} from "../../v2/statsShared";
+} from "../../../legacy/experiments/v2/statsShared";
 import {
   computeSocialUpdateGain,
   cognitiveStateToBelief,
@@ -32,8 +32,8 @@ import {
   stanceFromItemBeliefs,
   type AgentCognitiveState,
 } from "../../../src/lib/agent/cognitiveState";
-import { computeDeltaDiagnosis } from "../../../src/lib/thermodynamics/computeDelta";
-import type { ProgressiveEstimates } from "../../../src/lib/thermodynamics/ProgressiveEstimator";
+import { computeDeltaDiagnosis } from "../../../legacy/src/lib/thermodynamics/computeDelta";
+import type { ProgressiveEstimates } from "../../../legacy/src/lib/thermodynamics/ProgressiveEstimator";
 import type { GovernanceEstimate } from "../../../src/lib/epistemic/semantics";
 import { safeJsonParse } from "../../../src/lib/utils/jsonUtils";
 import {
@@ -85,27 +85,27 @@ function loadScenario(scenarioId: string, taskIndex?: number, promptStyle?: "hin
   if (scenarioLoader) return scenarioLoader(scenarioId, taskIndex, promptStyle);
   switch (scenarioId) {
     case "ma": {
-      const { TASK_MA } = require("../../lunar_survival/config");
+      const { TASK_MA } = require("../../../legacy/experiments/lunar_survival/config");
       return { task: TASK_MA, dataDir: "data" };
     }
     case "crisis": {
-      const { TASK_CRISIS } = require("../../v2/task_crisis");
+      const { TASK_CRISIS } = require("../../../legacy/experiments/v2/task_crisis");
       return { task: TASK_CRISIS, dataDir: "data_crisis" };
     }
     case "crisis_v2": {
-      const { TASK_CRISIS_V2 } = require("../../v2/task_crisis");
+      const { TASK_CRISIS_V2 } = require("../../../legacy/experiments/v2/task_crisis");
       return { task: TASK_CRISIS_V2, dataDir: "data_crisis_v2" };
     }
     case "supplier": {
-      const { TASK_SUPPLIER } = require("../../v2/task_supplier");
+      const { TASK_SUPPLIER } = require("../../../legacy/experiments/v2/task_supplier");
       return { task: TASK_SUPPLIER, dataDir: "data_supplier" };
     }
     case "invest": {
-      const { TASK_INVEST } = require("../../v2/task_invest");
+      const { TASK_INVEST } = require("../../../legacy/experiments/v2/task_invest");
       return { task: TASK_INVEST, dataDir: "data_invest" };
     }
     case "er_triage": {
-      const { TASK_ER_TRIAGE } = require("../../v2/task_er_triage");
+      const { TASK_ER_TRIAGE } = require("../../../legacy/experiments/v2/task_er_triage");
       return { task: TASK_ER_TRIAGE, dataDir: "data_er_triage" };
     }
     case "university": {

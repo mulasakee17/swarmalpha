@@ -1,0 +1,43 @@
+{
+  "manifestRef": {
+    "id": "swarmalpha.manifest.v6.discussion-thermometer-natural-dynamics",
+    "version": "1.0.0"
+  },
+  "planHash": "sha256:d519a821a78aaa5c565274f0fe0ad50793ec4b7a35cad47f9dabe485ee5e278d",
+  "semanticAcceptance": {
+    "status": "TARGETED_REPLICATION_DESIGN_ACCEPTED_EXECUTION_PENDING",
+    "scope": "two_base_scenarios_two_target_regimes_four_rounds"
+  },
+  "providerBudget": {
+    "model": "zhipu:glm-4.6v",
+    "publicCalls": 64,
+    "sensorCalls": 160,
+    "maximumTotalCalls": 224,
+    "maximumCompletionTokens": 73728,
+    "retry": "none"
+  },
+  "executionPolicy": {
+    "phaseOrder": [
+      "public",
+      "freeze",
+      "sensor",
+      "offline_analysis"
+    ],
+    "attemptsPerCell": 1,
+    "backgroundExecution": "forbidden",
+    "overwrite": "forbidden",
+    "haltOnAnyFailure": true,
+    "attemptLedger": "append_before_and_after_each_provider_call",
+    "sameBatchRequired": true
+  },
+  "scientificBoundary": {
+    "onlineTruthAccess": "none",
+    "sensorWriteback": "none",
+    "crossRegimeCausalAuthority": "none",
+    "predictionUsed": false,
+    "actionUsed": false,
+    "claimCeiling": "Targeted same-task natural-trajectory replication only; no transport, dwell-time, hazard, attractor, metastability, intervention, or governance claim."
+  },
+  "executionAuthority": "none",
+  "contentHash": "sha256:3862d94bff2e5f02d836851d1120b184dc45c2bacc5681c8d7423d784e035e6e"
+}

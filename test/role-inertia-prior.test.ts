@@ -33,7 +33,7 @@ import {
   type ProgressiveEstimatorConfig,
   type ProgressiveEstimatorInput,
   type ProgressiveEstimates,
-} from "@/lib/thermodynamics/ProgressiveEstimator";
+} from "../legacy/src/lib/thermodynamics/ProgressiveEstimator";
 
 function makeEvidence(): Evidence {
   return { coverage: 0.5, quality: 0.5, diversity: 0.5, recentGain: 0, items: [] };

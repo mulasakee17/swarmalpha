@@ -24,7 +24,7 @@
 
 import * as fs from "fs";
 import * as path from "path";
-import { mean, sampleStd } from "../../v2/statsShared";
+import { mean, sampleStd } from "../../../legacy/experiments/v2/statsShared";
 import { safeJsonParse } from "../../../src/lib/utils/jsonUtils";
 import type { RawRunData } from "../types";
 

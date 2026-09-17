@@ -20,7 +20,7 @@
 
 import * as fs from "fs";
 import * as path from "path";
-import { mean, sampleStd, cohensD, mulberry32, PERMUTATION_SEED } from "../../v2/statsShared";
+import { mean, sampleStd, cohensD, mulberry32, PERMUTATION_SEED } from "../../../legacy/experiments/v2/statsShared";
 import type { RawRunData } from "../types";
 import { safeJsonParse } from "../../../src/lib/utils/jsonUtils";
 

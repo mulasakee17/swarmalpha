@@ -12,7 +12,7 @@
  * - 验证模式：用 schema 校验提取结果，标记不合规字段
  */
 
-import type { AgentOpinion, ItemBelief } from "../discussion/types";
+import type { AgentOpinion, ItemBelief } from "../../../legacy/src/lib/discussion/types";
 
 // ============================================================================
 // JSON Schema 定义

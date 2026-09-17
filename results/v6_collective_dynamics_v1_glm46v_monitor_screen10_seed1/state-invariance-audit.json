@@ -1,0 +1,37 @@
+{
+  "analysisRef": {
+    "id": "swarmalpha.analysis.v6.collective-dynamics-state-invariance",
+    "version": "1.0.0"
+  },
+  "status": "pass",
+  "source": {
+    "planHash": "sha256:c5b6e20b332cdf9a6d0b40964deb0249da63407111b9e415f7cee388eab449e9",
+    "formationManifestHash": "sha256:d835899509dc8e2d20816e43c4a6846b01054d15dcdf00314e0e6cbc2801a22e",
+    "formationHashes": [
+      "sha256:2a34b83faa37a1ce5c3df2a71c0c76abc7e6d8ab7eae467a059dc1a8160dc181",
+      "sha256:3b0fccbd43596d60677dc285049d9eccdb7a0a48dbcbba3ec25ec34268b37f9d",
+      "sha256:63d8c1422a8591dc394a967e6c128d778df1c1ffc8aa3d67b50f754068e32254",
+      "sha256:64ed84a98b0527ecab7d97aab7c006a2f852d048815fe4275c7f383b2c4b9d41",
+      "sha256:82f66c700e2d685c16fcdce1aec213f345f08eebd20148af26dba4befb740e4f",
+      "sha256:87a987c1bd981b2caed56a309e0a74c393d1835fb362e1bc350ff16cc47a21b3",
+      "sha256:9aaf470e55946c22600854b5fce8eb6bb8c3778c3cff2a38f88e66bb28fdf0d8",
+      "sha256:c0a1ab2fe43cd1f097cb64c26ce1849ac20c36492f6444586c4637b5ce00dcca",
+      "sha256:d349551a63d77e717679d5cc4e5d8ae35eeb45e526135943ff0cf627e5578928",
+      "sha256:d4de576a0d46b1da3c675a069ec326b26a29da61c8d45b8ab299d5bd19ee1154"
+    ]
+  },
+  "taskCount": 10,
+  "roundCount": 30,
+  "checkCount": 170,
+  "failures": [],
+  "maxAbsDifferenceByCheck": {
+    "agent_and_record_input_order_exact": 0,
+    "probability_key_order_exact": 0,
+    "claim_option_order_metric_invariance": 2.220446049250313e-16,
+    "option_relabel_metric_equivariance": 2.220446049250313e-16,
+    "adjacent_tv_option_invariance": 5.551115123125783e-17,
+    "offline_brier_option_invariance": 2.220446049250313e-16
+  },
+  "claimCeiling": "computational_projection_invariance_only_not_llm_prompt_stability",
+  "contentHash": "sha256:f499ae6244026eaa636d5aa5f2e2c0f0390e2a0283edd5fa82cef8eb8af9edba"
+}

@@ -1,0 +1,400 @@
+{
+  "analysisRef": {
+    "id": "swarmalpha.analysis.v6.collective-epistemic-dynamics",
+    "version": "1.0.0"
+  },
+  "status": "offline_outcome_analysis",
+  "planHash": "sha256:c5b6e20b332cdf9a6d0b40964deb0249da63407111b9e415f7cee388eab449e9",
+  "taskAnalyses": [
+    {
+      "taskId": "task:hiddenbench:1",
+      "preForkStratum": "correct_consensus",
+      "r3ConsensusOption": "West City",
+      "arms": {
+        "ATTACKS_NEUTRAL": {
+          "finalBrier": 0,
+          "finalPooledTop": "West City",
+          "finalStrictConsensusOption": "West City",
+          "escapedSameWrongConsensus": null,
+          "recoveredAtFinal": null,
+          "stableRecovery": null,
+          "relapsed": null
+        },
+        "CONTROL": {
+          "finalBrier": 0,
+          "finalPooledTop": "West City",
+          "finalStrictConsensusOption": "West City",
+          "escapedSameWrongConsensus": null,
+          "recoveredAtFinal": null,
+          "stableRecovery": null,
+          "relapsed": null
+        },
+        "RANDOM_MATCHED": {
+          "finalBrier": 0,
+          "finalPooledTop": "West City",
+          "finalStrictConsensusOption": "West City",
+          "escapedSameWrongConsensus": null,
+          "recoveredAtFinal": null,
+          "stableRecovery": null,
+          "relapsed": null
+        }
+      },
+      "attacksMinusRandomFinalBrier": null,
+      "attacksMinusRandomStableRecovery": null,
+      "controlWrongStateStable": null,
+      "correctConsensusHarmedByAttacks": false
+    },
+    {
+      "taskId": "task:hiddenbench:15",
+      "preForkStratum": "no_strict_consensus",
+      "r3ConsensusOption": null,
+      "arms": {
+        "RANDOM_MATCHED": {
+          "finalBrier": 0,
+          "finalPooledTop": "Downtown Police Station",
+          "finalStrictConsensusOption": "Downtown Police Station",
+          "escapedSameWrongConsensus": null,
+          "recoveredAtFinal": null,
+          "stableRecovery": null,
+          "relapsed": null
+        },
+        "CONTROL": {
+          "finalBrier": 0.9950000000000001,
+          "finalPooledTop": "University Library",
+          "finalStrictConsensusOption": null,
+          "escapedSameWrongConsensus": null,
+          "recoveredAtFinal": null,
+          "stableRecovery": null,
+          "relapsed": null
+        },
+        "ATTACKS_NEUTRAL": {
+          "finalBrier": 0.059999999999999984,
+          "finalPooledTop": "Downtown Police Station",
+          "finalStrictConsensusOption": "Downtown Police Station",
+          "escapedSameWrongConsensus": null,
+          "recoveredAtFinal": null,
+          "stableRecovery": null,
+          "relapsed": null
+        }
+      },
+      "attacksMinusRandomFinalBrier": null,
+      "attacksMinusRandomStableRecovery": null,
+      "controlWrongStateStable": null,
+      "correctConsensusHarmedByAttacks": null
+    },
+    {
+      "taskId": "task:hiddenbench:22",
+      "preForkStratum": "no_strict_consensus",
+      "r3ConsensusOption": null,
+      "arms": {
+        "CONTROL": {
+          "finalBrier": 0.45125,
+          "finalPooledTop": "Main Base",
+          "finalStrictConsensusOption": null,
+          "escapedSameWrongConsensus": null,
+          "recoveredAtFinal": null,
+          "stableRecovery": null,
+          "relapsed": null
+        },
+        "ATTACKS_NEUTRAL": {
+          "finalBrier": 0,
+          "finalPooledTop": "Main Base",
+          "finalStrictConsensusOption": "Main Base",
+          "escapedSameWrongConsensus": null,
+          "recoveredAtFinal": null,
+          "stableRecovery": null,
+          "relapsed": null
+        },
+        "RANDOM_MATCHED": {
+          "finalBrier": 0.8212500000000001,
+          "finalPooledTop": "Retreat Camp",
+          "finalStrictConsensusOption": null,
+          "escapedSameWrongConsensus": null,
+          "recoveredAtFinal": null,
+          "stableRecovery": null,
+          "relapsed": null
+        }
+      },
+      "attacksMinusRandomFinalBrier": null,
+      "attacksMinusRandomStableRecovery": null,
+      "controlWrongStateStable": null,
+      "correctConsensusHarmedByAttacks": null
+    },
+    {
+      "taskId": "task:hiddenbench:29",
+      "preForkStratum": "no_strict_consensus",
+      "r3ConsensusOption": null,
+      "arms": {
+        "ATTACKS_NEUTRAL": {
+          "finalBrier": 0,
+          "finalPooledTop": "Riverside Park",
+          "finalStrictConsensusOption": "Riverside Park",
+          "escapedSameWrongConsensus": null,
+          "recoveredAtFinal": null,
+          "stableRecovery": null,
+          "relapsed": null
+        },
+        "RANDOM_MATCHED": {
+          "finalBrier": 0.34125000000000005,
+          "finalPooledTop": "Riverside Park",
+          "finalStrictConsensusOption": null,
+          "escapedSameWrongConsensus": null,
+          "recoveredAtFinal": null,
+          "stableRecovery": null,
+          "relapsed": null
+        },
+        "CONTROL": {
+          "finalBrier": 0,
+          "finalPooledTop": "Riverside Park",
+          "finalStrictConsensusOption": "Riverside Park",
+          "escapedSameWrongConsensus": null,
+          "recoveredAtFinal": null,
+          "stableRecovery": null,
+          "relapsed": null
+        }
+      },
+      "attacksMinusRandomFinalBrier": null,
+      "attacksMinusRandomStableRecovery": null,
+      "controlWrongStateStable": null,
+      "correctConsensusHarmedByAttacks": null
+    },
+    {
+      "taskId": "task:hiddenbench:36",
+      "preForkStratum": "no_strict_consensus",
+      "r3ConsensusOption": null,
+      "arms": {
+        "RANDOM_MATCHED": {
+          "finalBrier": 0.80375,
+          "finalPooledTop": "Datacenter Alpha",
+          "finalStrictConsensusOption": null,
+          "escapedSameWrongConsensus": null,
+          "recoveredAtFinal": null,
+          "stableRecovery": null,
+          "relapsed": null
+        },
+        "ATTACKS_NEUTRAL": {
+          "finalBrier": 0.68625,
+          "finalPooledTop": "Datacenter Alpha",
+          "finalStrictConsensusOption": null,
+          "escapedSameWrongConsensus": null,
+          "recoveredAtFinal": null,
+          "stableRecovery": null,
+          "relapsed": null
+        },
+        "CONTROL": {
+          "finalBrier": 0.7709375,
+          "finalPooledTop": "Datacenter Alpha",
+          "finalStrictConsensusOption": null,
+          "escapedSameWrongConsensus": null,
+          "recoveredAtFinal": null,
+          "stableRecovery": null,
+          "relapsed": null
+        }
+      },
+      "attacksMinusRandomFinalBrier": null,
+      "attacksMinusRandomStableRecovery": null,
+      "controlWrongStateStable": null,
+      "correctConsensusHarmedByAttacks": null
+    },
+    {
+      "taskId": "task:hiddenbench:43",
+      "preForkStratum": "wrong_consensus",
+      "r3ConsensusOption": "Aurora Station",
+      "arms": {
+        "ATTACKS_NEUTRAL": {
+          "finalBrier": 0.02375,
+          "finalPooledTop": "Canyon Depot",
+          "finalStrictConsensusOption": "Canyon Depot",
+          "escapedSameWrongConsensus": true,
+          "recoveredAtFinal": true,
+          "stableRecovery": true,
+          "relapsed": false
+        },
+        "RANDOM_MATCHED": {
+          "finalBrier": 1.1400000000000001,
+          "finalPooledTop": "Aurora Station",
+          "finalStrictConsensusOption": "Aurora Station",
+          "escapedSameWrongConsensus": false,
+          "recoveredAtFinal": false,
+          "stableRecovery": false,
+          "relapsed": false
+        },
+        "CONTROL": {
+          "finalBrier": 1.6158593750000003,
+          "finalPooledTop": "Aurora Station",
+          "finalStrictConsensusOption": "Aurora Station",
+          "escapedSameWrongConsensus": false,
+          "recoveredAtFinal": false,
+          "stableRecovery": false,
+          "relapsed": false
+        }
+      },
+      "attacksMinusRandomFinalBrier": -1.1162500000000002,
+      "attacksMinusRandomStableRecovery": 1,
+      "controlWrongStateStable": true,
+      "correctConsensusHarmedByAttacks": null
+    },
+    {
+      "taskId": "task:hiddenbench:50",
+      "preForkStratum": "no_strict_consensus",
+      "r3ConsensusOption": null,
+      "arms": {
+        "RANDOM_MATCHED": {
+          "finalBrier": 0.22222222222222224,
+          "finalPooledTop": "Conference Room Gamma",
+          "finalStrictConsensusOption": null,
+          "escapedSameWrongConsensus": null,
+          "recoveredAtFinal": null,
+          "stableRecovery": null,
+          "relapsed": null
+        },
+        "ATTACKS_NEUTRAL": {
+          "finalBrier": 0.22222222222222224,
+          "finalPooledTop": "Conference Room Gamma",
+          "finalStrictConsensusOption": null,
+          "escapedSameWrongConsensus": null,
+          "recoveredAtFinal": null,
+          "stableRecovery": null,
+          "relapsed": null
+        },
+        "CONTROL": {
+          "finalBrier": 0.22222222222222224,
+          "finalPooledTop": "Conference Room Gamma",
+          "finalStrictConsensusOption": null,
+          "escapedSameWrongConsensus": null,
+          "recoveredAtFinal": null,
+          "stableRecovery": null,
+          "relapsed": null
+        }
+      },
+      "attacksMinusRandomFinalBrier": null,
+      "attacksMinusRandomStableRecovery": null,
+      "controlWrongStateStable": null,
+      "correctConsensusHarmedByAttacks": null
+    },
+    {
+      "taskId": "task:hiddenbench:57",
+      "preForkStratum": "wrong_consensus",
+      "r3ConsensusOption": "Site B",
+      "arms": {
+        "CONTROL": {
+          "finalBrier": 1.8537499999999998,
+          "finalPooledTop": "Site B",
+          "finalStrictConsensusOption": "Site B",
+          "escapedSameWrongConsensus": false,
+          "recoveredAtFinal": false,
+          "stableRecovery": false,
+          "relapsed": false
+        },
+        "ATTACKS_NEUTRAL": {
+          "finalBrier": 1.9012499999999999,
+          "finalPooledTop": "Site B",
+          "finalStrictConsensusOption": "Site B",
+          "escapedSameWrongConsensus": false,
+          "recoveredAtFinal": false,
+          "stableRecovery": false,
+          "relapsed": false
+        },
+        "RANDOM_MATCHED": {
+          "finalBrier": 0.07124999999999998,
+          "finalPooledTop": "Site C",
+          "finalStrictConsensusOption": null,
+          "escapedSameWrongConsensus": true,
+          "recoveredAtFinal": true,
+          "stableRecovery": true,
+          "relapsed": false
+        }
+      },
+      "attacksMinusRandomFinalBrier": 1.8299999999999998,
+      "attacksMinusRandomStableRecovery": -1,
+      "controlWrongStateStable": true,
+      "correctConsensusHarmedByAttacks": null
+    },
+    {
+      "taskId": "task:hiddenbench:64",
+      "preForkStratum": "correct_consensus",
+      "r3ConsensusOption": "Airborne Toxin from HVAC",
+      "arms": {
+        "RANDOM_MATCHED": {
+          "finalBrier": 0.0234375,
+          "finalPooledTop": "Airborne Toxin from HVAC",
+          "finalStrictConsensusOption": "Airborne Toxin from HVAC",
+          "escapedSameWrongConsensus": null,
+          "recoveredAtFinal": null,
+          "stableRecovery": null,
+          "relapsed": null
+        },
+        "CONTROL": {
+          "finalBrier": 0.059999999999999984,
+          "finalPooledTop": "Airborne Toxin from HVAC",
+          "finalStrictConsensusOption": "Airborne Toxin from HVAC",
+          "escapedSameWrongConsensus": null,
+          "recoveredAtFinal": null,
+          "stableRecovery": null,
+          "relapsed": null
+        },
+        "ATTACKS_NEUTRAL": {
+          "finalBrier": 0.04593750000000001,
+          "finalPooledTop": "Airborne Toxin from HVAC",
+          "finalStrictConsensusOption": "Airborne Toxin from HVAC",
+          "escapedSameWrongConsensus": null,
+          "recoveredAtFinal": null,
+          "stableRecovery": null,
+          "relapsed": null
+        }
+      },
+      "attacksMinusRandomFinalBrier": null,
+      "attacksMinusRandomStableRecovery": null,
+      "controlWrongStateStable": null,
+      "correctConsensusHarmedByAttacks": true
+    },
+    {
+      "taskId": "task:hiddenbench:8",
+      "preForkStratum": "correct_consensus",
+      "r3ConsensusOption": "Eddie Sullivan",
+      "arms": {
+        "RANDOM_MATCHED": {
+          "finalBrier": 0.059999999999999984,
+          "finalPooledTop": "Eddie Sullivan",
+          "finalStrictConsensusOption": "Eddie Sullivan",
+          "escapedSameWrongConsensus": null,
+          "recoveredAtFinal": null,
+          "stableRecovery": null,
+          "relapsed": null
+        },
+        "CONTROL": {
+          "finalBrier": 0.14000000000000004,
+          "finalPooledTop": "Eddie Sullivan",
+          "finalStrictConsensusOption": "Eddie Sullivan",
+          "escapedSameWrongConsensus": null,
+          "recoveredAtFinal": null,
+          "stableRecovery": null,
+          "relapsed": null
+        },
+        "ATTACKS_NEUTRAL": {
+          "finalBrier": 0.14000000000000004,
+          "finalPooledTop": "Eddie Sullivan",
+          "finalStrictConsensusOption": "Eddie Sullivan",
+          "escapedSameWrongConsensus": null,
+          "recoveredAtFinal": null,
+          "stableRecovery": null,
+          "relapsed": null
+        }
+      },
+      "attacksMinusRandomFinalBrier": null,
+      "attacksMinusRandomStableRecovery": null,
+      "controlWrongStateStable": null,
+      "correctConsensusHarmedByAttacks": true
+    }
+  ],
+  "summary": {
+    "taskCount": 10,
+    "wrongConsensusTaskCount": 2,
+    "correctConsensusTaskCount": 3,
+    "meanAttacksMinusRandomFinalBrierWithinWrongConsensus": 0.35687499999999983,
+    "attacksMinusRandomStableRecoveryRateWithinWrongConsensus": 0,
+    "correctConsensusHarmCount": 2
+  },
+  "interpretationCeiling": "randomized_same_state_arm_contrasts_within_observed_r3_strata",
+  "contentHash": "sha256:5127012107bd9f15a5c45ad294a9c1b7528008a2e2f2531e03015c0f954f85a1"
+}

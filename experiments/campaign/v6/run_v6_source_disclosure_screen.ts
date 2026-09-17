@@ -1,7 +1,7 @@
 /**
  * V6 Source-Disclosure mechanism screen — minimal runner / plan builder / CLI.
  *
- * Frozen design (docs/plans/CLAUDE_CODE_SOURCE_DISCLOSURE_PHASE1_HANDOFF_2026-08-14.md):
+ * Historical frozen design (docs/archive/plans/CLAUDE_CODE_SOURCE_DISCLOSURE_PHASE1_HANDOFF_2026-08-14.md):
  *   - 10 tasks x 2 paired blocks x 2 arms (holdout / forced_source_disclosure)
  *     = 40 planned runs;
  *   - the arm is frozen in the plan; the only task difference between arms is

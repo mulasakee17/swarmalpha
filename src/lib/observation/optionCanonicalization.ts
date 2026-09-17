@@ -1,4 +1,4 @@
-import type { AgentOpinion } from "../discussion/types";
+import type { AgentOpinion } from "../../../legacy/src/lib/discussion/types";
 
 export type OptionMatchStatus = "matched" | "ambiguous" | "unmatched";
 

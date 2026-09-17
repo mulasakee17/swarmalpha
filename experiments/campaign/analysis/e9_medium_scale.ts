@@ -14,7 +14,7 @@ dotenv.config({ path: path.resolve(__dirname, "..", "..", "..", ".env.local") })
 
 import { runSingle } from "../pipeline/Runner";
 import type { ExperimentConfig } from "../types";
-import { mean, sampleStd } from "../../v2/statsShared";
+import { mean, sampleStd } from "../../../legacy/experiments/v2/statsShared";
 import { E9M_CRISIS_NONE, E9M_CRISIS_BELIEF, E9M_CRISIS_COGNITIVE } from "../configs/e9_medium_scale";
 
 const RUN_CONFIGS = [E9M_CRISIS_NONE, E9M_CRISIS_BELIEF, E9M_CRISIS_COGNITIVE];

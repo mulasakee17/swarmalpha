@@ -1,0 +1,3908 @@
+{
+  "observationRef": {
+    "id": "swarmalpha.experiment.v6.discussion-thermometer-state-space-observation",
+    "version": "1.0.0"
+  },
+  "planHash": "sha256:507a0c46764c966841cba600d68306d3c69cd84767b4718080262199ccdf58ec",
+  "publicRunHash": "sha256:e0920536b37066fb563ee43a6b6841d3643c97729bd4e4b9cead1bb1cc386bb8",
+  "sensorFreezeHash": "sha256:489f03bb0d9146797b41e17b29c0d4a53b63f6d6b69fcc6a92336c43436e8479",
+  "sensorRunHash": "sha256:a280f33701d74466cb05e38bfcaf7f02bcd050e609142767dc9554fa3055653f",
+  "trajectories": [
+    {
+      "taskId": "thermometer-calibration:thermal-loop:v1",
+      "trajectory": {
+        "schemaRef": {
+          "id": "swarmalpha.epistemic.discussion-thermometer-trajectory",
+          "version": "1.0.0"
+        },
+        "inferenceStatus": "prefix_causal_descriptive_monitoring",
+        "truthAccess": "none",
+        "writeback": "none",
+        "prefixCausal": true,
+        "claimId": "claim:thermal-loop",
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "expectedAgentIds": [
+          "agent_1",
+          "agent_2",
+          "agent_3",
+          "agent_4"
+        ],
+        "sensorRef": {
+          "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+          "version": "1.1.0"
+        },
+        "readings": [
+          {
+            "schemaRef": {
+              "id": "swarmalpha.epistemic.discussion-thermometer-reading",
+              "version": "1.0.0"
+            },
+            "inferenceStatus": "prefix_causal_descriptive_monitoring",
+            "truthAccess": "none",
+            "writeback": "none",
+            "checkpointIndex": 0,
+            "stateStatus": "complete",
+            "state": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-state",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "operational_self_reported_belief_state",
+              "truthAccess": "none",
+              "claimId": "claim:thermal-loop",
+              "checkpointId": "thermometer-calibration:thermal-loop:v1:X0",
+              "checkpointIndex": 0,
+              "optionIds": [
+                "opt_1",
+                "opt_2",
+                "opt_3"
+              ],
+              "sensorRef": {
+                "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+                "version": "1.1.0"
+              },
+              "snapshotHash": "sha256:c5f66d8a2fafa83326186fee4306dadfceede237e596fcf93def41c3798ec50b",
+              "roster": {
+                "expectedAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "activeAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "missingAgentIds": [],
+                "coverage": 1,
+                "missingReasonByAgentId": {}
+              },
+              "measurement": {
+                "estimator": "primary_canonical_self_report",
+                "validPrimaryReportCount": 4,
+                "validRepeatPairCount": 4,
+                "replicateTotalVariationByAgentId": {
+                  "agent_1": 0,
+                  "agent_2": 0,
+                  "agent_3": 0,
+                  "agent_4": 0
+                },
+                "meanReplicateTotalVariation": 0,
+                "maxReplicateTotalVariation": 0
+              },
+              "behavioralCrossCheck": {
+                "status": "unavailable",
+                "choiceCoverage": 0,
+                "publicChoiceByAgentId": {},
+                "choiceShareByOptionId": null,
+                "majorityChoiceShare": null,
+                "beliefChoiceComparableAgentCount": 0,
+                "beliefTopChoiceCompatibilityRate": null
+              },
+              "microstate": {
+                "beliefProbabilitiesByAgentId": {
+                  "agent_1": {
+                    "opt_1": 0.7,
+                    "opt_2": 0.2,
+                    "opt_3": 0.1
+                  },
+                  "agent_2": {
+                    "opt_1": 0.55,
+                    "opt_2": 0.3,
+                    "opt_3": 0.15
+                  },
+                  "agent_3": {
+                    "opt_1": 0.4,
+                    "opt_2": 0.45,
+                    "opt_3": 0.15
+                  },
+                  "agent_4": {
+                    "opt_1": 0.5,
+                    "opt_2": 0.2,
+                    "opt_3": 0.3
+                  }
+                }
+              },
+              "macrostate": {
+                "pooledProbabilitiesByOptionId": {
+                  "opt_1": 0.5375,
+                  "opt_2": 0.2875,
+                  "opt_3": 0.175
+                },
+                "meanNormalizedReportEntropy": 0.8684716503721124,
+                "pooledNormalizedEntropy": 0.9075922079254225,
+                "normalizedGeneralizedJsd": 0.03912055755331012,
+                "pooledConcentration": 0.5375,
+                "pottsStyleOrder": 0.3062499999999999,
+                "meanPairwiseTotalVariation": 0.19999999999999996,
+                "maxPairwiseTotalVariation": 0.29999999999999993
+              },
+              "contentHash": "sha256:63a0af718bf9e39b4459dd9a81fd19c867507cac9e16ccb13920e444a16d47e2"
+            },
+            "transitionFromPrevious": null,
+            "contentHash": "sha256:d0494ed6aa7f3fda625f0cb950653c17ab97e6eee4241bfd0776c6e713c18dce"
+          },
+          {
+            "schemaRef": {
+              "id": "swarmalpha.epistemic.discussion-thermometer-reading",
+              "version": "1.0.0"
+            },
+            "inferenceStatus": "prefix_causal_descriptive_monitoring",
+            "truthAccess": "none",
+            "writeback": "none",
+            "checkpointIndex": 1,
+            "stateStatus": "complete",
+            "state": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-state",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "operational_self_reported_belief_state",
+              "truthAccess": "none",
+              "claimId": "claim:thermal-loop",
+              "checkpointId": "thermometer-calibration:thermal-loop:v1:X1",
+              "checkpointIndex": 1,
+              "optionIds": [
+                "opt_1",
+                "opt_2",
+                "opt_3"
+              ],
+              "sensorRef": {
+                "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+                "version": "1.1.0"
+              },
+              "snapshotHash": "sha256:2a42a50ce34fda0cf9df43fe4a83c76f1dac74a6cdb6fc2683baeaea4b1d6a10",
+              "roster": {
+                "expectedAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "activeAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "missingAgentIds": [],
+                "coverage": 1,
+                "missingReasonByAgentId": {}
+              },
+              "measurement": {
+                "estimator": "primary_canonical_self_report",
+                "validPrimaryReportCount": 4,
+                "validRepeatPairCount": 4,
+                "replicateTotalVariationByAgentId": {
+                  "agent_1": 0,
+                  "agent_2": 0,
+                  "agent_3": 0,
+                  "agent_4": 0
+                },
+                "meanReplicateTotalVariation": 0,
+                "maxReplicateTotalVariation": 0
+              },
+              "behavioralCrossCheck": {
+                "status": "available",
+                "choiceCoverage": 1,
+                "publicChoiceByAgentId": {
+                  "agent_1": "opt_1",
+                  "agent_2": "opt_1",
+                  "agent_3": "opt_1",
+                  "agent_4": "opt_1"
+                },
+                "choiceShareByOptionId": {
+                  "opt_1": 1,
+                  "opt_2": 0,
+                  "opt_3": 0
+                },
+                "majorityChoiceShare": 1,
+                "beliefChoiceComparableAgentCount": 4,
+                "beliefTopChoiceCompatibilityRate": 0.75
+              },
+              "microstate": {
+                "beliefProbabilitiesByAgentId": {
+                  "agent_1": {
+                    "opt_1": 0.7,
+                    "opt_2": 0.2,
+                    "opt_3": 0.1
+                  },
+                  "agent_2": {
+                    "opt_1": 0.55,
+                    "opt_2": 0.3,
+                    "opt_3": 0.15
+                  },
+                  "agent_3": {
+                    "opt_1": 0.4,
+                    "opt_2": 0.45,
+                    "opt_3": 0.15
+                  },
+                  "agent_4": {
+                    "opt_1": 0.5,
+                    "opt_2": 0.2,
+                    "opt_3": 0.3
+                  }
+                }
+              },
+              "macrostate": {
+                "pooledProbabilitiesByOptionId": {
+                  "opt_1": 0.5375,
+                  "opt_2": 0.2875,
+                  "opt_3": 0.175
+                },
+                "meanNormalizedReportEntropy": 0.8684716503721124,
+                "pooledNormalizedEntropy": 0.9075922079254225,
+                "normalizedGeneralizedJsd": 0.03912055755331012,
+                "pooledConcentration": 0.5375,
+                "pottsStyleOrder": 0.3062499999999999,
+                "meanPairwiseTotalVariation": 0.19999999999999996,
+                "maxPairwiseTotalVariation": 0.29999999999999993
+              },
+              "contentHash": "sha256:579588d5f3387d288ad2884e528c49b651779f790351769ff1c85c981712277f"
+            },
+            "transitionFromPrevious": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "descriptive_reported_transition_only",
+              "truthAccess": "none",
+              "claimId": "claim:thermal-loop",
+              "fromStateHash": "sha256:63a0af718bf9e39b4459dd9a81fd19c867507cac9e16ccb13920e444a16d47e2",
+              "toStateHash": "sha256:579588d5f3387d288ad2884e528c49b651779f790351769ff1c85c981712277f",
+              "fromCheckpointId": "thermometer-calibration:thermal-loop:v1:X0",
+              "toCheckpointId": "thermometer-calibration:thermal-loop:v1:X1",
+              "matchedAgentIds": [
+                "agent_1",
+                "agent_2",
+                "agent_3",
+                "agent_4"
+              ],
+              "completeMatchedRoster": true,
+              "meanAgentTotalVariation": 0,
+              "pooledTotalVariation": 0,
+              "deltas": {
+                "meanNormalizedReportEntropy": 0,
+                "pooledNormalizedEntropy": 0,
+                "normalizedGeneralizedJsd": 0,
+                "pooledConcentration": 0,
+                "pottsStyleOrder": 0
+              },
+              "repeatabilityReference": {
+                "endpointMeanReplicateTotalVariation": 0,
+                "activityMinusEndpointRepeatability": 0,
+                "comparison": "not_above_reference",
+                "comparisonSemantics": "aggregate_reference_only",
+                "replicateComparableAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "primaryActivityMinusMaxEndpointRepeatabilityByAgentId": {
+                  "agent_1": 0,
+                  "agent_2": 0,
+                  "agent_3": 0,
+                  "agent_4": 0
+                },
+                "primaryActivityAboveBothEndpointRepeatabilitiesAgentIds": [],
+                "primaryActivityAboveBothEndpointRepeatabilitiesFraction": 0
+              },
+              "contentHash": "sha256:09a86574a2ad3a89de319d326d131f9b20765759451c36ebcb3ce47327f4454c"
+            },
+            "contentHash": "sha256:8375e1554638d4ddf155d2755ea1a56a51288240e6146566991584e0cdbcea0f"
+          },
+          {
+            "schemaRef": {
+              "id": "swarmalpha.epistemic.discussion-thermometer-reading",
+              "version": "1.0.0"
+            },
+            "inferenceStatus": "prefix_causal_descriptive_monitoring",
+            "truthAccess": "none",
+            "writeback": "none",
+            "checkpointIndex": 2,
+            "stateStatus": "complete",
+            "state": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-state",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "operational_self_reported_belief_state",
+              "truthAccess": "none",
+              "claimId": "claim:thermal-loop",
+              "checkpointId": "thermometer-calibration:thermal-loop:v1:X2",
+              "checkpointIndex": 2,
+              "optionIds": [
+                "opt_1",
+                "opt_2",
+                "opt_3"
+              ],
+              "sensorRef": {
+                "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+                "version": "1.1.0"
+              },
+              "snapshotHash": "sha256:8c4df7f4f04726126bc77402d67a5134cc44d04eeb1c9edea75106f1e3cabc90",
+              "roster": {
+                "expectedAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "activeAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "missingAgentIds": [],
+                "coverage": 1,
+                "missingReasonByAgentId": {}
+              },
+              "measurement": {
+                "estimator": "primary_canonical_self_report",
+                "validPrimaryReportCount": 4,
+                "validRepeatPairCount": 4,
+                "replicateTotalVariationByAgentId": {
+                  "agent_1": 0,
+                  "agent_2": 0,
+                  "agent_3": 0,
+                  "agent_4": 0
+                },
+                "meanReplicateTotalVariation": 0,
+                "maxReplicateTotalVariation": 0
+              },
+              "behavioralCrossCheck": {
+                "status": "available",
+                "choiceCoverage": 1,
+                "publicChoiceByAgentId": {
+                  "agent_1": "opt_1",
+                  "agent_2": "opt_1",
+                  "agent_3": "opt_1",
+                  "agent_4": "opt_1"
+                },
+                "choiceShareByOptionId": {
+                  "opt_1": 1,
+                  "opt_2": 0,
+                  "opt_3": 0
+                },
+                "majorityChoiceShare": 1,
+                "beliefChoiceComparableAgentCount": 4,
+                "beliefTopChoiceCompatibilityRate": 0.75
+              },
+              "microstate": {
+                "beliefProbabilitiesByAgentId": {
+                  "agent_1": {
+                    "opt_1": 0.7,
+                    "opt_2": 0.2,
+                    "opt_3": 0.1
+                  },
+                  "agent_2": {
+                    "opt_1": 0.55,
+                    "opt_2": 0.3,
+                    "opt_3": 0.15
+                  },
+                  "agent_3": {
+                    "opt_1": 0.4,
+                    "opt_2": 0.45,
+                    "opt_3": 0.15
+                  },
+                  "agent_4": {
+                    "opt_1": 0.5,
+                    "opt_2": 0.2,
+                    "opt_3": 0.3
+                  }
+                }
+              },
+              "macrostate": {
+                "pooledProbabilitiesByOptionId": {
+                  "opt_1": 0.5375,
+                  "opt_2": 0.2875,
+                  "opt_3": 0.175
+                },
+                "meanNormalizedReportEntropy": 0.8684716503721124,
+                "pooledNormalizedEntropy": 0.9075922079254225,
+                "normalizedGeneralizedJsd": 0.03912055755331012,
+                "pooledConcentration": 0.5375,
+                "pottsStyleOrder": 0.3062499999999999,
+                "meanPairwiseTotalVariation": 0.19999999999999996,
+                "maxPairwiseTotalVariation": 0.29999999999999993
+              },
+              "contentHash": "sha256:9f1614b29d77f34227513abc744a6a8c6833e36088faf9308c45a012d650f3b4"
+            },
+            "transitionFromPrevious": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "descriptive_reported_transition_only",
+              "truthAccess": "none",
+              "claimId": "claim:thermal-loop",
+              "fromStateHash": "sha256:579588d5f3387d288ad2884e528c49b651779f790351769ff1c85c981712277f",
+              "toStateHash": "sha256:9f1614b29d77f34227513abc744a6a8c6833e36088faf9308c45a012d650f3b4",
+              "fromCheckpointId": "thermometer-calibration:thermal-loop:v1:X1",
+              "toCheckpointId": "thermometer-calibration:thermal-loop:v1:X2",
+              "matchedAgentIds": [
+                "agent_1",
+                "agent_2",
+                "agent_3",
+                "agent_4"
+              ],
+              "completeMatchedRoster": true,
+              "meanAgentTotalVariation": 0,
+              "pooledTotalVariation": 0,
+              "deltas": {
+                "meanNormalizedReportEntropy": 0,
+                "pooledNormalizedEntropy": 0,
+                "normalizedGeneralizedJsd": 0,
+                "pooledConcentration": 0,
+                "pottsStyleOrder": 0
+              },
+              "repeatabilityReference": {
+                "endpointMeanReplicateTotalVariation": 0,
+                "activityMinusEndpointRepeatability": 0,
+                "comparison": "not_above_reference",
+                "comparisonSemantics": "aggregate_reference_only",
+                "replicateComparableAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "primaryActivityMinusMaxEndpointRepeatabilityByAgentId": {
+                  "agent_1": 0,
+                  "agent_2": 0,
+                  "agent_3": 0,
+                  "agent_4": 0
+                },
+                "primaryActivityAboveBothEndpointRepeatabilitiesAgentIds": [],
+                "primaryActivityAboveBothEndpointRepeatabilitiesFraction": 0
+              },
+              "contentHash": "sha256:dbf65a30d0bf9d3dd56ec79509ec589bfeb3e8dfa8a71d062335713b64d9bfcc"
+            },
+            "contentHash": "sha256:273e4b90a4179c703aa2668c768c3ba37d7bab63fd346347427d292116cb194d"
+          }
+        ],
+        "contentHash": "sha256:fc61ca16aa1eafd1d33e3522ab82c9f60d9cc186bd3049b234dfc6a1f16806e9"
+      }
+    },
+    {
+      "taskId": "thermometer-calibration:thermal-loop:v2",
+      "trajectory": {
+        "schemaRef": {
+          "id": "swarmalpha.epistemic.discussion-thermometer-trajectory",
+          "version": "1.0.0"
+        },
+        "inferenceStatus": "prefix_causal_descriptive_monitoring",
+        "truthAccess": "none",
+        "writeback": "none",
+        "prefixCausal": true,
+        "claimId": "claim:thermal-loop",
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "expectedAgentIds": [
+          "agent_1",
+          "agent_2",
+          "agent_3",
+          "agent_4"
+        ],
+        "sensorRef": {
+          "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+          "version": "1.1.0"
+        },
+        "readings": [
+          {
+            "schemaRef": {
+              "id": "swarmalpha.epistemic.discussion-thermometer-reading",
+              "version": "1.0.0"
+            },
+            "inferenceStatus": "prefix_causal_descriptive_monitoring",
+            "truthAccess": "none",
+            "writeback": "none",
+            "checkpointIndex": 0,
+            "stateStatus": "complete",
+            "state": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-state",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "operational_self_reported_belief_state",
+              "truthAccess": "none",
+              "claimId": "claim:thermal-loop",
+              "checkpointId": "thermometer-calibration:thermal-loop:v2:X0",
+              "checkpointIndex": 0,
+              "optionIds": [
+                "opt_1",
+                "opt_2",
+                "opt_3"
+              ],
+              "sensorRef": {
+                "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+                "version": "1.1.0"
+              },
+              "snapshotHash": "sha256:80af4c5111ec5b804206b35a69d77dec89122fb0c749cca40b7e3ae7df2bcbef",
+              "roster": {
+                "expectedAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "activeAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "missingAgentIds": [],
+                "coverage": 1,
+                "missingReasonByAgentId": {}
+              },
+              "measurement": {
+                "estimator": "primary_canonical_self_report",
+                "validPrimaryReportCount": 4,
+                "validRepeatPairCount": 4,
+                "replicateTotalVariationByAgentId": {
+                  "agent_1": 0,
+                  "agent_2": 0,
+                  "agent_3": 0,
+                  "agent_4": 0
+                },
+                "meanReplicateTotalVariation": 0,
+                "maxReplicateTotalVariation": 0
+              },
+              "behavioralCrossCheck": {
+                "status": "unavailable",
+                "choiceCoverage": 0,
+                "publicChoiceByAgentId": {},
+                "choiceShareByOptionId": null,
+                "majorityChoiceShare": null,
+                "beliefChoiceComparableAgentCount": 0,
+                "beliefTopChoiceCompatibilityRate": null
+              },
+              "microstate": {
+                "beliefProbabilitiesByAgentId": {
+                  "agent_1": {
+                    "opt_1": 0.65,
+                    "opt_2": 0.25,
+                    "opt_3": 0.1
+                  },
+                  "agent_2": {
+                    "opt_1": 0.65,
+                    "opt_2": 0.25,
+                    "opt_3": 0.1
+                  },
+                  "agent_3": {
+                    "opt_1": 0.65,
+                    "opt_2": 0.25,
+                    "opt_3": 0.1
+                  },
+                  "agent_4": {
+                    "opt_1": 0.65,
+                    "opt_2": 0.25,
+                    "opt_3": 0.1
+                  }
+                }
+              },
+              "macrostate": {
+                "pooledProbabilitiesByOptionId": {
+                  "opt_1": 0.65,
+                  "opt_2": 0.25,
+                  "opt_3": 0.1
+                },
+                "meanNormalizedReportEntropy": 0.7799302846668993,
+                "pooledNormalizedEntropy": 0.7799302846668993,
+                "normalizedGeneralizedJsd": 0,
+                "pooledConcentration": 0.65,
+                "pottsStyleOrder": 0.4750000000000001,
+                "meanPairwiseTotalVariation": 0,
+                "maxPairwiseTotalVariation": 0
+              },
+              "contentHash": "sha256:52f95f1c48883737b6fe71f0483442350b036365718164c977d7aef2b57aa02d"
+            },
+            "transitionFromPrevious": null,
+            "contentHash": "sha256:f74de56a941f289c84fbf3c7b94f90b9c1cc0f4c433a55245b0dbae20e25bbbc"
+          },
+          {
+            "schemaRef": {
+              "id": "swarmalpha.epistemic.discussion-thermometer-reading",
+              "version": "1.0.0"
+            },
+            "inferenceStatus": "prefix_causal_descriptive_monitoring",
+            "truthAccess": "none",
+            "writeback": "none",
+            "checkpointIndex": 1,
+            "stateStatus": "complete",
+            "state": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-state",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "operational_self_reported_belief_state",
+              "truthAccess": "none",
+              "claimId": "claim:thermal-loop",
+              "checkpointId": "thermometer-calibration:thermal-loop:v2:X1",
+              "checkpointIndex": 1,
+              "optionIds": [
+                "opt_1",
+                "opt_2",
+                "opt_3"
+              ],
+              "sensorRef": {
+                "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+                "version": "1.1.0"
+              },
+              "snapshotHash": "sha256:aa2f9233958241d20eea23a5029ec6478254745a038c04d683b3ee41319419a7",
+              "roster": {
+                "expectedAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "activeAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "missingAgentIds": [],
+                "coverage": 1,
+                "missingReasonByAgentId": {}
+              },
+              "measurement": {
+                "estimator": "primary_canonical_self_report",
+                "validPrimaryReportCount": 4,
+                "validRepeatPairCount": 4,
+                "replicateTotalVariationByAgentId": {
+                  "agent_1": 0,
+                  "agent_2": 0,
+                  "agent_3": 0,
+                  "agent_4": 0
+                },
+                "meanReplicateTotalVariation": 0,
+                "maxReplicateTotalVariation": 0
+              },
+              "behavioralCrossCheck": {
+                "status": "available",
+                "choiceCoverage": 1,
+                "publicChoiceByAgentId": {
+                  "agent_1": "opt_1",
+                  "agent_2": "opt_1",
+                  "agent_3": "opt_1",
+                  "agent_4": "opt_1"
+                },
+                "choiceShareByOptionId": {
+                  "opt_1": 1,
+                  "opt_2": 0,
+                  "opt_3": 0
+                },
+                "majorityChoiceShare": 1,
+                "beliefChoiceComparableAgentCount": 4,
+                "beliefTopChoiceCompatibilityRate": 1
+              },
+              "microstate": {
+                "beliefProbabilitiesByAgentId": {
+                  "agent_1": {
+                    "opt_1": 0.65,
+                    "opt_2": 0.25,
+                    "opt_3": 0.1
+                  },
+                  "agent_2": {
+                    "opt_1": 0.65,
+                    "opt_2": 0.25,
+                    "opt_3": 0.1
+                  },
+                  "agent_3": {
+                    "opt_1": 0.65,
+                    "opt_2": 0.25,
+                    "opt_3": 0.1
+                  },
+                  "agent_4": {
+                    "opt_1": 0.65,
+                    "opt_2": 0.25,
+                    "opt_3": 0.1
+                  }
+                }
+              },
+              "macrostate": {
+                "pooledProbabilitiesByOptionId": {
+                  "opt_1": 0.65,
+                  "opt_2": 0.25,
+                  "opt_3": 0.1
+                },
+                "meanNormalizedReportEntropy": 0.7799302846668993,
+                "pooledNormalizedEntropy": 0.7799302846668993,
+                "normalizedGeneralizedJsd": 0,
+                "pooledConcentration": 0.65,
+                "pottsStyleOrder": 0.4750000000000001,
+                "meanPairwiseTotalVariation": 0,
+                "maxPairwiseTotalVariation": 0
+              },
+              "contentHash": "sha256:c93054d10829bc43611bedde1f90447a8781efd47794af7713f96bb36aa998f4"
+            },
+            "transitionFromPrevious": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "descriptive_reported_transition_only",
+              "truthAccess": "none",
+              "claimId": "claim:thermal-loop",
+              "fromStateHash": "sha256:52f95f1c48883737b6fe71f0483442350b036365718164c977d7aef2b57aa02d",
+              "toStateHash": "sha256:c93054d10829bc43611bedde1f90447a8781efd47794af7713f96bb36aa998f4",
+              "fromCheckpointId": "thermometer-calibration:thermal-loop:v2:X0",
+              "toCheckpointId": "thermometer-calibration:thermal-loop:v2:X1",
+              "matchedAgentIds": [
+                "agent_1",
+                "agent_2",
+                "agent_3",
+                "agent_4"
+              ],
+              "completeMatchedRoster": true,
+              "meanAgentTotalVariation": 0,
+              "pooledTotalVariation": 0,
+              "deltas": {
+                "meanNormalizedReportEntropy": 0,
+                "pooledNormalizedEntropy": 0,
+                "normalizedGeneralizedJsd": 0,
+                "pooledConcentration": 0,
+                "pottsStyleOrder": 0
+              },
+              "repeatabilityReference": {
+                "endpointMeanReplicateTotalVariation": 0,
+                "activityMinusEndpointRepeatability": 0,
+                "comparison": "not_above_reference",
+                "comparisonSemantics": "aggregate_reference_only",
+                "replicateComparableAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "primaryActivityMinusMaxEndpointRepeatabilityByAgentId": {
+                  "agent_1": 0,
+                  "agent_2": 0,
+                  "agent_3": 0,
+                  "agent_4": 0
+                },
+                "primaryActivityAboveBothEndpointRepeatabilitiesAgentIds": [],
+                "primaryActivityAboveBothEndpointRepeatabilitiesFraction": 0
+              },
+              "contentHash": "sha256:b73696c070aab0feea576496fdc10a736f8c407314a935ca4573d38bf221a745"
+            },
+            "contentHash": "sha256:adc93c1f78237dc78d119a7e76a1a2992356880e08906cc1361d997d1cc417f3"
+          },
+          {
+            "schemaRef": {
+              "id": "swarmalpha.epistemic.discussion-thermometer-reading",
+              "version": "1.0.0"
+            },
+            "inferenceStatus": "prefix_causal_descriptive_monitoring",
+            "truthAccess": "none",
+            "writeback": "none",
+            "checkpointIndex": 2,
+            "stateStatus": "complete",
+            "state": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-state",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "operational_self_reported_belief_state",
+              "truthAccess": "none",
+              "claimId": "claim:thermal-loop",
+              "checkpointId": "thermometer-calibration:thermal-loop:v2:X2",
+              "checkpointIndex": 2,
+              "optionIds": [
+                "opt_1",
+                "opt_2",
+                "opt_3"
+              ],
+              "sensorRef": {
+                "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+                "version": "1.1.0"
+              },
+              "snapshotHash": "sha256:5720850fca11188f59601b161dab86aa60d0a2d3b3f5458aed82c9c7c26524f3",
+              "roster": {
+                "expectedAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "activeAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "missingAgentIds": [],
+                "coverage": 1,
+                "missingReasonByAgentId": {}
+              },
+              "measurement": {
+                "estimator": "primary_canonical_self_report",
+                "validPrimaryReportCount": 4,
+                "validRepeatPairCount": 4,
+                "replicateTotalVariationByAgentId": {
+                  "agent_1": 0,
+                  "agent_2": 0,
+                  "agent_3": 0,
+                  "agent_4": 0
+                },
+                "meanReplicateTotalVariation": 0,
+                "maxReplicateTotalVariation": 0
+              },
+              "behavioralCrossCheck": {
+                "status": "available",
+                "choiceCoverage": 1,
+                "publicChoiceByAgentId": {
+                  "agent_1": "opt_1",
+                  "agent_2": "opt_1",
+                  "agent_3": "opt_1",
+                  "agent_4": "opt_1"
+                },
+                "choiceShareByOptionId": {
+                  "opt_1": 1,
+                  "opt_2": 0,
+                  "opt_3": 0
+                },
+                "majorityChoiceShare": 1,
+                "beliefChoiceComparableAgentCount": 4,
+                "beliefTopChoiceCompatibilityRate": 0
+              },
+              "microstate": {
+                "beliefProbabilitiesByAgentId": {
+                  "agent_1": {
+                    "opt_1": 0.4,
+                    "opt_2": 0.5,
+                    "opt_3": 0.1
+                  },
+                  "agent_2": {
+                    "opt_1": 0.4,
+                    "opt_2": 0.5,
+                    "opt_3": 0.1
+                  },
+                  "agent_3": {
+                    "opt_1": 0.4,
+                    "opt_2": 0.5,
+                    "opt_3": 0.1
+                  },
+                  "agent_4": {
+                    "opt_1": 0.4,
+                    "opt_2": 0.5,
+                    "opt_3": 0.1
+                  }
+                }
+              },
+              "macrostate": {
+                "pooledProbabilitiesByOptionId": {
+                  "opt_1": 0.4,
+                  "opt_2": 0.5,
+                  "opt_3": 0.1
+                },
+                "meanNormalizedReportEntropy": 0.858672711073255,
+                "pooledNormalizedEntropy": 0.858672711073255,
+                "normalizedGeneralizedJsd": 0,
+                "pooledConcentration": 0.5,
+                "pottsStyleOrder": 0.25,
+                "meanPairwiseTotalVariation": 0,
+                "maxPairwiseTotalVariation": 0
+              },
+              "contentHash": "sha256:4935cb93f590e32833a11dc1802b91fce91ad1f09b0c67dd0e8158cd179d3cec"
+            },
+            "transitionFromPrevious": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "descriptive_reported_transition_only",
+              "truthAccess": "none",
+              "claimId": "claim:thermal-loop",
+              "fromStateHash": "sha256:c93054d10829bc43611bedde1f90447a8781efd47794af7713f96bb36aa998f4",
+              "toStateHash": "sha256:4935cb93f590e32833a11dc1802b91fce91ad1f09b0c67dd0e8158cd179d3cec",
+              "fromCheckpointId": "thermometer-calibration:thermal-loop:v2:X1",
+              "toCheckpointId": "thermometer-calibration:thermal-loop:v2:X2",
+              "matchedAgentIds": [
+                "agent_1",
+                "agent_2",
+                "agent_3",
+                "agent_4"
+              ],
+              "completeMatchedRoster": true,
+              "meanAgentTotalVariation": 0.25,
+              "pooledTotalVariation": 0.25,
+              "deltas": {
+                "meanNormalizedReportEntropy": 0.07874242640635576,
+                "pooledNormalizedEntropy": 0.07874242640635576,
+                "normalizedGeneralizedJsd": 0,
+                "pooledConcentration": -0.15000000000000002,
+                "pottsStyleOrder": -0.2250000000000001
+              },
+              "repeatabilityReference": {
+                "endpointMeanReplicateTotalVariation": 0,
+                "activityMinusEndpointRepeatability": 0.25,
+                "comparison": "above_reference",
+                "comparisonSemantics": "aggregate_reference_only",
+                "replicateComparableAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "primaryActivityMinusMaxEndpointRepeatabilityByAgentId": {
+                  "agent_1": 0.25,
+                  "agent_2": 0.25,
+                  "agent_3": 0.25,
+                  "agent_4": 0.25
+                },
+                "primaryActivityAboveBothEndpointRepeatabilitiesAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "primaryActivityAboveBothEndpointRepeatabilitiesFraction": 1
+              },
+              "contentHash": "sha256:6a06b65638227723a72f8125192d0052af04c6aee5b80d6d89ef727299b992eb"
+            },
+            "contentHash": "sha256:d5853dbcfbc6eb07d17cc29f18403c6d2a235f8fad552ac243abfc92222bbc1a"
+          }
+        ],
+        "contentHash": "sha256:3dc7eb7b8bb74c9c276f2968a57fac9ab0502363d7090ac8cad1aec7cad79a71"
+      }
+    },
+    {
+      "taskId": "thermometer-calibration:thermal-loop:v3",
+      "trajectory": {
+        "schemaRef": {
+          "id": "swarmalpha.epistemic.discussion-thermometer-trajectory",
+          "version": "1.0.0"
+        },
+        "inferenceStatus": "prefix_causal_descriptive_monitoring",
+        "truthAccess": "none",
+        "writeback": "none",
+        "prefixCausal": true,
+        "claimId": "claim:thermal-loop",
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "expectedAgentIds": [
+          "agent_1",
+          "agent_2",
+          "agent_3",
+          "agent_4"
+        ],
+        "sensorRef": {
+          "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+          "version": "1.1.0"
+        },
+        "readings": [
+          {
+            "schemaRef": {
+              "id": "swarmalpha.epistemic.discussion-thermometer-reading",
+              "version": "1.0.0"
+            },
+            "inferenceStatus": "prefix_causal_descriptive_monitoring",
+            "truthAccess": "none",
+            "writeback": "none",
+            "checkpointIndex": 0,
+            "stateStatus": "complete",
+            "state": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-state",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "operational_self_reported_belief_state",
+              "truthAccess": "none",
+              "claimId": "claim:thermal-loop",
+              "checkpointId": "thermometer-calibration:thermal-loop:v3:X0",
+              "checkpointIndex": 0,
+              "optionIds": [
+                "opt_1",
+                "opt_2",
+                "opt_3"
+              ],
+              "sensorRef": {
+                "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+                "version": "1.1.0"
+              },
+              "snapshotHash": "sha256:c1a757068ccd0cbad2450be682269247a4cee26967dcbaf70bf2f33cd721f5ea",
+              "roster": {
+                "expectedAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "activeAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "missingAgentIds": [],
+                "coverage": 1,
+                "missingReasonByAgentId": {}
+              },
+              "measurement": {
+                "estimator": "primary_canonical_self_report",
+                "validPrimaryReportCount": 4,
+                "validRepeatPairCount": 4,
+                "replicateTotalVariationByAgentId": {
+                  "agent_1": 0,
+                  "agent_2": 0,
+                  "agent_3": 0,
+                  "agent_4": 0
+                },
+                "meanReplicateTotalVariation": 0,
+                "maxReplicateTotalVariation": 0
+              },
+              "behavioralCrossCheck": {
+                "status": "unavailable",
+                "choiceCoverage": 0,
+                "publicChoiceByAgentId": {},
+                "choiceShareByOptionId": null,
+                "majorityChoiceShare": null,
+                "beliefChoiceComparableAgentCount": 0,
+                "beliefTopChoiceCompatibilityRate": null
+              },
+              "microstate": {
+                "beliefProbabilitiesByAgentId": {
+                  "agent_1": {
+                    "opt_1": 0.8,
+                    "opt_2": 0.1,
+                    "opt_3": 0.1
+                  },
+                  "agent_2": {
+                    "opt_1": 0.8,
+                    "opt_2": 0.1,
+                    "opt_3": 0.1
+                  },
+                  "agent_3": {
+                    "opt_1": 0.1,
+                    "opt_2": 0.1,
+                    "opt_3": 0.8
+                  },
+                  "agent_4": {
+                    "opt_1": 0.1,
+                    "opt_2": 0.1,
+                    "opt_3": 0.8
+                  }
+                }
+              },
+              "macrostate": {
+                "pooledProbabilitiesByOptionId": {
+                  "opt_1": 0.45000000000000007,
+                  "opt_2": 0.1,
+                  "opt_3": 0.45
+                },
+                "meanNormalizedReportEntropy": 0.5816718657178869,
+                "pooledNormalizedEntropy": 0.8637400525036965,
+                "normalizedGeneralizedJsd": 0.2820681867858096,
+                "pooledConcentration": 0.45000000000000007,
+                "pottsStyleOrder": 0.17500000000000004,
+                "meanPairwiseTotalVariation": 0.46666666666666673,
+                "maxPairwiseTotalVariation": 0.7000000000000001
+              },
+              "contentHash": "sha256:921f5905a220b997b3357c84e41c48d2b18ba25b2cbe27e6084477b3a307493e"
+            },
+            "transitionFromPrevious": null,
+            "contentHash": "sha256:80245986cb9a7a331fccc940ea2256a3bcfc30e331d0570a0cc87920a4b738a1"
+          },
+          {
+            "schemaRef": {
+              "id": "swarmalpha.epistemic.discussion-thermometer-reading",
+              "version": "1.0.0"
+            },
+            "inferenceStatus": "prefix_causal_descriptive_monitoring",
+            "truthAccess": "none",
+            "writeback": "none",
+            "checkpointIndex": 1,
+            "stateStatus": "complete",
+            "state": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-state",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "operational_self_reported_belief_state",
+              "truthAccess": "none",
+              "claimId": "claim:thermal-loop",
+              "checkpointId": "thermometer-calibration:thermal-loop:v3:X1",
+              "checkpointIndex": 1,
+              "optionIds": [
+                "opt_1",
+                "opt_2",
+                "opt_3"
+              ],
+              "sensorRef": {
+                "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+                "version": "1.1.0"
+              },
+              "snapshotHash": "sha256:368456a350855372a515d69ed27591c1373db476d3e511e3408f64cf81246591",
+              "roster": {
+                "expectedAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "activeAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "missingAgentIds": [],
+                "coverage": 1,
+                "missingReasonByAgentId": {}
+              },
+              "measurement": {
+                "estimator": "primary_canonical_self_report",
+                "validPrimaryReportCount": 4,
+                "validRepeatPairCount": 4,
+                "replicateTotalVariationByAgentId": {
+                  "agent_1": 0,
+                  "agent_2": 0,
+                  "agent_3": 0,
+                  "agent_4": 0
+                },
+                "meanReplicateTotalVariation": 0,
+                "maxReplicateTotalVariation": 0
+              },
+              "behavioralCrossCheck": {
+                "status": "available",
+                "choiceCoverage": 1,
+                "publicChoiceByAgentId": {
+                  "agent_1": "opt_1",
+                  "agent_2": "opt_1",
+                  "agent_3": "opt_1",
+                  "agent_4": "opt_1"
+                },
+                "choiceShareByOptionId": {
+                  "opt_1": 1,
+                  "opt_2": 0,
+                  "opt_3": 0
+                },
+                "majorityChoiceShare": 1,
+                "beliefChoiceComparableAgentCount": 4,
+                "beliefTopChoiceCompatibilityRate": 0.5
+              },
+              "microstate": {
+                "beliefProbabilitiesByAgentId": {
+                  "agent_1": {
+                    "opt_1": 0.8,
+                    "opt_2": 0.1,
+                    "opt_3": 0.1
+                  },
+                  "agent_2": {
+                    "opt_1": 0.8,
+                    "opt_2": 0.1,
+                    "opt_3": 0.1
+                  },
+                  "agent_3": {
+                    "opt_1": 0.1,
+                    "opt_2": 0.1,
+                    "opt_3": 0.8
+                  },
+                  "agent_4": {
+                    "opt_1": 0.1,
+                    "opt_2": 0.1,
+                    "opt_3": 0.8
+                  }
+                }
+              },
+              "macrostate": {
+                "pooledProbabilitiesByOptionId": {
+                  "opt_1": 0.45000000000000007,
+                  "opt_2": 0.1,
+                  "opt_3": 0.45
+                },
+                "meanNormalizedReportEntropy": 0.5816718657178869,
+                "pooledNormalizedEntropy": 0.8637400525036965,
+                "normalizedGeneralizedJsd": 0.2820681867858096,
+                "pooledConcentration": 0.45000000000000007,
+                "pottsStyleOrder": 0.17500000000000004,
+                "meanPairwiseTotalVariation": 0.46666666666666673,
+                "maxPairwiseTotalVariation": 0.7000000000000001
+              },
+              "contentHash": "sha256:8d4031339216a79b5cb9d2214e69879fe8418fbc58b61aa61fa151437ecd7f8c"
+            },
+            "transitionFromPrevious": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "descriptive_reported_transition_only",
+              "truthAccess": "none",
+              "claimId": "claim:thermal-loop",
+              "fromStateHash": "sha256:921f5905a220b997b3357c84e41c48d2b18ba25b2cbe27e6084477b3a307493e",
+              "toStateHash": "sha256:8d4031339216a79b5cb9d2214e69879fe8418fbc58b61aa61fa151437ecd7f8c",
+              "fromCheckpointId": "thermometer-calibration:thermal-loop:v3:X0",
+              "toCheckpointId": "thermometer-calibration:thermal-loop:v3:X1",
+              "matchedAgentIds": [
+                "agent_1",
+                "agent_2",
+                "agent_3",
+                "agent_4"
+              ],
+              "completeMatchedRoster": true,
+              "meanAgentTotalVariation": 0,
+              "pooledTotalVariation": 0,
+              "deltas": {
+                "meanNormalizedReportEntropy": 0,
+                "pooledNormalizedEntropy": 0,
+                "normalizedGeneralizedJsd": 0,
+                "pooledConcentration": 0,
+                "pottsStyleOrder": 0
+              },
+              "repeatabilityReference": {
+                "endpointMeanReplicateTotalVariation": 0,
+                "activityMinusEndpointRepeatability": 0,
+                "comparison": "not_above_reference",
+                "comparisonSemantics": "aggregate_reference_only",
+                "replicateComparableAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "primaryActivityMinusMaxEndpointRepeatabilityByAgentId": {
+                  "agent_1": 0,
+                  "agent_2": 0,
+                  "agent_3": 0,
+                  "agent_4": 0
+                },
+                "primaryActivityAboveBothEndpointRepeatabilitiesAgentIds": [],
+                "primaryActivityAboveBothEndpointRepeatabilitiesFraction": 0
+              },
+              "contentHash": "sha256:e7fccf58ee2ea08e60e200cf0be563c302a74a516d4346e932898f4f959aefc5"
+            },
+            "contentHash": "sha256:e80ffe5b0c1f9783e82d734356212a48c97f1899d0542095571cab57f0f2df20"
+          },
+          {
+            "schemaRef": {
+              "id": "swarmalpha.epistemic.discussion-thermometer-reading",
+              "version": "1.0.0"
+            },
+            "inferenceStatus": "prefix_causal_descriptive_monitoring",
+            "truthAccess": "none",
+            "writeback": "none",
+            "checkpointIndex": 2,
+            "stateStatus": "complete",
+            "state": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-state",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "operational_self_reported_belief_state",
+              "truthAccess": "none",
+              "claimId": "claim:thermal-loop",
+              "checkpointId": "thermometer-calibration:thermal-loop:v3:X2",
+              "checkpointIndex": 2,
+              "optionIds": [
+                "opt_1",
+                "opt_2",
+                "opt_3"
+              ],
+              "sensorRef": {
+                "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+                "version": "1.1.0"
+              },
+              "snapshotHash": "sha256:970ace77533b0aab3fb12abd45e0cd2e9906ef9b6fa0974e92b2d7ccc9774f4a",
+              "roster": {
+                "expectedAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "activeAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "missingAgentIds": [],
+                "coverage": 1,
+                "missingReasonByAgentId": {}
+              },
+              "measurement": {
+                "estimator": "primary_canonical_self_report",
+                "validPrimaryReportCount": 4,
+                "validRepeatPairCount": 4,
+                "replicateTotalVariationByAgentId": {
+                  "agent_1": 0,
+                  "agent_2": 0,
+                  "agent_3": 0,
+                  "agent_4": 0
+                },
+                "meanReplicateTotalVariation": 0,
+                "maxReplicateTotalVariation": 0
+              },
+              "behavioralCrossCheck": {
+                "status": "available",
+                "choiceCoverage": 1,
+                "publicChoiceByAgentId": {
+                  "agent_1": "opt_1",
+                  "agent_2": "opt_1",
+                  "agent_3": "opt_1",
+                  "agent_4": "opt_1"
+                },
+                "choiceShareByOptionId": {
+                  "opt_1": 1,
+                  "opt_2": 0,
+                  "opt_3": 0
+                },
+                "majorityChoiceShare": 1,
+                "beliefChoiceComparableAgentCount": 4,
+                "beliefTopChoiceCompatibilityRate": 1
+              },
+              "microstate": {
+                "beliefProbabilitiesByAgentId": {
+                  "agent_1": {
+                    "opt_1": 0.6,
+                    "opt_2": 0.25,
+                    "opt_3": 0.15
+                  },
+                  "agent_2": {
+                    "opt_1": 0.6,
+                    "opt_2": 0.25,
+                    "opt_3": 0.15
+                  },
+                  "agent_3": {
+                    "opt_1": 0.6,
+                    "opt_2": 0.25,
+                    "opt_3": 0.15
+                  },
+                  "agent_4": {
+                    "opt_1": 0.6,
+                    "opt_2": 0.25,
+                    "opt_3": 0.15
+                  }
+                }
+              },
+              "macrostate": {
+                "pooledProbabilitiesByOptionId": {
+                  "opt_1": 0.6,
+                  "opt_2": 0.25,
+                  "opt_3": 0.15
+                },
+                "meanNormalizedReportEntropy": 0.8534739433956113,
+                "pooledNormalizedEntropy": 0.8534739433956113,
+                "normalizedGeneralizedJsd": 0,
+                "pooledConcentration": 0.6,
+                "pottsStyleOrder": 0.3999999999999999,
+                "meanPairwiseTotalVariation": 0,
+                "maxPairwiseTotalVariation": 0
+              },
+              "contentHash": "sha256:f38f536780fb86da4e5e14776da4b085abb1e3b5216b470964111ed1ef41d75b"
+            },
+            "transitionFromPrevious": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "descriptive_reported_transition_only",
+              "truthAccess": "none",
+              "claimId": "claim:thermal-loop",
+              "fromStateHash": "sha256:8d4031339216a79b5cb9d2214e69879fe8418fbc58b61aa61fa151437ecd7f8c",
+              "toStateHash": "sha256:f38f536780fb86da4e5e14776da4b085abb1e3b5216b470964111ed1ef41d75b",
+              "fromCheckpointId": "thermometer-calibration:thermal-loop:v3:X1",
+              "toCheckpointId": "thermometer-calibration:thermal-loop:v3:X2",
+              "matchedAgentIds": [
+                "agent_1",
+                "agent_2",
+                "agent_3",
+                "agent_4"
+              ],
+              "completeMatchedRoster": true,
+              "meanAgentTotalVariation": 0.42500000000000004,
+              "pooledTotalVariation": 0.3,
+              "deltas": {
+                "meanNormalizedReportEntropy": 0.27180207767772446,
+                "pooledNormalizedEntropy": -0.01026610910808512,
+                "normalizedGeneralizedJsd": -0.2820681867858096,
+                "pooledConcentration": 0.1499999999999999,
+                "pottsStyleOrder": 0.22499999999999987
+              },
+              "repeatabilityReference": {
+                "endpointMeanReplicateTotalVariation": 0,
+                "activityMinusEndpointRepeatability": 0.42500000000000004,
+                "comparison": "above_reference",
+                "comparisonSemantics": "aggregate_reference_only",
+                "replicateComparableAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "primaryActivityMinusMaxEndpointRepeatabilityByAgentId": {
+                  "agent_1": 0.20000000000000004,
+                  "agent_2": 0.20000000000000004,
+                  "agent_3": 0.65,
+                  "agent_4": 0.65
+                },
+                "primaryActivityAboveBothEndpointRepeatabilitiesAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "primaryActivityAboveBothEndpointRepeatabilitiesFraction": 1
+              },
+              "contentHash": "sha256:52e49e43424d269a7b67cef9c228fc19286ba6cefa3cfe0963725ee1267cb0ff"
+            },
+            "contentHash": "sha256:3c9650687c9b7706499f09fecea8a12b866bfb995f3740b5c44d12378f1fe5b3"
+          }
+        ],
+        "contentHash": "sha256:2e2a63e98aa7da5b55ae263ba5e15257957b5b49999e4e0dbd3e4abdf97c1985"
+      }
+    },
+    {
+      "taskId": "thermometer-calibration:thermal-loop:v4",
+      "trajectory": {
+        "schemaRef": {
+          "id": "swarmalpha.epistemic.discussion-thermometer-trajectory",
+          "version": "1.0.0"
+        },
+        "inferenceStatus": "prefix_causal_descriptive_monitoring",
+        "truthAccess": "none",
+        "writeback": "none",
+        "prefixCausal": true,
+        "claimId": "claim:thermal-loop",
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "expectedAgentIds": [
+          "agent_1",
+          "agent_2",
+          "agent_3",
+          "agent_4"
+        ],
+        "sensorRef": {
+          "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+          "version": "1.1.0"
+        },
+        "readings": [
+          {
+            "schemaRef": {
+              "id": "swarmalpha.epistemic.discussion-thermometer-reading",
+              "version": "1.0.0"
+            },
+            "inferenceStatus": "prefix_causal_descriptive_monitoring",
+            "truthAccess": "none",
+            "writeback": "none",
+            "checkpointIndex": 0,
+            "stateStatus": "complete",
+            "state": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-state",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "operational_self_reported_belief_state",
+              "truthAccess": "none",
+              "claimId": "claim:thermal-loop",
+              "checkpointId": "thermometer-calibration:thermal-loop:v4:X0",
+              "checkpointIndex": 0,
+              "optionIds": [
+                "opt_1",
+                "opt_2",
+                "opt_3"
+              ],
+              "sensorRef": {
+                "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+                "version": "1.1.0"
+              },
+              "snapshotHash": "sha256:d21ff95e3aaf2d6b0b848534476adcde50bf4a42815bc3fdaaf8035b4e5642af",
+              "roster": {
+                "expectedAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "activeAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "missingAgentIds": [],
+                "coverage": 1,
+                "missingReasonByAgentId": {}
+              },
+              "measurement": {
+                "estimator": "primary_canonical_self_report",
+                "validPrimaryReportCount": 4,
+                "validRepeatPairCount": 4,
+                "replicateTotalVariationByAgentId": {
+                  "agent_1": 0,
+                  "agent_2": 0,
+                  "agent_3": 0,
+                  "agent_4": 0
+                },
+                "meanReplicateTotalVariation": 0,
+                "maxReplicateTotalVariation": 0
+              },
+              "behavioralCrossCheck": {
+                "status": "unavailable",
+                "choiceCoverage": 0,
+                "publicChoiceByAgentId": {},
+                "choiceShareByOptionId": null,
+                "majorityChoiceShare": null,
+                "beliefChoiceComparableAgentCount": 0,
+                "beliefTopChoiceCompatibilityRate": null
+              },
+              "microstate": {
+                "beliefProbabilitiesByAgentId": {
+                  "agent_1": {
+                    "opt_1": 0.2,
+                    "opt_2": 0.7,
+                    "opt_3": 0.1
+                  },
+                  "agent_2": {
+                    "opt_1": 0.2,
+                    "opt_2": 0.7,
+                    "opt_3": 0.1
+                  },
+                  "agent_3": {
+                    "opt_1": 0.2,
+                    "opt_2": 0.7,
+                    "opt_3": 0.1
+                  },
+                  "agent_4": {
+                    "opt_1": 0.8,
+                    "opt_2": 0.1,
+                    "opt_3": 0.1
+                  }
+                }
+              },
+              "macrostate": {
+                "pooledProbabilitiesByOptionId": {
+                  "opt_1": 0.35000000000000003,
+                  "opt_2": 0.5499999999999999,
+                  "opt_3": 0.1
+                },
+                "meanNormalizedReportEntropy": 0.6928029908010449,
+                "pooledNormalizedEntropy": 0.8433426540429227,
+                "normalizedGeneralizedJsd": 0.15053966324187784,
+                "pooledConcentration": 0.5499999999999999,
+                "pottsStyleOrder": 0.32499999999999996,
+                "meanPairwiseTotalVariation": 0.30000000000000004,
+                "maxPairwiseTotalVariation": 0.6000000000000001
+              },
+              "contentHash": "sha256:221d1e2a28266da7385ea98fce0ce1f19e68786f1ca589cd25985ea09c23b0c7"
+            },
+            "transitionFromPrevious": null,
+            "contentHash": "sha256:9715f4ae80e0a13d31529d1296c172e6b1acae298a2fb54baec22443e7a8618b"
+          },
+          {
+            "schemaRef": {
+              "id": "swarmalpha.epistemic.discussion-thermometer-reading",
+              "version": "1.0.0"
+            },
+            "inferenceStatus": "prefix_causal_descriptive_monitoring",
+            "truthAccess": "none",
+            "writeback": "none",
+            "checkpointIndex": 1,
+            "stateStatus": "complete",
+            "state": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-state",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "operational_self_reported_belief_state",
+              "truthAccess": "none",
+              "claimId": "claim:thermal-loop",
+              "checkpointId": "thermometer-calibration:thermal-loop:v4:X1",
+              "checkpointIndex": 1,
+              "optionIds": [
+                "opt_1",
+                "opt_2",
+                "opt_3"
+              ],
+              "sensorRef": {
+                "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+                "version": "1.1.0"
+              },
+              "snapshotHash": "sha256:2bc39e32481fd20ffb8aa8120b9fda578b599ad86085d39d1ea4e455e13a0d5c",
+              "roster": {
+                "expectedAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "activeAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "missingAgentIds": [],
+                "coverage": 1,
+                "missingReasonByAgentId": {}
+              },
+              "measurement": {
+                "estimator": "primary_canonical_self_report",
+                "validPrimaryReportCount": 4,
+                "validRepeatPairCount": 4,
+                "replicateTotalVariationByAgentId": {
+                  "agent_1": 0,
+                  "agent_2": 0,
+                  "agent_3": 0,
+                  "agent_4": 0
+                },
+                "meanReplicateTotalVariation": 0,
+                "maxReplicateTotalVariation": 0
+              },
+              "behavioralCrossCheck": {
+                "status": "available",
+                "choiceCoverage": 1,
+                "publicChoiceByAgentId": {
+                  "agent_1": "opt_1",
+                  "agent_2": "opt_1",
+                  "agent_3": "opt_1",
+                  "agent_4": "opt_1"
+                },
+                "choiceShareByOptionId": {
+                  "opt_1": 1,
+                  "opt_2": 0,
+                  "opt_3": 0
+                },
+                "majorityChoiceShare": 1,
+                "beliefChoiceComparableAgentCount": 4,
+                "beliefTopChoiceCompatibilityRate": 0.25
+              },
+              "microstate": {
+                "beliefProbabilitiesByAgentId": {
+                  "agent_1": {
+                    "opt_1": 0.2,
+                    "opt_2": 0.7,
+                    "opt_3": 0.1
+                  },
+                  "agent_2": {
+                    "opt_1": 0.2,
+                    "opt_2": 0.7,
+                    "opt_3": 0.1
+                  },
+                  "agent_3": {
+                    "opt_1": 0.2,
+                    "opt_2": 0.7,
+                    "opt_3": 0.1
+                  },
+                  "agent_4": {
+                    "opt_1": 0.8,
+                    "opt_2": 0.1,
+                    "opt_3": 0.1
+                  }
+                }
+              },
+              "macrostate": {
+                "pooledProbabilitiesByOptionId": {
+                  "opt_1": 0.35000000000000003,
+                  "opt_2": 0.5499999999999999,
+                  "opt_3": 0.1
+                },
+                "meanNormalizedReportEntropy": 0.6928029908010449,
+                "pooledNormalizedEntropy": 0.8433426540429227,
+                "normalizedGeneralizedJsd": 0.15053966324187784,
+                "pooledConcentration": 0.5499999999999999,
+                "pottsStyleOrder": 0.32499999999999996,
+                "meanPairwiseTotalVariation": 0.30000000000000004,
+                "maxPairwiseTotalVariation": 0.6000000000000001
+              },
+              "contentHash": "sha256:f7d47d288d8592094ca2f8aab052659cc50166c61e64e7ea8dde5399d910c9dc"
+            },
+            "transitionFromPrevious": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "descriptive_reported_transition_only",
+              "truthAccess": "none",
+              "claimId": "claim:thermal-loop",
+              "fromStateHash": "sha256:221d1e2a28266da7385ea98fce0ce1f19e68786f1ca589cd25985ea09c23b0c7",
+              "toStateHash": "sha256:f7d47d288d8592094ca2f8aab052659cc50166c61e64e7ea8dde5399d910c9dc",
+              "fromCheckpointId": "thermometer-calibration:thermal-loop:v4:X0",
+              "toCheckpointId": "thermometer-calibration:thermal-loop:v4:X1",
+              "matchedAgentIds": [
+                "agent_1",
+                "agent_2",
+                "agent_3",
+                "agent_4"
+              ],
+              "completeMatchedRoster": true,
+              "meanAgentTotalVariation": 0,
+              "pooledTotalVariation": 0,
+              "deltas": {
+                "meanNormalizedReportEntropy": 0,
+                "pooledNormalizedEntropy": 0,
+                "normalizedGeneralizedJsd": 0,
+                "pooledConcentration": 0,
+                "pottsStyleOrder": 0
+              },
+              "repeatabilityReference": {
+                "endpointMeanReplicateTotalVariation": 0,
+                "activityMinusEndpointRepeatability": 0,
+                "comparison": "not_above_reference",
+                "comparisonSemantics": "aggregate_reference_only",
+                "replicateComparableAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "primaryActivityMinusMaxEndpointRepeatabilityByAgentId": {
+                  "agent_1": 0,
+                  "agent_2": 0,
+                  "agent_3": 0,
+                  "agent_4": 0
+                },
+                "primaryActivityAboveBothEndpointRepeatabilitiesAgentIds": [],
+                "primaryActivityAboveBothEndpointRepeatabilitiesFraction": 0
+              },
+              "contentHash": "sha256:3efb74a688f692af7e96f1dd8d3f3f51850d032f00927576f64069476a157c39"
+            },
+            "contentHash": "sha256:7f2a4491c271fc8267d95362db0c09a38a14ffeffa7c53ad7c1877b4311ea35a"
+          },
+          {
+            "schemaRef": {
+              "id": "swarmalpha.epistemic.discussion-thermometer-reading",
+              "version": "1.0.0"
+            },
+            "inferenceStatus": "prefix_causal_descriptive_monitoring",
+            "truthAccess": "none",
+            "writeback": "none",
+            "checkpointIndex": 2,
+            "stateStatus": "complete",
+            "state": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-state",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "operational_self_reported_belief_state",
+              "truthAccess": "none",
+              "claimId": "claim:thermal-loop",
+              "checkpointId": "thermometer-calibration:thermal-loop:v4:X2",
+              "checkpointIndex": 2,
+              "optionIds": [
+                "opt_1",
+                "opt_2",
+                "opt_3"
+              ],
+              "sensorRef": {
+                "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+                "version": "1.1.0"
+              },
+              "snapshotHash": "sha256:7cce0500e4dc8821bc4e8558ef21f67dd9d4b26caed16a7f8923a240e73d7ccf",
+              "roster": {
+                "expectedAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "activeAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "missingAgentIds": [],
+                "coverage": 1,
+                "missingReasonByAgentId": {}
+              },
+              "measurement": {
+                "estimator": "primary_canonical_self_report",
+                "validPrimaryReportCount": 4,
+                "validRepeatPairCount": 4,
+                "replicateTotalVariationByAgentId": {
+                  "agent_1": 0,
+                  "agent_2": 0,
+                  "agent_3": 0,
+                  "agent_4": 0
+                },
+                "meanReplicateTotalVariation": 0,
+                "maxReplicateTotalVariation": 0
+              },
+              "behavioralCrossCheck": {
+                "status": "available",
+                "choiceCoverage": 1,
+                "publicChoiceByAgentId": {
+                  "agent_1": "opt_1",
+                  "agent_2": "opt_1",
+                  "agent_3": "opt_1",
+                  "agent_4": "opt_1"
+                },
+                "choiceShareByOptionId": {
+                  "opt_1": 1,
+                  "opt_2": 0,
+                  "opt_3": 0
+                },
+                "majorityChoiceShare": 1,
+                "beliefChoiceComparableAgentCount": 4,
+                "beliefTopChoiceCompatibilityRate": 0.25
+              },
+              "microstate": {
+                "beliefProbabilitiesByAgentId": {
+                  "agent_1": {
+                    "opt_1": 0.2,
+                    "opt_2": 0.7,
+                    "opt_3": 0.1
+                  },
+                  "agent_2": {
+                    "opt_1": 0.2,
+                    "opt_2": 0.7,
+                    "opt_3": 0.1
+                  },
+                  "agent_3": {
+                    "opt_1": 0.2,
+                    "opt_2": 0.7,
+                    "opt_3": 0.1
+                  },
+                  "agent_4": {
+                    "opt_1": 0.8,
+                    "opt_2": 0.1,
+                    "opt_3": 0.1
+                  }
+                }
+              },
+              "macrostate": {
+                "pooledProbabilitiesByOptionId": {
+                  "opt_1": 0.35000000000000003,
+                  "opt_2": 0.5499999999999999,
+                  "opt_3": 0.1
+                },
+                "meanNormalizedReportEntropy": 0.6928029908010449,
+                "pooledNormalizedEntropy": 0.8433426540429227,
+                "normalizedGeneralizedJsd": 0.15053966324187784,
+                "pooledConcentration": 0.5499999999999999,
+                "pottsStyleOrder": 0.32499999999999996,
+                "meanPairwiseTotalVariation": 0.30000000000000004,
+                "maxPairwiseTotalVariation": 0.6000000000000001
+              },
+              "contentHash": "sha256:fe1796ca6e024eda31b8a9f94c1ad6c31908394b038e119a6fff8e86752dfe41"
+            },
+            "transitionFromPrevious": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "descriptive_reported_transition_only",
+              "truthAccess": "none",
+              "claimId": "claim:thermal-loop",
+              "fromStateHash": "sha256:f7d47d288d8592094ca2f8aab052659cc50166c61e64e7ea8dde5399d910c9dc",
+              "toStateHash": "sha256:fe1796ca6e024eda31b8a9f94c1ad6c31908394b038e119a6fff8e86752dfe41",
+              "fromCheckpointId": "thermometer-calibration:thermal-loop:v4:X1",
+              "toCheckpointId": "thermometer-calibration:thermal-loop:v4:X2",
+              "matchedAgentIds": [
+                "agent_1",
+                "agent_2",
+                "agent_3",
+                "agent_4"
+              ],
+              "completeMatchedRoster": true,
+              "meanAgentTotalVariation": 0,
+              "pooledTotalVariation": 0,
+              "deltas": {
+                "meanNormalizedReportEntropy": 0,
+                "pooledNormalizedEntropy": 0,
+                "normalizedGeneralizedJsd": 0,
+                "pooledConcentration": 0,
+                "pottsStyleOrder": 0
+              },
+              "repeatabilityReference": {
+                "endpointMeanReplicateTotalVariation": 0,
+                "activityMinusEndpointRepeatability": 0,
+                "comparison": "not_above_reference",
+                "comparisonSemantics": "aggregate_reference_only",
+                "replicateComparableAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "primaryActivityMinusMaxEndpointRepeatabilityByAgentId": {
+                  "agent_1": 0,
+                  "agent_2": 0,
+                  "agent_3": 0,
+                  "agent_4": 0
+                },
+                "primaryActivityAboveBothEndpointRepeatabilitiesAgentIds": [],
+                "primaryActivityAboveBothEndpointRepeatabilitiesFraction": 0
+              },
+              "contentHash": "sha256:fc8cb612c881fe38297cc15c10efd536197cd923ab6cd10549be1b45ec22c693"
+            },
+            "contentHash": "sha256:7ba060af5142f3a90fe4d74f46ebbf11689d5a2a631af16d3bb9fd1b4ac99014"
+          }
+        ],
+        "contentHash": "sha256:47b217268f5a2a3af2df3d38dad76bfe15b0738d90879689b1a9410a868e2bcf"
+      }
+    },
+    {
+      "taskId": "thermometer-calibration:service-access:v1",
+      "trajectory": {
+        "schemaRef": {
+          "id": "swarmalpha.epistemic.discussion-thermometer-trajectory",
+          "version": "1.0.0"
+        },
+        "inferenceStatus": "prefix_causal_descriptive_monitoring",
+        "truthAccess": "none",
+        "writeback": "none",
+        "prefixCausal": true,
+        "claimId": "claim:service-access",
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "expectedAgentIds": [
+          "agent_1",
+          "agent_2",
+          "agent_3",
+          "agent_4"
+        ],
+        "sensorRef": {
+          "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+          "version": "1.1.0"
+        },
+        "readings": [
+          {
+            "schemaRef": {
+              "id": "swarmalpha.epistemic.discussion-thermometer-reading",
+              "version": "1.0.0"
+            },
+            "inferenceStatus": "prefix_causal_descriptive_monitoring",
+            "truthAccess": "none",
+            "writeback": "none",
+            "checkpointIndex": 0,
+            "stateStatus": "complete",
+            "state": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-state",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "operational_self_reported_belief_state",
+              "truthAccess": "none",
+              "claimId": "claim:service-access",
+              "checkpointId": "thermometer-calibration:service-access:v1:X0",
+              "checkpointIndex": 0,
+              "optionIds": [
+                "opt_1",
+                "opt_2",
+                "opt_3"
+              ],
+              "sensorRef": {
+                "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+                "version": "1.1.0"
+              },
+              "snapshotHash": "sha256:863a9131473c61091966f302e9c9b77934bd39ba69c15208594ae0f4006d092b",
+              "roster": {
+                "expectedAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "activeAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "missingAgentIds": [],
+                "coverage": 1,
+                "missingReasonByAgentId": {}
+              },
+              "measurement": {
+                "estimator": "primary_canonical_self_report",
+                "validPrimaryReportCount": 4,
+                "validRepeatPairCount": 4,
+                "replicateTotalVariationByAgentId": {
+                  "agent_1": 0,
+                  "agent_2": 0,
+                  "agent_3": 0,
+                  "agent_4": 0
+                },
+                "meanReplicateTotalVariation": 0,
+                "maxReplicateTotalVariation": 0
+              },
+              "behavioralCrossCheck": {
+                "status": "unavailable",
+                "choiceCoverage": 0,
+                "publicChoiceByAgentId": {},
+                "choiceShareByOptionId": null,
+                "majorityChoiceShare": null,
+                "beliefChoiceComparableAgentCount": 0,
+                "beliefTopChoiceCompatibilityRate": null
+              },
+              "microstate": {
+                "beliefProbabilitiesByAgentId": {
+                  "agent_1": {
+                    "opt_1": 0.7,
+                    "opt_2": 0.2,
+                    "opt_3": 0.1
+                  },
+                  "agent_2": {
+                    "opt_1": 0.55,
+                    "opt_2": 0.3,
+                    "opt_3": 0.15
+                  },
+                  "agent_3": {
+                    "opt_1": 0.4,
+                    "opt_2": 0.45,
+                    "opt_3": 0.15
+                  },
+                  "agent_4": {
+                    "opt_1": 0.5,
+                    "opt_2": 0.2,
+                    "opt_3": 0.3
+                  }
+                }
+              },
+              "macrostate": {
+                "pooledProbabilitiesByOptionId": {
+                  "opt_1": 0.5375,
+                  "opt_2": 0.2875,
+                  "opt_3": 0.175
+                },
+                "meanNormalizedReportEntropy": 0.8684716503721124,
+                "pooledNormalizedEntropy": 0.9075922079254225,
+                "normalizedGeneralizedJsd": 0.03912055755331012,
+                "pooledConcentration": 0.5375,
+                "pottsStyleOrder": 0.3062499999999999,
+                "meanPairwiseTotalVariation": 0.19999999999999996,
+                "maxPairwiseTotalVariation": 0.29999999999999993
+              },
+              "contentHash": "sha256:51129a2a8f978db29670439ffeee8240b88fb2bb666a65a1abf73f8d9eb69a49"
+            },
+            "transitionFromPrevious": null,
+            "contentHash": "sha256:9e57188f56f0b953f13b41c37861ba8851c06255f75612c4b93c10c1c79e31db"
+          },
+          {
+            "schemaRef": {
+              "id": "swarmalpha.epistemic.discussion-thermometer-reading",
+              "version": "1.0.0"
+            },
+            "inferenceStatus": "prefix_causal_descriptive_monitoring",
+            "truthAccess": "none",
+            "writeback": "none",
+            "checkpointIndex": 1,
+            "stateStatus": "complete",
+            "state": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-state",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "operational_self_reported_belief_state",
+              "truthAccess": "none",
+              "claimId": "claim:service-access",
+              "checkpointId": "thermometer-calibration:service-access:v1:X1",
+              "checkpointIndex": 1,
+              "optionIds": [
+                "opt_1",
+                "opt_2",
+                "opt_3"
+              ],
+              "sensorRef": {
+                "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+                "version": "1.1.0"
+              },
+              "snapshotHash": "sha256:ee7b327ffb19b8dc9717c37579ce826f98421dc928e9f28a16a75b09bd1aeebb",
+              "roster": {
+                "expectedAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "activeAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "missingAgentIds": [],
+                "coverage": 1,
+                "missingReasonByAgentId": {}
+              },
+              "measurement": {
+                "estimator": "primary_canonical_self_report",
+                "validPrimaryReportCount": 4,
+                "validRepeatPairCount": 4,
+                "replicateTotalVariationByAgentId": {
+                  "agent_1": 0,
+                  "agent_2": 0,
+                  "agent_3": 0,
+                  "agent_4": 0
+                },
+                "meanReplicateTotalVariation": 0,
+                "maxReplicateTotalVariation": 0
+              },
+              "behavioralCrossCheck": {
+                "status": "available",
+                "choiceCoverage": 1,
+                "publicChoiceByAgentId": {
+                  "agent_1": "opt_1",
+                  "agent_2": "opt_1",
+                  "agent_3": "opt_1",
+                  "agent_4": "opt_1"
+                },
+                "choiceShareByOptionId": {
+                  "opt_1": 1,
+                  "opt_2": 0,
+                  "opt_3": 0
+                },
+                "majorityChoiceShare": 1,
+                "beliefChoiceComparableAgentCount": 4,
+                "beliefTopChoiceCompatibilityRate": 0.75
+              },
+              "microstate": {
+                "beliefProbabilitiesByAgentId": {
+                  "agent_1": {
+                    "opt_1": 0.7,
+                    "opt_2": 0.2,
+                    "opt_3": 0.1
+                  },
+                  "agent_2": {
+                    "opt_1": 0.55,
+                    "opt_2": 0.3,
+                    "opt_3": 0.15
+                  },
+                  "agent_3": {
+                    "opt_1": 0.4,
+                    "opt_2": 0.45,
+                    "opt_3": 0.15
+                  },
+                  "agent_4": {
+                    "opt_1": 0.5,
+                    "opt_2": 0.2,
+                    "opt_3": 0.3
+                  }
+                }
+              },
+              "macrostate": {
+                "pooledProbabilitiesByOptionId": {
+                  "opt_1": 0.5375,
+                  "opt_2": 0.2875,
+                  "opt_3": 0.175
+                },
+                "meanNormalizedReportEntropy": 0.8684716503721124,
+                "pooledNormalizedEntropy": 0.9075922079254225,
+                "normalizedGeneralizedJsd": 0.03912055755331012,
+                "pooledConcentration": 0.5375,
+                "pottsStyleOrder": 0.3062499999999999,
+                "meanPairwiseTotalVariation": 0.19999999999999996,
+                "maxPairwiseTotalVariation": 0.29999999999999993
+              },
+              "contentHash": "sha256:0be1e8d60b978a7df968d66ddb2d89c2e1c19edcea23357127d087084831166e"
+            },
+            "transitionFromPrevious": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "descriptive_reported_transition_only",
+              "truthAccess": "none",
+              "claimId": "claim:service-access",
+              "fromStateHash": "sha256:51129a2a8f978db29670439ffeee8240b88fb2bb666a65a1abf73f8d9eb69a49",
+              "toStateHash": "sha256:0be1e8d60b978a7df968d66ddb2d89c2e1c19edcea23357127d087084831166e",
+              "fromCheckpointId": "thermometer-calibration:service-access:v1:X0",
+              "toCheckpointId": "thermometer-calibration:service-access:v1:X1",
+              "matchedAgentIds": [
+                "agent_1",
+                "agent_2",
+                "agent_3",
+                "agent_4"
+              ],
+              "completeMatchedRoster": true,
+              "meanAgentTotalVariation": 0,
+              "pooledTotalVariation": 0,
+              "deltas": {
+                "meanNormalizedReportEntropy": 0,
+                "pooledNormalizedEntropy": 0,
+                "normalizedGeneralizedJsd": 0,
+                "pooledConcentration": 0,
+                "pottsStyleOrder": 0
+              },
+              "repeatabilityReference": {
+                "endpointMeanReplicateTotalVariation": 0,
+                "activityMinusEndpointRepeatability": 0,
+                "comparison": "not_above_reference",
+                "comparisonSemantics": "aggregate_reference_only",
+                "replicateComparableAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "primaryActivityMinusMaxEndpointRepeatabilityByAgentId": {
+                  "agent_1": 0,
+                  "agent_2": 0,
+                  "agent_3": 0,
+                  "agent_4": 0
+                },
+                "primaryActivityAboveBothEndpointRepeatabilitiesAgentIds": [],
+                "primaryActivityAboveBothEndpointRepeatabilitiesFraction": 0
+              },
+              "contentHash": "sha256:b36bb90b4b7351e00f5a90e247062e12c7040e8f8da5a6c1e1ee988f697bd97f"
+            },
+            "contentHash": "sha256:ab7930017c422260bb958c3c5e67601d0056d49257e6c11d9e6353fdcaa63e70"
+          },
+          {
+            "schemaRef": {
+              "id": "swarmalpha.epistemic.discussion-thermometer-reading",
+              "version": "1.0.0"
+            },
+            "inferenceStatus": "prefix_causal_descriptive_monitoring",
+            "truthAccess": "none",
+            "writeback": "none",
+            "checkpointIndex": 2,
+            "stateStatus": "complete",
+            "state": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-state",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "operational_self_reported_belief_state",
+              "truthAccess": "none",
+              "claimId": "claim:service-access",
+              "checkpointId": "thermometer-calibration:service-access:v1:X2",
+              "checkpointIndex": 2,
+              "optionIds": [
+                "opt_1",
+                "opt_2",
+                "opt_3"
+              ],
+              "sensorRef": {
+                "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+                "version": "1.1.0"
+              },
+              "snapshotHash": "sha256:039394499a4b9d88d9b620b9e8efe04fd5565c2209c623e729fa333c16877ac5",
+              "roster": {
+                "expectedAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "activeAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "missingAgentIds": [],
+                "coverage": 1,
+                "missingReasonByAgentId": {}
+              },
+              "measurement": {
+                "estimator": "primary_canonical_self_report",
+                "validPrimaryReportCount": 4,
+                "validRepeatPairCount": 4,
+                "replicateTotalVariationByAgentId": {
+                  "agent_1": 0,
+                  "agent_2": 0,
+                  "agent_3": 0,
+                  "agent_4": 0
+                },
+                "meanReplicateTotalVariation": 0,
+                "maxReplicateTotalVariation": 0
+              },
+              "behavioralCrossCheck": {
+                "status": "available",
+                "choiceCoverage": 1,
+                "publicChoiceByAgentId": {
+                  "agent_1": "opt_1",
+                  "agent_2": "opt_1",
+                  "agent_3": "opt_1",
+                  "agent_4": "opt_1"
+                },
+                "choiceShareByOptionId": {
+                  "opt_1": 1,
+                  "opt_2": 0,
+                  "opt_3": 0
+                },
+                "majorityChoiceShare": 1,
+                "beliefChoiceComparableAgentCount": 4,
+                "beliefTopChoiceCompatibilityRate": 0.75
+              },
+              "microstate": {
+                "beliefProbabilitiesByAgentId": {
+                  "agent_1": {
+                    "opt_1": 0.7,
+                    "opt_2": 0.2,
+                    "opt_3": 0.1
+                  },
+                  "agent_2": {
+                    "opt_1": 0.55,
+                    "opt_2": 0.3,
+                    "opt_3": 0.15
+                  },
+                  "agent_3": {
+                    "opt_1": 0.4,
+                    "opt_2": 0.45,
+                    "opt_3": 0.15
+                  },
+                  "agent_4": {
+                    "opt_1": 0.5,
+                    "opt_2": 0.2,
+                    "opt_3": 0.3
+                  }
+                }
+              },
+              "macrostate": {
+                "pooledProbabilitiesByOptionId": {
+                  "opt_1": 0.5375,
+                  "opt_2": 0.2875,
+                  "opt_3": 0.175
+                },
+                "meanNormalizedReportEntropy": 0.8684716503721124,
+                "pooledNormalizedEntropy": 0.9075922079254225,
+                "normalizedGeneralizedJsd": 0.03912055755331012,
+                "pooledConcentration": 0.5375,
+                "pottsStyleOrder": 0.3062499999999999,
+                "meanPairwiseTotalVariation": 0.19999999999999996,
+                "maxPairwiseTotalVariation": 0.29999999999999993
+              },
+              "contentHash": "sha256:8b124dbf651df22ecbc2fcb354b7628da3eac17dd99c2469e045866c1220ae84"
+            },
+            "transitionFromPrevious": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "descriptive_reported_transition_only",
+              "truthAccess": "none",
+              "claimId": "claim:service-access",
+              "fromStateHash": "sha256:0be1e8d60b978a7df968d66ddb2d89c2e1c19edcea23357127d087084831166e",
+              "toStateHash": "sha256:8b124dbf651df22ecbc2fcb354b7628da3eac17dd99c2469e045866c1220ae84",
+              "fromCheckpointId": "thermometer-calibration:service-access:v1:X1",
+              "toCheckpointId": "thermometer-calibration:service-access:v1:X2",
+              "matchedAgentIds": [
+                "agent_1",
+                "agent_2",
+                "agent_3",
+                "agent_4"
+              ],
+              "completeMatchedRoster": true,
+              "meanAgentTotalVariation": 0,
+              "pooledTotalVariation": 0,
+              "deltas": {
+                "meanNormalizedReportEntropy": 0,
+                "pooledNormalizedEntropy": 0,
+                "normalizedGeneralizedJsd": 0,
+                "pooledConcentration": 0,
+                "pottsStyleOrder": 0
+              },
+              "repeatabilityReference": {
+                "endpointMeanReplicateTotalVariation": 0,
+                "activityMinusEndpointRepeatability": 0,
+                "comparison": "not_above_reference",
+                "comparisonSemantics": "aggregate_reference_only",
+                "replicateComparableAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "primaryActivityMinusMaxEndpointRepeatabilityByAgentId": {
+                  "agent_1": 0,
+                  "agent_2": 0,
+                  "agent_3": 0,
+                  "agent_4": 0
+                },
+                "primaryActivityAboveBothEndpointRepeatabilitiesAgentIds": [],
+                "primaryActivityAboveBothEndpointRepeatabilitiesFraction": 0
+              },
+              "contentHash": "sha256:3905366cbe3b8d34a96c97ed5f9bfbcfb68ef0c60cd1cec1933784cc30b21f85"
+            },
+            "contentHash": "sha256:d8813403f5fefb61effded3e71f0525293ca6bfc9b5b5a74cb23a969043e73bf"
+          }
+        ],
+        "contentHash": "sha256:dbc4939cf616f765ac25d9ccf73cdfd871007dfd92d0153e52107bd42daee9b6"
+      }
+    },
+    {
+      "taskId": "thermometer-calibration:service-access:v2",
+      "trajectory": {
+        "schemaRef": {
+          "id": "swarmalpha.epistemic.discussion-thermometer-trajectory",
+          "version": "1.0.0"
+        },
+        "inferenceStatus": "prefix_causal_descriptive_monitoring",
+        "truthAccess": "none",
+        "writeback": "none",
+        "prefixCausal": true,
+        "claimId": "claim:service-access",
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "expectedAgentIds": [
+          "agent_1",
+          "agent_2",
+          "agent_3",
+          "agent_4"
+        ],
+        "sensorRef": {
+          "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+          "version": "1.1.0"
+        },
+        "readings": [
+          {
+            "schemaRef": {
+              "id": "swarmalpha.epistemic.discussion-thermometer-reading",
+              "version": "1.0.0"
+            },
+            "inferenceStatus": "prefix_causal_descriptive_monitoring",
+            "truthAccess": "none",
+            "writeback": "none",
+            "checkpointIndex": 0,
+            "stateStatus": "complete",
+            "state": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-state",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "operational_self_reported_belief_state",
+              "truthAccess": "none",
+              "claimId": "claim:service-access",
+              "checkpointId": "thermometer-calibration:service-access:v2:X0",
+              "checkpointIndex": 0,
+              "optionIds": [
+                "opt_1",
+                "opt_2",
+                "opt_3"
+              ],
+              "sensorRef": {
+                "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+                "version": "1.1.0"
+              },
+              "snapshotHash": "sha256:abfa5013a5e4b2393de044ac2913d2aef6836daa7518f617064daa933fe31909",
+              "roster": {
+                "expectedAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "activeAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "missingAgentIds": [],
+                "coverage": 1,
+                "missingReasonByAgentId": {}
+              },
+              "measurement": {
+                "estimator": "primary_canonical_self_report",
+                "validPrimaryReportCount": 4,
+                "validRepeatPairCount": 4,
+                "replicateTotalVariationByAgentId": {
+                  "agent_1": 0,
+                  "agent_2": 0,
+                  "agent_3": 0,
+                  "agent_4": 0
+                },
+                "meanReplicateTotalVariation": 0,
+                "maxReplicateTotalVariation": 0
+              },
+              "behavioralCrossCheck": {
+                "status": "unavailable",
+                "choiceCoverage": 0,
+                "publicChoiceByAgentId": {},
+                "choiceShareByOptionId": null,
+                "majorityChoiceShare": null,
+                "beliefChoiceComparableAgentCount": 0,
+                "beliefTopChoiceCompatibilityRate": null
+              },
+              "microstate": {
+                "beliefProbabilitiesByAgentId": {
+                  "agent_1": {
+                    "opt_1": 0.65,
+                    "opt_2": 0.25,
+                    "opt_3": 0.1
+                  },
+                  "agent_2": {
+                    "opt_1": 0.65,
+                    "opt_2": 0.25,
+                    "opt_3": 0.1
+                  },
+                  "agent_3": {
+                    "opt_1": 0.65,
+                    "opt_2": 0.25,
+                    "opt_3": 0.1
+                  },
+                  "agent_4": {
+                    "opt_1": 0.65,
+                    "opt_2": 0.25,
+                    "opt_3": 0.1
+                  }
+                }
+              },
+              "macrostate": {
+                "pooledProbabilitiesByOptionId": {
+                  "opt_1": 0.65,
+                  "opt_2": 0.25,
+                  "opt_3": 0.1
+                },
+                "meanNormalizedReportEntropy": 0.7799302846668993,
+                "pooledNormalizedEntropy": 0.7799302846668993,
+                "normalizedGeneralizedJsd": 0,
+                "pooledConcentration": 0.65,
+                "pottsStyleOrder": 0.4750000000000001,
+                "meanPairwiseTotalVariation": 0,
+                "maxPairwiseTotalVariation": 0
+              },
+              "contentHash": "sha256:c998356687b31f0a08c91f8e3dac877c98b8ecd095ba9276c6a1bcf9e995d500"
+            },
+            "transitionFromPrevious": null,
+            "contentHash": "sha256:1cce74c052ba2755fd6a00057879365f639c555f0ccc9c7df1e849742c62b828"
+          },
+          {
+            "schemaRef": {
+              "id": "swarmalpha.epistemic.discussion-thermometer-reading",
+              "version": "1.0.0"
+            },
+            "inferenceStatus": "prefix_causal_descriptive_monitoring",
+            "truthAccess": "none",
+            "writeback": "none",
+            "checkpointIndex": 1,
+            "stateStatus": "complete",
+            "state": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-state",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "operational_self_reported_belief_state",
+              "truthAccess": "none",
+              "claimId": "claim:service-access",
+              "checkpointId": "thermometer-calibration:service-access:v2:X1",
+              "checkpointIndex": 1,
+              "optionIds": [
+                "opt_1",
+                "opt_2",
+                "opt_3"
+              ],
+              "sensorRef": {
+                "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+                "version": "1.1.0"
+              },
+              "snapshotHash": "sha256:edcd110c7b50131642971ae5953b5a59422f39520597d87c2ce6be2f2b56f9ad",
+              "roster": {
+                "expectedAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "activeAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "missingAgentIds": [],
+                "coverage": 1,
+                "missingReasonByAgentId": {}
+              },
+              "measurement": {
+                "estimator": "primary_canonical_self_report",
+                "validPrimaryReportCount": 4,
+                "validRepeatPairCount": 4,
+                "replicateTotalVariationByAgentId": {
+                  "agent_1": 0,
+                  "agent_2": 0,
+                  "agent_3": 0,
+                  "agent_4": 0
+                },
+                "meanReplicateTotalVariation": 0,
+                "maxReplicateTotalVariation": 0
+              },
+              "behavioralCrossCheck": {
+                "status": "available",
+                "choiceCoverage": 1,
+                "publicChoiceByAgentId": {
+                  "agent_1": "opt_1",
+                  "agent_2": "opt_1",
+                  "agent_3": "opt_1",
+                  "agent_4": "opt_1"
+                },
+                "choiceShareByOptionId": {
+                  "opt_1": 1,
+                  "opt_2": 0,
+                  "opt_3": 0
+                },
+                "majorityChoiceShare": 1,
+                "beliefChoiceComparableAgentCount": 4,
+                "beliefTopChoiceCompatibilityRate": 1
+              },
+              "microstate": {
+                "beliefProbabilitiesByAgentId": {
+                  "agent_1": {
+                    "opt_1": 0.65,
+                    "opt_2": 0.25,
+                    "opt_3": 0.1
+                  },
+                  "agent_2": {
+                    "opt_1": 0.65,
+                    "opt_2": 0.25,
+                    "opt_3": 0.1
+                  },
+                  "agent_3": {
+                    "opt_1": 0.65,
+                    "opt_2": 0.25,
+                    "opt_3": 0.1
+                  },
+                  "agent_4": {
+                    "opt_1": 0.65,
+                    "opt_2": 0.25,
+                    "opt_3": 0.1
+                  }
+                }
+              },
+              "macrostate": {
+                "pooledProbabilitiesByOptionId": {
+                  "opt_1": 0.65,
+                  "opt_2": 0.25,
+                  "opt_3": 0.1
+                },
+                "meanNormalizedReportEntropy": 0.7799302846668993,
+                "pooledNormalizedEntropy": 0.7799302846668993,
+                "normalizedGeneralizedJsd": 0,
+                "pooledConcentration": 0.65,
+                "pottsStyleOrder": 0.4750000000000001,
+                "meanPairwiseTotalVariation": 0,
+                "maxPairwiseTotalVariation": 0
+              },
+              "contentHash": "sha256:f28ad0b1a860e6f405d9b23f1466c8585a69f10066c841652eac217a6be484c2"
+            },
+            "transitionFromPrevious": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "descriptive_reported_transition_only",
+              "truthAccess": "none",
+              "claimId": "claim:service-access",
+              "fromStateHash": "sha256:c998356687b31f0a08c91f8e3dac877c98b8ecd095ba9276c6a1bcf9e995d500",
+              "toStateHash": "sha256:f28ad0b1a860e6f405d9b23f1466c8585a69f10066c841652eac217a6be484c2",
+              "fromCheckpointId": "thermometer-calibration:service-access:v2:X0",
+              "toCheckpointId": "thermometer-calibration:service-access:v2:X1",
+              "matchedAgentIds": [
+                "agent_1",
+                "agent_2",
+                "agent_3",
+                "agent_4"
+              ],
+              "completeMatchedRoster": true,
+              "meanAgentTotalVariation": 0,
+              "pooledTotalVariation": 0,
+              "deltas": {
+                "meanNormalizedReportEntropy": 0,
+                "pooledNormalizedEntropy": 0,
+                "normalizedGeneralizedJsd": 0,
+                "pooledConcentration": 0,
+                "pottsStyleOrder": 0
+              },
+              "repeatabilityReference": {
+                "endpointMeanReplicateTotalVariation": 0,
+                "activityMinusEndpointRepeatability": 0,
+                "comparison": "not_above_reference",
+                "comparisonSemantics": "aggregate_reference_only",
+                "replicateComparableAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "primaryActivityMinusMaxEndpointRepeatabilityByAgentId": {
+                  "agent_1": 0,
+                  "agent_2": 0,
+                  "agent_3": 0,
+                  "agent_4": 0
+                },
+                "primaryActivityAboveBothEndpointRepeatabilitiesAgentIds": [],
+                "primaryActivityAboveBothEndpointRepeatabilitiesFraction": 0
+              },
+              "contentHash": "sha256:583b0e486ce8d6cf35409412e5c785907f14c5cc363e9a1dacb21293e8a9399f"
+            },
+            "contentHash": "sha256:36bafbb739ddfa7fa6331b1ce9716ed0508577972621c03dac1cbfd6bf7f4035"
+          },
+          {
+            "schemaRef": {
+              "id": "swarmalpha.epistemic.discussion-thermometer-reading",
+              "version": "1.0.0"
+            },
+            "inferenceStatus": "prefix_causal_descriptive_monitoring",
+            "truthAccess": "none",
+            "writeback": "none",
+            "checkpointIndex": 2,
+            "stateStatus": "complete",
+            "state": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-state",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "operational_self_reported_belief_state",
+              "truthAccess": "none",
+              "claimId": "claim:service-access",
+              "checkpointId": "thermometer-calibration:service-access:v2:X2",
+              "checkpointIndex": 2,
+              "optionIds": [
+                "opt_1",
+                "opt_2",
+                "opt_3"
+              ],
+              "sensorRef": {
+                "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+                "version": "1.1.0"
+              },
+              "snapshotHash": "sha256:7377d5f06afea56ab3d5bcca6ae99e853f220565f3ad75bb2e197ebcc60d2499",
+              "roster": {
+                "expectedAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "activeAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "missingAgentIds": [],
+                "coverage": 1,
+                "missingReasonByAgentId": {}
+              },
+              "measurement": {
+                "estimator": "primary_canonical_self_report",
+                "validPrimaryReportCount": 4,
+                "validRepeatPairCount": 4,
+                "replicateTotalVariationByAgentId": {
+                  "agent_1": 0,
+                  "agent_2": 0,
+                  "agent_3": 0,
+                  "agent_4": 0
+                },
+                "meanReplicateTotalVariation": 0,
+                "maxReplicateTotalVariation": 0
+              },
+              "behavioralCrossCheck": {
+                "status": "available",
+                "choiceCoverage": 1,
+                "publicChoiceByAgentId": {
+                  "agent_1": "opt_1",
+                  "agent_2": "opt_1",
+                  "agent_3": "opt_1",
+                  "agent_4": "opt_1"
+                },
+                "choiceShareByOptionId": {
+                  "opt_1": 1,
+                  "opt_2": 0,
+                  "opt_3": 0
+                },
+                "majorityChoiceShare": 1,
+                "beliefChoiceComparableAgentCount": 4,
+                "beliefTopChoiceCompatibilityRate": 0
+              },
+              "microstate": {
+                "beliefProbabilitiesByAgentId": {
+                  "agent_1": {
+                    "opt_1": 0.4,
+                    "opt_2": 0.5,
+                    "opt_3": 0.1
+                  },
+                  "agent_2": {
+                    "opt_1": 0.4,
+                    "opt_2": 0.5,
+                    "opt_3": 0.1
+                  },
+                  "agent_3": {
+                    "opt_1": 0.4,
+                    "opt_2": 0.5,
+                    "opt_3": 0.1
+                  },
+                  "agent_4": {
+                    "opt_1": 0.4,
+                    "opt_2": 0.5,
+                    "opt_3": 0.1
+                  }
+                }
+              },
+              "macrostate": {
+                "pooledProbabilitiesByOptionId": {
+                  "opt_1": 0.4,
+                  "opt_2": 0.5,
+                  "opt_3": 0.1
+                },
+                "meanNormalizedReportEntropy": 0.858672711073255,
+                "pooledNormalizedEntropy": 0.858672711073255,
+                "normalizedGeneralizedJsd": 0,
+                "pooledConcentration": 0.5,
+                "pottsStyleOrder": 0.25,
+                "meanPairwiseTotalVariation": 0,
+                "maxPairwiseTotalVariation": 0
+              },
+              "contentHash": "sha256:0c8b74baaa162aacb5582acb895b6ad60462f783c78150b39eb172f43cbdc6fe"
+            },
+            "transitionFromPrevious": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "descriptive_reported_transition_only",
+              "truthAccess": "none",
+              "claimId": "claim:service-access",
+              "fromStateHash": "sha256:f28ad0b1a860e6f405d9b23f1466c8585a69f10066c841652eac217a6be484c2",
+              "toStateHash": "sha256:0c8b74baaa162aacb5582acb895b6ad60462f783c78150b39eb172f43cbdc6fe",
+              "fromCheckpointId": "thermometer-calibration:service-access:v2:X1",
+              "toCheckpointId": "thermometer-calibration:service-access:v2:X2",
+              "matchedAgentIds": [
+                "agent_1",
+                "agent_2",
+                "agent_3",
+                "agent_4"
+              ],
+              "completeMatchedRoster": true,
+              "meanAgentTotalVariation": 0.25,
+              "pooledTotalVariation": 0.25,
+              "deltas": {
+                "meanNormalizedReportEntropy": 0.07874242640635576,
+                "pooledNormalizedEntropy": 0.07874242640635576,
+                "normalizedGeneralizedJsd": 0,
+                "pooledConcentration": -0.15000000000000002,
+                "pottsStyleOrder": -0.2250000000000001
+              },
+              "repeatabilityReference": {
+                "endpointMeanReplicateTotalVariation": 0,
+                "activityMinusEndpointRepeatability": 0.25,
+                "comparison": "above_reference",
+                "comparisonSemantics": "aggregate_reference_only",
+                "replicateComparableAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "primaryActivityMinusMaxEndpointRepeatabilityByAgentId": {
+                  "agent_1": 0.25,
+                  "agent_2": 0.25,
+                  "agent_3": 0.25,
+                  "agent_4": 0.25
+                },
+                "primaryActivityAboveBothEndpointRepeatabilitiesAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "primaryActivityAboveBothEndpointRepeatabilitiesFraction": 1
+              },
+              "contentHash": "sha256:3c61e0f8c2f33069f56024787bd7190968d07a5e20dd60e39e949f4e7fa7ed89"
+            },
+            "contentHash": "sha256:0f044761b58e1c36551815a7860b0c4218dd02fbd5c7420682fb58f3cc514a81"
+          }
+        ],
+        "contentHash": "sha256:d1cfb644d414a56b2679626b43bd6b44aa5d5c49dc43869e2db65394635946c4"
+      }
+    },
+    {
+      "taskId": "thermometer-calibration:service-access:v3",
+      "trajectory": {
+        "schemaRef": {
+          "id": "swarmalpha.epistemic.discussion-thermometer-trajectory",
+          "version": "1.0.0"
+        },
+        "inferenceStatus": "prefix_causal_descriptive_monitoring",
+        "truthAccess": "none",
+        "writeback": "none",
+        "prefixCausal": true,
+        "claimId": "claim:service-access",
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "expectedAgentIds": [
+          "agent_1",
+          "agent_2",
+          "agent_3",
+          "agent_4"
+        ],
+        "sensorRef": {
+          "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+          "version": "1.1.0"
+        },
+        "readings": [
+          {
+            "schemaRef": {
+              "id": "swarmalpha.epistemic.discussion-thermometer-reading",
+              "version": "1.0.0"
+            },
+            "inferenceStatus": "prefix_causal_descriptive_monitoring",
+            "truthAccess": "none",
+            "writeback": "none",
+            "checkpointIndex": 0,
+            "stateStatus": "complete",
+            "state": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-state",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "operational_self_reported_belief_state",
+              "truthAccess": "none",
+              "claimId": "claim:service-access",
+              "checkpointId": "thermometer-calibration:service-access:v3:X0",
+              "checkpointIndex": 0,
+              "optionIds": [
+                "opt_1",
+                "opt_2",
+                "opt_3"
+              ],
+              "sensorRef": {
+                "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+                "version": "1.1.0"
+              },
+              "snapshotHash": "sha256:fe64890a3253c92c004c041b81c5f9838951fe6fd9c2903cb6e9971bbcce28fa",
+              "roster": {
+                "expectedAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "activeAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "missingAgentIds": [],
+                "coverage": 1,
+                "missingReasonByAgentId": {}
+              },
+              "measurement": {
+                "estimator": "primary_canonical_self_report",
+                "validPrimaryReportCount": 4,
+                "validRepeatPairCount": 4,
+                "replicateTotalVariationByAgentId": {
+                  "agent_1": 0,
+                  "agent_2": 0,
+                  "agent_3": 0,
+                  "agent_4": 0
+                },
+                "meanReplicateTotalVariation": 0,
+                "maxReplicateTotalVariation": 0
+              },
+              "behavioralCrossCheck": {
+                "status": "unavailable",
+                "choiceCoverage": 0,
+                "publicChoiceByAgentId": {},
+                "choiceShareByOptionId": null,
+                "majorityChoiceShare": null,
+                "beliefChoiceComparableAgentCount": 0,
+                "beliefTopChoiceCompatibilityRate": null
+              },
+              "microstate": {
+                "beliefProbabilitiesByAgentId": {
+                  "agent_1": {
+                    "opt_1": 0.8,
+                    "opt_2": 0.1,
+                    "opt_3": 0.1
+                  },
+                  "agent_2": {
+                    "opt_1": 0.8,
+                    "opt_2": 0.1,
+                    "opt_3": 0.1
+                  },
+                  "agent_3": {
+                    "opt_1": 0.1,
+                    "opt_2": 0.1,
+                    "opt_3": 0.8
+                  },
+                  "agent_4": {
+                    "opt_1": 0.1,
+                    "opt_2": 0.1,
+                    "opt_3": 0.8
+                  }
+                }
+              },
+              "macrostate": {
+                "pooledProbabilitiesByOptionId": {
+                  "opt_1": 0.45000000000000007,
+                  "opt_2": 0.1,
+                  "opt_3": 0.45
+                },
+                "meanNormalizedReportEntropy": 0.5816718657178869,
+                "pooledNormalizedEntropy": 0.8637400525036965,
+                "normalizedGeneralizedJsd": 0.2820681867858096,
+                "pooledConcentration": 0.45000000000000007,
+                "pottsStyleOrder": 0.17500000000000004,
+                "meanPairwiseTotalVariation": 0.46666666666666673,
+                "maxPairwiseTotalVariation": 0.7000000000000001
+              },
+              "contentHash": "sha256:307848acf4629dd4229900d170d401bc6b06cbd128312dab00162dae03cfa49a"
+            },
+            "transitionFromPrevious": null,
+            "contentHash": "sha256:762a6b4cf38441df1c1366e77fb0740df1a0cebd74b977b12ff9c7b291059d5e"
+          },
+          {
+            "schemaRef": {
+              "id": "swarmalpha.epistemic.discussion-thermometer-reading",
+              "version": "1.0.0"
+            },
+            "inferenceStatus": "prefix_causal_descriptive_monitoring",
+            "truthAccess": "none",
+            "writeback": "none",
+            "checkpointIndex": 1,
+            "stateStatus": "complete",
+            "state": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-state",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "operational_self_reported_belief_state",
+              "truthAccess": "none",
+              "claimId": "claim:service-access",
+              "checkpointId": "thermometer-calibration:service-access:v3:X1",
+              "checkpointIndex": 1,
+              "optionIds": [
+                "opt_1",
+                "opt_2",
+                "opt_3"
+              ],
+              "sensorRef": {
+                "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+                "version": "1.1.0"
+              },
+              "snapshotHash": "sha256:53a2c1bc0aa709fa93406decf46cbb0a2878f71ebdcd43f54841fd1cf155b288",
+              "roster": {
+                "expectedAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "activeAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "missingAgentIds": [],
+                "coverage": 1,
+                "missingReasonByAgentId": {}
+              },
+              "measurement": {
+                "estimator": "primary_canonical_self_report",
+                "validPrimaryReportCount": 4,
+                "validRepeatPairCount": 4,
+                "replicateTotalVariationByAgentId": {
+                  "agent_1": 0,
+                  "agent_2": 0,
+                  "agent_3": 0,
+                  "agent_4": 0
+                },
+                "meanReplicateTotalVariation": 0,
+                "maxReplicateTotalVariation": 0
+              },
+              "behavioralCrossCheck": {
+                "status": "available",
+                "choiceCoverage": 1,
+                "publicChoiceByAgentId": {
+                  "agent_1": "opt_1",
+                  "agent_2": "opt_1",
+                  "agent_3": "opt_1",
+                  "agent_4": "opt_1"
+                },
+                "choiceShareByOptionId": {
+                  "opt_1": 1,
+                  "opt_2": 0,
+                  "opt_3": 0
+                },
+                "majorityChoiceShare": 1,
+                "beliefChoiceComparableAgentCount": 4,
+                "beliefTopChoiceCompatibilityRate": 0.5
+              },
+              "microstate": {
+                "beliefProbabilitiesByAgentId": {
+                  "agent_1": {
+                    "opt_1": 0.8,
+                    "opt_2": 0.1,
+                    "opt_3": 0.1
+                  },
+                  "agent_2": {
+                    "opt_1": 0.8,
+                    "opt_2": 0.1,
+                    "opt_3": 0.1
+                  },
+                  "agent_3": {
+                    "opt_1": 0.1,
+                    "opt_2": 0.1,
+                    "opt_3": 0.8
+                  },
+                  "agent_4": {
+                    "opt_1": 0.1,
+                    "opt_2": 0.1,
+                    "opt_3": 0.8
+                  }
+                }
+              },
+              "macrostate": {
+                "pooledProbabilitiesByOptionId": {
+                  "opt_1": 0.45000000000000007,
+                  "opt_2": 0.1,
+                  "opt_3": 0.45
+                },
+                "meanNormalizedReportEntropy": 0.5816718657178869,
+                "pooledNormalizedEntropy": 0.8637400525036965,
+                "normalizedGeneralizedJsd": 0.2820681867858096,
+                "pooledConcentration": 0.45000000000000007,
+                "pottsStyleOrder": 0.17500000000000004,
+                "meanPairwiseTotalVariation": 0.46666666666666673,
+                "maxPairwiseTotalVariation": 0.7000000000000001
+              },
+              "contentHash": "sha256:966e699ebeb479e9e7c375578a91f72aecfe52bba464a82717e566314f58163b"
+            },
+            "transitionFromPrevious": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "descriptive_reported_transition_only",
+              "truthAccess": "none",
+              "claimId": "claim:service-access",
+              "fromStateHash": "sha256:307848acf4629dd4229900d170d401bc6b06cbd128312dab00162dae03cfa49a",
+              "toStateHash": "sha256:966e699ebeb479e9e7c375578a91f72aecfe52bba464a82717e566314f58163b",
+              "fromCheckpointId": "thermometer-calibration:service-access:v3:X0",
+              "toCheckpointId": "thermometer-calibration:service-access:v3:X1",
+              "matchedAgentIds": [
+                "agent_1",
+                "agent_2",
+                "agent_3",
+                "agent_4"
+              ],
+              "completeMatchedRoster": true,
+              "meanAgentTotalVariation": 0,
+              "pooledTotalVariation": 0,
+              "deltas": {
+                "meanNormalizedReportEntropy": 0,
+                "pooledNormalizedEntropy": 0,
+                "normalizedGeneralizedJsd": 0,
+                "pooledConcentration": 0,
+                "pottsStyleOrder": 0
+              },
+              "repeatabilityReference": {
+                "endpointMeanReplicateTotalVariation": 0,
+                "activityMinusEndpointRepeatability": 0,
+                "comparison": "not_above_reference",
+                "comparisonSemantics": "aggregate_reference_only",
+                "replicateComparableAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "primaryActivityMinusMaxEndpointRepeatabilityByAgentId": {
+                  "agent_1": 0,
+                  "agent_2": 0,
+                  "agent_3": 0,
+                  "agent_4": 0
+                },
+                "primaryActivityAboveBothEndpointRepeatabilitiesAgentIds": [],
+                "primaryActivityAboveBothEndpointRepeatabilitiesFraction": 0
+              },
+              "contentHash": "sha256:dd84971a5764666313df6b1afe619c35555de32df9034ba093b9aeda7baa8c2d"
+            },
+            "contentHash": "sha256:fe759b890ac36498d5f1a0bfe9b713aec2334f50f49ec70a662e45c63f8e37ba"
+          },
+          {
+            "schemaRef": {
+              "id": "swarmalpha.epistemic.discussion-thermometer-reading",
+              "version": "1.0.0"
+            },
+            "inferenceStatus": "prefix_causal_descriptive_monitoring",
+            "truthAccess": "none",
+            "writeback": "none",
+            "checkpointIndex": 2,
+            "stateStatus": "complete",
+            "state": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-state",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "operational_self_reported_belief_state",
+              "truthAccess": "none",
+              "claimId": "claim:service-access",
+              "checkpointId": "thermometer-calibration:service-access:v3:X2",
+              "checkpointIndex": 2,
+              "optionIds": [
+                "opt_1",
+                "opt_2",
+                "opt_3"
+              ],
+              "sensorRef": {
+                "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+                "version": "1.1.0"
+              },
+              "snapshotHash": "sha256:cd5fa5c02718dd408693bd2b75c84b577c1ded6cdc3680f5988b13275d513cdd",
+              "roster": {
+                "expectedAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "activeAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "missingAgentIds": [],
+                "coverage": 1,
+                "missingReasonByAgentId": {}
+              },
+              "measurement": {
+                "estimator": "primary_canonical_self_report",
+                "validPrimaryReportCount": 4,
+                "validRepeatPairCount": 4,
+                "replicateTotalVariationByAgentId": {
+                  "agent_1": 0,
+                  "agent_2": 0,
+                  "agent_3": 0,
+                  "agent_4": 0
+                },
+                "meanReplicateTotalVariation": 0,
+                "maxReplicateTotalVariation": 0
+              },
+              "behavioralCrossCheck": {
+                "status": "available",
+                "choiceCoverage": 1,
+                "publicChoiceByAgentId": {
+                  "agent_1": "opt_1",
+                  "agent_2": "opt_1",
+                  "agent_3": "opt_1",
+                  "agent_4": "opt_1"
+                },
+                "choiceShareByOptionId": {
+                  "opt_1": 1,
+                  "opt_2": 0,
+                  "opt_3": 0
+                },
+                "majorityChoiceShare": 1,
+                "beliefChoiceComparableAgentCount": 4,
+                "beliefTopChoiceCompatibilityRate": 1
+              },
+              "microstate": {
+                "beliefProbabilitiesByAgentId": {
+                  "agent_1": {
+                    "opt_1": 0.6,
+                    "opt_2": 0.25,
+                    "opt_3": 0.15
+                  },
+                  "agent_2": {
+                    "opt_1": 0.6,
+                    "opt_2": 0.25,
+                    "opt_3": 0.15
+                  },
+                  "agent_3": {
+                    "opt_1": 0.6,
+                    "opt_2": 0.25,
+                    "opt_3": 0.15
+                  },
+                  "agent_4": {
+                    "opt_1": 0.6,
+                    "opt_2": 0.25,
+                    "opt_3": 0.15
+                  }
+                }
+              },
+              "macrostate": {
+                "pooledProbabilitiesByOptionId": {
+                  "opt_1": 0.6,
+                  "opt_2": 0.25,
+                  "opt_3": 0.15
+                },
+                "meanNormalizedReportEntropy": 0.8534739433956113,
+                "pooledNormalizedEntropy": 0.8534739433956113,
+                "normalizedGeneralizedJsd": 0,
+                "pooledConcentration": 0.6,
+                "pottsStyleOrder": 0.3999999999999999,
+                "meanPairwiseTotalVariation": 0,
+                "maxPairwiseTotalVariation": 0
+              },
+              "contentHash": "sha256:c4927c27f832ae65f5df6b813e9ab64202cc072f9be5524a1933c5670be09848"
+            },
+            "transitionFromPrevious": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "descriptive_reported_transition_only",
+              "truthAccess": "none",
+              "claimId": "claim:service-access",
+              "fromStateHash": "sha256:966e699ebeb479e9e7c375578a91f72aecfe52bba464a82717e566314f58163b",
+              "toStateHash": "sha256:c4927c27f832ae65f5df6b813e9ab64202cc072f9be5524a1933c5670be09848",
+              "fromCheckpointId": "thermometer-calibration:service-access:v3:X1",
+              "toCheckpointId": "thermometer-calibration:service-access:v3:X2",
+              "matchedAgentIds": [
+                "agent_1",
+                "agent_2",
+                "agent_3",
+                "agent_4"
+              ],
+              "completeMatchedRoster": true,
+              "meanAgentTotalVariation": 0.42500000000000004,
+              "pooledTotalVariation": 0.3,
+              "deltas": {
+                "meanNormalizedReportEntropy": 0.27180207767772446,
+                "pooledNormalizedEntropy": -0.01026610910808512,
+                "normalizedGeneralizedJsd": -0.2820681867858096,
+                "pooledConcentration": 0.1499999999999999,
+                "pottsStyleOrder": 0.22499999999999987
+              },
+              "repeatabilityReference": {
+                "endpointMeanReplicateTotalVariation": 0,
+                "activityMinusEndpointRepeatability": 0.42500000000000004,
+                "comparison": "above_reference",
+                "comparisonSemantics": "aggregate_reference_only",
+                "replicateComparableAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "primaryActivityMinusMaxEndpointRepeatabilityByAgentId": {
+                  "agent_1": 0.20000000000000004,
+                  "agent_2": 0.20000000000000004,
+                  "agent_3": 0.65,
+                  "agent_4": 0.65
+                },
+                "primaryActivityAboveBothEndpointRepeatabilitiesAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "primaryActivityAboveBothEndpointRepeatabilitiesFraction": 1
+              },
+              "contentHash": "sha256:bf776126274111871366875e2f0ebe285c4264ccd8dc8fcbee7befe32274b4b9"
+            },
+            "contentHash": "sha256:607bcdfaae05a8ee8162e1b36d370965145c1a9efd408fd13985854d4c8ef5ae"
+          }
+        ],
+        "contentHash": "sha256:5bc43c1d8addc03aca0d9f727c6bda83506560a3f6ba0d3a85508d4b04a4a3f1"
+      }
+    },
+    {
+      "taskId": "thermometer-calibration:service-access:v4",
+      "trajectory": {
+        "schemaRef": {
+          "id": "swarmalpha.epistemic.discussion-thermometer-trajectory",
+          "version": "1.0.0"
+        },
+        "inferenceStatus": "prefix_causal_descriptive_monitoring",
+        "truthAccess": "none",
+        "writeback": "none",
+        "prefixCausal": true,
+        "claimId": "claim:service-access",
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "expectedAgentIds": [
+          "agent_1",
+          "agent_2",
+          "agent_3",
+          "agent_4"
+        ],
+        "sensorRef": {
+          "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+          "version": "1.1.0"
+        },
+        "readings": [
+          {
+            "schemaRef": {
+              "id": "swarmalpha.epistemic.discussion-thermometer-reading",
+              "version": "1.0.0"
+            },
+            "inferenceStatus": "prefix_causal_descriptive_monitoring",
+            "truthAccess": "none",
+            "writeback": "none",
+            "checkpointIndex": 0,
+            "stateStatus": "complete",
+            "state": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-state",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "operational_self_reported_belief_state",
+              "truthAccess": "none",
+              "claimId": "claim:service-access",
+              "checkpointId": "thermometer-calibration:service-access:v4:X0",
+              "checkpointIndex": 0,
+              "optionIds": [
+                "opt_1",
+                "opt_2",
+                "opt_3"
+              ],
+              "sensorRef": {
+                "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+                "version": "1.1.0"
+              },
+              "snapshotHash": "sha256:eaab4b14966d7b6539ee4d65fd0a5ea9b5b1ff3bdbd6fa15ae22729932755ff8",
+              "roster": {
+                "expectedAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "activeAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "missingAgentIds": [],
+                "coverage": 1,
+                "missingReasonByAgentId": {}
+              },
+              "measurement": {
+                "estimator": "primary_canonical_self_report",
+                "validPrimaryReportCount": 4,
+                "validRepeatPairCount": 4,
+                "replicateTotalVariationByAgentId": {
+                  "agent_1": 0,
+                  "agent_2": 0,
+                  "agent_3": 0,
+                  "agent_4": 0
+                },
+                "meanReplicateTotalVariation": 0,
+                "maxReplicateTotalVariation": 0
+              },
+              "behavioralCrossCheck": {
+                "status": "unavailable",
+                "choiceCoverage": 0,
+                "publicChoiceByAgentId": {},
+                "choiceShareByOptionId": null,
+                "majorityChoiceShare": null,
+                "beliefChoiceComparableAgentCount": 0,
+                "beliefTopChoiceCompatibilityRate": null
+              },
+              "microstate": {
+                "beliefProbabilitiesByAgentId": {
+                  "agent_1": {
+                    "opt_1": 0.2,
+                    "opt_2": 0.7,
+                    "opt_3": 0.1
+                  },
+                  "agent_2": {
+                    "opt_1": 0.2,
+                    "opt_2": 0.7,
+                    "opt_3": 0.1
+                  },
+                  "agent_3": {
+                    "opt_1": 0.2,
+                    "opt_2": 0.7,
+                    "opt_3": 0.1
+                  },
+                  "agent_4": {
+                    "opt_1": 0.8,
+                    "opt_2": 0.1,
+                    "opt_3": 0.1
+                  }
+                }
+              },
+              "macrostate": {
+                "pooledProbabilitiesByOptionId": {
+                  "opt_1": 0.35000000000000003,
+                  "opt_2": 0.5499999999999999,
+                  "opt_3": 0.1
+                },
+                "meanNormalizedReportEntropy": 0.6928029908010449,
+                "pooledNormalizedEntropy": 0.8433426540429227,
+                "normalizedGeneralizedJsd": 0.15053966324187784,
+                "pooledConcentration": 0.5499999999999999,
+                "pottsStyleOrder": 0.32499999999999996,
+                "meanPairwiseTotalVariation": 0.30000000000000004,
+                "maxPairwiseTotalVariation": 0.6000000000000001
+              },
+              "contentHash": "sha256:9d0f78ccf0f6b989d7db8592ac8459795d0073d1b00e47665fee6b17bc505002"
+            },
+            "transitionFromPrevious": null,
+            "contentHash": "sha256:d00dc344e68a23b9d1e9317aa9621a441ae2ee7406703337329c1cd642faee41"
+          },
+          {
+            "schemaRef": {
+              "id": "swarmalpha.epistemic.discussion-thermometer-reading",
+              "version": "1.0.0"
+            },
+            "inferenceStatus": "prefix_causal_descriptive_monitoring",
+            "truthAccess": "none",
+            "writeback": "none",
+            "checkpointIndex": 1,
+            "stateStatus": "complete",
+            "state": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-state",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "operational_self_reported_belief_state",
+              "truthAccess": "none",
+              "claimId": "claim:service-access",
+              "checkpointId": "thermometer-calibration:service-access:v4:X1",
+              "checkpointIndex": 1,
+              "optionIds": [
+                "opt_1",
+                "opt_2",
+                "opt_3"
+              ],
+              "sensorRef": {
+                "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+                "version": "1.1.0"
+              },
+              "snapshotHash": "sha256:18bb00706feeb76cdca6e2db047c185168ebe60924aa3ca562946f21a2d7a91f",
+              "roster": {
+                "expectedAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "activeAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "missingAgentIds": [],
+                "coverage": 1,
+                "missingReasonByAgentId": {}
+              },
+              "measurement": {
+                "estimator": "primary_canonical_self_report",
+                "validPrimaryReportCount": 4,
+                "validRepeatPairCount": 4,
+                "replicateTotalVariationByAgentId": {
+                  "agent_1": 0,
+                  "agent_2": 0,
+                  "agent_3": 0,
+                  "agent_4": 0
+                },
+                "meanReplicateTotalVariation": 0,
+                "maxReplicateTotalVariation": 0
+              },
+              "behavioralCrossCheck": {
+                "status": "available",
+                "choiceCoverage": 1,
+                "publicChoiceByAgentId": {
+                  "agent_1": "opt_1",
+                  "agent_2": "opt_1",
+                  "agent_3": "opt_1",
+                  "agent_4": "opt_1"
+                },
+                "choiceShareByOptionId": {
+                  "opt_1": 1,
+                  "opt_2": 0,
+                  "opt_3": 0
+                },
+                "majorityChoiceShare": 1,
+                "beliefChoiceComparableAgentCount": 4,
+                "beliefTopChoiceCompatibilityRate": 0.25
+              },
+              "microstate": {
+                "beliefProbabilitiesByAgentId": {
+                  "agent_1": {
+                    "opt_1": 0.2,
+                    "opt_2": 0.7,
+                    "opt_3": 0.1
+                  },
+                  "agent_2": {
+                    "opt_1": 0.2,
+                    "opt_2": 0.7,
+                    "opt_3": 0.1
+                  },
+                  "agent_3": {
+                    "opt_1": 0.2,
+                    "opt_2": 0.7,
+                    "opt_3": 0.1
+                  },
+                  "agent_4": {
+                    "opt_1": 0.8,
+                    "opt_2": 0.1,
+                    "opt_3": 0.1
+                  }
+                }
+              },
+              "macrostate": {
+                "pooledProbabilitiesByOptionId": {
+                  "opt_1": 0.35000000000000003,
+                  "opt_2": 0.5499999999999999,
+                  "opt_3": 0.1
+                },
+                "meanNormalizedReportEntropy": 0.6928029908010449,
+                "pooledNormalizedEntropy": 0.8433426540429227,
+                "normalizedGeneralizedJsd": 0.15053966324187784,
+                "pooledConcentration": 0.5499999999999999,
+                "pottsStyleOrder": 0.32499999999999996,
+                "meanPairwiseTotalVariation": 0.30000000000000004,
+                "maxPairwiseTotalVariation": 0.6000000000000001
+              },
+              "contentHash": "sha256:8eeab357a2c8dd808386d3d5ca39a1f857c8d76e7f4a88974b1c835d3c9ad42d"
+            },
+            "transitionFromPrevious": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "descriptive_reported_transition_only",
+              "truthAccess": "none",
+              "claimId": "claim:service-access",
+              "fromStateHash": "sha256:9d0f78ccf0f6b989d7db8592ac8459795d0073d1b00e47665fee6b17bc505002",
+              "toStateHash": "sha256:8eeab357a2c8dd808386d3d5ca39a1f857c8d76e7f4a88974b1c835d3c9ad42d",
+              "fromCheckpointId": "thermometer-calibration:service-access:v4:X0",
+              "toCheckpointId": "thermometer-calibration:service-access:v4:X1",
+              "matchedAgentIds": [
+                "agent_1",
+                "agent_2",
+                "agent_3",
+                "agent_4"
+              ],
+              "completeMatchedRoster": true,
+              "meanAgentTotalVariation": 0,
+              "pooledTotalVariation": 0,
+              "deltas": {
+                "meanNormalizedReportEntropy": 0,
+                "pooledNormalizedEntropy": 0,
+                "normalizedGeneralizedJsd": 0,
+                "pooledConcentration": 0,
+                "pottsStyleOrder": 0
+              },
+              "repeatabilityReference": {
+                "endpointMeanReplicateTotalVariation": 0,
+                "activityMinusEndpointRepeatability": 0,
+                "comparison": "not_above_reference",
+                "comparisonSemantics": "aggregate_reference_only",
+                "replicateComparableAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "primaryActivityMinusMaxEndpointRepeatabilityByAgentId": {
+                  "agent_1": 0,
+                  "agent_2": 0,
+                  "agent_3": 0,
+                  "agent_4": 0
+                },
+                "primaryActivityAboveBothEndpointRepeatabilitiesAgentIds": [],
+                "primaryActivityAboveBothEndpointRepeatabilitiesFraction": 0
+              },
+              "contentHash": "sha256:c73e4dd6ce8512c40cbf0f7eac7332444b458adad639d891e5b9f0e53c8e94c8"
+            },
+            "contentHash": "sha256:61e662de5c49aac8c484fb61d8d03de624ccf647e321a31795f0f11c9f4b490c"
+          },
+          {
+            "schemaRef": {
+              "id": "swarmalpha.epistemic.discussion-thermometer-reading",
+              "version": "1.0.0"
+            },
+            "inferenceStatus": "prefix_causal_descriptive_monitoring",
+            "truthAccess": "none",
+            "writeback": "none",
+            "checkpointIndex": 2,
+            "stateStatus": "complete",
+            "state": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-state",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "operational_self_reported_belief_state",
+              "truthAccess": "none",
+              "claimId": "claim:service-access",
+              "checkpointId": "thermometer-calibration:service-access:v4:X2",
+              "checkpointIndex": 2,
+              "optionIds": [
+                "opt_1",
+                "opt_2",
+                "opt_3"
+              ],
+              "sensorRef": {
+                "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+                "version": "1.1.0"
+              },
+              "snapshotHash": "sha256:3ed5ae20dcb4099d05a66a580990b847fc01a424b19ddcbc529159d1a56109d3",
+              "roster": {
+                "expectedAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "activeAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "missingAgentIds": [],
+                "coverage": 1,
+                "missingReasonByAgentId": {}
+              },
+              "measurement": {
+                "estimator": "primary_canonical_self_report",
+                "validPrimaryReportCount": 4,
+                "validRepeatPairCount": 4,
+                "replicateTotalVariationByAgentId": {
+                  "agent_1": 0,
+                  "agent_2": 0,
+                  "agent_3": 0,
+                  "agent_4": 0
+                },
+                "meanReplicateTotalVariation": 0,
+                "maxReplicateTotalVariation": 0
+              },
+              "behavioralCrossCheck": {
+                "status": "available",
+                "choiceCoverage": 1,
+                "publicChoiceByAgentId": {
+                  "agent_1": "opt_1",
+                  "agent_2": "opt_1",
+                  "agent_3": "opt_1",
+                  "agent_4": "opt_1"
+                },
+                "choiceShareByOptionId": {
+                  "opt_1": 1,
+                  "opt_2": 0,
+                  "opt_3": 0
+                },
+                "majorityChoiceShare": 1,
+                "beliefChoiceComparableAgentCount": 4,
+                "beliefTopChoiceCompatibilityRate": 0.25
+              },
+              "microstate": {
+                "beliefProbabilitiesByAgentId": {
+                  "agent_1": {
+                    "opt_1": 0.2,
+                    "opt_2": 0.7,
+                    "opt_3": 0.1
+                  },
+                  "agent_2": {
+                    "opt_1": 0.2,
+                    "opt_2": 0.7,
+                    "opt_3": 0.1
+                  },
+                  "agent_3": {
+                    "opt_1": 0.2,
+                    "opt_2": 0.7,
+                    "opt_3": 0.1
+                  },
+                  "agent_4": {
+                    "opt_1": 0.8,
+                    "opt_2": 0.1,
+                    "opt_3": 0.1
+                  }
+                }
+              },
+              "macrostate": {
+                "pooledProbabilitiesByOptionId": {
+                  "opt_1": 0.35000000000000003,
+                  "opt_2": 0.5499999999999999,
+                  "opt_3": 0.1
+                },
+                "meanNormalizedReportEntropy": 0.6928029908010449,
+                "pooledNormalizedEntropy": 0.8433426540429227,
+                "normalizedGeneralizedJsd": 0.15053966324187784,
+                "pooledConcentration": 0.5499999999999999,
+                "pottsStyleOrder": 0.32499999999999996,
+                "meanPairwiseTotalVariation": 0.30000000000000004,
+                "maxPairwiseTotalVariation": 0.6000000000000001
+              },
+              "contentHash": "sha256:fa61cf26b0e0d7406fe592b0a12e38b6af028faeeb6def3b4f80164f1a946242"
+            },
+            "transitionFromPrevious": {
+              "schemaRef": {
+                "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+                "version": "1.0.0"
+              },
+              "inferenceStatus": "descriptive_reported_transition_only",
+              "truthAccess": "none",
+              "claimId": "claim:service-access",
+              "fromStateHash": "sha256:8eeab357a2c8dd808386d3d5ca39a1f857c8d76e7f4a88974b1c835d3c9ad42d",
+              "toStateHash": "sha256:fa61cf26b0e0d7406fe592b0a12e38b6af028faeeb6def3b4f80164f1a946242",
+              "fromCheckpointId": "thermometer-calibration:service-access:v4:X1",
+              "toCheckpointId": "thermometer-calibration:service-access:v4:X2",
+              "matchedAgentIds": [
+                "agent_1",
+                "agent_2",
+                "agent_3",
+                "agent_4"
+              ],
+              "completeMatchedRoster": true,
+              "meanAgentTotalVariation": 0,
+              "pooledTotalVariation": 0,
+              "deltas": {
+                "meanNormalizedReportEntropy": 0,
+                "pooledNormalizedEntropy": 0,
+                "normalizedGeneralizedJsd": 0,
+                "pooledConcentration": 0,
+                "pottsStyleOrder": 0
+              },
+              "repeatabilityReference": {
+                "endpointMeanReplicateTotalVariation": 0,
+                "activityMinusEndpointRepeatability": 0,
+                "comparison": "not_above_reference",
+                "comparisonSemantics": "aggregate_reference_only",
+                "replicateComparableAgentIds": [
+                  "agent_1",
+                  "agent_2",
+                  "agent_3",
+                  "agent_4"
+                ],
+                "primaryActivityMinusMaxEndpointRepeatabilityByAgentId": {
+                  "agent_1": 0,
+                  "agent_2": 0,
+                  "agent_3": 0,
+                  "agent_4": 0
+                },
+                "primaryActivityAboveBothEndpointRepeatabilitiesAgentIds": [],
+                "primaryActivityAboveBothEndpointRepeatabilitiesFraction": 0
+              },
+              "contentHash": "sha256:296235e9ab2fd6a400ff4d5c423e52f0902d5e5669b130ccdbd1d1ea39f0e76b"
+            },
+            "contentHash": "sha256:bba64850d62624bcec8c05db4c2d317852b98b1b91c8a4970420ddc0c13913cd"
+          }
+        ],
+        "contentHash": "sha256:3781a3b453dee09010186a0cd9db88c20b7e37f7c1e04aee172b8954ffc24155"
+      }
+    }
+  ],
+  "truthAccess": "none",
+  "predictionUsed": false,
+  "actionProduced": false,
+  "contentHash": "sha256:e8df3a51c5c1a7342e1b049317d8501352325b54f125d088fca0a5dec2130375"
+}

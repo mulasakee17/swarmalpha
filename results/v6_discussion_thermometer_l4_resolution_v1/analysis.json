@@ -1,0 +1,191 @@
+{
+  "analysisRef": {
+    "id": "swarmalpha.analysis.v6.discussion-thermometer-l4-resolution",
+    "version": "1.0.0",
+    "providerCalls": 0,
+    "taskCounts": [
+      8,
+      12,
+      16,
+      24,
+      32
+    ],
+    "standardizedMeanDeltas": [
+      0,
+      -0.25,
+      -0.5,
+      -0.75,
+      -1
+    ],
+    "trialCount": 400,
+    "alpha": 0.05,
+    "seed": 4994215
+  },
+  "inferenceStatus": "synthetic_resolution_only",
+  "empiricalQualification": "not_run",
+  "assumptions": {
+    "unit": "task_level_paired_candidate_minus_baseline_loss_delta",
+    "deltaModel": "independent_gaussian_with_unit_task_standard_deviation",
+    "test": "two_sided_paired_sign_flip_monte_carlo",
+    "interpretation": "planning_sensitivity_not_empirical_power_or_effect_gate"
+  },
+  "grid": [
+    {
+      "taskCount": 8,
+      "standardizedMeanDelta": 0,
+      "trialCount": 400,
+      "rejectionRate": 0.035
+    },
+    {
+      "taskCount": 8,
+      "standardizedMeanDelta": -0.25,
+      "trialCount": 400,
+      "rejectionRate": 0.1
+    },
+    {
+      "taskCount": 8,
+      "standardizedMeanDelta": -0.5,
+      "trialCount": 400,
+      "rejectionRate": 0.2125
+    },
+    {
+      "taskCount": 8,
+      "standardizedMeanDelta": -0.75,
+      "trialCount": 400,
+      "rejectionRate": 0.405
+    },
+    {
+      "taskCount": 8,
+      "standardizedMeanDelta": -1,
+      "trialCount": 400,
+      "rejectionRate": 0.635
+    },
+    {
+      "taskCount": 12,
+      "standardizedMeanDelta": 0,
+      "trialCount": 400,
+      "rejectionRate": 0.0675
+    },
+    {
+      "taskCount": 12,
+      "standardizedMeanDelta": -0.25,
+      "trialCount": 400,
+      "rejectionRate": 0.125
+    },
+    {
+      "taskCount": 12,
+      "standardizedMeanDelta": -0.5,
+      "trialCount": 400,
+      "rejectionRate": 0.36
+    },
+    {
+      "taskCount": 12,
+      "standardizedMeanDelta": -0.75,
+      "trialCount": 400,
+      "rejectionRate": 0.67
+    },
+    {
+      "taskCount": 12,
+      "standardizedMeanDelta": -1,
+      "trialCount": 400,
+      "rejectionRate": 0.865
+    },
+    {
+      "taskCount": 16,
+      "standardizedMeanDelta": 0,
+      "trialCount": 400,
+      "rejectionRate": 0.055
+    },
+    {
+      "taskCount": 16,
+      "standardizedMeanDelta": -0.25,
+      "trialCount": 400,
+      "rejectionRate": 0.1775
+    },
+    {
+      "taskCount": 16,
+      "standardizedMeanDelta": -0.5,
+      "trialCount": 400,
+      "rejectionRate": 0.4875
+    },
+    {
+      "taskCount": 16,
+      "standardizedMeanDelta": -0.75,
+      "trialCount": 400,
+      "rejectionRate": 0.8
+    },
+    {
+      "taskCount": 16,
+      "standardizedMeanDelta": -1,
+      "trialCount": 400,
+      "rejectionRate": 0.955
+    },
+    {
+      "taskCount": 24,
+      "standardizedMeanDelta": 0,
+      "trialCount": 400,
+      "rejectionRate": 0.0525
+    },
+    {
+      "taskCount": 24,
+      "standardizedMeanDelta": -0.25,
+      "trialCount": 400,
+      "rejectionRate": 0.2375
+    },
+    {
+      "taskCount": 24,
+      "standardizedMeanDelta": -0.5,
+      "trialCount": 400,
+      "rejectionRate": 0.6375
+    },
+    {
+      "taskCount": 24,
+      "standardizedMeanDelta": -0.75,
+      "trialCount": 400,
+      "rejectionRate": 0.9375
+    },
+    {
+      "taskCount": 24,
+      "standardizedMeanDelta": -1,
+      "trialCount": 400,
+      "rejectionRate": 0.995
+    },
+    {
+      "taskCount": 32,
+      "standardizedMeanDelta": 0,
+      "trialCount": 400,
+      "rejectionRate": 0.035
+    },
+    {
+      "taskCount": 32,
+      "standardizedMeanDelta": -0.25,
+      "trialCount": 400,
+      "rejectionRate": 0.3175
+    },
+    {
+      "taskCount": 32,
+      "standardizedMeanDelta": -0.5,
+      "trialCount": 400,
+      "rejectionRate": 0.8075
+    },
+    {
+      "taskCount": 32,
+      "standardizedMeanDelta": -0.75,
+      "trialCount": 400,
+      "rejectionRate": 0.9775
+    },
+    {
+      "taskCount": 32,
+      "standardizedMeanDelta": -1,
+      "trialCount": 400,
+      "rejectionRate": 1
+    }
+  ],
+  "minimumTaskCountAt80PercentByEffect": {
+    "-0.25": null,
+    "-0.5": 32,
+    "-0.75": 16,
+    "-1": 12
+  },
+  "contentHash": "sha256:d083a8e7bb33822fea8d9126e0b817db1746e33b82dd98abcfd9bdf1fe5f384d"
+}

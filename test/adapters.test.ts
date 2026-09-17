@@ -1,14 +1,14 @@
 import { describe, it, expect, vi } from "vitest";
-import { CustomAdapter } from "@/runtime/adapters/CustomAdapter";
-import { AutoGenAdapter } from "@/runtime/adapters/AutoGenAdapter";
-import { StateInferenceBridge } from "@/runtime/adapters/StateInferenceBridge";
+import { CustomAdapter } from "../legacy/src/runtime/adapters/CustomAdapter";
+import { AutoGenAdapter } from "../legacy/src/runtime/adapters/AutoGenAdapter";
+import { StateInferenceBridge } from "../legacy/src/runtime/adapters/StateInferenceBridge";
 import {
   buildGovernanceExtension,
   extractGovTag,
   stripGovTag,
   interventionToPrompt,
   getInterventionTargets,
-} from "@/runtime/adapters/PromptInjector";
+} from "../legacy/src/runtime/adapters/PromptInjector";
 import type { Intervention } from "@/lib/governance/types";
 import { callLLM } from "@/lib/llm/providers";
 

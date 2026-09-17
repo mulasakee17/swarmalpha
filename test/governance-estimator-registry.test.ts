@@ -12,7 +12,7 @@ import {
   type ProgressiveEstimatorConfig,
   type ProgressiveEstimatorInput,
   type ProgressiveEstimates,
-} from "@/lib/thermodynamics/ProgressiveEstimator";
+} from "../legacy/src/lib/thermodynamics/ProgressiveEstimator";
 
 type SumInput = { values: number[] };
 type SumConfig = { scale: number };

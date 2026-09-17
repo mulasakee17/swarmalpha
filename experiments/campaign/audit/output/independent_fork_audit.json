@@ -1,0 +1,819 @@
+{
+  "analyzer": "independent_fork_audit.py",
+  "importsProjectCode": false,
+  "dataset": "experiments\\campaign\\tasks\\hiddenbench\\benchmark.json",
+  "bootstrap": {
+    "algorithm": "independent mulberry32 port",
+    "seed": 6221071,
+    "repetitions": 10000
+  },
+  "goldenBrierTests": [
+    {
+      "case": 1,
+      "actual": 0.0,
+      "expected": 0.0,
+      "pass": true
+    },
+    {
+      "case": 2,
+      "actual": 2.0,
+      "expected": 2.0,
+      "pass": true
+    },
+    {
+      "case": 3,
+      "actual": 0.5,
+      "expected": 0.5,
+      "pass": true
+    },
+    {
+      "case": 4,
+      "actual": 0.38,
+      "expected": 0.38,
+      "pass": true
+    },
+    {
+      "case": 5,
+      "actual": 0.9000000000000001,
+      "expected": 0.9,
+      "pass": true
+    }
+  ],
+  "runs": [
+    {
+      "directory": "experiments\\campaign\\pilot_output\\v6-fork-confirmatory-v2-20260815",
+      "plannedTasks": 45,
+      "plannedSeeds": [
+        0
+      ],
+      "expectedArms": [
+        "CONTROL",
+        "SUPPORTS",
+        "ATTACKS"
+      ],
+      "rowCount": 135,
+      "rawFinalReportsReparsed": 0,
+      "rowsWithoutRawFinal": 135,
+      "validationErrors": [],
+      "armDiagnostics": {
+        "ATTACKS": {
+          "rows": 45,
+          "meanDisclosedEvidenceCount": 5.333333333333333,
+          "meanDisclosedTokenCount": 1693.0666666666666,
+          "meanDisclosedCoveredOptionCount": 2.422222222222222,
+          "meanDisclosedSourceAgentCount": 3.3555555555555556,
+          "meanFinalReportedCount": 3.8666666666666667,
+          "zeroFinalReportedRows": 0,
+          "nullFinalBrierRows": 0
+        },
+        "CONTROL": {
+          "rows": 45,
+          "meanDisclosedEvidenceCount": 0.0,
+          "meanDisclosedTokenCount": 0.0,
+          "meanDisclosedCoveredOptionCount": 0.0,
+          "meanDisclosedSourceAgentCount": 0.0,
+          "meanFinalReportedCount": 3.7333333333333334,
+          "zeroFinalReportedRows": 0,
+          "nullFinalBrierRows": 0
+        },
+        "SUPPORTS": {
+          "rows": 45,
+          "meanDisclosedEvidenceCount": 5.288888888888889,
+          "meanDisclosedTokenCount": 1665.7777777777778,
+          "meanDisclosedCoveredOptionCount": 2.311111111111111,
+          "meanDisclosedSourceAgentCount": 3.577777777777778,
+          "meanFinalReportedCount": 3.8222222222222224,
+          "zeroFinalReportedRows": 0,
+          "nullFinalBrierRows": 0
+        }
+      },
+      "providerDiagnostics": null,
+      "estimates": {
+        "ATTACKS-SUPPORTS": {
+          "completeBlocks": 45,
+          "completeTasks": 45,
+          "missingTasks": 0,
+          "meanDelta": -0.3432896913580247,
+          "ci95": [
+            -0.5068233024691358,
+            -0.19270867283950616
+          ],
+          "bounds": [
+            -0.3432896913580247,
+            -0.3432896913580247
+          ],
+          "loto": {
+            "full": -0.3432896913580247,
+            "min": -0.3673322601010101,
+            "max": -0.308961047979798,
+            "mostInfluentialTask": 51,
+            "signChanges": false
+          },
+          "taskEffects": {
+            "14": -1.125,
+            "15": 0.0,
+            "16": -0.6162500000000001,
+            "17": 0.7145833333333333,
+            "18": 0.05624999999999998,
+            "19": 0.0,
+            "20": -1.4000000000000001,
+            "21": 0.019999999999999997,
+            "22": -1.3912500000000003,
+            "23": 0.4175000000000001,
+            "25": -0.10250000000000001,
+            "26": 0.04375000000000007,
+            "27": 0.0,
+            "29": 0.0,
+            "30": 0.0,
+            "31": 0.0,
+            "34": 0.0,
+            "35": -0.5740625,
+            "36": -0.28125,
+            "37": -0.7737500000000002,
+            "38": -0.3131249999999999,
+            "40": -0.78125,
+            "41": -0.8599999999999999,
+            "42": 0.011249999999999996,
+            "43": 0.03125,
+            "44": -0.29625000000000007,
+            "46": -0.47819444444444437,
+            "47": -0.38,
+            "48": -0.595,
+            "49": -0.06000000000000004,
+            "50": 0.0,
+            "51": -1.85375,
+            "52": 0.0,
+            "53": -1.4224999999999999,
+            "55": 0.0,
+            "56": -0.1200000000000001,
+            "57": -0.4162499999999998,
+            "58": -1.26,
+            "59": 0.0,
+            "60": -1.2009375,
+            "61": -0.14879999999999982,
+            "62": 0.16874999999999984,
+            "63": -0.475,
+            "64": 0.013749999999999964,
+            "65": 0.0
+          },
+          "completeRosterSensitivity": {
+            "completeBlocks": 38,
+            "completeTasks": 38,
+            "meanDelta": -0.37148980263157894,
+            "ci95": [
+              -0.5469750000000001,
+              -0.2063828947368421
+            ],
+            "loto": {
+              "full": -0.37148980263157894,
+              "min": -0.3928138513513514,
+              "max": -0.3314287162162162,
+              "mostInfluentialTask": 51,
+              "signChanges": false
+            }
+          }
+        },
+        "ATTACKS-CONTROL": {
+          "completeBlocks": 45,
+          "completeTasks": 45,
+          "missingTasks": 0,
+          "meanDelta": -0.3076157407407407,
+          "ci95": [
+            -0.49608719135802465,
+            -0.1464282407407407
+          ],
+          "bounds": [
+            -0.3076157407407407,
+            -0.3076157407407407
+          ],
+          "loto": {
+            "full": -0.3076157407407407,
+            "min": -0.3343797348484849,
+            "max": -0.2691524621212121,
+            "mostInfluentialTask": 51,
+            "signChanges": false
+          },
+          "taskEffects": {
+            "14": -0.5,
+            "15": 0.0,
+            "16": -0.77625,
+            "17": 0.20833333333333348,
+            "18": 0.044999999999999984,
+            "19": -0.05375000000000001,
+            "20": -0.335,
+            "21": -1.98,
+            "22": -1.84875,
+            "23": 0.87,
+            "25": -0.2555555555555556,
+            "26": -0.6462499999999999,
+            "27": 0.0,
+            "29": 0.0,
+            "30": 0.0,
+            "31": 0.0,
+            "34": 0.0,
+            "35": -0.21406250000000004,
+            "36": -1.4112500000000001,
+            "37": -0.48374999999999996,
+            "38": -0.21826388888888903,
+            "40": -0.125,
+            "41": -0.059999999999999984,
+            "42": 0.011249999999999996,
+            "43": 0.03125,
+            "44": -0.19500000000000006,
+            "46": -0.3131944444444441,
+            "47": -0.033749999999999974,
+            "48": 0.0,
+            "49": -0.15375,
+            "50": -0.22222222222222224,
+            "51": -2.0,
+            "52": 0.0,
+            "53": -2.0,
+            "55": 0.0,
+            "56": -0.6599999999999999,
+            "57": -0.13124999999999987,
+            "58": -0.30874999999999997,
+            "59": 0.0,
+            "60": -0.06482638888888881,
+            "61": 0.0,
+            "62": -0.017916666666666692,
+            "63": 0.0,
+            "64": 0.0,
+            "65": 0.0
+          },
+          "completeRosterSensitivity": {
+            "completeBlocks": 38,
+            "completeTasks": 38,
+            "meanDelta": -0.32950749269005847,
+            "ci95": [
+              -0.548875182748538,
+              -0.1403956505847953
+            ],
+            "loto": {
+              "full": -0.32950749269005847,
+              "min": -0.3619266141141141,
+              "max": -0.28435904654654653,
+              "mostInfluentialTask": 51,
+              "signChanges": false
+            }
+          }
+        }
+      },
+      "publishedComparisons": []
+    },
+    {
+      "directory": "experiments\\campaign\\pilot_output\\v6-fork-confirmatory-v3-20260816",
+      "plannedTasks": 45,
+      "plannedSeeds": [
+        0,
+        1
+      ],
+      "expectedArms": [
+        "CONTROL",
+        "SUPPORTS",
+        "ATTACKS"
+      ],
+      "rowCount": 270,
+      "rawFinalReportsReparsed": 0,
+      "rowsWithoutRawFinal": 270,
+      "validationErrors": [
+        "run_fork-v1_task-60_seed-1.62e7a6b0fb10.jsonl:1:CONTROL: cannot pool zero final reports"
+      ],
+      "armDiagnostics": {
+        "ATTACKS": {
+          "rows": 90,
+          "meanDisclosedEvidenceCount": 5.488888888888889,
+          "meanDisclosedTokenCount": 1740.888888888889,
+          "meanDisclosedCoveredOptionCount": 2.388888888888889,
+          "meanDisclosedSourceAgentCount": 3.4555555555555557,
+          "meanFinalReportedCount": 3.8333333333333335,
+          "zeroFinalReportedRows": 0,
+          "nullFinalBrierRows": 0
+        },
+        "CONTROL": {
+          "rows": 90,
+          "meanDisclosedEvidenceCount": 0.0,
+          "meanDisclosedTokenCount": 0.0,
+          "meanDisclosedCoveredOptionCount": 0.0,
+          "meanDisclosedSourceAgentCount": 0.0,
+          "meanFinalReportedCount": 3.6777777777777776,
+          "zeroFinalReportedRows": 1,
+          "nullFinalBrierRows": 1
+        },
+        "SUPPORTS": {
+          "rows": 90,
+          "meanDisclosedEvidenceCount": 5.344444444444444,
+          "meanDisclosedTokenCount": 1691.411111111111,
+          "meanDisclosedCoveredOptionCount": 2.3333333333333335,
+          "meanDisclosedSourceAgentCount": 3.6777777777777776,
+          "meanFinalReportedCount": 3.8555555555555556,
+          "zeroFinalReportedRows": 0,
+          "nullFinalBrierRows": 0
+        }
+      },
+      "providerDiagnostics": null,
+      "estimates": {
+        "ATTACKS-SUPPORTS": {
+          "completeBlocks": 90,
+          "completeTasks": 45,
+          "missingTasks": 0,
+          "meanDelta": -0.41211450617283946,
+          "ci95": [
+            -0.5712064043209877,
+            -0.2663344135802469
+          ],
+          "bounds": [
+            -0.41211450617283946,
+            -0.41211450617283946
+          ],
+          "loto": {
+            "full": -0.41211450617283946,
+            "min": -0.42699092487373735,
+            "max": -0.382134154040404,
+            "mostInfluentialTask": 51,
+            "signChanges": false
+          },
+          "taskEffects": {
+            "14": -1.125,
+            "15": -0.0018750000000000023,
+            "16": -0.98875,
+            "17": 0.2424479166666667,
+            "18": 0.0,
+            "19": 0.0,
+            "20": -1.1225,
+            "21": 0.009999999999999998,
+            "22": -1.3931250000000002,
+            "23": 0.21000000000000005,
+            "25": -0.053125000000000006,
+            "26": -0.805625,
+            "27": 0.0,
+            "29": 0.0,
+            "30": 0.05777777777777776,
+            "31": 0.0,
+            "34": 0.0,
+            "35": -0.39390625,
+            "36": -1.140625,
+            "37": -0.5412500000000001,
+            "38": -0.8996875,
+            "40": -1.390625,
+            "41": -0.42999999999999994,
+            "42": 0.005624999999999998,
+            "43": 0.015625,
+            "44": -0.48625000000000007,
+            "46": -1.011597222222222,
+            "47": -0.35312499999999997,
+            "48": -0.26000000000000006,
+            "49": -0.3974999999999999,
+            "50": 0.0,
+            "51": -1.7312499999999997,
+            "52": 0.0,
+            "53": -1.52375,
+            "55": -0.0025000000000000022,
+            "56": -0.23687500000000006,
+            "57": -0.2812499999999999,
+            "58": -1.0675,
+            "59": 0.0,
+            "60": -0.60046875,
+            "61": -0.17737499999999984,
+            "62": -0.3656250000000001,
+            "63": -0.306875,
+            "64": 0.0014062499999999978,
+            "65": 0.0
+          },
+          "completeRosterSensitivity": {
+            "completeBlocks": 76,
+            "completeTasks": 41,
+            "meanDelta": -0.44601151761517616,
+            "ci95": [
+              -0.622046493902439,
+              -0.2861495596205962
+            ],
+            "loto": {
+              "full": -0.44601151761517616,
+              "min": -0.4624118055555556,
+              "max": -0.4138805555555556,
+              "mostInfluentialTask": 51,
+              "signChanges": false
+            }
+          }
+        },
+        "ATTACKS-CONTROL": {
+          "completeBlocks": 89,
+          "completeTasks": 45,
+          "missingTasks": 0,
+          "meanDelta": -0.3303256172839506,
+          "ci95": [
+            -0.4965655864197531,
+            -0.18816242283950615
+          ],
+          "bounds": [
+            -0.3303256172839506,
+            -0.3303256172839506
+          ],
+          "loto": {
+            "full": -0.3303256172839506,
+            "min": -0.34784722222222225,
+            "max": -0.29237847222222224,
+            "mostInfluentialTask": 53,
+            "signChanges": false
+          },
+          "taskEffects": {
+            "14": -0.8125,
+            "15": 0.0,
+            "16": -0.538125,
+            "17": -0.20583333333333326,
+            "18": 0.024374999999999994,
+            "19": -0.10437500000000002,
+            "20": -0.39687500000000003,
+            "21": -0.99,
+            "22": -1.60125,
+            "23": 0.440625,
+            "25": -0.20965277777777783,
+            "26": -0.603125,
+            "27": 0.0,
+            "29": 0.0,
+            "30": -0.3866666666666667,
+            "31": 0.0,
+            "34": 0.0,
+            "35": -0.007031250000000017,
+            "36": -1.5973437500000003,
+            "37": -0.25375,
+            "38": -1.1091319444444445,
+            "40": -1.0625,
+            "41": -0.031874999999999994,
+            "42": 0.005624999999999998,
+            "43": 0.015625,
+            "44": -0.16750000000000004,
+            "46": -0.6159722222222219,
+            "47": 0.09562500000000003,
+            "48": 0.0,
+            "49": -0.08437499999999999,
+            "50": -0.11111111111111112,
+            "51": -1.3475000000000001,
+            "52": 0.0,
+            "53": -2.0,
+            "55": -0.238125,
+            "56": -0.09999999999999998,
+            "57": 0.003750000000000031,
+            "58": -0.5843749999999999,
+            "59": 0.0,
+            "60": -0.06482638888888881,
+            "61": 0.0,
+            "62": -0.12895833333333334,
+            "63": -0.09749999999999992,
+            "64": 0.0,
+            "65": 0.0
+          },
+          "completeRosterSensitivity": {
+            "completeBlocks": 76,
+            "completeTasks": 41,
+            "meanDelta": -0.3318665311653117,
+            "ci95": [
+              -0.503893970189702,
+              -0.1838063177506775
+            ],
+            "loto": {
+              "full": -0.3318665311653117,
+              "min": -0.35117881944444446,
+              "max": -0.29016319444444444,
+              "mostInfluentialTask": 53,
+              "signChanges": false
+            }
+          }
+        }
+      },
+      "publishedComparisons": []
+    },
+    {
+      "directory": "experiments\\campaign\\pilot_output\\v6-fork-glm46v-twoarm-v4-20260820",
+      "plannedTasks": 44,
+      "plannedSeeds": [
+        0
+      ],
+      "expectedArms": [
+        "CONTROL",
+        "ATTACKS"
+      ],
+      "rowCount": 78,
+      "rawFinalReportsReparsed": 306,
+      "rowsWithoutRawFinal": 0,
+      "validationErrors": [],
+      "armDiagnostics": {
+        "ATTACKS": {
+          "rows": 39,
+          "meanDisclosedEvidenceCount": 5.512820512820513,
+          "meanDisclosedTokenCount": 1859.5384615384614,
+          "meanDisclosedCoveredOptionCount": 2.4358974358974357,
+          "meanDisclosedSourceAgentCount": 3.717948717948718,
+          "meanFinalReportedCount": 3.923076923076923,
+          "zeroFinalReportedRows": 0,
+          "nullFinalBrierRows": 0
+        },
+        "CONTROL": {
+          "rows": 39,
+          "meanDisclosedEvidenceCount": 0.0,
+          "meanDisclosedTokenCount": 0.0,
+          "meanDisclosedCoveredOptionCount": 0.0,
+          "meanDisclosedSourceAgentCount": 0.0,
+          "meanFinalReportedCount": 3.923076923076923,
+          "zeroFinalReportedRows": 0,
+          "nullFinalBrierRows": 0
+        }
+      },
+      "providerDiagnostics": {
+        "finishedAttempts": 808,
+        "attemptsWithProviderModel": 0,
+        "providerModels": [],
+        "attemptsWithProviderRequestId": 0,
+        "uniqueProviderRequestIds": 0,
+        "unknownUsageAttempts": 0
+      },
+      "estimates": {
+        "ATTACKS-SUPPORTS": {
+          "completeBlocks": 0,
+          "completeTasks": 0,
+          "missingTasks": 44,
+          "meanDelta": null,
+          "ci95": null,
+          "bounds": [
+            -2.0,
+            2.0
+          ],
+          "loto": null,
+          "taskEffects": {},
+          "completeRosterSensitivity": {
+            "completeBlocks": 0,
+            "completeTasks": 0,
+            "meanDelta": null,
+            "ci95": null,
+            "loto": null
+          }
+        },
+        "ATTACKS-CONTROL": {
+          "completeBlocks": 39,
+          "completeTasks": 39,
+          "missingTasks": 5,
+          "meanDelta": -0.49374124821937326,
+          "ci95": [
+            -0.6392148326210826,
+            -0.3470966257122507
+          ],
+          "bounds": [
+            -0.6649070154671718,
+            -0.2103615609217172
+          ],
+          "loto": {
+            "full": -0.49374124821937326,
+            "min": -0.5147360836988305,
+            "max": -0.4615041758040936,
+            "mostInfluentialTask": 29,
+            "signChanges": false
+          },
+          "taskEffects": {
+            "15": -0.8150000000000001,
+            "16": 0.0,
+            "18": 0.0,
+            "19": -0.875,
+            "20": -0.3284374999999997,
+            "21": -0.4878125,
+            "22": -1.0978125000000003,
+            "23": -0.63875,
+            "27": -0.014999999999999996,
+            "29": -1.71875,
+            "30": -0.2916666666666667,
+            "31": -0.8103125,
+            "34": -0.1272222222222222,
+            "35": -0.7737499999999999,
+            "36": -0.7896875000000001,
+            "37": -0.5871875,
+            "40": -1.04625,
+            "41": -0.01874999999999998,
+            "42": -0.033749999999999974,
+            "43": -1.2349999999999999,
+            "44": -0.4437500000000003,
+            "46": -0.5315624999999999,
+            "47": 0.0,
+            "48": 0.0,
+            "49": -0.4921875,
+            "50": -0.08666666666666653,
+            "51": -0.4262499999999999,
+            "52": -0.4759375,
+            "55": -0.5090625,
+            "56": -0.1803125,
+            "57": 0.14625,
+            "58": -0.8296874999999999,
+            "59": -0.8787500000000001,
+            "60": 0.3040624999999998,
+            "61": -0.23625000000000007,
+            "62": -0.1634375,
+            "63": -1.4558656250000002,
+            "64": -1.275,
+            "65": -0.03136249999999999
+          },
+          "completeRosterSensitivity": {
+            "completeBlocks": 39,
+            "completeTasks": 39,
+            "meanDelta": -0.49374124821937326,
+            "ci95": [
+              -0.6392148326210826,
+              -0.3470966257122507
+            ],
+            "loto": {
+              "full": -0.49374124821937326,
+              "min": -0.5147360836988305,
+              "max": -0.4615041758040936,
+              "mostInfluentialTask": 29,
+              "signChanges": false
+            }
+          }
+        }
+      },
+      "publishedComparisons": [
+        {
+          "field": "meanDelta",
+          "independent": -0.49374124821937326,
+          "published": -0.49374124821937326,
+          "match": true
+        },
+        {
+          "field": "ci95.lo",
+          "independent": -0.6392148326210826,
+          "published": -0.6392148326210825,
+          "match": true
+        },
+        {
+          "field": "ci95.hi",
+          "independent": -0.3470966257122507,
+          "published": -0.3470966257122507,
+          "match": true
+        }
+      ]
+    },
+    {
+      "directory": "experiments\\campaign\\pilot_output\\v6-fork-glm46v-twoarm-seed1-v3-20260821",
+      "plannedTasks": 44,
+      "plannedSeeds": [
+        1
+      ],
+      "expectedArms": [
+        "CONTROL",
+        "ATTACKS"
+      ],
+      "rowCount": 78,
+      "rawFinalReportsReparsed": 306,
+      "rowsWithoutRawFinal": 0,
+      "validationErrors": [],
+      "armDiagnostics": {
+        "ATTACKS": {
+          "rows": 39,
+          "meanDisclosedEvidenceCount": 5.3076923076923075,
+          "meanDisclosedTokenCount": 1795.0,
+          "meanDisclosedCoveredOptionCount": 2.4358974358974357,
+          "meanDisclosedSourceAgentCount": 3.6666666666666665,
+          "meanFinalReportedCount": 3.923076923076923,
+          "zeroFinalReportedRows": 0,
+          "nullFinalBrierRows": 0
+        },
+        "CONTROL": {
+          "rows": 39,
+          "meanDisclosedEvidenceCount": 0.0,
+          "meanDisclosedTokenCount": 0.0,
+          "meanDisclosedCoveredOptionCount": 0.0,
+          "meanDisclosedSourceAgentCount": 0.0,
+          "meanFinalReportedCount": 3.923076923076923,
+          "zeroFinalReportedRows": 0,
+          "nullFinalBrierRows": 0
+        }
+      },
+      "providerDiagnostics": {
+        "finishedAttempts": 803,
+        "attemptsWithProviderModel": 803,
+        "providerModels": [
+          "glm-4.6v"
+        ],
+        "attemptsWithProviderRequestId": 803,
+        "uniqueProviderRequestIds": 803,
+        "unknownUsageAttempts": 0
+      },
+      "estimates": {
+        "ATTACKS-SUPPORTS": {
+          "completeBlocks": 0,
+          "completeTasks": 0,
+          "missingTasks": 44,
+          "meanDelta": null,
+          "ci95": null,
+          "bounds": [
+            -2.0,
+            2.0
+          ],
+          "loto": null,
+          "taskEffects": {},
+          "completeRosterSensitivity": {
+            "completeBlocks": 0,
+            "completeTasks": 0,
+            "meanDelta": null,
+            "ci95": null,
+            "loto": null
+          }
+        },
+        "ATTACKS-CONTROL": {
+          "completeBlocks": 39,
+          "completeTasks": 39,
+          "missingTasks": 5,
+          "meanDelta": -0.504993324451567,
+          "ci95": [
+            -0.6708253846474359,
+            -0.3421857835078348
+          ],
+          "bounds": [
+            -0.6748804466729799,
+            -0.22033499212752528
+          ],
+          "loto": {
+            "full": -0.504993324451567,
+            "min": -0.5274931487792398,
+            "max": -0.4756510435160819,
+            "mostInfluentialTask": 22,
+            "signChanges": false
+          },
+          "taskEffects": {
+            "15": -0.875,
+            "16": -0.0037500000000000046,
+            "18": -0.13156250000000003,
+            "19": -0.875,
+            "20": -0.07093750000000004,
+            "21": -0.82537958375,
+            "22": -1.62,
+            "23": -0.78875,
+            "26": -0.9534375000000002,
+            "27": -0.0037500000000000046,
+            "29": -1.5546875,
+            "30": -0.46888888888888886,
+            "31": -0.8037500000000001,
+            "34": -0.1272222222222222,
+            "35": -0.8512500000000001,
+            "36": -0.5803125000000001,
+            "37": -0.45500000000000007,
+            "40": -1.5,
+            "41": -0.26625,
+            "42": -0.008749999999999994,
+            "43": -0.03125,
+            "44": -0.92625,
+            "46": -0.45137395874999997,
+            "48": 0.0540624999999999,
+            "49": -0.875,
+            "50": -0.07500000000000007,
+            "51": 0.11593749999999992,
+            "52": 0.34999999999999987,
+            "55": -0.875,
+            "56": 0.0,
+            "57": 0.14625,
+            "58": -0.8437500000000001,
+            "59": -1.125,
+            "60": 0.08500000000000019,
+            "61": 0.11625000000000008,
+            "62": -0.2559375,
+            "63": -1.2200000000000002,
+            "64": -1.12,
+            "65": 0.0
+          },
+          "completeRosterSensitivity": {
+            "completeBlocks": 39,
+            "completeTasks": 39,
+            "meanDelta": -0.504993324451567,
+            "ci95": [
+              -0.6708253846474359,
+              -0.3421857835078348
+            ],
+            "loto": {
+              "full": -0.504993324451567,
+              "min": -0.5274931487792398,
+              "max": -0.4756510435160819,
+              "mostInfluentialTask": 22,
+              "signChanges": false
+            }
+          }
+        }
+      },
+      "publishedComparisons": [
+        {
+          "field": "meanDelta",
+          "independent": -0.504993324451567,
+          "published": -0.504993324451567,
+          "match": true
+        },
+        {
+          "field": "ci95.lo",
+          "independent": -0.6708253846474359,
+          "published": -0.6708253846474359,
+          "match": true
+        },
+        {
+          "field": "ci95.hi",
+          "independent": -0.3421857835078348,
+          "published": -0.34218578350783474,
+          "match": true
+        }
+      ]
+    }
+  ]
+}

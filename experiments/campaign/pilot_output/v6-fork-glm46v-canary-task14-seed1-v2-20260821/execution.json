@@ -1,0 +1,41 @@
+{
+  "executionSchemaRef": {
+    "id": "swarmalpha.experiment.v6-fork-glm46v-twoarm-seed1-execution-v2",
+    "version": "1.0.0"
+  },
+  "planHash": "sha256:7c17548e6bf683830e964db37c4576109a84672bdf68c659a03fd5c5445079fc",
+  "model": "zhipu:glm-4.6v",
+  "providerEndpoint": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
+  "gitCommit": "09132ed9a1f95be9a1db115f131864a637da31e6",
+  "worktreeDirty": true,
+  "sourceBundleHash": "sha256:09e3bf0c28c5a5870f36b4747c43675bf0d77f0ee3da6dac2f6b377ede680fc2",
+  "runnerConfigHash": "sha256:503257f3f41ef162e9036abbe79074e0159f57e4e67113e59c0a32dacf62c8b0",
+  "promptSchemaRefs": {
+    "discussionPrompt": {
+      "id": "swarmalpha.v6.fork-discussion-prompt",
+      "version": "1.0.0"
+    },
+    "discussionRequestSchema": {
+      "id": "swarmalpha.v6.discussion-request",
+      "version": "1.0.0"
+    },
+    "beliefParser": {
+      "id": "swarmalpha.v6.belief-json-parser",
+      "version": "2.0.0"
+    },
+    "finalPrompt": {
+      "id": "swarmalpha.final-elicitation.prompt",
+      "version": "1.0.0"
+    },
+    "finalRequestSchema": {
+      "id": "swarmalpha.final-elicitation.adapter-request",
+      "version": "1.0.0"
+    },
+    "finalResponseSchema": {
+      "id": "swarmalpha.final-elicitation.response",
+      "version": "1.0.0"
+    }
+  },
+  "startedAt": "2026-08-21T06:01:34.252Z",
+  "contentHash": "sha256:7c893f98a2077cafe4d37174efe6f6d14e3d5974a3700d610387d066fe4f86e6"
+}

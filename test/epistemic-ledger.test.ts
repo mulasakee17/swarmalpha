@@ -299,6 +299,24 @@ describe("Belief contracts", () => {
     )).toThrow("sum to 1");
   });
 
+  it("accepts the declared simplex boundary despite summation noise but rejects a real excess", () => {
+    const categorical = getBeliefContract("categorical");
+    const boundary = {
+      kind: "categorical" as const,
+      probabilities: { A: 0.333333, B: 0.333333, C: 0.333333 },
+    };
+    expect(() => categorical.validateValue(categoricalClaim, boundary)).not.toThrow();
+    expect(() => categorical.uncertainty(boundary)).not.toThrow();
+    expect(() => categorical.distance(boundary, boundary)).not.toThrow();
+
+    const outside = {
+      kind: "categorical" as const,
+      probabilities: { A: 0.333332, B: 0.333333, C: 0.333333 },
+    };
+    expect(() => categorical.validateValue(categoricalClaim, outside)).toThrow("sum to 1");
+    expect(() => categorical.uncertainty(outside)).toThrow("sum to 1");
+  });
+
   it("preserves an injected registry across atomic ledger staging", () => {
     const base = getBeliefContract("binary");
     let claimValidations = 0;

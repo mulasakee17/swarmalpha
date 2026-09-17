@@ -131,13 +131,19 @@ export interface V6DiscussionRequestV1 {
   runId: string;
   taskId: string;
   agentId: string;
-  round: 1 | 2;
+  /**
+   * Positive discussion step requested from the provider adapter. The frozen
+   * production trace remains two-round (`V6DiscussionCallRecordV1` below);
+   * isolated component experiments may reuse this truth-free prompt boundary
+   * for later precommitted steps.
+   */
+  round: number;
   protocol: V6InteractionProtocol;
   publicContext: string;
   ownPrivateInformation: string;
   claim: EpistemicClaim;
   visibleTranscript: V6PublicTranscriptEntry[];
-  responseContract: "plain_text" | "belief_json_v1";
+  responseContract: "plain_text" | "belief_json_v1" | "choice_message_json_v1";
   modelRef: VersionedGovernanceRef;
   invocationConfig: Record<string, unknown>;
 }
@@ -150,7 +156,12 @@ export type V6ProviderUsage = {
 };
 
 export type V6DiscussionAdapterResultV1 =
-  | { status: "response"; rawResponse: string; usage?: V6ProviderUsage }
+  | {
+      status: "response";
+      rawResponse: string;
+      usage?: V6ProviderUsage;
+      providerMetadata?: { model?: string; requestId?: string };
+    }
   | { status: "unavailable"; diagnosticCode: "provider_error" | V6ProviderFailureCode
       | "adapter_unavailable"; usage?: V6ProviderUsage };
 
@@ -589,17 +600,22 @@ export function parseBeliefResponse(raw: string, claim: EpistemicClaim): BeliefP
       return { ok: false, code: "evidence_shape" };
     }
     const entry = item as Record<string, unknown>;
+    const lineage = entry.lineageId;
+    // V4 provenance normalization: lineageId null is deterministically treated
+    // as ABSENT (no lineage is invented from it). Other invalid types (numbers,
+    // booleans, empty strings, objects) are still rejected. This normalization
+    // never touches message, belief, evidence content, or relation.
     if (Object.keys(entry).some(key => !["content", "relation", "lineageId"].includes(key))
       || typeof entry.content !== "string" || entry.content.trim().length === 0
       || (entry.relation !== "supports" && entry.relation !== "attacks")
-      || (entry.lineageId !== undefined
-        && (typeof entry.lineageId !== "string" || entry.lineageId.trim().length === 0))) {
+      || (lineage !== undefined && lineage !== null
+        && (typeof lineage !== "string" || lineage.trim().length === 0))) {
       return { ok: false, code: "evidence_shape" };
     }
     evidence.push({
       content: entry.content,
       relation: entry.relation,
-      ...(typeof entry.lineageId === "string" ? { lineageId: entry.lineageId } : {}),
+      ...(typeof lineage === "string" && lineage.trim().length > 0 ? { lineageId: lineage } : {}),
     });
   }
   return { ok: true, parsed: { message: record.message, value: normalizedBelief, evidence } };

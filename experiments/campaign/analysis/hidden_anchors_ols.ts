@@ -30,7 +30,7 @@
 import * as fs from "fs";
 import * as path from "path";
 import { safeJsonParse } from "../../../src/lib/utils/jsonUtils";
-import { mean, sampleStd, mulberry32, PERMUTATION_SEED } from "../../v2/statsShared";
+import { mean, sampleStd, mulberry32, PERMUTATION_SEED } from "../../../legacy/experiments/v2/statsShared";
 import { loadExperimentData } from "../pipeline/Runner";
 import type { RawRunData } from "../types";
 

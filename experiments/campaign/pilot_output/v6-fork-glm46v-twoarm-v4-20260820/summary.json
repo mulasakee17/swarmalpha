@@ -1,0 +1,43 @@
+{
+  "summarySchemaRef": {
+    "id": "swarmalpha.experiment.v6-fork-glm46v-twoarm-summary-v4",
+    "version": "1.0.0"
+  },
+  "experimentRef": {
+    "id": "swarmalpha.experiment.v6-fork-glm46v-twoarm-plan-v4",
+    "version": "1.0.0"
+  },
+  "model": "zhipu:glm-4.6v",
+  "seeds": [
+    0
+  ],
+  "arms": [
+    "CONTROL",
+    "ATTACKS"
+  ],
+  "taskCount": 44,
+  "plannedProviderCalls": 865,
+  "plannedEstimateTokens": 5081875,
+  "tokenStopThreshold": 5200000,
+  "discussionMaxTokens": 768,
+  "finalMaxTokens": 256,
+  "thinking": "disabled",
+  "concurrency": 1,
+  "stopReason": "completed",
+  "actualProviderCalls": 808,
+  "actualProviderTokens": 1098384,
+  "callsWithUnknownUsage": 0,
+  "discussionParserFailures": 0,
+  "finalInvalid": 0,
+  "finalUnavailable": 0,
+  "completedTasks": 39,
+  "failedTasks": 5,
+  "skippedTasks": 0,
+  "runsCompleted": 39,
+  "rows": 78,
+  "reused": 0,
+  "outputDir": "C:\\Users\\贺孟元\\Desktop\\swarmalpha\\experiments\\campaign\\pilot_output\\v6-fork-glm46v-twoarm-v4-20260820",
+  "startedAt": "2026-08-21T03:44:43.111Z",
+  "completedAt": "2026-08-21T05:10:28.645Z",
+  "contentHash": "sha256:dfc5c495e2a8ddf3c440922cbba771cbde0ddf3d6f8929a056bf383a49fcb84d"
+}

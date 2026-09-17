@@ -1,0 +1,588 @@
+{
+  "analysisRef": {
+    "id": "swarmalpha.analysis.v6.collective-dynamics-formation",
+    "version": "1.0.0"
+  },
+  "status": "offline_formation_analysis",
+  "planHash": "sha256:c5b6e20b332cdf9a6d0b40964deb0249da63407111b9e415f7cee388eab449e9",
+  "manifestHash": "sha256:d835899509dc8e2d20816e43c4a6846b01054d15dcdf00314e0e6cbc2801a22e",
+  "tasks": [
+    {
+      "taskId": "task:hiddenbench:1",
+      "sourceTaskId": 1,
+      "seed": 1,
+      "outcome": "West City",
+      "rounds": [
+        {
+          "round": 1,
+          "pooledTop": "West City",
+          "pooledCertainty": 0.7500000000000001,
+          "withinAgentUncertainty": 0.6405902548250427,
+          "betweenAgentDisagreement": 0.024419657140208217,
+          "pooledBrier": 0.09499999999999995,
+          "strictConsensusOption": "West City",
+          "strictConsensusCorrect": true,
+          "oneHotReportFraction": 0,
+          "updateActivityFromPrior": null
+        },
+        {
+          "round": 2,
+          "pooledTop": "West City",
+          "pooledCertainty": 0.9,
+          "withinAgentUncertainty": 0.3249160912527369,
+          "betweenAgentDisagreement": 0.03408015839379347,
+          "pooledBrier": 0.014999999999999996,
+          "strictConsensusOption": "West City",
+          "strictConsensusCorrect": true,
+          "oneHotReportFraction": 0.25,
+          "updateActivityFromPrior": 0.15
+        },
+        {
+          "round": 3,
+          "pooledTop": "West City",
+          "pooledCertainty": 1,
+          "withinAgentUncertainty": 0,
+          "betweenAgentDisagreement": 0,
+          "pooledBrier": 0,
+          "strictConsensusOption": "West City",
+          "strictConsensusCorrect": true,
+          "oneHotReportFraction": 1,
+          "updateActivityFromPrior": 0.09999999999999998
+        }
+      ],
+      "r3Stratum": "correct_consensus",
+      "wrongConsensusFormed": false,
+      "errorAmplifyingConcentrationSignature": false,
+      "r1ToR3": {
+        "disagreementDelta": -0.024419657140208217,
+        "pooledCertaintyDelta": 0.2499999999999999,
+        "pooledBrierDelta": -0.09499999999999995
+      },
+      "totalTokens": 14520,
+      "allTokenUsageObserved": true,
+      "contentHash": "sha256:9aaf470e55946c22600854b5fce8eb6bb8c3778c3cff2a38f88e66bb28fdf0d8",
+      "r3SnapshotHash": "sha256:e9a74a306f27a50d5a797954da4327ca2b3bbba24b9dd2e45497906f12432ac8"
+    },
+    {
+      "taskId": "task:hiddenbench:15",
+      "sourceTaskId": 15,
+      "seed": 1,
+      "outcome": "Downtown Police Station",
+      "rounds": [
+        {
+          "round": 1,
+          "pooledTop": "University Library",
+          "pooledCertainty": 0.4,
+          "withinAgentUncertainty": 0.6831311838685752,
+          "betweenAgentDisagreement": 0.30612975489359706,
+          "pooledBrier": 0.6912500000000001,
+          "strictConsensusOption": null,
+          "strictConsensusCorrect": null,
+          "oneHotReportFraction": 0,
+          "updateActivityFromPrior": null
+        },
+        {
+          "round": 2,
+          "pooledTop": "University Library",
+          "pooledCertainty": 0.47500000000000003,
+          "withinAgentUncertainty": 0.6557592824399923,
+          "betweenAgentDisagreement": 0.3047283041507949,
+          "pooledBrier": 0.81375,
+          "strictConsensusOption": null,
+          "strictConsensusCorrect": null,
+          "oneHotReportFraction": 0,
+          "updateActivityFromPrior": 0.075
+        },
+        {
+          "round": 3,
+          "pooledTop": "University Library",
+          "pooledCertainty": 0.47500000000000003,
+          "withinAgentUncertainty": 0.6557592824399923,
+          "betweenAgentDisagreement": 0.3047283041507949,
+          "pooledBrier": 0.81375,
+          "strictConsensusOption": null,
+          "strictConsensusCorrect": null,
+          "oneHotReportFraction": 0,
+          "updateActivityFromPrior": 0
+        }
+      ],
+      "r3Stratum": "no_strict_consensus",
+      "wrongConsensusFormed": false,
+      "errorAmplifyingConcentrationSignature": true,
+      "r1ToR3": {
+        "disagreementDelta": -0.0014014507428021794,
+        "pooledCertaintyDelta": 0.07500000000000001,
+        "pooledBrierDelta": 0.12249999999999983
+      },
+      "totalTokens": 12292,
+      "allTokenUsageObserved": true,
+      "contentHash": "sha256:64ed84a98b0527ecab7d97aab7c006a2f852d048815fe4275c7f383b2c4b9d41",
+      "r3SnapshotHash": "sha256:eb4dcf1a6f053e0bc0f2e19dad115ee7e8e5556f66a5a42c00335de471f10ef4"
+    },
+    {
+      "taskId": "task:hiddenbench:22",
+      "sourceTaskId": 22,
+      "seed": 1,
+      "outcome": "Main Base",
+      "rounds": [
+        {
+          "round": 1,
+          "pooledTop": "Retreat Camp",
+          "pooledCertainty": 0.625,
+          "withinAgentUncertainty": 0.4018554597923423,
+          "betweenAgentDisagreement": 0.3711325685996739,
+          "pooledBrier": 1.3362500000000002,
+          "strictConsensusOption": null,
+          "strictConsensusCorrect": null,
+          "oneHotReportFraction": 0.25,
+          "updateActivityFromPrior": null
+        },
+        {
+          "round": 2,
+          "pooledTop": "Rescue Outpost",
+          "pooledCertainty": 0.675,
+          "withinAgentUncertainty": 0.22192745571703848,
+          "betweenAgentDisagreement": 0.5118595071429148,
+          "pooledBrier": 1.3737500000000002,
+          "strictConsensusOption": null,
+          "strictConsensusCorrect": null,
+          "oneHotReportFraction": 0.25,
+          "updateActivityFromPrior": 0.375
+        },
+        {
+          "round": 3,
+          "pooledTop": "Rescue Outpost",
+          "pooledCertainty": 0.75,
+          "withinAgentUncertainty": 0,
+          "betweenAgentDisagreement": 0.5118595071429148,
+          "pooledBrier": 1.625,
+          "strictConsensusOption": null,
+          "strictConsensusCorrect": null,
+          "oneHotReportFraction": 1,
+          "updateActivityFromPrior": 0.075
+        }
+      ],
+      "r3Stratum": "no_strict_consensus",
+      "wrongConsensusFormed": false,
+      "errorAmplifyingConcentrationSignature": false,
+      "r1ToR3": {
+        "disagreementDelta": 0.14072693854324092,
+        "pooledCertaintyDelta": 0.125,
+        "pooledBrierDelta": 0.28874999999999984
+      },
+      "totalTokens": 12382,
+      "allTokenUsageObserved": true,
+      "contentHash": "sha256:c0a1ab2fe43cd1f097cb64c26ce1849ac20c36492f6444586c4637b5ce00dcca",
+      "r3SnapshotHash": "sha256:0171c06641bf70a3ac9af40c7f49bf94c801bcb51a43b4f13eb77f75220ff331"
+    },
+    {
+      "taskId": "task:hiddenbench:29",
+      "sourceTaskId": 29,
+      "seed": 1,
+      "outcome": "Riverside Park",
+      "rounds": [
+        {
+          "round": 1,
+          "pooledTop": "Riverside Park",
+          "pooledCertainty": 0.575,
+          "withinAgentUncertainty": 0.37712622339468227,
+          "betweenAgentDisagreement": 0.38364634772466577,
+          "pooledBrier": 0.32375000000000004,
+          "strictConsensusOption": null,
+          "strictConsensusCorrect": null,
+          "oneHotReportFraction": 0.25,
+          "updateActivityFromPrior": null
+        },
+        {
+          "round": 2,
+          "pooledTop": "Summerfield School",
+          "pooledCertainty": 0.625,
+          "withinAgentUncertainty": 0.15773243839286438,
+          "betweenAgentDisagreement": 0.44444837187280356,
+          "pooledBrier": 0.78125,
+          "strictConsensusOption": null,
+          "strictConsensusCorrect": null,
+          "oneHotReportFraction": 0.75,
+          "updateActivityFromPrior": 0.25
+        },
+        {
+          "round": 3,
+          "pooledTop": null,
+          "pooledCertainty": 0.5,
+          "withinAgentUncertainty": 0,
+          "betweenAgentDisagreement": 0.6309297535714575,
+          "pooledBrier": 0.5,
+          "strictConsensusOption": null,
+          "strictConsensusCorrect": null,
+          "oneHotReportFraction": 1,
+          "updateActivityFromPrior": 0.375
+        }
+      ],
+      "r3Stratum": "no_strict_consensus",
+      "wrongConsensusFormed": false,
+      "errorAmplifyingConcentrationSignature": false,
+      "r1ToR3": {
+        "disagreementDelta": 0.24728340584679176,
+        "pooledCertaintyDelta": -0.07499999999999996,
+        "pooledBrierDelta": 0.17624999999999996
+      },
+      "totalTokens": 11758,
+      "allTokenUsageObserved": true,
+      "contentHash": "sha256:3b0fccbd43596d60677dc285049d9eccdb7a0a48dbcbba3ec25ec34268b37f9d",
+      "r3SnapshotHash": "sha256:9a3e9a83b0f1072489ea076ce1ca2d31671a97c5fa176d834f7af7fe34c7d6ae"
+    },
+    {
+      "taskId": "task:hiddenbench:36",
+      "sourceTaskId": 36,
+      "seed": 1,
+      "outcome": "Datacenter Gamma",
+      "rounds": [
+        {
+          "round": 1,
+          "pooledTop": "Datacenter Beta",
+          "pooledCertainty": 0.475,
+          "withinAgentUncertainty": 0.4732976076494678,
+          "betweenAgentDisagreement": 0.35247845153364765,
+          "pooledBrier": 1.28375,
+          "strictConsensusOption": null,
+          "strictConsensusCorrect": null,
+          "oneHotReportFraction": 0.25,
+          "updateActivityFromPrior": null
+        },
+        {
+          "round": 2,
+          "pooledTop": "Datacenter Alpha",
+          "pooledCertainty": 0.42500000000000004,
+          "withinAgentUncertainty": 0.2351670288411043,
+          "betweenAgentDisagreement": 0.7482683911855369,
+          "pooledBrier": 0.7709375,
+          "strictConsensusOption": null,
+          "strictConsensusCorrect": null,
+          "oneHotReportFraction": 0.5,
+          "updateActivityFromPrior": 0.24999999999999997
+        },
+        {
+          "round": 3,
+          "pooledTop": "Datacenter Alpha",
+          "pooledCertainty": 0.42500000000000004,
+          "withinAgentUncertainty": 0.2351670288411043,
+          "betweenAgentDisagreement": 0.7482683911855369,
+          "pooledBrier": 0.7709375,
+          "strictConsensusOption": null,
+          "strictConsensusCorrect": null,
+          "oneHotReportFraction": 0.5,
+          "updateActivityFromPrior": 0
+        }
+      ],
+      "r3Stratum": "no_strict_consensus",
+      "wrongConsensusFormed": false,
+      "errorAmplifyingConcentrationSignature": false,
+      "r1ToR3": {
+        "disagreementDelta": 0.39578993965188924,
+        "pooledCertaintyDelta": -0.04999999999999993,
+        "pooledBrierDelta": -0.5128124999999999
+      },
+      "totalTokens": 12731,
+      "allTokenUsageObserved": true,
+      "contentHash": "sha256:d4de576a0d46b1da3c675a069ec326b26a29da61c8d45b8ab299d5bd19ee1154",
+      "r3SnapshotHash": "sha256:4e99c1ae144d2cd7bda1ec15713522c4740ef21fe7ddf7ab0e5028099c12302b"
+    },
+    {
+      "taskId": "task:hiddenbench:43",
+      "sourceTaskId": 43,
+      "seed": 1,
+      "outcome": "Canyon Depot",
+      "rounds": [
+        {
+          "round": 1,
+          "pooledTop": "Aurora Station",
+          "pooledCertainty": 0.65,
+          "withinAgentUncertainty": 0.7941481069679173,
+          "betweenAgentDisagreement": 0.016008634779121955,
+          "pooledBrier": 1.13375,
+          "strictConsensusOption": "Aurora Station",
+          "strictConsensusCorrect": false,
+          "oneHotReportFraction": 0,
+          "updateActivityFromPrior": null
+        },
+        {
+          "round": 2,
+          "pooledTop": "Aurora Station",
+          "pooledCertainty": 0.7250000000000001,
+          "withinAgentUncertainty": 0.687840803345471,
+          "betweenAgentDisagreement": 0.016878618124420153,
+          "pooledBrier": 1.2396875,
+          "strictConsensusOption": "Aurora Station",
+          "strictConsensusCorrect": false,
+          "oneHotReportFraction": 0,
+          "updateActivityFromPrior": 0.1375
+        },
+        {
+          "round": 3,
+          "pooledTop": "Aurora Station",
+          "pooledCertainty": 0.7749999999999999,
+          "withinAgentUncertainty": 0.6225817932753717,
+          "betweenAgentDisagreement": 0.004684043336319443,
+          "pooledBrier": 1.4009375,
+          "strictConsensusOption": "Aurora Station",
+          "strictConsensusCorrect": false,
+          "oneHotReportFraction": 0,
+          "updateActivityFromPrior": 0.06250000000000001
+        }
+      ],
+      "r3Stratum": "wrong_consensus",
+      "wrongConsensusFormed": false,
+      "errorAmplifyingConcentrationSignature": true,
+      "r1ToR3": {
+        "disagreementDelta": -0.011324591442802512,
+        "pooledCertaintyDelta": 0.12499999999999989,
+        "pooledBrierDelta": 0.2671874999999999
+      },
+      "totalTokens": 12506,
+      "allTokenUsageObserved": true,
+      "contentHash": "sha256:82f66c700e2d685c16fcdce1aec213f345f08eebd20148af26dba4befb740e4f",
+      "r3SnapshotHash": "sha256:67b4f2f7d4d3cd963b226f605455e2da6053034696bfa6cb3f8964273b487a40"
+    },
+    {
+      "taskId": "task:hiddenbench:50",
+      "sourceTaskId": 50,
+      "seed": 1,
+      "outcome": "Conference Room Gamma",
+      "rounds": [
+        {
+          "round": 1,
+          "pooledTop": null,
+          "pooledCertainty": 0.3333333333333333,
+          "withinAgentUncertainty": 0,
+          "betweenAgentDisagreement": 1,
+          "pooledBrier": 0.6666666666666667,
+          "strictConsensusOption": null,
+          "strictConsensusCorrect": null,
+          "oneHotReportFraction": 1,
+          "updateActivityFromPrior": null
+        },
+        {
+          "round": 2,
+          "pooledTop": "Conference Room Beta",
+          "pooledCertainty": 0.6,
+          "withinAgentUncertainty": 0.1938906219059623,
+          "betweenAgentDisagreement": 0.5231467427376972,
+          "pooledBrier": 0.7622222222222221,
+          "strictConsensusOption": null,
+          "strictConsensusCorrect": null,
+          "oneHotReportFraction": 0.6666666666666666,
+          "updateActivityFromPrior": 0.30000000000000004
+        },
+        {
+          "round": 3,
+          "pooledTop": "Conference Room Gamma",
+          "pooledCertainty": 0.6666666666666666,
+          "withinAgentUncertainty": 0,
+          "betweenAgentDisagreement": 0.579380164285695,
+          "pooledBrier": 0.22222222222222224,
+          "strictConsensusOption": null,
+          "strictConsensusCorrect": null,
+          "oneHotReportFraction": 1,
+          "updateActivityFromPrior": 0.3
+        }
+      ],
+      "r3Stratum": "no_strict_consensus",
+      "wrongConsensusFormed": false,
+      "errorAmplifyingConcentrationSignature": false,
+      "r1ToR3": {
+        "disagreementDelta": -0.42061983571430495,
+        "pooledCertaintyDelta": 0.3333333333333333,
+        "pooledBrierDelta": -0.44444444444444453
+      },
+      "totalTokens": 8348,
+      "allTokenUsageObserved": true,
+      "contentHash": "sha256:2a34b83faa37a1ce5c3df2a71c0c76abc7e6d8ab7eae467a059dc1a8160dc181",
+      "r3SnapshotHash": "sha256:23a8622c5e8e3e5c65c7d58baf51146bb7e6224bb09e78fa4e988686134a1748"
+    },
+    {
+      "taskId": "task:hiddenbench:57",
+      "sourceTaskId": 57,
+      "seed": 1,
+      "outcome": "Site C",
+      "rounds": [
+        {
+          "round": 1,
+          "pooledTop": "Site B",
+          "pooledCertainty": 0.8125,
+          "withinAgentUncertainty": 0.49951774174402946,
+          "betweenAgentDisagreement": 0.04837706877372411,
+          "pooledBrier": 1.4296875,
+          "strictConsensusOption": "Site B",
+          "strictConsensusCorrect": false,
+          "oneHotReportFraction": 0,
+          "updateActivityFromPrior": null
+        },
+        {
+          "round": 2,
+          "pooledTop": "Site B",
+          "pooledCertainty": 0.975,
+          "withinAgentUncertainty": 0.0897490624116326,
+          "betweenAgentDisagreement": 0.03243738137398047,
+          "pooledBrier": 1.9259374999999999,
+          "strictConsensusOption": "Site B",
+          "strictConsensusCorrect": false,
+          "oneHotReportFraction": 0.75,
+          "updateActivityFromPrior": 0.16249999999999998
+        },
+        {
+          "round": 3,
+          "pooledTop": "Site B",
+          "pooledCertainty": 1,
+          "withinAgentUncertainty": 0,
+          "betweenAgentDisagreement": 0,
+          "pooledBrier": 2,
+          "strictConsensusOption": "Site B",
+          "strictConsensusCorrect": false,
+          "oneHotReportFraction": 1,
+          "updateActivityFromPrior": 0.024999999999999994
+        }
+      ],
+      "r3Stratum": "wrong_consensus",
+      "wrongConsensusFormed": false,
+      "errorAmplifyingConcentrationSignature": true,
+      "r1ToR3": {
+        "disagreementDelta": -0.04837706877372411,
+        "pooledCertaintyDelta": 0.1875,
+        "pooledBrierDelta": 0.5703125
+      },
+      "totalTokens": 11579,
+      "allTokenUsageObserved": true,
+      "contentHash": "sha256:63d8c1422a8591dc394a967e6c128d778df1c1ffc8aa3d67b50f754068e32254",
+      "r3SnapshotHash": "sha256:4bcfa52bb2527aaf68588a6c01db1841bab6f1a134fee242df011e64e31b6c6b"
+    },
+    {
+      "taskId": "task:hiddenbench:64",
+      "sourceTaskId": 64,
+      "seed": 1,
+      "outcome": "Airborne Toxin from HVAC",
+      "rounds": [
+        {
+          "round": 1,
+          "pooledTop": "Cafeteria Food",
+          "pooledCertainty": 0.475,
+          "withinAgentUncertainty": 0.6120504736651877,
+          "betweenAgentDisagreement": 0.23305321162625892,
+          "pooledBrier": 0.5496875,
+          "strictConsensusOption": null,
+          "strictConsensusCorrect": null,
+          "oneHotReportFraction": 0,
+          "updateActivityFromPrior": null
+        },
+        {
+          "round": 2,
+          "pooledTop": "Airborne Toxin from HVAC",
+          "pooledCertainty": 0.75,
+          "withinAgentUncertainty": 0.6430646565915539,
+          "betweenAgentDisagreement": 0.01612768255061825,
+          "pooledBrier": 0.0965625,
+          "strictConsensusOption": "Airborne Toxin from HVAC",
+          "strictConsensusCorrect": true,
+          "oneHotReportFraction": 0,
+          "updateActivityFromPrior": 0.325
+        },
+        {
+          "round": 3,
+          "pooledTop": "Airborne Toxin from HVAC",
+          "pooledCertainty": 0.8,
+          "withinAgentUncertainty": 0.5816718657178869,
+          "betweenAgentDisagreement": 0,
+          "pooledBrier": 0.059999999999999984,
+          "strictConsensusOption": "Airborne Toxin from HVAC",
+          "strictConsensusCorrect": true,
+          "oneHotReportFraction": 0,
+          "updateActivityFromPrior": 0.06250000000000003
+        }
+      ],
+      "r3Stratum": "correct_consensus",
+      "wrongConsensusFormed": false,
+      "errorAmplifyingConcentrationSignature": false,
+      "r1ToR3": {
+        "disagreementDelta": -0.23305321162625892,
+        "pooledCertaintyDelta": 0.32500000000000007,
+        "pooledBrierDelta": -0.4896875
+      },
+      "totalTokens": 12799,
+      "allTokenUsageObserved": true,
+      "contentHash": "sha256:87a987c1bd981b2caed56a309e0a74c393d1835fb362e1bc350ff16cc47a21b3",
+      "r3SnapshotHash": "sha256:eb925a5fd48dba6c287c31acf9419dd7bd0f8fc360df7d6118c9a29b3f36217e"
+    },
+    {
+      "taskId": "task:hiddenbench:8",
+      "sourceTaskId": 8,
+      "seed": 1,
+      "outcome": "Eddie Sullivan",
+      "rounds": [
+        {
+          "round": 1,
+          "pooledTop": "Eddie Sullivan",
+          "pooledCertainty": 0.5166666666666666,
+          "withinAgentUncertainty": 0.7350016580906736,
+          "betweenAgentDisagreement": 0.1874276553645151,
+          "pooledBrier": 0.3572222222222222,
+          "strictConsensusOption": null,
+          "strictConsensusCorrect": null,
+          "oneHotReportFraction": 0,
+          "updateActivityFromPrior": null
+        },
+        {
+          "round": 2,
+          "pooledTop": "Eddie Sullivan",
+          "pooledCertainty": 0.7,
+          "withinAgentUncertainty": 0.7298466991620977,
+          "betweenAgentDisagreement": 0,
+          "pooledBrier": 0.14000000000000004,
+          "strictConsensusOption": "Eddie Sullivan",
+          "strictConsensusCorrect": true,
+          "oneHotReportFraction": 0,
+          "updateActivityFromPrior": 0.19999999999999998
+        },
+        {
+          "round": 3,
+          "pooledTop": "Eddie Sullivan",
+          "pooledCertainty": 0.7,
+          "withinAgentUncertainty": 0.7298466991620977,
+          "betweenAgentDisagreement": 0,
+          "pooledBrier": 0.14000000000000004,
+          "strictConsensusOption": "Eddie Sullivan",
+          "strictConsensusCorrect": true,
+          "oneHotReportFraction": 0,
+          "updateActivityFromPrior": 0
+        }
+      ],
+      "r3Stratum": "correct_consensus",
+      "wrongConsensusFormed": false,
+      "errorAmplifyingConcentrationSignature": false,
+      "r1ToR3": {
+        "disagreementDelta": -0.1874276553645151,
+        "pooledCertaintyDelta": 0.18333333333333335,
+        "pooledBrierDelta": -0.21722222222222218
+      },
+      "totalTokens": 11495,
+      "allTokenUsageObserved": true,
+      "contentHash": "sha256:d349551a63d77e717679d5cc4e5d8ae35eeb45e526135943ff0cf627e5578928",
+      "r3SnapshotHash": "sha256:0c69a22cae45a994231eb7c8ef7ef4718a5214382ab94cfff320ce9fb4a93148"
+    }
+  ],
+  "summary": {
+    "taskCount": 10,
+    "r3WrongConsensusCount": 2,
+    "r3CorrectConsensusCount": 3,
+    "r3NoStrictConsensusCount": 5,
+    "wrongConsensusFormationCount": 0,
+    "errorAmplifyingConcentrationSignatureCount": 3,
+    "meanOneHotReportFraction": 0.34722222222222227,
+    "zeroUpdateStepFraction": 0.15,
+    "meanR1ToR3DisagreementDelta": -0.014282318676269407,
+    "meanR1ToR3PooledCertaintyDelta": 0.14791666666666667,
+    "meanR1ToR3PooledBrierDelta": -0.033416666666666706,
+    "totalObservedTokens": 120410,
+    "allTokenUsageObserved": true
+  },
+  "claimCeiling": "instrument_screen_only_not_collective_dynamics_effect_evidence",
+  "contentHash": "sha256:d97dda7a35e95e1391f454ac18fb5d58ff463eeec578c4355cb63bbad37f8083"
+}

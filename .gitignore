@@ -46,12 +46,17 @@ experiments/campaign/pilot_output/
 experiments/v2/data*/
 experiments/v2/results/
 experiments/v2/audit_report.json
+legacy/experiments/v2/data*/
+legacy/experiments/v2/results/
+legacy/experiments/v2/audit_report.json
 
 # IDE / tool caches
 .claude/
 *.claude/
 .project
 .history/
+/.pnpm-store/
+/tmp/
 
 # audit reports (local, not for review)
 PROJECT_AUDIT_REPORT.md
@@ -59,3 +64,6 @@ PROJECT_AUDIT_REPORT.md
 
 # paper manuscript + submission artifacts (NOT pushed: double-blind anonymity)
 paper_rewriting_output/
+
+# semantic probe outputs contain replay inputs and are not source code
+/results/semantic_probe/

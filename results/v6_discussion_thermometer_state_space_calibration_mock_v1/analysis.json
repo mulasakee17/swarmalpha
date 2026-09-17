@@ -1,0 +1,638 @@
+{
+  "analysisRef": {
+    "id": "swarmalpha.analysis.v6.discussion-thermometer-state-space-calibration",
+    "version": "1.0.0"
+  },
+  "evidenceClass": "synthetic_mock",
+  "inferenceStatus": "descriptive_resource_gate_only",
+  "truthAccess": "none",
+  "predictionUsed": false,
+  "statePanels": [
+    {
+      "taskId": "thermometer-calibration:thermal-loop:v1",
+      "baseScenarioId": "thermal-loop",
+      "designRegime": "DISTRIBUTED_COMPLEMENTARY",
+      "checkpoint": 0,
+      "coverage": 1,
+      "pooledProbabilitiesByOptionId": {
+        "opt_1": 0.5375,
+        "opt_2": 0.2875,
+        "opt_3": 0.175
+      },
+      "meanNormalizedReportEntropy": 0.8684716503721124,
+      "normalizedGeneralizedJsd": 0.03912055755331012,
+      "meanPairwiseTotalVariation": 0.19999999999999996,
+      "maxPairwiseTotalVariation": 0.29999999999999993
+    },
+    {
+      "taskId": "thermometer-calibration:thermal-loop:v1",
+      "baseScenarioId": "thermal-loop",
+      "designRegime": "DISTRIBUTED_COMPLEMENTARY",
+      "checkpoint": 1,
+      "coverage": 1,
+      "pooledProbabilitiesByOptionId": {
+        "opt_1": 0.5375,
+        "opt_2": 0.2875,
+        "opt_3": 0.175
+      },
+      "meanNormalizedReportEntropy": 0.8684716503721124,
+      "normalizedGeneralizedJsd": 0.03912055755331012,
+      "meanPairwiseTotalVariation": 0.19999999999999996,
+      "maxPairwiseTotalVariation": 0.29999999999999993
+    },
+    {
+      "taskId": "thermometer-calibration:thermal-loop:v1",
+      "baseScenarioId": "thermal-loop",
+      "designRegime": "DISTRIBUTED_COMPLEMENTARY",
+      "checkpoint": 2,
+      "coverage": 1,
+      "pooledProbabilitiesByOptionId": {
+        "opt_1": 0.5375,
+        "opt_2": 0.2875,
+        "opt_3": 0.175
+      },
+      "meanNormalizedReportEntropy": 0.8684716503721124,
+      "normalizedGeneralizedJsd": 0.03912055755331012,
+      "meanPairwiseTotalVariation": 0.19999999999999996,
+      "maxPairwiseTotalVariation": 0.29999999999999993
+    },
+    {
+      "taskId": "thermometer-calibration:thermal-loop:v2",
+      "baseScenarioId": "thermal-loop",
+      "designRegime": "SHARED_CUE_PRIVATE_CORRECTION",
+      "checkpoint": 0,
+      "coverage": 1,
+      "pooledProbabilitiesByOptionId": {
+        "opt_1": 0.65,
+        "opt_2": 0.25,
+        "opt_3": 0.1
+      },
+      "meanNormalizedReportEntropy": 0.7799302846668993,
+      "normalizedGeneralizedJsd": 0,
+      "meanPairwiseTotalVariation": 0,
+      "maxPairwiseTotalVariation": 0
+    },
+    {
+      "taskId": "thermometer-calibration:thermal-loop:v2",
+      "baseScenarioId": "thermal-loop",
+      "designRegime": "SHARED_CUE_PRIVATE_CORRECTION",
+      "checkpoint": 1,
+      "coverage": 1,
+      "pooledProbabilitiesByOptionId": {
+        "opt_1": 0.65,
+        "opt_2": 0.25,
+        "opt_3": 0.1
+      },
+      "meanNormalizedReportEntropy": 0.7799302846668993,
+      "normalizedGeneralizedJsd": 0,
+      "meanPairwiseTotalVariation": 0,
+      "maxPairwiseTotalVariation": 0
+    },
+    {
+      "taskId": "thermometer-calibration:thermal-loop:v2",
+      "baseScenarioId": "thermal-loop",
+      "designRegime": "SHARED_CUE_PRIVATE_CORRECTION",
+      "checkpoint": 2,
+      "coverage": 1,
+      "pooledProbabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      },
+      "meanNormalizedReportEntropy": 0.858672711073255,
+      "normalizedGeneralizedJsd": 0,
+      "meanPairwiseTotalVariation": 0,
+      "maxPairwiseTotalVariation": 0
+    },
+    {
+      "taskId": "thermometer-calibration:thermal-loop:v3",
+      "baseScenarioId": "thermal-loop",
+      "designRegime": "POLARIZED_PRIVATE_BLOCKS",
+      "checkpoint": 0,
+      "coverage": 1,
+      "pooledProbabilitiesByOptionId": {
+        "opt_1": 0.45000000000000007,
+        "opt_2": 0.1,
+        "opt_3": 0.45
+      },
+      "meanNormalizedReportEntropy": 0.5816718657178869,
+      "normalizedGeneralizedJsd": 0.2820681867858096,
+      "meanPairwiseTotalVariation": 0.46666666666666673,
+      "maxPairwiseTotalVariation": 0.7000000000000001
+    },
+    {
+      "taskId": "thermometer-calibration:thermal-loop:v3",
+      "baseScenarioId": "thermal-loop",
+      "designRegime": "POLARIZED_PRIVATE_BLOCKS",
+      "checkpoint": 1,
+      "coverage": 1,
+      "pooledProbabilitiesByOptionId": {
+        "opt_1": 0.45000000000000007,
+        "opt_2": 0.1,
+        "opt_3": 0.45
+      },
+      "meanNormalizedReportEntropy": 0.5816718657178869,
+      "normalizedGeneralizedJsd": 0.2820681867858096,
+      "meanPairwiseTotalVariation": 0.46666666666666673,
+      "maxPairwiseTotalVariation": 0.7000000000000001
+    },
+    {
+      "taskId": "thermometer-calibration:thermal-loop:v3",
+      "baseScenarioId": "thermal-loop",
+      "designRegime": "POLARIZED_PRIVATE_BLOCKS",
+      "checkpoint": 2,
+      "coverage": 1,
+      "pooledProbabilitiesByOptionId": {
+        "opt_1": 0.6,
+        "opt_2": 0.25,
+        "opt_3": 0.15
+      },
+      "meanNormalizedReportEntropy": 0.8534739433956113,
+      "normalizedGeneralizedJsd": 0,
+      "meanPairwiseTotalVariation": 0,
+      "maxPairwiseTotalVariation": 0
+    },
+    {
+      "taskId": "thermometer-calibration:thermal-loop:v4",
+      "baseScenarioId": "thermal-loop",
+      "designRegime": "ASYMMETRIC_INFORMED_MINORITY",
+      "checkpoint": 0,
+      "coverage": 1,
+      "pooledProbabilitiesByOptionId": {
+        "opt_1": 0.35000000000000003,
+        "opt_2": 0.5499999999999999,
+        "opt_3": 0.1
+      },
+      "meanNormalizedReportEntropy": 0.6928029908010449,
+      "normalizedGeneralizedJsd": 0.15053966324187784,
+      "meanPairwiseTotalVariation": 0.30000000000000004,
+      "maxPairwiseTotalVariation": 0.6000000000000001
+    },
+    {
+      "taskId": "thermometer-calibration:thermal-loop:v4",
+      "baseScenarioId": "thermal-loop",
+      "designRegime": "ASYMMETRIC_INFORMED_MINORITY",
+      "checkpoint": 1,
+      "coverage": 1,
+      "pooledProbabilitiesByOptionId": {
+        "opt_1": 0.35000000000000003,
+        "opt_2": 0.5499999999999999,
+        "opt_3": 0.1
+      },
+      "meanNormalizedReportEntropy": 0.6928029908010449,
+      "normalizedGeneralizedJsd": 0.15053966324187784,
+      "meanPairwiseTotalVariation": 0.30000000000000004,
+      "maxPairwiseTotalVariation": 0.6000000000000001
+    },
+    {
+      "taskId": "thermometer-calibration:thermal-loop:v4",
+      "baseScenarioId": "thermal-loop",
+      "designRegime": "ASYMMETRIC_INFORMED_MINORITY",
+      "checkpoint": 2,
+      "coverage": 1,
+      "pooledProbabilitiesByOptionId": {
+        "opt_1": 0.35000000000000003,
+        "opt_2": 0.5499999999999999,
+        "opt_3": 0.1
+      },
+      "meanNormalizedReportEntropy": 0.6928029908010449,
+      "normalizedGeneralizedJsd": 0.15053966324187784,
+      "meanPairwiseTotalVariation": 0.30000000000000004,
+      "maxPairwiseTotalVariation": 0.6000000000000001
+    },
+    {
+      "taskId": "thermometer-calibration:service-access:v1",
+      "baseScenarioId": "service-access",
+      "designRegime": "DISTRIBUTED_COMPLEMENTARY",
+      "checkpoint": 0,
+      "coverage": 1,
+      "pooledProbabilitiesByOptionId": {
+        "opt_1": 0.5375,
+        "opt_2": 0.2875,
+        "opt_3": 0.175
+      },
+      "meanNormalizedReportEntropy": 0.8684716503721124,
+      "normalizedGeneralizedJsd": 0.03912055755331012,
+      "meanPairwiseTotalVariation": 0.19999999999999996,
+      "maxPairwiseTotalVariation": 0.29999999999999993
+    },
+    {
+      "taskId": "thermometer-calibration:service-access:v1",
+      "baseScenarioId": "service-access",
+      "designRegime": "DISTRIBUTED_COMPLEMENTARY",
+      "checkpoint": 1,
+      "coverage": 1,
+      "pooledProbabilitiesByOptionId": {
+        "opt_1": 0.5375,
+        "opt_2": 0.2875,
+        "opt_3": 0.175
+      },
+      "meanNormalizedReportEntropy": 0.8684716503721124,
+      "normalizedGeneralizedJsd": 0.03912055755331012,
+      "meanPairwiseTotalVariation": 0.19999999999999996,
+      "maxPairwiseTotalVariation": 0.29999999999999993
+    },
+    {
+      "taskId": "thermometer-calibration:service-access:v1",
+      "baseScenarioId": "service-access",
+      "designRegime": "DISTRIBUTED_COMPLEMENTARY",
+      "checkpoint": 2,
+      "coverage": 1,
+      "pooledProbabilitiesByOptionId": {
+        "opt_1": 0.5375,
+        "opt_2": 0.2875,
+        "opt_3": 0.175
+      },
+      "meanNormalizedReportEntropy": 0.8684716503721124,
+      "normalizedGeneralizedJsd": 0.03912055755331012,
+      "meanPairwiseTotalVariation": 0.19999999999999996,
+      "maxPairwiseTotalVariation": 0.29999999999999993
+    },
+    {
+      "taskId": "thermometer-calibration:service-access:v2",
+      "baseScenarioId": "service-access",
+      "designRegime": "SHARED_CUE_PRIVATE_CORRECTION",
+      "checkpoint": 0,
+      "coverage": 1,
+      "pooledProbabilitiesByOptionId": {
+        "opt_1": 0.65,
+        "opt_2": 0.25,
+        "opt_3": 0.1
+      },
+      "meanNormalizedReportEntropy": 0.7799302846668993,
+      "normalizedGeneralizedJsd": 0,
+      "meanPairwiseTotalVariation": 0,
+      "maxPairwiseTotalVariation": 0
+    },
+    {
+      "taskId": "thermometer-calibration:service-access:v2",
+      "baseScenarioId": "service-access",
+      "designRegime": "SHARED_CUE_PRIVATE_CORRECTION",
+      "checkpoint": 1,
+      "coverage": 1,
+      "pooledProbabilitiesByOptionId": {
+        "opt_1": 0.65,
+        "opt_2": 0.25,
+        "opt_3": 0.1
+      },
+      "meanNormalizedReportEntropy": 0.7799302846668993,
+      "normalizedGeneralizedJsd": 0,
+      "meanPairwiseTotalVariation": 0,
+      "maxPairwiseTotalVariation": 0
+    },
+    {
+      "taskId": "thermometer-calibration:service-access:v2",
+      "baseScenarioId": "service-access",
+      "designRegime": "SHARED_CUE_PRIVATE_CORRECTION",
+      "checkpoint": 2,
+      "coverage": 1,
+      "pooledProbabilitiesByOptionId": {
+        "opt_1": 0.4,
+        "opt_2": 0.5,
+        "opt_3": 0.1
+      },
+      "meanNormalizedReportEntropy": 0.858672711073255,
+      "normalizedGeneralizedJsd": 0,
+      "meanPairwiseTotalVariation": 0,
+      "maxPairwiseTotalVariation": 0
+    },
+    {
+      "taskId": "thermometer-calibration:service-access:v3",
+      "baseScenarioId": "service-access",
+      "designRegime": "POLARIZED_PRIVATE_BLOCKS",
+      "checkpoint": 0,
+      "coverage": 1,
+      "pooledProbabilitiesByOptionId": {
+        "opt_1": 0.45000000000000007,
+        "opt_2": 0.1,
+        "opt_3": 0.45
+      },
+      "meanNormalizedReportEntropy": 0.5816718657178869,
+      "normalizedGeneralizedJsd": 0.2820681867858096,
+      "meanPairwiseTotalVariation": 0.46666666666666673,
+      "maxPairwiseTotalVariation": 0.7000000000000001
+    },
+    {
+      "taskId": "thermometer-calibration:service-access:v3",
+      "baseScenarioId": "service-access",
+      "designRegime": "POLARIZED_PRIVATE_BLOCKS",
+      "checkpoint": 1,
+      "coverage": 1,
+      "pooledProbabilitiesByOptionId": {
+        "opt_1": 0.45000000000000007,
+        "opt_2": 0.1,
+        "opt_3": 0.45
+      },
+      "meanNormalizedReportEntropy": 0.5816718657178869,
+      "normalizedGeneralizedJsd": 0.2820681867858096,
+      "meanPairwiseTotalVariation": 0.46666666666666673,
+      "maxPairwiseTotalVariation": 0.7000000000000001
+    },
+    {
+      "taskId": "thermometer-calibration:service-access:v3",
+      "baseScenarioId": "service-access",
+      "designRegime": "POLARIZED_PRIVATE_BLOCKS",
+      "checkpoint": 2,
+      "coverage": 1,
+      "pooledProbabilitiesByOptionId": {
+        "opt_1": 0.6,
+        "opt_2": 0.25,
+        "opt_3": 0.15
+      },
+      "meanNormalizedReportEntropy": 0.8534739433956113,
+      "normalizedGeneralizedJsd": 0,
+      "meanPairwiseTotalVariation": 0,
+      "maxPairwiseTotalVariation": 0
+    },
+    {
+      "taskId": "thermometer-calibration:service-access:v4",
+      "baseScenarioId": "service-access",
+      "designRegime": "ASYMMETRIC_INFORMED_MINORITY",
+      "checkpoint": 0,
+      "coverage": 1,
+      "pooledProbabilitiesByOptionId": {
+        "opt_1": 0.35000000000000003,
+        "opt_2": 0.5499999999999999,
+        "opt_3": 0.1
+      },
+      "meanNormalizedReportEntropy": 0.6928029908010449,
+      "normalizedGeneralizedJsd": 0.15053966324187784,
+      "meanPairwiseTotalVariation": 0.30000000000000004,
+      "maxPairwiseTotalVariation": 0.6000000000000001
+    },
+    {
+      "taskId": "thermometer-calibration:service-access:v4",
+      "baseScenarioId": "service-access",
+      "designRegime": "ASYMMETRIC_INFORMED_MINORITY",
+      "checkpoint": 1,
+      "coverage": 1,
+      "pooledProbabilitiesByOptionId": {
+        "opt_1": 0.35000000000000003,
+        "opt_2": 0.5499999999999999,
+        "opt_3": 0.1
+      },
+      "meanNormalizedReportEntropy": 0.6928029908010449,
+      "normalizedGeneralizedJsd": 0.15053966324187784,
+      "meanPairwiseTotalVariation": 0.30000000000000004,
+      "maxPairwiseTotalVariation": 0.6000000000000001
+    },
+    {
+      "taskId": "thermometer-calibration:service-access:v4",
+      "baseScenarioId": "service-access",
+      "designRegime": "ASYMMETRIC_INFORMED_MINORITY",
+      "checkpoint": 2,
+      "coverage": 1,
+      "pooledProbabilitiesByOptionId": {
+        "opt_1": 0.35000000000000003,
+        "opt_2": 0.5499999999999999,
+        "opt_3": 0.1
+      },
+      "meanNormalizedReportEntropy": 0.6928029908010449,
+      "normalizedGeneralizedJsd": 0.15053966324187784,
+      "meanPairwiseTotalVariation": 0.30000000000000004,
+      "maxPairwiseTotalVariation": 0.6000000000000001
+    }
+  ],
+  "stateResolution": {
+    "regimePairs": [
+      {
+        "leftRegime": "DISTRIBUTED_COMPLEMENTARY",
+        "rightRegime": "SHARED_CUE_PRIVATE_CORRECTION",
+        "bases": [
+          {
+            "baseScenarioId": "thermal-loop",
+            "replicateComparableAgentCount": 4,
+            "separatedAgentCount": 4,
+            "separatedFraction": 1,
+            "passMajority": true
+          },
+          {
+            "baseScenarioId": "service-access",
+            "replicateComparableAgentCount": 4,
+            "separatedAgentCount": 4,
+            "separatedFraction": 1,
+            "passMajority": true
+          }
+        ],
+        "passBothBases": true
+      },
+      {
+        "leftRegime": "DISTRIBUTED_COMPLEMENTARY",
+        "rightRegime": "POLARIZED_PRIVATE_BLOCKS",
+        "bases": [
+          {
+            "baseScenarioId": "thermal-loop",
+            "replicateComparableAgentCount": 4,
+            "separatedAgentCount": 4,
+            "separatedFraction": 1,
+            "passMajority": true
+          },
+          {
+            "baseScenarioId": "service-access",
+            "replicateComparableAgentCount": 4,
+            "separatedAgentCount": 4,
+            "separatedFraction": 1,
+            "passMajority": true
+          }
+        ],
+        "passBothBases": true
+      },
+      {
+        "leftRegime": "DISTRIBUTED_COMPLEMENTARY",
+        "rightRegime": "ASYMMETRIC_INFORMED_MINORITY",
+        "bases": [
+          {
+            "baseScenarioId": "thermal-loop",
+            "replicateComparableAgentCount": 4,
+            "separatedAgentCount": 4,
+            "separatedFraction": 1,
+            "passMajority": true
+          },
+          {
+            "baseScenarioId": "service-access",
+            "replicateComparableAgentCount": 4,
+            "separatedAgentCount": 4,
+            "separatedFraction": 1,
+            "passMajority": true
+          }
+        ],
+        "passBothBases": true
+      },
+      {
+        "leftRegime": "SHARED_CUE_PRIVATE_CORRECTION",
+        "rightRegime": "POLARIZED_PRIVATE_BLOCKS",
+        "bases": [
+          {
+            "baseScenarioId": "thermal-loop",
+            "replicateComparableAgentCount": 4,
+            "separatedAgentCount": 4,
+            "separatedFraction": 1,
+            "passMajority": true
+          },
+          {
+            "baseScenarioId": "service-access",
+            "replicateComparableAgentCount": 4,
+            "separatedAgentCount": 4,
+            "separatedFraction": 1,
+            "passMajority": true
+          }
+        ],
+        "passBothBases": true
+      },
+      {
+        "leftRegime": "SHARED_CUE_PRIVATE_CORRECTION",
+        "rightRegime": "ASYMMETRIC_INFORMED_MINORITY",
+        "bases": [
+          {
+            "baseScenarioId": "thermal-loop",
+            "replicateComparableAgentCount": 4,
+            "separatedAgentCount": 4,
+            "separatedFraction": 1,
+            "passMajority": true
+          },
+          {
+            "baseScenarioId": "service-access",
+            "replicateComparableAgentCount": 4,
+            "separatedAgentCount": 4,
+            "separatedFraction": 1,
+            "passMajority": true
+          }
+        ],
+        "passBothBases": true
+      },
+      {
+        "leftRegime": "POLARIZED_PRIVATE_BLOCKS",
+        "rightRegime": "ASYMMETRIC_INFORMED_MINORITY",
+        "bases": [
+          {
+            "baseScenarioId": "thermal-loop",
+            "replicateComparableAgentCount": 4,
+            "separatedAgentCount": 4,
+            "separatedFraction": 1,
+            "passMajority": true
+          },
+          {
+            "baseScenarioId": "service-access",
+            "replicateComparableAgentCount": 4,
+            "separatedAgentCount": 4,
+            "separatedFraction": 1,
+            "passMajority": true
+          }
+        ],
+        "passBothBases": true
+      }
+    ],
+    "pairCountPassingBothBases": 6
+  },
+  "lateMotion": {
+    "regimes": [
+      {
+        "designRegime": "DISTRIBUTED_COMPLEMENTARY",
+        "bases": [
+          {
+            "baseScenarioId": "thermal-loop",
+            "replicateComparableAgentCount": 4,
+            "separatedAgentCount": 0,
+            "separatedFraction": 0,
+            "passMajority": false
+          },
+          {
+            "baseScenarioId": "service-access",
+            "replicateComparableAgentCount": 4,
+            "separatedAgentCount": 0,
+            "separatedFraction": 0,
+            "passMajority": false
+          }
+        ],
+        "passBothBases": false
+      },
+      {
+        "designRegime": "SHARED_CUE_PRIVATE_CORRECTION",
+        "bases": [
+          {
+            "baseScenarioId": "thermal-loop",
+            "replicateComparableAgentCount": 4,
+            "separatedAgentCount": 4,
+            "separatedFraction": 1,
+            "passMajority": true
+          },
+          {
+            "baseScenarioId": "service-access",
+            "replicateComparableAgentCount": 4,
+            "separatedAgentCount": 4,
+            "separatedFraction": 1,
+            "passMajority": true
+          }
+        ],
+        "passBothBases": true
+      },
+      {
+        "designRegime": "POLARIZED_PRIVATE_BLOCKS",
+        "bases": [
+          {
+            "baseScenarioId": "thermal-loop",
+            "replicateComparableAgentCount": 4,
+            "separatedAgentCount": 4,
+            "separatedFraction": 1,
+            "passMajority": true
+          },
+          {
+            "baseScenarioId": "service-access",
+            "replicateComparableAgentCount": 4,
+            "separatedAgentCount": 4,
+            "separatedFraction": 1,
+            "passMajority": true
+          }
+        ],
+        "passBothBases": true
+      },
+      {
+        "designRegime": "ASYMMETRIC_INFORMED_MINORITY",
+        "bases": [
+          {
+            "baseScenarioId": "thermal-loop",
+            "replicateComparableAgentCount": 4,
+            "separatedAgentCount": 0,
+            "separatedFraction": 0,
+            "passMajority": false
+          },
+          {
+            "baseScenarioId": "service-access",
+            "replicateComparableAgentCount": 4,
+            "separatedAgentCount": 0,
+            "separatedFraction": 0,
+            "passMajority": false
+          }
+        ],
+        "passBothBases": false
+      }
+    ],
+    "regimeCountPassingBothBases": 2
+  },
+  "gates": [
+    {
+      "id": "G0_TERMINAL_ACCOUNTING",
+      "pass": true,
+      "detail": "64/64 public and 192/192 sensor terminals accounted."
+    },
+    {
+      "id": "G1_SENSOR_USABILITY",
+      "pass": true,
+      "detail": "96/96 primary reports valid; missing reports remain in the denominator."
+    },
+    {
+      "id": "G2_STATE_RESOLUTION",
+      "pass": true,
+      "detail": "6/6 regime pairs show majority per-agent X0 separation above duplicate references in both bases."
+    },
+    {
+      "id": "G3_LATE_MOTION",
+      "pass": true,
+      "detail": "2/4 regimes show majority per-agent X1-to-X2 motion above both endpoint duplicate gaps in both bases."
+    }
+  ],
+  "allResourceGatesPass": true,
+  "routing": "MOCK_WIRING_ONLY",
+  "claimCeiling": "Synthetic data validate computation and replay only; they provide no evidence about LLM discussion states.",
+  "contentHash": "sha256:bfea5ca1abcae8cd9b15274fe4ca5e96808ca14f65d39dc8b7d59485601fadc0"
+}

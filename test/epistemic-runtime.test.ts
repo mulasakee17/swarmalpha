@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { DiscussionEngine, type DiscussionAgent } from "@/lib/discussion";
-import type { DiscussionTask } from "@/lib/discussion/types";
+import { DiscussionEngine, type DiscussionAgent } from "../legacy/src/lib/discussion";
+import type { DiscussionTask } from "../legacy/src/lib/discussion/types";
 import { BeliefContractRegistry, getBeliefContract } from "@/lib/epistemic";
 
 function task(epistemic = true): DiscussionTask {

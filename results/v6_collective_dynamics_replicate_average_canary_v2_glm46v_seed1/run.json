@@ -1,0 +1,1375 @@
+{
+  "runRef": {
+    "id": "swarmalpha.experiment.v6.collective-dynamics-replicate-average-canary.run",
+    "version": "2.0.0"
+  },
+  "planHash": "sha256:656b9fc3526efa84798e54f63359d86dd22fffac30c0ce5df4b2a2dee25897d5",
+  "freezeHash": "sha256:41043a9ca5e7fe231a588c68d2e4fdd0efe7167e1b5f1a74ca4b0f71a27d6bc9",
+  "terminals": [
+    {
+      "cellId": "replicate-average-canary:task-8:agent-1:a1",
+      "requestId": "replicate-average-canary:task-8:agent-1:a1",
+      "requestHash": "sha256:ed2838ccf5583808e81b2e130d07979589339336b69a0d4c6d26273f41c28241",
+      "promptHash": "sha256:eaf7f2ca4129f96762c1fd09caaaa0b6aad3ef63bc3fab66aa053c5108160ca6",
+      "startedAt": "2026-08-28T06:50:58.379Z",
+      "terminalAt": "2026-08-28T06:51:01.342Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0.7,
+          "opt_2": 0.2,
+          "opt_3": 0.1
+        },
+        "probabilities": {
+          "Eddie Sullivan": 0.7,
+          "Billy Prentice": 0.2,
+          "Mickey Malone": 0.1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260828145100a31b4df3e6ff4de2"
+      },
+      "usage": {
+        "promptTokens": 1111,
+        "completionTokens": 39,
+        "totalTokens": 1150,
+        "cachedPromptTokens": 58,
+        "latencyMs": 2961
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-8:agent-1:b1",
+      "requestId": "replicate-average-canary:task-8:agent-1:b1",
+      "requestHash": "sha256:7b346ddaac0a9bf766d5762dac3ec72e96fc48dc95a854b53eb19065dee16ab7",
+      "promptHash": "sha256:eaf7f2ca4129f96762c1fd09caaaa0b6aad3ef63bc3fab66aa053c5108160ca6",
+      "startedAt": "2026-08-28T06:51:01.348Z",
+      "terminalAt": "2026-08-28T06:51:05.682Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0.7,
+          "opt_2": 0.2,
+          "opt_3": 0.1
+        },
+        "probabilities": {
+          "Eddie Sullivan": 0.7,
+          "Billy Prentice": 0.2,
+          "Mickey Malone": 0.1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "2026082814510196dc61d44df54a37"
+      },
+      "usage": {
+        "promptTokens": 1111,
+        "completionTokens": 39,
+        "totalTokens": 1150,
+        "cachedPromptTokens": 58,
+        "latencyMs": 4332
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-8:agent-1:a2",
+      "requestId": "replicate-average-canary:task-8:agent-1:a2",
+      "requestHash": "sha256:b6de3cf4e155291c34c2bc45d55f4598e71878ef269f27d71092d9a95e4ea536",
+      "promptHash": "sha256:eaf7f2ca4129f96762c1fd09caaaa0b6aad3ef63bc3fab66aa053c5108160ca6",
+      "startedAt": "2026-08-28T06:51:05.685Z",
+      "terminalAt": "2026-08-28T06:51:08.228Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0.7,
+          "opt_2": 0.2,
+          "opt_3": 0.1
+        },
+        "probabilities": {
+          "Eddie Sullivan": 0.7,
+          "Billy Prentice": 0.2,
+          "Mickey Malone": 0.1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "2026082814510581911832fd654659"
+      },
+      "usage": {
+        "promptTokens": 1111,
+        "completionTokens": 39,
+        "totalTokens": 1150,
+        "cachedPromptTokens": 56,
+        "latencyMs": 2542
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-8:agent-1:b2",
+      "requestId": "replicate-average-canary:task-8:agent-1:b2",
+      "requestHash": "sha256:db195307e24801c8fb85a251e1544288bac62e47a69699cdfda5070183ae8dcc",
+      "promptHash": "sha256:eaf7f2ca4129f96762c1fd09caaaa0b6aad3ef63bc3fab66aa053c5108160ca6",
+      "startedAt": "2026-08-28T06:51:08.231Z",
+      "terminalAt": "2026-08-28T06:51:10.203Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0.7,
+          "opt_2": 0.2,
+          "opt_3": 0.1
+        },
+        "probabilities": {
+          "Eddie Sullivan": 0.7,
+          "Billy Prentice": 0.2,
+          "Mickey Malone": 0.1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608281451081dcf9f9870874af3"
+      },
+      "usage": {
+        "promptTokens": 1111,
+        "completionTokens": 39,
+        "totalTokens": 1150,
+        "cachedPromptTokens": 1110,
+        "latencyMs": 1970
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-8:agent-2:b1",
+      "requestId": "replicate-average-canary:task-8:agent-2:b1",
+      "requestHash": "sha256:1156b535265ac752143ae739d127b40c9e67ea7c00a6fa4fc84c59edafc5e2b3",
+      "promptHash": "sha256:b2b152ed60c407a41f9f105271e384b33cce19463a3f5379420619e1c92a7061",
+      "startedAt": "2026-08-28T06:51:10.205Z",
+      "terminalAt": "2026-08-28T06:51:12.052Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0.7,
+          "opt_2": 0.2,
+          "opt_3": 0.1
+        },
+        "probabilities": {
+          "Eddie Sullivan": 0.7,
+          "Billy Prentice": 0.2,
+          "Mickey Malone": 0.1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260828145110bb825c3b86fc4e8d"
+      },
+      "usage": {
+        "promptTokens": 1118,
+        "completionTokens": 39,
+        "totalTokens": 1157,
+        "cachedPromptTokens": 58,
+        "latencyMs": 1844
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-8:agent-2:a2",
+      "requestId": "replicate-average-canary:task-8:agent-2:a2",
+      "requestHash": "sha256:4a5b81f61f4dfffa1be9af8c71519bbab9213227a042a61ff1e04c7f2cdcb2a7",
+      "promptHash": "sha256:b2b152ed60c407a41f9f105271e384b33cce19463a3f5379420619e1c92a7061",
+      "startedAt": "2026-08-28T06:51:12.054Z",
+      "terminalAt": "2026-08-28T06:51:13.592Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0.7,
+          "opt_2": 0.2,
+          "opt_3": 0.1
+        },
+        "probabilities": {
+          "Eddie Sullivan": 0.7,
+          "Billy Prentice": 0.2,
+          "Mickey Malone": 0.1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260828145112e704d5e9b5b94b0c"
+      },
+      "usage": {
+        "promptTokens": 1118,
+        "completionTokens": 39,
+        "totalTokens": 1157,
+        "cachedPromptTokens": 1117,
+        "latencyMs": 1537
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-8:agent-2:b2",
+      "requestId": "replicate-average-canary:task-8:agent-2:b2",
+      "requestHash": "sha256:c377b4ad8d266f8c5c6cc2861be4790ec7f46e729db3f4c467f2f03d58433863",
+      "promptHash": "sha256:b2b152ed60c407a41f9f105271e384b33cce19463a3f5379420619e1c92a7061",
+      "startedAt": "2026-08-28T06:51:13.593Z",
+      "terminalAt": "2026-08-28T06:51:15.453Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0.7,
+          "opt_2": 0.2,
+          "opt_3": 0.1
+        },
+        "probabilities": {
+          "Eddie Sullivan": 0.7,
+          "Billy Prentice": 0.2,
+          "Mickey Malone": 0.1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608281451131174ab1d4760430c"
+      },
+      "usage": {
+        "promptTokens": 1118,
+        "completionTokens": 39,
+        "totalTokens": 1157,
+        "cachedPromptTokens": 58,
+        "latencyMs": 1859
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-8:agent-2:a1",
+      "requestId": "replicate-average-canary:task-8:agent-2:a1",
+      "requestHash": "sha256:f35da8409e6c34d10bd7120050c17a87d2ad1eeb1339913c978a8e2167858b55",
+      "promptHash": "sha256:b2b152ed60c407a41f9f105271e384b33cce19463a3f5379420619e1c92a7061",
+      "startedAt": "2026-08-28T06:51:15.455Z",
+      "terminalAt": "2026-08-28T06:51:17.137Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0.7,
+          "opt_2": 0.2,
+          "opt_3": 0.1
+        },
+        "probabilities": {
+          "Eddie Sullivan": 0.7,
+          "Billy Prentice": 0.2,
+          "Mickey Malone": 0.1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260828145115bb526d47416a4e6a"
+      },
+      "usage": {
+        "promptTokens": 1118,
+        "completionTokens": 39,
+        "totalTokens": 1157,
+        "cachedPromptTokens": 1117,
+        "latencyMs": 1681
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-8:agent-3:a2",
+      "requestId": "replicate-average-canary:task-8:agent-3:a2",
+      "requestHash": "sha256:7d5937449ac941f3f9000e352328e85e83c5094d65e3adea9e164b2100d86e86",
+      "promptHash": "sha256:bc5bb26ad7a0c37c973bb7f10f8ca4637e282587b5a472ef311a3f881a39e5d4",
+      "startedAt": "2026-08-28T06:51:17.139Z",
+      "terminalAt": "2026-08-28T06:51:18.934Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0.7,
+          "opt_2": 0.2,
+          "opt_3": 0.1
+        },
+        "probabilities": {
+          "Eddie Sullivan": 0.7,
+          "Billy Prentice": 0.2,
+          "Mickey Malone": 0.1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260828145117cdc01eb230e640d9"
+      },
+      "usage": {
+        "promptTokens": 1113,
+        "completionTokens": 39,
+        "totalTokens": 1152,
+        "cachedPromptTokens": 556,
+        "latencyMs": 1793
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-8:agent-3:b2",
+      "requestId": "replicate-average-canary:task-8:agent-3:b2",
+      "requestHash": "sha256:adaf518c736c15a2d1339abdf9963c4a5f565b5839c5e7fd24e63dd0eec3be00",
+      "promptHash": "sha256:bc5bb26ad7a0c37c973bb7f10f8ca4637e282587b5a472ef311a3f881a39e5d4",
+      "startedAt": "2026-08-28T06:51:18.936Z",
+      "terminalAt": "2026-08-28T06:51:21.553Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0.7,
+          "opt_2": 0.2,
+          "opt_3": 0.1
+        },
+        "probabilities": {
+          "Eddie Sullivan": 0.7,
+          "Billy Prentice": 0.2,
+          "Mickey Malone": 0.1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608281451191ca73bedcad24019"
+      },
+      "usage": {
+        "promptTokens": 1113,
+        "completionTokens": 41,
+        "totalTokens": 1154,
+        "cachedPromptTokens": 58,
+        "latencyMs": 2615
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-8:agent-3:a1",
+      "requestId": "replicate-average-canary:task-8:agent-3:a1",
+      "requestHash": "sha256:fad7692b493d3efbf8bb69363f0b16ba726b23ab4ab0cc2a7487d7b6ac88b8a6",
+      "promptHash": "sha256:bc5bb26ad7a0c37c973bb7f10f8ca4637e282587b5a472ef311a3f881a39e5d4",
+      "startedAt": "2026-08-28T06:51:21.555Z",
+      "terminalAt": "2026-08-28T06:51:23.676Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0.7,
+          "opt_2": 0.2,
+          "opt_3": 0.1
+        },
+        "probabilities": {
+          "Eddie Sullivan": 0.7,
+          "Billy Prentice": 0.2,
+          "Mickey Malone": 0.1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "2026082814512156a378b74eca4314"
+      },
+      "usage": {
+        "promptTokens": 1113,
+        "completionTokens": 39,
+        "totalTokens": 1152,
+        "cachedPromptTokens": 58,
+        "latencyMs": 2119
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-8:agent-3:b1",
+      "requestId": "replicate-average-canary:task-8:agent-3:b1",
+      "requestHash": "sha256:fa5608c4772d2f6320dcbaba02dd4c1897eb524a9d6067f717723966be802ac2",
+      "promptHash": "sha256:bc5bb26ad7a0c37c973bb7f10f8ca4637e282587b5a472ef311a3f881a39e5d4",
+      "startedAt": "2026-08-28T06:51:23.678Z",
+      "terminalAt": "2026-08-28T06:51:25.404Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0.7,
+          "opt_2": 0.2,
+          "opt_3": 0.1
+        },
+        "probabilities": {
+          "Eddie Sullivan": 0.7,
+          "Billy Prentice": 0.2,
+          "Mickey Malone": 0.1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260828145123675e7df07b044f88"
+      },
+      "usage": {
+        "promptTokens": 1113,
+        "completionTokens": 39,
+        "totalTokens": 1152,
+        "cachedPromptTokens": 1112,
+        "latencyMs": 1724
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-29:agent-1:b2",
+      "requestId": "replicate-average-canary:task-29:agent-1:b2",
+      "requestHash": "sha256:3c941367e5c72c999b6b6ea13580f9d5d085184a5f3a7e35178d819e4d9d334f",
+      "promptHash": "sha256:d189af3a38563795dc184dfdcf1cc8df13aec4669b90a6a5b28b90f70bdcb401",
+      "startedAt": "2026-08-28T06:51:25.407Z",
+      "terminalAt": "2026-08-28T06:51:28.064Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        },
+        "probabilities": {
+          "Mountain Lodge": 0,
+          "Riverside Park": 1,
+          "Summerfield School": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260828145125673bbce079dc4928"
+      },
+      "usage": {
+        "promptTokens": 1009,
+        "completionTokens": 39,
+        "totalTokens": 1048,
+        "cachedPromptTokens": 155,
+        "latencyMs": 2655
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-29:agent-1:a1",
+      "requestId": "replicate-average-canary:task-29:agent-1:a1",
+      "requestHash": "sha256:de663f35d9a3cf83bf29c63e43b5f3a0b3633ba680a6ed433443f5d909a5db2f",
+      "promptHash": "sha256:d189af3a38563795dc184dfdcf1cc8df13aec4669b90a6a5b28b90f70bdcb401",
+      "startedAt": "2026-08-28T06:51:28.066Z",
+      "terminalAt": "2026-08-28T06:51:31.259Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        },
+        "probabilities": {
+          "Mountain Lodge": 0,
+          "Riverside Park": 1,
+          "Summerfield School": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260828145128810c1f6aa10b4383"
+      },
+      "usage": {
+        "promptTokens": 1009,
+        "completionTokens": 41,
+        "totalTokens": 1050,
+        "cachedPromptTokens": 155,
+        "latencyMs": 3192
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-29:agent-1:b1",
+      "requestId": "replicate-average-canary:task-29:agent-1:b1",
+      "requestHash": "sha256:8adb7a0ef6a9d89e0c0ecec25ad3d977d0f7c55b9c902ece52dc4fcb5a11e70b",
+      "promptHash": "sha256:d189af3a38563795dc184dfdcf1cc8df13aec4669b90a6a5b28b90f70bdcb401",
+      "startedAt": "2026-08-28T06:51:31.262Z",
+      "terminalAt": "2026-08-28T06:51:33.500Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        },
+        "probabilities": {
+          "Mountain Lodge": 0,
+          "Riverside Park": 1,
+          "Summerfield School": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260828145131920ee7c957174908"
+      },
+      "usage": {
+        "promptTokens": 1009,
+        "completionTokens": 39,
+        "totalTokens": 1048,
+        "cachedPromptTokens": 58,
+        "latencyMs": 2237
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-29:agent-1:a2",
+      "requestId": "replicate-average-canary:task-29:agent-1:a2",
+      "requestHash": "sha256:37dd29c38339170fe4c7cbf142aacdd555bd38b69e14da0e0cd36b47110af35a",
+      "promptHash": "sha256:d189af3a38563795dc184dfdcf1cc8df13aec4669b90a6a5b28b90f70bdcb401",
+      "startedAt": "2026-08-28T06:51:33.502Z",
+      "terminalAt": "2026-08-28T06:51:35.026Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        },
+        "probabilities": {
+          "Mountain Lodge": 0,
+          "Riverside Park": 1,
+          "Summerfield School": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608281451331098d87cbd1c4db5"
+      },
+      "usage": {
+        "promptTokens": 1009,
+        "completionTokens": 39,
+        "totalTokens": 1048,
+        "cachedPromptTokens": 1008,
+        "latencyMs": 1523
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-29:agent-2:a1",
+      "requestId": "replicate-average-canary:task-29:agent-2:a1",
+      "requestHash": "sha256:5cbee24daad4c067fac5eee2c2d4591b680e03f3692895458aaafaa154ef943d",
+      "promptHash": "sha256:291cf75409db06ab93b4daa31a5e98897c08b7204898f9812ea4f6ecde330fc9",
+      "startedAt": "2026-08-28T06:51:35.027Z",
+      "terminalAt": "2026-08-28T06:51:36.714Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        },
+        "probabilities": {
+          "Mountain Lodge": 0,
+          "Riverside Park": 1,
+          "Summerfield School": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260828145135e34b6ee028294121"
+      },
+      "usage": {
+        "promptTokens": 1008,
+        "completionTokens": 39,
+        "totalTokens": 1047,
+        "cachedPromptTokens": 155,
+        "latencyMs": 1685
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-29:agent-2:b1",
+      "requestId": "replicate-average-canary:task-29:agent-2:b1",
+      "requestHash": "sha256:2a4675ab8665891fe82389c51eabbd752ef647ccc3523ce8746ff0fdb5db5501",
+      "promptHash": "sha256:291cf75409db06ab93b4daa31a5e98897c08b7204898f9812ea4f6ecde330fc9",
+      "startedAt": "2026-08-28T06:51:36.715Z",
+      "terminalAt": "2026-08-28T06:51:38.526Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        },
+        "probabilities": {
+          "Mountain Lodge": 0,
+          "Riverside Park": 1,
+          "Summerfield School": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260828145136e8d83f904767433b"
+      },
+      "usage": {
+        "promptTokens": 1008,
+        "completionTokens": 39,
+        "totalTokens": 1047,
+        "cachedPromptTokens": 155,
+        "latencyMs": 1808
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-29:agent-2:a2",
+      "requestId": "replicate-average-canary:task-29:agent-2:a2",
+      "requestHash": "sha256:56b114f22402eff5724bbf6b09332734bf730106d307cab59a2e5b818b1c77fe",
+      "promptHash": "sha256:291cf75409db06ab93b4daa31a5e98897c08b7204898f9812ea4f6ecde330fc9",
+      "startedAt": "2026-08-28T06:51:38.527Z",
+      "terminalAt": "2026-08-28T06:51:40.443Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        },
+        "probabilities": {
+          "Mountain Lodge": 0,
+          "Riverside Park": 1,
+          "Summerfield School": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260828145138820dc7cca9a8448a"
+      },
+      "usage": {
+        "promptTokens": 1008,
+        "completionTokens": 48,
+        "totalTokens": 1056,
+        "cachedPromptTokens": 356,
+        "latencyMs": 1914
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-29:agent-2:b2",
+      "requestId": "replicate-average-canary:task-29:agent-2:b2",
+      "requestHash": "sha256:ef65f2b1383aa505b4c32a3f2c5ea9901f61c98b45b4c6c961c8beaf5b881e3d",
+      "promptHash": "sha256:291cf75409db06ab93b4daa31a5e98897c08b7204898f9812ea4f6ecde330fc9",
+      "startedAt": "2026-08-28T06:51:40.445Z",
+      "terminalAt": "2026-08-28T06:51:42.240Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        },
+        "probabilities": {
+          "Mountain Lodge": 0,
+          "Riverside Park": 1,
+          "Summerfield School": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608281451402359ac5fff374cac"
+      },
+      "usage": {
+        "promptTokens": 1008,
+        "completionTokens": 48,
+        "totalTokens": 1056,
+        "cachedPromptTokens": 1007,
+        "latencyMs": 1793
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-29:agent-3:b1",
+      "requestId": "replicate-average-canary:task-29:agent-3:b1",
+      "requestHash": "sha256:20a362c17f1dc2d5b564ecc0a61f53f308fc6db77e8454f260b0d102c696de3c",
+      "promptHash": "sha256:f982376dff4b4216ec54ec87d8b68b9eb4a46a533fb78b3088e8638a747f4bf4",
+      "startedAt": "2026-08-28T06:51:42.242Z",
+      "terminalAt": "2026-08-28T06:51:43.935Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        },
+        "probabilities": {
+          "Mountain Lodge": 0,
+          "Riverside Park": 0,
+          "Summerfield School": 1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "2026082814514224ab187e36154a0d"
+      },
+      "usage": {
+        "promptTokens": 1027,
+        "completionTokens": 39,
+        "totalTokens": 1066,
+        "cachedPromptTokens": 356,
+        "latencyMs": 1692
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-29:agent-3:a2",
+      "requestId": "replicate-average-canary:task-29:agent-3:a2",
+      "requestHash": "sha256:e8745b8ad4dc84cd8e3684dff9ed70c16da73ec0535e558bfa45f22df91b7f93",
+      "promptHash": "sha256:f982376dff4b4216ec54ec87d8b68b9eb4a46a533fb78b3088e8638a747f4bf4",
+      "startedAt": "2026-08-28T06:51:43.937Z",
+      "terminalAt": "2026-08-28T06:51:46.545Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        },
+        "probabilities": {
+          "Mountain Lodge": 0,
+          "Riverside Park": 0,
+          "Summerfield School": 1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260828145144072bd5de6c244777"
+      },
+      "usage": {
+        "promptTokens": 1027,
+        "completionTokens": 39,
+        "totalTokens": 1066,
+        "cachedPromptTokens": 1026,
+        "latencyMs": 2606
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-29:agent-3:b2",
+      "requestId": "replicate-average-canary:task-29:agent-3:b2",
+      "requestHash": "sha256:3698e53ea42b08de9c6c6231a449ce3c0e2d170aee9b22b5fc95feb8ce8598ca",
+      "promptHash": "sha256:f982376dff4b4216ec54ec87d8b68b9eb4a46a533fb78b3088e8638a747f4bf4",
+      "startedAt": "2026-08-28T06:51:46.546Z",
+      "terminalAt": "2026-08-28T06:51:48.225Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        },
+        "probabilities": {
+          "Mountain Lodge": 0,
+          "Riverside Park": 0,
+          "Summerfield School": 1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260828145146558673af91d14866"
+      },
+      "usage": {
+        "promptTokens": 1027,
+        "completionTokens": 39,
+        "totalTokens": 1066,
+        "cachedPromptTokens": 1026,
+        "latencyMs": 1676
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-29:agent-3:a1",
+      "requestId": "replicate-average-canary:task-29:agent-3:a1",
+      "requestHash": "sha256:f134d3af1802120ed1e1bb8a2acdd0336d2c2d62a9704b13db8dde641e5beb0a",
+      "promptHash": "sha256:f982376dff4b4216ec54ec87d8b68b9eb4a46a533fb78b3088e8638a747f4bf4",
+      "startedAt": "2026-08-28T06:51:48.227Z",
+      "terminalAt": "2026-08-28T06:51:49.934Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        },
+        "probabilities": {
+          "Mountain Lodge": 0,
+          "Riverside Park": 0,
+          "Summerfield School": 1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "2026082814514856217a855823425f"
+      },
+      "usage": {
+        "promptTokens": 1027,
+        "completionTokens": 39,
+        "totalTokens": 1066,
+        "cachedPromptTokens": 58,
+        "latencyMs": 1706
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-29:agent-4:a2",
+      "requestId": "replicate-average-canary:task-29:agent-4:a2",
+      "requestHash": "sha256:0721d6bdaf018cec78991bad1f7ad2b9eb37eeb95855bf5772b8dd4689bd90e3",
+      "promptHash": "sha256:e1941ed99ad9a91274c84cbf465835bd4b460ef1d069f73c6e857acde1249407",
+      "startedAt": "2026-08-28T06:51:49.936Z",
+      "terminalAt": "2026-08-28T06:51:51.927Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        },
+        "probabilities": {
+          "Mountain Lodge": 0,
+          "Riverside Park": 0,
+          "Summerfield School": 1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260828145150afeaaa510aa9490c"
+      },
+      "usage": {
+        "promptTokens": 1016,
+        "completionTokens": 39,
+        "totalTokens": 1055,
+        "cachedPromptTokens": 58,
+        "latencyMs": 1991
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-29:agent-4:b2",
+      "requestId": "replicate-average-canary:task-29:agent-4:b2",
+      "requestHash": "sha256:85592f096550e36208f2603d40c4e2a106c6286babcb675f005a2ee66e90d395",
+      "promptHash": "sha256:e1941ed99ad9a91274c84cbf465835bd4b460ef1d069f73c6e857acde1249407",
+      "startedAt": "2026-08-28T06:51:51.928Z",
+      "terminalAt": "2026-08-28T06:51:54.427Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        },
+        "probabilities": {
+          "Mountain Lodge": 0,
+          "Riverside Park": 0,
+          "Summerfield School": 1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "2026082814515223f281a5b5b84a7b"
+      },
+      "usage": {
+        "promptTokens": 1016,
+        "completionTokens": 39,
+        "totalTokens": 1055,
+        "cachedPromptTokens": 58,
+        "latencyMs": 2498
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-29:agent-4:a1",
+      "requestId": "replicate-average-canary:task-29:agent-4:a1",
+      "requestHash": "sha256:2330efa03de394ab359e173c622936d92a2485ed7d3d69b4a4fa96bf5f091c7a",
+      "promptHash": "sha256:e1941ed99ad9a91274c84cbf465835bd4b460ef1d069f73c6e857acde1249407",
+      "startedAt": "2026-08-28T06:51:54.429Z",
+      "terminalAt": "2026-08-28T06:51:56.081Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        },
+        "probabilities": {
+          "Mountain Lodge": 0,
+          "Riverside Park": 0,
+          "Summerfield School": 1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608281451542f8558ed31024e78"
+      },
+      "usage": {
+        "promptTokens": 1016,
+        "completionTokens": 39,
+        "totalTokens": 1055,
+        "cachedPromptTokens": 1015,
+        "latencyMs": 1651
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-29:agent-4:b1",
+      "requestId": "replicate-average-canary:task-29:agent-4:b1",
+      "requestHash": "sha256:2c1038015e6184b7588cf9d834d051cea377006e9fe00208543531a928c178ae",
+      "promptHash": "sha256:e1941ed99ad9a91274c84cbf465835bd4b460ef1d069f73c6e857acde1249407",
+      "startedAt": "2026-08-28T06:51:56.083Z",
+      "terminalAt": "2026-08-28T06:51:57.867Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        },
+        "probabilities": {
+          "Mountain Lodge": 0,
+          "Riverside Park": 0,
+          "Summerfield School": 1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260828145156e1fd97d25ead4131"
+      },
+      "usage": {
+        "promptTokens": 1016,
+        "completionTokens": 39,
+        "totalTokens": 1055,
+        "cachedPromptTokens": 1015,
+        "latencyMs": 1783
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-50:agent-1:b2",
+      "requestId": "replicate-average-canary:task-50:agent-1:b2",
+      "requestHash": "sha256:730aa74859817243129e9995519ec5f338abde9fce6e2ba8290de198470cb5b6",
+      "promptHash": "sha256:e34daac2f74e9843673c6e043f99f304df98778a0153b74fd18ea8b7cd31c7d6",
+      "startedAt": "2026-08-28T06:51:57.868Z",
+      "terminalAt": "2026-08-28T06:51:59.720Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        },
+        "probabilities": {
+          "Conference Room Alpha": 0,
+          "Conference Room Beta": 0,
+          "Conference Room Gamma": 1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260828145158e4153d55d5694792"
+      },
+      "usage": {
+        "promptTokens": 887,
+        "completionTokens": 39,
+        "totalTokens": 926,
+        "cachedPromptTokens": 156,
+        "latencyMs": 1851
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-50:agent-1:a1",
+      "requestId": "replicate-average-canary:task-50:agent-1:a1",
+      "requestHash": "sha256:4328a64866cef02eb7cdf876d1e890f5fc49a85714aaa3b0a498bc9158558cd1",
+      "promptHash": "sha256:e34daac2f74e9843673c6e043f99f304df98778a0153b74fd18ea8b7cd31c7d6",
+      "startedAt": "2026-08-28T06:51:59.722Z",
+      "terminalAt": "2026-08-28T06:52:01.364Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        },
+        "probabilities": {
+          "Conference Room Alpha": 0,
+          "Conference Room Beta": 0,
+          "Conference Room Gamma": 1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260828145159bcb350676a394752"
+      },
+      "usage": {
+        "promptTokens": 887,
+        "completionTokens": 39,
+        "totalTokens": 926,
+        "cachedPromptTokens": 156,
+        "latencyMs": 1639
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-50:agent-1:b1",
+      "requestId": "replicate-average-canary:task-50:agent-1:b1",
+      "requestHash": "sha256:b0a73606814dbe971d0da5e47ecd298676cd9ffcc6f005e38361492821acfdd7",
+      "promptHash": "sha256:e34daac2f74e9843673c6e043f99f304df98778a0153b74fd18ea8b7cd31c7d6",
+      "startedAt": "2026-08-28T06:52:01.366Z",
+      "terminalAt": "2026-08-28T06:52:02.598Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        },
+        "probabilities": {
+          "Conference Room Alpha": 0,
+          "Conference Room Beta": 0,
+          "Conference Room Gamma": 1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "2026082814520140d0fe18fe424bbd"
+      },
+      "usage": {
+        "promptTokens": 887,
+        "completionTokens": 39,
+        "totalTokens": 926,
+        "cachedPromptTokens": 156,
+        "latencyMs": 1231
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-50:agent-1:a2",
+      "requestId": "replicate-average-canary:task-50:agent-1:a2",
+      "requestHash": "sha256:86f8d42740661b14986020e93717a6a722dd7d08a279cf69e3fe69d79c38cf31",
+      "promptHash": "sha256:e34daac2f74e9843673c6e043f99f304df98778a0153b74fd18ea8b7cd31c7d6",
+      "startedAt": "2026-08-28T06:52:02.600Z",
+      "terminalAt": "2026-08-28T06:52:03.937Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        },
+        "probabilities": {
+          "Conference Room Alpha": 0,
+          "Conference Room Beta": 0,
+          "Conference Room Gamma": 1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608281452028f533f65a679454b"
+      },
+      "usage": {
+        "promptTokens": 887,
+        "completionTokens": 48,
+        "totalTokens": 935,
+        "cachedPromptTokens": 58,
+        "latencyMs": 1336
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-50:agent-2:a1",
+      "requestId": "replicate-average-canary:task-50:agent-2:a1",
+      "requestHash": "sha256:bed6066481bea8374ad00b53443ca2642a637cd540152b158fa6665c37298fbf",
+      "promptHash": "sha256:18fcbc395600cb83d9cc30760ef3c6412183682a5324af5fed1afded0cbf8c23",
+      "startedAt": "2026-08-28T06:52:03.939Z",
+      "terminalAt": "2026-08-28T06:52:05.702Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        },
+        "probabilities": {
+          "Conference Room Alpha": 0,
+          "Conference Room Beta": 0,
+          "Conference Room Gamma": 1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "2026082814520423ea38a28bba4622"
+      },
+      "usage": {
+        "promptTokens": 884,
+        "completionTokens": 48,
+        "totalTokens": 932,
+        "cachedPromptTokens": 155,
+        "latencyMs": 1762
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-50:agent-2:b1",
+      "requestId": "replicate-average-canary:task-50:agent-2:b1",
+      "requestHash": "sha256:d8c23be2ff6204765a6772038f9b844d2333ddfd343a4c5c171f5dc6a8f6ff2a",
+      "promptHash": "sha256:18fcbc395600cb83d9cc30760ef3c6412183682a5324af5fed1afded0cbf8c23",
+      "startedAt": "2026-08-28T06:52:05.704Z",
+      "terminalAt": "2026-08-28T06:52:07.251Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        },
+        "probabilities": {
+          "Conference Room Alpha": 0,
+          "Conference Room Beta": 0,
+          "Conference Room Gamma": 1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260828145205951c0af3ee584c2c"
+      },
+      "usage": {
+        "promptTokens": 884,
+        "completionTokens": 41,
+        "totalTokens": 925,
+        "cachedPromptTokens": 883,
+        "latencyMs": 1546
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-50:agent-2:a2",
+      "requestId": "replicate-average-canary:task-50:agent-2:a2",
+      "requestHash": "sha256:8838133fe0059901a89571aece8bffdc608f2278ff7976d0b94c7f3d233147a2",
+      "promptHash": "sha256:18fcbc395600cb83d9cc30760ef3c6412183682a5324af5fed1afded0cbf8c23",
+      "startedAt": "2026-08-28T06:52:07.254Z",
+      "terminalAt": "2026-08-28T06:52:08.581Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        },
+        "probabilities": {
+          "Conference Room Alpha": 0,
+          "Conference Room Beta": 0,
+          "Conference Room Gamma": 1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260828145207033071c869a64d14"
+      },
+      "usage": {
+        "promptTokens": 884,
+        "completionTokens": 48,
+        "totalTokens": 932,
+        "cachedPromptTokens": 373,
+        "latencyMs": 1326
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-50:agent-2:b2",
+      "requestId": "replicate-average-canary:task-50:agent-2:b2",
+      "requestHash": "sha256:37e55e5d4bf35d6b513606f4049b1607857a8823dc0859bccdc1ebfa77c8ddc5",
+      "promptHash": "sha256:18fcbc395600cb83d9cc30760ef3c6412183682a5324af5fed1afded0cbf8c23",
+      "startedAt": "2026-08-28T06:52:08.583Z",
+      "terminalAt": "2026-08-28T06:52:10.470Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        },
+        "probabilities": {
+          "Conference Room Alpha": 0,
+          "Conference Room Beta": 0,
+          "Conference Room Gamma": 1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260828145208d16095e5306b4db8"
+      },
+      "usage": {
+        "promptTokens": 884,
+        "completionTokens": 48,
+        "totalTokens": 932,
+        "cachedPromptTokens": 373,
+        "latencyMs": 1886
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-50:agent-3:b1",
+      "requestId": "replicate-average-canary:task-50:agent-3:b1",
+      "requestHash": "sha256:c3d077d3a8af1f3b19efd721fcc2d4df41114fc401e84208b9fd446fb9276137",
+      "promptHash": "sha256:428782dc429dabd87508668296a79d77e706c0ff178e722fd2fea569b7c898ba",
+      "startedAt": "2026-08-28T06:52:10.471Z",
+      "terminalAt": "2026-08-28T06:52:12.466Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        },
+        "probabilities": {
+          "Conference Room Alpha": 0,
+          "Conference Room Beta": 1,
+          "Conference Room Gamma": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260828145210ae317769a4d6486b"
+      },
+      "usage": {
+        "promptTokens": 881,
+        "completionTokens": 39,
+        "totalTokens": 920,
+        "cachedPromptTokens": 155,
+        "latencyMs": 1994
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-50:agent-3:a2",
+      "requestId": "replicate-average-canary:task-50:agent-3:a2",
+      "requestHash": "sha256:84e3d270fa158d0a5e6cccfc758a3378cf77621b6190dd1ef98f0f88717fb2af",
+      "promptHash": "sha256:428782dc429dabd87508668296a79d77e706c0ff178e722fd2fea569b7c898ba",
+      "startedAt": "2026-08-28T06:52:12.467Z",
+      "terminalAt": "2026-08-28T06:52:15.328Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        },
+        "probabilities": {
+          "Conference Room Alpha": 0,
+          "Conference Room Beta": 1,
+          "Conference Room Gamma": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608281452124aa563cb479f4226"
+      },
+      "usage": {
+        "promptTokens": 881,
+        "completionTokens": 39,
+        "totalTokens": 920,
+        "cachedPromptTokens": 156,
+        "latencyMs": 2859
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-50:agent-3:b2",
+      "requestId": "replicate-average-canary:task-50:agent-3:b2",
+      "requestHash": "sha256:359c755506f96e65c7e4593f512d58bed967766e433cb9566269cb266207cd70",
+      "promptHash": "sha256:428782dc429dabd87508668296a79d77e706c0ff178e722fd2fea569b7c898ba",
+      "startedAt": "2026-08-28T06:52:15.330Z",
+      "terminalAt": "2026-08-28T06:52:17.622Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        },
+        "probabilities": {
+          "Conference Room Alpha": 0,
+          "Conference Room Beta": 1,
+          "Conference Room Gamma": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "2026082814521515ee7b6fd1954fe3"
+      },
+      "usage": {
+        "promptTokens": 881,
+        "completionTokens": 39,
+        "totalTokens": 920,
+        "cachedPromptTokens": 373,
+        "latencyMs": 2291
+      }
+    },
+    {
+      "cellId": "replicate-average-canary:task-50:agent-3:a1",
+      "requestId": "replicate-average-canary:task-50:agent-3:a1",
+      "requestHash": "sha256:a49e489452350e1883e0896c5d11accbad93227b1c327c5d815904be692269fb",
+      "promptHash": "sha256:428782dc429dabd87508668296a79d77e706c0ff178e722fd2fea569b7c898ba",
+      "startedAt": "2026-08-28T06:52:17.623Z",
+      "terminalAt": "2026-08-28T06:52:19.708Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilitiesByOptionId": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        },
+        "probabilities": {
+          "Conference Room Alpha": 0,
+          "Conference Room Beta": 1,
+          "Conference Room Gamma": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260828145217999ce6980a2548ff"
+      },
+      "usage": {
+        "promptTokens": 881,
+        "completionTokens": 48,
+        "totalTokens": 929,
+        "cachedPromptTokens": 155,
+        "latencyMs": 2084
+      }
+    }
+  ],
+  "registeredCellCount": 40,
+  "terminalCellCount": 40,
+  "attemptsPerCell": 1,
+  "retry": "none",
+  "contentHash": "sha256:577261d3b79a7ba8fd50f1d257a76832978aafef9ac97f5131ec47ad75fd2845"
+}

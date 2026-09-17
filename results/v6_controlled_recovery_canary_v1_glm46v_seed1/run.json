@@ -1,0 +1,157 @@
+{
+  "runRef": {
+    "id": "swarmalpha.experiment.v6.controlled-recovery-canary",
+    "version": "1.0.0"
+  },
+  "runId": "controlled-recovery-canary-v1-glm46v-seed1",
+  "planHash": "sha256:5e711d77bd8d8df1edef77a9d755eeed0194d36c86a32ffdab02e3f3f54c5dca",
+  "sourceRunHash": "sha256:e0a14aa6d612f0581fdd0dfcf17f7a5e538cce67a4ac1a214743ad044996dfba",
+  "terminals": [
+    {
+      "sequence": 1,
+      "agentId": "agent_1",
+      "request": {
+        "requestId": "recovery-canary-v1:controlled-recovery-canary-v1-glm46v-seed1:new-observation:agent_1",
+        "systemPrompt": "You are one participant in a controlled group diagnosis. Use only supplied observations and reports; do not invent numerical scores. Peer reports may communicate second-hand observations. Evaluate their content and source, but do not assume the majority is correct. Return one JSON object with required fields choiceId and rationale. Keep rationale to at most two sentences and 80 words. Additional fields are discouraged.",
+        "userPrompt": "TASK_PUBLIC_CONTEXT_JSON: \"A production line stopped after a combined vibration and temperature alarm. Determine the most likely primary fault.\"\n\nOPTIONS_JSON: [{\"optionId\":\"opt_1\",\"label\":\"Bearing wear\"},{\"optionId\":\"opt_2\",\"label\":\"Coolant-flow blockage\"},{\"optionId\":\"opt_3\",\"label\":\"Sensor calibration drift\"}]\n\nSHARED_OBSERVATIONS_JSON: [{\"evidenceId\":\"task:controlled:industrial-cooling:v1:evidence:shared\",\"sourceId\":\"task:controlled:industrial-cooling:v1:source:shared\",\"lineageId\":\"task:controlled:industrial-cooling:v1:lineage:shared\",\"statement\":\"The broad vibration alarm is elevated.\"},{\"evidenceId\":\"task:controlled:industrial-cooling:v1:evidence:independent-flow-meter-release\",\"sourceId\":\"task:controlled:industrial-cooling:v1:source:independent-flow-meter-release\",\"lineageId\":\"task:controlled:industrial-cooling:v1:lineage:independent-flow-meter-release\",\"statement\":\"An independent flow-meter test reports severe coolant restriction.\"}]\n\nYOUR_PRIVATE_OBSERVATIONS_JSON: [{\"evidenceId\":\"task:controlled:industrial-cooling:v1:evidence:private_1\",\"sourceId\":\"task:controlled:industrial-cooling:v1:source:private_1\",\"lineageId\":\"task:controlled:industrial-cooling:v1:lineage:private_1\",\"statement\":\"A rotational harmonic is visible in the local acoustic trace.\"}]\n\nROUND: 1\n\nARM: ISOLATED\n\nYOUR_PREVIOUS_RESPONSE_JSON: {\"choiceId\":\"opt_1\",\"rationale\":\"The elevated broad vibration alarm and visible rotational harmonic in the acoustic trace indicate mechanical imbalance or wear, most consistent with bearing wear.\"}\n\nPEER_PREVIOUS_REPORTS:\n(none: isolated condition)\n\nReturn JSON now. choiceId must be one of opt_1 | opt_2 | opt_3.",
+        "responseFormat": "json",
+        "modelRef": {
+          "id": "zhipu:glm-4.6v",
+          "version": "1.0.0"
+        },
+        "invocationConfig": {
+          "temperature": 0,
+          "seed": 1,
+          "maxTokens": 1024,
+          "thinking": "disabled"
+        }
+      },
+      "requestHash": "sha256:3abc465dc11f2a54ac3286d4787ccb78c5077eb0931e1b95628db7cc7e54eb9a",
+      "promptHash": "sha256:fd1c63a7c402c6f9feb2a4abe70c4113e5fe8d3f5b07287f7e0ec70819c23a42",
+      "rawResponse": "{\"choiceId\":\"opt_1\",\"rationale\":\"The elevated broad vibration alarm, visible rotational harmonic in the acoustic trace, and severe coolant restriction all point to mechanical wear, with bearing wear being the most likely primary fault.\"}",
+      "responseHash": "sha256:8fd118fc8abf26d859926a3485031759d521d7a7110a9209b5c96a89e1eec5e5",
+      "parsed": {
+        "choiceId": "opt_1",
+        "rationale": "The elevated broad vibration alarm, visible rotational harmonic in the acoustic trace, and severe coolant restriction all point to mechanical wear, with bearing wear being the most likely primary fault.",
+        "extraFieldNames": []
+      },
+      "usage": {
+        "promptTokens": 545,
+        "completionTokens": 51,
+        "totalTokens": 596,
+        "cachedPromptTokens": 280,
+        "latencyMs": 4253
+      }
+    },
+    {
+      "sequence": 2,
+      "agentId": "agent_2",
+      "request": {
+        "requestId": "recovery-canary-v1:controlled-recovery-canary-v1-glm46v-seed1:new-observation:agent_2",
+        "systemPrompt": "You are one participant in a controlled group diagnosis. Use only supplied observations and reports; do not invent numerical scores. Peer reports may communicate second-hand observations. Evaluate their content and source, but do not assume the majority is correct. Return one JSON object with required fields choiceId and rationale. Keep rationale to at most two sentences and 80 words. Additional fields are discouraged.",
+        "userPrompt": "TASK_PUBLIC_CONTEXT_JSON: \"A production line stopped after a combined vibration and temperature alarm. Determine the most likely primary fault.\"\n\nOPTIONS_JSON: [{\"optionId\":\"opt_1\",\"label\":\"Bearing wear\"},{\"optionId\":\"opt_2\",\"label\":\"Coolant-flow blockage\"},{\"optionId\":\"opt_3\",\"label\":\"Sensor calibration drift\"}]\n\nSHARED_OBSERVATIONS_JSON: [{\"evidenceId\":\"task:controlled:industrial-cooling:v1:evidence:shared\",\"sourceId\":\"task:controlled:industrial-cooling:v1:source:shared\",\"lineageId\":\"task:controlled:industrial-cooling:v1:lineage:shared\",\"statement\":\"The broad vibration alarm is elevated.\"},{\"evidenceId\":\"task:controlled:industrial-cooling:v1:evidence:independent-flow-meter-release\",\"sourceId\":\"task:controlled:industrial-cooling:v1:source:independent-flow-meter-release\",\"lineageId\":\"task:controlled:industrial-cooling:v1:lineage:independent-flow-meter-release\",\"statement\":\"An independent flow-meter test reports severe coolant restriction.\"}]\n\nYOUR_PRIVATE_OBSERVATIONS_JSON: [{\"evidenceId\":\"task:controlled:industrial-cooling:v1:evidence:private_2\",\"sourceId\":\"task:controlled:industrial-cooling:v1:source:private_2\",\"lineageId\":\"task:controlled:industrial-cooling:v1:lineage:private_2\",\"statement\":\"An operator heard intermittent scraping before shutdown.\"}]\n\nROUND: 1\n\nARM: ISOLATED\n\nYOUR_PREVIOUS_RESPONSE_JSON: {\"choiceId\":\"opt_1\",\"rationale\":\"Elevated vibration and intermittent scraping suggest mechanical wear, making bearing wear the most likely primary fault.\"}\n\nPEER_PREVIOUS_REPORTS:\n(none: isolated condition)\n\nReturn JSON now. choiceId must be one of opt_1 | opt_2 | opt_3.",
+        "responseFormat": "json",
+        "modelRef": {
+          "id": "zhipu:glm-4.6v",
+          "version": "1.0.0"
+        },
+        "invocationConfig": {
+          "temperature": 0,
+          "seed": 1,
+          "maxTokens": 1024,
+          "thinking": "disabled"
+        }
+      },
+      "requestHash": "sha256:4cb92e20faa33beb67062f438165c49587b993efa49d69e78edb0db059ce1b8b",
+      "promptHash": "sha256:b3992430d9bc7d822264d992809ddf7bb0d4faa2e3502e8ff99d49df72547516",
+      "rawResponse": "{\"choiceId\":\"opt_1\",\"rationale\":\"Elevated vibration, intermittent scraping, and coolant restriction all point to mechanical wear, making bearing wear the most likely primary fault.\"}",
+      "responseHash": "sha256:c3f7aa8cd6f39d869a4d0b415899746caf251b54f5a2872381caa3cf2c09aa96",
+      "parsed": {
+        "choiceId": "opt_1",
+        "rationale": "Elevated vibration, intermittent scraping, and coolant restriction all point to mechanical wear, making bearing wear the most likely primary fault.",
+        "extraFieldNames": []
+      },
+      "usage": {
+        "promptTokens": 537,
+        "completionTokens": 43,
+        "totalTokens": 580,
+        "cachedPromptTokens": 60,
+        "latencyMs": 2020
+      }
+    },
+    {
+      "sequence": 3,
+      "agentId": "agent_3",
+      "request": {
+        "requestId": "recovery-canary-v1:controlled-recovery-canary-v1-glm46v-seed1:new-observation:agent_3",
+        "systemPrompt": "You are one participant in a controlled group diagnosis. Use only supplied observations and reports; do not invent numerical scores. Peer reports may communicate second-hand observations. Evaluate their content and source, but do not assume the majority is correct. Return one JSON object with required fields choiceId and rationale. Keep rationale to at most two sentences and 80 words. Additional fields are discouraged.",
+        "userPrompt": "TASK_PUBLIC_CONTEXT_JSON: \"A production line stopped after a combined vibration and temperature alarm. Determine the most likely primary fault.\"\n\nOPTIONS_JSON: [{\"optionId\":\"opt_1\",\"label\":\"Bearing wear\"},{\"optionId\":\"opt_2\",\"label\":\"Coolant-flow blockage\"},{\"optionId\":\"opt_3\",\"label\":\"Sensor calibration drift\"}]\n\nSHARED_OBSERVATIONS_JSON: [{\"evidenceId\":\"task:controlled:industrial-cooling:v1:evidence:shared\",\"sourceId\":\"task:controlled:industrial-cooling:v1:source:shared\",\"lineageId\":\"task:controlled:industrial-cooling:v1:lineage:shared\",\"statement\":\"The broad vibration alarm is elevated.\"},{\"evidenceId\":\"task:controlled:industrial-cooling:v1:evidence:independent-flow-meter-release\",\"sourceId\":\"task:controlled:industrial-cooling:v1:source:independent-flow-meter-release\",\"lineageId\":\"task:controlled:industrial-cooling:v1:lineage:independent-flow-meter-release\",\"statement\":\"An independent flow-meter test reports severe coolant restriction.\"}]\n\nYOUR_PRIVATE_OBSERVATIONS_JSON: [{\"evidenceId\":\"task:controlled:industrial-cooling:v1:evidence:private_3\",\"sourceId\":\"task:controlled:industrial-cooling:v1:source:private_3\",\"lineageId\":\"task:controlled:industrial-cooling:v1:lineage:private_3\",\"statement\":\"Temperature rose while rotational speed remained steady.\"}]\n\nROUND: 1\n\nARM: ISOLATED\n\nYOUR_PREVIOUS_RESPONSE_JSON: {\"choiceId\":\"opt_1\",\"rationale\":\"Elevated vibration and rising temperature with steady speed suggest mechanical friction, consistent with bearing wear. Coolant blockage or sensor drift are less likely given the vibration alarm and temperature rise.\"}\n\nPEER_PREVIOUS_REPORTS:\n(none: isolated condition)\n\nReturn JSON now. choiceId must be one of opt_1 | opt_2 | opt_3.",
+        "responseFormat": "json",
+        "modelRef": {
+          "id": "zhipu:glm-4.6v",
+          "version": "1.0.0"
+        },
+        "invocationConfig": {
+          "temperature": 0,
+          "seed": 1,
+          "maxTokens": 1024,
+          "thinking": "disabled"
+        }
+      },
+      "requestHash": "sha256:5b1d0dd2549ec2d41d3705c9ddf9437b10e81fee024fe83dbd81e43ed2052538",
+      "promptHash": "sha256:017189182ef79f43db486895f6f3f62e86228c0c2b5bed457175b451f84e3351",
+      "rawResponse": "{\"choiceId\":\"opt_1\",\"rationale\":\"Elevated vibration and rising temperature with steady speed indicate mechanical friction, consistent with bearing wear. Coolant blockage or sensor drift are less likely given the vibration alarm and temperature rise.\"}",
+      "responseHash": "sha256:d1c488f356279ad0ca4e40763ad55876e3a339ee256ae2315ee58724642021f8",
+      "parsed": {
+        "choiceId": "opt_1",
+        "rationale": "Elevated vibration and rising temperature with steady speed indicate mechanical friction, consistent with bearing wear. Coolant blockage or sensor drift are less likely given the vibration alarm and temperature rise.",
+        "extraFieldNames": []
+      },
+      "usage": {
+        "promptTokens": 554,
+        "completionTokens": 54,
+        "totalTokens": 608,
+        "cachedPromptTokens": 280,
+        "latencyMs": 1873
+      }
+    },
+    {
+      "sequence": 4,
+      "agentId": "agent_4",
+      "request": {
+        "requestId": "recovery-canary-v1:controlled-recovery-canary-v1-glm46v-seed1:new-observation:agent_4",
+        "systemPrompt": "You are one participant in a controlled group diagnosis. Use only supplied observations and reports; do not invent numerical scores. Peer reports may communicate second-hand observations. Evaluate their content and source, but do not assume the majority is correct. Return one JSON object with required fields choiceId and rationale. Keep rationale to at most two sentences and 80 words. Additional fields are discouraged.",
+        "userPrompt": "TASK_PUBLIC_CONTEXT_JSON: \"A production line stopped after a combined vibration and temperature alarm. Determine the most likely primary fault.\"\n\nOPTIONS_JSON: [{\"optionId\":\"opt_1\",\"label\":\"Bearing wear\"},{\"optionId\":\"opt_2\",\"label\":\"Coolant-flow blockage\"},{\"optionId\":\"opt_3\",\"label\":\"Sensor calibration drift\"}]\n\nSHARED_OBSERVATIONS_JSON: [{\"evidenceId\":\"task:controlled:industrial-cooling:v1:evidence:shared\",\"sourceId\":\"task:controlled:industrial-cooling:v1:source:shared\",\"lineageId\":\"task:controlled:industrial-cooling:v1:lineage:shared\",\"statement\":\"The broad vibration alarm is elevated.\"},{\"evidenceId\":\"task:controlled:industrial-cooling:v1:evidence:independent-flow-meter-release\",\"sourceId\":\"task:controlled:industrial-cooling:v1:source:independent-flow-meter-release\",\"lineageId\":\"task:controlled:industrial-cooling:v1:lineage:independent-flow-meter-release\",\"statement\":\"An independent flow-meter test reports severe coolant restriction.\"}]\n\nYOUR_PRIVATE_OBSERVATIONS_JSON: [{\"evidenceId\":\"task:controlled:industrial-cooling:v1:evidence:private_4\",\"sourceId\":\"task:controlled:industrial-cooling:v1:source:private_4\",\"lineageId\":\"task:controlled:industrial-cooling:v1:lineage:private_4\",\"statement\":\"The local calibration reference shifted slightly, and the coolant gauge also fell.\"}]\n\nROUND: 1\n\nARM: ISOLATED\n\nYOUR_PREVIOUS_RESPONSE_JSON: {\"choiceId\":\"opt_2\",\"rationale\":\"The private observation of a coolant gauge drop and calibration shift, combined with the shared vibration alarm, suggests a coolant-flow blockage as the primary fault, as it would cause both temperature and vibration issues.\"}\n\nPEER_PREVIOUS_REPORTS:\n(none: isolated condition)\n\nReturn JSON now. choiceId must be one of opt_1 | opt_2 | opt_3.",
+        "responseFormat": "json",
+        "modelRef": {
+          "id": "zhipu:glm-4.6v",
+          "version": "1.0.0"
+        },
+        "invocationConfig": {
+          "temperature": 0,
+          "seed": 1,
+          "maxTokens": 1024,
+          "thinking": "disabled"
+        }
+      },
+      "requestHash": "sha256:737c9ace5657fda7dbaa0f9233708f95ba4538098e4f6e77b504237f322d48b0",
+      "promptHash": "sha256:0a0999159420581bad03ca477424c0ce9ec721b585e54e5ce9189525240fb7c0",
+      "rawResponse": "{\"choiceId\":\"opt_2\",\"rationale\":\"The independent flow-meter test confirms severe coolant restriction, and the shared vibration alarm aligns with a blockage causing mechanical stress, making coolant-flow blockage the most likely primary fault.\"}",
+      "responseHash": "sha256:bfc36c5dfcba9a48bf307ed7e74bef09f74ff261d7eb6e2584ab6d2be986226b",
+      "parsed": {
+        "choiceId": "opt_2",
+        "rationale": "The independent flow-meter test confirms severe coolant restriction, and the shared vibration alarm aligns with a blockage causing mechanical stress, making coolant-flow blockage the most likely primary fault.",
+        "extraFieldNames": []
+      },
+      "usage": {
+        "promptTokens": 563,
+        "completionTokens": 53,
+        "totalTokens": 616,
+        "cachedPromptTokens": 280,
+        "latencyMs": 1816
+      }
+    }
+  ],
+  "providerCallCount": 4,
+  "contentHash": "sha256:d438c00ddeb47006ee5f4048efb65bafab8026b92b278c982734a3788b457b1b"
+}

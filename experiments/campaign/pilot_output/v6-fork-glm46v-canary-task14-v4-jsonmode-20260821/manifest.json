@@ -1,0 +1,82 @@
+{
+  "manifestSchemaRef": {
+    "id": "swarmalpha.experiment.v6-fork-glm46v-twoarm-manifest-v4",
+    "version": "1.0.0"
+  },
+  "experimentRef": {
+    "id": "swarmalpha.experiment.v6-fork-glm46v-twoarm-plan-v4",
+    "version": "1.0.0"
+  },
+  "plan": {
+    "planSchemaRef": {
+      "id": "swarmalpha.experiment.v6-fork-glm46v-twoarm-plan-v4",
+      "version": "1.0.0"
+    },
+    "model": "zhipu:glm-4.6v",
+    "taskIds": [
+      14
+    ],
+    "seeds": [
+      0
+    ],
+    "arms": [
+      "CONTROL",
+      "ATTACKS"
+    ],
+    "totalRuns": 1,
+    "plannedProviderCalls": 20,
+    "perCallTokenEstimate": 5875,
+    "plannedEstimateTokens": 117500,
+    "tokenStopThreshold": 5200000,
+    "totalTokenQuota": 6000000,
+    "estimateWithinStopThreshold": true,
+    "discussionMaxTokens": 768,
+    "finalMaxTokens": 256,
+    "thinking": "disabled",
+    "concurrency": 1,
+    "artifactPath": "experiments/campaign/pilot_output/v6-fork-glm46v-twoarm-v4-20260820",
+    "analysisSpec": {
+      "path": "docs/experiments/GLM46V_CROSS_MODEL_REPLICATION_ANALYSIS_FREEZE_V2.md",
+      "contentHash": "sha256:54a8d53199ecc861d4328fac37c867b5a41978b0e06bd77693920ff9d88d4e88"
+    },
+    "createdAt": "2026-08-20T00:00:00.000Z",
+    "contentHash": "sha256:9816ff89b0433d59c5dfc4500ae7d66d0968aade479f41be71b4c9dbc8231e8e"
+  },
+  "planHash": "sha256:9816ff89b0433d59c5dfc4500ae7d66d0968aade479f41be71b4c9dbc8231e8e",
+  "executionHash": "sha256:4916be997913014c97a1547237b43d8ae91675bbd162defde261c0864c613fce",
+  "ledgerHash": "sha256:cf6ea9f73e1e787f4c6fb782700106eb7692386c70f19d9c230f5676ac1326ee",
+  "taskIds": [
+    14
+  ],
+  "seeds": [
+    0
+  ],
+  "arms": [
+    "CONTROL",
+    "ATTACKS"
+  ],
+  "taskStatus": [
+    {
+      "runId": "run:fork-v1:task-14:seed-0",
+      "taskId": 14,
+      "seed": 0,
+      "status": "completed"
+    }
+  ],
+  "startedAt": "2026-08-21T03:41:32.443Z",
+  "completedAt": "2026-08-21T03:43:33.249Z",
+  "files": [
+    {
+      "runId": "run:fork-v1:task-14:seed-0",
+      "taskId": 14,
+      "seed": 0,
+      "fileName": "run_fork-v1_task-14_seed-0.eb8d4d31126b.jsonl",
+      "rowCount": 2,
+      "contentHash": "sha256:a79b914e68410aff1ce4d7b1204c80d2e259da8f191485fcc24257db162f26a4",
+      "forkInputHashV1": "sha256:f287aebf2626a75ca03a1a13839cf1d945f7283cbbefc9971d7d10ca1155b95c"
+    }
+  ],
+  "totalRuns": 1,
+  "totalRows": 2,
+  "contentHash": "sha256:a8a461770db1d930691f225ec594089a175fb4b6eb369a8ed187065fd6e9cc12"
+}

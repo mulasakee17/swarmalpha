@@ -1,0 +1,76 @@
+{
+  "manifestRef": {
+    "id": "swarmalpha.experiment.v6.controlled-wrong-state-formation.manifest",
+    "version": "1.0.0"
+  },
+  "planHash": "sha256:b1ef10c6d610c69b79d1d6c74c617b7037b6ce621bf94d2d27dbc41f72270645",
+  "taskBankHash": "sha256:4ca471081ccfd325449a69ef6b0cb059bbdca25f0c060f29c5560c33fb6a07ad",
+  "scientificRole": "engineering_development_canary_only",
+  "heldoutAuthority": "none",
+  "humanSemanticReview": "not_completed",
+  "aiSemanticReview": {
+    "reviewer": "codex-ai",
+    "status": "pass_for_development_only",
+    "reviewedClusterCount": 4,
+    "structuralLeakageFinding": "hiddenbench_skeleton_overlap_present",
+    "clusterFindings": [
+      {
+        "clusterId": "cluster:controlled:industrial-cooling",
+        "verdict": "pass_for_development_only",
+        "rationale": "Options are mutually exclusive under the frozen primary-fault stipulation; the shared alarm is plausible but non-dispositive, private cards split the initial constructed tops, and a separately obtainable flow-meter reading supports the frozen outcome."
+      },
+      {
+        "clusterId": "cluster:controlled:network-incident",
+        "verdict": "pass_for_development_only",
+        "rationale": "The incident classes are distinct under the primary-incident stipulation; traffic volume is a plausible noisy cue, while token-lineage observations and a separately governed identity audit support credential compromise."
+      },
+      {
+        "clusterId": "cluster:controlled:watershed-source",
+        "verdict": "pass_for_development_only",
+        "rationale": "The three drivers can co-occur in nature but are mutually exclusive as frozen primary drivers; the shared chlorophyll cue is plausible, and the isotope assay is a genuinely new source-attribution observation."
+      },
+      {
+        "clusterId": "cluster:controlled:shipment-delay",
+        "verdict": "pass_for_development_only",
+        "rationale": "The delay sources are distinct under the frozen primary-delay stipulation; routing evidence plausibly misleads, while document checksum and customs-portal receipt support the frozen outcome."
+      }
+    ]
+  },
+  "executionBudget": {
+    "plannedProviderCalls": 160,
+    "maximumProviderAttempts": 160,
+    "maximumCompletionTokensPerCall": 512,
+    "maximumTotalCompletionTokens": 81920,
+    "attemptsPerCell": 1,
+    "retry": "none"
+  },
+  "priceCheck": {
+    "status": "official_page_unavailable_at_freeze",
+    "currencyCostClaim": "none",
+    "comparableHistoricalUsage": {
+      "artifact": "results/v6_collective_dynamics_peer_bundle_freeze_v1_glm46v_seed1/run.json",
+      "providerCalls": 152,
+      "totalTokens": 142205
+    }
+  },
+  "stopPolicy": {
+    "invalidResponse": "halt",
+    "providerAuth": "halt",
+    "providerNetwork": "halt",
+    "providerRateLimit": "halt",
+    "providerTimeout": "halt",
+    "overwrite": "forbidden"
+  },
+  "analysis": {
+    "initialEligibility": "x0_not_wrong_supermajority_75",
+    "primaryOutcome": "same_wrong_option_supermajority_75_at_both_postfork_rounds",
+    "inferenceUnit": "task_cluster",
+    "mirrorRole": "option_identity_sensitivity_not_independent_cluster",
+    "advancementRule": "at_least_3_peer_vs_isolated_discordant_variants_and_2_peer_direction_clusters_no_mirror_conflict_multiple_wrong_positions"
+  },
+  "authorization": {
+    "source": "explicit_user_instruction_in_current_codex_task",
+    "date": "2026-08-29"
+  },
+  "contentHash": "sha256:62208b9f89cbe27195bf11862a38b2c58dd4cf3864a3a126b56ffbdce6d7042d"
+}

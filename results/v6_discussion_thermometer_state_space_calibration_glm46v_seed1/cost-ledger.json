@@ -1,0 +1,9 @@
+{
+  "providerTerminals": 64,
+  "terminalsWithUsage": 64,
+  "promptTokens": 32952,
+  "completionTokens": 5388,
+  "officialPriceSource": "https://bigmodel.cn/pricing",
+  "officialPriceCheckedAt": "2026-08-30",
+  "estimatedObservedCostCny": 0.04911600000000001
+}

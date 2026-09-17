@@ -31,7 +31,7 @@ import {
   type ProgressiveEstimatorConfig,
   type ProgressiveEstimatorInput,
   type ProgressiveEstimates,
-} from "@/lib/thermodynamics/ProgressiveEstimator";
+} from "../legacy/src/lib/thermodynamics/ProgressiveEstimator";
 import type { GovernanceEstimate } from "@/lib/epistemic/semantics";
 import type { GovernanceStudyContract } from "@/lib/experimentation";
 
@@ -86,7 +86,7 @@ vi.mock("../experiments/campaign/pipeline/hiddenbenchProtocol", async (importOri
 
 // belief 模式走 DiscussionEngine；mock 掉引擎执行（无 LLM）。
 vi.mock("../src/lib/discussion", async (importOriginal) => {
-  const actual = await importOriginal<typeof import("../src/lib/discussion")>();
+  const actual = await importOriginal<typeof import("../legacy/src/lib/discussion")>();
   return {
     ...actual,
     DiscussionEngine: hoisted.FakeDiscussionEngine,
@@ -865,7 +865,7 @@ describe("verify_replay CLI exit codes (subprocess)", () => {
     const flagArgs = flags.length > 0 ? ` ${flags.join(" ")}` : "";
     try {
       const stdout = execSync(
-        `npx --no-install tsx experiments/campaign/verify_replay.ts "${target}"${flagArgs}`,
+        `node --require ./experiments/campaign/v6/windowsTsxPreload.cjs --import tsx experiments/campaign/verify_replay.ts "${target}"${flagArgs}`,
         { cwd: ROOT, encoding: "utf8", timeout: 60000, stdio: ["ignore", "pipe", "pipe"] },
       );
       return { status: 0, stdout };

@@ -1,0 +1,1474 @@
+{
+  "artifactRef": {
+    "id": "swarmalpha.experiment.v6.collective-epistemic-dynamics.formation",
+    "version": "1.0.0"
+  },
+  "planHash": "sha256:cde31cc0f515b6faaefe31a68f232695fb8bec9eb3c1edf4dd8cbaaa436dfaeb",
+  "runId": "collective-dynamics:14:seed-1",
+  "seed": 1,
+  "modelRef": {
+    "id": "zhipu:glm-4.6v",
+    "version": "1.0.0"
+  },
+  "onlineTask": {
+    "sourceTaskId": 14,
+    "taskId": "task:hiddenbench:14",
+    "publicContext": "You are a group of colleagues tasked with deciding where to host your team's celebratory lunch. The team includes vegetarians and one person with a severe shellfish allergy, all prefer a quiet atmosphere, and no one has a car, so the restaurant should be within walking distance. You have three choices: Restaurant A, Restaurant B, and Restaurant C. All are nearby and usually considered by your group. To maximize the group's enjoyment and ensure safety, you must select the only suitable option given today's circumstances.\n\nShared information:\n1. Restaurant A is offering a new seafood combo for lunch, but also has its regular vegetarian dishes.\n2. Restaurant B just updated its menu with more vegetarian options and is known for being very quiet at midday.\n3. Restaurant C has recently renovated its dining area, and offers a mix of cuisines; while they're usually a bit noisy, they're walkable and easy to access.",
+    "claim": {
+      "id": "claim:hiddenbench:14:answer",
+      "proposition": "Select the single correct answer for HiddenBench task 14 (lunch_group_decision).",
+      "domain": "hiddenbench-categorical-decision",
+      "createdAt": "2026-08-11T00:00:00.000Z",
+      "options": [
+        "Restaurant A",
+        "Restaurant B",
+        "Restaurant C"
+      ],
+      "resolutionPolicy": {
+        "kind": "categorical",
+        "resolverId": "resolver:hiddenbench-data-3be6ca16"
+      }
+    },
+    "agents": [
+      {
+        "agentId": "agent:hiddenbench:14:1",
+        "privateInformation": "The local health department issued a warning this morning about a norovirus outbreak among cooks at Restaurant A."
+      },
+      {
+        "agentId": "agent:hiddenbench:14:2",
+        "privateInformation": "Restaurant B accidentally cross-contaminated their kitchen with shellfish last night, so today it's not safe for those with shellfish allergies."
+      },
+      {
+        "agentId": "agent:hiddenbench:14:3",
+        "privateInformation": "A private event has booked most of Restaurant C today, but the secondary dining room is still open to the public."
+      },
+      {
+        "agentId": "agent:hiddenbench:14:4",
+        "privateInformation": "There is a known power outage at Restaurant C, affecting only the main kitchen, but their cold menu (salads/sandwiches) is fully available from a prep area with emergency backup."
+      }
+    ]
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "messages": [
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:14:1",
+          "content": "Based on the health warning about norovirus at Restaurant A and the team's dietary and atmosphere needs, Restaurant B is the only suitable choice.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:14:2",
+          "content": "Based on the constraints, Restaurant B is unsafe due to cross-contamination, and Restaurant C is too noisy. Restaurant A offers vegetarian options and is walkable, making it the only suitable choice.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:14:3",
+          "content": "Based on the constraints, Restaurant B is the only suitable option. It has updated vegetarian options, is known for being quiet, and is walkable. Restaurant A has a seafood combo which risks cross-contamination for the shellfish allergy, and Restaurant C is partially booked and usually noisy despite being walkable.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:14:4",
+          "content": "Based on the constraints, Restaurant B is the only suitable option. It has updated vegetarian options and is known for being quiet, meeting all group preferences and safety requirements.",
+          "source": "agent"
+        }
+      ],
+      "reports": [
+        {
+          "id": "belief:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:1",
+          "claimId": "claim:hiddenbench:14:answer",
+          "agentId": "agent:hiddenbench:14:1",
+          "round": 1,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Restaurant A": 0,
+              "Restaurant B": 1,
+              "Restaurant C": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:1:1",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:1:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:1:3",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:01:01.000Z"
+        },
+        {
+          "id": "belief:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:2",
+          "claimId": "claim:hiddenbench:14:answer",
+          "agentId": "agent:hiddenbench:14:2",
+          "round": 1,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Restaurant A": 1,
+              "Restaurant B": 0,
+              "Restaurant C": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:2:1",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:2:2",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:2:3",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:01:02.000Z"
+        },
+        {
+          "id": "belief:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:3",
+          "claimId": "claim:hiddenbench:14:answer",
+          "agentId": "agent:hiddenbench:14:3",
+          "round": 1,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Restaurant A": 0,
+              "Restaurant B": 1,
+              "Restaurant C": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:3:1",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:3:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:3:3",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:3:4",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:01:03.000Z"
+        },
+        {
+          "id": "belief:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:4",
+          "claimId": "claim:hiddenbench:14:answer",
+          "agentId": "agent:hiddenbench:14:4",
+          "round": 1,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Restaurant A": 0,
+              "Restaurant B": 1,
+              "Restaurant C": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:4:1",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:4:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:4:3",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:01:04.000Z"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:1:1",
+          "content": "The local health department issued a warning this morning about a norovirus outbreak among cooks at Restaurant A.",
+          "createdAt": "2026-08-24T00:01:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:1",
+            "contentHash": "sha256:318ea1ee8c0a2a9920335dd043b61695766fbca3675729a8333e9979ef370b46"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:1:2",
+          "content": "Restaurant B just updated its menu with more vegetarian options and is known for being very quiet at midday.",
+          "createdAt": "2026-08-24T00:01:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:1",
+            "contentHash": "sha256:5dfd16896f2b714099e22571558ee507214312cbe381be233020d2c0f2b0b176"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:1:3",
+          "content": "The team includes vegetarians and one person with a severe shellfish allergy, all prefer a quiet atmosphere, and no one has a car, so the restaurant should be within walking distance.",
+          "createdAt": "2026-08-24T00:01:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:1",
+            "contentHash": "sha256:a5eafccc3f15397a77ce5d70c7d5d7236deac467ea5ca40c94e326e8ac472a37"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:2:1",
+          "content": "Restaurant B accidentally cross-contaminated their kitchen with shellfish last night, so today it's not safe for those with shellfish allergies.",
+          "createdAt": "2026-08-24T00:01:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:2",
+            "contentHash": "sha256:b6e64b24f32fca89593bfec17f4aef00481872ae86d2114d0bffe0fb6aca1d25"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:2:2",
+          "content": "Restaurant C has recently renovated its dining area, and offers a mix of cuisines; while they're usually a bit noisy, they're walkable and easy to access.",
+          "createdAt": "2026-08-24T00:01:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:2",
+            "contentHash": "sha256:a27990b08c164988e3e95adaa26a46c1c4d1a6afcf58cea954f3f92feaeba4ec"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:2:3",
+          "content": "Restaurant A is offering a new seafood combo for lunch, but also has its regular vegetarian dishes.",
+          "createdAt": "2026-08-24T00:01:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:2",
+            "contentHash": "sha256:13bd936f4f3f9473483f363b19945b1005b3cd30bfae6dac5cc95426589b43d3"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:3:1",
+          "content": "Restaurant A is offering a new seafood combo for lunch, but also has its regular vegetarian dishes.",
+          "createdAt": "2026-08-24T00:01:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:3",
+            "contentHash": "sha256:13bd936f4f3f9473483f363b19945b1005b3cd30bfae6dac5cc95426589b43d3"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:3:2",
+          "content": "Restaurant B just updated its menu with more vegetarian options and is known for being very quiet at midday.",
+          "createdAt": "2026-08-24T00:01:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:3",
+            "contentHash": "sha256:5dfd16896f2b714099e22571558ee507214312cbe381be233020d2c0f2b0b176"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:3:3",
+          "content": "Restaurant C has recently renovated its dining area, and offers a mix of cuisines; while they're usually a bit noisy, they're walkable and easy to access.",
+          "createdAt": "2026-08-24T00:01:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:3",
+            "contentHash": "sha256:a27990b08c164988e3e95adaa26a46c1c4d1a6afcf58cea954f3f92feaeba4ec"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:3:4",
+          "content": "A private event has booked most of Restaurant C today, but the secondary dining room is still open to the public.",
+          "createdAt": "2026-08-24T00:01:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:3",
+            "contentHash": "sha256:86359c3da13387688d4fa61f2fd405f983d7678271287f33ac8e53209d0f57ec"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:4:1",
+          "content": "Restaurant A offers a new seafood combo, which poses a risk for the person with a shellfish allergy, making it unsuitable.",
+          "createdAt": "2026-08-24T00:01:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:4",
+            "contentHash": "sha256:7805156fff810cdf3caeef00503756899af514bde696d831d69f16d22e7c6689"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:4:2",
+          "content": "Restaurant B has updated its menu with more vegetarian options and is known for being very quiet at midday, satisfying dietary needs and atmosphere preferences.",
+          "createdAt": "2026-08-24T00:01:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:4",
+            "contentHash": "sha256:a889c9cd8db4019ae543b36bb1ab807f8f6e44548c152695015f57ee28ba61a7"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:4:3",
+          "content": "Restaurant C has a power outage affecting the main kitchen, limiting hot food options, and is usually noisy, failing to meet atmosphere and menu requirements.",
+          "createdAt": "2026-08-24T00:01:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:4",
+            "contentHash": "sha256:f1b8e71dd544c1aba51638df19ee32ff720f505c91e5f9ba18c9aa8a5dafafde"
+          }
+        }
+      ],
+      "state": {
+        "activeAgentIds": [
+          "agent:hiddenbench:14:1",
+          "agent:hiddenbench:14:2",
+          "agent:hiddenbench:14:3",
+          "agent:hiddenbench:14:4"
+        ],
+        "artifactSchemaRef": {
+          "id": "swarmalpha.collective-epistemic-state",
+          "version": "1.0.0"
+        },
+        "asOfRound": 1,
+        "beliefKind": "categorical",
+        "betweenAgentDisagreement": 0.5118595071429148,
+        "claimId": "claim:hiddenbench:14:answer",
+        "claimOptionCount": 3,
+        "contentHash": "sha256:fb948d7d597cbb1153689601bfd76e7090f24618b4b86f37309e8e6fe428518f",
+        "declaredLineageDiversity": {
+          "completeness": "missing",
+          "distinctDeclaredLineageCount": 0,
+          "effectiveLineageCount": null,
+          "missingLineageReportIds": [
+            "belief:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:1",
+            "belief:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:2",
+            "belief:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:3",
+            "belief:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:4"
+          ],
+          "normalizedLineageEntropy": null,
+          "reportsMissingDeclaredLineage": 4,
+          "reportsWithDeclaredLineage": 0
+        },
+        "expectedAgentIds": [
+          "agent:hiddenbench:14:1",
+          "agent:hiddenbench:14:2",
+          "agent:hiddenbench:14:3",
+          "agent:hiddenbench:14:4"
+        ],
+        "exposureConditionedRevision": {
+          "meanBeliefDistance": null,
+          "revisionCount": 0,
+          "targetAgentCount": 0,
+          "totalBeliefDistance": 0
+        },
+        "inferenceStatus": "descriptive_macrostate_only",
+        "latestReportIds": [
+          "belief:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:1",
+          "belief:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:2",
+          "belief:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:3",
+          "belief:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:4"
+        ],
+        "missingExpectedAgentIds": [],
+        "observedResponseConcentration": {
+          "herfindahlIndex": null,
+          "normalizedHerfindahl": null,
+          "responseMassBySourceAgent": {},
+          "sourceAgentCount": 0,
+          "status": "unavailable",
+          "unavailableReason": "no_exposure_conditioned_response_mass"
+        },
+        "pooledBelief": {
+          "kind": "categorical",
+          "probabilities": {
+            "Restaurant A": 0.25,
+            "Restaurant B": 0.75,
+            "Restaurant C": 0
+          }
+        },
+        "pooledCertainty": 0.75,
+        "pooledPredictedOutcomes": [
+          "Restaurant B"
+        ],
+        "pooledUncertainty": 0.5118595071429148,
+        "populationBasis": "declared_roster",
+        "sourceFingerprints": {
+          "claim": "sha256:3dea743b85640859b1a39dd8989e688ba5168e4cf4d265e938cf8caebbb3a0be",
+          "evidence": "sha256:3410ddfb292f4e95e3c260aa5f94108fd0a8b778143127e036b87b5263d30fad",
+          "exposures": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "reports": "sha256:337e74ae5c3decac949277f331351f393ce0e5e34e4a8bd0c8f3344e68b5847e"
+        },
+        "withinAgentUncertainty": 0
+      },
+      "updateActivityFromPrior": null
+    },
+    {
+      "round": 2,
+      "messages": [
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:14:1",
+          "content": "Based on the health warning about norovirus at Restaurant A, the severe shellfish allergy, and the need for a quiet atmosphere, Restaurant B is the only suitable choice. It has updated vegetarian options, is known for being quiet, and is walkable, meeting all group preferences and safety requirements.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:14:2",
+          "content": "Restaurant B is unsafe due to cross-contamination, and Restaurant C is too noisy. Restaurant A offers vegetarian options and is walkable, making it the only suitable choice.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:14:3",
+          "content": "Based on the constraints, Restaurant B is the only suitable option. It has updated vegetarian options, is known for being quiet, and is walkable. Restaurant A has a seafood combo which risks cross-contamination for the shellfish allergy, and Restaurant C is partially booked and usually noisy despite being walkable.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:14:4",
+          "content": "Based on the constraints, Restaurant B is the only suitable option. It has updated vegetarian options, is known for being quiet, and is walkable, meeting all group preferences and safety requirements. Restaurant A has a seafood combo which risks cross-contamination for the shellfish allergy, and Restaurant C is noisy despite being walkable.",
+          "source": "agent"
+        }
+      ],
+      "reports": [
+        {
+          "id": "belief:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:1",
+          "claimId": "claim:hiddenbench:14:answer",
+          "agentId": "agent:hiddenbench:14:1",
+          "round": 2,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Restaurant A": 0,
+              "Restaurant B": 1,
+              "Restaurant C": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:1:1",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:1:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:1:3",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:02:01.000Z",
+          "supersedesReportId": "belief:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:1"
+        },
+        {
+          "id": "belief:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:2",
+          "claimId": "claim:hiddenbench:14:answer",
+          "agentId": "agent:hiddenbench:14:2",
+          "round": 2,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Restaurant A": 1,
+              "Restaurant B": 0,
+              "Restaurant C": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:2:1",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:2:2",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:2:3",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:02:02.000Z",
+          "supersedesReportId": "belief:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:2"
+        },
+        {
+          "id": "belief:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:3",
+          "claimId": "claim:hiddenbench:14:answer",
+          "agentId": "agent:hiddenbench:14:3",
+          "round": 2,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Restaurant A": 0,
+              "Restaurant B": 1,
+              "Restaurant C": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:3:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:3:2",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:3:3",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:3:4",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:02:03.000Z",
+          "supersedesReportId": "belief:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:3"
+        },
+        {
+          "id": "belief:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:4",
+          "claimId": "claim:hiddenbench:14:answer",
+          "agentId": "agent:hiddenbench:14:4",
+          "round": 2,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Restaurant A": 0,
+              "Restaurant B": 1,
+              "Restaurant C": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:4:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:4:2",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:4:3",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:02:04.000Z",
+          "supersedesReportId": "belief:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:4"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:1:1",
+          "content": "The local health department issued a warning this morning about a norovirus outbreak among cooks at Restaurant A.",
+          "createdAt": "2026-08-24T00:02:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:1",
+            "contentHash": "sha256:318ea1ee8c0a2a9920335dd043b61695766fbca3675729a8333e9979ef370b46"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:1:2",
+          "content": "Restaurant B just updated its menu with more vegetarian options and is known for being very quiet at midday.",
+          "createdAt": "2026-08-24T00:02:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:1",
+            "contentHash": "sha256:5dfd16896f2b714099e22571558ee507214312cbe381be233020d2c0f2b0b176"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:1:3",
+          "content": "The team includes vegetarians and one person with a severe shellfish allergy, all prefer a quiet atmosphere, and no one has a car, so the restaurant should be within walking distance.",
+          "createdAt": "2026-08-24T00:02:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:1",
+            "contentHash": "sha256:a5eafccc3f15397a77ce5d70c7d5d7236deac467ea5ca40c94e326e8ac472a37"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:2:1",
+          "content": "Restaurant B accidentally cross-contaminated their kitchen with shellfish last night, so today it's not safe for those with shellfish allergies.",
+          "createdAt": "2026-08-24T00:02:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:2",
+            "contentHash": "sha256:b6e64b24f32fca89593bfec17f4aef00481872ae86d2114d0bffe0fb6aca1d25"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:2:2",
+          "content": "Restaurant C has recently renovated its dining area, and offers a mix of cuisines; while they're usually a bit noisy, they're walkable and easy to access.",
+          "createdAt": "2026-08-24T00:02:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:2",
+            "contentHash": "sha256:a27990b08c164988e3e95adaa26a46c1c4d1a6afcf58cea954f3f92feaeba4ec"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:2:3",
+          "content": "Restaurant A is offering a new seafood combo for lunch, but also has its regular vegetarian dishes.",
+          "createdAt": "2026-08-24T00:02:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:2",
+            "contentHash": "sha256:13bd936f4f3f9473483f363b19945b1005b3cd30bfae6dac5cc95426589b43d3"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:3:1",
+          "content": "Restaurant B just updated its menu with more vegetarian options and is known for being very quiet at midday.",
+          "createdAt": "2026-08-24T00:02:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:3",
+            "contentHash": "sha256:5dfd16896f2b714099e22571558ee507214312cbe381be233020d2c0f2b0b176"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:3:2",
+          "content": "Restaurant A is offering a new seafood combo for lunch, but also has its regular vegetarian dishes.",
+          "createdAt": "2026-08-24T00:02:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:3",
+            "contentHash": "sha256:13bd936f4f3f9473483f363b19945b1005b3cd30bfae6dac5cc95426589b43d3"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:3:3",
+          "content": "A private event has booked most of Restaurant C today, but the secondary dining room is still open to the public.",
+          "createdAt": "2026-08-24T00:02:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:3",
+            "contentHash": "sha256:86359c3da13387688d4fa61f2fd405f983d7678271287f33ac8e53209d0f57ec"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:3:4",
+          "content": "Restaurant C has recently renovated its dining area, and offers a mix of cuisines; while they're usually a bit noisy, they're walkable and easy to access.",
+          "createdAt": "2026-08-24T00:02:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:3",
+            "contentHash": "sha256:a27990b08c164988e3e95adaa26a46c1c4d1a6afcf58cea954f3f92feaeba4ec"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:4:1",
+          "content": "Restaurant B just updated its menu with more vegetarian options and is known for being very quiet at midday.",
+          "createdAt": "2026-08-24T00:02:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:4",
+            "contentHash": "sha256:5dfd16896f2b714099e22571558ee507214312cbe381be233020d2c0f2b0b176"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:4:2",
+          "content": "Restaurant A is offering a new seafood combo for lunch, but also has its regular vegetarian dishes.",
+          "createdAt": "2026-08-24T00:02:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:4",
+            "contentHash": "sha256:13bd936f4f3f9473483f363b19945b1005b3cd30bfae6dac5cc95426589b43d3"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:4:3",
+          "content": "Restaurant C has recently renovated its dining area, and offers a mix of cuisines; while they're usually a bit noisy, they're walkable and easy to access.",
+          "createdAt": "2026-08-24T00:02:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:4",
+            "contentHash": "sha256:a27990b08c164988e3e95adaa26a46c1c4d1a6afcf58cea954f3f92feaeba4ec"
+          }
+        }
+      ],
+      "state": {
+        "activeAgentIds": [
+          "agent:hiddenbench:14:1",
+          "agent:hiddenbench:14:2",
+          "agent:hiddenbench:14:3",
+          "agent:hiddenbench:14:4"
+        ],
+        "artifactSchemaRef": {
+          "id": "swarmalpha.collective-epistemic-state",
+          "version": "1.0.0"
+        },
+        "asOfRound": 2,
+        "beliefKind": "categorical",
+        "betweenAgentDisagreement": 0.5118595071429148,
+        "claimId": "claim:hiddenbench:14:answer",
+        "claimOptionCount": 3,
+        "contentHash": "sha256:fe4ab2be933d671d0d3130f1b26a3b0efc3e339d9da49a4840b1bceaff5ff65f",
+        "declaredLineageDiversity": {
+          "completeness": "missing",
+          "distinctDeclaredLineageCount": 0,
+          "effectiveLineageCount": null,
+          "missingLineageReportIds": [
+            "belief:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:1",
+            "belief:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:2",
+            "belief:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:3",
+            "belief:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:4"
+          ],
+          "normalizedLineageEntropy": null,
+          "reportsMissingDeclaredLineage": 4,
+          "reportsWithDeclaredLineage": 0
+        },
+        "expectedAgentIds": [
+          "agent:hiddenbench:14:1",
+          "agent:hiddenbench:14:2",
+          "agent:hiddenbench:14:3",
+          "agent:hiddenbench:14:4"
+        ],
+        "exposureConditionedRevision": {
+          "meanBeliefDistance": null,
+          "revisionCount": 0,
+          "targetAgentCount": 0,
+          "totalBeliefDistance": 0
+        },
+        "inferenceStatus": "descriptive_macrostate_only",
+        "latestReportIds": [
+          "belief:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:1",
+          "belief:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:2",
+          "belief:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:3",
+          "belief:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:4"
+        ],
+        "missingExpectedAgentIds": [],
+        "observedResponseConcentration": {
+          "herfindahlIndex": null,
+          "normalizedHerfindahl": null,
+          "responseMassBySourceAgent": {},
+          "sourceAgentCount": 0,
+          "status": "unavailable",
+          "unavailableReason": "no_exposure_conditioned_response_mass"
+        },
+        "pooledBelief": {
+          "kind": "categorical",
+          "probabilities": {
+            "Restaurant A": 0.25,
+            "Restaurant B": 0.75,
+            "Restaurant C": 0
+          }
+        },
+        "pooledCertainty": 0.75,
+        "pooledPredictedOutcomes": [
+          "Restaurant B"
+        ],
+        "pooledUncertainty": 0.5118595071429148,
+        "populationBasis": "declared_roster",
+        "sourceFingerprints": {
+          "claim": "sha256:3dea743b85640859b1a39dd8989e688ba5168e4cf4d265e938cf8caebbb3a0be",
+          "evidence": "sha256:290c5e9e8b0d1ecf19fcec56891198792062fbb7b669dbf008c1ae8ecafecd3c",
+          "exposures": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "reports": "sha256:f0b0c6639e380aa74f4a4141491e7ac2695c5fd7ff008a8e35737f176d81c2dc"
+        },
+        "withinAgentUncertainty": 0
+      },
+      "updateActivityFromPrior": 0
+    },
+    {
+      "round": 3,
+      "messages": [
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:14:1",
+          "content": "Based on the health warning about norovirus at Restaurant A, the severe shellfish allergy, and the need for a quiet atmosphere, Restaurant B is the only suitable choice. It has updated vegetarian options, is known for being quiet, and is walkable, meeting all group preferences and safety requirements.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:14:2",
+          "content": "Based on the constraints, Restaurant A is the only suitable option. It offers vegetarian dishes (meeting dietary needs), is walkable (no car required), and while it has a seafood combo, it does not have the confirmed cross-contamination issue that makes Restaurant B unsafe. Restaurant C is too noisy, violating the quiet atmosphere preference.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:14:3",
+          "content": "Based on the constraints, Restaurant B is the only suitable option. It has updated vegetarian options, is known for being quiet, and is walkable, meeting all group preferences and safety requirements. Restaurant A has a seafood combo which risks cross-contamination for the shellfish allergy, and Restaurant C is noisy despite being walkable.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:14:4",
+          "content": "After analyzing the constraints and discussion, Restaurant B is the only suitable choice. It meets all requirements: updated vegetarian options, quiet atmosphere, and walkability, while avoiding risks like cross-contamination (Restaurant A) or noise (Restaurant C).",
+          "source": "agent"
+        }
+      ],
+      "reports": [
+        {
+          "id": "belief:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:1",
+          "claimId": "claim:hiddenbench:14:answer",
+          "agentId": "agent:hiddenbench:14:1",
+          "round": 3,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Restaurant A": 0,
+              "Restaurant B": 1,
+              "Restaurant C": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:1:1",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:1:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:1:3",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:03:01.000Z",
+          "supersedesReportId": "belief:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:1"
+        },
+        {
+          "id": "belief:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:2",
+          "claimId": "claim:hiddenbench:14:answer",
+          "agentId": "agent:hiddenbench:14:2",
+          "round": 3,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Restaurant A": 1,
+              "Restaurant B": 0,
+              "Restaurant C": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:2:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:2:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:2:3",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:2:4",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "supersedesReportId": "belief:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:2"
+        },
+        {
+          "id": "belief:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:3",
+          "claimId": "claim:hiddenbench:14:answer",
+          "agentId": "agent:hiddenbench:14:3",
+          "round": 3,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Restaurant A": 0,
+              "Restaurant B": 1,
+              "Restaurant C": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:3:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:3:2",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:3:3",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:3:4",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "supersedesReportId": "belief:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:3"
+        },
+        {
+          "id": "belief:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:4",
+          "claimId": "claim:hiddenbench:14:answer",
+          "agentId": "agent:hiddenbench:14:4",
+          "round": 3,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Restaurant A": 0,
+              "Restaurant B": 1,
+              "Restaurant C": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:4:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:4:2",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:4:3",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:03:04.000Z",
+          "supersedesReportId": "belief:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:4"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:1:1",
+          "content": "The local health department issued a warning this morning about a norovirus outbreak among cooks at Restaurant A.",
+          "createdAt": "2026-08-24T00:03:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:1",
+            "contentHash": "sha256:318ea1ee8c0a2a9920335dd043b61695766fbca3675729a8333e9979ef370b46"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:1:2",
+          "content": "Restaurant B just updated its menu with more vegetarian options and is known for being very quiet at midday.",
+          "createdAt": "2026-08-24T00:03:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:1",
+            "contentHash": "sha256:5dfd16896f2b714099e22571558ee507214312cbe381be233020d2c0f2b0b176"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:1:3",
+          "content": "The team includes vegetarians and one person with a severe shellfish allergy, all prefer a quiet atmosphere, and no one has a car, so the restaurant should be within walking distance.",
+          "createdAt": "2026-08-24T00:03:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:1",
+            "contentHash": "sha256:a5eafccc3f15397a77ce5d70c7d5d7236deac467ea5ca40c94e326e8ac472a37"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:2:1",
+          "content": "Restaurant B is unsafe due to cross-contamination, and Restaurant C is too noisy. Restaurant A offers vegetarian options and is walkable, making it the only suitable choice.",
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:2",
+            "contentHash": "sha256:78d6d8e3d8cc7f044f80292764447e498eb524fdd6e93458b0250615e251a548"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:2:2",
+          "content": "Restaurant A is offering a new seafood combo for lunch, but also has its regular vegetarian dishes.",
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:2",
+            "contentHash": "sha256:13bd936f4f3f9473483f363b19945b1005b3cd30bfae6dac5cc95426589b43d3"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:2:3",
+          "content": "Restaurant B accidentally cross-contaminated their kitchen with shellfish last night, so today it's not safe for those with shellfish allergies.",
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:2",
+            "contentHash": "sha256:b6e64b24f32fca89593bfec17f4aef00481872ae86d2114d0bffe0fb6aca1d25"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:2:4",
+          "content": "Restaurant C has recently renovated its dining area, and offers a mix of cuisines; while they're usually a bit noisy, they're walkable and easy to access.",
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:2",
+            "contentHash": "sha256:a27990b08c164988e3e95adaa26a46c1c4d1a6afcf58cea954f3f92feaeba4ec"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:3:1",
+          "content": "Restaurant B just updated its menu with more vegetarian options and is known for being very quiet at midday.",
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:3",
+            "contentHash": "sha256:5dfd16896f2b714099e22571558ee507214312cbe381be233020d2c0f2b0b176"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:3:2",
+          "content": "Restaurant A is offering a new seafood combo for lunch, but also has its regular vegetarian dishes.",
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:3",
+            "contentHash": "sha256:13bd936f4f3f9473483f363b19945b1005b3cd30bfae6dac5cc95426589b43d3"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:3:3",
+          "content": "Restaurant C has recently renovated its dining area, and offers a mix of cuisines; while they're usually a bit noisy, they're walkable and easy to access.",
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:3",
+            "contentHash": "sha256:a27990b08c164988e3e95adaa26a46c1c4d1a6afcf58cea954f3f92feaeba4ec"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:3:4",
+          "content": "The team includes vegetarians and one person with a severe shellfish allergy, all prefer a quiet atmosphere, and no one has a car, so the restaurant should be within walking distance.",
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:3",
+            "contentHash": "sha256:a5eafccc3f15397a77ce5d70c7d5d7236deac467ea5ca40c94e326e8ac472a37"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:4:1",
+          "content": "Restaurant B has updated vegetarian options, is known for being quiet at midday, and is walkable, meeting all group preferences and safety requirements.",
+          "createdAt": "2026-08-24T00:03:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:4",
+            "contentHash": "sha256:61341854ac9310653332c088f6032c399ecc1cb4776321d8e89011c8b1ee1959"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:4:2",
+          "content": "Restaurant A has a seafood combo which risks cross-contamination for the shellfish allergy.",
+          "createdAt": "2026-08-24T00:03:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:4",
+            "contentHash": "sha256:1df9fc1a7b305d9ee238059d90c12433ee3395a5b732bcb1fd0490d6d8fed137"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:4:3",
+          "content": "Restaurant C is usually noisy, which conflicts with the group's preference for a quiet atmosphere.",
+          "createdAt": "2026-08-24T00:03:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:14:4",
+            "contentHash": "sha256:3570c1281a7022d2b4a018e9131c2a659c1d90e7d9e3b6e63a5aa73e92b75249"
+          }
+        }
+      ],
+      "state": {
+        "activeAgentIds": [
+          "agent:hiddenbench:14:1",
+          "agent:hiddenbench:14:2",
+          "agent:hiddenbench:14:3",
+          "agent:hiddenbench:14:4"
+        ],
+        "artifactSchemaRef": {
+          "id": "swarmalpha.collective-epistemic-state",
+          "version": "1.0.0"
+        },
+        "asOfRound": 3,
+        "beliefKind": "categorical",
+        "betweenAgentDisagreement": 0.5118595071429148,
+        "claimId": "claim:hiddenbench:14:answer",
+        "claimOptionCount": 3,
+        "contentHash": "sha256:46403f8e9de41edebc99d6d379e52a1256b54061a29f642e27a0fdefef8f6ef5",
+        "declaredLineageDiversity": {
+          "completeness": "missing",
+          "distinctDeclaredLineageCount": 0,
+          "effectiveLineageCount": null,
+          "missingLineageReportIds": [
+            "belief:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:1",
+            "belief:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:2",
+            "belief:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:3",
+            "belief:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:4"
+          ],
+          "normalizedLineageEntropy": null,
+          "reportsMissingDeclaredLineage": 4,
+          "reportsWithDeclaredLineage": 0
+        },
+        "expectedAgentIds": [
+          "agent:hiddenbench:14:1",
+          "agent:hiddenbench:14:2",
+          "agent:hiddenbench:14:3",
+          "agent:hiddenbench:14:4"
+        ],
+        "exposureConditionedRevision": {
+          "meanBeliefDistance": null,
+          "revisionCount": 0,
+          "targetAgentCount": 0,
+          "totalBeliefDistance": 0
+        },
+        "inferenceStatus": "descriptive_macrostate_only",
+        "latestReportIds": [
+          "belief:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:1",
+          "belief:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:2",
+          "belief:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:3",
+          "belief:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:4"
+        ],
+        "missingExpectedAgentIds": [],
+        "observedResponseConcentration": {
+          "herfindahlIndex": null,
+          "normalizedHerfindahl": null,
+          "responseMassBySourceAgent": {},
+          "sourceAgentCount": 0,
+          "status": "unavailable",
+          "unavailableReason": "no_exposure_conditioned_response_mass"
+        },
+        "pooledBelief": {
+          "kind": "categorical",
+          "probabilities": {
+            "Restaurant A": 0.25,
+            "Restaurant B": 0.75,
+            "Restaurant C": 0
+          }
+        },
+        "pooledCertainty": 0.75,
+        "pooledPredictedOutcomes": [
+          "Restaurant B"
+        ],
+        "pooledUncertainty": 0.5118595071429148,
+        "populationBasis": "declared_roster",
+        "sourceFingerprints": {
+          "claim": "sha256:3dea743b85640859b1a39dd8989e688ba5168e4cf4d265e938cf8caebbb3a0be",
+          "evidence": "sha256:eeb2f6e66f9a4b6de887d6544784e09a30178ae1841313eba5a852d3ce66ec52",
+          "exposures": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "reports": "sha256:e0e37d0b8900d6b20734f099630881cc34f1601797efce460bef65f379a21ce6"
+        },
+        "withinAgentUncertainty": 0
+      },
+      "updateActivityFromPrior": 0
+    }
+  ],
+  "providerCalls": [
+    {
+      "requestId": "discussion:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:1",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are a group of colleagues tasked with deciding where to host your team's celebratory lunch. The team includes vegetarians and one person with a severe shellfish allergy, all prefer a quiet atmosphere, and no one has a car, so the restaurant should be within walking distance. You have three choices: Restaurant A, Restaurant B, and Restaurant C. All are nearby and usually considered by your group. To maximize the group's enjoyment and ensure safety, you must select the only suitable option given today's circumstances.\n\nShared information:\n1. Restaurant A is offering a new seafood combo for lunch, but also has its regular vegetarian dishes.\n2. Restaurant B just updated its menu with more vegetarian options and is known for being very quiet at midday.\n3. Restaurant C has recently renovated its dining area, and offers a mix of cuisines; while they're usually a bit noisy, they're walkable and easy to access.\n\nYour private information:\nThe local health department issued a warning this morning about a norovirus outbreak among cooks at Restaurant A.\n\nVisible discussion transcript:\n(none)\n\nClaim claim:hiddenbench:14:answer: Select the single correct answer for HiddenBench task 14 (lunch_group_decision).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Restaurant A | Restaurant B | Restaurant C. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Restaurant A\": 0.5, \"Restaurant B\": 0.2500, \"Restaurant C\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:7fe83c1d02ce01c8703f34093c94f3bac075d44fc98b1337cc779ed1e4b9bb12",
+      "responseHash": "sha256:b1c6e34416a68a95ad58a0ad2d7991a1dc3564058112999bb9cbdaf231c9c7e8",
+      "rawResponse": "{\"message\":\"Based on the health warning about norovirus at Restaurant A and the team's dietary and atmosphere needs, Restaurant B is the only suitable choice.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Restaurant A\":0.0,\"Restaurant B\":1.0,\"Restaurant C\":0.0}},\"evidence\":[{\"content\":\"The local health department issued a warning this morning about a norovirus outbreak among cooks at Restaurant A.\",\"relation\":\"attacks\"},{\"content\":\"Restaurant B just updated its menu with more vegetarian options and is known for being very quiet at midday.\",\"relation\":\"supports\"},{\"content\":\"The team includes vegetarians and one person with a severe shellfish allergy, all prefer a quiet atmosphere, and no one has a car, so the restaurant should be within walking distance.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 512,
+        "completionTokens": 229,
+        "totalTokens": 741,
+        "latencyMs": 4803
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:2",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are a group of colleagues tasked with deciding where to host your team's celebratory lunch. The team includes vegetarians and one person with a severe shellfish allergy, all prefer a quiet atmosphere, and no one has a car, so the restaurant should be within walking distance. You have three choices: Restaurant A, Restaurant B, and Restaurant C. All are nearby and usually considered by your group. To maximize the group's enjoyment and ensure safety, you must select the only suitable option given today's circumstances.\n\nShared information:\n1. Restaurant A is offering a new seafood combo for lunch, but also has its regular vegetarian dishes.\n2. Restaurant B just updated its menu with more vegetarian options and is known for being very quiet at midday.\n3. Restaurant C has recently renovated its dining area, and offers a mix of cuisines; while they're usually a bit noisy, they're walkable and easy to access.\n\nYour private information:\nRestaurant B accidentally cross-contaminated their kitchen with shellfish last night, so today it's not safe for those with shellfish allergies.\n\nVisible discussion transcript:\n(none)\n\nClaim claim:hiddenbench:14:answer: Select the single correct answer for HiddenBench task 14 (lunch_group_decision).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Restaurant A | Restaurant B | Restaurant C. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Restaurant A\": 0.5, \"Restaurant B\": 0.2500, \"Restaurant C\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:b2c0b238ac0afd8cfd2831c96bd2ff67ec8562062ba1b7bb0060fd625d5c1632",
+      "responseHash": "sha256:cdc6a84c38f0b813bfd9837d40081f8e6d0ae6d0ac554d89f205154d0956f7ba",
+      "rawResponse": "{\"message\":\"Based on the constraints, Restaurant B is unsafe due to cross-contamination, and Restaurant C is too noisy. Restaurant A offers vegetarian options and is walkable, making it the only suitable choice.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Restaurant A\":1.0,\"Restaurant B\":0.0,\"Restaurant C\":0.0}},\"evidence\":[{\"content\":\"Restaurant B accidentally cross-contaminated their kitchen with shellfish last night, so today it's not safe for those with shellfish allergies.\",\"relation\":\"attacks\"},{\"content\":\"Restaurant C has recently renovated its dining area, and offers a mix of cuisines; while they're usually a bit noisy, they're walkable and easy to access.\",\"relation\":\"attacks\"},{\"content\":\"Restaurant A is offering a new seafood combo for lunch, but also has its regular vegetarian dishes.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 519,
+        "completionTokens": 241,
+        "totalTokens": 760,
+        "latencyMs": 11325
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:3",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are a group of colleagues tasked with deciding where to host your team's celebratory lunch. The team includes vegetarians and one person with a severe shellfish allergy, all prefer a quiet atmosphere, and no one has a car, so the restaurant should be within walking distance. You have three choices: Restaurant A, Restaurant B, and Restaurant C. All are nearby and usually considered by your group. To maximize the group's enjoyment and ensure safety, you must select the only suitable option given today's circumstances.\n\nShared information:\n1. Restaurant A is offering a new seafood combo for lunch, but also has its regular vegetarian dishes.\n2. Restaurant B just updated its menu with more vegetarian options and is known for being very quiet at midday.\n3. Restaurant C has recently renovated its dining area, and offers a mix of cuisines; while they're usually a bit noisy, they're walkable and easy to access.\n\nYour private information:\nA private event has booked most of Restaurant C today, but the secondary dining room is still open to the public.\n\nVisible discussion transcript:\n(none)\n\nClaim claim:hiddenbench:14:answer: Select the single correct answer for HiddenBench task 14 (lunch_group_decision).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Restaurant A | Restaurant B | Restaurant C. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Restaurant A\": 0.5, \"Restaurant B\": 0.2500, \"Restaurant C\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:a9ea9d51b56a550d650148488a51e41da3d05979cb370e75fe1740dfe6d19f10",
+      "responseHash": "sha256:624714d464c30cb1e0f81dff1e24634a29bd6699004e96df0d066482ec254a44",
+      "rawResponse": "{\"message\":\"Based on the constraints, Restaurant B is the only suitable option. It has updated vegetarian options, is known for being quiet, and is walkable. Restaurant A has a seafood combo which risks cross-contamination for the shellfish allergy, and Restaurant C is partially booked and usually noisy despite being walkable.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Restaurant A\":0.0,\"Restaurant B\":1.0,\"Restaurant C\":0.0}},\"evidence\":[{\"content\":\"Restaurant A is offering a new seafood combo for lunch, but also has its regular vegetarian dishes.\",\"relation\":\"attacks\"},{\"content\":\"Restaurant B just updated its menu with more vegetarian options and is known for being very quiet at midday.\",\"relation\":\"supports\"},{\"content\":\"Restaurant C has recently renovated its dining area, and offers a mix of cuisines; while they're usually a bit noisy, they're walkable and easy to access.\",\"relation\":\"attacks\"},{\"content\":\"A private event has booked most of Restaurant C today, but the secondary dining room is still open to the public.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 514,
+        "completionTokens": 295,
+        "totalTokens": 809,
+        "latencyMs": 10689
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:14:seed-1:r1:agent:hiddenbench:14:4",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are a group of colleagues tasked with deciding where to host your team's celebratory lunch. The team includes vegetarians and one person with a severe shellfish allergy, all prefer a quiet atmosphere, and no one has a car, so the restaurant should be within walking distance. You have three choices: Restaurant A, Restaurant B, and Restaurant C. All are nearby and usually considered by your group. To maximize the group's enjoyment and ensure safety, you must select the only suitable option given today's circumstances.\n\nShared information:\n1. Restaurant A is offering a new seafood combo for lunch, but also has its regular vegetarian dishes.\n2. Restaurant B just updated its menu with more vegetarian options and is known for being very quiet at midday.\n3. Restaurant C has recently renovated its dining area, and offers a mix of cuisines; while they're usually a bit noisy, they're walkable and easy to access.\n\nYour private information:\nThere is a known power outage at Restaurant C, affecting only the main kitchen, but their cold menu (salads/sandwiches) is fully available from a prep area with emergency backup.\n\nVisible discussion transcript:\n(none)\n\nClaim claim:hiddenbench:14:answer: Select the single correct answer for HiddenBench task 14 (lunch_group_decision).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Restaurant A | Restaurant B | Restaurant C. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Restaurant A\": 0.5, \"Restaurant B\": 0.2500, \"Restaurant C\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:03d0227bf2b2540abb897ceb97ec0bf40f4f4cad2fde3176f7dea21f98a7b5f1",
+      "responseHash": "sha256:b2c4c72592975001a1d3c8ef64d8826884177071fb3c10d043b095ce25d7ee42",
+      "rawResponse": "{\"message\":\"Based on the constraints, Restaurant B is the only suitable option. It has updated vegetarian options and is known for being quiet, meeting all group preferences and safety requirements.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Restaurant A\":0.0,\"Restaurant B\":1.0,\"Restaurant C\":0.0}},\"evidence\":[{\"content\":\"Restaurant A offers a new seafood combo, which poses a risk for the person with a shellfish allergy, making it unsuitable.\",\"relation\":\"attacks\"},{\"content\":\"Restaurant B has updated its menu with more vegetarian options and is known for being very quiet at midday, satisfying dietary needs and atmosphere preferences.\",\"relation\":\"supports\"},{\"content\":\"Restaurant C has a power outage affecting the main kitchen, limiting hot food options, and is usually noisy, failing to meet atmosphere and menu requirements.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 530,
+        "completionTokens": 237,
+        "totalTokens": 767,
+        "latencyMs": 11132
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:1",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are a group of colleagues tasked with deciding where to host your team's celebratory lunch. The team includes vegetarians and one person with a severe shellfish allergy, all prefer a quiet atmosphere, and no one has a car, so the restaurant should be within walking distance. You have three choices: Restaurant A, Restaurant B, and Restaurant C. All are nearby and usually considered by your group. To maximize the group's enjoyment and ensure safety, you must select the only suitable option given today's circumstances.\n\nShared information:\n1. Restaurant A is offering a new seafood combo for lunch, but also has its regular vegetarian dishes.\n2. Restaurant B just updated its menu with more vegetarian options and is known for being very quiet at midday.\n3. Restaurant C has recently renovated its dining area, and offers a mix of cuisines; while they're usually a bit noisy, they're walkable and easy to access.\n\nYour private information:\nThe local health department issued a warning this morning about a norovirus outbreak among cooks at Restaurant A.\n\nVisible discussion transcript:\n[round 1] agent:hiddenbench:14:1: Based on the health warning about norovirus at Restaurant A and the team's dietary and atmosphere needs, Restaurant B is the only suitable choice.\n[round 1] agent:hiddenbench:14:2: Based on the constraints, Restaurant B is unsafe due to cross-contamination, and Restaurant C is too noisy. Restaurant A offers vegetarian options and is walkable, making it the only suitable choice.\n[round 1] agent:hiddenbench:14:3: Based on the constraints, Restaurant B is the only suitable option. It has updated vegetarian options, is known for being quiet, and is walkable. Restaurant A has a seafood combo which risks cross-contamination for the shellfish allergy, and Restaurant C is partially booked and usually noisy despite being walkable.\n[round 1] agent:hiddenbench:14:4: Based on the constraints, Restaurant B is the only suitable option. It has updated vegetarian options and is known for being quiet, meeting all group preferences and safety requirements.\n\nClaim claim:hiddenbench:14:answer: Select the single correct answer for HiddenBench task 14 (lunch_group_decision).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Restaurant A | Restaurant B | Restaurant C. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Restaurant A\": 0.5, \"Restaurant B\": 0.2500, \"Restaurant C\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:f7afd8543202f278e9a4a51aea9bc0244f60706157fa4cd1c2a5c867920c1ad3",
+      "responseHash": "sha256:b13297b38420d2a0c1bd77d7bee6d44fd2863afb9c898b0e2776d8e594d240aa",
+      "rawResponse": "{\"message\":\"Based on the health warning about norovirus at Restaurant A, the severe shellfish allergy, and the need for a quiet atmosphere, Restaurant B is the only suitable choice. It has updated vegetarian options, is known for being quiet, and is walkable, meeting all group preferences and safety requirements.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Restaurant A\":0.0,\"Restaurant B\":1.0,\"Restaurant C\":0.0}},\"evidence\":[{\"content\":\"The local health department issued a warning this morning about a norovirus outbreak among cooks at Restaurant A.\",\"relation\":\"attacks\"},{\"content\":\"Restaurant B just updated its menu with more vegetarian options and is known for being very quiet at midday.\",\"relation\":\"supports\"},{\"content\":\"The team includes vegetarians and one person with a severe shellfish allergy, all prefer a quiet atmosphere, and no one has a car, so the restaurant should be within walking distance.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 723,
+        "completionTokens": 260,
+        "totalTokens": 983,
+        "latencyMs": 10240
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:2",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are a group of colleagues tasked with deciding where to host your team's celebratory lunch. The team includes vegetarians and one person with a severe shellfish allergy, all prefer a quiet atmosphere, and no one has a car, so the restaurant should be within walking distance. You have three choices: Restaurant A, Restaurant B, and Restaurant C. All are nearby and usually considered by your group. To maximize the group's enjoyment and ensure safety, you must select the only suitable option given today's circumstances.\n\nShared information:\n1. Restaurant A is offering a new seafood combo for lunch, but also has its regular vegetarian dishes.\n2. Restaurant B just updated its menu with more vegetarian options and is known for being very quiet at midday.\n3. Restaurant C has recently renovated its dining area, and offers a mix of cuisines; while they're usually a bit noisy, they're walkable and easy to access.\n\nYour private information:\nRestaurant B accidentally cross-contaminated their kitchen with shellfish last night, so today it's not safe for those with shellfish allergies.\n\nVisible discussion transcript:\n[round 1] agent:hiddenbench:14:1: Based on the health warning about norovirus at Restaurant A and the team's dietary and atmosphere needs, Restaurant B is the only suitable choice.\n[round 1] agent:hiddenbench:14:2: Based on the constraints, Restaurant B is unsafe due to cross-contamination, and Restaurant C is too noisy. Restaurant A offers vegetarian options and is walkable, making it the only suitable choice.\n[round 1] agent:hiddenbench:14:3: Based on the constraints, Restaurant B is the only suitable option. It has updated vegetarian options, is known for being quiet, and is walkable. Restaurant A has a seafood combo which risks cross-contamination for the shellfish allergy, and Restaurant C is partially booked and usually noisy despite being walkable.\n[round 1] agent:hiddenbench:14:4: Based on the constraints, Restaurant B is the only suitable option. It has updated vegetarian options and is known for being quiet, meeting all group preferences and safety requirements.\n\nClaim claim:hiddenbench:14:answer: Select the single correct answer for HiddenBench task 14 (lunch_group_decision).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Restaurant A | Restaurant B | Restaurant C. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Restaurant A\": 0.5, \"Restaurant B\": 0.2500, \"Restaurant C\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:0ddec95041c92885ac47ee85d1f89ecb3a0b5080a1cc76a256ef78f6b9cd6a68",
+      "responseHash": "sha256:6e9c7f3a5cd146a5ba1d089ac576160bb60de76da4ecf2739a94d63ca195e9f1",
+      "rawResponse": "{\"message\":\"Restaurant B is unsafe due to cross-contamination, and Restaurant C is too noisy. Restaurant A offers vegetarian options and is walkable, making it the only suitable choice.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Restaurant A\":1.0,\"Restaurant B\":0.0,\"Restaurant C\":0.0}},\"evidence\":[{\"content\":\"Restaurant B accidentally cross-contaminated their kitchen with shellfish last night, so today it's not safe for those with shellfish allergies.\",\"relation\":\"attacks\"},{\"content\":\"Restaurant C has recently renovated its dining area, and offers a mix of cuisines; while they're usually a bit noisy, they're walkable and easy to access.\",\"relation\":\"attacks\"},{\"content\":\"Restaurant A is offering a new seafood combo for lunch, but also has its regular vegetarian dishes.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 730,
+        "completionTokens": 236,
+        "totalTokens": 966,
+        "latencyMs": 5113
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:3",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are a group of colleagues tasked with deciding where to host your team's celebratory lunch. The team includes vegetarians and one person with a severe shellfish allergy, all prefer a quiet atmosphere, and no one has a car, so the restaurant should be within walking distance. You have three choices: Restaurant A, Restaurant B, and Restaurant C. All are nearby and usually considered by your group. To maximize the group's enjoyment and ensure safety, you must select the only suitable option given today's circumstances.\n\nShared information:\n1. Restaurant A is offering a new seafood combo for lunch, but also has its regular vegetarian dishes.\n2. Restaurant B just updated its menu with more vegetarian options and is known for being very quiet at midday.\n3. Restaurant C has recently renovated its dining area, and offers a mix of cuisines; while they're usually a bit noisy, they're walkable and easy to access.\n\nYour private information:\nA private event has booked most of Restaurant C today, but the secondary dining room is still open to the public.\n\nVisible discussion transcript:\n[round 1] agent:hiddenbench:14:1: Based on the health warning about norovirus at Restaurant A and the team's dietary and atmosphere needs, Restaurant B is the only suitable choice.\n[round 1] agent:hiddenbench:14:2: Based on the constraints, Restaurant B is unsafe due to cross-contamination, and Restaurant C is too noisy. Restaurant A offers vegetarian options and is walkable, making it the only suitable choice.\n[round 1] agent:hiddenbench:14:3: Based on the constraints, Restaurant B is the only suitable option. It has updated vegetarian options, is known for being quiet, and is walkable. Restaurant A has a seafood combo which risks cross-contamination for the shellfish allergy, and Restaurant C is partially booked and usually noisy despite being walkable.\n[round 1] agent:hiddenbench:14:4: Based on the constraints, Restaurant B is the only suitable option. It has updated vegetarian options and is known for being quiet, meeting all group preferences and safety requirements.\n\nClaim claim:hiddenbench:14:answer: Select the single correct answer for HiddenBench task 14 (lunch_group_decision).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Restaurant A | Restaurant B | Restaurant C. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Restaurant A\": 0.5, \"Restaurant B\": 0.2500, \"Restaurant C\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:5874de5613aaeff0178736589c0a0db88a2e62981e5f47893078da040d8d670f",
+      "responseHash": "sha256:cf31c2065a4291e3b0909e74f7d51b0ed82e21d335beeca736a429c3fff16278",
+      "rawResponse": "{\"message\":\"Based on the constraints, Restaurant B is the only suitable option. It has updated vegetarian options, is known for being quiet, and is walkable. Restaurant A has a seafood combo which risks cross-contamination for the shellfish allergy, and Restaurant C is partially booked and usually noisy despite being walkable.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Restaurant A\":0.0,\"Restaurant B\":1.0,\"Restaurant C\":0.0}},\"evidence\":[{\"content\":\"Restaurant B just updated its menu with more vegetarian options and is known for being very quiet at midday.\",\"relation\":\"supports\"},{\"content\":\"Restaurant A is offering a new seafood combo for lunch, but also has its regular vegetarian dishes.\",\"relation\":\"attacks\"},{\"content\":\"A private event has booked most of Restaurant C today, but the secondary dining room is still open to the public.\",\"relation\":\"attacks\"},{\"content\":\"Restaurant C has recently renovated its dining area, and offers a mix of cuisines; while they're usually a bit noisy, they're walkable and easy to access.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 725,
+        "completionTokens": 295,
+        "totalTokens": 1020,
+        "latencyMs": 4792
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:14:seed-1:r2:agent:hiddenbench:14:4",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are a group of colleagues tasked with deciding where to host your team's celebratory lunch. The team includes vegetarians and one person with a severe shellfish allergy, all prefer a quiet atmosphere, and no one has a car, so the restaurant should be within walking distance. You have three choices: Restaurant A, Restaurant B, and Restaurant C. All are nearby and usually considered by your group. To maximize the group's enjoyment and ensure safety, you must select the only suitable option given today's circumstances.\n\nShared information:\n1. Restaurant A is offering a new seafood combo for lunch, but also has its regular vegetarian dishes.\n2. Restaurant B just updated its menu with more vegetarian options and is known for being very quiet at midday.\n3. Restaurant C has recently renovated its dining area, and offers a mix of cuisines; while they're usually a bit noisy, they're walkable and easy to access.\n\nYour private information:\nThere is a known power outage at Restaurant C, affecting only the main kitchen, but their cold menu (salads/sandwiches) is fully available from a prep area with emergency backup.\n\nVisible discussion transcript:\n[round 1] agent:hiddenbench:14:1: Based on the health warning about norovirus at Restaurant A and the team's dietary and atmosphere needs, Restaurant B is the only suitable choice.\n[round 1] agent:hiddenbench:14:2: Based on the constraints, Restaurant B is unsafe due to cross-contamination, and Restaurant C is too noisy. Restaurant A offers vegetarian options and is walkable, making it the only suitable choice.\n[round 1] agent:hiddenbench:14:3: Based on the constraints, Restaurant B is the only suitable option. It has updated vegetarian options, is known for being quiet, and is walkable. Restaurant A has a seafood combo which risks cross-contamination for the shellfish allergy, and Restaurant C is partially booked and usually noisy despite being walkable.\n[round 1] agent:hiddenbench:14:4: Based on the constraints, Restaurant B is the only suitable option. It has updated vegetarian options and is known for being quiet, meeting all group preferences and safety requirements.\n\nClaim claim:hiddenbench:14:answer: Select the single correct answer for HiddenBench task 14 (lunch_group_decision).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Restaurant A | Restaurant B | Restaurant C. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Restaurant A\": 0.5, \"Restaurant B\": 0.2500, \"Restaurant C\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:96aed34531694a29124ae0f3e75381f38d63cf769bffd3efea0fa27cd1ba4a7f",
+      "responseHash": "sha256:05c0f3abb62bd4befe869918a11a71d47a75d1d7baae48668d3e56d9c9bfc8d4",
+      "rawResponse": "{\"message\":\"Based on the constraints, Restaurant B is the only suitable option. It has updated vegetarian options, is known for being quiet, and is walkable, meeting all group preferences and safety requirements. Restaurant A has a seafood combo which risks cross-contamination for the shellfish allergy, and Restaurant C is noisy despite being walkable.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Restaurant A\":0.0,\"Restaurant B\":1.0,\"Restaurant C\":0.0}},\"evidence\":[{\"content\":\"Restaurant B just updated its menu with more vegetarian options and is known for being very quiet at midday.\",\"relation\":\"supports\"},{\"content\":\"Restaurant A is offering a new seafood combo for lunch, but also has its regular vegetarian dishes.\",\"relation\":\"attacks\"},{\"content\":\"Restaurant C has recently renovated its dining area, and offers a mix of cuisines; while they're usually a bit noisy, they're walkable and easy to access.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 741,
+        "completionTokens": 260,
+        "totalTokens": 1001,
+        "latencyMs": 4585
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:1",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are a group of colleagues tasked with deciding where to host your team's celebratory lunch. The team includes vegetarians and one person with a severe shellfish allergy, all prefer a quiet atmosphere, and no one has a car, so the restaurant should be within walking distance. You have three choices: Restaurant A, Restaurant B, and Restaurant C. All are nearby and usually considered by your group. To maximize the group's enjoyment and ensure safety, you must select the only suitable option given today's circumstances.\n\nShared information:\n1. Restaurant A is offering a new seafood combo for lunch, but also has its regular vegetarian dishes.\n2. Restaurant B just updated its menu with more vegetarian options and is known for being very quiet at midday.\n3. Restaurant C has recently renovated its dining area, and offers a mix of cuisines; while they're usually a bit noisy, they're walkable and easy to access.\n\nYour private information:\nThe local health department issued a warning this morning about a norovirus outbreak among cooks at Restaurant A.\n\nVisible discussion transcript:\n[round 2] agent:hiddenbench:14:1: Based on the health warning about norovirus at Restaurant A, the severe shellfish allergy, and the need for a quiet atmosphere, Restaurant B is the only suitable choice. It has updated vegetarian options, is known for being quiet, and is walkable, meeting all group preferences and safety requirements.\n[round 2] agent:hiddenbench:14:2: Restaurant B is unsafe due to cross-contamination, and Restaurant C is too noisy. Restaurant A offers vegetarian options and is walkable, making it the only suitable choice.\n[round 2] agent:hiddenbench:14:3: Based on the constraints, Restaurant B is the only suitable option. It has updated vegetarian options, is known for being quiet, and is walkable. Restaurant A has a seafood combo which risks cross-contamination for the shellfish allergy, and Restaurant C is partially booked and usually noisy despite being walkable.\n[round 2] agent:hiddenbench:14:4: Based on the constraints, Restaurant B is the only suitable option. It has updated vegetarian options, is known for being quiet, and is walkable, meeting all group preferences and safety requirements. Restaurant A has a seafood combo which risks cross-contamination for the shellfish allergy, and Restaurant C is noisy despite being walkable.\n\nClaim claim:hiddenbench:14:answer: Select the single correct answer for HiddenBench task 14 (lunch_group_decision).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Restaurant A | Restaurant B | Restaurant C. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Restaurant A\": 0.5, \"Restaurant B\": 0.2500, \"Restaurant C\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:7757973340d99ac3066267dbe35c2a5c8ff8d512735148ec3b6f99167692066b",
+      "responseHash": "sha256:b13297b38420d2a0c1bd77d7bee6d44fd2863afb9c898b0e2776d8e594d240aa",
+      "rawResponse": "{\"message\":\"Based on the health warning about norovirus at Restaurant A, the severe shellfish allergy, and the need for a quiet atmosphere, Restaurant B is the only suitable choice. It has updated vegetarian options, is known for being quiet, and is walkable, meeting all group preferences and safety requirements.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Restaurant A\":0.0,\"Restaurant B\":1.0,\"Restaurant C\":0.0}},\"evidence\":[{\"content\":\"The local health department issued a warning this morning about a norovirus outbreak among cooks at Restaurant A.\",\"relation\":\"attacks\"},{\"content\":\"Restaurant B just updated its menu with more vegetarian options and is known for being very quiet at midday.\",\"relation\":\"supports\"},{\"content\":\"The team includes vegetarians and one person with a severe shellfish allergy, all prefer a quiet atmosphere, and no one has a car, so the restaurant should be within walking distance.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 781,
+        "completionTokens": 260,
+        "totalTokens": 1041,
+        "latencyMs": 6635
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:2",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are a group of colleagues tasked with deciding where to host your team's celebratory lunch. The team includes vegetarians and one person with a severe shellfish allergy, all prefer a quiet atmosphere, and no one has a car, so the restaurant should be within walking distance. You have three choices: Restaurant A, Restaurant B, and Restaurant C. All are nearby and usually considered by your group. To maximize the group's enjoyment and ensure safety, you must select the only suitable option given today's circumstances.\n\nShared information:\n1. Restaurant A is offering a new seafood combo for lunch, but also has its regular vegetarian dishes.\n2. Restaurant B just updated its menu with more vegetarian options and is known for being very quiet at midday.\n3. Restaurant C has recently renovated its dining area, and offers a mix of cuisines; while they're usually a bit noisy, they're walkable and easy to access.\n\nYour private information:\nRestaurant B accidentally cross-contaminated their kitchen with shellfish last night, so today it's not safe for those with shellfish allergies.\n\nVisible discussion transcript:\n[round 2] agent:hiddenbench:14:1: Based on the health warning about norovirus at Restaurant A, the severe shellfish allergy, and the need for a quiet atmosphere, Restaurant B is the only suitable choice. It has updated vegetarian options, is known for being quiet, and is walkable, meeting all group preferences and safety requirements.\n[round 2] agent:hiddenbench:14:2: Restaurant B is unsafe due to cross-contamination, and Restaurant C is too noisy. Restaurant A offers vegetarian options and is walkable, making it the only suitable choice.\n[round 2] agent:hiddenbench:14:3: Based on the constraints, Restaurant B is the only suitable option. It has updated vegetarian options, is known for being quiet, and is walkable. Restaurant A has a seafood combo which risks cross-contamination for the shellfish allergy, and Restaurant C is partially booked and usually noisy despite being walkable.\n[round 2] agent:hiddenbench:14:4: Based on the constraints, Restaurant B is the only suitable option. It has updated vegetarian options, is known for being quiet, and is walkable, meeting all group preferences and safety requirements. Restaurant A has a seafood combo which risks cross-contamination for the shellfish allergy, and Restaurant C is noisy despite being walkable.\n\nClaim claim:hiddenbench:14:answer: Select the single correct answer for HiddenBench task 14 (lunch_group_decision).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Restaurant A | Restaurant B | Restaurant C. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Restaurant A\": 0.5, \"Restaurant B\": 0.2500, \"Restaurant C\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:b0e224594f4ea64e70d9aaf5dbb1d969bea1725b37b8865716234439b5289269",
+      "responseHash": "sha256:aa7e42989706bf57dfc265ea93a319f024676d827ef40e67e3dfaf2644b172f0",
+      "rawResponse": "{\"message\":\"Based on the constraints, Restaurant A is the only suitable option. It offers vegetarian dishes (meeting dietary needs), is walkable (no car required), and while it has a seafood combo, it does not have the confirmed cross-contamination issue that makes Restaurant B unsafe. Restaurant C is too noisy, violating the quiet atmosphere preference.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Restaurant A\":1.0,\"Restaurant B\":0.0,\"Restaurant C\":0.0}},\"evidence\":[{\"content\":\"Restaurant B is unsafe due to cross-contamination, and Restaurant C is too noisy. Restaurant A offers vegetarian options and is walkable, making it the only suitable choice.\",\"relation\":\"supports\"},{\"content\":\"Restaurant A is offering a new seafood combo for lunch, but also has its regular vegetarian dishes.\",\"relation\":\"supports\"},{\"content\":\"Restaurant B accidentally cross-contaminated their kitchen with shellfish last night, so today it's not safe for those with shellfish allergies.\",\"relation\":\"attacks\"},{\"content\":\"Restaurant C has recently renovated its dining area, and offers a mix of cuisines; while they're usually a bit noisy, they're walkable and easy to access.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 788,
+        "completionTokens": 318,
+        "totalTokens": 1106,
+        "latencyMs": 13278
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:3",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are a group of colleagues tasked with deciding where to host your team's celebratory lunch. The team includes vegetarians and one person with a severe shellfish allergy, all prefer a quiet atmosphere, and no one has a car, so the restaurant should be within walking distance. You have three choices: Restaurant A, Restaurant B, and Restaurant C. All are nearby and usually considered by your group. To maximize the group's enjoyment and ensure safety, you must select the only suitable option given today's circumstances.\n\nShared information:\n1. Restaurant A is offering a new seafood combo for lunch, but also has its regular vegetarian dishes.\n2. Restaurant B just updated its menu with more vegetarian options and is known for being very quiet at midday.\n3. Restaurant C has recently renovated its dining area, and offers a mix of cuisines; while they're usually a bit noisy, they're walkable and easy to access.\n\nYour private information:\nA private event has booked most of Restaurant C today, but the secondary dining room is still open to the public.\n\nVisible discussion transcript:\n[round 2] agent:hiddenbench:14:1: Based on the health warning about norovirus at Restaurant A, the severe shellfish allergy, and the need for a quiet atmosphere, Restaurant B is the only suitable choice. It has updated vegetarian options, is known for being quiet, and is walkable, meeting all group preferences and safety requirements.\n[round 2] agent:hiddenbench:14:2: Restaurant B is unsafe due to cross-contamination, and Restaurant C is too noisy. Restaurant A offers vegetarian options and is walkable, making it the only suitable choice.\n[round 2] agent:hiddenbench:14:3: Based on the constraints, Restaurant B is the only suitable option. It has updated vegetarian options, is known for being quiet, and is walkable. Restaurant A has a seafood combo which risks cross-contamination for the shellfish allergy, and Restaurant C is partially booked and usually noisy despite being walkable.\n[round 2] agent:hiddenbench:14:4: Based on the constraints, Restaurant B is the only suitable option. It has updated vegetarian options, is known for being quiet, and is walkable, meeting all group preferences and safety requirements. Restaurant A has a seafood combo which risks cross-contamination for the shellfish allergy, and Restaurant C is noisy despite being walkable.\n\nClaim claim:hiddenbench:14:answer: Select the single correct answer for HiddenBench task 14 (lunch_group_decision).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Restaurant A | Restaurant B | Restaurant C. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Restaurant A\": 0.5, \"Restaurant B\": 0.2500, \"Restaurant C\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:0b49dd7d467a7c9bad49431e0a7a4e295a8084d37a9a9d8e61bbc6a61ba006ff",
+      "responseHash": "sha256:5aad44f3a71425397edb896c3ac6f0890b95455ff805bb3f653f3e3b41593d8e",
+      "rawResponse": "{\"message\":\"Based on the constraints, Restaurant B is the only suitable option. It has updated vegetarian options, is known for being quiet, and is walkable, meeting all group preferences and safety requirements. Restaurant A has a seafood combo which risks cross-contamination for the shellfish allergy, and Restaurant C is noisy despite being walkable.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Restaurant A\":0.0,\"Restaurant B\":1.0,\"Restaurant C\":0.0}},\"evidence\":[{\"content\":\"Restaurant B just updated its menu with more vegetarian options and is known for being very quiet at midday.\",\"relation\":\"supports\"},{\"content\":\"Restaurant A is offering a new seafood combo for lunch, but also has its regular vegetarian dishes.\",\"relation\":\"attacks\"},{\"content\":\"Restaurant C has recently renovated its dining area, and offers a mix of cuisines; while they're usually a bit noisy, they're walkable and easy to access.\",\"relation\":\"attacks\"},{\"content\":\"The team includes vegetarians and one person with a severe shellfish allergy, all prefer a quiet atmosphere, and no one has a car, so the restaurant should be within walking distance.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 783,
+        "completionTokens": 313,
+        "totalTokens": 1096,
+        "latencyMs": 5418
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:14:seed-1:r3:agent:hiddenbench:14:4",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are a group of colleagues tasked with deciding where to host your team's celebratory lunch. The team includes vegetarians and one person with a severe shellfish allergy, all prefer a quiet atmosphere, and no one has a car, so the restaurant should be within walking distance. You have three choices: Restaurant A, Restaurant B, and Restaurant C. All are nearby and usually considered by your group. To maximize the group's enjoyment and ensure safety, you must select the only suitable option given today's circumstances.\n\nShared information:\n1. Restaurant A is offering a new seafood combo for lunch, but also has its regular vegetarian dishes.\n2. Restaurant B just updated its menu with more vegetarian options and is known for being very quiet at midday.\n3. Restaurant C has recently renovated its dining area, and offers a mix of cuisines; while they're usually a bit noisy, they're walkable and easy to access.\n\nYour private information:\nThere is a known power outage at Restaurant C, affecting only the main kitchen, but their cold menu (salads/sandwiches) is fully available from a prep area with emergency backup.\n\nVisible discussion transcript:\n[round 2] agent:hiddenbench:14:1: Based on the health warning about norovirus at Restaurant A, the severe shellfish allergy, and the need for a quiet atmosphere, Restaurant B is the only suitable choice. It has updated vegetarian options, is known for being quiet, and is walkable, meeting all group preferences and safety requirements.\n[round 2] agent:hiddenbench:14:2: Restaurant B is unsafe due to cross-contamination, and Restaurant C is too noisy. Restaurant A offers vegetarian options and is walkable, making it the only suitable choice.\n[round 2] agent:hiddenbench:14:3: Based on the constraints, Restaurant B is the only suitable option. It has updated vegetarian options, is known for being quiet, and is walkable. Restaurant A has a seafood combo which risks cross-contamination for the shellfish allergy, and Restaurant C is partially booked and usually noisy despite being walkable.\n[round 2] agent:hiddenbench:14:4: Based on the constraints, Restaurant B is the only suitable option. It has updated vegetarian options, is known for being quiet, and is walkable, meeting all group preferences and safety requirements. Restaurant A has a seafood combo which risks cross-contamination for the shellfish allergy, and Restaurant C is noisy despite being walkable.\n\nClaim claim:hiddenbench:14:answer: Select the single correct answer for HiddenBench task 14 (lunch_group_decision).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Restaurant A | Restaurant B | Restaurant C. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Restaurant A\": 0.5, \"Restaurant B\": 0.2500, \"Restaurant C\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:9230d6b7979f3e599d5cf0513aabdb337109ff5eb13ca5e41eab73c4660056be",
+      "responseHash": "sha256:3fb1fdde1c6b881157bfe1cd7c62a64dc71133b47aa38d375ffb0c0442f1f488",
+      "rawResponse": "{\"message\":\"After analyzing the constraints and discussion, Restaurant B is the only suitable choice. It meets all requirements: updated vegetarian options, quiet atmosphere, and walkability, while avoiding risks like cross-contamination (Restaurant A) or noise (Restaurant C).\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Restaurant A\":0.0,\"Restaurant B\":1.0,\"Restaurant C\":0.0}},\"evidence\":[{\"content\":\"Restaurant B has updated vegetarian options, is known for being quiet at midday, and is walkable, meeting all group preferences and safety requirements.\",\"relation\":\"supports\"},{\"content\":\"Restaurant A has a seafood combo which risks cross-contamination for the shellfish allergy.\",\"relation\":\"attacks\"},{\"content\":\"Restaurant C is usually noisy, which conflicts with the group's preference for a quiet atmosphere.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 799,
+        "completionTokens": 234,
+        "totalTokens": 1033,
+        "latencyMs": 8772
+      }
+    }
+  ],
+  "r3SnapshotHash": "sha256:68659f5a302deac2add54c385c644f6d5347d642c8372849c4a6bd8837d12150",
+  "contentHash": "sha256:b49632a5692aac0a541ece744ada0274212ad4932794cfb0d87f79a0de438552"
+}

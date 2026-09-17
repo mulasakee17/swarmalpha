@@ -1,0 +1,81 @@
+{
+  "planRef": {
+    "id": "swarmalpha.experiment.v6.collective-dynamics-replicate-average-canary",
+    "version": "2.0.0"
+  },
+  "sourceFormationDirectory": "results/v6_collective_dynamics_v1_glm46v_monitor_screen10_seed1",
+  "sourceTaskIds": [
+    8,
+    29,
+    50
+  ],
+  "sourceTaskSelection": "positions_2_5_8_of_preexisting_truth_free_systematic_dev10_order",
+  "sourceSeed": 1,
+  "checkpointRound": 3,
+  "sourceAgentCounts": [
+    3,
+    4,
+    3
+  ],
+  "registeredUnitCount": 10,
+  "replicateLabels": [
+    "A1",
+    "B1",
+    "A2",
+    "B2"
+  ],
+  "blockA": [
+    "A1",
+    "A2"
+  ],
+  "blockB": [
+    "B1",
+    "B2"
+  ],
+  "plannedProviderCalls": 40,
+  "promptVariant": "canonical_only_exact_duplicate",
+  "modelRef": {
+    "id": "zhipu:glm-4.6v",
+    "version": "1.0.0"
+  },
+  "promptRef": {
+    "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+    "version": "1.1.0"
+  },
+  "parserRef": {
+    "id": "swarmalpha.experiment.v6.shadow-probability-sensor-parser",
+    "version": "1.1.0"
+  },
+  "estimatorRef": {
+    "id": "swarmalpha.estimator.replicate-average-categorical-report",
+    "version": "1.0.0"
+  },
+  "invocation": {
+    "temperature": 0,
+    "seed": 1,
+    "maxTokens": 256,
+    "thinking": "disabled",
+    "attemptsPerCell": 1,
+    "retry": "none"
+  },
+  "orderingPolicy": "four_label_cyclic_position_near_balance_v1",
+  "primaryComparison": "tv_between_equal_weight_mean_A1_A2_and_equal_weight_mean_B1_B2",
+  "primaryMacroQuantities": [
+    "pooled_report_tv",
+    "mean_normalized_entropy_abs_difference",
+    "normalized_generalized_jsd_abs_difference"
+  ],
+  "uniqueTopPolicy": "diagnostic_only_ties_are_indeterminate",
+  "developmentTolerances": {
+    "requireAllPlannedReportsValid": true,
+    "maximumMeanUnitSplitHalfTv": 0.05,
+    "maximumP90UnitSplitHalfTv": 0.1,
+    "maximumEachTaskPooledTv": 0.05,
+    "maximumEachTaskMeanEntropyAbsDifference": 0.05,
+    "maximumEachTaskJsdAbsDifference": 0.05
+  },
+  "inferenceUnit": "task",
+  "pairedObservationUnit": "task_agent_frozen_view",
+  "truthAccess": "none",
+  "contentHash": "sha256:656b9fc3526efa84798e54f63359d86dd22fffac30c0ce5df4b2a2dee25897d5"
+}

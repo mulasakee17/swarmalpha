@@ -1,0 +1,68 @@
+{
+  "preflightRef": {
+    "id": "swarmalpha.preflight.v6.discussion-thermometer-natural-dynamics-transport",
+    "version": "1.0.0",
+    "providerCalls": 0
+  },
+  "planHash": "sha256:b6e7bfdcbdca0f9e4ec0d70511c530ae8c48ebb080c3ae2b1fb2a5dcb54b6f64",
+  "manifestHash": "sha256:1d5f870b40c82a27fc5ff4051b67e5ff1b9d297a33bb20c04bf76a561a26bc3f",
+  "taskBankHash": "sha256:fea7cfb71fd3c2b1044cc9cdb06aea716d0db97e9654075566c8d74159928c1d",
+  "sourceReplicationEvaluationHash": "sha256:f56588edc512d0eddff738565070a30f5d2eb46d3538fc1358427109a214f492",
+  "providerCalls": 0,
+  "checks": [
+    {
+      "id": "PROSPECTIVE_NEW_SCENARIOS",
+      "pass": true,
+      "detail": "Two scenario families were frozen before any transport provider observation."
+    },
+    {
+      "id": "BALANCED_TASK_GEOMETRY",
+      "pass": true,
+      "detail": "Each new scenario has one shared-cue and one polarized task."
+    },
+    {
+      "id": "UNCHANGED_MEASUREMENT_DEPTH",
+      "pass": true,
+      "detail": "The four-round, five-checkpoint, exact-duplicate thermometer is unchanged."
+    },
+    {
+      "id": "CALL_BUDGET_ARITHMETIC",
+      "pass": true,
+      "detail": "64 public + 160 sensor = 224 calls; completion ceiling 73,728 tokens."
+    },
+    {
+      "id": "REGISTERED_RULES_CARRIED_FORWARD",
+      "pass": true,
+      "detail": "The two post-development rules are frozen before transport observation."
+    },
+    {
+      "id": "SOURCE_EVALUATION_BINDING",
+      "pass": true,
+      "detail": "The transport plan binds the frozen same-task replication evaluation."
+    },
+    {
+      "id": "TASK_BANK_BINDING",
+      "pass": true,
+      "detail": "The plan binds the exact prospective task-bank hash."
+    },
+    {
+      "id": "TRUTH_FIREWALL_AND_NO_WRITEBACK",
+      "pass": true,
+      "detail": "Online discussion and sensing receive no truth, prediction target, or action output."
+    },
+    {
+      "id": "FRESH_SAME_BATCH_REQUIREMENT",
+      "pass": true,
+      "detail": "Transport must be a fresh complete batch; historical append and overwrite are forbidden."
+    },
+    {
+      "id": "NO_EXECUTION_AUTHORITY",
+      "pass": true,
+      "detail": "Preflight freezes the design but cannot authorize provider calls."
+    }
+  ],
+  "allChecksPass": true,
+  "executionReady": false,
+  "nextRequiredStep": "MANUAL_SEMANTIC_REVIEW_AND_EXPLICIT_EXECUTION_AUTHORITY",
+  "contentHash": "sha256:e78d1a062b772cc617948d7b1aefc6174c1c1b3c5b005a4d3cb0e6bd95ca86c6"
+}

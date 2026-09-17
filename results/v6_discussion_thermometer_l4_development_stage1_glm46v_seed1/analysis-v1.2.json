@@ -1,0 +1,4063 @@
+{
+  "analysisRef": {
+    "id": "swarmalpha.experiment.v6.discussion-thermometer-l4-development-analysis",
+    "version": "1.2.0"
+  },
+  "source": {
+    "outputDirectory": "C:\\Users\\贺孟元\\Desktop\\swarmalpha\\results\\v6_discussion_thermometer_l4_development_stage1_glm46v_seed1",
+    "planHash": "sha256:a59b041ed048ea4f2db01b0565e37c710caf1256f36c321ce315efa1dbc0603b",
+    "freezeHash": "sha256:992e4511a5f4e1c7f3ccccac393eb807480db3209e9f81c10a0415a65e100982",
+    "publicRunHash": "sha256:ab102c9c198304c434506cd487b1b8eaea58f3080c35ea1bada8a7b0d6784a74",
+    "sensorRunHash": "sha256:0e82934ac2fcc399c7a2198cba9ddf6e5b2d712296dded90edcb4d15cd23ce02"
+  },
+  "integrity": {
+    "publicLedger": "verified",
+    "sensorLedger": "verified",
+    "publicRun": "verified",
+    "sensorRun": "verified"
+  },
+  "measurement": {
+    "stateCount": 28,
+    "transitionCount": 21,
+    "expectedPrimaryReports": 112,
+    "validPrimaryReports": 112,
+    "primaryCoverage": 1,
+    "selectedDuplicatePairs": 7,
+    "duplicateMeanTV": 0.007142857142857141,
+    "duplicateMaxTV": 0.04999999999999999,
+    "publicChoiceCoveragePostRound": 1
+  },
+  "states": [
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-state",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "operational_self_reported_belief_state",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:5",
+      "checkpointId": "task:5:X0",
+      "checkpointIndex": 0,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "sensorRef": {
+        "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+        "version": "1.1.0"
+      },
+      "snapshotHash": "sha256:b211afb7944242cdf225f61c17240ccd64770f176fc2e2239985eb3a353dfbcb",
+      "roster": {
+        "expectedAgentIds": [
+          "agent:hiddenbench:5:1",
+          "agent:hiddenbench:5:2",
+          "agent:hiddenbench:5:3",
+          "agent:hiddenbench:5:4"
+        ],
+        "activeAgentIds": [
+          "agent:hiddenbench:5:1",
+          "agent:hiddenbench:5:2",
+          "agent:hiddenbench:5:3",
+          "agent:hiddenbench:5:4"
+        ],
+        "missingAgentIds": [],
+        "coverage": 1,
+        "missingReasonByAgentId": {}
+      },
+      "measurement": {
+        "estimator": "primary_canonical_self_report",
+        "validPrimaryReportCount": 4,
+        "validRepeatPairCount": 1,
+        "replicateTotalVariationByAgentId": {
+          "agent:hiddenbench:5:1": 0
+        },
+        "meanReplicateTotalVariation": 0,
+        "maxReplicateTotalVariation": 0
+      },
+      "behavioralCrossCheck": {
+        "status": "unavailable",
+        "choiceCoverage": 0,
+        "publicChoiceByAgentId": {},
+        "choiceShareByOptionId": null,
+        "majorityChoiceShare": null,
+        "beliefChoiceComparableAgentCount": 0,
+        "beliefTopChoiceCompatibilityRate": null
+      },
+      "microstate": {
+        "beliefProbabilitiesByAgentId": {
+          "agent:hiddenbench:5:1": {
+            "opt_1": 0.6,
+            "opt_2": 0.2,
+            "opt_3": 0.2
+          },
+          "agent:hiddenbench:5:2": {
+            "opt_1": 0.4,
+            "opt_2": 0.3,
+            "opt_3": 0.3
+          },
+          "agent:hiddenbench:5:3": {
+            "opt_1": 0.6,
+            "opt_2": 0.2,
+            "opt_3": 0.2
+          },
+          "agent:hiddenbench:5:4": {
+            "opt_1": 0.4,
+            "opt_2": 0.2,
+            "opt_3": 0.4
+          }
+        }
+      },
+      "macrostate": {
+        "pooledProbabilitiesByOptionId": {
+          "opt_1": 0.5,
+          "opt_2": 0.22499999999999998,
+          "opt_3": 0.275
+        },
+        "meanNormalizedReportEntropy": 0.9203340576822088,
+        "pooledNormalizedEntropy": 0.9441152243747405,
+        "normalizedGeneralizedJsd": 0.02378116669253172,
+        "pooledConcentration": 0.5,
+        "pottsStyleOrder": 0.25,
+        "meanPairwiseTotalVariation": 0.14999999999999997,
+        "maxPairwiseTotalVariation": 0.19999999999999998
+      },
+      "contentHash": "sha256:8f9f1e625c9d4f651f08c5667fab21eca567bf1855a23874e5bc05904c3c1106"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-state",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "operational_self_reported_belief_state",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:5",
+      "checkpointId": "task:5:X1",
+      "checkpointIndex": 1,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "sensorRef": {
+        "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+        "version": "1.1.0"
+      },
+      "snapshotHash": "sha256:31aa9c8a8479ef3384ab9f000890223b1db7b5bdab20971d543481439ea66553",
+      "roster": {
+        "expectedAgentIds": [
+          "agent:hiddenbench:5:1",
+          "agent:hiddenbench:5:2",
+          "agent:hiddenbench:5:3",
+          "agent:hiddenbench:5:4"
+        ],
+        "activeAgentIds": [
+          "agent:hiddenbench:5:1",
+          "agent:hiddenbench:5:2",
+          "agent:hiddenbench:5:3",
+          "agent:hiddenbench:5:4"
+        ],
+        "missingAgentIds": [],
+        "coverage": 1,
+        "missingReasonByAgentId": {}
+      },
+      "measurement": {
+        "estimator": "primary_canonical_self_report",
+        "validPrimaryReportCount": 4,
+        "validRepeatPairCount": 0,
+        "replicateTotalVariationByAgentId": {},
+        "meanReplicateTotalVariation": null,
+        "maxReplicateTotalVariation": null
+      },
+      "behavioralCrossCheck": {
+        "status": "available",
+        "choiceCoverage": 1,
+        "publicChoiceByAgentId": {
+          "agent:hiddenbench:5:1": "opt_3",
+          "agent:hiddenbench:5:2": "opt_3",
+          "agent:hiddenbench:5:3": "opt_3",
+          "agent:hiddenbench:5:4": "opt_3"
+        },
+        "choiceShareByOptionId": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        },
+        "majorityChoiceShare": 1,
+        "beliefChoiceComparableAgentCount": 4,
+        "beliefTopChoiceCompatibilityRate": 1
+      },
+      "microstate": {
+        "beliefProbabilitiesByAgentId": {
+          "agent:hiddenbench:5:1": {
+            "opt_1": 0.1,
+            "opt_2": 0.1,
+            "opt_3": 0.8
+          },
+          "agent:hiddenbench:5:2": {
+            "opt_1": 0.1,
+            "opt_2": 0.1,
+            "opt_3": 0.8
+          },
+          "agent:hiddenbench:5:3": {
+            "opt_1": 0.1,
+            "opt_2": 0.1,
+            "opt_3": 0.8
+          },
+          "agent:hiddenbench:5:4": {
+            "opt_1": 0.1,
+            "opt_2": 0.1,
+            "opt_3": 0.8
+          }
+        }
+      },
+      "macrostate": {
+        "pooledProbabilitiesByOptionId": {
+          "opt_1": 0.1,
+          "opt_2": 0.1,
+          "opt_3": 0.8
+        },
+        "meanNormalizedReportEntropy": 0.5816718657178869,
+        "pooledNormalizedEntropy": 0.5816718657178869,
+        "normalizedGeneralizedJsd": 0,
+        "pooledConcentration": 0.8,
+        "pottsStyleOrder": 0.7000000000000002,
+        "meanPairwiseTotalVariation": 0,
+        "maxPairwiseTotalVariation": 0
+      },
+      "contentHash": "sha256:234eac3b9748e57f8b8d908f91820b48e5f0a5f85d5f95787b418cc72571c623"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-state",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "operational_self_reported_belief_state",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:5",
+      "checkpointId": "task:5:X2",
+      "checkpointIndex": 2,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "sensorRef": {
+        "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+        "version": "1.1.0"
+      },
+      "snapshotHash": "sha256:bdacbe91adde27cb65fabed98d4d6aaf06a47303eedaef75cd7b246bba78ce29",
+      "roster": {
+        "expectedAgentIds": [
+          "agent:hiddenbench:5:1",
+          "agent:hiddenbench:5:2",
+          "agent:hiddenbench:5:3",
+          "agent:hiddenbench:5:4"
+        ],
+        "activeAgentIds": [
+          "agent:hiddenbench:5:1",
+          "agent:hiddenbench:5:2",
+          "agent:hiddenbench:5:3",
+          "agent:hiddenbench:5:4"
+        ],
+        "missingAgentIds": [],
+        "coverage": 1,
+        "missingReasonByAgentId": {}
+      },
+      "measurement": {
+        "estimator": "primary_canonical_self_report",
+        "validPrimaryReportCount": 4,
+        "validRepeatPairCount": 0,
+        "replicateTotalVariationByAgentId": {},
+        "meanReplicateTotalVariation": null,
+        "maxReplicateTotalVariation": null
+      },
+      "behavioralCrossCheck": {
+        "status": "available",
+        "choiceCoverage": 1,
+        "publicChoiceByAgentId": {
+          "agent:hiddenbench:5:1": "opt_3",
+          "agent:hiddenbench:5:2": "opt_3",
+          "agent:hiddenbench:5:3": "opt_3",
+          "agent:hiddenbench:5:4": "opt_3"
+        },
+        "choiceShareByOptionId": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        },
+        "majorityChoiceShare": 1,
+        "beliefChoiceComparableAgentCount": 4,
+        "beliefTopChoiceCompatibilityRate": 1
+      },
+      "microstate": {
+        "beliefProbabilitiesByAgentId": {
+          "agent:hiddenbench:5:1": {
+            "opt_1": 0.1,
+            "opt_2": 0.1,
+            "opt_3": 0.8
+          },
+          "agent:hiddenbench:5:2": {
+            "opt_1": 0.1,
+            "opt_2": 0.1,
+            "opt_3": 0.8
+          },
+          "agent:hiddenbench:5:3": {
+            "opt_1": 0.1,
+            "opt_2": 0.1,
+            "opt_3": 0.8
+          },
+          "agent:hiddenbench:5:4": {
+            "opt_1": 0.1,
+            "opt_2": 0.1,
+            "opt_3": 0.8
+          }
+        }
+      },
+      "macrostate": {
+        "pooledProbabilitiesByOptionId": {
+          "opt_1": 0.1,
+          "opt_2": 0.1,
+          "opt_3": 0.8
+        },
+        "meanNormalizedReportEntropy": 0.5816718657178869,
+        "pooledNormalizedEntropy": 0.5816718657178869,
+        "normalizedGeneralizedJsd": 0,
+        "pooledConcentration": 0.8,
+        "pottsStyleOrder": 0.7000000000000002,
+        "meanPairwiseTotalVariation": 0,
+        "maxPairwiseTotalVariation": 0
+      },
+      "contentHash": "sha256:488ae212038676b4225785354bd0ce7664fcf67bcee7903280b2629b90d163a8"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-state",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "operational_self_reported_belief_state",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:5",
+      "checkpointId": "task:5:X3",
+      "checkpointIndex": 3,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "sensorRef": {
+        "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+        "version": "1.1.0"
+      },
+      "snapshotHash": "sha256:cd24b539ff03af4ee27673ed2da4fff86853106e6d8b7995f28420137288f135",
+      "roster": {
+        "expectedAgentIds": [
+          "agent:hiddenbench:5:1",
+          "agent:hiddenbench:5:2",
+          "agent:hiddenbench:5:3",
+          "agent:hiddenbench:5:4"
+        ],
+        "activeAgentIds": [
+          "agent:hiddenbench:5:1",
+          "agent:hiddenbench:5:2",
+          "agent:hiddenbench:5:3",
+          "agent:hiddenbench:5:4"
+        ],
+        "missingAgentIds": [],
+        "coverage": 1,
+        "missingReasonByAgentId": {}
+      },
+      "measurement": {
+        "estimator": "primary_canonical_self_report",
+        "validPrimaryReportCount": 4,
+        "validRepeatPairCount": 0,
+        "replicateTotalVariationByAgentId": {},
+        "meanReplicateTotalVariation": null,
+        "maxReplicateTotalVariation": null
+      },
+      "behavioralCrossCheck": {
+        "status": "available",
+        "choiceCoverage": 1,
+        "publicChoiceByAgentId": {
+          "agent:hiddenbench:5:1": "opt_3",
+          "agent:hiddenbench:5:2": "opt_3",
+          "agent:hiddenbench:5:3": "opt_3",
+          "agent:hiddenbench:5:4": "opt_3"
+        },
+        "choiceShareByOptionId": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        },
+        "majorityChoiceShare": 1,
+        "beliefChoiceComparableAgentCount": 4,
+        "beliefTopChoiceCompatibilityRate": 1
+      },
+      "microstate": {
+        "beliefProbabilitiesByAgentId": {
+          "agent:hiddenbench:5:1": {
+            "opt_1": 0.1,
+            "opt_2": 0.1,
+            "opt_3": 0.8
+          },
+          "agent:hiddenbench:5:2": {
+            "opt_1": 0.1,
+            "opt_2": 0.1,
+            "opt_3": 0.8
+          },
+          "agent:hiddenbench:5:3": {
+            "opt_1": 0.1,
+            "opt_2": 0.1,
+            "opt_3": 0.8
+          },
+          "agent:hiddenbench:5:4": {
+            "opt_1": 0.1,
+            "opt_2": 0.1,
+            "opt_3": 0.8
+          }
+        }
+      },
+      "macrostate": {
+        "pooledProbabilitiesByOptionId": {
+          "opt_1": 0.1,
+          "opt_2": 0.1,
+          "opt_3": 0.8
+        },
+        "meanNormalizedReportEntropy": 0.5816718657178869,
+        "pooledNormalizedEntropy": 0.5816718657178869,
+        "normalizedGeneralizedJsd": 0,
+        "pooledConcentration": 0.8,
+        "pottsStyleOrder": 0.7000000000000002,
+        "meanPairwiseTotalVariation": 0,
+        "maxPairwiseTotalVariation": 0
+      },
+      "contentHash": "sha256:71111aec6ce617f5a5482e011db9c153f261dcf23d6f6d7a2923b1646a13865c"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-state",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "operational_self_reported_belief_state",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:7",
+      "checkpointId": "task:7:X0",
+      "checkpointIndex": 0,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "sensorRef": {
+        "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+        "version": "1.1.0"
+      },
+      "snapshotHash": "sha256:4130fdb1bdb7281be511370f2d5055a802bd1e6abcd16bbc6edec7490d1cb233",
+      "roster": {
+        "expectedAgentIds": [
+          "agent:hiddenbench:7:1",
+          "agent:hiddenbench:7:2",
+          "agent:hiddenbench:7:3",
+          "agent:hiddenbench:7:4"
+        ],
+        "activeAgentIds": [
+          "agent:hiddenbench:7:1",
+          "agent:hiddenbench:7:2",
+          "agent:hiddenbench:7:3",
+          "agent:hiddenbench:7:4"
+        ],
+        "missingAgentIds": [],
+        "coverage": 1,
+        "missingReasonByAgentId": {}
+      },
+      "measurement": {
+        "estimator": "primary_canonical_self_report",
+        "validPrimaryReportCount": 4,
+        "validRepeatPairCount": 0,
+        "replicateTotalVariationByAgentId": {},
+        "meanReplicateTotalVariation": null,
+        "maxReplicateTotalVariation": null
+      },
+      "behavioralCrossCheck": {
+        "status": "unavailable",
+        "choiceCoverage": 0,
+        "publicChoiceByAgentId": {},
+        "choiceShareByOptionId": null,
+        "majorityChoiceShare": null,
+        "beliefChoiceComparableAgentCount": 0,
+        "beliefTopChoiceCompatibilityRate": null
+      },
+      "microstate": {
+        "beliefProbabilitiesByAgentId": {
+          "agent:hiddenbench:7:1": {
+            "opt_1": 0,
+            "opt_2": 0,
+            "opt_3": 1
+          },
+          "agent:hiddenbench:7:2": {
+            "opt_1": 0,
+            "opt_2": 0,
+            "opt_3": 1
+          },
+          "agent:hiddenbench:7:3": {
+            "opt_1": 0,
+            "opt_2": 0,
+            "opt_3": 1
+          },
+          "agent:hiddenbench:7:4": {
+            "opt_1": 0,
+            "opt_2": 0,
+            "opt_3": 1
+          }
+        }
+      },
+      "macrostate": {
+        "pooledProbabilitiesByOptionId": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        },
+        "meanNormalizedReportEntropy": 0,
+        "pooledNormalizedEntropy": 0,
+        "normalizedGeneralizedJsd": 0,
+        "pooledConcentration": 1,
+        "pottsStyleOrder": 1,
+        "meanPairwiseTotalVariation": 0,
+        "maxPairwiseTotalVariation": 0
+      },
+      "contentHash": "sha256:44c12fa19862efe528253663598fcaa5fd4ed7590b2aeb916d6c5da098badabc"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-state",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "operational_self_reported_belief_state",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:7",
+      "checkpointId": "task:7:X1",
+      "checkpointIndex": 1,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "sensorRef": {
+        "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+        "version": "1.1.0"
+      },
+      "snapshotHash": "sha256:a60eb916bdf0949fb6319878890d6797f81985acfeafb74735fcac7d9943cc3d",
+      "roster": {
+        "expectedAgentIds": [
+          "agent:hiddenbench:7:1",
+          "agent:hiddenbench:7:2",
+          "agent:hiddenbench:7:3",
+          "agent:hiddenbench:7:4"
+        ],
+        "activeAgentIds": [
+          "agent:hiddenbench:7:1",
+          "agent:hiddenbench:7:2",
+          "agent:hiddenbench:7:3",
+          "agent:hiddenbench:7:4"
+        ],
+        "missingAgentIds": [],
+        "coverage": 1,
+        "missingReasonByAgentId": {}
+      },
+      "measurement": {
+        "estimator": "primary_canonical_self_report",
+        "validPrimaryReportCount": 4,
+        "validRepeatPairCount": 1,
+        "replicateTotalVariationByAgentId": {
+          "agent:hiddenbench:7:1": 0
+        },
+        "meanReplicateTotalVariation": 0,
+        "maxReplicateTotalVariation": 0
+      },
+      "behavioralCrossCheck": {
+        "status": "available",
+        "choiceCoverage": 1,
+        "publicChoiceByAgentId": {
+          "agent:hiddenbench:7:1": "opt_1",
+          "agent:hiddenbench:7:2": "opt_1",
+          "agent:hiddenbench:7:3": "opt_2",
+          "agent:hiddenbench:7:4": "opt_3"
+        },
+        "choiceShareByOptionId": {
+          "opt_1": 0.5,
+          "opt_2": 0.25,
+          "opt_3": 0.25
+        },
+        "majorityChoiceShare": 0.5,
+        "beliefChoiceComparableAgentCount": 4,
+        "beliefTopChoiceCompatibilityRate": 0.75
+      },
+      "microstate": {
+        "beliefProbabilitiesByAgentId": {
+          "agent:hiddenbench:7:1": {
+            "opt_1": 0.7,
+            "opt_2": 0.1,
+            "opt_3": 0.2
+          },
+          "agent:hiddenbench:7:2": {
+            "opt_1": 0.7,
+            "opt_2": 0.2,
+            "opt_3": 0.1
+          },
+          "agent:hiddenbench:7:3": {
+            "opt_1": 0,
+            "opt_2": 0,
+            "opt_3": 1
+          },
+          "agent:hiddenbench:7:4": {
+            "opt_1": 0,
+            "opt_2": 0,
+            "opt_3": 1
+          }
+        }
+      },
+      "macrostate": {
+        "pooledProbabilitiesByOptionId": {
+          "opt_1": 0.35,
+          "opt_2": 0.07500000000000001,
+          "opt_3": 0.575
+        },
+        "meanNormalizedReportEntropy": 0.3649233495810488,
+        "pooledNormalizedEntropy": 0.8009234031106358,
+        "normalizedGeneralizedJsd": 0.43600005352958704,
+        "pooledConcentration": 0.575,
+        "pottsStyleOrder": 0.36249999999999993,
+        "meanPairwiseTotalVariation": 0.5833333333333334,
+        "maxPairwiseTotalVariation": 0.8999999999999999
+      },
+      "contentHash": "sha256:c6f20ab6cd9d392cdf7be361790ee7e5e79b80666cbfe183e7f55b6c6f810d71"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-state",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "operational_self_reported_belief_state",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:7",
+      "checkpointId": "task:7:X2",
+      "checkpointIndex": 2,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "sensorRef": {
+        "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+        "version": "1.1.0"
+      },
+      "snapshotHash": "sha256:753a4edfee03b8590512b7ed7ff908d7cefa48639655ce1e408e65f7f34e9779",
+      "roster": {
+        "expectedAgentIds": [
+          "agent:hiddenbench:7:1",
+          "agent:hiddenbench:7:2",
+          "agent:hiddenbench:7:3",
+          "agent:hiddenbench:7:4"
+        ],
+        "activeAgentIds": [
+          "agent:hiddenbench:7:1",
+          "agent:hiddenbench:7:2",
+          "agent:hiddenbench:7:3",
+          "agent:hiddenbench:7:4"
+        ],
+        "missingAgentIds": [],
+        "coverage": 1,
+        "missingReasonByAgentId": {}
+      },
+      "measurement": {
+        "estimator": "primary_canonical_self_report",
+        "validPrimaryReportCount": 4,
+        "validRepeatPairCount": 0,
+        "replicateTotalVariationByAgentId": {},
+        "meanReplicateTotalVariation": null,
+        "maxReplicateTotalVariation": null
+      },
+      "behavioralCrossCheck": {
+        "status": "available",
+        "choiceCoverage": 1,
+        "publicChoiceByAgentId": {
+          "agent:hiddenbench:7:1": "opt_1",
+          "agent:hiddenbench:7:2": "opt_1",
+          "agent:hiddenbench:7:3": "opt_1",
+          "agent:hiddenbench:7:4": "opt_1"
+        },
+        "choiceShareByOptionId": {
+          "opt_1": 1,
+          "opt_2": 0,
+          "opt_3": 0
+        },
+        "majorityChoiceShare": 1,
+        "beliefChoiceComparableAgentCount": 4,
+        "beliefTopChoiceCompatibilityRate": 1
+      },
+      "microstate": {
+        "beliefProbabilitiesByAgentId": {
+          "agent:hiddenbench:7:1": {
+            "opt_1": 0.9,
+            "opt_2": 0.05,
+            "opt_3": 0.05
+          },
+          "agent:hiddenbench:7:2": {
+            "opt_1": 0.999999,
+            "opt_2": 0.000001,
+            "opt_3": 0
+          },
+          "agent:hiddenbench:7:3": {
+            "opt_1": 0.999999,
+            "opt_2": 0.000001,
+            "opt_3": 0
+          },
+          "agent:hiddenbench:7:4": {
+            "opt_1": 0.999999,
+            "opt_2": 0.000001,
+            "opt_3": 0
+          }
+        }
+      },
+      "macrostate": {
+        "pooledProbabilitiesByOptionId": {
+          "opt_1": 0.97499925,
+          "opt_2": 0.012500750000000001,
+          "opt_3": 0.0125
+        },
+        "meanNormalizedReportEntropy": 0.08975917665544553,
+        "pooledNormalizedEntropy": 0.1221894180003253,
+        "normalizedGeneralizedJsd": 0.032430241344879776,
+        "pooledConcentration": 0.97499925,
+        "pottsStyleOrder": 0.9624988750000001,
+        "meanPairwiseTotalVariation": 0.049999499999999995,
+        "maxPairwiseTotalVariation": 0.09999899999999998
+      },
+      "contentHash": "sha256:a0e74ec13163ea612c93f9ca15fe79216fe77df5cc35ff1b78beb17ac6e47335"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-state",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "operational_self_reported_belief_state",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:7",
+      "checkpointId": "task:7:X3",
+      "checkpointIndex": 3,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "sensorRef": {
+        "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+        "version": "1.1.0"
+      },
+      "snapshotHash": "sha256:9c048e3f4c12a496605c0c7c8ed9da2e2925b6e086a3abe3889913b0bae3aaae",
+      "roster": {
+        "expectedAgentIds": [
+          "agent:hiddenbench:7:1",
+          "agent:hiddenbench:7:2",
+          "agent:hiddenbench:7:3",
+          "agent:hiddenbench:7:4"
+        ],
+        "activeAgentIds": [
+          "agent:hiddenbench:7:1",
+          "agent:hiddenbench:7:2",
+          "agent:hiddenbench:7:3",
+          "agent:hiddenbench:7:4"
+        ],
+        "missingAgentIds": [],
+        "coverage": 1,
+        "missingReasonByAgentId": {}
+      },
+      "measurement": {
+        "estimator": "primary_canonical_self_report",
+        "validPrimaryReportCount": 4,
+        "validRepeatPairCount": 0,
+        "replicateTotalVariationByAgentId": {},
+        "meanReplicateTotalVariation": null,
+        "maxReplicateTotalVariation": null
+      },
+      "behavioralCrossCheck": {
+        "status": "available",
+        "choiceCoverage": 1,
+        "publicChoiceByAgentId": {
+          "agent:hiddenbench:7:1": "opt_1",
+          "agent:hiddenbench:7:2": "opt_1",
+          "agent:hiddenbench:7:3": "opt_1",
+          "agent:hiddenbench:7:4": "opt_1"
+        },
+        "choiceShareByOptionId": {
+          "opt_1": 1,
+          "opt_2": 0,
+          "opt_3": 0
+        },
+        "majorityChoiceShare": 1,
+        "beliefChoiceComparableAgentCount": 4,
+        "beliefTopChoiceCompatibilityRate": 1
+      },
+      "microstate": {
+        "beliefProbabilitiesByAgentId": {
+          "agent:hiddenbench:7:1": {
+            "opt_1": 0.999999,
+            "opt_2": 0.000001,
+            "opt_3": 0
+          },
+          "agent:hiddenbench:7:2": {
+            "opt_1": 0.999999,
+            "opt_2": 0.000001,
+            "opt_3": 0
+          },
+          "agent:hiddenbench:7:3": {
+            "opt_1": 0.999999,
+            "opt_2": 0.000001,
+            "opt_3": 0
+          },
+          "agent:hiddenbench:7:4": {
+            "opt_1": 0.999999,
+            "opt_2": 0.000001,
+            "opt_3": 0
+          }
+        }
+      },
+      "macrostate": {
+        "pooledProbabilitiesByOptionId": {
+          "opt_1": 0.999999,
+          "opt_2": 0.000001,
+          "opt_3": 0
+        },
+        "meanNormalizedReportEntropy": 0.000013485658417269554,
+        "pooledNormalizedEntropy": 0.000013485658417269554,
+        "normalizedGeneralizedJsd": 0,
+        "pooledConcentration": 0.999999,
+        "pottsStyleOrder": 0.9999985,
+        "meanPairwiseTotalVariation": 0,
+        "maxPairwiseTotalVariation": 0
+      },
+      "contentHash": "sha256:c233e9b8b247f1fd5ae5b3236522f3295197c6511836a93a3d8f8566d2a61c00"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-state",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "operational_self_reported_belief_state",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:13",
+      "checkpointId": "task:13:X0",
+      "checkpointIndex": 0,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "sensorRef": {
+        "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+        "version": "1.1.0"
+      },
+      "snapshotHash": "sha256:b666ba52e754218d6a56d3c84be4d03749d7832195e488783d5451af9adedf39",
+      "roster": {
+        "expectedAgentIds": [
+          "agent:hiddenbench:13:1",
+          "agent:hiddenbench:13:2",
+          "agent:hiddenbench:13:3",
+          "agent:hiddenbench:13:4"
+        ],
+        "activeAgentIds": [
+          "agent:hiddenbench:13:1",
+          "agent:hiddenbench:13:2",
+          "agent:hiddenbench:13:3",
+          "agent:hiddenbench:13:4"
+        ],
+        "missingAgentIds": [],
+        "coverage": 1,
+        "missingReasonByAgentId": {}
+      },
+      "measurement": {
+        "estimator": "primary_canonical_self_report",
+        "validPrimaryReportCount": 4,
+        "validRepeatPairCount": 0,
+        "replicateTotalVariationByAgentId": {},
+        "meanReplicateTotalVariation": null,
+        "maxReplicateTotalVariation": null
+      },
+      "behavioralCrossCheck": {
+        "status": "unavailable",
+        "choiceCoverage": 0,
+        "publicChoiceByAgentId": {},
+        "choiceShareByOptionId": null,
+        "majorityChoiceShare": null,
+        "beliefChoiceComparableAgentCount": 0,
+        "beliefTopChoiceCompatibilityRate": null
+      },
+      "microstate": {
+        "beliefProbabilitiesByAgentId": {
+          "agent:hiddenbench:13:1": {
+            "opt_1": 0.9,
+            "opt_2": 0.05,
+            "opt_3": 0.05
+          },
+          "agent:hiddenbench:13:2": {
+            "opt_1": 0.7,
+            "opt_2": 0.3,
+            "opt_3": 0
+          },
+          "agent:hiddenbench:13:3": {
+            "opt_1": 0.7,
+            "opt_2": 0.1,
+            "opt_3": 0.2
+          },
+          "agent:hiddenbench:13:4": {
+            "opt_1": 0.1,
+            "opt_2": 0.45,
+            "opt_3": 0.45
+          }
+        }
+      },
+      "macrostate": {
+        "pooledProbabilitiesByOptionId": {
+          "opt_1": 0.6,
+          "opt_2": 0.22499999999999998,
+          "opt_3": 0.175
+        },
+        "meanNormalizedReportEntropy": 0.6271539127971784,
+        "pooledNormalizedEntropy": 0.8621215689004275,
+        "normalizedGeneralizedJsd": 0.2349676561032491,
+        "pooledConcentration": 0.6,
+        "pottsStyleOrder": 0.3999999999999999,
+        "meanPairwiseTotalVariation": 0.44166666666666665,
+        "maxPairwiseTotalVariation": 0.8
+      },
+      "contentHash": "sha256:9715508521bf6a93aed9de77db848a416a5adb4ca60660a75132094e8544806e"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-state",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "operational_self_reported_belief_state",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:13",
+      "checkpointId": "task:13:X1",
+      "checkpointIndex": 1,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "sensorRef": {
+        "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+        "version": "1.1.0"
+      },
+      "snapshotHash": "sha256:072f91cae2128359628d74f932f472640fb6067ffc8874d994e671843c39f16a",
+      "roster": {
+        "expectedAgentIds": [
+          "agent:hiddenbench:13:1",
+          "agent:hiddenbench:13:2",
+          "agent:hiddenbench:13:3",
+          "agent:hiddenbench:13:4"
+        ],
+        "activeAgentIds": [
+          "agent:hiddenbench:13:1",
+          "agent:hiddenbench:13:2",
+          "agent:hiddenbench:13:3",
+          "agent:hiddenbench:13:4"
+        ],
+        "missingAgentIds": [],
+        "coverage": 1,
+        "missingReasonByAgentId": {}
+      },
+      "measurement": {
+        "estimator": "primary_canonical_self_report",
+        "validPrimaryReportCount": 4,
+        "validRepeatPairCount": 0,
+        "replicateTotalVariationByAgentId": {},
+        "meanReplicateTotalVariation": null,
+        "maxReplicateTotalVariation": null
+      },
+      "behavioralCrossCheck": {
+        "status": "available",
+        "choiceCoverage": 1,
+        "publicChoiceByAgentId": {
+          "agent:hiddenbench:13:1": "opt_1",
+          "agent:hiddenbench:13:2": "opt_1",
+          "agent:hiddenbench:13:3": "opt_3",
+          "agent:hiddenbench:13:4": "opt_2"
+        },
+        "choiceShareByOptionId": {
+          "opt_1": 0.5,
+          "opt_2": 0.25,
+          "opt_3": 0.25
+        },
+        "majorityChoiceShare": 0.5,
+        "beliefChoiceComparableAgentCount": 4,
+        "beliefTopChoiceCompatibilityRate": 1
+      },
+      "microstate": {
+        "beliefProbabilitiesByAgentId": {
+          "agent:hiddenbench:13:1": {
+            "opt_1": 0.7,
+            "opt_2": 0.1,
+            "opt_3": 0.2
+          },
+          "agent:hiddenbench:13:2": {
+            "opt_1": 0.7,
+            "opt_2": 0.2,
+            "opt_3": 0.1
+          },
+          "agent:hiddenbench:13:3": {
+            "opt_1": 0.2,
+            "opt_2": 0.1,
+            "opt_3": 0.7
+          },
+          "agent:hiddenbench:13:4": {
+            "opt_1": 0.1,
+            "opt_2": 0.45,
+            "opt_3": 0.45
+          }
+        }
+      },
+      "macrostate": {
+        "pooledProbabilitiesByOptionId": {
+          "opt_1": 0.425,
+          "opt_2": 0.21250000000000002,
+          "opt_3": 0.3625
+        },
+        "meanNormalizedReportEntropy": 0.7633200374974973,
+        "pooledNormalizedEntropy": 0.9654186910796367,
+        "normalizedGeneralizedJsd": 0.2020986535821394,
+        "pooledConcentration": 0.425,
+        "pottsStyleOrder": 0.13749999999999996,
+        "meanPairwiseTotalVariation": 0.4583333333333333,
+        "maxPairwiseTotalVariation": 0.6
+      },
+      "contentHash": "sha256:445f5459f0a386bb18e348c9a3f6b2232544b177d9b7af26b8d381bb89dd3878"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-state",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "operational_self_reported_belief_state",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:13",
+      "checkpointId": "task:13:X2",
+      "checkpointIndex": 2,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "sensorRef": {
+        "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+        "version": "1.1.0"
+      },
+      "snapshotHash": "sha256:508faf4c386a89b675767c377803246fe44e82cb505e30a785136f87dafab3a3",
+      "roster": {
+        "expectedAgentIds": [
+          "agent:hiddenbench:13:1",
+          "agent:hiddenbench:13:2",
+          "agent:hiddenbench:13:3",
+          "agent:hiddenbench:13:4"
+        ],
+        "activeAgentIds": [
+          "agent:hiddenbench:13:1",
+          "agent:hiddenbench:13:2",
+          "agent:hiddenbench:13:3",
+          "agent:hiddenbench:13:4"
+        ],
+        "missingAgentIds": [],
+        "coverage": 1,
+        "missingReasonByAgentId": {}
+      },
+      "measurement": {
+        "estimator": "primary_canonical_self_report",
+        "validPrimaryReportCount": 4,
+        "validRepeatPairCount": 1,
+        "replicateTotalVariationByAgentId": {
+          "agent:hiddenbench:13:1": 0
+        },
+        "meanReplicateTotalVariation": 0,
+        "maxReplicateTotalVariation": 0
+      },
+      "behavioralCrossCheck": {
+        "status": "available",
+        "choiceCoverage": 1,
+        "publicChoiceByAgentId": {
+          "agent:hiddenbench:13:1": "opt_1",
+          "agent:hiddenbench:13:2": "opt_1",
+          "agent:hiddenbench:13:3": "opt_3",
+          "agent:hiddenbench:13:4": "opt_2"
+        },
+        "choiceShareByOptionId": {
+          "opt_1": 0.5,
+          "opt_2": 0.25,
+          "opt_3": 0.25
+        },
+        "majorityChoiceShare": 0.5,
+        "beliefChoiceComparableAgentCount": 4,
+        "beliefTopChoiceCompatibilityRate": 1
+      },
+      "microstate": {
+        "beliefProbabilitiesByAgentId": {
+          "agent:hiddenbench:13:1": {
+            "opt_1": 0.7,
+            "opt_2": 0.1,
+            "opt_3": 0.2
+          },
+          "agent:hiddenbench:13:2": {
+            "opt_1": 0.6,
+            "opt_2": 0.1,
+            "opt_3": 0.3
+          },
+          "agent:hiddenbench:13:3": {
+            "opt_1": 0.25,
+            "opt_2": 0.25,
+            "opt_3": 0.5
+          },
+          "agent:hiddenbench:13:4": {
+            "opt_1": 0,
+            "opt_2": 0.5,
+            "opt_3": 0.5
+          }
+        }
+      },
+      "macrostate": {
+        "pooledProbabilitiesByOptionId": {
+          "opt_1": 0.38749999999999996,
+          "opt_2": 0.2375,
+          "opt_3": 0.375
+        },
+        "meanNormalizedReportEntropy": 0.781129126309313,
+        "pooledNormalizedEntropy": 0.9799665708871302,
+        "normalizedGeneralizedJsd": 0.19883744457781727,
+        "pooledConcentration": 0.38749999999999996,
+        "pottsStyleOrder": 0.08124999999999993,
+        "meanPairwiseTotalVariation": 0.4083333333333334,
+        "maxPairwiseTotalVariation": 0.7000000000000001
+      },
+      "contentHash": "sha256:256cc65ede7525d391dc39793bc0c73bf7abf83181aff641fe94681f693a4340"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-state",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "operational_self_reported_belief_state",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:13",
+      "checkpointId": "task:13:X3",
+      "checkpointIndex": 3,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "sensorRef": {
+        "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+        "version": "1.1.0"
+      },
+      "snapshotHash": "sha256:11a23fb45065a03df6f77e2d16a25251ab49ce683b415a9d7cd11890b75db7c5",
+      "roster": {
+        "expectedAgentIds": [
+          "agent:hiddenbench:13:1",
+          "agent:hiddenbench:13:2",
+          "agent:hiddenbench:13:3",
+          "agent:hiddenbench:13:4"
+        ],
+        "activeAgentIds": [
+          "agent:hiddenbench:13:1",
+          "agent:hiddenbench:13:2",
+          "agent:hiddenbench:13:3",
+          "agent:hiddenbench:13:4"
+        ],
+        "missingAgentIds": [],
+        "coverage": 1,
+        "missingReasonByAgentId": {}
+      },
+      "measurement": {
+        "estimator": "primary_canonical_self_report",
+        "validPrimaryReportCount": 4,
+        "validRepeatPairCount": 0,
+        "replicateTotalVariationByAgentId": {},
+        "meanReplicateTotalVariation": null,
+        "maxReplicateTotalVariation": null
+      },
+      "behavioralCrossCheck": {
+        "status": "available",
+        "choiceCoverage": 1,
+        "publicChoiceByAgentId": {
+          "agent:hiddenbench:13:1": "opt_1",
+          "agent:hiddenbench:13:2": "opt_1",
+          "agent:hiddenbench:13:3": "opt_3",
+          "agent:hiddenbench:13:4": "opt_2"
+        },
+        "choiceShareByOptionId": {
+          "opt_1": 0.5,
+          "opt_2": 0.25,
+          "opt_3": 0.25
+        },
+        "majorityChoiceShare": 0.5,
+        "beliefChoiceComparableAgentCount": 4,
+        "beliefTopChoiceCompatibilityRate": 1
+      },
+      "microstate": {
+        "beliefProbabilitiesByAgentId": {
+          "agent:hiddenbench:13:1": {
+            "opt_1": 0.7,
+            "opt_2": 0.1,
+            "opt_3": 0.2
+          },
+          "agent:hiddenbench:13:2": {
+            "opt_1": 0.6,
+            "opt_2": 0.1,
+            "opt_3": 0.3
+          },
+          "agent:hiddenbench:13:3": {
+            "opt_1": 0.2,
+            "opt_2": 0.1,
+            "opt_3": 0.7
+          },
+          "agent:hiddenbench:13:4": {
+            "opt_1": 0,
+            "opt_2": 0.5,
+            "opt_3": 0.5
+          }
+        }
+      },
+      "macrostate": {
+        "pooledProbabilitiesByOptionId": {
+          "opt_1": 0.37499999999999994,
+          "opt_2": 0.2,
+          "opt_3": 0.425
+        },
+        "meanNormalizedReportEntropy": 0.7269921435105409,
+        "pooledNormalizedEntropy": 0.9588065416761121,
+        "normalizedGeneralizedJsd": 0.23181439816557126,
+        "pooledConcentration": 0.425,
+        "pottsStyleOrder": 0.13749999999999996,
+        "meanPairwiseTotalVariation": 0.44999999999999996,
+        "maxPairwiseTotalVariation": 0.7000000000000001
+      },
+      "contentHash": "sha256:3c3c54ba1b91b32cec88c5bd9510410e2d2b569868cafad589b4570de7317826"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-state",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "operational_self_reported_belief_state",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:11",
+      "checkpointId": "task:11:X0",
+      "checkpointIndex": 0,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "sensorRef": {
+        "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+        "version": "1.1.0"
+      },
+      "snapshotHash": "sha256:0fb0771908aa2f9b0adec48aa689165073fbf3fff9210c897d9aadc8b0e68f93",
+      "roster": {
+        "expectedAgentIds": [
+          "agent:hiddenbench:11:1",
+          "agent:hiddenbench:11:2",
+          "agent:hiddenbench:11:3",
+          "agent:hiddenbench:11:4"
+        ],
+        "activeAgentIds": [
+          "agent:hiddenbench:11:1",
+          "agent:hiddenbench:11:2",
+          "agent:hiddenbench:11:3",
+          "agent:hiddenbench:11:4"
+        ],
+        "missingAgentIds": [],
+        "coverage": 1,
+        "missingReasonByAgentId": {}
+      },
+      "measurement": {
+        "estimator": "primary_canonical_self_report",
+        "validPrimaryReportCount": 4,
+        "validRepeatPairCount": 0,
+        "replicateTotalVariationByAgentId": {},
+        "meanReplicateTotalVariation": null,
+        "maxReplicateTotalVariation": null
+      },
+      "behavioralCrossCheck": {
+        "status": "unavailable",
+        "choiceCoverage": 0,
+        "publicChoiceByAgentId": {},
+        "choiceShareByOptionId": null,
+        "majorityChoiceShare": null,
+        "beliefChoiceComparableAgentCount": 0,
+        "beliefTopChoiceCompatibilityRate": null
+      },
+      "microstate": {
+        "beliefProbabilitiesByAgentId": {
+          "agent:hiddenbench:11:1": {
+            "opt_1": 0,
+            "opt_2": 0,
+            "opt_3": 1
+          },
+          "agent:hiddenbench:11:2": {
+            "opt_1": 0.1,
+            "opt_2": 0.2,
+            "opt_3": 0.7
+          },
+          "agent:hiddenbench:11:3": {
+            "opt_1": 0.7,
+            "opt_2": 0,
+            "opt_3": 0.3
+          },
+          "agent:hiddenbench:11:4": {
+            "opt_1": 0.7,
+            "opt_2": 0.2,
+            "opt_3": 0.1
+          }
+        }
+      },
+      "macrostate": {
+        "pooledProbabilitiesByOptionId": {
+          "opt_1": 0.375,
+          "opt_2": 0.1,
+          "opt_3": 0.525
+        },
+        "meanNormalizedReportEntropy": 0.5039315120501461,
+        "pooledNormalizedEntropy": 0.8523087921390388,
+        "normalizedGeneralizedJsd": 0.3483772800888927,
+        "pooledConcentration": 0.525,
+        "pottsStyleOrder": 0.2875000000000001,
+        "meanPairwiseTotalVariation": 0.55,
+        "maxPairwiseTotalVariation": 0.8999999999999999
+      },
+      "contentHash": "sha256:705bc20ad044e18deb1e4f42fc001fbf13f9d470b3fddc54feafa0ef25a02794"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-state",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "operational_self_reported_belief_state",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:11",
+      "checkpointId": "task:11:X1",
+      "checkpointIndex": 1,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "sensorRef": {
+        "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+        "version": "1.1.0"
+      },
+      "snapshotHash": "sha256:c78892308b598a19cace47fc8fdf3604356c6bd7175a27deec4540002fa911f8",
+      "roster": {
+        "expectedAgentIds": [
+          "agent:hiddenbench:11:1",
+          "agent:hiddenbench:11:2",
+          "agent:hiddenbench:11:3",
+          "agent:hiddenbench:11:4"
+        ],
+        "activeAgentIds": [
+          "agent:hiddenbench:11:1",
+          "agent:hiddenbench:11:2",
+          "agent:hiddenbench:11:3",
+          "agent:hiddenbench:11:4"
+        ],
+        "missingAgentIds": [],
+        "coverage": 1,
+        "missingReasonByAgentId": {}
+      },
+      "measurement": {
+        "estimator": "primary_canonical_self_report",
+        "validPrimaryReportCount": 4,
+        "validRepeatPairCount": 0,
+        "replicateTotalVariationByAgentId": {},
+        "meanReplicateTotalVariation": null,
+        "maxReplicateTotalVariation": null
+      },
+      "behavioralCrossCheck": {
+        "status": "available",
+        "choiceCoverage": 1,
+        "publicChoiceByAgentId": {
+          "agent:hiddenbench:11:1": "opt_2",
+          "agent:hiddenbench:11:2": "opt_3",
+          "agent:hiddenbench:11:3": "opt_1",
+          "agent:hiddenbench:11:4": "opt_1"
+        },
+        "choiceShareByOptionId": {
+          "opt_1": 0.5,
+          "opt_2": 0.25,
+          "opt_3": 0.25
+        },
+        "majorityChoiceShare": 0.5,
+        "beliefChoiceComparableAgentCount": 4,
+        "beliefTopChoiceCompatibilityRate": 1
+      },
+      "microstate": {
+        "beliefProbabilitiesByAgentId": {
+          "agent:hiddenbench:11:1": {
+            "opt_1": 0,
+            "opt_2": 1,
+            "opt_3": 0
+          },
+          "agent:hiddenbench:11:2": {
+            "opt_1": 0.1,
+            "opt_2": 0.1,
+            "opt_3": 0.8
+          },
+          "agent:hiddenbench:11:3": {
+            "opt_1": 0.9,
+            "opt_2": 0.1,
+            "opt_3": 0
+          },
+          "agent:hiddenbench:11:4": {
+            "opt_1": 0.7,
+            "opt_2": 0.2,
+            "opt_3": 0.1
+          }
+        }
+      },
+      "macrostate": {
+        "pooledProbabilitiesByOptionId": {
+          "opt_1": 0.425,
+          "opt_2": 0.35000000000000003,
+          "opt_3": 0.225
+        },
+        "meanNormalizedReportEntropy": 0.4018554597923423,
+        "pooledNormalizedEntropy": 0.9709687381317014,
+        "normalizedGeneralizedJsd": 0.5691132783393591,
+        "pooledConcentration": 0.425,
+        "pottsStyleOrder": 0.13749999999999996,
+        "meanPairwiseTotalVariation": 0.7166666666666668,
+        "maxPairwiseTotalVariation": 0.9
+      },
+      "contentHash": "sha256:7b91e990cca0498bf858463be1c079e2a2a72d9bfa5d6290417bee467e90b429"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-state",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "operational_self_reported_belief_state",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:11",
+      "checkpointId": "task:11:X2",
+      "checkpointIndex": 2,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "sensorRef": {
+        "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+        "version": "1.1.0"
+      },
+      "snapshotHash": "sha256:ae40c5e1ec4cb77a1f8bcb8bfbd1c0b59d43629728af4d977b0e1f879cac8385",
+      "roster": {
+        "expectedAgentIds": [
+          "agent:hiddenbench:11:1",
+          "agent:hiddenbench:11:2",
+          "agent:hiddenbench:11:3",
+          "agent:hiddenbench:11:4"
+        ],
+        "activeAgentIds": [
+          "agent:hiddenbench:11:1",
+          "agent:hiddenbench:11:2",
+          "agent:hiddenbench:11:3",
+          "agent:hiddenbench:11:4"
+        ],
+        "missingAgentIds": [],
+        "coverage": 1,
+        "missingReasonByAgentId": {}
+      },
+      "measurement": {
+        "estimator": "primary_canonical_self_report",
+        "validPrimaryReportCount": 4,
+        "validRepeatPairCount": 0,
+        "replicateTotalVariationByAgentId": {},
+        "meanReplicateTotalVariation": null,
+        "maxReplicateTotalVariation": null
+      },
+      "behavioralCrossCheck": {
+        "status": "available",
+        "choiceCoverage": 1,
+        "publicChoiceByAgentId": {
+          "agent:hiddenbench:11:1": "opt_2",
+          "agent:hiddenbench:11:2": "opt_3",
+          "agent:hiddenbench:11:3": "opt_1",
+          "agent:hiddenbench:11:4": "opt_1"
+        },
+        "choiceShareByOptionId": {
+          "opt_1": 0.5,
+          "opt_2": 0.25,
+          "opt_3": 0.25
+        },
+        "majorityChoiceShare": 0.5,
+        "beliefChoiceComparableAgentCount": 4,
+        "beliefTopChoiceCompatibilityRate": 1
+      },
+      "microstate": {
+        "beliefProbabilitiesByAgentId": {
+          "agent:hiddenbench:11:1": {
+            "opt_1": 0,
+            "opt_2": 1,
+            "opt_3": 0
+          },
+          "agent:hiddenbench:11:2": {
+            "opt_1": 0.1,
+            "opt_2": 0.1,
+            "opt_3": 0.8
+          },
+          "agent:hiddenbench:11:3": {
+            "opt_1": 0.9,
+            "opt_2": 0.1,
+            "opt_3": 0
+          },
+          "agent:hiddenbench:11:4": {
+            "opt_1": 0.7,
+            "opt_2": 0.2,
+            "opt_3": 0.1
+          }
+        }
+      },
+      "macrostate": {
+        "pooledProbabilitiesByOptionId": {
+          "opt_1": 0.425,
+          "opt_2": 0.35000000000000003,
+          "opt_3": 0.225
+        },
+        "meanNormalizedReportEntropy": 0.4018554597923423,
+        "pooledNormalizedEntropy": 0.9709687381317014,
+        "normalizedGeneralizedJsd": 0.5691132783393591,
+        "pooledConcentration": 0.425,
+        "pottsStyleOrder": 0.13749999999999996,
+        "meanPairwiseTotalVariation": 0.7166666666666668,
+        "maxPairwiseTotalVariation": 0.9
+      },
+      "contentHash": "sha256:a708dddcf5f93709bb57e3112fae3ec8d86d4cebdfab9eaeb7b85f70019c3f96"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-state",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "operational_self_reported_belief_state",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:11",
+      "checkpointId": "task:11:X3",
+      "checkpointIndex": 3,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "sensorRef": {
+        "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+        "version": "1.1.0"
+      },
+      "snapshotHash": "sha256:6f73efdc29eacc3c00065a4775b3038882d4095322d9f48db83ecf4aef5e402c",
+      "roster": {
+        "expectedAgentIds": [
+          "agent:hiddenbench:11:1",
+          "agent:hiddenbench:11:2",
+          "agent:hiddenbench:11:3",
+          "agent:hiddenbench:11:4"
+        ],
+        "activeAgentIds": [
+          "agent:hiddenbench:11:1",
+          "agent:hiddenbench:11:2",
+          "agent:hiddenbench:11:3",
+          "agent:hiddenbench:11:4"
+        ],
+        "missingAgentIds": [],
+        "coverage": 1,
+        "missingReasonByAgentId": {}
+      },
+      "measurement": {
+        "estimator": "primary_canonical_self_report",
+        "validPrimaryReportCount": 4,
+        "validRepeatPairCount": 1,
+        "replicateTotalVariationByAgentId": {
+          "agent:hiddenbench:11:1": 0
+        },
+        "meanReplicateTotalVariation": 0,
+        "maxReplicateTotalVariation": 0
+      },
+      "behavioralCrossCheck": {
+        "status": "available",
+        "choiceCoverage": 1,
+        "publicChoiceByAgentId": {
+          "agent:hiddenbench:11:1": "opt_2",
+          "agent:hiddenbench:11:2": "opt_3",
+          "agent:hiddenbench:11:3": "opt_1",
+          "agent:hiddenbench:11:4": "opt_3"
+        },
+        "choiceShareByOptionId": {
+          "opt_1": 0.25,
+          "opt_2": 0.25,
+          "opt_3": 0.5
+        },
+        "majorityChoiceShare": 0.5,
+        "beliefChoiceComparableAgentCount": 4,
+        "beliefTopChoiceCompatibilityRate": 0.75
+      },
+      "microstate": {
+        "beliefProbabilitiesByAgentId": {
+          "agent:hiddenbench:11:1": {
+            "opt_1": 0,
+            "opt_2": 0,
+            "opt_3": 1
+          },
+          "agent:hiddenbench:11:2": {
+            "opt_1": 0.1,
+            "opt_2": 0.1,
+            "opt_3": 0.8
+          },
+          "agent:hiddenbench:11:3": {
+            "opt_1": 0.9,
+            "opt_2": 0,
+            "opt_3": 0.1
+          },
+          "agent:hiddenbench:11:4": {
+            "opt_1": 0.1,
+            "opt_2": 0.1,
+            "opt_3": 0.8
+          }
+        }
+      },
+      "macrostate": {
+        "pooledProbabilitiesByOptionId": {
+          "opt_1": 0.275,
+          "opt_2": 0.05,
+          "opt_3": 0.675
+        },
+        "meanNormalizedReportEntropy": 0.36481175143128963,
+        "pooledNormalizedEntropy": 0.7009852506265887,
+        "normalizedGeneralizedJsd": 0.33617349919529904,
+        "pooledConcentration": 0.675,
+        "pottsStyleOrder": 0.5125000000000002,
+        "meanPairwiseTotalVariation": 0.4833333333333334,
+        "maxPairwiseTotalVariation": 0.9
+      },
+      "contentHash": "sha256:0481ea96004d11937c4f7844dc17cb7218a6ff7bf0aa2780cae71db7a4835ac3"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-state",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "operational_self_reported_belief_state",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:16",
+      "checkpointId": "task:16:X0",
+      "checkpointIndex": 0,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "sensorRef": {
+        "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+        "version": "1.1.0"
+      },
+      "snapshotHash": "sha256:ee9f0ecfb6801a17cd30fb17da43cfee40a319b66a053e4e14dea36f53b0c3b6",
+      "roster": {
+        "expectedAgentIds": [
+          "agent:hiddenbench:16:1",
+          "agent:hiddenbench:16:2",
+          "agent:hiddenbench:16:3",
+          "agent:hiddenbench:16:4"
+        ],
+        "activeAgentIds": [
+          "agent:hiddenbench:16:1",
+          "agent:hiddenbench:16:2",
+          "agent:hiddenbench:16:3",
+          "agent:hiddenbench:16:4"
+        ],
+        "missingAgentIds": [],
+        "coverage": 1,
+        "missingReasonByAgentId": {}
+      },
+      "measurement": {
+        "estimator": "primary_canonical_self_report",
+        "validPrimaryReportCount": 4,
+        "validRepeatPairCount": 1,
+        "replicateTotalVariationByAgentId": {
+          "agent:hiddenbench:16:2": 0.04999999999999999
+        },
+        "meanReplicateTotalVariation": 0.04999999999999999,
+        "maxReplicateTotalVariation": 0.04999999999999999
+      },
+      "behavioralCrossCheck": {
+        "status": "unavailable",
+        "choiceCoverage": 0,
+        "publicChoiceByAgentId": {},
+        "choiceShareByOptionId": null,
+        "majorityChoiceShare": null,
+        "beliefChoiceComparableAgentCount": 0,
+        "beliefTopChoiceCompatibilityRate": null
+      },
+      "microstate": {
+        "beliefProbabilitiesByAgentId": {
+          "agent:hiddenbench:16:1": {
+            "opt_1": 0.33,
+            "opt_2": 0.01,
+            "opt_3": 0.66
+          },
+          "agent:hiddenbench:16:2": {
+            "opt_1": 0.1,
+            "opt_2": 0.4,
+            "opt_3": 0.5
+          },
+          "agent:hiddenbench:16:3": {
+            "opt_1": 0.1,
+            "opt_2": 0.3,
+            "opt_3": 0.6
+          },
+          "agent:hiddenbench:16:4": {
+            "opt_1": 0.33,
+            "opt_2": 0.33,
+            "opt_3": 0.34
+          }
+        }
+      },
+      "macrostate": {
+        "pooledProbabilitiesByOptionId": {
+          "opt_1": 0.21500000000000002,
+          "opt_2": 0.26,
+          "opt_3": 0.525
+        },
+        "meanNormalizedReportEntropy": 0.8251221410419366,
+        "pooledNormalizedEntropy": 0.9275399533764833,
+        "normalizedGeneralizedJsd": 0.10241781233454672,
+        "pooledConcentration": 0.525,
+        "pottsStyleOrder": 0.2875000000000001,
+        "meanPairwiseTotalVariation": 0.265,
+        "maxPairwiseTotalVariation": 0.39
+      },
+      "contentHash": "sha256:41faa192af4130cecd4db16e5f56f6fa041e15b298941363ed1941fdacbea18d"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-state",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "operational_self_reported_belief_state",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:16",
+      "checkpointId": "task:16:X1",
+      "checkpointIndex": 1,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "sensorRef": {
+        "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+        "version": "1.1.0"
+      },
+      "snapshotHash": "sha256:edf7906377bcf7a6c1a917f7dedb4364b36fcf405c4259bc9fc4eb6f736650b2",
+      "roster": {
+        "expectedAgentIds": [
+          "agent:hiddenbench:16:1",
+          "agent:hiddenbench:16:2",
+          "agent:hiddenbench:16:3",
+          "agent:hiddenbench:16:4"
+        ],
+        "activeAgentIds": [
+          "agent:hiddenbench:16:1",
+          "agent:hiddenbench:16:2",
+          "agent:hiddenbench:16:3",
+          "agent:hiddenbench:16:4"
+        ],
+        "missingAgentIds": [],
+        "coverage": 1,
+        "missingReasonByAgentId": {}
+      },
+      "measurement": {
+        "estimator": "primary_canonical_self_report",
+        "validPrimaryReportCount": 4,
+        "validRepeatPairCount": 0,
+        "replicateTotalVariationByAgentId": {},
+        "meanReplicateTotalVariation": null,
+        "maxReplicateTotalVariation": null
+      },
+      "behavioralCrossCheck": {
+        "status": "available",
+        "choiceCoverage": 1,
+        "publicChoiceByAgentId": {
+          "agent:hiddenbench:16:1": "opt_3",
+          "agent:hiddenbench:16:2": "opt_3",
+          "agent:hiddenbench:16:3": "opt_3",
+          "agent:hiddenbench:16:4": "opt_3"
+        },
+        "choiceShareByOptionId": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        },
+        "majorityChoiceShare": 1,
+        "beliefChoiceComparableAgentCount": 4,
+        "beliefTopChoiceCompatibilityRate": 1
+      },
+      "microstate": {
+        "beliefProbabilitiesByAgentId": {
+          "agent:hiddenbench:16:1": {
+            "opt_1": 0.1,
+            "opt_2": 0.1,
+            "opt_3": 0.8
+          },
+          "agent:hiddenbench:16:2": {
+            "opt_1": 0.1,
+            "opt_2": 0.2,
+            "opt_3": 0.7
+          },
+          "agent:hiddenbench:16:3": {
+            "opt_1": 0,
+            "opt_2": 0,
+            "opt_3": 1
+          },
+          "agent:hiddenbench:16:4": {
+            "opt_1": 0.1,
+            "opt_2": 0.2,
+            "opt_3": 0.7
+          }
+        }
+      },
+      "macrostate": {
+        "pooledProbabilitiesByOptionId": {
+          "opt_1": 0.07500000000000001,
+          "opt_2": 0.125,
+          "opt_3": 0.8
+        },
+        "meanNormalizedReportEntropy": 0.5103413160105206,
+        "pooledNormalizedEntropy": 0.5759220770567288,
+        "normalizedGeneralizedJsd": 0.06558076104620825,
+        "pooledConcentration": 0.8,
+        "pottsStyleOrder": 0.7000000000000002,
+        "meanPairwiseTotalVariation": 0.1666666666666667,
+        "maxPairwiseTotalVariation": 0.30000000000000004
+      },
+      "contentHash": "sha256:9c187eb5c9719ec7df5186647d8709b9de8297a35f492e4d9ecbd48a0dbf0c02"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-state",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "operational_self_reported_belief_state",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:16",
+      "checkpointId": "task:16:X2",
+      "checkpointIndex": 2,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "sensorRef": {
+        "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+        "version": "1.1.0"
+      },
+      "snapshotHash": "sha256:5af63f2811f6ac30d6871facd9a68e3e5b51f221c9b6ce6a7b2648868e2461a3",
+      "roster": {
+        "expectedAgentIds": [
+          "agent:hiddenbench:16:1",
+          "agent:hiddenbench:16:2",
+          "agent:hiddenbench:16:3",
+          "agent:hiddenbench:16:4"
+        ],
+        "activeAgentIds": [
+          "agent:hiddenbench:16:1",
+          "agent:hiddenbench:16:2",
+          "agent:hiddenbench:16:3",
+          "agent:hiddenbench:16:4"
+        ],
+        "missingAgentIds": [],
+        "coverage": 1,
+        "missingReasonByAgentId": {}
+      },
+      "measurement": {
+        "estimator": "primary_canonical_self_report",
+        "validPrimaryReportCount": 4,
+        "validRepeatPairCount": 0,
+        "replicateTotalVariationByAgentId": {},
+        "meanReplicateTotalVariation": null,
+        "maxReplicateTotalVariation": null
+      },
+      "behavioralCrossCheck": {
+        "status": "available",
+        "choiceCoverage": 1,
+        "publicChoiceByAgentId": {
+          "agent:hiddenbench:16:1": "opt_3",
+          "agent:hiddenbench:16:2": "opt_3",
+          "agent:hiddenbench:16:3": "opt_3",
+          "agent:hiddenbench:16:4": "opt_3"
+        },
+        "choiceShareByOptionId": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        },
+        "majorityChoiceShare": 1,
+        "beliefChoiceComparableAgentCount": 4,
+        "beliefTopChoiceCompatibilityRate": 1
+      },
+      "microstate": {
+        "beliefProbabilitiesByAgentId": {
+          "agent:hiddenbench:16:1": {
+            "opt_1": 0,
+            "opt_2": 0,
+            "opt_3": 1
+          },
+          "agent:hiddenbench:16:2": {
+            "opt_1": 0.05,
+            "opt_2": 0.15,
+            "opt_3": 0.8
+          },
+          "agent:hiddenbench:16:3": {
+            "opt_1": 0,
+            "opt_2": 0,
+            "opt_3": 1
+          },
+          "agent:hiddenbench:16:4": {
+            "opt_1": 0.1,
+            "opt_2": 0.2,
+            "opt_3": 0.7
+          }
+        }
+      },
+      "macrostate": {
+        "pooledProbabilitiesByOptionId": {
+          "opt_1": 0.037500000000000006,
+          "opt_2": 0.0875,
+          "opt_3": 0.875
+        },
+        "meanNormalizedReportEntropy": 0.321926128898569,
+        "pooledNormalizedEntropy": 0.4124550614326765,
+        "normalizedGeneralizedJsd": 0.09052893253410754,
+        "pooledConcentration": 0.875,
+        "pottsStyleOrder": 0.8125,
+        "meanPairwiseTotalVariation": 0.18333333333333335,
+        "maxPairwiseTotalVariation": 0.30000000000000004
+      },
+      "contentHash": "sha256:835c5bb87def24fa0aeda156e2e680da92b66a9039184d1820d5281cae2646ad"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-state",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "operational_self_reported_belief_state",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:16",
+      "checkpointId": "task:16:X3",
+      "checkpointIndex": 3,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "sensorRef": {
+        "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+        "version": "1.1.0"
+      },
+      "snapshotHash": "sha256:5b380aa90500619a1f6b6abd0938c8205b9db325ec4c10d58259ca40aa145706",
+      "roster": {
+        "expectedAgentIds": [
+          "agent:hiddenbench:16:1",
+          "agent:hiddenbench:16:2",
+          "agent:hiddenbench:16:3",
+          "agent:hiddenbench:16:4"
+        ],
+        "activeAgentIds": [
+          "agent:hiddenbench:16:1",
+          "agent:hiddenbench:16:2",
+          "agent:hiddenbench:16:3",
+          "agent:hiddenbench:16:4"
+        ],
+        "missingAgentIds": [],
+        "coverage": 1,
+        "missingReasonByAgentId": {}
+      },
+      "measurement": {
+        "estimator": "primary_canonical_self_report",
+        "validPrimaryReportCount": 4,
+        "validRepeatPairCount": 0,
+        "replicateTotalVariationByAgentId": {},
+        "meanReplicateTotalVariation": null,
+        "maxReplicateTotalVariation": null
+      },
+      "behavioralCrossCheck": {
+        "status": "available",
+        "choiceCoverage": 1,
+        "publicChoiceByAgentId": {
+          "agent:hiddenbench:16:1": "opt_3",
+          "agent:hiddenbench:16:2": "opt_3",
+          "agent:hiddenbench:16:3": "opt_3",
+          "agent:hiddenbench:16:4": "opt_3"
+        },
+        "choiceShareByOptionId": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        },
+        "majorityChoiceShare": 1,
+        "beliefChoiceComparableAgentCount": 4,
+        "beliefTopChoiceCompatibilityRate": 1
+      },
+      "microstate": {
+        "beliefProbabilitiesByAgentId": {
+          "agent:hiddenbench:16:1": {
+            "opt_1": 0,
+            "opt_2": 0,
+            "opt_3": 1
+          },
+          "agent:hiddenbench:16:2": {
+            "opt_1": 0.1,
+            "opt_2": 0.1,
+            "opt_3": 0.8
+          },
+          "agent:hiddenbench:16:3": {
+            "opt_1": 0,
+            "opt_2": 0,
+            "opt_3": 1
+          },
+          "agent:hiddenbench:16:4": {
+            "opt_1": 0.1,
+            "opt_2": 0.2,
+            "opt_3": 0.7
+          }
+        }
+      },
+      "macrostate": {
+        "pooledProbabilitiesByOptionId": {
+          "opt_1": 0.05,
+          "opt_2": 0.07500000000000001,
+          "opt_3": 0.875
+        },
+        "meanNormalizedReportEntropy": 0.32787964121999613,
+        "pooledNormalizedEntropy": 0.4195261826092959,
+        "normalizedGeneralizedJsd": 0.09164654138929978,
+        "pooledConcentration": 0.875,
+        "pottsStyleOrder": 0.8125,
+        "meanPairwiseTotalVariation": 0.18333333333333335,
+        "maxPairwiseTotalVariation": 0.30000000000000004
+      },
+      "contentHash": "sha256:4ef934232d2899b25007d27e5cbaf2fd97d6b4bc0e3bdfd34e68e1aa8e15e64a"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-state",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "operational_self_reported_belief_state",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:3",
+      "checkpointId": "task:3:X0",
+      "checkpointIndex": 0,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "sensorRef": {
+        "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+        "version": "1.1.0"
+      },
+      "snapshotHash": "sha256:fa641cee995bda354100b0fdc7aa03a89ad9a5dc8b975ba5a2e417f329d2fbcb",
+      "roster": {
+        "expectedAgentIds": [
+          "agent:hiddenbench:3:1",
+          "agent:hiddenbench:3:2",
+          "agent:hiddenbench:3:3",
+          "agent:hiddenbench:3:4"
+        ],
+        "activeAgentIds": [
+          "agent:hiddenbench:3:1",
+          "agent:hiddenbench:3:2",
+          "agent:hiddenbench:3:3",
+          "agent:hiddenbench:3:4"
+        ],
+        "missingAgentIds": [],
+        "coverage": 1,
+        "missingReasonByAgentId": {}
+      },
+      "measurement": {
+        "estimator": "primary_canonical_self_report",
+        "validPrimaryReportCount": 4,
+        "validRepeatPairCount": 0,
+        "replicateTotalVariationByAgentId": {},
+        "meanReplicateTotalVariation": null,
+        "maxReplicateTotalVariation": null
+      },
+      "behavioralCrossCheck": {
+        "status": "unavailable",
+        "choiceCoverage": 0,
+        "publicChoiceByAgentId": {},
+        "choiceShareByOptionId": null,
+        "majorityChoiceShare": null,
+        "beliefChoiceComparableAgentCount": 0,
+        "beliefTopChoiceCompatibilityRate": null
+      },
+      "microstate": {
+        "beliefProbabilitiesByAgentId": {
+          "agent:hiddenbench:3:1": {
+            "opt_1": 0.1,
+            "opt_2": 0.8,
+            "opt_3": 0.1
+          },
+          "agent:hiddenbench:3:2": {
+            "opt_1": 0.1,
+            "opt_2": 0.8,
+            "opt_3": 0.1
+          },
+          "agent:hiddenbench:3:3": {
+            "opt_1": 0.3,
+            "opt_2": 0.5,
+            "opt_3": 0.2
+          },
+          "agent:hiddenbench:3:4": {
+            "opt_1": 0.2,
+            "opt_2": 0.7,
+            "opt_3": 0.1
+          }
+        }
+      },
+      "macrostate": {
+        "pooledProbabilitiesByOptionId": {
+          "opt_1": 0.175,
+          "opt_2": 0.7,
+          "opt_3": 0.125
+        },
+        "meanNormalizedReportEntropy": 0.7076052484535003,
+        "pooledNormalizedEntropy": 0.7415011558262737,
+        "normalizedGeneralizedJsd": 0.03389590737277348,
+        "pooledConcentration": 0.7,
+        "pottsStyleOrder": 0.5499999999999998,
+        "meanPairwiseTotalVariation": 0.16666666666666666,
+        "maxPairwiseTotalVariation": 0.3
+      },
+      "contentHash": "sha256:90a6987baecd5b2e677cc55d88855aaeaeaab17192ff99123130efa49b2b918a"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-state",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "operational_self_reported_belief_state",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:3",
+      "checkpointId": "task:3:X1",
+      "checkpointIndex": 1,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "sensorRef": {
+        "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+        "version": "1.1.0"
+      },
+      "snapshotHash": "sha256:e9865ce6571449f81e774bf8253cdcd21b2920d33f9251373cd0f4f19e91d14d",
+      "roster": {
+        "expectedAgentIds": [
+          "agent:hiddenbench:3:1",
+          "agent:hiddenbench:3:2",
+          "agent:hiddenbench:3:3",
+          "agent:hiddenbench:3:4"
+        ],
+        "activeAgentIds": [
+          "agent:hiddenbench:3:1",
+          "agent:hiddenbench:3:2",
+          "agent:hiddenbench:3:3",
+          "agent:hiddenbench:3:4"
+        ],
+        "missingAgentIds": [],
+        "coverage": 1,
+        "missingReasonByAgentId": {}
+      },
+      "measurement": {
+        "estimator": "primary_canonical_self_report",
+        "validPrimaryReportCount": 4,
+        "validRepeatPairCount": 1,
+        "replicateTotalVariationByAgentId": {
+          "agent:hiddenbench:3:2": 0
+        },
+        "meanReplicateTotalVariation": 0,
+        "maxReplicateTotalVariation": 0
+      },
+      "behavioralCrossCheck": {
+        "status": "available",
+        "choiceCoverage": 1,
+        "publicChoiceByAgentId": {
+          "agent:hiddenbench:3:1": "opt_2",
+          "agent:hiddenbench:3:2": "opt_2",
+          "agent:hiddenbench:3:3": "opt_2",
+          "agent:hiddenbench:3:4": "opt_2"
+        },
+        "choiceShareByOptionId": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        },
+        "majorityChoiceShare": 1,
+        "beliefChoiceComparableAgentCount": 4,
+        "beliefTopChoiceCompatibilityRate": 1
+      },
+      "microstate": {
+        "beliefProbabilitiesByAgentId": {
+          "agent:hiddenbench:3:1": {
+            "opt_1": 0,
+            "opt_2": 1,
+            "opt_3": 0
+          },
+          "agent:hiddenbench:3:2": {
+            "opt_1": 0,
+            "opt_2": 1,
+            "opt_3": 0
+          },
+          "agent:hiddenbench:3:3": {
+            "opt_1": 0,
+            "opt_2": 1,
+            "opt_3": 0
+          },
+          "agent:hiddenbench:3:4": {
+            "opt_1": 0,
+            "opt_2": 1,
+            "opt_3": 0
+          }
+        }
+      },
+      "macrostate": {
+        "pooledProbabilitiesByOptionId": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        },
+        "meanNormalizedReportEntropy": 0,
+        "pooledNormalizedEntropy": 0,
+        "normalizedGeneralizedJsd": 0,
+        "pooledConcentration": 1,
+        "pottsStyleOrder": 1,
+        "meanPairwiseTotalVariation": 0,
+        "maxPairwiseTotalVariation": 0
+      },
+      "contentHash": "sha256:d3836fa64fb4031b43ae668251bc210d183a8f90cb4d5033413cf58b19603f15"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-state",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "operational_self_reported_belief_state",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:3",
+      "checkpointId": "task:3:X2",
+      "checkpointIndex": 2,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "sensorRef": {
+        "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+        "version": "1.1.0"
+      },
+      "snapshotHash": "sha256:6a2508a562c459a77320b44b9ebf34c7ef32b6ba400abcb97b4b0bf6d540797c",
+      "roster": {
+        "expectedAgentIds": [
+          "agent:hiddenbench:3:1",
+          "agent:hiddenbench:3:2",
+          "agent:hiddenbench:3:3",
+          "agent:hiddenbench:3:4"
+        ],
+        "activeAgentIds": [
+          "agent:hiddenbench:3:1",
+          "agent:hiddenbench:3:2",
+          "agent:hiddenbench:3:3",
+          "agent:hiddenbench:3:4"
+        ],
+        "missingAgentIds": [],
+        "coverage": 1,
+        "missingReasonByAgentId": {}
+      },
+      "measurement": {
+        "estimator": "primary_canonical_self_report",
+        "validPrimaryReportCount": 4,
+        "validRepeatPairCount": 0,
+        "replicateTotalVariationByAgentId": {},
+        "meanReplicateTotalVariation": null,
+        "maxReplicateTotalVariation": null
+      },
+      "behavioralCrossCheck": {
+        "status": "available",
+        "choiceCoverage": 1,
+        "publicChoiceByAgentId": {
+          "agent:hiddenbench:3:1": "opt_2",
+          "agent:hiddenbench:3:2": "opt_2",
+          "agent:hiddenbench:3:3": "opt_2",
+          "agent:hiddenbench:3:4": "opt_2"
+        },
+        "choiceShareByOptionId": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        },
+        "majorityChoiceShare": 1,
+        "beliefChoiceComparableAgentCount": 4,
+        "beliefTopChoiceCompatibilityRate": 1
+      },
+      "microstate": {
+        "beliefProbabilitiesByAgentId": {
+          "agent:hiddenbench:3:1": {
+            "opt_1": 0,
+            "opt_2": 1,
+            "opt_3": 0
+          },
+          "agent:hiddenbench:3:2": {
+            "opt_1": 0,
+            "opt_2": 1,
+            "opt_3": 0
+          },
+          "agent:hiddenbench:3:3": {
+            "opt_1": 0,
+            "opt_2": 1,
+            "opt_3": 0
+          },
+          "agent:hiddenbench:3:4": {
+            "opt_1": 0,
+            "opt_2": 1,
+            "opt_3": 0
+          }
+        }
+      },
+      "macrostate": {
+        "pooledProbabilitiesByOptionId": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        },
+        "meanNormalizedReportEntropy": 0,
+        "pooledNormalizedEntropy": 0,
+        "normalizedGeneralizedJsd": 0,
+        "pooledConcentration": 1,
+        "pottsStyleOrder": 1,
+        "meanPairwiseTotalVariation": 0,
+        "maxPairwiseTotalVariation": 0
+      },
+      "contentHash": "sha256:bd037486b5a5e1abd5ad8be0e738eb9a85d3e0c0f745f8a6555ab775f70204a9"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-state",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "operational_self_reported_belief_state",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:3",
+      "checkpointId": "task:3:X3",
+      "checkpointIndex": 3,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "sensorRef": {
+        "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+        "version": "1.1.0"
+      },
+      "snapshotHash": "sha256:4632315f7c7f35ca7d51ddd4466cbef6c0a09707ca212a2ca4f4e84139f9c875",
+      "roster": {
+        "expectedAgentIds": [
+          "agent:hiddenbench:3:1",
+          "agent:hiddenbench:3:2",
+          "agent:hiddenbench:3:3",
+          "agent:hiddenbench:3:4"
+        ],
+        "activeAgentIds": [
+          "agent:hiddenbench:3:1",
+          "agent:hiddenbench:3:2",
+          "agent:hiddenbench:3:3",
+          "agent:hiddenbench:3:4"
+        ],
+        "missingAgentIds": [],
+        "coverage": 1,
+        "missingReasonByAgentId": {}
+      },
+      "measurement": {
+        "estimator": "primary_canonical_self_report",
+        "validPrimaryReportCount": 4,
+        "validRepeatPairCount": 0,
+        "replicateTotalVariationByAgentId": {},
+        "meanReplicateTotalVariation": null,
+        "maxReplicateTotalVariation": null
+      },
+      "behavioralCrossCheck": {
+        "status": "available",
+        "choiceCoverage": 1,
+        "publicChoiceByAgentId": {
+          "agent:hiddenbench:3:1": "opt_2",
+          "agent:hiddenbench:3:2": "opt_2",
+          "agent:hiddenbench:3:3": "opt_2",
+          "agent:hiddenbench:3:4": "opt_2"
+        },
+        "choiceShareByOptionId": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        },
+        "majorityChoiceShare": 1,
+        "beliefChoiceComparableAgentCount": 4,
+        "beliefTopChoiceCompatibilityRate": 1
+      },
+      "microstate": {
+        "beliefProbabilitiesByAgentId": {
+          "agent:hiddenbench:3:1": {
+            "opt_1": 0,
+            "opt_2": 1,
+            "opt_3": 0
+          },
+          "agent:hiddenbench:3:2": {
+            "opt_1": 0,
+            "opt_2": 1,
+            "opt_3": 0
+          },
+          "agent:hiddenbench:3:3": {
+            "opt_1": 0,
+            "opt_2": 1,
+            "opt_3": 0
+          },
+          "agent:hiddenbench:3:4": {
+            "opt_1": 0,
+            "opt_2": 1,
+            "opt_3": 0
+          }
+        }
+      },
+      "macrostate": {
+        "pooledProbabilitiesByOptionId": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        },
+        "meanNormalizedReportEntropy": 0,
+        "pooledNormalizedEntropy": 0,
+        "normalizedGeneralizedJsd": 0,
+        "pooledConcentration": 1,
+        "pottsStyleOrder": 1,
+        "meanPairwiseTotalVariation": 0,
+        "maxPairwiseTotalVariation": 0
+      },
+      "contentHash": "sha256:49cab6581ea03024b95678131e7cb390ddbf4e53be034aead276bd43996ae926"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-state",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "operational_self_reported_belief_state",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:14",
+      "checkpointId": "task:14:X0",
+      "checkpointIndex": 0,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "sensorRef": {
+        "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+        "version": "1.1.0"
+      },
+      "snapshotHash": "sha256:40a23408f6235c3acd90b9b1a5067a00d6058aeb76bc795ed96d8175db6b0d2b",
+      "roster": {
+        "expectedAgentIds": [
+          "agent:hiddenbench:14:1",
+          "agent:hiddenbench:14:2",
+          "agent:hiddenbench:14:3",
+          "agent:hiddenbench:14:4"
+        ],
+        "activeAgentIds": [
+          "agent:hiddenbench:14:1",
+          "agent:hiddenbench:14:2",
+          "agent:hiddenbench:14:3",
+          "agent:hiddenbench:14:4"
+        ],
+        "missingAgentIds": [],
+        "coverage": 1,
+        "missingReasonByAgentId": {}
+      },
+      "measurement": {
+        "estimator": "primary_canonical_self_report",
+        "validPrimaryReportCount": 4,
+        "validRepeatPairCount": 0,
+        "replicateTotalVariationByAgentId": {},
+        "meanReplicateTotalVariation": null,
+        "maxReplicateTotalVariation": null
+      },
+      "behavioralCrossCheck": {
+        "status": "unavailable",
+        "choiceCoverage": 0,
+        "publicChoiceByAgentId": {},
+        "choiceShareByOptionId": null,
+        "majorityChoiceShare": null,
+        "beliefChoiceComparableAgentCount": 0,
+        "beliefTopChoiceCompatibilityRate": null
+      },
+      "microstate": {
+        "beliefProbabilitiesByAgentId": {
+          "agent:hiddenbench:14:1": {
+            "opt_1": 0,
+            "opt_2": 1,
+            "opt_3": 0
+          },
+          "agent:hiddenbench:14:2": {
+            "opt_1": 0,
+            "opt_2": 0,
+            "opt_3": 1
+          },
+          "agent:hiddenbench:14:3": {
+            "opt_1": 0,
+            "opt_2": 1,
+            "opt_3": 0
+          },
+          "agent:hiddenbench:14:4": {
+            "opt_1": 0,
+            "opt_2": 1,
+            "opt_3": 0
+          }
+        }
+      },
+      "macrostate": {
+        "pooledProbabilitiesByOptionId": {
+          "opt_1": 0,
+          "opt_2": 0.75,
+          "opt_3": 0.25
+        },
+        "meanNormalizedReportEntropy": 0,
+        "pooledNormalizedEntropy": 0.5118595071429148,
+        "normalizedGeneralizedJsd": 0.5118595071429148,
+        "pooledConcentration": 0.75,
+        "pottsStyleOrder": 0.625,
+        "meanPairwiseTotalVariation": 0.5,
+        "maxPairwiseTotalVariation": 1
+      },
+      "contentHash": "sha256:0b6af9622854afc0ecf0f44e419d6b1795c42fc0a847692de608c1cbc51bb389"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-state",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "operational_self_reported_belief_state",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:14",
+      "checkpointId": "task:14:X1",
+      "checkpointIndex": 1,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "sensorRef": {
+        "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+        "version": "1.1.0"
+      },
+      "snapshotHash": "sha256:51f40916ed708aeb1db5f153e00958790af4e18abfde695e36f6518d9e3103c9",
+      "roster": {
+        "expectedAgentIds": [
+          "agent:hiddenbench:14:1",
+          "agent:hiddenbench:14:2",
+          "agent:hiddenbench:14:3",
+          "agent:hiddenbench:14:4"
+        ],
+        "activeAgentIds": [
+          "agent:hiddenbench:14:1",
+          "agent:hiddenbench:14:2",
+          "agent:hiddenbench:14:3",
+          "agent:hiddenbench:14:4"
+        ],
+        "missingAgentIds": [],
+        "coverage": 1,
+        "missingReasonByAgentId": {}
+      },
+      "measurement": {
+        "estimator": "primary_canonical_self_report",
+        "validPrimaryReportCount": 4,
+        "validRepeatPairCount": 0,
+        "replicateTotalVariationByAgentId": {},
+        "meanReplicateTotalVariation": null,
+        "maxReplicateTotalVariation": null
+      },
+      "behavioralCrossCheck": {
+        "status": "available",
+        "choiceCoverage": 1,
+        "publicChoiceByAgentId": {
+          "agent:hiddenbench:14:1": "opt_2",
+          "agent:hiddenbench:14:2": "opt_1",
+          "agent:hiddenbench:14:3": "opt_2",
+          "agent:hiddenbench:14:4": "opt_2"
+        },
+        "choiceShareByOptionId": {
+          "opt_1": 0.25,
+          "opt_2": 0.75,
+          "opt_3": 0
+        },
+        "majorityChoiceShare": 0.75,
+        "beliefChoiceComparableAgentCount": 4,
+        "beliefTopChoiceCompatibilityRate": 1
+      },
+      "microstate": {
+        "beliefProbabilitiesByAgentId": {
+          "agent:hiddenbench:14:1": {
+            "opt_1": 0,
+            "opt_2": 1,
+            "opt_3": 0
+          },
+          "agent:hiddenbench:14:2": {
+            "opt_1": 1,
+            "opt_2": 0,
+            "opt_3": 0
+          },
+          "agent:hiddenbench:14:3": {
+            "opt_1": 0,
+            "opt_2": 1,
+            "opt_3": 0
+          },
+          "agent:hiddenbench:14:4": {
+            "opt_1": 0,
+            "opt_2": 1,
+            "opt_3": 0
+          }
+        }
+      },
+      "macrostate": {
+        "pooledProbabilitiesByOptionId": {
+          "opt_1": 0.25,
+          "opt_2": 0.75,
+          "opt_3": 0
+        },
+        "meanNormalizedReportEntropy": 0,
+        "pooledNormalizedEntropy": 0.5118595071429148,
+        "normalizedGeneralizedJsd": 0.5118595071429148,
+        "pooledConcentration": 0.75,
+        "pottsStyleOrder": 0.625,
+        "meanPairwiseTotalVariation": 0.5,
+        "maxPairwiseTotalVariation": 1
+      },
+      "contentHash": "sha256:933b72f8e4644deaed7b598f0ca6b62f29b4dcd384b8058e8d59c316f3b2d1e6"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-state",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "operational_self_reported_belief_state",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:14",
+      "checkpointId": "task:14:X2",
+      "checkpointIndex": 2,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "sensorRef": {
+        "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+        "version": "1.1.0"
+      },
+      "snapshotHash": "sha256:7ffb407bf7fe95fc5eaa16475f744382ca2356ac10b131040e0cbb580cb59011",
+      "roster": {
+        "expectedAgentIds": [
+          "agent:hiddenbench:14:1",
+          "agent:hiddenbench:14:2",
+          "agent:hiddenbench:14:3",
+          "agent:hiddenbench:14:4"
+        ],
+        "activeAgentIds": [
+          "agent:hiddenbench:14:1",
+          "agent:hiddenbench:14:2",
+          "agent:hiddenbench:14:3",
+          "agent:hiddenbench:14:4"
+        ],
+        "missingAgentIds": [],
+        "coverage": 1,
+        "missingReasonByAgentId": {}
+      },
+      "measurement": {
+        "estimator": "primary_canonical_self_report",
+        "validPrimaryReportCount": 4,
+        "validRepeatPairCount": 1,
+        "replicateTotalVariationByAgentId": {
+          "agent:hiddenbench:14:2": 0
+        },
+        "meanReplicateTotalVariation": 0,
+        "maxReplicateTotalVariation": 0
+      },
+      "behavioralCrossCheck": {
+        "status": "available",
+        "choiceCoverage": 1,
+        "publicChoiceByAgentId": {
+          "agent:hiddenbench:14:1": "opt_2",
+          "agent:hiddenbench:14:2": "opt_1",
+          "agent:hiddenbench:14:3": "opt_2",
+          "agent:hiddenbench:14:4": "opt_2"
+        },
+        "choiceShareByOptionId": {
+          "opt_1": 0.25,
+          "opt_2": 0.75,
+          "opt_3": 0
+        },
+        "majorityChoiceShare": 0.75,
+        "beliefChoiceComparableAgentCount": 4,
+        "beliefTopChoiceCompatibilityRate": 1
+      },
+      "microstate": {
+        "beliefProbabilitiesByAgentId": {
+          "agent:hiddenbench:14:1": {
+            "opt_1": 0,
+            "opt_2": 1,
+            "opt_3": 0
+          },
+          "agent:hiddenbench:14:2": {
+            "opt_1": 1,
+            "opt_2": 0,
+            "opt_3": 0
+          },
+          "agent:hiddenbench:14:3": {
+            "opt_1": 0,
+            "opt_2": 1,
+            "opt_3": 0
+          },
+          "agent:hiddenbench:14:4": {
+            "opt_1": 0,
+            "opt_2": 1,
+            "opt_3": 0
+          }
+        }
+      },
+      "macrostate": {
+        "pooledProbabilitiesByOptionId": {
+          "opt_1": 0.25,
+          "opt_2": 0.75,
+          "opt_3": 0
+        },
+        "meanNormalizedReportEntropy": 0,
+        "pooledNormalizedEntropy": 0.5118595071429148,
+        "normalizedGeneralizedJsd": 0.5118595071429148,
+        "pooledConcentration": 0.75,
+        "pottsStyleOrder": 0.625,
+        "meanPairwiseTotalVariation": 0.5,
+        "maxPairwiseTotalVariation": 1
+      },
+      "contentHash": "sha256:c2c3ecff65f4e98c1957c245699112fe7c3b950a54e4fe231fef220009655922"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-state",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "operational_self_reported_belief_state",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:14",
+      "checkpointId": "task:14:X3",
+      "checkpointIndex": 3,
+      "optionIds": [
+        "opt_1",
+        "opt_2",
+        "opt_3"
+      ],
+      "sensorRef": {
+        "id": "swarmalpha.experiment.v6.shadow-probability-sensor-prompt",
+        "version": "1.1.0"
+      },
+      "snapshotHash": "sha256:37567792aa7146ece297709ad77cbf5e66cdcc3707bae7b4ae9d6fe4577e67e8",
+      "roster": {
+        "expectedAgentIds": [
+          "agent:hiddenbench:14:1",
+          "agent:hiddenbench:14:2",
+          "agent:hiddenbench:14:3",
+          "agent:hiddenbench:14:4"
+        ],
+        "activeAgentIds": [
+          "agent:hiddenbench:14:1",
+          "agent:hiddenbench:14:2",
+          "agent:hiddenbench:14:3",
+          "agent:hiddenbench:14:4"
+        ],
+        "missingAgentIds": [],
+        "coverage": 1,
+        "missingReasonByAgentId": {}
+      },
+      "measurement": {
+        "estimator": "primary_canonical_self_report",
+        "validPrimaryReportCount": 4,
+        "validRepeatPairCount": 0,
+        "replicateTotalVariationByAgentId": {},
+        "meanReplicateTotalVariation": null,
+        "maxReplicateTotalVariation": null
+      },
+      "behavioralCrossCheck": {
+        "status": "available",
+        "choiceCoverage": 1,
+        "publicChoiceByAgentId": {
+          "agent:hiddenbench:14:1": "opt_2",
+          "agent:hiddenbench:14:2": "opt_1",
+          "agent:hiddenbench:14:3": "opt_2",
+          "agent:hiddenbench:14:4": "opt_2"
+        },
+        "choiceShareByOptionId": {
+          "opt_1": 0.25,
+          "opt_2": 0.75,
+          "opt_3": 0
+        },
+        "majorityChoiceShare": 0.75,
+        "beliefChoiceComparableAgentCount": 4,
+        "beliefTopChoiceCompatibilityRate": 1
+      },
+      "microstate": {
+        "beliefProbabilitiesByAgentId": {
+          "agent:hiddenbench:14:1": {
+            "opt_1": 0,
+            "opt_2": 1,
+            "opt_3": 0
+          },
+          "agent:hiddenbench:14:2": {
+            "opt_1": 1,
+            "opt_2": 0,
+            "opt_3": 0
+          },
+          "agent:hiddenbench:14:3": {
+            "opt_1": 0,
+            "opt_2": 1,
+            "opt_3": 0
+          },
+          "agent:hiddenbench:14:4": {
+            "opt_1": 0,
+            "opt_2": 1,
+            "opt_3": 0
+          }
+        }
+      },
+      "macrostate": {
+        "pooledProbabilitiesByOptionId": {
+          "opt_1": 0.25,
+          "opt_2": 0.75,
+          "opt_3": 0
+        },
+        "meanNormalizedReportEntropy": 0,
+        "pooledNormalizedEntropy": 0.5118595071429148,
+        "normalizedGeneralizedJsd": 0.5118595071429148,
+        "pooledConcentration": 0.75,
+        "pottsStyleOrder": 0.625,
+        "meanPairwiseTotalVariation": 0.5,
+        "maxPairwiseTotalVariation": 1
+      },
+      "contentHash": "sha256:00562521e51169c935f2ce326894fafdb2cdf2c9d2c5e95b1b51dd9f68b09da7"
+    }
+  ],
+  "transitions": [
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "descriptive_reported_transition_only",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:5",
+      "fromStateHash": "sha256:8f9f1e625c9d4f651f08c5667fab21eca567bf1855a23874e5bc05904c3c1106",
+      "toStateHash": "sha256:234eac3b9748e57f8b8d908f91820b48e5f0a5f85d5f95787b418cc72571c623",
+      "fromCheckpointId": "task:5:X0",
+      "toCheckpointId": "task:5:X1",
+      "matchedAgentIds": [
+        "agent:hiddenbench:5:1",
+        "agent:hiddenbench:5:2",
+        "agent:hiddenbench:5:3",
+        "agent:hiddenbench:5:4"
+      ],
+      "completeMatchedRoster": true,
+      "meanAgentTotalVariation": 0.525,
+      "pooledTotalVariation": 0.525,
+      "deltas": {
+        "meanNormalizedReportEntropy": -0.3386621919643219,
+        "pooledNormalizedEntropy": -0.3624433586568536,
+        "normalizedGeneralizedJsd": -0.02378116669253172,
+        "pooledConcentration": 0.30000000000000004,
+        "pottsStyleOrder": 0.4500000000000002
+      },
+      "repeatabilityReference": {
+        "endpointMeanReplicateTotalVariation": 0,
+        "activityMinusEndpointRepeatability": 0.525,
+        "comparison": "above_reference"
+      },
+      "contentHash": "sha256:c0c670acfbd5a91df7d4a46e22ee33e3ce578e67f67cb11cd388f9de72dd0e2e"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "descriptive_reported_transition_only",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:5",
+      "fromStateHash": "sha256:234eac3b9748e57f8b8d908f91820b48e5f0a5f85d5f95787b418cc72571c623",
+      "toStateHash": "sha256:488ae212038676b4225785354bd0ce7664fcf67bcee7903280b2629b90d163a8",
+      "fromCheckpointId": "task:5:X1",
+      "toCheckpointId": "task:5:X2",
+      "matchedAgentIds": [
+        "agent:hiddenbench:5:1",
+        "agent:hiddenbench:5:2",
+        "agent:hiddenbench:5:3",
+        "agent:hiddenbench:5:4"
+      ],
+      "completeMatchedRoster": true,
+      "meanAgentTotalVariation": 0,
+      "pooledTotalVariation": 0,
+      "deltas": {
+        "meanNormalizedReportEntropy": 0,
+        "pooledNormalizedEntropy": 0,
+        "normalizedGeneralizedJsd": 0,
+        "pooledConcentration": 0,
+        "pottsStyleOrder": 0
+      },
+      "repeatabilityReference": {
+        "endpointMeanReplicateTotalVariation": null,
+        "activityMinusEndpointRepeatability": null,
+        "comparison": "unavailable"
+      },
+      "contentHash": "sha256:3be778ebfe69ecbd0069ec8232c5d4a5e9b3a58bb15756fb33079310a0dfa249"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "descriptive_reported_transition_only",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:5",
+      "fromStateHash": "sha256:488ae212038676b4225785354bd0ce7664fcf67bcee7903280b2629b90d163a8",
+      "toStateHash": "sha256:71111aec6ce617f5a5482e011db9c153f261dcf23d6f6d7a2923b1646a13865c",
+      "fromCheckpointId": "task:5:X2",
+      "toCheckpointId": "task:5:X3",
+      "matchedAgentIds": [
+        "agent:hiddenbench:5:1",
+        "agent:hiddenbench:5:2",
+        "agent:hiddenbench:5:3",
+        "agent:hiddenbench:5:4"
+      ],
+      "completeMatchedRoster": true,
+      "meanAgentTotalVariation": 0,
+      "pooledTotalVariation": 0,
+      "deltas": {
+        "meanNormalizedReportEntropy": 0,
+        "pooledNormalizedEntropy": 0,
+        "normalizedGeneralizedJsd": 0,
+        "pooledConcentration": 0,
+        "pottsStyleOrder": 0
+      },
+      "repeatabilityReference": {
+        "endpointMeanReplicateTotalVariation": null,
+        "activityMinusEndpointRepeatability": null,
+        "comparison": "unavailable"
+      },
+      "contentHash": "sha256:0d4d75ea84f75d417bc07036d9e5d4b0bf244d4e61a55fbdfd9d927964036a6d"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "descriptive_reported_transition_only",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:7",
+      "fromStateHash": "sha256:44c12fa19862efe528253663598fcaa5fd4ed7590b2aeb916d6c5da098badabc",
+      "toStateHash": "sha256:c6f20ab6cd9d392cdf7be361790ee7e5e79b80666cbfe183e7f55b6c6f810d71",
+      "fromCheckpointId": "task:7:X0",
+      "toCheckpointId": "task:7:X1",
+      "matchedAgentIds": [
+        "agent:hiddenbench:7:1",
+        "agent:hiddenbench:7:2",
+        "agent:hiddenbench:7:3",
+        "agent:hiddenbench:7:4"
+      ],
+      "completeMatchedRoster": true,
+      "meanAgentTotalVariation": 0.425,
+      "pooledTotalVariation": 0.42500000000000004,
+      "deltas": {
+        "meanNormalizedReportEntropy": 0.3649233495810488,
+        "pooledNormalizedEntropy": 0.8009234031106358,
+        "normalizedGeneralizedJsd": 0.43600005352958704,
+        "pooledConcentration": -0.42500000000000004,
+        "pottsStyleOrder": -0.6375000000000001
+      },
+      "repeatabilityReference": {
+        "endpointMeanReplicateTotalVariation": 0,
+        "activityMinusEndpointRepeatability": 0.425,
+        "comparison": "above_reference"
+      },
+      "contentHash": "sha256:b0fef7af71491e418faaa4f6eac44c11006b80cdc225db749ca7c5ec81db1191"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "descriptive_reported_transition_only",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:7",
+      "fromStateHash": "sha256:c6f20ab6cd9d392cdf7be361790ee7e5e79b80666cbfe183e7f55b6c6f810d71",
+      "toStateHash": "sha256:a0e74ec13163ea612c93f9ca15fe79216fe77df5cc35ff1b78beb17ac6e47335",
+      "fromCheckpointId": "task:7:X1",
+      "toCheckpointId": "task:7:X2",
+      "matchedAgentIds": [
+        "agent:hiddenbench:7:1",
+        "agent:hiddenbench:7:2",
+        "agent:hiddenbench:7:3",
+        "agent:hiddenbench:7:4"
+      ],
+      "completeMatchedRoster": true,
+      "meanAgentTotalVariation": 0.62499975,
+      "pooledTotalVariation": 0.62499925,
+      "deltas": {
+        "meanNormalizedReportEntropy": -0.27516417292560325,
+        "pooledNormalizedEntropy": -0.6787339851103105,
+        "normalizedGeneralizedJsd": -0.4035698121847073,
+        "pooledConcentration": 0.39999925000000003,
+        "pottsStyleOrder": 0.5999988750000002
+      },
+      "repeatabilityReference": {
+        "endpointMeanReplicateTotalVariation": 0,
+        "activityMinusEndpointRepeatability": 0.62499975,
+        "comparison": "above_reference"
+      },
+      "contentHash": "sha256:7409d7d049c3f6d224d16a9478e519cb78e5f15b8957f6b323fcc807f52bf5bb"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "descriptive_reported_transition_only",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:7",
+      "fromStateHash": "sha256:a0e74ec13163ea612c93f9ca15fe79216fe77df5cc35ff1b78beb17ac6e47335",
+      "toStateHash": "sha256:c233e9b8b247f1fd5ae5b3236522f3295197c6511836a93a3d8f8566d2a61c00",
+      "fromCheckpointId": "task:7:X2",
+      "toCheckpointId": "task:7:X3",
+      "matchedAgentIds": [
+        "agent:hiddenbench:7:1",
+        "agent:hiddenbench:7:2",
+        "agent:hiddenbench:7:3",
+        "agent:hiddenbench:7:4"
+      ],
+      "completeMatchedRoster": true,
+      "meanAgentTotalVariation": 0.024999749999999994,
+      "pooledTotalVariation": 0.024999749999999994,
+      "deltas": {
+        "meanNormalizedReportEntropy": -0.08974569099702825,
+        "pooledNormalizedEntropy": -0.12217593234190803,
+        "normalizedGeneralizedJsd": -0.032430241344879776,
+        "pooledConcentration": 0.024999749999999987,
+        "pottsStyleOrder": 0.037499624999999925
+      },
+      "repeatabilityReference": {
+        "endpointMeanReplicateTotalVariation": null,
+        "activityMinusEndpointRepeatability": null,
+        "comparison": "unavailable"
+      },
+      "contentHash": "sha256:ad3439d1cef3a7de87be6ab42b8c11f20ba0b0cbb68521d71d4812c3d11c8cf2"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "descriptive_reported_transition_only",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:13",
+      "fromStateHash": "sha256:9715508521bf6a93aed9de77db848a416a5adb4ca60660a75132094e8544806e",
+      "toStateHash": "sha256:445f5459f0a386bb18e348c9a3f6b2232544b177d9b7af26b8d381bb89dd3878",
+      "fromCheckpointId": "task:13:X0",
+      "toCheckpointId": "task:13:X1",
+      "matchedAgentIds": [
+        "agent:hiddenbench:13:1",
+        "agent:hiddenbench:13:2",
+        "agent:hiddenbench:13:3",
+        "agent:hiddenbench:13:4"
+      ],
+      "completeMatchedRoster": true,
+      "meanAgentTotalVariation": 0.2,
+      "pooledTotalVariation": 0.18749999999999997,
+      "deltas": {
+        "meanNormalizedReportEntropy": 0.13616612470031897,
+        "pooledNormalizedEntropy": 0.10329712217920928,
+        "normalizedGeneralizedJsd": -0.03286900252110969,
+        "pooledConcentration": -0.175,
+        "pottsStyleOrder": -0.26249999999999996
+      },
+      "repeatabilityReference": {
+        "endpointMeanReplicateTotalVariation": null,
+        "activityMinusEndpointRepeatability": null,
+        "comparison": "unavailable"
+      },
+      "contentHash": "sha256:b5d0adc1bc7563d45f605e2fd52c6e0023202c1b6f8388e21ccc7a8cfb1b78ce"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "descriptive_reported_transition_only",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:13",
+      "fromStateHash": "sha256:445f5459f0a386bb18e348c9a3f6b2232544b177d9b7af26b8d381bb89dd3878",
+      "toStateHash": "sha256:256cc65ede7525d391dc39793bc0c73bf7abf83181aff641fe94681f693a4340",
+      "fromCheckpointId": "task:13:X1",
+      "toCheckpointId": "task:13:X2",
+      "matchedAgentIds": [
+        "agent:hiddenbench:13:1",
+        "agent:hiddenbench:13:2",
+        "agent:hiddenbench:13:3",
+        "agent:hiddenbench:13:4"
+      ],
+      "completeMatchedRoster": true,
+      "meanAgentTotalVariation": 0.12499999999999997,
+      "pooledTotalVariation": 0.037500000000000006,
+      "deltas": {
+        "meanNormalizedReportEntropy": 0.017809088811815643,
+        "pooledNormalizedEntropy": 0.014547879807493502,
+        "normalizedGeneralizedJsd": -0.003261209004322141,
+        "pooledConcentration": -0.03750000000000003,
+        "pottsStyleOrder": -0.05625000000000002
+      },
+      "repeatabilityReference": {
+        "endpointMeanReplicateTotalVariation": 0,
+        "activityMinusEndpointRepeatability": 0.12499999999999997,
+        "comparison": "above_reference"
+      },
+      "contentHash": "sha256:3f5c3f4e3524eac428a335715df69197cd0ec665f1e1e7ff73b9f35da31ffd4f"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "descriptive_reported_transition_only",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:13",
+      "fromStateHash": "sha256:256cc65ede7525d391dc39793bc0c73bf7abf83181aff641fe94681f693a4340",
+      "toStateHash": "sha256:3c3c54ba1b91b32cec88c5bd9510410e2d2b569868cafad589b4570de7317826",
+      "fromCheckpointId": "task:13:X2",
+      "toCheckpointId": "task:13:X3",
+      "matchedAgentIds": [
+        "agent:hiddenbench:13:1",
+        "agent:hiddenbench:13:2",
+        "agent:hiddenbench:13:3",
+        "agent:hiddenbench:13:4"
+      ],
+      "completeMatchedRoster": true,
+      "meanAgentTotalVariation": 0.04999999999999999,
+      "pooledTotalVariation": 0.04999999999999999,
+      "deltas": {
+        "meanNormalizedReportEntropy": -0.054136982798772104,
+        "pooledNormalizedEntropy": -0.021160029211018117,
+        "normalizedGeneralizedJsd": 0.03297695358775399,
+        "pooledConcentration": 0.03750000000000003,
+        "pottsStyleOrder": 0.05625000000000002
+      },
+      "repeatabilityReference": {
+        "endpointMeanReplicateTotalVariation": 0,
+        "activityMinusEndpointRepeatability": 0.04999999999999999,
+        "comparison": "above_reference"
+      },
+      "contentHash": "sha256:62f0368ea9362c530c10b150b431f6600bcfa1be0052c68d4f85e35c01eeb68a"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "descriptive_reported_transition_only",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:11",
+      "fromStateHash": "sha256:705bc20ad044e18deb1e4f42fc001fbf13f9d470b3fddc54feafa0ef25a02794",
+      "toStateHash": "sha256:7b91e990cca0498bf858463be1c079e2a2a72d9bfa5d6290417bee467e90b429",
+      "fromCheckpointId": "task:11:X0",
+      "toCheckpointId": "task:11:X1",
+      "matchedAgentIds": [
+        "agent:hiddenbench:11:1",
+        "agent:hiddenbench:11:2",
+        "agent:hiddenbench:11:3",
+        "agent:hiddenbench:11:4"
+      ],
+      "completeMatchedRoster": true,
+      "meanAgentTotalVariation": 0.35000000000000003,
+      "pooledTotalVariation": 0.30000000000000004,
+      "deltas": {
+        "meanNormalizedReportEntropy": -0.1020760522578038,
+        "pooledNormalizedEntropy": 0.11865994599266261,
+        "normalizedGeneralizedJsd": 0.22073599825046641,
+        "pooledConcentration": -0.10000000000000003,
+        "pottsStyleOrder": -0.15000000000000013
+      },
+      "repeatabilityReference": {
+        "endpointMeanReplicateTotalVariation": null,
+        "activityMinusEndpointRepeatability": null,
+        "comparison": "unavailable"
+      },
+      "contentHash": "sha256:019bf04342f2eb27e47c2a7073cfb5c044639536b78d5303bb7c852ef570194b"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "descriptive_reported_transition_only",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:11",
+      "fromStateHash": "sha256:7b91e990cca0498bf858463be1c079e2a2a72d9bfa5d6290417bee467e90b429",
+      "toStateHash": "sha256:a708dddcf5f93709bb57e3112fae3ec8d86d4cebdfab9eaeb7b85f70019c3f96",
+      "fromCheckpointId": "task:11:X1",
+      "toCheckpointId": "task:11:X2",
+      "matchedAgentIds": [
+        "agent:hiddenbench:11:1",
+        "agent:hiddenbench:11:2",
+        "agent:hiddenbench:11:3",
+        "agent:hiddenbench:11:4"
+      ],
+      "completeMatchedRoster": true,
+      "meanAgentTotalVariation": 0,
+      "pooledTotalVariation": 0,
+      "deltas": {
+        "meanNormalizedReportEntropy": 0,
+        "pooledNormalizedEntropy": 0,
+        "normalizedGeneralizedJsd": 0,
+        "pooledConcentration": 0,
+        "pottsStyleOrder": 0
+      },
+      "repeatabilityReference": {
+        "endpointMeanReplicateTotalVariation": null,
+        "activityMinusEndpointRepeatability": null,
+        "comparison": "unavailable"
+      },
+      "contentHash": "sha256:25b18b9aae236e505d93a0e159809bce8b3a3eced7bf32717461c6d396339076"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "descriptive_reported_transition_only",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:11",
+      "fromStateHash": "sha256:a708dddcf5f93709bb57e3112fae3ec8d86d4cebdfab9eaeb7b85f70019c3f96",
+      "toStateHash": "sha256:0481ea96004d11937c4f7844dc17cb7218a6ff7bf0aa2780cae71db7a4835ac3",
+      "fromCheckpointId": "task:11:X2",
+      "toCheckpointId": "task:11:X3",
+      "matchedAgentIds": [
+        "agent:hiddenbench:11:1",
+        "agent:hiddenbench:11:2",
+        "agent:hiddenbench:11:3",
+        "agent:hiddenbench:11:4"
+      ],
+      "completeMatchedRoster": true,
+      "meanAgentTotalVariation": 0.45,
+      "pooledTotalVariation": 0.45000000000000007,
+      "deltas": {
+        "meanNormalizedReportEntropy": -0.03704370836105264,
+        "pooledNormalizedEntropy": -0.2699834875051127,
+        "normalizedGeneralizedJsd": -0.23293977914406006,
+        "pooledConcentration": 0.25000000000000006,
+        "pottsStyleOrder": 0.3750000000000002
+      },
+      "repeatabilityReference": {
+        "endpointMeanReplicateTotalVariation": 0,
+        "activityMinusEndpointRepeatability": 0.45,
+        "comparison": "above_reference"
+      },
+      "contentHash": "sha256:927b114f7121252a5be826789f1e9e3134bfcdacac58fab67f5c1a5f211ebf91"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "descriptive_reported_transition_only",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:16",
+      "fromStateHash": "sha256:41faa192af4130cecd4db16e5f56f6fa041e15b298941363ed1941fdacbea18d",
+      "toStateHash": "sha256:9c187eb5c9719ec7df5186647d8709b9de8297a35f492e4d9ecbd48a0dbf0c02",
+      "fromCheckpointId": "task:16:X0",
+      "toCheckpointId": "task:16:X1",
+      "matchedAgentIds": [
+        "agent:hiddenbench:16:1",
+        "agent:hiddenbench:16:2",
+        "agent:hiddenbench:16:3",
+        "agent:hiddenbench:16:4"
+      ],
+      "completeMatchedRoster": true,
+      "meanAgentTotalVariation": 0.2975,
+      "pooledTotalVariation": 0.275,
+      "deltas": {
+        "meanNormalizedReportEntropy": -0.314780825031416,
+        "pooledNormalizedEntropy": -0.3516178763197545,
+        "normalizedGeneralizedJsd": -0.036837051288338474,
+        "pooledConcentration": 0.275,
+        "pottsStyleOrder": 0.4125000000000001
+      },
+      "repeatabilityReference": {
+        "endpointMeanReplicateTotalVariation": 0.04999999999999999,
+        "activityMinusEndpointRepeatability": 0.2475,
+        "comparison": "above_reference"
+      },
+      "contentHash": "sha256:d280375671dd62242f85e6a967a594ae6be61ca5d4cbc36fe1bd3a0b88d20971"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "descriptive_reported_transition_only",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:16",
+      "fromStateHash": "sha256:9c187eb5c9719ec7df5186647d8709b9de8297a35f492e4d9ecbd48a0dbf0c02",
+      "toStateHash": "sha256:835c5bb87def24fa0aeda156e2e680da92b66a9039184d1820d5281cae2646ad",
+      "fromCheckpointId": "task:16:X1",
+      "toCheckpointId": "task:16:X2",
+      "matchedAgentIds": [
+        "agent:hiddenbench:16:1",
+        "agent:hiddenbench:16:2",
+        "agent:hiddenbench:16:3",
+        "agent:hiddenbench:16:4"
+      ],
+      "completeMatchedRoster": true,
+      "meanAgentTotalVariation": 0.07500000000000001,
+      "pooledTotalVariation": 0.07499999999999998,
+      "deltas": {
+        "meanNormalizedReportEntropy": -0.1884151871119516,
+        "pooledNormalizedEntropy": -0.1634670156240523,
+        "normalizedGeneralizedJsd": 0.024948171487899296,
+        "pooledConcentration": 0.07499999999999996,
+        "pottsStyleOrder": 0.11249999999999982
+      },
+      "repeatabilityReference": {
+        "endpointMeanReplicateTotalVariation": null,
+        "activityMinusEndpointRepeatability": null,
+        "comparison": "unavailable"
+      },
+      "contentHash": "sha256:feee7bfd8204b20edff30c9095b057b97137edf910635d237e8b277dc9808d85"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "descriptive_reported_transition_only",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:16",
+      "fromStateHash": "sha256:835c5bb87def24fa0aeda156e2e680da92b66a9039184d1820d5281cae2646ad",
+      "toStateHash": "sha256:4ef934232d2899b25007d27e5cbaf2fd97d6b4bc0e3bdfd34e68e1aa8e15e64a",
+      "fromCheckpointId": "task:16:X2",
+      "toCheckpointId": "task:16:X3",
+      "matchedAgentIds": [
+        "agent:hiddenbench:16:1",
+        "agent:hiddenbench:16:2",
+        "agent:hiddenbench:16:3",
+        "agent:hiddenbench:16:4"
+      ],
+      "completeMatchedRoster": true,
+      "meanAgentTotalVariation": 0.012499999999999999,
+      "pooledTotalVariation": 0.01249999999999999,
+      "deltas": {
+        "meanNormalizedReportEntropy": 0.005953512321427157,
+        "pooledNormalizedEntropy": 0.007071121176619399,
+        "normalizedGeneralizedJsd": 0.0011176088551922425,
+        "pooledConcentration": 0,
+        "pottsStyleOrder": 0
+      },
+      "repeatabilityReference": {
+        "endpointMeanReplicateTotalVariation": null,
+        "activityMinusEndpointRepeatability": null,
+        "comparison": "unavailable"
+      },
+      "contentHash": "sha256:c40439f1272e0729ea7ebf0363f639e74cb6438660a485a4d7fc3caf96f7a782"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "descriptive_reported_transition_only",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:3",
+      "fromStateHash": "sha256:90a6987baecd5b2e677cc55d88855aaeaeaab17192ff99123130efa49b2b918a",
+      "toStateHash": "sha256:d3836fa64fb4031b43ae668251bc210d183a8f90cb4d5033413cf58b19603f15",
+      "fromCheckpointId": "task:3:X0",
+      "toCheckpointId": "task:3:X1",
+      "matchedAgentIds": [
+        "agent:hiddenbench:3:1",
+        "agent:hiddenbench:3:2",
+        "agent:hiddenbench:3:3",
+        "agent:hiddenbench:3:4"
+      ],
+      "completeMatchedRoster": true,
+      "meanAgentTotalVariation": 0.3,
+      "pooledTotalVariation": 0.30000000000000004,
+      "deltas": {
+        "meanNormalizedReportEntropy": -0.7076052484535003,
+        "pooledNormalizedEntropy": -0.7415011558262737,
+        "normalizedGeneralizedJsd": -0.03389590737277348,
+        "pooledConcentration": 0.30000000000000004,
+        "pottsStyleOrder": 0.4500000000000002
+      },
+      "repeatabilityReference": {
+        "endpointMeanReplicateTotalVariation": 0,
+        "activityMinusEndpointRepeatability": 0.3,
+        "comparison": "above_reference"
+      },
+      "contentHash": "sha256:79d10390c8aab92a8d6bb0c1a14f0a5b8826145bdff2dc4af74898fa9ac5af1d"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "descriptive_reported_transition_only",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:3",
+      "fromStateHash": "sha256:d3836fa64fb4031b43ae668251bc210d183a8f90cb4d5033413cf58b19603f15",
+      "toStateHash": "sha256:bd037486b5a5e1abd5ad8be0e738eb9a85d3e0c0f745f8a6555ab775f70204a9",
+      "fromCheckpointId": "task:3:X1",
+      "toCheckpointId": "task:3:X2",
+      "matchedAgentIds": [
+        "agent:hiddenbench:3:1",
+        "agent:hiddenbench:3:2",
+        "agent:hiddenbench:3:3",
+        "agent:hiddenbench:3:4"
+      ],
+      "completeMatchedRoster": true,
+      "meanAgentTotalVariation": 0,
+      "pooledTotalVariation": 0,
+      "deltas": {
+        "meanNormalizedReportEntropy": 0,
+        "pooledNormalizedEntropy": 0,
+        "normalizedGeneralizedJsd": 0,
+        "pooledConcentration": 0,
+        "pottsStyleOrder": 0
+      },
+      "repeatabilityReference": {
+        "endpointMeanReplicateTotalVariation": 0,
+        "activityMinusEndpointRepeatability": 0,
+        "comparison": "not_above_reference"
+      },
+      "contentHash": "sha256:7f1183657f3522e413455eb37a9a141387b5ca434e20be3b1c27369bc3b6f6dd"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "descriptive_reported_transition_only",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:3",
+      "fromStateHash": "sha256:bd037486b5a5e1abd5ad8be0e738eb9a85d3e0c0f745f8a6555ab775f70204a9",
+      "toStateHash": "sha256:49cab6581ea03024b95678131e7cb390ddbf4e53be034aead276bd43996ae926",
+      "fromCheckpointId": "task:3:X2",
+      "toCheckpointId": "task:3:X3",
+      "matchedAgentIds": [
+        "agent:hiddenbench:3:1",
+        "agent:hiddenbench:3:2",
+        "agent:hiddenbench:3:3",
+        "agent:hiddenbench:3:4"
+      ],
+      "completeMatchedRoster": true,
+      "meanAgentTotalVariation": 0,
+      "pooledTotalVariation": 0,
+      "deltas": {
+        "meanNormalizedReportEntropy": 0,
+        "pooledNormalizedEntropy": 0,
+        "normalizedGeneralizedJsd": 0,
+        "pooledConcentration": 0,
+        "pottsStyleOrder": 0
+      },
+      "repeatabilityReference": {
+        "endpointMeanReplicateTotalVariation": null,
+        "activityMinusEndpointRepeatability": null,
+        "comparison": "unavailable"
+      },
+      "contentHash": "sha256:a716437565743962fbf7268e12b5e17c5c1da007246b2dbc2c74721cbc5d4d44"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "descriptive_reported_transition_only",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:14",
+      "fromStateHash": "sha256:0b6af9622854afc0ecf0f44e419d6b1795c42fc0a847692de608c1cbc51bb389",
+      "toStateHash": "sha256:933b72f8e4644deaed7b598f0ca6b62f29b4dcd384b8058e8d59c316f3b2d1e6",
+      "fromCheckpointId": "task:14:X0",
+      "toCheckpointId": "task:14:X1",
+      "matchedAgentIds": [
+        "agent:hiddenbench:14:1",
+        "agent:hiddenbench:14:2",
+        "agent:hiddenbench:14:3",
+        "agent:hiddenbench:14:4"
+      ],
+      "completeMatchedRoster": true,
+      "meanAgentTotalVariation": 0.25,
+      "pooledTotalVariation": 0.25,
+      "deltas": {
+        "meanNormalizedReportEntropy": 0,
+        "pooledNormalizedEntropy": 0,
+        "normalizedGeneralizedJsd": 0,
+        "pooledConcentration": 0,
+        "pottsStyleOrder": 0
+      },
+      "repeatabilityReference": {
+        "endpointMeanReplicateTotalVariation": null,
+        "activityMinusEndpointRepeatability": null,
+        "comparison": "unavailable"
+      },
+      "contentHash": "sha256:2924a036aae76b00aa2f4b639711f34712824414064379bcaced6cc8fa9071e5"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "descriptive_reported_transition_only",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:14",
+      "fromStateHash": "sha256:933b72f8e4644deaed7b598f0ca6b62f29b4dcd384b8058e8d59c316f3b2d1e6",
+      "toStateHash": "sha256:c2c3ecff65f4e98c1957c245699112fe7c3b950a54e4fe231fef220009655922",
+      "fromCheckpointId": "task:14:X1",
+      "toCheckpointId": "task:14:X2",
+      "matchedAgentIds": [
+        "agent:hiddenbench:14:1",
+        "agent:hiddenbench:14:2",
+        "agent:hiddenbench:14:3",
+        "agent:hiddenbench:14:4"
+      ],
+      "completeMatchedRoster": true,
+      "meanAgentTotalVariation": 0,
+      "pooledTotalVariation": 0,
+      "deltas": {
+        "meanNormalizedReportEntropy": 0,
+        "pooledNormalizedEntropy": 0,
+        "normalizedGeneralizedJsd": 0,
+        "pooledConcentration": 0,
+        "pottsStyleOrder": 0
+      },
+      "repeatabilityReference": {
+        "endpointMeanReplicateTotalVariation": 0,
+        "activityMinusEndpointRepeatability": 0,
+        "comparison": "not_above_reference"
+      },
+      "contentHash": "sha256:4293b16d5249097f90ffded2e68c62d9e1ab59e9c426662193ac5d17e645745c"
+    },
+    {
+      "schemaRef": {
+        "id": "swarmalpha.epistemic.discussion-thermometer-transition",
+        "version": "1.0.0"
+      },
+      "inferenceStatus": "descriptive_reported_transition_only",
+      "truthAccess": "none",
+      "claimId": "claim:trajectory:14",
+      "fromStateHash": "sha256:c2c3ecff65f4e98c1957c245699112fe7c3b950a54e4fe231fef220009655922",
+      "toStateHash": "sha256:00562521e51169c935f2ce326894fafdb2cdf2c9d2c5e95b1b51dd9f68b09da7",
+      "fromCheckpointId": "task:14:X2",
+      "toCheckpointId": "task:14:X3",
+      "matchedAgentIds": [
+        "agent:hiddenbench:14:1",
+        "agent:hiddenbench:14:2",
+        "agent:hiddenbench:14:3",
+        "agent:hiddenbench:14:4"
+      ],
+      "completeMatchedRoster": true,
+      "meanAgentTotalVariation": 0,
+      "pooledTotalVariation": 0,
+      "deltas": {
+        "meanNormalizedReportEntropy": 0,
+        "pooledNormalizedEntropy": 0,
+        "normalizedGeneralizedJsd": 0,
+        "pooledConcentration": 0,
+        "pottsStyleOrder": 0
+      },
+      "repeatabilityReference": {
+        "endpointMeanReplicateTotalVariation": 0,
+        "activityMinusEndpointRepeatability": 0,
+        "comparison": "not_above_reference"
+      },
+      "contentHash": "sha256:43f9708669f2ce71fce49b25d3c891a23f8cee3d89e1b73d0ec21e286299b93f"
+    }
+  ],
+  "offlineEvaluation": [
+    {
+      "sourceTaskId": 5,
+      "checkpointRound": 0,
+      "correctOption": "opt_2",
+      "pooledBrier": 0.9262500000000001,
+      "pooledTopOptions": [
+        "opt_1"
+      ],
+      "pooledTopCorrect": false
+    },
+    {
+      "sourceTaskId": 5,
+      "checkpointRound": 1,
+      "correctOption": "opt_2",
+      "pooledBrier": 1.4600000000000002,
+      "pooledTopOptions": [
+        "opt_3"
+      ],
+      "pooledTopCorrect": false
+    },
+    {
+      "sourceTaskId": 5,
+      "checkpointRound": 2,
+      "correctOption": "opt_2",
+      "pooledBrier": 1.4600000000000002,
+      "pooledTopOptions": [
+        "opt_3"
+      ],
+      "pooledTopCorrect": false
+    },
+    {
+      "sourceTaskId": 5,
+      "checkpointRound": 3,
+      "correctOption": "opt_2",
+      "pooledBrier": 1.4600000000000002,
+      "pooledTopOptions": [
+        "opt_3"
+      ],
+      "pooledTopCorrect": false
+    },
+    {
+      "sourceTaskId": 7,
+      "checkpointRound": 0,
+      "correctOption": "opt_2",
+      "pooledBrier": 2,
+      "pooledTopOptions": [
+        "opt_3"
+      ],
+      "pooledTopCorrect": false
+    },
+    {
+      "sourceTaskId": 7,
+      "checkpointRound": 1,
+      "correctOption": "opt_2",
+      "pooledBrier": 1.3087499999999999,
+      "pooledTopOptions": [
+        "opt_3"
+      ],
+      "pooledTopCorrect": false
+    },
+    {
+      "sourceTaskId": 7,
+      "checkpointRound": 2,
+      "correctOption": "opt_2",
+      "pooledBrier": 1.9259345562511252,
+      "pooledTopOptions": [
+        "opt_1"
+      ],
+      "pooledTopCorrect": false
+    },
+    {
+      "sourceTaskId": 7,
+      "checkpointRound": 3,
+      "correctOption": "opt_2",
+      "pooledBrier": 1.9999960000019998,
+      "pooledTopOptions": [
+        "opt_1"
+      ],
+      "pooledTopCorrect": false
+    },
+    {
+      "sourceTaskId": 13,
+      "checkpointRound": 0,
+      "correctOption": "opt_3",
+      "pooledBrier": 1.0912499999999998,
+      "pooledTopOptions": [
+        "opt_1"
+      ],
+      "pooledTopCorrect": false
+    },
+    {
+      "sourceTaskId": 13,
+      "checkpointRound": 1,
+      "correctOption": "opt_3",
+      "pooledBrier": 0.6321874999999999,
+      "pooledTopOptions": [
+        "opt_1"
+      ],
+      "pooledTopCorrect": false
+    },
+    {
+      "sourceTaskId": 13,
+      "checkpointRound": 2,
+      "correctOption": "opt_3",
+      "pooledBrier": 0.5971875,
+      "pooledTopOptions": [
+        "opt_1"
+      ],
+      "pooledTopCorrect": false
+    },
+    {
+      "sourceTaskId": 13,
+      "checkpointRound": 3,
+      "correctOption": "opt_3",
+      "pooledBrier": 0.51125,
+      "pooledTopOptions": [
+        "opt_3"
+      ],
+      "pooledTopCorrect": true
+    },
+    {
+      "sourceTaskId": 11,
+      "checkpointRound": 0,
+      "correctOption": "opt_3",
+      "pooledBrier": 0.37625,
+      "pooledTopOptions": [
+        "opt_3"
+      ],
+      "pooledTopCorrect": true
+    },
+    {
+      "sourceTaskId": 11,
+      "checkpointRound": 1,
+      "correctOption": "opt_3",
+      "pooledBrier": 0.90375,
+      "pooledTopOptions": [
+        "opt_1"
+      ],
+      "pooledTopCorrect": false
+    },
+    {
+      "sourceTaskId": 11,
+      "checkpointRound": 2,
+      "correctOption": "opt_3",
+      "pooledBrier": 0.90375,
+      "pooledTopOptions": [
+        "opt_1"
+      ],
+      "pooledTopCorrect": false
+    },
+    {
+      "sourceTaskId": 11,
+      "checkpointRound": 3,
+      "correctOption": "opt_3",
+      "pooledBrier": 0.18374999999999997,
+      "pooledTopOptions": [
+        "opt_3"
+      ],
+      "pooledTopCorrect": true
+    },
+    {
+      "sourceTaskId": 16,
+      "checkpointRound": 0,
+      "correctOption": "opt_3",
+      "pooledBrier": 0.33945000000000003,
+      "pooledTopOptions": [
+        "opt_3"
+      ],
+      "pooledTopCorrect": true
+    },
+    {
+      "sourceTaskId": 16,
+      "checkpointRound": 1,
+      "correctOption": "opt_3",
+      "pooledBrier": 0.061249999999999985,
+      "pooledTopOptions": [
+        "opt_3"
+      ],
+      "pooledTopCorrect": true
+    },
+    {
+      "sourceTaskId": 16,
+      "checkpointRound": 2,
+      "correctOption": "opt_3",
+      "pooledBrier": 0.0246875,
+      "pooledTopOptions": [
+        "opt_3"
+      ],
+      "pooledTopCorrect": true
+    },
+    {
+      "sourceTaskId": 16,
+      "checkpointRound": 3,
+      "correctOption": "opt_3",
+      "pooledBrier": 0.02375,
+      "pooledTopOptions": [
+        "opt_3"
+      ],
+      "pooledTopCorrect": true
+    },
+    {
+      "sourceTaskId": 3,
+      "checkpointRound": 0,
+      "correctOption": "opt_2",
+      "pooledBrier": 0.13625000000000004,
+      "pooledTopOptions": [
+        "opt_2"
+      ],
+      "pooledTopCorrect": true
+    },
+    {
+      "sourceTaskId": 3,
+      "checkpointRound": 1,
+      "correctOption": "opt_2",
+      "pooledBrier": 0,
+      "pooledTopOptions": [
+        "opt_2"
+      ],
+      "pooledTopCorrect": true
+    },
+    {
+      "sourceTaskId": 3,
+      "checkpointRound": 2,
+      "correctOption": "opt_2",
+      "pooledBrier": 0,
+      "pooledTopOptions": [
+        "opt_2"
+      ],
+      "pooledTopCorrect": true
+    },
+    {
+      "sourceTaskId": 3,
+      "checkpointRound": 3,
+      "correctOption": "opt_2",
+      "pooledBrier": 0,
+      "pooledTopOptions": [
+        "opt_2"
+      ],
+      "pooledTopCorrect": true
+    },
+    {
+      "sourceTaskId": 14,
+      "checkpointRound": 0,
+      "correctOption": "opt_3",
+      "pooledBrier": 1.125,
+      "pooledTopOptions": [
+        "opt_2"
+      ],
+      "pooledTopCorrect": false
+    },
+    {
+      "sourceTaskId": 14,
+      "checkpointRound": 1,
+      "correctOption": "opt_3",
+      "pooledBrier": 1.625,
+      "pooledTopOptions": [
+        "opt_2"
+      ],
+      "pooledTopCorrect": false
+    },
+    {
+      "sourceTaskId": 14,
+      "checkpointRound": 2,
+      "correctOption": "opt_3",
+      "pooledBrier": 1.625,
+      "pooledTopOptions": [
+        "opt_2"
+      ],
+      "pooledTopCorrect": false
+    },
+    {
+      "sourceTaskId": 14,
+      "checkpointRound": 3,
+      "correctOption": "opt_3",
+      "pooledBrier": 1.625,
+      "pooledTopOptions": [
+        "opt_2"
+      ],
+      "pooledTopCorrect": false
+    }
+  ],
+  "findings": {
+    "stateVariation": {
+      "tasksWithNonzeroX0X3Movement": 7,
+      "totalTasks": 7,
+      "movementByTask": [
+        {
+          "sourceTaskId": 5,
+          "meanAgentTV": 0.525,
+          "pooledTV": 0.525
+        },
+        {
+          "sourceTaskId": 7,
+          "meanAgentTV": 1,
+          "pooledTV": 1
+        },
+        {
+          "sourceTaskId": 13,
+          "meanAgentTV": 0.275,
+          "pooledTV": 0.25
+        },
+        {
+          "sourceTaskId": 11,
+          "meanAgentTV": 0.25,
+          "pooledTV": 0.15
+        },
+        {
+          "sourceTaskId": 16,
+          "meanAgentTV": 0.35,
+          "pooledTV": 0.35
+        },
+        {
+          "sourceTaskId": 3,
+          "meanAgentTV": 0.3,
+          "pooledTV": 0.30000000000000004
+        },
+        {
+          "sourceTaskId": 14,
+          "meanAgentTV": 0.25,
+          "pooledTV": 0.25
+        }
+      ]
+    },
+    "transitionTiming": [
+      {
+        "transition": "X0_TO_X1",
+        "taskCount": 7,
+        "nonzeroMeanAgentTvTaskCount": 7,
+        "nonzeroPooledTvTaskCount": 7,
+        "meanAgentTv": 0.3353571428571428,
+        "meanPooledTv": 0.32321428571428573,
+        "aboveAvailableRepeatabilityReferenceCount": 4
+      },
+      {
+        "transition": "X1_TO_X2",
+        "taskCount": 7,
+        "nonzeroMeanAgentTvTaskCount": 3,
+        "nonzeroPooledTvTaskCount": 3,
+        "meanAgentTv": 0.11785710714285713,
+        "meanPooledTv": 0.1053570357142857,
+        "aboveAvailableRepeatabilityReferenceCount": 2
+      },
+      {
+        "transition": "X2_TO_X3",
+        "taskCount": 7,
+        "nonzeroMeanAgentTvTaskCount": 4,
+        "nonzeroPooledTvTaskCount": 4,
+        "meanAgentTv": 0.07678567857142857,
+        "meanPooledTv": 0.07678567857142858,
+        "aboveAvailableRepeatabilityReferenceCount": 2
+      }
+    ],
+    "publicChoicePersistence": [
+      {
+        "transition": "R1_TO_R2",
+        "eligibleAgentTransitions": 28,
+        "changedChoiceCount": 2,
+        "persistedChoiceCount": 26
+      },
+      {
+        "transition": "R2_TO_R3",
+        "eligibleAgentTransitions": 28,
+        "changedChoiceCount": 1,
+        "persistedChoiceCount": 27
+      }
+    ],
+    "crossChannelQualification": {
+      "estimand": "unique_primary_sensor_top_predicts_next_public_choice_beyond_previous_public_choice",
+      "eligibleUniqueTopCount": 54,
+      "excludedSensorTieCount": 2,
+      "sensorCorrectCount": 51,
+      "persistenceCorrectCount": 51,
+      "bothCorrectCount": 51,
+      "sensorOnlyCorrectCount": 0,
+      "persistenceOnlyCorrectCount": 0,
+      "bothWrongCount": 3,
+      "sensorTopEqualsPreviousChoiceCount": 53,
+      "candidateMinusPersistenceAccuracy": 0,
+      "discordantPairCount": 0,
+      "exactTwoSidedPairedSignPValue": 1,
+      "qualification": "no_incremental_signal_observed"
+    },
+    "sameCheckpointCompatibility": {
+      "interpretation": "non_independent_prompt_contains_current_public_choice",
+      "eligibleUniqueTopCount": 81,
+      "compatibleCount": 79,
+      "incompatibleCount": 2
+    },
+    "strictWrongConsensus": {
+      "belief": [
+        {
+          "sourceTaskId": 5,
+          "checkpointRound": 1,
+          "optionId": "opt_3"
+        },
+        {
+          "sourceTaskId": 5,
+          "checkpointRound": 2,
+          "optionId": "opt_3"
+        },
+        {
+          "sourceTaskId": 5,
+          "checkpointRound": 3,
+          "optionId": "opt_3"
+        },
+        {
+          "sourceTaskId": 7,
+          "checkpointRound": 0,
+          "optionId": "opt_3"
+        },
+        {
+          "sourceTaskId": 7,
+          "checkpointRound": 2,
+          "optionId": "opt_1"
+        },
+        {
+          "sourceTaskId": 7,
+          "checkpointRound": 3,
+          "optionId": "opt_1"
+        }
+      ],
+      "public": [
+        {
+          "sourceTaskId": 5,
+          "checkpointRound": 1,
+          "optionId": "opt_3"
+        },
+        {
+          "sourceTaskId": 5,
+          "checkpointRound": 2,
+          "optionId": "opt_3"
+        },
+        {
+          "sourceTaskId": 5,
+          "checkpointRound": 3,
+          "optionId": "opt_3"
+        },
+        {
+          "sourceTaskId": 7,
+          "checkpointRound": 2,
+          "optionId": "opt_1"
+        },
+        {
+          "sourceTaskId": 7,
+          "checkpointRound": 3,
+          "optionId": "opt_1"
+        }
+      ]
+    },
+    "interpretation": [
+      "Primary canonical self-reports are the operational state estimate; selected B reports quantify repeatability only.",
+      "Same-checkpoint belief-choice agreement is not an independent construct check because the frozen sensor view contains the current public choice.",
+      "Future-choice qualification uses only X1/X2 primary reports and compares them on the same eligible rows with previous-choice persistence.",
+      "Wrong-consensus labels and Brier scores are offline evaluation fields and are not available to the measurement layer.",
+      "This slice identifies descriptive state trajectories; it does not identify a causal intervention effect or an attractor."
+    ]
+  },
+  "contentHash": "sha256:e8783880b97c110777f91983eee0cbb0bf0697d30240528f4c2fdbeba75126f4"
+}

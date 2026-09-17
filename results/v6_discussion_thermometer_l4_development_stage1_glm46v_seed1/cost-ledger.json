@@ -1,0 +1,14 @@
+{
+  "schema": "discussion-thermometer-l4-cost-ledger-v1",
+  "phase": "sensor_complete",
+  "model": "glm-4.6v",
+  "pricingCheckedAt": "2026-08-30",
+  "inputCnyPerMillionTokens": 1,
+  "outputCnyPerMillionTokens": 3,
+  "maximumObservedCostCny": 2,
+  "promptTokens": 232416,
+  "completionTokens": 14591,
+  "totalTokens": 247007,
+  "providerAttempts": 203,
+  "estimatedObservedCostCny": 0.276189
+}

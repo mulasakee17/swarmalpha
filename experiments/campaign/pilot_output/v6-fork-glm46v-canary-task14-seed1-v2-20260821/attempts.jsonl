@@ -1,0 +1,3 @@
+{"type":"attempt_started","attemptId":"run:fork-v1:task-14:seed-1:1","requestHash":"sha256:197256c3d4ea19815d442e80030a2d4f07a5ee05daa36e69424a04e7ee64f7b5","requestId":"discussion:fork:task-14:seed-1:r1:agent:hiddenbench:14:1","runId":"run:fork-v1:task-14:seed-1","taskId":14,"seed":1,"phase":"discussion_r1","agentId":"agent:hiddenbench:14:1","ts":"2026-08-21T06:01:34.291Z"}
+{"type":"attempt_finished","attemptId":"run:fork-v1:task-14:seed-1:1","outcome":"provider_failure","usage":null,"errorCode":"provider_network","ts":"2026-08-21T06:01:34.346Z"}
+{"type":"task_failed","runId":"run:fork-v1:task-14:seed-1","taskId":14,"seed":1,"reason":"provider_network","ts":"2026-08-21T06:01:34.346Z"}

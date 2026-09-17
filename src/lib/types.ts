@@ -35,7 +35,7 @@ import type {
   DiscussionEvent,
   EventTracker,
   AgentInfo,
-} from "./discussion/types";
+} from "../../legacy/src/lib/discussion/types";
 
 import type {
   GovernanceResult,

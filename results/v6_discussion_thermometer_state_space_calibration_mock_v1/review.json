@@ -1,0 +1,193 @@
+{
+  "reviewRef": {
+    "id": "swarmalpha.review.v6.discussion-thermometer-state-space-calibration",
+    "version": "1.0.0"
+  },
+  "planHash": "sha256:507a0c46764c966841cba600d68306d3c69cd84767b4718080262199ccdf58ec",
+  "taskBankHash": "sha256:3e1c92b39aab5772628e3cc6f812795e5f74e843dd707635f311ab5fbfacff22",
+  "providerCalls": 0,
+  "taskReviews": [
+    {
+      "taskId": "thermometer-calibration:thermal-loop:v1",
+      "automaticChecks": {
+        "fourAgentsTwoItemsEach": true,
+        "noDirectDesignLabelLeak": true,
+        "noNumericScoreOrSummationInstruction": true,
+        "noExactOptionLabelInPrivateEvidence": true,
+        "onlineProjectionExcludesOfflineOutcome": true,
+        "sourceGeometryMatchesRegime": true
+      },
+      "privateInformationCharacterRange": {
+        "minimum": 192,
+        "maximum": 210
+      },
+      "automaticStatus": "PASS"
+    },
+    {
+      "taskId": "thermometer-calibration:thermal-loop:v2",
+      "automaticChecks": {
+        "fourAgentsTwoItemsEach": true,
+        "noDirectDesignLabelLeak": true,
+        "noNumericScoreOrSummationInstruction": true,
+        "noExactOptionLabelInPrivateEvidence": true,
+        "onlineProjectionExcludesOfflineOutcome": true,
+        "sourceGeometryMatchesRegime": true
+      },
+      "privateInformationCharacterRange": {
+        "minimum": 201,
+        "maximum": 220
+      },
+      "automaticStatus": "PASS"
+    },
+    {
+      "taskId": "thermometer-calibration:thermal-loop:v3",
+      "automaticChecks": {
+        "fourAgentsTwoItemsEach": true,
+        "noDirectDesignLabelLeak": true,
+        "noNumericScoreOrSummationInstruction": true,
+        "noExactOptionLabelInPrivateEvidence": true,
+        "onlineProjectionExcludesOfflineOutcome": true,
+        "sourceGeometryMatchesRegime": true
+      },
+      "privateInformationCharacterRange": {
+        "minimum": 143,
+        "maximum": 226
+      },
+      "automaticStatus": "PASS"
+    },
+    {
+      "taskId": "thermometer-calibration:thermal-loop:v4",
+      "automaticChecks": {
+        "fourAgentsTwoItemsEach": true,
+        "noDirectDesignLabelLeak": true,
+        "noNumericScoreOrSummationInstruction": true,
+        "noExactOptionLabelInPrivateEvidence": true,
+        "onlineProjectionExcludesOfflineOutcome": true,
+        "sourceGeometryMatchesRegime": true
+      },
+      "privateInformationCharacterRange": {
+        "minimum": 171,
+        "maximum": 197
+      },
+      "automaticStatus": "PASS"
+    },
+    {
+      "taskId": "thermometer-calibration:service-access:v1",
+      "automaticChecks": {
+        "fourAgentsTwoItemsEach": true,
+        "noDirectDesignLabelLeak": true,
+        "noNumericScoreOrSummationInstruction": true,
+        "noExactOptionLabelInPrivateEvidence": true,
+        "onlineProjectionExcludesOfflineOutcome": true,
+        "sourceGeometryMatchesRegime": true
+      },
+      "privateInformationCharacterRange": {
+        "minimum": 165,
+        "maximum": 195
+      },
+      "automaticStatus": "PASS"
+    },
+    {
+      "taskId": "thermometer-calibration:service-access:v2",
+      "automaticChecks": {
+        "fourAgentsTwoItemsEach": true,
+        "noDirectDesignLabelLeak": true,
+        "noNumericScoreOrSummationInstruction": true,
+        "noExactOptionLabelInPrivateEvidence": true,
+        "onlineProjectionExcludesOfflineOutcome": true,
+        "sourceGeometryMatchesRegime": true
+      },
+      "privateInformationCharacterRange": {
+        "minimum": 190,
+        "maximum": 211
+      },
+      "automaticStatus": "PASS"
+    },
+    {
+      "taskId": "thermometer-calibration:service-access:v3",
+      "automaticChecks": {
+        "fourAgentsTwoItemsEach": true,
+        "noDirectDesignLabelLeak": true,
+        "noNumericScoreOrSummationInstruction": true,
+        "noExactOptionLabelInPrivateEvidence": true,
+        "onlineProjectionExcludesOfflineOutcome": true,
+        "sourceGeometryMatchesRegime": true
+      },
+      "privateInformationCharacterRange": {
+        "minimum": 182,
+        "maximum": 206
+      },
+      "automaticStatus": "PASS"
+    },
+    {
+      "taskId": "thermometer-calibration:service-access:v4",
+      "automaticChecks": {
+        "fourAgentsTwoItemsEach": true,
+        "noDirectDesignLabelLeak": true,
+        "noNumericScoreOrSummationInstruction": true,
+        "noExactOptionLabelInPrivateEvidence": true,
+        "onlineProjectionExcludesOfflineOutcome": true,
+        "sourceGeometryMatchesRegime": true
+      },
+      "privateInformationCharacterRange": {
+        "minimum": 194,
+        "maximum": 215
+      },
+      "automaticStatus": "PASS"
+    }
+  ],
+  "baseScenarioReviews": [
+    {
+      "baseScenarioId": "thermal-loop",
+      "publicContextInvariantAcrossRegimes": true,
+      "claimInvariantAcrossRegimes": true,
+      "aiSemanticAssessment": "PLAUSIBLE_FOR_DEVELOPMENT_ONLY",
+      "unresolvedHumanQuestion": "Does a domain-competent reviewer accept the three primary-cause options and every qualitative observation as coherent without relying on unstated outside knowledge?"
+    },
+    {
+      "baseScenarioId": "service-access",
+      "publicContextInvariantAcrossRegimes": true,
+      "claimInvariantAcrossRegimes": true,
+      "aiSemanticAssessment": "PLAUSIBLE_FOR_DEVELOPMENT_ONLY",
+      "unresolvedHumanQuestion": "Does a domain-competent reviewer accept the three primary-cause options and every qualitative observation as coherent without relying on unstated outside knowledge?"
+    }
+  ],
+  "executionBudget": {
+    "publicCalls": 64,
+    "sensorCalls": 192,
+    "totalCalls": 256,
+    "maximumCompletionTokens": 81920,
+    "officialPriceCheck": {
+      "checkedAt": "2026-08-30",
+      "source": "https://bigmodel.cn/pricing",
+      "inputCnyPerMillionTokensBelow32k": 1,
+      "outputCnyPerMillionTokensBelow32k": 3
+    },
+    "completionOnlyCeilingCny": 0.24576,
+    "totalCostStatus": "REQUIRES_FROZEN_PROMPT_TOKEN_OR_CONSERVATIVE_BYTE_AUDIT",
+    "retry": "none"
+  },
+  "scientificBoundaries": [
+    "Design regimes are environments for state-space coverage, not observed state labels.",
+    "Across-regime contrasts do not identify a causal information-allocation effect.",
+    "Primary self-report defines the operational state; duplicate reports only quantify instrument variability.",
+    "The experiment contains no prediction target, intervention, recovery, governance action, or online outcome access.",
+    "Passing G0-G3 supports measurement resource on these tasks, not a universal latent belief or thermodynamic law."
+  ],
+  "requiredUserDecisions": [
+    {
+      "id": "D1_SEMANTIC_ACCEPTANCE",
+      "question": "Accept these two fictional diagnostic bases and their eight qualitative evidence allocations for a development-only observation canary, or request revisions?",
+      "currentStatus": "PENDING"
+    },
+    {
+      "id": "D2_PROVIDER_BUDGET",
+      "question": "After an official price recheck, authorize at most 256 single-attempt GLM calls with no retry, or reduce the design?",
+      "currentStatus": "PENDING"
+    }
+  ],
+  "automaticChecksPass": true,
+  "readyForUserDecision": true,
+  "executionReady": false,
+  "contentHash": "sha256:9efbca21d335b5a10f723854101a17391a62ed722273976bbce61328d7c8f5f6"
+}

@@ -55,7 +55,7 @@
  *   → 同一事实（A 学术强），不同措辞 → SemanticTool evidence_dedup 应聚类
  */
 
-import type { TaskConfig } from "../../lunar_survival/config";
+import type { TaskConfig } from "../../../legacy/experiments/lunar_survival/config";
 
 export const TASK_UNIVERSITY: TaskConfig = {
   id: "university",

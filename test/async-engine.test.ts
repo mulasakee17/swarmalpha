@@ -4,7 +4,7 @@ import {
   type DependencyMap,
   type InfoKeywordsMap,
   type WillingnessFactors,
-} from "@/lib/discussion/asyncEngine";
+} from "../legacy/src/lib/discussion/asyncEngine";
 
 class MockAgent {
   /** 发言计数（用于测试被动倾听：追踪哪些 agent 未发言） */

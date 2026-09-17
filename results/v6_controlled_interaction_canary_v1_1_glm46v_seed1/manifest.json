@@ -1,0 +1,37 @@
+{
+  "manifestRef": {
+    "id": "swarmalpha.manifest.v6.controlled-interaction-canary",
+    "version": "1.1.0"
+  },
+  "planHash": "sha256:21900265206bc0a43e799f95e226d0a4528bdf85724e9ce34fe4d049cce9e5a7",
+  "scientificRole": "single_task_instrument_interaction_development",
+  "authorizationBasis": "explicit_user_authorization_2026-08-29",
+  "taskSemanticReview": "not_completed",
+  "executionBudget": {
+    "maximumProviderAttempts": 20,
+    "maximumTotalCompletionTokens": 20480,
+    "retries": "none"
+  },
+  "onlineTruthAccess": "forbidden",
+  "priceStatus": "not_independently_verified_no_currency_claim",
+  "finiteStatisticalPhysicsProjection": {
+    "microstate": "four_agent_categorical_choice_vector",
+    "pottsOrder": "m=(K*max_k(n_k/N)-1)/(K-1), K=3, N=4",
+    "pairwiseDisagreement": "D=N/(N-1)*(1-sum_k(n_k/N)^2)",
+    "switchingActivity": "count_of_agent_choice_changes_between_adjacent_rounds",
+    "branchDivergence": "normalized_hamming_distance_between_matched_branch_microstates",
+    "prohibitedClaims": [
+      "phase_transition",
+      "susceptibility",
+      "attractor",
+      "thermodynamic_limit"
+    ]
+  },
+  "interpretationLimits": [
+    "single_task_development_diagnostic",
+    "fixed_isolated_then_peer_order_has_no_causal_order_interpretation",
+    "interaction_signal_is_not_decision_quality_improvement",
+    "wrong_supermajority_uses_truth_only_offline"
+  ],
+  "contentHash": "sha256:532b4146ff9aface648bd9abcbb46f4c9df18cd8c703c792c4f7388708944987"
+}

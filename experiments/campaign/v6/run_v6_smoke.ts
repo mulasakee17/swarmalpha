@@ -149,12 +149,21 @@ export function parseSmokeArgs(argv: readonly string[]): V6SmokeArgs {
 
 /** Actual provider accounting; planned tokens are never treated as observed. */
 export class V6ProviderCallBudget {
-  private calls = 0;
-  private tokens = 0;
+  private calls: number;
+  private tokens: number;
 
   constructor(
     private readonly maxProviderCalls: number,
     private readonly maxTotalTokens: number,
+    /**
+     * Cross-process restore: initialize from cumulative history (e.g. a gate
+     * attempts ledger) instead of zero. Defaults keep every legacy caller
+     * byte-identical. initialTokens may exceed the cap (a recorded one-attempt
+     * overshoot must survive a resume); initialCalls beyond the call cap is a
+     * ledger-corruption signal and is rejected fail-closed.
+     */
+    initialCalls: number = 0,
+    initialTokens: number = 0,
   ) {
     if (!Number.isSafeInteger(maxProviderCalls) || maxProviderCalls < 0) {
       throw new Error("maxProviderCalls must be a non-negative safe integer");
@@ -162,6 +171,17 @@ export class V6ProviderCallBudget {
     if (!Number.isSafeInteger(maxTotalTokens) || maxTotalTokens < 0) {
       throw new Error("maxTotalTokens must be a non-negative safe integer");
     }
+    if (!Number.isSafeInteger(initialCalls) || initialCalls < 0) {
+      throw new Error("initialCalls must be a non-negative safe integer");
+    }
+    if (!Number.isSafeInteger(initialTokens) || initialTokens < 0) {
+      throw new Error("initialTokens must be a non-negative safe integer");
+    }
+    if (initialCalls > maxProviderCalls) {
+      throw new Error("initialCalls exceed the provider call cap: ledger history is inconsistent with the plan");
+    }
+    this.calls = initialCalls;
+    this.tokens = initialTokens;
   }
 
   get callCount(): number {
@@ -170,6 +190,11 @@ export class V6ProviderCallBudget {
 
   get tokenCount(): number {
     return this.tokens;
+  }
+
+  /** The configured cap on observed accounted tokens (stop-threshold semantics). */
+  get maxTotalTokensCap(): number {
+    return this.maxTotalTokens;
   }
 
   /** Conservative run gate using call bounds and a non-authoritative estimate. */

@@ -6,7 +6,7 @@
  * heterogeneous apply-minus-holdout final-pooled-Brier response across the
  * development (exploratory + retry-1 continuation) and frozen task-heldout
  * batches. Authority: docs/theory/SOCIAL_THERMODYNAMIC_RESPONSE_RESEARCH_CONTRACT_V1.md
- * and docs/plans/CLAUDE_CODE_SOCIAL_THERMODYNAMIC_RESPONSE_AUDIT_HANDOFF_2026-08-14.md.
+ * and docs/archive/plans/CLAUDE_CODE_SOCIAL_THERMODYNAMIC_RESPONSE_AUDIT_HANDOFF_2026-08-14.md.
  *
  * Boundaries enforced here:
  *  - the pre-action state projection receives ONLY pre-assignment events;

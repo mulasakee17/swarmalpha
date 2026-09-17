@@ -1,0 +1,91 @@
+{
+  "planRef": {
+    "id": "swarmalpha.experiment.v6.discussion-thermometer-natural-dynamics-plan",
+    "version": "1.0.0"
+  },
+  "developmentSourceAnalysisHash": "sha256:4fdde15bd394de523c8e176440ad4e87bf77ce0d53e074689e528c974988ab87",
+  "selectionStatus": "post_development_targeted_replication_not_confirmatory_transport",
+  "taskBankHash": "sha256:3e1c92b39aab5772628e3cc6f812795e5f74e843dd707635f311ab5fbfacff22",
+  "taskIds": [
+    "thermometer-calibration:thermal-loop:v2",
+    "thermometer-calibration:thermal-loop:v3",
+    "thermometer-calibration:service-access:v2",
+    "thermometer-calibration:service-access:v3"
+  ],
+  "targetRegimes": [
+    "SHARED_CUE_PRIVATE_CORRECTION",
+    "POLARIZED_PRIVATE_BLOCKS"
+  ],
+  "baseScenarioCount": 2,
+  "agentIds": [
+    "agent_1",
+    "agent_2",
+    "agent_3",
+    "agent_4"
+  ],
+  "publicRounds": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "checkpoints": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "lateTransitions": [
+    "X1_X2",
+    "X2_X3",
+    "X3_X4"
+  ],
+  "sensorRepeats": [
+    "A",
+    "B"
+  ],
+  "executionMode": "new_full_within_batch_rerun_not_historical_append",
+  "interaction": "synchronous_previous_round_only",
+  "stateEstimator": "primary_canonical_self_report",
+  "duplicateRole": "local_transition_resolution_reference_only",
+  "modelRef": {
+    "id": "zhipu:glm-4.6v",
+    "version": "1.0.0"
+  },
+  "publicInvocation": {
+    "temperature": 0,
+    "seed": 1,
+    "maxTokens": 512,
+    "thinking": "disabled",
+    "attemptsPerCell": 1,
+    "retry": "none"
+  },
+  "sensorInvocation": {
+    "temperature": 0,
+    "seed": 1,
+    "maxTokens": 256,
+    "thinking": "disabled",
+    "attemptsPerCell": 1,
+    "retry": "none"
+  },
+  "callBudget": {
+    "publicCalls": 64,
+    "sensorCalls": 160,
+    "totalProviderCalls": 224,
+    "maximumCompletionTokens": 73728
+  },
+  "registeredFalsificationRules": {
+    "polarizedLateEnvelopeReplication": "In each of both base scenarios, POLARIZED_PRIVATE_BLOCKS must contain at least two consecutive late transitions classified within_repeatability_envelope_all_agents; otherwise the current cross-scenario late stability candidate is not replicated.",
+    "sharedCueMotionResourceReplication": "In each of both base scenarios, SHARED_CUE_PRIVATE_CORRECTION must contain at least one transition classified resolved_majority_motion; otherwise the intended natural-motion resource is not replicated.",
+    "failureMeaning": "Failure limits this task/regime design as a natural stability-motion resource; it does not invalidate the operational belief state or thermometer mathematics."
+  },
+  "identificationCeiling": "A pass supports targeted same-task natural trajectory replication at exact-duplicate resolution. It does not establish transport, dwell-time distributions, transition hazards, attractors, metastability, prediction, intervention, or governance.",
+  "onlineTruthAccess": "none",
+  "sensorWriteback": "none",
+  "predictionUsed": false,
+  "actionUsed": false,
+  "providerCallsAuthorized": 0,
+  "executionAuthority": "none",
+  "contentHash": "sha256:d519a821a78aaa5c565274f0fe0ad50793ec4b7a35cad47f9dabe485ee5e278d"
+}

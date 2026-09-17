@@ -214,6 +214,14 @@ interface ParsedResponse {
   missingClaimIds: string[];
 }
 
+/**
+ * Public alias for the canonical final-elicitation parse result. The fork
+ * cross-model runner consumes this parser directly so final reports are
+ * validated with the same claimId / option-set / finite / non-negative /
+ * sum-to-1 / schema discipline as the production vertical slice.
+ */
+export type FinalElicitationParsedResponse = ParsedResponse;
+
 function requireNonEmpty(value: unknown, field: string): asserts value is string {
   if (typeof value !== "string" || value.trim().length === 0) {
     throw new Error(`${field} must be a non-empty string`);
@@ -403,10 +411,24 @@ export function buildFinalElicitationPrompt(input: {
     } else {
       throw new Error(`final elicitation prompt does not support claim kind ${(claim.resolutionPolicy as { kind: string }).kind}`);
     }
-    return `- claimId=${claim.id}: ${claim.proposition}\n  ${outcomes}`;
+    // The exact claimId is a standalone, JSON-quoted field; the proposition is
+    // on its own line so the model never concatenates them (V4 fix).
+    return `- claimId: "${claim.id}"\n  Proposition: ${claim.proposition}\n  ${outcomes}`;
   }).join("\n");
 
-  return `The discussion is complete. This is a private outcome measurement. Other agents will not see your response, and your response will not re-enter the discussion. No correctness feedback is available yet.\n\nPublic task context:\n${input.view.publicContext}\n\nYour original private information:\n${input.view.ownPrivateInformation}\n\nCompleted discussion transcript:\n${transcript || "(no discussion messages were recorded)"}\n\nReport your final probabilities for every registered claim:\n${claimInstructions}\n\nReturn only one JSON object. To answer, use:\n{"status":"answered","reports":[{"claimId":"<id>","value":{"kind":"binary","probability":0.5}}]}\nFor categorical claims use value={"kind":"categorical","probabilities":{"<canonical outcome>":0.5,"<other outcome>":0.5}}. To decline, use {"status":"abstained"}. Do not include evidence, rationale, confidence labels, scores, or any additional fields.`;
+  // Response template with the REAL claimIds and REAL canonical options
+  // embedded (no <id>/<canonical outcome> placeholders), one example per claim.
+  const responseExamples = input.contract.claimIds.map(claimId => {
+    const claim = claimById.get(claimId)!;
+    if (claim.resolutionPolicy.kind === "binary") {
+      return `{"status":"answered","reports":[{"claimId":"${claim.id}","value":{"kind":"binary","probability":0.5}}]}`;
+    }
+    const options = (claim as { options: string[] }).options;
+    const rest = options.slice(1).map(option => `"${option}": ${(0.5 / (options.length - 1)).toFixed(4)}`);
+    return `{"status":"answered","reports":[{"claimId":"${claim.id}","value":{"kind":"categorical","probabilities":{"${options[0]}": 0.5, ${rest.join(", ")}}}}]}`;
+  }).join("\n");
+
+  return `The discussion is complete. This is a private outcome measurement. Other agents will not see your response, and your response will not re-enter the discussion. No correctness feedback is available yet.\n\nPublic task context:\n${input.view.publicContext}\n\nYour original private information:\n${input.view.ownPrivateInformation}\n\nCompleted discussion transcript:\n${transcript || "(no discussion messages were recorded)"}\n\nReport your final probabilities for every registered claim:\n${claimInstructions}\n\nReturn only one JSON object. To answer, use exactly this shape (with the real claimId and real canonical options shown):\n${responseExamples}\nTo decline, use {"status":"abstained"}. Before returning, verify that every bracket in your JSON is closed. Do not include evidence, rationale, confidence labels, scores, or any additional fields.`;
 }
 
 function parseJsonObject(rawResponse: string): {
@@ -433,7 +455,15 @@ function parseJsonObject(rawResponse: string): {
   return { value: null, mode: "none" };
 }
 
-function parseFinalElicitationResponse(input: {
+/**
+ * Canonical final-elicitation response parser: strict schema, status, claimId,
+ * belief-value (option set, finite, non-negative, sum-to-1) validation, with
+ * code-fence tolerance. Invalid payloads never yield partial reports — they
+ * return an explicit invalid status with a diagnostic code. This is the single
+ * parser used by both the production vertical slice (FinalOutcomeSession) and
+ * the fork cross-model runner.
+ */
+export function parseFinalElicitationResponse(input: {
   rawResponse: string;
   contract: FinalElicitationContractV1;
   claims: readonly EpistemicClaim[];

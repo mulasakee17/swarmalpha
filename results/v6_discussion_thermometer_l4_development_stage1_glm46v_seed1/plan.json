@@ -1,0 +1,110 @@
+{
+  "planRef": {
+    "id": "swarmalpha.experiment.v6.collective-dynamics-l4-development-stage1",
+    "version": "1.0.0"
+  },
+  "sourceTaskIds": [
+    5,
+    7,
+    13,
+    11,
+    16,
+    3,
+    14
+  ],
+  "sourceTaskSelection": "lowest_source_task_id_per_precommitted_ai_adjudicated_development_group",
+  "sourceAgentCounts": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+  ],
+  "registeredAgentCount": 28,
+  "seed": 1,
+  "modelRef": {
+    "id": "zhipu:glm-4.6v",
+    "version": "1.0.0"
+  },
+  "publicRounds": [
+    1,
+    2,
+    3
+  ],
+  "checkpoints": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "interaction": "synchronous_previous_round_only",
+  "publicResponseContract": "choice_message_json_v1",
+  "publicInvocation": {
+    "temperature": 0,
+    "seed": 1,
+    "maxTokens": 768,
+    "thinking": "disabled",
+    "attemptsPerCell": 1,
+    "retry": "none"
+  },
+  "sensorRepeats": [
+    "A",
+    "B"
+  ],
+  "sensorEstimator": "primary_only_with_one_stratified_duplicate_per_task",
+  "sensorDuplicateSchedule": [
+    {
+      "sourceTaskId": 5,
+      "agentPosition": 1,
+      "checkpointRound": 0
+    },
+    {
+      "sourceTaskId": 7,
+      "agentPosition": 1,
+      "checkpointRound": 1
+    },
+    {
+      "sourceTaskId": 13,
+      "agentPosition": 1,
+      "checkpointRound": 2
+    },
+    {
+      "sourceTaskId": 11,
+      "agentPosition": 1,
+      "checkpointRound": 3
+    },
+    {
+      "sourceTaskId": 16,
+      "agentPosition": 2,
+      "checkpointRound": 0
+    },
+    {
+      "sourceTaskId": 3,
+      "agentPosition": 2,
+      "checkpointRound": 1
+    },
+    {
+      "sourceTaskId": 14,
+      "agentPosition": 2,
+      "checkpointRound": 2
+    }
+  ],
+  "sensorInvocation": {
+    "temperature": 0,
+    "seed": 1,
+    "maxTokens": 256,
+    "thinking": "disabled",
+    "attemptsPerCell": 1,
+    "retry": "none"
+  },
+  "publicCallCount": 84,
+  "sensorCallCount": 119,
+  "totalProviderCallCount": 203,
+  "sensorTiming": "after_complete_public_trajectory_freeze",
+  "runIdPrefix": "collective-dynamics-l4-dev-stage1",
+  "truthAccess": "offline_analyzer_only",
+  "status": "proposed_no_provider_calls_executed",
+  "contentHash": "sha256:a59b041ed048ea4f2db01b0565e37c710caf1256f36c321ce315efa1dbc0603b"
+}

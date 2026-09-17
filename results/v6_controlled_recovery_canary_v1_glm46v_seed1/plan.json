@@ -1,0 +1,40 @@
+{
+  "planRef": {
+    "id": "swarmalpha.experiment.v6.controlled-recovery-canary",
+    "version": "1.0.0"
+  },
+  "scientificRole": "single_task_escape_probe_development",
+  "taskId": "task:controlled:industrial-cooling:v1",
+  "taskHash": "sha256:959e080a13b452bded091adfb6457cfb77c7c0058b65875cced211dc1ba5cfeb",
+  "sourceRunHash": "sha256:e0a14aa6d612f0581fdd0dfcf17f7a5e538cce67a4ac1a214743ad044996dfba",
+  "sourceX0ResponseHashes": {
+    "agent_1": "sha256:0a09a6b34f27bc70f1f202b5df9ef7e7b0f49d0627e60acf416014bcf398d7ee",
+    "agent_2": "sha256:0d51ece9a2e2a8d9bc330c5ded89aff5cd601c76b7f5ad44e10bf5f8665df663",
+    "agent_3": "sha256:eb71fcf14c2546cc9b11e7652038323d7c0d8c05e7ad1706b90a99a0c703375a",
+    "agent_4": "sha256:75493f9c5575ceb2d62e6e7d2bfb3ecb0153b88d4cbe88f8bde5ad022906601e"
+  },
+  "intervention": {
+    "kind": "NEW_INDEPENDENT_OBSERVATION",
+    "evidenceId": "task:controlled:industrial-cooling:v1:evidence:independent-flow-meter-release",
+    "sourceId": "task:controlled:industrial-cooling:v1:source:independent-flow-meter-release",
+    "lineageId": "task:controlled:industrial-cooling:v1:lineage:independent-flow-meter-release",
+    "statement": "An independent flow-meter test reports severe coolant restriction.",
+    "offlineSourceEvidenceId": "task:controlled:industrial-cooling:v1:evidence:withheld"
+  },
+  "modelRef": {
+    "id": "zhipu:glm-4.6v",
+    "version": "1.0.0"
+  },
+  "invocation": {
+    "temperature": 0,
+    "seed": 1,
+    "maxTokens": 1024,
+    "thinking": "disabled",
+    "attemptsPerCell": 1,
+    "retry": "none"
+  },
+  "plannedProviderCalls": 4,
+  "maximumTotalCompletionTokens": 4096,
+  "truthAccess": "offline_analysis_only",
+  "contentHash": "sha256:5e711d77bd8d8df1edef77a9d755eeed0194d36c86a32ffdab02e3f3f54c5dca"
+}

@@ -1,0 +1,452 @@
+{
+  "analysisRef": {
+    "id": "swarmalpha.analysis.v6.discussion-thermometer-natural-dynamics",
+    "version": "1.0.0",
+    "tolerance": 1e-12
+  },
+  "evidenceClass": "provider_observation",
+  "inferenceStatus": "descriptive_natural_dynamics_development_only",
+  "truthAccess": "none",
+  "predictionUsed": false,
+  "actionUsed": false,
+  "operationalDefinition": {
+    "agentActivity": "TV(primary_from,primary_to)",
+    "localRepeatabilityEnvelope": "max(TV(primary_from,duplicate_from),TV(primary_to,duplicate_to))",
+    "resolvedAgentMotion": "agent_activity>local_repeatability_envelope+tolerance",
+    "resolvedGroupMotion": "complete_roster_and_strict_majority_resolved_agent_motion",
+    "envelopeMeaning": "Failure to exceed one exact-duplicate envelope is an instrument-resolution statement, not proof of latent stability or equivalence."
+  },
+  "transitionRows": [
+    {
+      "taskId": "thermometer-calibration:thermal-loop:v1",
+      "baseScenarioId": "thermal-loop",
+      "designRegime": "DISTRIBUTED_COMPLEMENTARY",
+      "fromCheckpoint": 0,
+      "toCheckpoint": 1,
+      "completeMatchedRoster": true,
+      "replicateComparableAgentCount": 4,
+      "resolvedMoverAgentIds": [
+        "agent_1"
+      ],
+      "resolvedMoverFraction": 0.25,
+      "meanAgentTotalVariation": 0.1375,
+      "pooledTotalVariation": 0.02499999999999996,
+      "endpointMeanReplicateTotalVariation": 0.17125,
+      "minimumAgentMargin": -0.6000000000000001,
+      "maximumAgentMargin": 0.15000000000000005,
+      "exactPrimaryPlateau": false,
+      "classification": "heterogeneous_submajority_motion"
+    },
+    {
+      "taskId": "thermometer-calibration:thermal-loop:v1",
+      "baseScenarioId": "thermal-loop",
+      "designRegime": "DISTRIBUTED_COMPLEMENTARY",
+      "fromCheckpoint": 1,
+      "toCheckpoint": 2,
+      "completeMatchedRoster": true,
+      "replicateComparableAgentCount": 4,
+      "resolvedMoverAgentIds": [
+        "agent_1",
+        "agent_3",
+        "agent_4"
+      ],
+      "resolvedMoverFraction": 0.75,
+      "meanAgentTotalVariation": 0.22499999999999998,
+      "pooledTotalVariation": 0.12499999999999997,
+      "endpointMeanReplicateTotalVariation": 0.01875,
+      "minimumAgentMargin": -0.050000000000000024,
+      "maximumAgentMargin": 0.49999999999999994,
+      "exactPrimaryPlateau": false,
+      "classification": "resolved_majority_motion"
+    },
+    {
+      "taskId": "thermometer-calibration:thermal-loop:v2",
+      "baseScenarioId": "thermal-loop",
+      "designRegime": "SHARED_CUE_PRIVATE_CORRECTION",
+      "fromCheckpoint": 0,
+      "toCheckpoint": 1,
+      "completeMatchedRoster": true,
+      "replicateComparableAgentCount": 4,
+      "resolvedMoverAgentIds": [
+        "agent_2",
+        "agent_3",
+        "agent_4"
+      ],
+      "resolvedMoverFraction": 0.75,
+      "meanAgentTotalVariation": 0.44999999999999996,
+      "pooledTotalVariation": 0.30000000000000004,
+      "endpointMeanReplicateTotalVariation": 0.025,
+      "minimumAgentMargin": 0,
+      "maximumAgentMargin": 0.8999999999999999,
+      "exactPrimaryPlateau": false,
+      "classification": "resolved_majority_motion"
+    },
+    {
+      "taskId": "thermometer-calibration:thermal-loop:v2",
+      "baseScenarioId": "thermal-loop",
+      "designRegime": "SHARED_CUE_PRIVATE_CORRECTION",
+      "fromCheckpoint": 1,
+      "toCheckpoint": 2,
+      "completeMatchedRoster": true,
+      "replicateComparableAgentCount": 4,
+      "resolvedMoverAgentIds": [
+        "agent_1",
+        "agent_2",
+        "agent_4"
+      ],
+      "resolvedMoverFraction": 0.75,
+      "meanAgentTotalVariation": 0.2125,
+      "pooledTotalVariation": 0.2125,
+      "endpointMeanReplicateTotalVariation": 0.0375,
+      "minimumAgentMargin": -0.05000000000000002,
+      "maximumAgentMargin": 0.24999999999999994,
+      "exactPrimaryPlateau": false,
+      "classification": "resolved_majority_motion"
+    },
+    {
+      "taskId": "thermometer-calibration:thermal-loop:v3",
+      "baseScenarioId": "thermal-loop",
+      "designRegime": "POLARIZED_PRIVATE_BLOCKS",
+      "fromCheckpoint": 0,
+      "toCheckpoint": 1,
+      "completeMatchedRoster": true,
+      "replicateComparableAgentCount": 4,
+      "resolvedMoverAgentIds": [
+        "agent_1",
+        "agent_2"
+      ],
+      "resolvedMoverFraction": 0.5,
+      "meanAgentTotalVariation": 0.04999999999999999,
+      "pooledTotalVariation": 0.05000000000000004,
+      "endpointMeanReplicateTotalVariation": 0.011250000000000003,
+      "minimumAgentMargin": -0.02000000000000001,
+      "maximumAgentMargin": 0.09999999999999999,
+      "exactPrimaryPlateau": false,
+      "classification": "heterogeneous_submajority_motion"
+    },
+    {
+      "taskId": "thermometer-calibration:thermal-loop:v3",
+      "baseScenarioId": "thermal-loop",
+      "designRegime": "POLARIZED_PRIVATE_BLOCKS",
+      "fromCheckpoint": 1,
+      "toCheckpoint": 2,
+      "completeMatchedRoster": true,
+      "replicateComparableAgentCount": 4,
+      "resolvedMoverAgentIds": [],
+      "resolvedMoverFraction": 0,
+      "meanAgentTotalVariation": 0,
+      "pooledTotalVariation": 0,
+      "endpointMeanReplicateTotalVariation": 0.0025000000000000014,
+      "minimumAgentMargin": -0.02000000000000001,
+      "maximumAgentMargin": 0,
+      "exactPrimaryPlateau": true,
+      "classification": "within_repeatability_envelope_all_agents"
+    },
+    {
+      "taskId": "thermometer-calibration:thermal-loop:v4",
+      "baseScenarioId": "thermal-loop",
+      "designRegime": "ASYMMETRIC_INFORMED_MINORITY",
+      "fromCheckpoint": 0,
+      "toCheckpoint": 1,
+      "completeMatchedRoster": true,
+      "replicateComparableAgentCount": 4,
+      "resolvedMoverAgentIds": [
+        "agent_2",
+        "agent_3"
+      ],
+      "resolvedMoverFraction": 0.5,
+      "meanAgentTotalVariation": 0.21250000000000002,
+      "pooledTotalVariation": 0.21250000000000002,
+      "endpointMeanReplicateTotalVariation": 0.08749999999999998,
+      "minimumAgentMargin": -0.09999999999999999,
+      "maximumAgentMargin": 0.30000000000000004,
+      "exactPrimaryPlateau": false,
+      "classification": "heterogeneous_submajority_motion"
+    },
+    {
+      "taskId": "thermometer-calibration:thermal-loop:v4",
+      "baseScenarioId": "thermal-loop",
+      "designRegime": "ASYMMETRIC_INFORMED_MINORITY",
+      "fromCheckpoint": 1,
+      "toCheckpoint": 2,
+      "completeMatchedRoster": true,
+      "replicateComparableAgentCount": 4,
+      "resolvedMoverAgentIds": [
+        "agent_1",
+        "agent_2",
+        "agent_3"
+      ],
+      "resolvedMoverFraction": 0.75,
+      "meanAgentTotalVariation": 0.45000000000000007,
+      "pooledTotalVariation": 0.4375,
+      "endpointMeanReplicateTotalVariation": 0.0375,
+      "minimumAgentMargin": -0.04999999999999999,
+      "maximumAgentMargin": 0.6500000000000001,
+      "exactPrimaryPlateau": false,
+      "classification": "resolved_majority_motion"
+    },
+    {
+      "taskId": "thermometer-calibration:service-access:v1",
+      "baseScenarioId": "service-access",
+      "designRegime": "DISTRIBUTED_COMPLEMENTARY",
+      "fromCheckpoint": 0,
+      "toCheckpoint": 1,
+      "completeMatchedRoster": true,
+      "replicateComparableAgentCount": 4,
+      "resolvedMoverAgentIds": [
+        "agent_3"
+      ],
+      "resolvedMoverFraction": 0.25,
+      "meanAgentTotalVariation": 0.11666675000000001,
+      "pooledTotalVariation": 0.11666675000000001,
+      "endpointMeanReplicateTotalVariation": 0,
+      "minimumAgentMargin": 0,
+      "maximumAgentMargin": 0.46666700000000005,
+      "exactPrimaryPlateau": false,
+      "classification": "heterogeneous_submajority_motion"
+    },
+    {
+      "taskId": "thermometer-calibration:service-access:v1",
+      "baseScenarioId": "service-access",
+      "designRegime": "DISTRIBUTED_COMPLEMENTARY",
+      "fromCheckpoint": 1,
+      "toCheckpoint": 2,
+      "completeMatchedRoster": true,
+      "replicateComparableAgentCount": 4,
+      "resolvedMoverAgentIds": [
+        "agent_1",
+        "agent_4"
+      ],
+      "resolvedMoverFraction": 0.5,
+      "meanAgentTotalVariation": 0.3075,
+      "pooledTotalVariation": 0.29499999999999993,
+      "endpointMeanReplicateTotalVariation": 0.0225,
+      "minimumAgentMargin": 0,
+      "maximumAgentMargin": 0.95,
+      "exactPrimaryPlateau": false,
+      "classification": "heterogeneous_submajority_motion"
+    },
+    {
+      "taskId": "thermometer-calibration:service-access:v2",
+      "baseScenarioId": "service-access",
+      "designRegime": "SHARED_CUE_PRIVATE_CORRECTION",
+      "fromCheckpoint": 0,
+      "toCheckpoint": 1,
+      "completeMatchedRoster": true,
+      "replicateComparableAgentCount": 4,
+      "resolvedMoverAgentIds": [
+        "agent_1",
+        "agent_2",
+        "agent_3",
+        "agent_4"
+      ],
+      "resolvedMoverFraction": 1,
+      "meanAgentTotalVariation": 0.3675,
+      "pooledTotalVariation": 0.36,
+      "endpointMeanReplicateTotalVariation": 0.05625000000000001,
+      "minimumAgentMargin": 0.02000000000000001,
+      "maximumAgentMargin": 0.85,
+      "exactPrimaryPlateau": false,
+      "classification": "resolved_majority_motion"
+    },
+    {
+      "taskId": "thermometer-calibration:service-access:v2",
+      "baseScenarioId": "service-access",
+      "designRegime": "SHARED_CUE_PRIVATE_CORRECTION",
+      "fromCheckpoint": 1,
+      "toCheckpoint": 2,
+      "completeMatchedRoster": true,
+      "replicateComparableAgentCount": 4,
+      "resolvedMoverAgentIds": [
+        "agent_3"
+      ],
+      "resolvedMoverFraction": 0.25,
+      "meanAgentTotalVariation": 0.2925,
+      "pooledTotalVariation": 0.27249999999999996,
+      "endpointMeanReplicateTotalVariation": 0.05875000000000001,
+      "minimumAgentMargin": -0.13,
+      "maximumAgentMargin": 1,
+      "exactPrimaryPlateau": false,
+      "classification": "heterogeneous_submajority_motion"
+    },
+    {
+      "taskId": "thermometer-calibration:service-access:v3",
+      "baseScenarioId": "service-access",
+      "designRegime": "POLARIZED_PRIVATE_BLOCKS",
+      "fromCheckpoint": 0,
+      "toCheckpoint": 1,
+      "completeMatchedRoster": true,
+      "replicateComparableAgentCount": 4,
+      "resolvedMoverAgentIds": [
+        "agent_3"
+      ],
+      "resolvedMoverFraction": 0.25,
+      "meanAgentTotalVariation": 0.005000000000000003,
+      "pooledTotalVariation": 0.004999999999999976,
+      "endpointMeanReplicateTotalVariation": 0.007500000000000004,
+      "minimumAgentMargin": -0.02000000000000001,
+      "maximumAgentMargin": 0.02000000000000001,
+      "exactPrimaryPlateau": false,
+      "classification": "heterogeneous_submajority_motion"
+    },
+    {
+      "taskId": "thermometer-calibration:service-access:v3",
+      "baseScenarioId": "service-access",
+      "designRegime": "POLARIZED_PRIVATE_BLOCKS",
+      "fromCheckpoint": 1,
+      "toCheckpoint": 2,
+      "completeMatchedRoster": true,
+      "replicateComparableAgentCount": 4,
+      "resolvedMoverAgentIds": [],
+      "resolvedMoverFraction": 0,
+      "meanAgentTotalVariation": 0.005000000000000003,
+      "pooledTotalVariation": 0.004999999999999976,
+      "endpointMeanReplicateTotalVariation": 0.0025000000000000014,
+      "minimumAgentMargin": 0,
+      "maximumAgentMargin": 0,
+      "exactPrimaryPlateau": false,
+      "classification": "within_repeatability_envelope_all_agents"
+    },
+    {
+      "taskId": "thermometer-calibration:service-access:v4",
+      "baseScenarioId": "service-access",
+      "designRegime": "ASYMMETRIC_INFORMED_MINORITY",
+      "fromCheckpoint": 0,
+      "toCheckpoint": 1,
+      "completeMatchedRoster": true,
+      "replicateComparableAgentCount": 4,
+      "resolvedMoverAgentIds": [
+        "agent_1",
+        "agent_2"
+      ],
+      "resolvedMoverFraction": 0.5,
+      "meanAgentTotalVariation": 0.145,
+      "pooledTotalVariation": 0.13499999999999993,
+      "endpointMeanReplicateTotalVariation": 0.049999999999999996,
+      "minimumAgentMargin": -0.01999999999999999,
+      "maximumAgentMargin": 0.09999999999999998,
+      "exactPrimaryPlateau": false,
+      "classification": "heterogeneous_submajority_motion"
+    },
+    {
+      "taskId": "thermometer-calibration:service-access:v4",
+      "baseScenarioId": "service-access",
+      "designRegime": "ASYMMETRIC_INFORMED_MINORITY",
+      "fromCheckpoint": 1,
+      "toCheckpoint": 2,
+      "completeMatchedRoster": true,
+      "replicateComparableAgentCount": 4,
+      "resolvedMoverAgentIds": [],
+      "resolvedMoverFraction": 0,
+      "meanAgentTotalVariation": 0.05,
+      "pooledTotalVariation": 0.049999999999999975,
+      "endpointMeanReplicateTotalVariation": 0.065,
+      "minimumAgentMargin": -0.2,
+      "maximumAgentMargin": 0,
+      "exactPrimaryPlateau": false,
+      "classification": "within_repeatability_envelope_all_agents"
+    }
+  ],
+  "crossScenarioPatterns": [
+    {
+      "designRegime": "DISTRIBUTED_COMPLEMENTARY",
+      "bases": [
+        {
+          "baseScenarioId": "thermal-loop",
+          "earlyClass": "heterogeneous_submajority_motion",
+          "lateClass": "resolved_majority_motion"
+        },
+        {
+          "baseScenarioId": "service-access",
+          "earlyClass": "heterogeneous_submajority_motion",
+          "lateClass": "heterogeneous_submajority_motion"
+        }
+      ],
+      "sameLateClassAcrossBases": false,
+      "replicatedLateResolvedMajorityMotion": false,
+      "replicatedLateEnvelopeCandidate": false
+    },
+    {
+      "designRegime": "SHARED_CUE_PRIVATE_CORRECTION",
+      "bases": [
+        {
+          "baseScenarioId": "thermal-loop",
+          "earlyClass": "resolved_majority_motion",
+          "lateClass": "resolved_majority_motion"
+        },
+        {
+          "baseScenarioId": "service-access",
+          "earlyClass": "resolved_majority_motion",
+          "lateClass": "heterogeneous_submajority_motion"
+        }
+      ],
+      "sameLateClassAcrossBases": false,
+      "replicatedLateResolvedMajorityMotion": false,
+      "replicatedLateEnvelopeCandidate": false
+    },
+    {
+      "designRegime": "POLARIZED_PRIVATE_BLOCKS",
+      "bases": [
+        {
+          "baseScenarioId": "thermal-loop",
+          "earlyClass": "heterogeneous_submajority_motion",
+          "lateClass": "within_repeatability_envelope_all_agents"
+        },
+        {
+          "baseScenarioId": "service-access",
+          "earlyClass": "heterogeneous_submajority_motion",
+          "lateClass": "within_repeatability_envelope_all_agents"
+        }
+      ],
+      "sameLateClassAcrossBases": true,
+      "replicatedLateResolvedMajorityMotion": false,
+      "replicatedLateEnvelopeCandidate": true
+    },
+    {
+      "designRegime": "ASYMMETRIC_INFORMED_MINORITY",
+      "bases": [
+        {
+          "baseScenarioId": "thermal-loop",
+          "earlyClass": "heterogeneous_submajority_motion",
+          "lateClass": "resolved_majority_motion"
+        },
+        {
+          "baseScenarioId": "service-access",
+          "earlyClass": "heterogeneous_submajority_motion",
+          "lateClass": "within_repeatability_envelope_all_agents"
+        }
+      ],
+      "sameLateClassAcrossBases": false,
+      "replicatedLateResolvedMajorityMotion": false,
+      "replicatedLateEnvelopeCandidate": false
+    }
+  ],
+  "summary": {
+    "transitionCount": 16,
+    "completeTransitionCount": 16,
+    "resolvedMajorityMotionCount": 5,
+    "withinRepeatabilityEnvelopeCount": 3,
+    "heterogeneousSubmajorityMotionCount": 8,
+    "exactPrimaryPlateauCount": 1,
+    "replicatedLateResolvedMotionRegimes": [],
+    "replicatedLateEnvelopeCandidateRegimes": [
+      "POLARIZED_PRIVATE_BLOCKS"
+    ]
+  },
+  "identificationLimits": {
+    "checkpointCountPerTrajectory": 3,
+    "transitionCountPerTrajectory": 2,
+    "dwellTimeIdentifiable": false,
+    "transitionHazardIdentifiable": false,
+    "attractorOrMetastabilityIdentifiable": false,
+    "reasons": [
+      "Only two adjacent transitions are observed per trajectory, so a late envelope event has no observed continuation.",
+      "There is one task per base-scenario/regime cell and one provider batch; task and batch variation are not estimable.",
+      "One exact duplicate per endpoint supplies a local resolution reference, not an equivalence distribution.",
+      "The information-allocation regimes are development designs, not randomized treatment arms for causal comparison."
+    ]
+  },
+  "routing": "LONGER_WITHIN_BATCH_TRAJECTORY_REQUIRED",
+  "claimCeiling": "The frozen run supports duplicate-adjusted descriptions of two natural discussion transitions and cross-scenario late stability candidates only; it does not identify dwell time, transition hazards, attractors, metastability, prediction, intervention, or governance.",
+  "contentHash": "sha256:4fdde15bd394de523c8e176440ad4e87bf77ce0d53e074689e528c974988ab87"
+}

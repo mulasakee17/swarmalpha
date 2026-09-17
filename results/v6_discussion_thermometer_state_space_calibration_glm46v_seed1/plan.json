@@ -1,0 +1,74 @@
+{
+  "planRef": {
+    "id": "swarmalpha.experiment.v6.discussion-thermometer-state-space-calibration-plan",
+    "version": "1.0.0"
+  },
+  "preflightHash": "sha256:975380c22363cfa915f54a09767a7f7b79a0d3817ee9285ad1428838c65d0129",
+  "taskBankHash": "sha256:3e1c92b39aab5772628e3cc6f812795e5f74e843dd707635f311ab5fbfacff22",
+  "variantTaskIds": [
+    "thermometer-calibration:thermal-loop:v1",
+    "thermometer-calibration:thermal-loop:v2",
+    "thermometer-calibration:thermal-loop:v3",
+    "thermometer-calibration:thermal-loop:v4",
+    "thermometer-calibration:service-access:v1",
+    "thermometer-calibration:service-access:v2",
+    "thermometer-calibration:service-access:v3",
+    "thermometer-calibration:service-access:v4"
+  ],
+  "taskOrderPolicy": "base_then_registered_regime_order",
+  "agentIds": [
+    "agent_1",
+    "agent_2",
+    "agent_3",
+    "agent_4"
+  ],
+  "publicRounds": [
+    1,
+    2
+  ],
+  "checkpoints": [
+    0,
+    1,
+    2
+  ],
+  "sensorRepeats": [
+    "A",
+    "B"
+  ],
+  "interaction": "synchronous_previous_round_only",
+  "stateEstimator": "primary_canonical_self_report",
+  "duplicateRole": "instrument_quality_only",
+  "publicResponseContract": "choice_message_json_v1",
+  "modelRef": {
+    "id": "zhipu:glm-4.6v",
+    "version": "1.0.0"
+  },
+  "publicInvocation": {
+    "temperature": 0,
+    "seed": 1,
+    "maxTokens": 512,
+    "thinking": "disabled",
+    "attemptsPerCell": 1,
+    "retry": "none"
+  },
+  "sensorInvocation": {
+    "temperature": 0,
+    "seed": 1,
+    "maxTokens": 256,
+    "thinking": "disabled",
+    "attemptsPerCell": 1,
+    "retry": "none"
+  },
+  "callBudget": {
+    "publicCalls": 64,
+    "sensorCalls": 192,
+    "totalProviderCalls": 256,
+    "maximumCompletionTokens": 81920
+  },
+  "onlineTruthAccess": "none",
+  "sensorWriteback": "none",
+  "regimeContrastCausalAuthority": "none",
+  "semanticReview": "PENDING",
+  "executionAuthority": "none",
+  "contentHash": "sha256:507a0c46764c966841cba600d68306d3c69cd84767b4718080262199ccdf58ec"
+}

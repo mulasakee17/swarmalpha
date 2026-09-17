@@ -22,7 +22,7 @@ import type {
   GovernanceConfig,
   Intervention,
 } from "./types";
-import type { ProgressiveEstimates } from "../thermodynamics/ProgressiveEstimator";
+import type { ProgressiveEstimates } from "../../../legacy/src/lib/thermodynamics/ProgressiveEstimator";
 
 // ============================================================================
 // Intervention 4: Inject Evidence (NEW v2.1)

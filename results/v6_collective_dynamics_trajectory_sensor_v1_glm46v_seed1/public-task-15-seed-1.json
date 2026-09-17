@@ -1,0 +1,370 @@
+{
+  "artifactRef": {
+    "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-public-artifact",
+    "version": "1.0.0"
+  },
+  "planHash": "sha256:7212455275fefee6c988d23bdfe480775b07b8f03a86872eda2bef1f424aa528",
+  "runId": "collective-dynamics-m2:15:seed-1",
+  "seed": 1,
+  "modelRef": {
+    "id": "zhipu:glm-4.6v",
+    "version": "1.0.0"
+  },
+  "onlineTask": {
+    "sourceTaskId": 15,
+    "taskId": "task:hiddenbench:15",
+    "publicContext": "A priceless ancient artifact has just been unearthed in your city. Authorities task your team with deciding where to safely store it for 24 hours until the national museum can collect it. The city is experiencing rising river levels after days of storms, and several neighborhoods have intermittent power outages. You must quickly agree on the safest location for the artifact. The options are:\n- City Bank: Modern steel vault, backup generator, but in an area at risk for power outages and flooding.\n- University Library: Centrally located, 24/7 security, and not known to flood.\n- Downtown Police Station: High security, but rumored to be crowded due to emergency shelter duties.\n\nShared information:\n1. The University Library is built on higher ground and has never experienced flooding, making it a trusted location for safe storage of rare books and documents.\n2. The City Bank's vault is rated for both fire and water, and a backup generator was recently installed.\n3. The Downtown Police Station is acting as a temporary shelter and has significantly more traffic than usual, including people seeking refuge from flooded homes.",
+    "claim": {
+      "id": "claim:hiddenbench:15:answer",
+      "proposition": "Select the single correct answer for HiddenBench task 15 (artifact_safe_haven).",
+      "domain": "hiddenbench-categorical-decision",
+      "createdAt": "2026-08-11T00:00:00.000Z",
+      "options": [
+        "City Bank",
+        "University Library",
+        "Downtown Police Station"
+      ],
+      "resolutionPolicy": {
+        "kind": "categorical",
+        "resolverId": "resolver:hiddenbench-data-3be6ca16"
+      }
+    },
+    "agents": [
+      {
+        "agentId": "agent:hiddenbench:15:1",
+        "privateInformation": "A government memo sent to police leadership confirms that a secure evidence room—separate from the public shelter area—remains unused and can be made accessible for artifact storage immediately."
+      },
+      {
+        "agentId": "agent:hiddenbench:15:2",
+        "privateInformation": "The University Library's 24/7 security detail will be off-site for a mandatory citywide training drill tonight, and only basic staff will remain during the night."
+      },
+      {
+        "agentId": "agent:hiddenbench:15:3",
+        "privateInformation": "The road to the University Library is blocked by downed trees from the storm and will not be open for at least another 24 hours."
+      },
+      {
+        "agentId": "agent:hiddenbench:15:4",
+        "privateInformation": "Power company officials confirm that the City Bank's backup generator is due for repairs and has not functioned during recent outages."
+      }
+    ]
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "messages": [
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:15:1",
+          "content": "University Library",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:15:2",
+          "content": "University Library",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:15:3",
+          "content": "Based on the information provided, the safest location for the artifact is the Downtown Police Station. While it is crowded, its high security is the most critical factor for protecting a priceless item. The University Library is an ideal location, but it is inaccessible due to the blocked road. The City Bank's vault is secure, but its location in a flood-prone area presents a significant risk that outweighs its security features.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:15:4",
+          "content": "University Library",
+          "source": "agent"
+        }
+      ],
+      "calls": [
+        {
+          "requestId": "discussion:collective-dynamics-m2:15:seed-1:r1:agent:hiddenbench:15:1",
+          "round": 1,
+          "agentId": "agent:hiddenbench:15:1",
+          "requestHash": "sha256:50a8f8293ad87f9c100cca4a988b1c82c96a701cc388e6f87bc3636475893057",
+          "responseHash": "sha256:ce3ebe4f3625f26890a5fb73fe4df945707f96008d3cbb83ab15458fd27d8d95"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2:15:seed-1:r1:agent:hiddenbench:15:2",
+          "round": 1,
+          "agentId": "agent:hiddenbench:15:2",
+          "requestHash": "sha256:0b89b494aabd172fd25da2497a8d092bcbbe976fd744b8cc8467425f23c9df24",
+          "responseHash": "sha256:ce3ebe4f3625f26890a5fb73fe4df945707f96008d3cbb83ab15458fd27d8d95"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2:15:seed-1:r1:agent:hiddenbench:15:3",
+          "round": 1,
+          "agentId": "agent:hiddenbench:15:3",
+          "requestHash": "sha256:f99eb8cb53c31eeea44962f6c399ebb034d64b16dc885776229df883edc7c86c",
+          "responseHash": "sha256:13a884247cf4c5fa51b7b15d120192b5845b517ae1aa2c84a6c929358eb7ea26"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2:15:seed-1:r1:agent:hiddenbench:15:4",
+          "round": 1,
+          "agentId": "agent:hiddenbench:15:4",
+          "requestHash": "sha256:296f496e35908116950809193b1b082f4f65842d344e42a92671d06176d45c84",
+          "responseHash": "sha256:ce3ebe4f3625f26890a5fb73fe4df945707f96008d3cbb83ab15458fd27d8d95"
+        }
+      ],
+      "contentHash": "sha256:308fc74b6481552e80c1f9b46a18d5ba2ee2b8a6c7e21fed1ee55eaa2d4d5bc7"
+    },
+    {
+      "round": 2,
+      "messages": [
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:15:1",
+          "content": "University Library",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:15:2",
+          "content": "University Library",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:15:3",
+          "content": "Downtown Police Station",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:15:4",
+          "content": "University Library",
+          "source": "agent"
+        }
+      ],
+      "calls": [
+        {
+          "requestId": "discussion:collective-dynamics-m2:15:seed-1:r2:agent:hiddenbench:15:1",
+          "round": 2,
+          "agentId": "agent:hiddenbench:15:1",
+          "requestHash": "sha256:03b5f5eaf90d6d63185af6208df18ae8545a8aa9e8ab03ddc1ba04e7b74c4748",
+          "responseHash": "sha256:ce3ebe4f3625f26890a5fb73fe4df945707f96008d3cbb83ab15458fd27d8d95"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2:15:seed-1:r2:agent:hiddenbench:15:2",
+          "round": 2,
+          "agentId": "agent:hiddenbench:15:2",
+          "requestHash": "sha256:d33c3ca673a5dbee95bc32e926ccf0dae73725d23acb9f9f191320c456801967",
+          "responseHash": "sha256:ce3ebe4f3625f26890a5fb73fe4df945707f96008d3cbb83ab15458fd27d8d95"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2:15:seed-1:r2:agent:hiddenbench:15:3",
+          "round": 2,
+          "agentId": "agent:hiddenbench:15:3",
+          "requestHash": "sha256:1f7d971402c856c4526b69f4bf961359c13313a95158d877ef416f32938c3a98",
+          "responseHash": "sha256:d183c7d5b4f9650d1db7df2d3ab61bdbd8e43dbe1fb87ae716bdfc2b8f83eb10"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2:15:seed-1:r2:agent:hiddenbench:15:4",
+          "round": 2,
+          "agentId": "agent:hiddenbench:15:4",
+          "requestHash": "sha256:69503a04daece11a30896fe9c22303903c223a6d333e028d61c34142aeef4f51",
+          "responseHash": "sha256:ce3ebe4f3625f26890a5fb73fe4df945707f96008d3cbb83ab15458fd27d8d95"
+        }
+      ],
+      "contentHash": "sha256:fdd61164c8713bf982b53cbf369328b72c119f62ec80e388ea4ace2cbcf26077"
+    },
+    {
+      "round": 3,
+      "messages": [
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:15:1",
+          "content": "University Library",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:15:2",
+          "content": "University Library",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:15:3",
+          "content": "Downtown Police Station",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:15:4",
+          "content": "University Library",
+          "source": "agent"
+        }
+      ],
+      "calls": [
+        {
+          "requestId": "discussion:collective-dynamics-m2:15:seed-1:r3:agent:hiddenbench:15:1",
+          "round": 3,
+          "agentId": "agent:hiddenbench:15:1",
+          "requestHash": "sha256:ce223b57f1e60a44833c5f30fad375e40c0545b040abfdff1186976fb1db9cfd",
+          "responseHash": "sha256:ce3ebe4f3625f26890a5fb73fe4df945707f96008d3cbb83ab15458fd27d8d95"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2:15:seed-1:r3:agent:hiddenbench:15:2",
+          "round": 3,
+          "agentId": "agent:hiddenbench:15:2",
+          "requestHash": "sha256:dfa2769d70cc79d9fba594aced729b1eb6ff7071839c23b1b152a8e07243f89b",
+          "responseHash": "sha256:ce3ebe4f3625f26890a5fb73fe4df945707f96008d3cbb83ab15458fd27d8d95"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2:15:seed-1:r3:agent:hiddenbench:15:3",
+          "round": 3,
+          "agentId": "agent:hiddenbench:15:3",
+          "requestHash": "sha256:0d02773eb744648b5e3e42e935eb6d3d11d8e93073968f12b502ca1bc2677c0f",
+          "responseHash": "sha256:d183c7d5b4f9650d1db7df2d3ab61bdbd8e43dbe1fb87ae716bdfc2b8f83eb10"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2:15:seed-1:r3:agent:hiddenbench:15:4",
+          "round": 3,
+          "agentId": "agent:hiddenbench:15:4",
+          "requestHash": "sha256:2f49d9825b321d53fbc925159599f87f33c12958f7e93b602605084f37606a73",
+          "responseHash": "sha256:ce3ebe4f3625f26890a5fb73fe4df945707f96008d3cbb83ab15458fd27d8d95"
+        }
+      ],
+      "contentHash": "sha256:1bdcbb4e854c7a5d6e2c73c5448c65b4e0802b752063541aeb7253e241a09dac"
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointRef": {
+        "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-checkpoint",
+        "version": "1.0.0"
+      },
+      "checkpointId": "task:hiddenbench:15:collective-dynamics-m2:15:seed-1:X0",
+      "checkpointRound": 0,
+      "visibleMessages": [],
+      "sourceRequestHashes": [],
+      "contentHash": "sha256:81721dc6129e8b9a9521cd26bdd1b4c64f2ac71b1a3e6e47fab2d626bb2c87bd"
+    },
+    {
+      "checkpointRef": {
+        "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-checkpoint",
+        "version": "1.0.0"
+      },
+      "checkpointId": "task:hiddenbench:15:collective-dynamics-m2:15:seed-1:X1",
+      "checkpointRound": 1,
+      "visibleMessages": [
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:15:1",
+          "content": "University Library",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:15:2",
+          "content": "University Library",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:15:3",
+          "content": "Based on the information provided, the safest location for the artifact is the Downtown Police Station. While it is crowded, its high security is the most critical factor for protecting a priceless item. The University Library is an ideal location, but it is inaccessible due to the blocked road. The City Bank's vault is secure, but its location in a flood-prone area presents a significant risk that outweighs its security features.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:15:4",
+          "content": "University Library",
+          "source": "agent"
+        }
+      ],
+      "sourceRequestHashes": [
+        "sha256:50a8f8293ad87f9c100cca4a988b1c82c96a701cc388e6f87bc3636475893057",
+        "sha256:0b89b494aabd172fd25da2497a8d092bcbbe976fd744b8cc8467425f23c9df24",
+        "sha256:f99eb8cb53c31eeea44962f6c399ebb034d64b16dc885776229df883edc7c86c",
+        "sha256:296f496e35908116950809193b1b082f4f65842d344e42a92671d06176d45c84"
+      ],
+      "contentHash": "sha256:bf89d5368787dcf642032c1e68d156a2bb4cd956cc3158bf5779c39422b33511"
+    },
+    {
+      "checkpointRef": {
+        "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-checkpoint",
+        "version": "1.0.0"
+      },
+      "checkpointId": "task:hiddenbench:15:collective-dynamics-m2:15:seed-1:X2",
+      "checkpointRound": 2,
+      "visibleMessages": [
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:15:1",
+          "content": "University Library",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:15:2",
+          "content": "University Library",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:15:3",
+          "content": "Downtown Police Station",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:15:4",
+          "content": "University Library",
+          "source": "agent"
+        }
+      ],
+      "sourceRequestHashes": [
+        "sha256:03b5f5eaf90d6d63185af6208df18ae8545a8aa9e8ab03ddc1ba04e7b74c4748",
+        "sha256:d33c3ca673a5dbee95bc32e926ccf0dae73725d23acb9f9f191320c456801967",
+        "sha256:1f7d971402c856c4526b69f4bf961359c13313a95158d877ef416f32938c3a98",
+        "sha256:69503a04daece11a30896fe9c22303903c223a6d333e028d61c34142aeef4f51"
+      ],
+      "contentHash": "sha256:cd6df2de5c5469043a5d412402e11127aa8847ba33df4738d5dc4527cfae40b9"
+    },
+    {
+      "checkpointRef": {
+        "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-checkpoint",
+        "version": "1.0.0"
+      },
+      "checkpointId": "task:hiddenbench:15:collective-dynamics-m2:15:seed-1:X3",
+      "checkpointRound": 3,
+      "visibleMessages": [
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:15:1",
+          "content": "University Library",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:15:2",
+          "content": "University Library",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:15:3",
+          "content": "Downtown Police Station",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:15:4",
+          "content": "University Library",
+          "source": "agent"
+        }
+      ],
+      "sourceRequestHashes": [
+        "sha256:ce223b57f1e60a44833c5f30fad375e40c0545b040abfdff1186976fb1db9cfd",
+        "sha256:dfa2769d70cc79d9fba594aced729b1eb6ff7071839c23b1b152a8e07243f89b",
+        "sha256:0d02773eb744648b5e3e42e935eb6d3d11d8e93073968f12b502ca1bc2677c0f",
+        "sha256:2f49d9825b321d53fbc925159599f87f33c12958f7e93b602605084f37606a73"
+      ],
+      "contentHash": "sha256:48587d1ce8d603c3d2ee81c6a161098f90f431dc3225f1282091bce917c3cb51"
+    }
+  ],
+  "contentHash": "sha256:58145ca99e337cfc111d04b1e2cfcd0c0baa1711845f2491f9f41fa617ee6141"
+}

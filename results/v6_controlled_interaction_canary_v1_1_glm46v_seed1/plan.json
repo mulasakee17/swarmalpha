@@ -1,0 +1,46 @@
+{
+  "planRef": {
+    "id": "swarmalpha.experiment.v6.controlled-interaction-canary",
+    "version": "1.1.0"
+  },
+  "scientificRole": "single_task_instrument_interaction_development",
+  "sourceProtocolFailureRef": "controlled_wrong_state_formation_v1_halted_56_of_160",
+  "taskId": "task:controlled:industrial-cooling:v1",
+  "taskHash": "sha256:959e080a13b452bded091adfb6457cfb77c7c0058b65875cced211dc1ba5cfeb",
+  "agentIds": [
+    "agent_1",
+    "agent_2",
+    "agent_3",
+    "agent_4"
+  ],
+  "arms": [
+    "ISOLATED",
+    "PEER"
+  ],
+  "armOrder": [
+    "ISOLATED",
+    "PEER"
+  ],
+  "armOrderInterpretation": "development_only_no_causal_order_claim",
+  "rounds": [
+    0,
+    1,
+    2
+  ],
+  "modelRef": {
+    "id": "zhipu:glm-4.6v",
+    "version": "1.0.0"
+  },
+  "invocation": {
+    "temperature": 0,
+    "seed": 1,
+    "maxTokens": 1024,
+    "thinking": "disabled",
+    "attemptsPerCell": 1,
+    "retry": "none"
+  },
+  "plannedProviderCalls": 20,
+  "maximumTotalCompletionTokens": 20480,
+  "truthAccess": "offline_analysis_only",
+  "contentHash": "sha256:21900265206bc0a43e799f95e226d0a4528bdf85724e9ce34fe4d049cce9e5a7"
+}

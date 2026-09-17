@@ -3,7 +3,7 @@ import {
   canonicalizeOpinionOptions,
   matchCanonicalOption,
 } from "@/lib/observation/optionCanonicalization";
-import { extractRanking } from "../experiments/v2/statsShared";
+import { extractRanking } from "../legacy/experiments/v2/statsShared";
 
 const OPTIONS = ["West City", "East City", "South City"];
 

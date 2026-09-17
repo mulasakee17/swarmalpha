@@ -1,0 +1,3475 @@
+{
+  "runRef": {
+    "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-sensor-run",
+    "version": "1.0.0"
+  },
+  "planHash": "sha256:a59b041ed048ea4f2db01b0565e37c710caf1256f36c321ce315efa1dbc0603b",
+  "freezeHash": "sha256:992e4511a5f4e1c7f3ccccac393eb807480db3209e9f81c10a0415a65e100982",
+  "sourceTrajectoryHashes": [
+    "sha256:682f2fc71f0cdeeace5916df868a14a2faebc3e74bea48d952365b305a0e69e9",
+    "sha256:3e6cd598b2b4c8a144eb9744896dbcd08480f0e1351dc4099ae419dc25f3e12e",
+    "sha256:2914f123ef81c05a9fc3526385b8c5786224cd1d7365a35ea4992ce26933641d",
+    "sha256:3bbeea1eb5049fe6d0ddc5d9cb09a5de07079c36a517082f6d50e4cf04b5da36",
+    "sha256:a5cf93bed9deb9efecc99790e1a95d6f2b23ca0c5d684d44a09bcfcef48a0ba9",
+    "sha256:33069b0df52706e272297d47a23fcd60ee6acdb29c77baadddfa5a27b7ee889a",
+    "sha256:7aa02fa330ea9d120a8614d157a179bb73a390e782d2bd59ace517a80dad4ab4"
+  ],
+  "terminals": [
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:5:seed-1:5:agent:hiddenbench:5:1:X0:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:5:seed-1:5:agent:hiddenbench:5:1:X0:a",
+      "requestHash": "sha256:5990e590ed1970ff11da9f9162998ecef81a3c9f00c04192ddd2eeea449fce38",
+      "promptHash": "sha256:e1e880bd27d328bbd9c9709537543b85db952156bf6e4ccd445067f6fb61efef",
+      "startedAt": "2026-08-30T03:20:48.440Z",
+      "terminalAt": "2026-08-30T03:20:50.046Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.6,\"opt_2\":0.2,\"opt_3\":0.2}}",
+      "responseHash": "sha256:967c8be9ab9be102c8c1c22bb69cb9f0c48a84d7e8f3b3bf85e0924bfdf3ba98",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.6,
+          "opt_2": 0.2,
+          "opt_3": 0.2
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301120497e8a06a1c69a49b6"
+      },
+      "usage": {
+        "promptTokens": 1625,
+        "completionTokens": 41,
+        "totalTokens": 1666,
+        "cachedPromptTokens": 60,
+        "latencyMs": 1605
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:5:seed-1:5:agent:hiddenbench:5:1:X0:b",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:5:seed-1:5:agent:hiddenbench:5:1:X0:b",
+      "requestHash": "sha256:6bef2bcbed7bf9bb83a5a48c9d69108e15c49b8ddf54a4dd66d535f3f4815fd3",
+      "promptHash": "sha256:e1e880bd27d328bbd9c9709537543b85db952156bf6e4ccd445067f6fb61efef",
+      "startedAt": "2026-08-30T03:20:50.048Z",
+      "terminalAt": "2026-08-30T03:20:52.007Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.6,\"opt_2\":0.2,\"opt_3\":0.2}}",
+      "responseHash": "sha256:967c8be9ab9be102c8c1c22bb69cb9f0c48a84d7e8f3b3bf85e0924bfdf3ba98",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.6,
+          "opt_2": 0.2,
+          "opt_3": 0.2
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301120504e7e07f5209444eb"
+      },
+      "usage": {
+        "promptTokens": 1625,
+        "completionTokens": 50,
+        "totalTokens": 1675,
+        "cachedPromptTokens": 60,
+        "latencyMs": 1958
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:5:seed-1:5:agent:hiddenbench:5:1:X1:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:5:seed-1:5:agent:hiddenbench:5:1:X1:a",
+      "requestHash": "sha256:d6276263e320c0d22ef0344d1c066cb4a46c4e51ae9c186f86dc166965772d53",
+      "promptHash": "sha256:02c25f730e85c4a4e0de2952d87f9bb0565f77a425340221841f7e3338cf27a5",
+      "startedAt": "2026-08-30T03:20:52.008Z",
+      "terminalAt": "2026-08-30T03:20:53.937Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.1,\"opt_3\":0.8}}",
+      "responseHash": "sha256:7de9d305ceff8eb5833488c7d88d0d6800d602879b731297b02cfe619fbd8274",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.1,
+          "opt_2": 0.1,
+          "opt_3": 0.8
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112052e4d307146a3e4c74"
+      },
+      "usage": {
+        "promptTokens": 2130,
+        "completionTokens": 39,
+        "totalTokens": 2169,
+        "cachedPromptTokens": 60,
+        "latencyMs": 1929
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:5:seed-1:5:agent:hiddenbench:5:1:X2:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:5:seed-1:5:agent:hiddenbench:5:1:X2:a",
+      "requestHash": "sha256:71c834789b58d8f710196b975527439d77f82bc29d73723e2101c6ffeb47de5b",
+      "promptHash": "sha256:12b4d9131fc8075d6327e8ec4b9666640b21851a770d78c6c72b82c5b7ab6c98",
+      "startedAt": "2026-08-30T03:20:53.938Z",
+      "terminalAt": "2026-08-30T03:20:55.615Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.1,\"opt_3\":0.8}}",
+      "responseHash": "sha256:7de9d305ceff8eb5833488c7d88d0d6800d602879b731297b02cfe619fbd8274",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.1,
+          "opt_2": 0.1,
+          "opt_3": 0.8
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "2026083011205405e6d7855171459c"
+      },
+      "usage": {
+        "promptTokens": 2135,
+        "completionTokens": 48,
+        "totalTokens": 2183,
+        "cachedPromptTokens": 60,
+        "latencyMs": 1677
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:5:seed-1:5:agent:hiddenbench:5:1:X3:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:5:seed-1:5:agent:hiddenbench:5:1:X3:a",
+      "requestHash": "sha256:c5ed08d8844451247817d683610293788f5b1ac9b6656437f162ad0ed14db72c",
+      "promptHash": "sha256:0347a4dbc43e6c36298df2e746f77aab5a5845fa9197faaa483852eec1ad0eec",
+      "startedAt": "2026-08-30T03:20:55.616Z",
+      "terminalAt": "2026-08-30T03:20:58.539Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.1,\"opt_3\":0.8}}",
+      "responseHash": "sha256:7de9d305ceff8eb5833488c7d88d0d6800d602879b731297b02cfe619fbd8274",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.1,
+          "opt_2": 0.1,
+          "opt_3": 0.8
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "2026083011205697b992b9bad04d03"
+      },
+      "usage": {
+        "promptTokens": 2125,
+        "completionTokens": 39,
+        "totalTokens": 2164,
+        "cachedPromptTokens": 60,
+        "latencyMs": 2923
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:5:seed-1:5:agent:hiddenbench:5:2:X0:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:5:seed-1:5:agent:hiddenbench:5:2:X0:a",
+      "requestHash": "sha256:9fafa4107aafcf97f5d39acbe1c098183f86c365f8fb7e334e767f443cc3c1e8",
+      "promptHash": "sha256:0ec0c34b877697b022956f23ff8f47b1a8c56b86fc0e2f679bdd5bc503f0ca1b",
+      "startedAt": "2026-08-30T03:20:58.540Z",
+      "terminalAt": "2026-08-30T03:21:00.545Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.3,\"opt_3\":0.3}}",
+      "responseHash": "sha256:b0d0ae673d1feafe98914c4d9ac3caa06d75635d982b34d5e9636e783cd539d4",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.4,
+          "opt_2": 0.3,
+          "opt_3": 0.3
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "2026083011205928a55e4d366d4cc3"
+      },
+      "usage": {
+        "promptTokens": 1586,
+        "completionTokens": 50,
+        "totalTokens": 1636,
+        "cachedPromptTokens": 60,
+        "latencyMs": 2005
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:5:seed-1:5:agent:hiddenbench:5:2:X1:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:5:seed-1:5:agent:hiddenbench:5:2:X1:a",
+      "requestHash": "sha256:dfadfd2c6ddaf8102a053b9aef3dbf716c3fb20ae3bbb8dd39350fc8df8c9acb",
+      "promptHash": "sha256:f2cda8d98a349a6fbef0983ea3b6010012f1ed9ca93f5e6df901cf001c3958bb",
+      "startedAt": "2026-08-30T03:21:00.546Z",
+      "terminalAt": "2026-08-30T03:21:03.107Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.1,\"opt_3\":0.8}}",
+      "responseHash": "sha256:7de9d305ceff8eb5833488c7d88d0d6800d602879b731297b02cfe619fbd8274",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.1,
+          "opt_2": 0.1,
+          "opt_3": 0.8
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112101c5b3bfc1862e4609"
+      },
+      "usage": {
+        "promptTokens": 2091,
+        "completionTokens": 50,
+        "totalTokens": 2141,
+        "cachedPromptTokens": 1234,
+        "latencyMs": 2561
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:5:seed-1:5:agent:hiddenbench:5:2:X2:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:5:seed-1:5:agent:hiddenbench:5:2:X2:a",
+      "requestHash": "sha256:93fc075a7192c96431a528d2b6fe068aa2799318f8889604088eb840e4bfa788",
+      "promptHash": "sha256:ecaa706f77319d9aec8264b387136db824bdeccf81ec0bacf27cef141ccb73f3",
+      "startedAt": "2026-08-30T03:21:03.108Z",
+      "terminalAt": "2026-08-30T03:21:05.080Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.1,\"opt_3\":0.8}}",
+      "responseHash": "sha256:7de9d305ceff8eb5833488c7d88d0d6800d602879b731297b02cfe619fbd8274",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.1,
+          "opt_2": 0.1,
+          "opt_3": 0.8
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301121039d7f1189d4d24764"
+      },
+      "usage": {
+        "promptTokens": 2096,
+        "completionTokens": 39,
+        "totalTokens": 2135,
+        "cachedPromptTokens": 60,
+        "latencyMs": 1972
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:5:seed-1:5:agent:hiddenbench:5:2:X3:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:5:seed-1:5:agent:hiddenbench:5:2:X3:a",
+      "requestHash": "sha256:854e976463eaf791b31ef6656488db5e7867a6ff274620fc8bb21134a9316fe8",
+      "promptHash": "sha256:142d427eaad2778f8066474f3ce50d485b25e34d992c372cd9b6a5167ebb985e",
+      "startedAt": "2026-08-30T03:21:05.081Z",
+      "terminalAt": "2026-08-30T03:21:07.264Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.1,\"opt_3\":0.8}}",
+      "responseHash": "sha256:7de9d305ceff8eb5833488c7d88d0d6800d602879b731297b02cfe619fbd8274",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.1,
+          "opt_2": 0.1,
+          "opt_3": 0.8
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112105def5848e4ae84b90"
+      },
+      "usage": {
+        "promptTokens": 2086,
+        "completionTokens": 50,
+        "totalTokens": 2136,
+        "cachedPromptTokens": 60,
+        "latencyMs": 2183
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:5:seed-1:5:agent:hiddenbench:5:3:X0:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:5:seed-1:5:agent:hiddenbench:5:3:X0:a",
+      "requestHash": "sha256:1d8addbaec2a618ea2191b2f1402ef6e258b9cf09a9398f14ea802cc32469cac",
+      "promptHash": "sha256:bc2b4d8a283514408abad33c177fbf0fee6af54414147114961f5e72e8f7a1a5",
+      "startedAt": "2026-08-30T03:21:07.265Z",
+      "terminalAt": "2026-08-30T03:21:09.052Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.6,\"opt_2\":0.2,\"opt_3\":0.2}}",
+      "responseHash": "sha256:967c8be9ab9be102c8c1c22bb69cb9f0c48a84d7e8f3b3bf85e0924bfdf3ba98",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.6,
+          "opt_2": 0.2,
+          "opt_3": 0.2
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112108054cc3beca7f4497"
+      },
+      "usage": {
+        "promptTokens": 1649,
+        "completionTokens": 50,
+        "totalTokens": 1699,
+        "cachedPromptTokens": 1234,
+        "latencyMs": 1787
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:5:seed-1:5:agent:hiddenbench:5:3:X1:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:5:seed-1:5:agent:hiddenbench:5:3:X1:a",
+      "requestHash": "sha256:295a923ee74f495dd973ec2cabd833a1eb3a50f962637f06a6654f9dd4dbe240",
+      "promptHash": "sha256:01ef72c980adc0d6f287a043f7fe79585f3a35809892f7d46c94eba67d80480f",
+      "startedAt": "2026-08-30T03:21:09.053Z",
+      "terminalAt": "2026-08-30T03:21:11.234Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.1,\"opt_3\":0.8}}",
+      "responseHash": "sha256:7de9d305ceff8eb5833488c7d88d0d6800d602879b731297b02cfe619fbd8274",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.1,
+          "opt_2": 0.1,
+          "opt_3": 0.8
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "2026083011210937aeffeeccde4c03"
+      },
+      "usage": {
+        "promptTokens": 2154,
+        "completionTokens": 50,
+        "totalTokens": 2204,
+        "cachedPromptTokens": 1234,
+        "latencyMs": 2181
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:5:seed-1:5:agent:hiddenbench:5:3:X2:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:5:seed-1:5:agent:hiddenbench:5:3:X2:a",
+      "requestHash": "sha256:ee7db7430022b100812491d14576b74fa65eaaf3a44f2e2d53e9a89546e6ab61",
+      "promptHash": "sha256:4a3c5f812ac2ddd21f3cfbb045b1fc8fb0708fc66d725e738ccdaeadfdc69a65",
+      "startedAt": "2026-08-30T03:21:11.235Z",
+      "terminalAt": "2026-08-30T03:21:13.243Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.1,\"opt_3\":0.8}}",
+      "responseHash": "sha256:7de9d305ceff8eb5833488c7d88d0d6800d602879b731297b02cfe619fbd8274",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.1,
+          "opt_2": 0.1,
+          "opt_3": 0.8
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112112c0f559ce2e824dde"
+      },
+      "usage": {
+        "promptTokens": 2159,
+        "completionTokens": 50,
+        "totalTokens": 2209,
+        "cachedPromptTokens": 1409,
+        "latencyMs": 2008
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:5:seed-1:5:agent:hiddenbench:5:3:X3:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:5:seed-1:5:agent:hiddenbench:5:3:X3:a",
+      "requestHash": "sha256:cd64424c8745d060bc69f58ffa3685e4416d59b14a412ffc7d6172c21ee35531",
+      "promptHash": "sha256:8efa0f9d141e043cc3957fdaf6a6047cf9ae271a61eef77476ef398e8016793b",
+      "startedAt": "2026-08-30T03:21:13.244Z",
+      "terminalAt": "2026-08-30T03:21:15.992Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.1,\"opt_3\":0.8}}",
+      "responseHash": "sha256:7de9d305ceff8eb5833488c7d88d0d6800d602879b731297b02cfe619fbd8274",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.1,
+          "opt_2": 0.1,
+          "opt_3": 0.8
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "2026083011211401d71e2c9ad94c53"
+      },
+      "usage": {
+        "promptTokens": 2149,
+        "completionTokens": 50,
+        "totalTokens": 2199,
+        "cachedPromptTokens": 60,
+        "latencyMs": 2748
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:5:seed-1:5:agent:hiddenbench:5:4:X0:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:5:seed-1:5:agent:hiddenbench:5:4:X0:a",
+      "requestHash": "sha256:c078f37b77dfe3875cffde773d096ffe38e54dbf9c0dcd31eddb1e62c609f0e7",
+      "promptHash": "sha256:98e68ff00cd1c332024cb9daa5421b1172d7378bbef49a65d856bd95582539a2",
+      "startedAt": "2026-08-30T03:21:15.993Z",
+      "terminalAt": "2026-08-30T03:21:17.546Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.4,\"opt_2\":0.2,\"opt_3\":0.4}}",
+      "responseHash": "sha256:e2d0f9c0c0a415ee1145229c5cdeffd1efd7eeaf2cc733c8ef841c5359cfaa22",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.4,
+          "opt_2": 0.2,
+          "opt_3": 0.4
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301121161b36a69e51e541ec"
+      },
+      "usage": {
+        "promptTokens": 1649,
+        "completionTokens": 50,
+        "totalTokens": 1699,
+        "cachedPromptTokens": 1255,
+        "latencyMs": 1552
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:5:seed-1:5:agent:hiddenbench:5:4:X1:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:5:seed-1:5:agent:hiddenbench:5:4:X1:a",
+      "requestHash": "sha256:010662600c07a51a31db7e2cdb5c41b934aecf1984ca648cdefc09026376015a",
+      "promptHash": "sha256:a9ffe55696678e7290dedd9a70b06d4330f847bf64880cbb62ae4bf21f9c1d44",
+      "startedAt": "2026-08-30T03:21:17.547Z",
+      "terminalAt": "2026-08-30T03:21:19.228Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.1,\"opt_3\":0.8}}",
+      "responseHash": "sha256:7de9d305ceff8eb5833488c7d88d0d6800d602879b731297b02cfe619fbd8274",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.1,
+          "opt_2": 0.1,
+          "opt_3": 0.8
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112118c3d02d0ec3a04559"
+      },
+      "usage": {
+        "promptTokens": 2154,
+        "completionTokens": 39,
+        "totalTokens": 2193,
+        "cachedPromptTokens": 1234,
+        "latencyMs": 1681
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:5:seed-1:5:agent:hiddenbench:5:4:X2:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:5:seed-1:5:agent:hiddenbench:5:4:X2:a",
+      "requestHash": "sha256:47151572dcf7260bbaf06053d609bff469322a98f0b799092be5e6c07d7e3c23",
+      "promptHash": "sha256:fd24e2f2d08ba780c4ea1dce7ff34b7e6a94fb1c1b212a519eb1a000991d5a6b",
+      "startedAt": "2026-08-30T03:21:19.229Z",
+      "terminalAt": "2026-08-30T03:21:20.945Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.1,\"opt_3\":0.8}}",
+      "responseHash": "sha256:7de9d305ceff8eb5833488c7d88d0d6800d602879b731297b02cfe619fbd8274",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.1,
+          "opt_2": 0.1,
+          "opt_3": 0.8
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112120c28bf832f6c44c57"
+      },
+      "usage": {
+        "promptTokens": 2159,
+        "completionTokens": 39,
+        "totalTokens": 2198,
+        "cachedPromptTokens": 1412,
+        "latencyMs": 1716
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:5:seed-1:5:agent:hiddenbench:5:4:X3:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:5:seed-1:5:agent:hiddenbench:5:4:X3:a",
+      "requestHash": "sha256:7fafb66d9e02d0a6261d4f89d04da868c7890af52403454ecd605e0516f2c091",
+      "promptHash": "sha256:f55c1169f1e197640e2e3dedd08c38e3e0e6112d21cfd9904d518fbc8fd64815",
+      "startedAt": "2026-08-30T03:21:20.946Z",
+      "terminalAt": "2026-08-30T03:21:22.386Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.1,\"opt_3\":0.8}}",
+      "responseHash": "sha256:7de9d305ceff8eb5833488c7d88d0d6800d602879b731297b02cfe619fbd8274",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.1,
+          "opt_2": 0.1,
+          "opt_3": 0.8
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301121213c7d20a8fc3f4055"
+      },
+      "usage": {
+        "promptTokens": 2149,
+        "completionTokens": 50,
+        "totalTokens": 2199,
+        "cachedPromptTokens": 1234,
+        "latencyMs": 1440
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:7:seed-1:7:agent:hiddenbench:7:1:X0:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:7:seed-1:7:agent:hiddenbench:7:1:X0:a",
+      "requestHash": "sha256:6c0ae0fbb292744377aceab97066134135283fba118f9b61b65a6ad0e6a340a4",
+      "promptHash": "sha256:009ea1ca5b14b50a114ea4dc2c24d463b2b1342330d96894fac31f4005ef407d",
+      "startedAt": "2026-08-30T03:21:22.387Z",
+      "terminalAt": "2026-08-30T03:21:24.059Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301121232265db3adb4949eb"
+      },
+      "usage": {
+        "promptTokens": 1103,
+        "completionTokens": 39,
+        "totalTokens": 1142,
+        "cachedPromptTokens": 160,
+        "latencyMs": 1672
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:7:seed-1:7:agent:hiddenbench:7:1:X1:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:7:seed-1:7:agent:hiddenbench:7:1:X1:a",
+      "requestHash": "sha256:0cc2f763a19d47628dce2d5df14bcacc28324b40fafe7e69a4e97d9b5d913273",
+      "promptHash": "sha256:315a2b0146c43ba5fbac6d9242f3bc832879f5176140b9bdfee59ca4d6fcfa05",
+      "startedAt": "2026-08-30T03:21:24.060Z",
+      "terminalAt": "2026-08-30T03:21:25.799Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.1,\"opt_3\":0.2}}",
+      "responseHash": "sha256:d07d6993b52bcb650e47f594a2a5426cb81c43b24c051db0d7476c734297daef",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.7,
+          "opt_2": 0.1,
+          "opt_3": 0.2
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112124f62e4e7922874bcf"
+      },
+      "usage": {
+        "promptTokens": 1656,
+        "completionTokens": 39,
+        "totalTokens": 1695,
+        "cachedPromptTokens": 160,
+        "latencyMs": 1740
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:7:seed-1:7:agent:hiddenbench:7:1:X1:b",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:7:seed-1:7:agent:hiddenbench:7:1:X1:b",
+      "requestHash": "sha256:04acaa5c844d9f8b36dc808aef4d8fb9e913a392365b8a639eef1520d47e1ab5",
+      "promptHash": "sha256:315a2b0146c43ba5fbac6d9242f3bc832879f5176140b9bdfee59ca4d6fcfa05",
+      "startedAt": "2026-08-30T03:21:25.800Z",
+      "terminalAt": "2026-08-30T03:21:29.011Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.1,\"opt_3\":0.2}}",
+      "responseHash": "sha256:d07d6993b52bcb650e47f594a2a5426cb81c43b24c051db0d7476c734297daef",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.7,
+          "opt_2": 0.1,
+          "opt_3": 0.2
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112126cf618fd29c6a4dbb"
+      },
+      "usage": {
+        "promptTokens": 1656,
+        "completionTokens": 39,
+        "totalTokens": 1695,
+        "cachedPromptTokens": 160,
+        "latencyMs": 3211
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:7:seed-1:7:agent:hiddenbench:7:1:X2:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:7:seed-1:7:agent:hiddenbench:7:1:X2:a",
+      "requestHash": "sha256:b6fd99331b0972e750ae49c4986a6973838bdd8c354646053224635a83768327",
+      "promptHash": "sha256:84b82efd6896ac118016eaea662a98132194a8f10c90eb7a978b2b6b0a86fbca",
+      "startedAt": "2026-08-30T03:21:29.012Z",
+      "terminalAt": "2026-08-30T03:21:30.497Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.9,\"opt_2\":0.05,\"opt_3\":0.05}}",
+      "responseHash": "sha256:791a8e2be1edc05243e1ce06e92f8f98639947dabb5d1d317a3da56cc327e53a",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.9,
+          "opt_2": 0.05,
+          "opt_3": 0.05
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301121292dfaa93f41504a17"
+      },
+      "usage": {
+        "promptTokens": 1623,
+        "completionTokens": 48,
+        "totalTokens": 1671,
+        "cachedPromptTokens": 160,
+        "latencyMs": 1485
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:7:seed-1:7:agent:hiddenbench:7:1:X3:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:7:seed-1:7:agent:hiddenbench:7:1:X3:a",
+      "requestHash": "sha256:976fdb7bd2d30c14b7c29da2c5158c9783d7df3fc6e9a25adbfcb809d6b0124a",
+      "promptHash": "sha256:882f669890fa0b43b0673c56eeb9bb2284c1990ea8e0d03854672db0b7b3c675",
+      "startedAt": "2026-08-30T03:21:30.498Z",
+      "terminalAt": "2026-08-30T03:21:32.523Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.999999,\"opt_2\":0.000001,\"opt_3\":0.0}}",
+      "responseHash": "sha256:656134998907b420f59a7627c1a047234d0767c567ac644629ec336a27b4b809",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.999999,
+          "opt_2": 0.000001,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112131aade6c4f63514591"
+      },
+      "usage": {
+        "promptTokens": 1623,
+        "completionTokens": 50,
+        "totalTokens": 1673,
+        "cachedPromptTokens": 160,
+        "latencyMs": 2024
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:7:seed-1:7:agent:hiddenbench:7:2:X0:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:7:seed-1:7:agent:hiddenbench:7:2:X0:a",
+      "requestHash": "sha256:aaf73edc817f133eb019a7b5e67d8bf9e4d5faeafc8b1fd4f9deac5bd31dd7ec",
+      "promptHash": "sha256:7f61ed952b06aabf3574ffd2bbed5b0374f3fd99014763f867fc5754187b5c63",
+      "startedAt": "2026-08-30T03:21:32.524Z",
+      "terminalAt": "2026-08-30T03:21:34.051Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112133e0c065b1664145c6"
+      },
+      "usage": {
+        "promptTokens": 1097,
+        "completionTokens": 41,
+        "totalTokens": 1138,
+        "cachedPromptTokens": 60,
+        "latencyMs": 1526
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:7:seed-1:7:agent:hiddenbench:7:2:X1:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:7:seed-1:7:agent:hiddenbench:7:2:X1:a",
+      "requestHash": "sha256:e50c216394bc5f8f2bba7aeab9a94b8203609a0b95eb50f2411e0f3ec8b3f89e",
+      "promptHash": "sha256:10d9c74970999204cde562138ef08ea6f6439d4f6489cfbe86f09e0677a9710b",
+      "startedAt": "2026-08-30T03:21:34.052Z",
+      "terminalAt": "2026-08-30T03:21:35.607Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.7,
+          "opt_2": 0.2,
+          "opt_3": 0.1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301121340d87c4c66da741e4"
+      },
+      "usage": {
+        "promptTokens": 1650,
+        "completionTokens": 41,
+        "totalTokens": 1691,
+        "cachedPromptTokens": 767,
+        "latencyMs": 1555
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:7:seed-1:7:agent:hiddenbench:7:2:X2:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:7:seed-1:7:agent:hiddenbench:7:2:X2:a",
+      "requestHash": "sha256:8dcfe422302d1e1f327200f69b2d6414297287d4e40e1e5d8ee64d54ffefa5a7",
+      "promptHash": "sha256:73e0dd5cc91ca0407004f7ef88411f311045deeb792edf8b6208f4c462b536b8",
+      "startedAt": "2026-08-30T03:21:35.608Z",
+      "terminalAt": "2026-08-30T03:21:37.513Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.999999,\"opt_2\":0.000001,\"opt_3\":0.0}}",
+      "responseHash": "sha256:656134998907b420f59a7627c1a047234d0767c567ac644629ec336a27b4b809",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.999999,
+          "opt_2": 0.000001,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301121369e788f4117a84500"
+      },
+      "usage": {
+        "promptTokens": 1617,
+        "completionTokens": 41,
+        "totalTokens": 1658,
+        "cachedPromptTokens": 767,
+        "latencyMs": 1905
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:7:seed-1:7:agent:hiddenbench:7:2:X3:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:7:seed-1:7:agent:hiddenbench:7:2:X3:a",
+      "requestHash": "sha256:9b9e8a24d0f7944e23333a4535fa977a529c1f7fbca98fcca1c1c7e3b1beeb4f",
+      "promptHash": "sha256:a16d3283e008dd93c8bdd10793cf956fa81d1a8a6c44d0d08ec403af5cc2d936",
+      "startedAt": "2026-08-30T03:21:37.514Z",
+      "terminalAt": "2026-08-30T03:21:39.242Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.999999,\"opt_2\":0.000001,\"opt_3\":0.0}}",
+      "responseHash": "sha256:656134998907b420f59a7627c1a047234d0767c567ac644629ec336a27b4b809",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.999999,
+          "opt_2": 0.000001,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112138919958d37f974755"
+      },
+      "usage": {
+        "promptTokens": 1617,
+        "completionTokens": 41,
+        "totalTokens": 1658,
+        "cachedPromptTokens": 767,
+        "latencyMs": 1728
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:7:seed-1:7:agent:hiddenbench:7:3:X0:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:7:seed-1:7:agent:hiddenbench:7:3:X0:a",
+      "requestHash": "sha256:be4d6bd936d135cfd73cf278775fb486d1e921b64aa6628826e9601bb2970348",
+      "promptHash": "sha256:2c5536443215ca84204d7cc4834a9d447cd471e4f3a93033fff1e4c7c58bece3",
+      "startedAt": "2026-08-30T03:21:39.243Z",
+      "terminalAt": "2026-08-30T03:21:40.706Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "2026083011214023248f97a85b4474"
+      },
+      "usage": {
+        "promptTokens": 1097,
+        "completionTokens": 50,
+        "totalTokens": 1147,
+        "cachedPromptTokens": 60,
+        "latencyMs": 1463
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:7:seed-1:7:agent:hiddenbench:7:3:X1:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:7:seed-1:7:agent:hiddenbench:7:3:X1:a",
+      "requestHash": "sha256:d2983f5c7d63fb508fe7dcc845722f2d8ee6c99740632d53c7b8dbb5746976a3",
+      "promptHash": "sha256:1b802184066d1dc8d7082bdcb4a91de9f436244b8df0f7fce9ff5e473a5fd0cd",
+      "startedAt": "2026-08-30T03:21:40.707Z",
+      "terminalAt": "2026-08-30T03:21:42.336Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112141985471ed0eea4f77"
+      },
+      "usage": {
+        "promptTokens": 1650,
+        "completionTokens": 39,
+        "totalTokens": 1689,
+        "cachedPromptTokens": 767,
+        "latencyMs": 1629
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:7:seed-1:7:agent:hiddenbench:7:3:X2:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:7:seed-1:7:agent:hiddenbench:7:3:X2:a",
+      "requestHash": "sha256:ef6f67467fb118b66b951147a4d91760e9fdf3621157c9f2c96b876b99e38db2",
+      "promptHash": "sha256:4e66b2b3cecfd8ceb2df63f21bf56255908acf1a09ad65883d80c067f8e896ab",
+      "startedAt": "2026-08-30T03:21:42.337Z",
+      "terminalAt": "2026-08-30T03:21:45.660Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.999999,\"opt_2\":0.000001,\"opt_3\":0.0}}",
+      "responseHash": "sha256:656134998907b420f59a7627c1a047234d0767c567ac644629ec336a27b4b809",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.999999,
+          "opt_2": 0.000001,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301121432acbf298ff314625"
+      },
+      "usage": {
+        "promptTokens": 1617,
+        "completionTokens": 50,
+        "totalTokens": 1667,
+        "cachedPromptTokens": 60,
+        "latencyMs": 3323
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:7:seed-1:7:agent:hiddenbench:7:3:X3:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:7:seed-1:7:agent:hiddenbench:7:3:X3:a",
+      "requestHash": "sha256:d6fb4a1bae3a0b6157f30e3cabac998b1f4a387c92006604886a99adad24541c",
+      "promptHash": "sha256:2949e80261d4312092172009ffb827536e990665f84e59c1896b7bd554a01dee",
+      "startedAt": "2026-08-30T03:21:45.661Z",
+      "terminalAt": "2026-08-30T03:21:47.356Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.999999,\"opt_2\":0.000001,\"opt_3\":0.0}}",
+      "responseHash": "sha256:656134998907b420f59a7627c1a047234d0767c567ac644629ec336a27b4b809",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.999999,
+          "opt_2": 0.000001,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301121465deacbec8ae7437f"
+      },
+      "usage": {
+        "promptTokens": 1617,
+        "completionTokens": 41,
+        "totalTokens": 1658,
+        "cachedPromptTokens": 854,
+        "latencyMs": 1694
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:7:seed-1:7:agent:hiddenbench:7:4:X0:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:7:seed-1:7:agent:hiddenbench:7:4:X0:a",
+      "requestHash": "sha256:c33702da6b12b4794d0886da6e01f6dfc90bfcff945069b0db6bbbab61a9e74a",
+      "promptHash": "sha256:5b5b8c8f9ddaa39c07eb051f9b67fc07bc3d2a90c1d4bc329276782947705205",
+      "startedAt": "2026-08-30T03:21:47.357Z",
+      "terminalAt": "2026-08-30T03:21:48.871Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112148768660fd532447d1"
+      },
+      "usage": {
+        "promptTokens": 1097,
+        "completionTokens": 50,
+        "totalTokens": 1147,
+        "cachedPromptTokens": 773,
+        "latencyMs": 1514
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:7:seed-1:7:agent:hiddenbench:7:4:X1:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:7:seed-1:7:agent:hiddenbench:7:4:X1:a",
+      "requestHash": "sha256:4f09a9457c99ac68a686c89b0e1beef34743d1b909bc04160750ddc67a6ef321",
+      "promptHash": "sha256:7a0244cc2008861897edb884049da3f244a3e69b2b14660827c5afec4682e7f5",
+      "startedAt": "2026-08-30T03:21:48.872Z",
+      "terminalAt": "2026-08-30T03:21:50.393Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112149e7dd1cbf86da44c4"
+      },
+      "usage": {
+        "promptTokens": 1650,
+        "completionTokens": 39,
+        "totalTokens": 1689,
+        "cachedPromptTokens": 773,
+        "latencyMs": 1521
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:7:seed-1:7:agent:hiddenbench:7:4:X2:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:7:seed-1:7:agent:hiddenbench:7:4:X2:a",
+      "requestHash": "sha256:9669a79ff6557821b324f099ff7b026513f649c4bd4cc009209b19f0599fd098",
+      "promptHash": "sha256:820f91f1e9f46abc49f617fb51d951db5d76d99025b2eb60a553dfe8debf5cb4",
+      "startedAt": "2026-08-30T03:21:50.394Z",
+      "terminalAt": "2026-08-30T03:21:52.546Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.999999,\"opt_2\":0.000001,\"opt_3\":0.0}}",
+      "responseHash": "sha256:656134998907b420f59a7627c1a047234d0767c567ac644629ec336a27b4b809",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.999999,
+          "opt_2": 0.000001,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112151545a0bea1c034c6d"
+      },
+      "usage": {
+        "promptTokens": 1617,
+        "completionTokens": 43,
+        "totalTokens": 1660,
+        "cachedPromptTokens": 773,
+        "latencyMs": 2152
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:7:seed-1:7:agent:hiddenbench:7:4:X3:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:7:seed-1:7:agent:hiddenbench:7:4:X3:a",
+      "requestHash": "sha256:e6b3730a24cbc8a81fb6968841e6784efb54e89769d3ecf751de5b34fe1cdf57",
+      "promptHash": "sha256:72d34e55b7b3a0db541d30049d31aa546c4299fe4c5faad159b1f1d3005f374a",
+      "startedAt": "2026-08-30T03:21:52.547Z",
+      "terminalAt": "2026-08-30T03:21:54.668Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.999999,\"opt_2\":0.000001,\"opt_3\":0.0}}",
+      "responseHash": "sha256:656134998907b420f59a7627c1a047234d0767c567ac644629ec336a27b4b809",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.999999,
+          "opt_2": 0.000001,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301121532ca6d813c27044d2"
+      },
+      "usage": {
+        "promptTokens": 1617,
+        "completionTokens": 41,
+        "totalTokens": 1658,
+        "cachedPromptTokens": 773,
+        "latencyMs": 2121
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:13:seed-1:13:agent:hiddenbench:13:1:X0:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:13:seed-1:13:agent:hiddenbench:13:1:X0:a",
+      "requestHash": "sha256:e8e543b2d36fc094627a899734bf2cd01d33d8d7fc9470836abdd1f6850fd0cd",
+      "promptHash": "sha256:8d92f7ec9d504443bee7259e81538d3c554e26467d1531c0ffdf6ae61b7cd932",
+      "startedAt": "2026-08-30T03:21:54.669Z",
+      "terminalAt": "2026-08-30T03:21:56.184Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.9,\"opt_2\":0.05,\"opt_3\":0.05}}",
+      "responseHash": "sha256:791a8e2be1edc05243e1ce06e92f8f98639947dabb5d1d317a3da56cc327e53a",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.9,
+          "opt_2": 0.05,
+          "opt_3": 0.05
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "2026083011215534aa9993f9c74eb7"
+      },
+      "usage": {
+        "promptTokens": 668,
+        "completionTokens": 39,
+        "totalTokens": 707,
+        "cachedPromptTokens": 156,
+        "latencyMs": 1515
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:13:seed-1:13:agent:hiddenbench:13:1:X1:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:13:seed-1:13:agent:hiddenbench:13:1:X1:a",
+      "requestHash": "sha256:5e9bf2326b33ffa77b05ad6f32950fd9946f614a82cde761ee9595d79f282bd1",
+      "promptHash": "sha256:c4930125a82fceb7ec8e5250db236161b1d4236995c76680c3c9c89940ec9133",
+      "startedAt": "2026-08-30T03:21:56.185Z",
+      "terminalAt": "2026-08-30T03:21:57.980Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.1,\"opt_3\":0.2}}",
+      "responseHash": "sha256:d07d6993b52bcb650e47f594a2a5426cb81c43b24c051db0d7476c734297daef",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.7,
+          "opt_2": 0.1,
+          "opt_3": 0.2
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112157f70f670486b24557"
+      },
+      "usage": {
+        "promptTokens": 1209,
+        "completionTokens": 39,
+        "totalTokens": 1248,
+        "cachedPromptTokens": 156,
+        "latencyMs": 1795
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:13:seed-1:13:agent:hiddenbench:13:1:X2:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:13:seed-1:13:agent:hiddenbench:13:1:X2:a",
+      "requestHash": "sha256:f92b8c8dfe9a603e805204b43d1384068410373b8536b102014c1c650e3752f5",
+      "promptHash": "sha256:00c3711992092b1dea8040c269c0ebe2740b77653c48f25b9ad0110ae6cf11d4",
+      "startedAt": "2026-08-30T03:21:57.981Z",
+      "terminalAt": "2026-08-30T03:21:59.641Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.1,\"opt_3\":0.2}}",
+      "responseHash": "sha256:d07d6993b52bcb650e47f594a2a5426cb81c43b24c051db0d7476c734297daef",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.7,
+          "opt_2": 0.1,
+          "opt_3": 0.2
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301121583be9868c7bb44e96"
+      },
+      "usage": {
+        "promptTokens": 1200,
+        "completionTokens": 39,
+        "totalTokens": 1239,
+        "cachedPromptTokens": 156,
+        "latencyMs": 1660
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:13:seed-1:13:agent:hiddenbench:13:1:X2:b",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:13:seed-1:13:agent:hiddenbench:13:1:X2:b",
+      "requestHash": "sha256:081a55590ed6c975646cd1faa9bf4a81146c41c6be2456b625896231487fa5d2",
+      "promptHash": "sha256:00c3711992092b1dea8040c269c0ebe2740b77653c48f25b9ad0110ae6cf11d4",
+      "startedAt": "2026-08-30T03:21:59.642Z",
+      "terminalAt": "2026-08-30T03:22:01.174Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.1,\"opt_3\":0.2}}",
+      "responseHash": "sha256:d07d6993b52bcb650e47f594a2a5426cb81c43b24c051db0d7476c734297daef",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.7,
+          "opt_2": 0.1,
+          "opt_3": 0.2
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301122000d6d8f5ec8c643b6"
+      },
+      "usage": {
+        "promptTokens": 1200,
+        "completionTokens": 39,
+        "totalTokens": 1239,
+        "cachedPromptTokens": 427,
+        "latencyMs": 1532
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:13:seed-1:13:agent:hiddenbench:13:1:X3:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:13:seed-1:13:agent:hiddenbench:13:1:X3:a",
+      "requestHash": "sha256:c7ea424f6ecf77096a8edba3312c005d90cd00dd09008b0b91e04df33cd763b7",
+      "promptHash": "sha256:d28a4a5d3a5fdd8377a49cea0af3cce27d58b7f895d38c53c10476d0fde73730",
+      "startedAt": "2026-08-30T03:22:01.175Z",
+      "terminalAt": "2026-08-30T03:22:02.987Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.1,\"opt_3\":0.2}}",
+      "responseHash": "sha256:d07d6993b52bcb650e47f594a2a5426cb81c43b24c051db0d7476c734297daef",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.7,
+          "opt_2": 0.1,
+          "opt_3": 0.2
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112202ee751e7e741d4218"
+      },
+      "usage": {
+        "promptTokens": 1218,
+        "completionTokens": 39,
+        "totalTokens": 1257,
+        "cachedPromptTokens": 430,
+        "latencyMs": 1812
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:13:seed-1:13:agent:hiddenbench:13:2:X0:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:13:seed-1:13:agent:hiddenbench:13:2:X0:a",
+      "requestHash": "sha256:19986d325595704cb540bc61cc71b0e5c5b81f063e29d2b317221a0b20bc00fb",
+      "promptHash": "sha256:8f26da06e5803620ed1fe620afd7d21147eb7a47e39ec1a7ec4266ac2dd02e89",
+      "startedAt": "2026-08-30T03:22:02.988Z",
+      "terminalAt": "2026-08-30T03:22:04.340Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.3,\"opt_3\":0.0}}",
+      "responseHash": "sha256:405f6c10a9b1bf338ece82bce32d7b388d5698691ed40961c08003d49b91111d",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.7,
+          "opt_2": 0.3,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112203d0fd319d1b644c35"
+      },
+      "usage": {
+        "promptTokens": 687,
+        "completionTokens": 48,
+        "totalTokens": 735,
+        "cachedPromptTokens": 156,
+        "latencyMs": 1351
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:13:seed-1:13:agent:hiddenbench:13:2:X1:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:13:seed-1:13:agent:hiddenbench:13:2:X1:a",
+      "requestHash": "sha256:2562c66afd2510ae7957f945967999c5fcd2e8d0b0801fb64398bb22cca3b204",
+      "promptHash": "sha256:e4134652e91b6367428c3e8dd0eca2c292b74a753a011738364d0ff16751d1fd",
+      "startedAt": "2026-08-30T03:22:04.341Z",
+      "terminalAt": "2026-08-30T03:22:05.956Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.7,
+          "opt_2": 0.2,
+          "opt_3": 0.1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112205e3515b08d1c64679"
+      },
+      "usage": {
+        "promptTokens": 1228,
+        "completionTokens": 41,
+        "totalTokens": 1269,
+        "cachedPromptTokens": 387,
+        "latencyMs": 1615
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:13:seed-1:13:agent:hiddenbench:13:2:X2:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:13:seed-1:13:agent:hiddenbench:13:2:X2:a",
+      "requestHash": "sha256:3f0c67fb4951df47e7581f2d999a8e49abeafbadf80c535802f91ab2dbdaa4ed",
+      "promptHash": "sha256:47c419138ab48a36e00537b2a1f73bb4450ca35d517db3a95d8f920e7f9cbce7",
+      "startedAt": "2026-08-30T03:22:05.957Z",
+      "terminalAt": "2026-08-30T03:22:07.238Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.6,\"opt_2\":0.1,\"opt_3\":0.3}}",
+      "responseHash": "sha256:8e21bf4364d749a42bac7a797b5d6df4221f7750dcf53949373b1447fc3a4e80",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.6,
+          "opt_2": 0.1,
+          "opt_3": 0.3
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112206a6fad78b48b24298"
+      },
+      "usage": {
+        "promptTokens": 1219,
+        "completionTokens": 39,
+        "totalTokens": 1258,
+        "cachedPromptTokens": 446,
+        "latencyMs": 1282
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:13:seed-1:13:agent:hiddenbench:13:2:X3:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:13:seed-1:13:agent:hiddenbench:13:2:X3:a",
+      "requestHash": "sha256:fc520c1bbc5236ed24c11304fad73c9f71902fabe23144ddac8fd36f8818e63b",
+      "promptHash": "sha256:1a6f7616f73366c4ca44d16932c16a707e17396fd78a8fbd6029d0bdd81c0ef4",
+      "startedAt": "2026-08-30T03:22:07.239Z",
+      "terminalAt": "2026-08-30T03:22:09.124Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.6,\"opt_2\":0.1,\"opt_3\":0.3}}",
+      "responseHash": "sha256:8e21bf4364d749a42bac7a797b5d6df4221f7750dcf53949373b1447fc3a4e80",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.6,
+          "opt_2": 0.1,
+          "opt_3": 0.3
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301122088513f110f84d473d"
+      },
+      "usage": {
+        "promptTokens": 1237,
+        "completionTokens": 48,
+        "totalTokens": 1285,
+        "cachedPromptTokens": 156,
+        "latencyMs": 1885
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:13:seed-1:13:agent:hiddenbench:13:3:X0:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:13:seed-1:13:agent:hiddenbench:13:3:X0:a",
+      "requestHash": "sha256:753ffe6911453fbe28068afeac9587626fd0d1743137538e638b4486e32e2843",
+      "promptHash": "sha256:eb7ed62de2255641c6f250a7d107296edaa5c22f6ef84d88d946045ea7d87ee8",
+      "startedAt": "2026-08-30T03:22:09.125Z",
+      "terminalAt": "2026-08-30T03:22:10.585Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.1,\"opt_3\":0.2}}",
+      "responseHash": "sha256:d07d6993b52bcb650e47f594a2a5426cb81c43b24c051db0d7476c734297daef",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.7,
+          "opt_2": 0.1,
+          "opt_3": 0.2
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112209e77d296605d84dc8"
+      },
+      "usage": {
+        "promptTokens": 683,
+        "completionTokens": 48,
+        "totalTokens": 731,
+        "cachedPromptTokens": 156,
+        "latencyMs": 1460
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:13:seed-1:13:agent:hiddenbench:13:3:X1:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:13:seed-1:13:agent:hiddenbench:13:3:X1:a",
+      "requestHash": "sha256:3ef7255dfa398f5facc94a1f72e28d7a3446cc96a97087260458005731ffc685",
+      "promptHash": "sha256:6dbbf77f087d3b95951419856fc3bc4d78fc54d5337f967c996a678a380a14e5",
+      "startedAt": "2026-08-30T03:22:10.586Z",
+      "terminalAt": "2026-08-30T03:22:12.018Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.1,\"opt_3\":0.7}}",
+      "responseHash": "sha256:cce240de48f4315802054b2f75d8272221a2dda1f6821e2585162c6bc7bf6c81",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.2,
+          "opt_2": 0.1,
+          "opt_3": 0.7
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301122116182e1f19fd94c19"
+      },
+      "usage": {
+        "promptTokens": 1224,
+        "completionTokens": 50,
+        "totalTokens": 1274,
+        "cachedPromptTokens": 442,
+        "latencyMs": 1432
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:13:seed-1:13:agent:hiddenbench:13:3:X2:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:13:seed-1:13:agent:hiddenbench:13:3:X2:a",
+      "requestHash": "sha256:12c22456c78df7ff1f723e0b5368f47f44200c82a301a837854cee40322c6756",
+      "promptHash": "sha256:5e8397f8793edd95249bf56532f13bac00fa81b19bcb8d69b709def52757b9f3",
+      "startedAt": "2026-08-30T03:22:12.019Z",
+      "terminalAt": "2026-08-30T03:22:14.791Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.25,\"opt_2\":0.25,\"opt_3\":0.5}}",
+      "responseHash": "sha256:17de1430203d7b8aa7b9dc9cf1241134df1ef89c10c684b7ab69fe28b730795e",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.25,
+          "opt_2": 0.25,
+          "opt_3": 0.5
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301122120ab4c70a228b4a3e"
+      },
+      "usage": {
+        "promptTokens": 1215,
+        "completionTokens": 48,
+        "totalTokens": 1263,
+        "cachedPromptTokens": 387,
+        "latencyMs": 2772
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:13:seed-1:13:agent:hiddenbench:13:3:X3:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:13:seed-1:13:agent:hiddenbench:13:3:X3:a",
+      "requestHash": "sha256:19555c731924eefaeaf88606e79efa2369a173c48ea75cb883eea522054b323f",
+      "promptHash": "sha256:d08d21d9799d2da3861cdf96eb8a39de674f2ffb4a6698b6098d94ed6cb4aa1f",
+      "startedAt": "2026-08-30T03:22:14.792Z",
+      "terminalAt": "2026-08-30T03:22:16.547Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.1,\"opt_3\":0.7}}",
+      "responseHash": "sha256:cce240de48f4315802054b2f75d8272221a2dda1f6821e2585162c6bc7bf6c81",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.2,
+          "opt_2": 0.1,
+          "opt_3": 0.7
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "2026083011221586cfe9da67614f24"
+      },
+      "usage": {
+        "promptTokens": 1233,
+        "completionTokens": 48,
+        "totalTokens": 1281,
+        "cachedPromptTokens": 388,
+        "latencyMs": 1755
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:13:seed-1:13:agent:hiddenbench:13:4:X0:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:13:seed-1:13:agent:hiddenbench:13:4:X0:a",
+      "requestHash": "sha256:d63093a5d7770f3c6524099bf14f3e6289925d736cff5d3e8b0837d8bdaa6b48",
+      "promptHash": "sha256:792db24ad7787fd054deec169bed36fd2420dadd5b6a4d4b3be89b15dc30eb40",
+      "startedAt": "2026-08-30T03:22:16.548Z",
+      "terminalAt": "2026-08-30T03:22:17.945Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.45,\"opt_3\":0.45}}",
+      "responseHash": "sha256:273fa74b20e6809a740b66b1f4f9b0ec28f71ce0a9496ef65d3f471b857e2189",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.1,
+          "opt_2": 0.45,
+          "opt_3": 0.45
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301122173ac46b8adc824725"
+      },
+      "usage": {
+        "promptTokens": 688,
+        "completionTokens": 39,
+        "totalTokens": 727,
+        "cachedPromptTokens": 388,
+        "latencyMs": 1398
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:13:seed-1:13:agent:hiddenbench:13:4:X1:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:13:seed-1:13:agent:hiddenbench:13:4:X1:a",
+      "requestHash": "sha256:9b5085562f3e6c63ed8b4a41211c3e57bcf445ec9f5d0c7f6bc2be04d872d92c",
+      "promptHash": "sha256:cdf0ba865d9d0b8b0d0904d65fd531f3de034b9fe4b8c8eead95695714e25985",
+      "startedAt": "2026-08-30T03:22:17.946Z",
+      "terminalAt": "2026-08-30T03:22:19.485Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.45,\"opt_3\":0.45}}",
+      "responseHash": "sha256:273fa74b20e6809a740b66b1f4f9b0ec28f71ce0a9496ef65d3f471b857e2189",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.1,
+          "opt_2": 0.45,
+          "opt_3": 0.45
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "2026083011221886093bb96fdf4607"
+      },
+      "usage": {
+        "promptTokens": 1229,
+        "completionTokens": 39,
+        "totalTokens": 1268,
+        "cachedPromptTokens": 447,
+        "latencyMs": 1539
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:13:seed-1:13:agent:hiddenbench:13:4:X2:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:13:seed-1:13:agent:hiddenbench:13:4:X2:a",
+      "requestHash": "sha256:bd1c2f66cafa704723f2858452906ecc59e2698bba84138b61a2736788658044",
+      "promptHash": "sha256:02db68b2bb6597ac81b337efdb47946081a50866fa3c10616922edb8aae3793c",
+      "startedAt": "2026-08-30T03:22:19.486Z",
+      "terminalAt": "2026-08-30T03:22:21.054Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.5,\"opt_3\":0.5}}",
+      "responseHash": "sha256:0e253acd5e1f13cedc13b7189a4d91fa5a1f825bd8f363dc42822b211104d5a9",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 0.5,
+          "opt_3": 0.5
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112220a63b05c6f05646a4"
+      },
+      "usage": {
+        "promptTokens": 1220,
+        "completionTokens": 50,
+        "totalTokens": 1270,
+        "cachedPromptTokens": 388,
+        "latencyMs": 1567
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:13:seed-1:13:agent:hiddenbench:13:4:X3:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:13:seed-1:13:agent:hiddenbench:13:4:X3:a",
+      "requestHash": "sha256:407d7c7c70b06c494c276b4e3571e71c11be6184b340a93552fccea67ca540fb",
+      "promptHash": "sha256:195720c578bce642dfd99daf84de97b0cead10e4c2518f571b20de71c8bb3f78",
+      "startedAt": "2026-08-30T03:22:21.055Z",
+      "terminalAt": "2026-08-30T03:22:22.968Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.5,\"opt_3\":0.5}}",
+      "responseHash": "sha256:0e253acd5e1f13cedc13b7189a4d91fa5a1f825bd8f363dc42822b211104d5a9",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 0.5,
+          "opt_3": 0.5
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112221ac0e8b1e97444225"
+      },
+      "usage": {
+        "promptTokens": 1238,
+        "completionTokens": 39,
+        "totalTokens": 1277,
+        "cachedPromptTokens": 450,
+        "latencyMs": 1913
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:11:seed-1:11:agent:hiddenbench:11:1:X0:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:11:seed-1:11:agent:hiddenbench:11:1:X0:a",
+      "requestHash": "sha256:728b67d35b7bd788be816ea5e688a4bc7417df4994bec6c57a961391a45636fd",
+      "promptHash": "sha256:ebff3b49c8aa4603869f7db342e69cddd6aabe727cec8a1cc085cfc6f6c889ca",
+      "startedAt": "2026-08-30T03:22:22.969Z",
+      "terminalAt": "2026-08-30T03:22:24.614Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "2026083011222363846f02b0914516"
+      },
+      "usage": {
+        "promptTokens": 693,
+        "completionTokens": 50,
+        "totalTokens": 743,
+        "cachedPromptTokens": 156,
+        "latencyMs": 1645
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:11:seed-1:11:agent:hiddenbench:11:1:X1:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:11:seed-1:11:agent:hiddenbench:11:1:X1:a",
+      "requestHash": "sha256:6ddf6568ee937dd50c841f5c2a071c9cec2ead5fa45994851cc713e14ae73ec8",
+      "promptHash": "sha256:c9cb66e5a9bb4b77339160e3aa0bdeb86d1e8d9b3a0ead8a9bbfa20f6ae79a99",
+      "startedAt": "2026-08-30T03:22:24.616Z",
+      "terminalAt": "2026-08-30T03:22:26.707Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112225def0e755fd3544b9"
+      },
+      "usage": {
+        "promptTokens": 1154,
+        "completionTokens": 48,
+        "totalTokens": 1202,
+        "cachedPromptTokens": 156,
+        "latencyMs": 2091
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:11:seed-1:11:agent:hiddenbench:11:1:X2:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:11:seed-1:11:agent:hiddenbench:11:1:X2:a",
+      "requestHash": "sha256:c5050c5a62194fd0c2260d8a159f77c22538e97f0e340ff4659eeda6ba7adaf7",
+      "promptHash": "sha256:149c9b217b31eb2a4c3034c92b892a3f651cdb1f3569a9b8762601f5db0d85c6",
+      "startedAt": "2026-08-30T03:22:26.708Z",
+      "terminalAt": "2026-08-30T03:22:28.577Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301122273ae35f3013b54077"
+      },
+      "usage": {
+        "promptTokens": 1179,
+        "completionTokens": 41,
+        "totalTokens": 1220,
+        "cachedPromptTokens": 455,
+        "latencyMs": 1868
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:11:seed-1:11:agent:hiddenbench:11:1:X3:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:11:seed-1:11:agent:hiddenbench:11:1:X3:a",
+      "requestHash": "sha256:dfdac164f76c0fcd8864504516ec3d9757ed35ba3aa3c19b4966670484424595",
+      "promptHash": "sha256:79b91209b31a2f46cf1a7c561d555537541c3ee840bf635acbc5c52a07bd2986",
+      "startedAt": "2026-08-30T03:22:28.578Z",
+      "terminalAt": "2026-08-30T03:22:30.196Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112229caaf0d4d55704466"
+      },
+      "usage": {
+        "promptTokens": 1208,
+        "completionTokens": 39,
+        "totalTokens": 1247,
+        "cachedPromptTokens": 156,
+        "latencyMs": 1617
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:11:seed-1:11:agent:hiddenbench:11:1:X3:b",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:11:seed-1:11:agent:hiddenbench:11:1:X3:b",
+      "requestHash": "sha256:3ab0ca523ebac14e2f88dd79b1ca03c91936553a683c63cdb15f9f8f84213ab1",
+      "promptHash": "sha256:79b91209b31a2f46cf1a7c561d555537541c3ee840bf635acbc5c52a07bd2986",
+      "startedAt": "2026-08-30T03:22:30.197Z",
+      "terminalAt": "2026-08-30T03:22:31.951Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "2026083011223145b1d7051dbd42a3"
+      },
+      "usage": {
+        "promptTokens": 1208,
+        "completionTokens": 39,
+        "totalTokens": 1247,
+        "cachedPromptTokens": 156,
+        "latencyMs": 1755
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:11:seed-1:11:agent:hiddenbench:11:2:X0:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:11:seed-1:11:agent:hiddenbench:11:2:X0:a",
+      "requestHash": "sha256:d21fc12169897305ca0b3ba7e2b09e0828c5a75ec77d2e6b29dfcc65c74b2eff",
+      "promptHash": "sha256:0626e7e1503b5fe418115f7daf34e953baa179f24a458d2dccf80b94d5022347",
+      "startedAt": "2026-08-30T03:22:31.952Z",
+      "terminalAt": "2026-08-30T03:22:33.344Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.2,\"opt_3\":0.7}}",
+      "responseHash": "sha256:1c1f2ceb2aa0c22284af2fa261fe26ecafd2dd2a7b18719af71473b162c0c5b7",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.1,
+          "opt_2": 0.2,
+          "opt_3": 0.7
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112232d0f424d5d74542c0"
+      },
+      "usage": {
+        "promptTokens": 700,
+        "completionTokens": 39,
+        "totalTokens": 739,
+        "cachedPromptTokens": 156,
+        "latencyMs": 1392
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:11:seed-1:11:agent:hiddenbench:11:2:X1:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:11:seed-1:11:agent:hiddenbench:11:2:X1:a",
+      "requestHash": "sha256:d72f367fb9fcc329b16f3e3976261d40f3e68f9806ba0fdfaa7d13269e9684d7",
+      "promptHash": "sha256:4369700b5a602cf4aec49726c56740c5d2bc0072d6b0541a36f8d307d03accdc",
+      "startedAt": "2026-08-30T03:22:33.345Z",
+      "terminalAt": "2026-08-30T03:22:35.004Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.1,\"opt_3\":0.8}}",
+      "responseHash": "sha256:7de9d305ceff8eb5833488c7d88d0d6800d602879b731297b02cfe619fbd8274",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.1,
+          "opt_2": 0.1,
+          "opt_3": 0.8
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112234cbc39ce7ddb641a8"
+      },
+      "usage": {
+        "promptTokens": 1161,
+        "completionTokens": 39,
+        "totalTokens": 1200,
+        "cachedPromptTokens": 405,
+        "latencyMs": 1659
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:11:seed-1:11:agent:hiddenbench:11:2:X2:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:11:seed-1:11:agent:hiddenbench:11:2:X2:a",
+      "requestHash": "sha256:c3bdbccd0d58765d10d8d359e70513a2c5102908fe996fa3005c65d3074983d5",
+      "promptHash": "sha256:95a51ebd13fb22d797cc5c7cc80895915584c83bc456e97f47bc784ec8c820ec",
+      "startedAt": "2026-08-30T03:22:35.005Z",
+      "terminalAt": "2026-08-30T03:22:36.518Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.1,\"opt_3\":0.8}}",
+      "responseHash": "sha256:7de9d305ceff8eb5833488c7d88d0d6800d602879b731297b02cfe619fbd8274",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.1,
+          "opt_2": 0.1,
+          "opt_3": 0.8
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "2026083011223586f9a0bb0d434985"
+      },
+      "usage": {
+        "promptTokens": 1186,
+        "completionTokens": 41,
+        "totalTokens": 1227,
+        "cachedPromptTokens": 58,
+        "latencyMs": 1513
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:11:seed-1:11:agent:hiddenbench:11:2:X3:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:11:seed-1:11:agent:hiddenbench:11:2:X3:a",
+      "requestHash": "sha256:5c8fd60e5f80673f7a0b1891e0b62fa49b2d13fc5e3d828a0ed770ce418f9f98",
+      "promptHash": "sha256:8fa4ce7b182058bbc9b4b1847b7745635b875f9c0bb20945f592529932e9ee72",
+      "startedAt": "2026-08-30T03:22:36.519Z",
+      "terminalAt": "2026-08-30T03:22:38.163Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.1,\"opt_3\":0.8}}",
+      "responseHash": "sha256:7de9d305ceff8eb5833488c7d88d0d6800d602879b731297b02cfe619fbd8274",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.1,
+          "opt_2": 0.1,
+          "opt_3": 0.8
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112237f440a8e5ce5748d4"
+      },
+      "usage": {
+        "promptTokens": 1215,
+        "completionTokens": 50,
+        "totalTokens": 1265,
+        "cachedPromptTokens": 405,
+        "latencyMs": 1644
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:11:seed-1:11:agent:hiddenbench:11:3:X0:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:11:seed-1:11:agent:hiddenbench:11:3:X0:a",
+      "requestHash": "sha256:5d3e996375c32927a31eeb470543a109c499db45c54ac081b3374e36b923e0d4",
+      "promptHash": "sha256:c3c37d3e91d9a7dd9b865504ba72a5b976afb5c97eb7aaadccf853feb1d945b2",
+      "startedAt": "2026-08-30T03:22:38.164Z",
+      "terminalAt": "2026-08-30T03:22:39.476Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.0,\"opt_3\":0.3}}",
+      "responseHash": "sha256:12b833acb780896db337c2e31534c6c59dfe18360604ce37c3bddda11c98ae82",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.7,
+          "opt_2": 0,
+          "opt_3": 0.3
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112238674468fddff3480d"
+      },
+      "usage": {
+        "promptTokens": 697,
+        "completionTokens": 39,
+        "totalTokens": 736,
+        "cachedPromptTokens": 156,
+        "latencyMs": 1312
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:11:seed-1:11:agent:hiddenbench:11:3:X1:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:11:seed-1:11:agent:hiddenbench:11:3:X1:a",
+      "requestHash": "sha256:1e6e7e596f36c73bf1403725c0a06f5cffa31a8eb9bd8cab8ab53b06cd44a093",
+      "promptHash": "sha256:90740653458099ec33d911611e13caa311043ec56f82f75fbca474c354a8fc04",
+      "startedAt": "2026-08-30T03:22:39.477Z",
+      "terminalAt": "2026-08-30T03:22:42.237Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.9,\"opt_2\":0.1,\"opt_3\":0.0}}",
+      "responseHash": "sha256:9c59b31f1d6b35860143a4198ae5790bfd7c3eea48a9a6b7f39aa7abcf06d5fe",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.9,
+          "opt_2": 0.1,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "2026083011224008fb1ea4cb204dc9"
+      },
+      "usage": {
+        "promptTokens": 1158,
+        "completionTokens": 39,
+        "totalTokens": 1197,
+        "cachedPromptTokens": 406,
+        "latencyMs": 2760
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:11:seed-1:11:agent:hiddenbench:11:3:X2:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:11:seed-1:11:agent:hiddenbench:11:3:X2:a",
+      "requestHash": "sha256:34031cb77c01ab456e05cb30da7fa379280af638acc15661b66f2346490e5d90",
+      "promptHash": "sha256:8ba5fd3bbac28a8d431054871b106fa78184e0e7ee32b3642dcd43ea5d7d9ac1",
+      "startedAt": "2026-08-30T03:22:42.238Z",
+      "terminalAt": "2026-08-30T03:22:43.763Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.9,\"opt_2\":0.1,\"opt_3\":0.0}}",
+      "responseHash": "sha256:9c59b31f1d6b35860143a4198ae5790bfd7c3eea48a9a6b7f39aa7abcf06d5fe",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.9,
+          "opt_2": 0.1,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112243fe6945bd011e4232"
+      },
+      "usage": {
+        "promptTokens": 1183,
+        "completionTokens": 39,
+        "totalTokens": 1222,
+        "cachedPromptTokens": 405,
+        "latencyMs": 1525
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:11:seed-1:11:agent:hiddenbench:11:3:X3:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:11:seed-1:11:agent:hiddenbench:11:3:X3:a",
+      "requestHash": "sha256:a7a91e1ea9629565d868a1b4aca67a91c5bf769f0bdcdc87aa79ba253f75aa7c",
+      "promptHash": "sha256:986fd2ec7e3866ef27840cf43455145bb3b34b680de09be0f223d8c73ae666a2",
+      "startedAt": "2026-08-30T03:22:43.764Z",
+      "terminalAt": "2026-08-30T03:22:45.388Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.9,\"opt_2\":0.0,\"opt_3\":0.1}}",
+      "responseHash": "sha256:c7545aa31536f681b2b4555e00f8b9e9b95e24e737a528221cdd4ccf9526c882",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.9,
+          "opt_2": 0,
+          "opt_3": 0.1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301122441dabd5ad980b4a1f"
+      },
+      "usage": {
+        "promptTokens": 1212,
+        "completionTokens": 39,
+        "totalTokens": 1251,
+        "cachedPromptTokens": 459,
+        "latencyMs": 1624
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:11:seed-1:11:agent:hiddenbench:11:4:X0:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:11:seed-1:11:agent:hiddenbench:11:4:X0:a",
+      "requestHash": "sha256:cc6f44d35213b211d420a5e7967cc731a7d6a177868367faac2114eae8a273b4",
+      "promptHash": "sha256:dd9ea4bde1ba0966c92694f44380b0d6bab63cf5cfd83e09e1800903a0de5901",
+      "startedAt": "2026-08-30T03:22:45.389Z",
+      "terminalAt": "2026-08-30T03:22:46.705Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.7,
+          "opt_2": 0.2,
+          "opt_3": 0.1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112246f080778b08ad4ce9"
+      },
+      "usage": {
+        "promptTokens": 687,
+        "completionTokens": 39,
+        "totalTokens": 726,
+        "cachedPromptTokens": 406,
+        "latencyMs": 1315
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:11:seed-1:11:agent:hiddenbench:11:4:X1:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:11:seed-1:11:agent:hiddenbench:11:4:X1:a",
+      "requestHash": "sha256:3790144cde0e0464feb133d1f36a1cedb41eebe2aa1a5ddc64a6f522128690b5",
+      "promptHash": "sha256:7cf35a5815453b8cf4b13d2ef882a5c9d3184ce5e9c4c1d379cb18f0fe953838",
+      "startedAt": "2026-08-30T03:22:46.706Z",
+      "terminalAt": "2026-08-30T03:22:48.165Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.7,
+          "opt_2": 0.2,
+          "opt_3": 0.1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301122473428fe52382a4991"
+      },
+      "usage": {
+        "promptTokens": 1148,
+        "completionTokens": 39,
+        "totalTokens": 1187,
+        "cachedPromptTokens": 446,
+        "latencyMs": 1459
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:11:seed-1:11:agent:hiddenbench:11:4:X2:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:11:seed-1:11:agent:hiddenbench:11:4:X2:a",
+      "requestHash": "sha256:92f8608a5a2212ff2f6a0968542ee66485cff2d81649823454779dba76c59be7",
+      "promptHash": "sha256:6797bd477824f7fc90aff25ba0bbce3bc2b4681da9b3b717c9b73dabeb7665fe",
+      "startedAt": "2026-08-30T03:22:48.166Z",
+      "terminalAt": "2026-08-30T03:22:49.777Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.7,\"opt_2\":0.2,\"opt_3\":0.1}}",
+      "responseHash": "sha256:12e1039e29947b91523fcef27dc38e50d906f65d37dd2803f3fea226d1a8eb5f",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.7,
+          "opt_2": 0.2,
+          "opt_3": 0.1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112249c36add29805249a4"
+      },
+      "usage": {
+        "promptTokens": 1173,
+        "completionTokens": 39,
+        "totalTokens": 1212,
+        "cachedPromptTokens": 156,
+        "latencyMs": 1611
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:11:seed-1:11:agent:hiddenbench:11:4:X3:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:11:seed-1:11:agent:hiddenbench:11:4:X3:a",
+      "requestHash": "sha256:1386fd1d7932ada3204451ed25a7f0f0256a9ce05e1bf7ccf8133c09bd2777cd",
+      "promptHash": "sha256:7724123fde2e31e3a9c5fbbda34913d51272e9cd66e809e3cfbfbd8ce1d064f2",
+      "startedAt": "2026-08-30T03:22:49.778Z",
+      "terminalAt": "2026-08-30T03:22:51.366Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.1,\"opt_3\":0.8}}",
+      "responseHash": "sha256:7de9d305ceff8eb5833488c7d88d0d6800d602879b731297b02cfe619fbd8274",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.1,
+          "opt_2": 0.1,
+          "opt_3": 0.8
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301122503e4e089833bb4511"
+      },
+      "usage": {
+        "promptTokens": 1202,
+        "completionTokens": 39,
+        "totalTokens": 1241,
+        "cachedPromptTokens": 449,
+        "latencyMs": 1588
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:16:seed-1:16:agent:hiddenbench:16:1:X0:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:16:seed-1:16:agent:hiddenbench:16:1:X0:a",
+      "requestHash": "sha256:964c2820701450a36cd59e399abd87a73afd4ad9c710d1f052c64b96d885399d",
+      "promptHash": "sha256:1c15d46d3d2d95a086ed4d87446fad69a45f6b692ad8aeafb59c1974e20c19ff",
+      "startedAt": "2026-08-30T03:22:51.367Z",
+      "terminalAt": "2026-08-30T03:22:52.759Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.33,\"opt_2\":0.01,\"opt_3\":0.66}}",
+      "responseHash": "sha256:be499e3c8e70091f1506bda987885a6d653e82b0c808106cbce70d4a20e3c9db",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.33,
+          "opt_2": 0.01,
+          "opt_3": 0.66
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112252033e9c9477314a51"
+      },
+      "usage": {
+        "promptTokens": 724,
+        "completionTokens": 48,
+        "totalTokens": 772,
+        "cachedPromptTokens": 154,
+        "latencyMs": 1392
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:16:seed-1:16:agent:hiddenbench:16:1:X1:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:16:seed-1:16:agent:hiddenbench:16:1:X1:a",
+      "requestHash": "sha256:9c340d6b9f52d00ebc96965353d1a2d5bd88c3b43e0793a60927a7929d33692d",
+      "promptHash": "sha256:438aac984267fece7dc0f61ffb327207d54bc15114eaee619ff7dae5bca94496",
+      "startedAt": "2026-08-30T03:22:52.760Z",
+      "terminalAt": "2026-08-30T03:22:54.129Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.1,\"opt_3\":0.8}}",
+      "responseHash": "sha256:7de9d305ceff8eb5833488c7d88d0d6800d602879b731297b02cfe619fbd8274",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.1,
+          "opt_2": 0.1,
+          "opt_3": 0.8
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112253123ec7a15c5a4544"
+      },
+      "usage": {
+        "promptTokens": 1069,
+        "completionTokens": 39,
+        "totalTokens": 1108,
+        "cachedPromptTokens": 154,
+        "latencyMs": 1369
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:16:seed-1:16:agent:hiddenbench:16:1:X2:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:16:seed-1:16:agent:hiddenbench:16:1:X2:a",
+      "requestHash": "sha256:6e5dab476fa56ad8508f72d62f78bdbaadde903198350890e3c87f826a87fc7c",
+      "promptHash": "sha256:790e8fc913d2a6fbbcfa5a7aae78be8e93ea038ffd4b22b617e3874fc5d42f60",
+      "startedAt": "2026-08-30T03:22:54.130Z",
+      "terminalAt": "2026-08-30T03:22:55.533Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "2026083011225443d5bc7921be449d"
+      },
+      "usage": {
+        "promptTokens": 1044,
+        "completionTokens": 39,
+        "totalTokens": 1083,
+        "cachedPromptTokens": 154,
+        "latencyMs": 1403
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:16:seed-1:16:agent:hiddenbench:16:1:X3:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:16:seed-1:16:agent:hiddenbench:16:1:X3:a",
+      "requestHash": "sha256:e013d80b84a1ce2c67cb08468b818f31fe1944c9ed54afbf362ff73d32f7e365",
+      "promptHash": "sha256:d51f09da1f0e95cb0b5acb4df016d6a31d682af4809edde5f5c4762164852c58",
+      "startedAt": "2026-08-30T03:22:55.534Z",
+      "terminalAt": "2026-08-30T03:22:58.660Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112256ce2d34c987c642c6"
+      },
+      "usage": {
+        "promptTokens": 1041,
+        "completionTokens": 50,
+        "totalTokens": 1091,
+        "cachedPromptTokens": 154,
+        "latencyMs": 3127
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:16:seed-1:16:agent:hiddenbench:16:2:X0:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:16:seed-1:16:agent:hiddenbench:16:2:X0:a",
+      "requestHash": "sha256:e37b8445fe12f745899ec0ffe58a119a51503961ec44e72f58be96163e8fef86",
+      "promptHash": "sha256:1c3934baf8732c60b58dec47e7283fdbc9bae1af35cb9e6b673112b1bce2f0a4",
+      "startedAt": "2026-08-30T03:22:58.661Z",
+      "terminalAt": "2026-08-30T03:23:00.180Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.4,\"opt_3\":0.5}}",
+      "responseHash": "sha256:ffd889774e2b4e1ba042f1ddbc2faea68f4a8d25d65a9cee1d089631932451f0",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.1,
+          "opt_2": 0.4,
+          "opt_3": 0.5
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112259d0abf9e9bf0845ad"
+      },
+      "usage": {
+        "promptTokens": 723,
+        "completionTokens": 48,
+        "totalTokens": 771,
+        "cachedPromptTokens": 154,
+        "latencyMs": 1520
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:16:seed-1:16:agent:hiddenbench:16:2:X0:b",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:16:seed-1:16:agent:hiddenbench:16:2:X0:b",
+      "requestHash": "sha256:4785272cae7bb5308997359e6e60dbcea2b1bcdc5e223cd945576c2f38e49baf",
+      "promptHash": "sha256:1c3934baf8732c60b58dec47e7283fdbc9bae1af35cb9e6b673112b1bce2f0a4",
+      "startedAt": "2026-08-30T03:23:00.181Z",
+      "terminalAt": "2026-08-30T03:23:01.749Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.45,\"opt_3\":0.45}}",
+      "responseHash": "sha256:273fa74b20e6809a740b66b1f4f9b0ec28f71ce0a9496ef65d3f471b857e2189",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.1,
+          "opt_2": 0.45,
+          "opt_3": 0.45
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301123017a9e502084414cc0"
+      },
+      "usage": {
+        "promptTokens": 723,
+        "completionTokens": 48,
+        "totalTokens": 771,
+        "cachedPromptTokens": 154,
+        "latencyMs": 1568
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:16:seed-1:16:agent:hiddenbench:16:2:X1:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:16:seed-1:16:agent:hiddenbench:16:2:X1:a",
+      "requestHash": "sha256:ecb3ed164f869b616f40c152a3019783c3c8cc899a7cf3120c88aff87869d6a5",
+      "promptHash": "sha256:70a408690c63c9227921609878be75d7cb71d6fdbcdb669a34d9661f991a5cb4",
+      "startedAt": "2026-08-30T03:23:01.750Z",
+      "terminalAt": "2026-08-30T03:23:03.368Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.2,\"opt_3\":0.7}}",
+      "responseHash": "sha256:1c1f2ceb2aa0c22284af2fa261fe26ecafd2dd2a7b18719af71473b162c0c5b7",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.1,
+          "opt_2": 0.2,
+          "opt_3": 0.7
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "2026083011230219d55ca14b214796"
+      },
+      "usage": {
+        "promptTokens": 1068,
+        "completionTokens": 39,
+        "totalTokens": 1107,
+        "cachedPromptTokens": 484,
+        "latencyMs": 1617
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:16:seed-1:16:agent:hiddenbench:16:2:X2:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:16:seed-1:16:agent:hiddenbench:16:2:X2:a",
+      "requestHash": "sha256:683c4856c899041e98d991c273e16943568012898cbbbf61c3a72cb2a87077dd",
+      "promptHash": "sha256:766b0651374fe9ce7984659c2502fd0de10e41edd7fbca8233c34a5d16f789fb",
+      "startedAt": "2026-08-30T03:23:03.369Z",
+      "terminalAt": "2026-08-30T03:23:04.936Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.05,\"opt_2\":0.15,\"opt_3\":0.8}}",
+      "responseHash": "sha256:6239d54eb3444ed7c12f3c9c57cc47055e30f35bf4fc5335232c1e169dc21feb",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.05,
+          "opt_2": 0.15,
+          "opt_3": 0.8
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112304ef6bf81e14be4af4"
+      },
+      "usage": {
+        "promptTokens": 1043,
+        "completionTokens": 48,
+        "totalTokens": 1091,
+        "cachedPromptTokens": 154,
+        "latencyMs": 1567
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:16:seed-1:16:agent:hiddenbench:16:2:X3:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:16:seed-1:16:agent:hiddenbench:16:2:X3:a",
+      "requestHash": "sha256:372feb8e37ab7d06b1a66bc0d108cfca8d33014736f7d9cfb453d78978c40083",
+      "promptHash": "sha256:b5b1817973ab1a91cafbc569a6da70e47473b556c1be065aa9364a07883fe0b4",
+      "startedAt": "2026-08-30T03:23:04.937Z",
+      "terminalAt": "2026-08-30T03:23:06.358Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.1,\"opt_3\":0.8}}",
+      "responseHash": "sha256:7de9d305ceff8eb5833488c7d88d0d6800d602879b731297b02cfe619fbd8274",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.1,
+          "opt_2": 0.1,
+          "opt_3": 0.8
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112305c05f8e9b7e874b4c"
+      },
+      "usage": {
+        "promptTokens": 1040,
+        "completionTokens": 39,
+        "totalTokens": 1079,
+        "cachedPromptTokens": 487,
+        "latencyMs": 1420
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:16:seed-1:16:agent:hiddenbench:16:3:X0:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:16:seed-1:16:agent:hiddenbench:16:3:X0:a",
+      "requestHash": "sha256:d2aa1acd66be202dc148f15146281af40768c18a46a07a854258b26bada949dd",
+      "promptHash": "sha256:99d9136acb297b5a529cd1ac3cea3bef81ce3ed9660c89edff880eacb92548d1",
+      "startedAt": "2026-08-30T03:23:06.359Z",
+      "terminalAt": "2026-08-30T03:23:07.948Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.3,\"opt_3\":0.6}}",
+      "responseHash": "sha256:5ed925d094f4efcf61bc7be0b07e34f2e04c84dfce3950cb401a46fe2334ab16",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.1,
+          "opt_2": 0.3,
+          "opt_3": 0.6
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112307853e0e4ced9c4ada"
+      },
+      "usage": {
+        "promptTokens": 714,
+        "completionTokens": 48,
+        "totalTokens": 762,
+        "cachedPromptTokens": 430,
+        "latencyMs": 1589
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:16:seed-1:16:agent:hiddenbench:16:3:X1:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:16:seed-1:16:agent:hiddenbench:16:3:X1:a",
+      "requestHash": "sha256:4ab0da74e5e63de34e0982f8f13e63ce55fb7e1abdc84e5f5ac86cf5c9419a15",
+      "promptHash": "sha256:9cbdd39c0b9329006d418c987e2194848750bc34de8174109410a3db3bc530a3",
+      "startedAt": "2026-08-30T03:23:07.949Z",
+      "terminalAt": "2026-08-30T03:23:10.187Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "2026083011230866ddc8d3282b41e3"
+      },
+      "usage": {
+        "promptTokens": 1059,
+        "completionTokens": 48,
+        "totalTokens": 1107,
+        "cachedPromptTokens": 475,
+        "latencyMs": 2238
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:16:seed-1:16:agent:hiddenbench:16:3:X2:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:16:seed-1:16:agent:hiddenbench:16:3:X2:a",
+      "requestHash": "sha256:703ddde65c6fb5b33be90547f7518499858bb994614653a660544be346c0fd78",
+      "promptHash": "sha256:09da5244e7b4cef05ea24dac595f847cd4bf9c95f60ba1145ae67b56b85623bc",
+      "startedAt": "2026-08-30T03:23:10.188Z",
+      "terminalAt": "2026-08-30T03:23:11.496Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112311cc81c367b45c4de1"
+      },
+      "usage": {
+        "promptTokens": 1034,
+        "completionTokens": 39,
+        "totalTokens": 1073,
+        "cachedPromptTokens": 430,
+        "latencyMs": 1308
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:16:seed-1:16:agent:hiddenbench:16:3:X3:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:16:seed-1:16:agent:hiddenbench:16:3:X3:a",
+      "requestHash": "sha256:a77e0e5fe9be4be6ae77cd10d86f1d9142ae7139d24cbeeeb73874e09f968f3f",
+      "promptHash": "sha256:0f26edebc0b524c6b3128eedd8c4d693d0b0471ea1c1f757d031a7b411fe57da",
+      "startedAt": "2026-08-30T03:23:11.497Z",
+      "terminalAt": "2026-08-30T03:23:13.058Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301123127a009e1779b74107"
+      },
+      "usage": {
+        "promptTokens": 1031,
+        "completionTokens": 50,
+        "totalTokens": 1081,
+        "cachedPromptTokens": 154,
+        "latencyMs": 1561
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:16:seed-1:16:agent:hiddenbench:16:4:X0:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:16:seed-1:16:agent:hiddenbench:16:4:X0:a",
+      "requestHash": "sha256:7d59ffcac1da1e969eb068af5976eb8ff33524f1c2b29dbe5817dc45634cd7df",
+      "promptHash": "sha256:8d53b250cbe7a6959a912a3d2927e90d0e6b342516ee4afb8cf340d495929b4e",
+      "startedAt": "2026-08-30T03:23:13.059Z",
+      "terminalAt": "2026-08-30T03:23:15.014Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.33,\"opt_2\":0.33,\"opt_3\":0.34}}",
+      "responseHash": "sha256:f7e1ca98496fe73c30d553b751a1d9772787d71d7ad966c135fdea7ba26cf0b3",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.33,
+          "opt_2": 0.33,
+          "opt_3": 0.34
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112313e2f5c0d31ca841a2"
+      },
+      "usage": {
+        "promptTokens": 713,
+        "completionTokens": 48,
+        "totalTokens": 761,
+        "cachedPromptTokens": 431,
+        "latencyMs": 1955
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:16:seed-1:16:agent:hiddenbench:16:4:X1:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:16:seed-1:16:agent:hiddenbench:16:4:X1:a",
+      "requestHash": "sha256:c4cbe9ddf58f9a0f4664d673013990bb57d1e80f63ee8277fe84189659dc193f",
+      "promptHash": "sha256:ff1947a81a7bb5fc6ec8ab6b858f1375fd1b1615908750da507b7a6aa499deda",
+      "startedAt": "2026-08-30T03:23:15.015Z",
+      "terminalAt": "2026-08-30T03:23:16.570Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.2,\"opt_3\":0.7}}",
+      "responseHash": "sha256:1c1f2ceb2aa0c22284af2fa261fe26ecafd2dd2a7b18719af71473b162c0c5b7",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.1,
+          "opt_2": 0.2,
+          "opt_3": 0.7
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301123150239a56109d748fb"
+      },
+      "usage": {
+        "promptTokens": 1058,
+        "completionTokens": 48,
+        "totalTokens": 1106,
+        "cachedPromptTokens": 431,
+        "latencyMs": 1555
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:16:seed-1:16:agent:hiddenbench:16:4:X2:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:16:seed-1:16:agent:hiddenbench:16:4:X2:a",
+      "requestHash": "sha256:f177be59ac5a3ae58cc4a9b5f2b27aaa026886840a90a680b2f9667e92205f93",
+      "promptHash": "sha256:6c7a997dff7a9810970cda31eeda598c6ac5211f17d28687af8e6b60accd9aa9",
+      "startedAt": "2026-08-30T03:23:16.571Z",
+      "terminalAt": "2026-08-30T03:23:19.722Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.2,\"opt_3\":0.7}}",
+      "responseHash": "sha256:1c1f2ceb2aa0c22284af2fa261fe26ecafd2dd2a7b18719af71473b162c0c5b7",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.1,
+          "opt_2": 0.2,
+          "opt_3": 0.7
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112317091ac0b0cd01468b"
+      },
+      "usage": {
+        "promptTokens": 1033,
+        "completionTokens": 48,
+        "totalTokens": 1081,
+        "cachedPromptTokens": 154,
+        "latencyMs": 3151
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:16:seed-1:16:agent:hiddenbench:16:4:X3:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:16:seed-1:16:agent:hiddenbench:16:4:X3:a",
+      "requestHash": "sha256:e290a74b0ff756592ab680d61cda4c895be9fba8c4bb9880226cbbf0abc94eb5",
+      "promptHash": "sha256:0cb88bdd58133602d897713055e6e1fe3952f4dc1d809790676d205c9416f10e",
+      "startedAt": "2026-08-30T03:23:19.723Z",
+      "terminalAt": "2026-08-30T03:23:21.055Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.2,\"opt_3\":0.7}}",
+      "responseHash": "sha256:1c1f2ceb2aa0c22284af2fa261fe26ecafd2dd2a7b18719af71473b162c0c5b7",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.1,
+          "opt_2": 0.2,
+          "opt_3": 0.7
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112320ba00e13c3321490b"
+      },
+      "usage": {
+        "promptTokens": 1030,
+        "completionTokens": 39,
+        "totalTokens": 1069,
+        "cachedPromptTokens": 431,
+        "latencyMs": 1332
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:3:seed-1:3:agent:hiddenbench:3:1:X0:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:3:seed-1:3:agent:hiddenbench:3:1:X0:a",
+      "requestHash": "sha256:b3c05e27317a781cd6c447f04d9057fbc02dbd12aabbb250daed6eece52b3849",
+      "promptHash": "sha256:dcadf22b24c52891e7a4b4c391e2866627e24a7d41a5ffccf6476c1895dd46ac",
+      "startedAt": "2026-08-30T03:23:21.056Z",
+      "terminalAt": "2026-08-30T03:23:22.617Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.8,\"opt_3\":0.1}}",
+      "responseHash": "sha256:2d3bd5149eab2e398dc0a13853061706b052f394013f2752cdbe4a9da66dd8e6",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.1,
+          "opt_2": 0.8,
+          "opt_3": 0.1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301123213b7dbdb3789f4c5a"
+      },
+      "usage": {
+        "promptTokens": 862,
+        "completionTokens": 50,
+        "totalTokens": 912,
+        "cachedPromptTokens": 164,
+        "latencyMs": 1560
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:3:seed-1:3:agent:hiddenbench:3:1:X1:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:3:seed-1:3:agent:hiddenbench:3:1:X1:a",
+      "requestHash": "sha256:acabba88e9e6831bedd7ec43aa1b73c004e3e6e3961f90f2335093e3aea630b8",
+      "promptHash": "sha256:04e493c14cab09c7edea3d7ba20f28dbd37e8dacbcb0e8b46d3045011bd19cbf",
+      "startedAt": "2026-08-30T03:23:22.618Z",
+      "terminalAt": "2026-08-30T03:23:24.359Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301123238c1f88c820044434"
+      },
+      "usage": {
+        "promptTokens": 1220,
+        "completionTokens": 39,
+        "totalTokens": 1259,
+        "cachedPromptTokens": 164,
+        "latencyMs": 1741
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:3:seed-1:3:agent:hiddenbench:3:1:X2:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:3:seed-1:3:agent:hiddenbench:3:1:X2:a",
+      "requestHash": "sha256:f98f912f8bd6b6dec6621b19ea4a6c01d8e4520e0533e1bf48f11d1e23020077",
+      "promptHash": "sha256:22f40f8e45d8be03ea1a0f690bee86bc85046b9a151daff67e5371c749077a95",
+      "startedAt": "2026-08-30T03:23:24.360Z",
+      "terminalAt": "2026-08-30T03:23:26.022Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301123253a0e535d3c8d4c5d"
+      },
+      "usage": {
+        "promptTokens": 1242,
+        "completionTokens": 39,
+        "totalTokens": 1281,
+        "cachedPromptTokens": 619,
+        "latencyMs": 1661
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:3:seed-1:3:agent:hiddenbench:3:1:X3:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:3:seed-1:3:agent:hiddenbench:3:1:X3:a",
+      "requestHash": "sha256:18f24557d99d4d85c58155d6b4431db8d2a6ac484e915ee604689ca4580712b5",
+      "promptHash": "sha256:e3f40c8338ee9b2240a85fc7649d533620cf5a398dbc80b31c0607fa092d4f74",
+      "startedAt": "2026-08-30T03:23:26.023Z",
+      "terminalAt": "2026-08-30T03:23:28.879Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "2026083011232669fdfe73343e4e2a"
+      },
+      "usage": {
+        "promptTokens": 1242,
+        "completionTokens": 50,
+        "totalTokens": 1292,
+        "cachedPromptTokens": 622,
+        "latencyMs": 2856
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:3:seed-1:3:agent:hiddenbench:3:2:X0:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:3:seed-1:3:agent:hiddenbench:3:2:X0:a",
+      "requestHash": "sha256:fd3c0fe129edeb3fa1bab3cbcbb4080cb0d5012108ec2d0b689a462eeb5ba116",
+      "promptHash": "sha256:19f9c58fa3575c65b47fd05f4b58b29cd65fe5b83e4303ee8ef03941399b1531",
+      "startedAt": "2026-08-30T03:23:28.880Z",
+      "terminalAt": "2026-08-30T03:23:31.489Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.1,\"opt_2\":0.8,\"opt_3\":0.1}}",
+      "responseHash": "sha256:2d3bd5149eab2e398dc0a13853061706b052f394013f2752cdbe4a9da66dd8e6",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.1,
+          "opt_2": 0.8,
+          "opt_3": 0.1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112329549b3a3144894d11"
+      },
+      "usage": {
+        "promptTokens": 860,
+        "completionTokens": 50,
+        "totalTokens": 910,
+        "cachedPromptTokens": 164,
+        "latencyMs": 2609
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:3:seed-1:3:agent:hiddenbench:3:2:X1:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:3:seed-1:3:agent:hiddenbench:3:2:X1:a",
+      "requestHash": "sha256:fa47c3186e6b1f8307e9f3b1e7a48c2a66680b682a7280e07f50ff57e38c82cb",
+      "promptHash": "sha256:3947fc896594e14976408becb9d8c014f9e14dd58e0136827fe8c83e8e6f54a1",
+      "startedAt": "2026-08-30T03:23:31.490Z",
+      "terminalAt": "2026-08-30T03:23:33.057Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301123328f50c2fa2416498d"
+      },
+      "usage": {
+        "promptTokens": 1218,
+        "completionTokens": 50,
+        "totalTokens": 1268,
+        "cachedPromptTokens": 160,
+        "latencyMs": 1567
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:3:seed-1:3:agent:hiddenbench:3:2:X1:b",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:3:seed-1:3:agent:hiddenbench:3:2:X1:b",
+      "requestHash": "sha256:e8192aaf6ad3d6d6333dc2cdcd0a934365f498dfbf000ebf4d6fe4d90256c310",
+      "promptHash": "sha256:3947fc896594e14976408becb9d8c014f9e14dd58e0136827fe8c83e8e6f54a1",
+      "startedAt": "2026-08-30T03:23:33.058Z",
+      "terminalAt": "2026-08-30T03:23:34.837Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "2026083011233305fe3c0f561f4291"
+      },
+      "usage": {
+        "promptTokens": 1218,
+        "completionTokens": 41,
+        "totalTokens": 1259,
+        "cachedPromptTokens": 164,
+        "latencyMs": 1778
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:3:seed-1:3:agent:hiddenbench:3:2:X2:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:3:seed-1:3:agent:hiddenbench:3:2:X2:a",
+      "requestHash": "sha256:4799cfad6c8998e39133ef8cbabd04c9b24c80367eeacace5c27ab2f63be3ad6",
+      "promptHash": "sha256:aae760f0e20f5dda1a26741909f26e8702d39fdf0a8c80efdb684a6633719d54",
+      "startedAt": "2026-08-30T03:23:34.838Z",
+      "terminalAt": "2026-08-30T03:23:36.239Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112335b620e6b6240a4d0a"
+      },
+      "usage": {
+        "promptTokens": 1240,
+        "completionTokens": 39,
+        "totalTokens": 1279,
+        "cachedPromptTokens": 617,
+        "latencyMs": 1402
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:3:seed-1:3:agent:hiddenbench:3:2:X3:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:3:seed-1:3:agent:hiddenbench:3:2:X3:a",
+      "requestHash": "sha256:4259db4ba3d92f64e7760989d22bc433dd0b3d78faad6adc451f5844ade70559",
+      "promptHash": "sha256:807879a2020cf4a1d732276890f7aa2f85faec511914b97930f4b7fbf4c31424",
+      "startedAt": "2026-08-30T03:23:36.240Z",
+      "terminalAt": "2026-08-30T03:23:37.818Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112337e29f949bc3c14af5"
+      },
+      "usage": {
+        "promptTokens": 1240,
+        "completionTokens": 39,
+        "totalTokens": 1279,
+        "cachedPromptTokens": 620,
+        "latencyMs": 1578
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:3:seed-1:3:agent:hiddenbench:3:3:X0:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:3:seed-1:3:agent:hiddenbench:3:3:X0:a",
+      "requestHash": "sha256:56a92ae656a73f592ad43d34c0180519b8b7dc9bdd7e79b1fab280c8ab54f44e",
+      "promptHash": "sha256:c35573952628b3009b62af2d808401ce640810c71123cb27c9debe2c3aee67d2",
+      "startedAt": "2026-08-30T03:23:37.819Z",
+      "terminalAt": "2026-08-30T03:23:40.072Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.3,\"opt_2\":0.5,\"opt_3\":0.2}}",
+      "responseHash": "sha256:c4f5eb55aa9cbe05dfb182c5b61951414da4a67c3de9786359b9310a044b2600",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.3,
+          "opt_2": 0.5,
+          "opt_3": 0.2
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "2026083011233802451bad6feb49f9"
+      },
+      "usage": {
+        "promptTokens": 864,
+        "completionTokens": 50,
+        "totalTokens": 914,
+        "cachedPromptTokens": 164,
+        "latencyMs": 2253
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:3:seed-1:3:agent:hiddenbench:3:3:X1:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:3:seed-1:3:agent:hiddenbench:3:3:X1:a",
+      "requestHash": "sha256:4683b3947bd3d0f8f08f62c4cec9a733938632e786d2a855ad4e9983265160d1",
+      "promptHash": "sha256:348b5968574836174e6c2c969038f9775b3ef0bcff4601723bdd34ef61de5960",
+      "startedAt": "2026-08-30T03:23:40.073Z",
+      "terminalAt": "2026-08-30T03:23:41.704Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112340e7e38f29317b40f5"
+      },
+      "usage": {
+        "promptTokens": 1222,
+        "completionTokens": 39,
+        "totalTokens": 1261,
+        "cachedPromptTokens": 164,
+        "latencyMs": 1631
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:3:seed-1:3:agent:hiddenbench:3:3:X2:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:3:seed-1:3:agent:hiddenbench:3:3:X2:a",
+      "requestHash": "sha256:26fb4f49cd3e68b593d3372ea0534791660a206bc88233092bd56239dedda2bf",
+      "promptHash": "sha256:04afe3cba73961148d2a374664e764ae3d5ca0bae5c3adfbc58d20414e7c9494",
+      "startedAt": "2026-08-30T03:23:41.705Z",
+      "terminalAt": "2026-08-30T03:23:44.817Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112342bf6f4ad58d91451d"
+      },
+      "usage": {
+        "promptTokens": 1244,
+        "completionTokens": 41,
+        "totalTokens": 1285,
+        "cachedPromptTokens": 592,
+        "latencyMs": 3112
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:3:seed-1:3:agent:hiddenbench:3:3:X3:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:3:seed-1:3:agent:hiddenbench:3:3:X3:a",
+      "requestHash": "sha256:9b59016687b08ed961ba430e4357c0dd8b66f332dfd77c01fdff6df331b094e0",
+      "promptHash": "sha256:f91ec790499819dd293d4d7213392608ac075fe945f3779fa7c8a362f726ecd5",
+      "startedAt": "2026-08-30T03:23:44.818Z",
+      "terminalAt": "2026-08-30T03:23:46.810Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301123452a14c8563bfa4a4c"
+      },
+      "usage": {
+        "promptTokens": 1244,
+        "completionTokens": 41,
+        "totalTokens": 1285,
+        "cachedPromptTokens": 624,
+        "latencyMs": 1993
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:3:seed-1:3:agent:hiddenbench:3:4:X0:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:3:seed-1:3:agent:hiddenbench:3:4:X0:a",
+      "requestHash": "sha256:859952d6c2fe8a04dcc54c6208491e4c7c6884500f5c46a491f23f2911600a60",
+      "promptHash": "sha256:0d26b8546096a41d12d767dfd36e34e0a14ba72bac70c7a467832605508ccaf7",
+      "startedAt": "2026-08-30T03:23:46.811Z",
+      "terminalAt": "2026-08-30T03:23:48.239Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.2,\"opt_2\":0.7,\"opt_3\":0.1}}",
+      "responseHash": "sha256:ce9afa9c202d7221e3ab826c2c71312008775621fd99e3dabb73840d842effde",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0.2,
+          "opt_2": 0.7,
+          "opt_3": 0.1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112347f06ada62e891444e"
+      },
+      "usage": {
+        "promptTokens": 863,
+        "completionTokens": 50,
+        "totalTokens": 913,
+        "cachedPromptTokens": 591,
+        "latencyMs": 1428
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:3:seed-1:3:agent:hiddenbench:3:4:X1:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:3:seed-1:3:agent:hiddenbench:3:4:X1:a",
+      "requestHash": "sha256:97ea0c23c718346c865c9091de41150639a30af1ddbec2983f5191911a63ca6c",
+      "promptHash": "sha256:f3bfa6211fbf960e9640f8b444fdad52a91e2a1a6e1955852a07a7894f8feb4b",
+      "startedAt": "2026-08-30T03:23:48.240Z",
+      "terminalAt": "2026-08-30T03:23:49.865Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112349f9dd15072ec1479b"
+      },
+      "usage": {
+        "promptTokens": 1221,
+        "completionTokens": 39,
+        "totalTokens": 1260,
+        "cachedPromptTokens": 591,
+        "latencyMs": 1625
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:3:seed-1:3:agent:hiddenbench:3:4:X2:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:3:seed-1:3:agent:hiddenbench:3:4:X2:a",
+      "requestHash": "sha256:801fdc66ee57bac16336b4b7fa12b8a0906fd73f568e456699260b64d3b80446",
+      "promptHash": "sha256:84ce134b10a16186a74cee5a517b53ec0c12a657ced3f3cab15a6fe3883f74d0",
+      "startedAt": "2026-08-30T03:23:49.866Z",
+      "terminalAt": "2026-08-30T03:23:51.460Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112350e9eba471b8524e36"
+      },
+      "usage": {
+        "promptTokens": 1243,
+        "completionTokens": 48,
+        "totalTokens": 1291,
+        "cachedPromptTokens": 591,
+        "latencyMs": 1594
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:3:seed-1:3:agent:hiddenbench:3:4:X3:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:3:seed-1:3:agent:hiddenbench:3:4:X3:a",
+      "requestHash": "sha256:2cf3a7c55d82166f3d1d4f543095d14d2775a8c48937738e9dda134559c033c1",
+      "promptHash": "sha256:4f9cdd6b5202c1974bb618616d3f271dbcb0bb2e8d52a3ad8e1744e989cd11e2",
+      "startedAt": "2026-08-30T03:23:51.461Z",
+      "terminalAt": "2026-08-30T03:23:52.885Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301123525d558894418d4129"
+      },
+      "usage": {
+        "promptTokens": 1243,
+        "completionTokens": 39,
+        "totalTokens": 1282,
+        "cachedPromptTokens": 623,
+        "latencyMs": 1424
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:14:seed-1:14:agent:hiddenbench:14:1:X0:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:14:seed-1:14:agent:hiddenbench:14:1:X0:a",
+      "requestHash": "sha256:e82ca82e02853aac9db8c32cb9028113823cf5e73e018db43068e87dd5a5c8a9",
+      "promptHash": "sha256:68c67f0246ea59586bba62b2e0f114fd29ac365021505edf9c0b6000216a7349",
+      "startedAt": "2026-08-30T03:23:52.886Z",
+      "terminalAt": "2026-08-30T03:23:54.178Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301123537d866b963e634ad0"
+      },
+      "usage": {
+        "promptTokens": 627,
+        "completionTokens": 39,
+        "totalTokens": 666,
+        "cachedPromptTokens": 156,
+        "latencyMs": 1292
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:14:seed-1:14:agent:hiddenbench:14:1:X1:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:14:seed-1:14:agent:hiddenbench:14:1:X1:a",
+      "requestHash": "sha256:8c1f2220abcf58362a9457bf7573320a1c97c4dacacb4973248c11d1c2e0b29d",
+      "promptHash": "sha256:7876a57c975574cfbf07a7a75e448e9e96ef822c2433ab84e6c7e2cd4ef7a535",
+      "startedAt": "2026-08-30T03:23:54.179Z",
+      "terminalAt": "2026-08-30T03:23:55.811Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112355f07ecf66981a4711"
+      },
+      "usage": {
+        "promptTokens": 1073,
+        "completionTokens": 39,
+        "totalTokens": 1112,
+        "cachedPromptTokens": 156,
+        "latencyMs": 1632
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:14:seed-1:14:agent:hiddenbench:14:1:X2:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:14:seed-1:14:agent:hiddenbench:14:1:X2:a",
+      "requestHash": "sha256:b2d66beb078442ceabba4342f0e2c207f62383b6a592832a12176a9f00b75cb5",
+      "promptHash": "sha256:f649dc847067c1df6238e7075ea3cdab5b7e4d2d9a6532a74977cd2ee0b259fb",
+      "startedAt": "2026-08-30T03:23:55.812Z",
+      "terminalAt": "2026-08-30T03:23:57.273Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301123560bde929bcec64631"
+      },
+      "usage": {
+        "promptTokens": 1161,
+        "completionTokens": 39,
+        "totalTokens": 1200,
+        "cachedPromptTokens": 156,
+        "latencyMs": 1461
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:14:seed-1:14:agent:hiddenbench:14:1:X3:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:14:seed-1:14:agent:hiddenbench:14:1:X3:a",
+      "requestHash": "sha256:60eab751a80c1cbe4f808fe570f70be0185e58034fe619052f8f3b604bcbfcf7",
+      "promptHash": "sha256:0af4859d2a09b55592bd22796bf791c0d2f7f2e2c4f594cf47410cdf965852fb",
+      "startedAt": "2026-08-30T03:23:57.274Z",
+      "terminalAt": "2026-08-30T03:23:58.788Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112358a27fb3fb79164d24"
+      },
+      "usage": {
+        "promptTokens": 1161,
+        "completionTokens": 39,
+        "totalTokens": 1200,
+        "cachedPromptTokens": 156,
+        "latencyMs": 1514
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:14:seed-1:14:agent:hiddenbench:14:2:X0:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:14:seed-1:14:agent:hiddenbench:14:2:X0:a",
+      "requestHash": "sha256:6649b992ef369f337a74d1ee707982aa3c0b0da7fc72afa5f5a02d81781b6f80",
+      "promptHash": "sha256:ca66fbd01bf9b2427c325517f18f04dbc9c3654356882c6831cc8fac8a01744a",
+      "startedAt": "2026-08-30T03:23:58.789Z",
+      "terminalAt": "2026-08-30T03:24:00.338Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":0.0,\"opt_3\":1.0}}",
+      "responseHash": "sha256:c22f72858df295957ed9dfce347d9808b1bddbdd38f9800a6d1076e94bea1cf6",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 0,
+          "opt_3": 1
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "2026083011235994f2fd84d2234249"
+      },
+      "usage": {
+        "promptTokens": 635,
+        "completionTokens": 41,
+        "totalTokens": 676,
+        "cachedPromptTokens": 350,
+        "latencyMs": 1549
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:14:seed-1:14:agent:hiddenbench:14:2:X1:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:14:seed-1:14:agent:hiddenbench:14:2:X1:a",
+      "requestHash": "sha256:8b72310764b8bacf46f830e9b97a6054bf672755aadbaf4f612e0b80aa9ff804",
+      "promptHash": "sha256:d8e2c5a4a46aba5feec939ba4866f7bd2a363794332a098c5f3ecc2f0bc65ffe",
+      "startedAt": "2026-08-30T03:24:00.339Z",
+      "terminalAt": "2026-08-30T03:24:02.049Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":1.0,\"opt_2\":0.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:9b2f473840495302283fc39f5df7b6c2a3e8c160353ba6e322ee461905404886",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 1,
+          "opt_2": 0,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "2026083011240192d85ce2fb864cb3"
+      },
+      "usage": {
+        "promptTokens": 1081,
+        "completionTokens": 39,
+        "totalTokens": 1120,
+        "cachedPromptTokens": 156,
+        "latencyMs": 1710
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:14:seed-1:14:agent:hiddenbench:14:2:X2:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:14:seed-1:14:agent:hiddenbench:14:2:X2:a",
+      "requestHash": "sha256:3534712e47ca92aa9dee40a8fe7be028d63763800dc55aab87a06b3d3e1fbf4c",
+      "promptHash": "sha256:05d999cd53877442b43cdd16ad29182f1916907204dd8a82a2bfe5b8dbd1d5e5",
+      "startedAt": "2026-08-30T03:24:02.050Z",
+      "terminalAt": "2026-08-30T03:24:03.509Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":1.0,\"opt_2\":0.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:9b2f473840495302283fc39f5df7b6c2a3e8c160353ba6e322ee461905404886",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 1,
+          "opt_2": 0,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301124022de27c9a6bdf4b78"
+      },
+      "usage": {
+        "promptTokens": 1169,
+        "completionTokens": 39,
+        "totalTokens": 1208,
+        "cachedPromptTokens": 398,
+        "latencyMs": 1459
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:14:seed-1:14:agent:hiddenbench:14:2:X2:b",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:14:seed-1:14:agent:hiddenbench:14:2:X2:b",
+      "requestHash": "sha256:8a290c2317258d5884ac1030204e8ea241313ca885812e7d3c31de7f2a9d0781",
+      "promptHash": "sha256:05d999cd53877442b43cdd16ad29182f1916907204dd8a82a2bfe5b8dbd1d5e5",
+      "startedAt": "2026-08-30T03:24:03.510Z",
+      "terminalAt": "2026-08-30T03:24:06.281Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":1.0,\"opt_2\":0.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:9b2f473840495302283fc39f5df7b6c2a3e8c160353ba6e322ee461905404886",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 1,
+          "opt_2": 0,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112404806b1b34b5414853"
+      },
+      "usage": {
+        "promptTokens": 1169,
+        "completionTokens": 39,
+        "totalTokens": 1208,
+        "cachedPromptTokens": 350,
+        "latencyMs": 2771
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:14:seed-1:14:agent:hiddenbench:14:2:X3:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:14:seed-1:14:agent:hiddenbench:14:2:X3:a",
+      "requestHash": "sha256:618812260de8e07da80bd118005d5a55916c287bcc57d21de0aa7b464a843101",
+      "promptHash": "sha256:dbfeb5b78b3f7f68ac473e071bfb416988e7398ea07f1e1b09cbf864eaac4ee8",
+      "startedAt": "2026-08-30T03:24:06.282Z",
+      "terminalAt": "2026-08-30T03:24:08.290Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":1.0,\"opt_2\":0.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:9b2f473840495302283fc39f5df7b6c2a3e8c160353ba6e322ee461905404886",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 1,
+          "opt_2": 0,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "2026083011240768042a7646904378"
+      },
+      "usage": {
+        "promptTokens": 1169,
+        "completionTokens": 39,
+        "totalTokens": 1208,
+        "cachedPromptTokens": 398,
+        "latencyMs": 2008
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:14:seed-1:14:agent:hiddenbench:14:3:X0:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:14:seed-1:14:agent:hiddenbench:14:3:X0:a",
+      "requestHash": "sha256:cfd8b4274beabb774b48aae84f8f4937573894623dbd541f3d3cdfcc2f5ff25f",
+      "promptHash": "sha256:bcd77f6630e8d77df88a74796f825d278d159d7596b3d51bd06e0e8421ec315f",
+      "startedAt": "2026-08-30T03:24:08.291Z",
+      "terminalAt": "2026-08-30T03:24:09.820Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301124093b48abaf2d1b4047"
+      },
+      "usage": {
+        "promptTokens": 629,
+        "completionTokens": 48,
+        "totalTokens": 677,
+        "cachedPromptTokens": 350,
+        "latencyMs": 1527
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:14:seed-1:14:agent:hiddenbench:14:3:X1:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:14:seed-1:14:agent:hiddenbench:14:3:X1:a",
+      "requestHash": "sha256:37746d10c98c89352ad18f0ee303ed8544e0d35dd85719025109d37d8fa715a0",
+      "promptHash": "sha256:696d8dbdf7486291a372fa3888728f33894675a1f842df38cb32ca48e2f5d8de",
+      "startedAt": "2026-08-30T03:24:09.821Z",
+      "terminalAt": "2026-08-30T03:24:11.326Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "2026083011241026ed20ded4394e16"
+      },
+      "usage": {
+        "promptTokens": 1075,
+        "completionTokens": 41,
+        "totalTokens": 1116,
+        "cachedPromptTokens": 350,
+        "latencyMs": 1505
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:14:seed-1:14:agent:hiddenbench:14:3:X2:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:14:seed-1:14:agent:hiddenbench:14:3:X2:a",
+      "requestHash": "sha256:86ed529341e2ead760d2521f6ffd41e2d6bf3fc63c9c3f5fc99152eca84deef5",
+      "promptHash": "sha256:fbc9cb746ac22f2d9e1249f7c126af651975af731b3012f5998ec5b6d7a70ed5",
+      "startedAt": "2026-08-30T03:24:11.327Z",
+      "terminalAt": "2026-08-30T03:24:13.707Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112412e7f6aae0deae4c6e"
+      },
+      "usage": {
+        "promptTokens": 1163,
+        "completionTokens": 50,
+        "totalTokens": 1213,
+        "cachedPromptTokens": 156,
+        "latencyMs": 2381
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:14:seed-1:14:agent:hiddenbench:14:3:X3:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:14:seed-1:14:agent:hiddenbench:14:3:X3:a",
+      "requestHash": "sha256:4ebd94c2b210ccd05b658aa36e7898e03e3d4b15a0644b09343d5f14b09b638e",
+      "promptHash": "sha256:475ff24db12eb54cdc30c989e008978e951d16a9a7bd2d5d826b0c676d70fe66",
+      "startedAt": "2026-08-30T03:24:13.708Z",
+      "terminalAt": "2026-08-30T03:24:17.347Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301124146f96121cfc7b4e21"
+      },
+      "usage": {
+        "promptTokens": 1163,
+        "completionTokens": 39,
+        "totalTokens": 1202,
+        "cachedPromptTokens": 392,
+        "latencyMs": 3639
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:14:seed-1:14:agent:hiddenbench:14:4:X0:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:14:seed-1:14:agent:hiddenbench:14:4:X0:a",
+      "requestHash": "sha256:fb89f693de5d7d4901a2e7d5865d260906b3c87c4b4216b9cdadb64c8e0734af",
+      "promptHash": "sha256:f51660fa7b11c2d4a722d36b71795e42112ee60ff102a7fc17ff4ce4149938ec",
+      "startedAt": "2026-08-30T03:24:17.348Z",
+      "terminalAt": "2026-08-30T03:24:19.033Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112418aa177fc1398342de"
+      },
+      "usage": {
+        "promptTokens": 645,
+        "completionTokens": 48,
+        "totalTokens": 693,
+        "cachedPromptTokens": 156,
+        "latencyMs": 1685
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:14:seed-1:14:agent:hiddenbench:14:4:X1:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:14:seed-1:14:agent:hiddenbench:14:4:X1:a",
+      "requestHash": "sha256:65eb1b5174b9a12c57193127135b16a06f5fe0692315ebeefe32a605fc5493e5",
+      "promptHash": "sha256:312a5506475d0c5b34e133db147fc2cd2ee5a9dc0bbc32357f702c04931a8f36",
+      "startedAt": "2026-08-30T03:24:19.034Z",
+      "terminalAt": "2026-08-30T03:24:20.631Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301124197f81eab30c1d4468"
+      },
+      "usage": {
+        "promptTokens": 1091,
+        "completionTokens": 39,
+        "totalTokens": 1130,
+        "cachedPromptTokens": 350,
+        "latencyMs": 1596
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:14:seed-1:14:agent:hiddenbench:14:4:X2:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:14:seed-1:14:agent:hiddenbench:14:4:X2:a",
+      "requestHash": "sha256:a6a44e45c636e0306c3e1bdfdb31b2aec707f5fdcd737e3a74ed90a7834cd8ce",
+      "promptHash": "sha256:75e3dc5980b70af501878258753360c97483577c4d781d05709e47b49b37eeba",
+      "startedAt": "2026-08-30T03:24:20.632Z",
+      "terminalAt": "2026-08-30T03:24:23.045Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "202608301124215bb24bc553394be9"
+      },
+      "usage": {
+        "promptTokens": 1179,
+        "completionTokens": 39,
+        "totalTokens": 1218,
+        "cachedPromptTokens": 350,
+        "latencyMs": 2413
+      }
+    },
+    {
+      "cellId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:14:seed-1:14:agent:hiddenbench:14:4:X3:a",
+      "requestId": "trajectory-sensor:collective-dynamics-l4-dev-stage1:14:seed-1:14:agent:hiddenbench:14:4:X3:a",
+      "requestHash": "sha256:32c5b100f631267406b88a6b0004141130ea0c98a6403717e9e6f703e02e9a7a",
+      "promptHash": "sha256:bbff7f5e6328aeeba5f3c4a52f14b50263b2f88478f376f84b1aa7b90b624b86",
+      "startedAt": "2026-08-30T03:24:23.046Z",
+      "terminalAt": "2026-08-30T03:24:24.529Z",
+      "status": "valid",
+      "rawResponse": "{\"probabilities\":{\"opt_1\":0.0,\"opt_2\":1.0,\"opt_3\":0.0}}",
+      "responseHash": "sha256:59294c3029f0336a81b14ab146194b2c2313ad94518f918dd7fa7e348ecf2010",
+      "parsed": {
+        "probabilities": {
+          "opt_1": 0,
+          "opt_2": 1,
+          "opt_3": 0
+        }
+      },
+      "providerMetadata": {
+        "model": "glm-4.6v",
+        "requestId": "20260830112423766183f9662a4403"
+      },
+      "usage": {
+        "promptTokens": 1179,
+        "completionTokens": 39,
+        "totalTokens": 1218,
+        "cachedPromptTokens": 408,
+        "latencyMs": 1483
+      }
+    }
+  ],
+  "registeredCellCount": 119,
+  "terminalCellCount": 119,
+  "attemptsPerCell": 1,
+  "retry": "none",
+  "contentHash": "sha256:0e82934ac2fcc399c7a2198cba9ddf6e5b2d712296dded90edcb4d15cd23ce02"
+}

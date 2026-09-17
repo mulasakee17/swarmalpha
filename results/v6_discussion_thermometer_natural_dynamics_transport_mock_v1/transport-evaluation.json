@@ -1,0 +1,384 @@
+{
+  "evaluationRef": {
+    "id": "swarmalpha.evaluation.v6.discussion-thermometer-natural-dynamics-transport",
+    "version": "1.0.0",
+    "tolerance": 1e-12
+  },
+  "planHash": "sha256:b6e7bfdcbdca0f9e4ec0d70511c530ae8c48ebb080c3ae2b1fb2a5dcb54b6f64",
+  "sourceObservationHash": "sha256:05a80ed940c7dee3d95f34b172cc6ac8335776249b169e59ea410b70e05a9525",
+  "sourceReplicationEvaluationHash": "sha256:f56588edc512d0eddff738565070a30f5d2eb46d3538fc1358427109a214f492",
+  "evidenceClass": "synthetic_mock",
+  "truthAccess": "none",
+  "predictionUsed": false,
+  "actionUsed": false,
+  "operationalDefinition": {
+    "agentActivity": "TV(primary_from,primary_to)",
+    "localRepeatabilityEnvelope": "max(TV(primary_from,duplicate_from),TV(primary_to,duplicate_to))",
+    "resolvedAgentMotion": "agent_activity>local_repeatability_envelope+tolerance",
+    "resolvedGroupMotion": "complete_roster_and_strict_majority_resolved_agent_motion"
+  },
+  "transitionRows": [
+    {
+      "taskId": "thermometer-transport:backup-power:q1",
+      "baseScenarioId": "backup-power",
+      "designRegime": "SHARED_CUE_PRIVATE_CORRECTION",
+      "fromCheckpoint": 0,
+      "toCheckpoint": 1,
+      "completeMatchedRoster": true,
+      "replicateComparableAgentCount": 4,
+      "resolvedMoverAgentIds": [],
+      "resolvedMoverFraction": 0,
+      "meanAgentTotalVariation": 0,
+      "pooledTotalVariation": 0,
+      "endpointMeanReplicateTotalVariation": 0,
+      "exactPrimaryPlateau": true,
+      "classification": "within_repeatability_envelope_all_agents"
+    },
+    {
+      "taskId": "thermometer-transport:backup-power:q1",
+      "baseScenarioId": "backup-power",
+      "designRegime": "SHARED_CUE_PRIVATE_CORRECTION",
+      "fromCheckpoint": 1,
+      "toCheckpoint": 2,
+      "completeMatchedRoster": true,
+      "replicateComparableAgentCount": 4,
+      "resolvedMoverAgentIds": [
+        "agent_1",
+        "agent_2",
+        "agent_3",
+        "agent_4"
+      ],
+      "resolvedMoverFraction": 1,
+      "meanAgentTotalVariation": 0.19999999999999998,
+      "pooledTotalVariation": 0.19999999999999998,
+      "endpointMeanReplicateTotalVariation": 0,
+      "exactPrimaryPlateau": false,
+      "classification": "resolved_majority_motion"
+    },
+    {
+      "taskId": "thermometer-transport:backup-power:q1",
+      "baseScenarioId": "backup-power",
+      "designRegime": "SHARED_CUE_PRIVATE_CORRECTION",
+      "fromCheckpoint": 2,
+      "toCheckpoint": 3,
+      "completeMatchedRoster": true,
+      "replicateComparableAgentCount": 4,
+      "resolvedMoverAgentIds": [
+        "agent_1",
+        "agent_2",
+        "agent_3",
+        "agent_4"
+      ],
+      "resolvedMoverFraction": 1,
+      "meanAgentTotalVariation": 0.09999999999999998,
+      "pooledTotalVariation": 0.09999999999999998,
+      "endpointMeanReplicateTotalVariation": 0,
+      "exactPrimaryPlateau": false,
+      "classification": "resolved_majority_motion"
+    },
+    {
+      "taskId": "thermometer-transport:backup-power:q1",
+      "baseScenarioId": "backup-power",
+      "designRegime": "SHARED_CUE_PRIVATE_CORRECTION",
+      "fromCheckpoint": 3,
+      "toCheckpoint": 4,
+      "completeMatchedRoster": true,
+      "replicateComparableAgentCount": 4,
+      "resolvedMoverAgentIds": [],
+      "resolvedMoverFraction": 0,
+      "meanAgentTotalVariation": 0,
+      "pooledTotalVariation": 0,
+      "endpointMeanReplicateTotalVariation": 0,
+      "exactPrimaryPlateau": true,
+      "classification": "within_repeatability_envelope_all_agents"
+    },
+    {
+      "taskId": "thermometer-transport:backup-power:q2",
+      "baseScenarioId": "backup-power",
+      "designRegime": "POLARIZED_PRIVATE_BLOCKS",
+      "fromCheckpoint": 0,
+      "toCheckpoint": 1,
+      "completeMatchedRoster": true,
+      "replicateComparableAgentCount": 4,
+      "resolvedMoverAgentIds": [],
+      "resolvedMoverFraction": 0,
+      "meanAgentTotalVariation": 0,
+      "pooledTotalVariation": 0,
+      "endpointMeanReplicateTotalVariation": 0,
+      "exactPrimaryPlateau": true,
+      "classification": "within_repeatability_envelope_all_agents"
+    },
+    {
+      "taskId": "thermometer-transport:backup-power:q2",
+      "baseScenarioId": "backup-power",
+      "designRegime": "POLARIZED_PRIVATE_BLOCKS",
+      "fromCheckpoint": 1,
+      "toCheckpoint": 2,
+      "completeMatchedRoster": true,
+      "replicateComparableAgentCount": 4,
+      "resolvedMoverAgentIds": [
+        "agent_1",
+        "agent_2",
+        "agent_3",
+        "agent_4"
+      ],
+      "resolvedMoverFraction": 1,
+      "meanAgentTotalVariation": 0.19999999999999998,
+      "pooledTotalVariation": 0.19999999999999998,
+      "endpointMeanReplicateTotalVariation": 0,
+      "exactPrimaryPlateau": false,
+      "classification": "resolved_majority_motion"
+    },
+    {
+      "taskId": "thermometer-transport:backup-power:q2",
+      "baseScenarioId": "backup-power",
+      "designRegime": "POLARIZED_PRIVATE_BLOCKS",
+      "fromCheckpoint": 2,
+      "toCheckpoint": 3,
+      "completeMatchedRoster": true,
+      "replicateComparableAgentCount": 4,
+      "resolvedMoverAgentIds": [
+        "agent_1",
+        "agent_2",
+        "agent_3",
+        "agent_4"
+      ],
+      "resolvedMoverFraction": 1,
+      "meanAgentTotalVariation": 0.09999999999999998,
+      "pooledTotalVariation": 0.09999999999999998,
+      "endpointMeanReplicateTotalVariation": 0,
+      "exactPrimaryPlateau": false,
+      "classification": "resolved_majority_motion"
+    },
+    {
+      "taskId": "thermometer-transport:backup-power:q2",
+      "baseScenarioId": "backup-power",
+      "designRegime": "POLARIZED_PRIVATE_BLOCKS",
+      "fromCheckpoint": 3,
+      "toCheckpoint": 4,
+      "completeMatchedRoster": true,
+      "replicateComparableAgentCount": 4,
+      "resolvedMoverAgentIds": [],
+      "resolvedMoverFraction": 0,
+      "meanAgentTotalVariation": 0,
+      "pooledTotalVariation": 0,
+      "endpointMeanReplicateTotalVariation": 0,
+      "exactPrimaryPlateau": true,
+      "classification": "within_repeatability_envelope_all_agents"
+    },
+    {
+      "taskId": "thermometer-transport:aerial-navigation:q1",
+      "baseScenarioId": "aerial-navigation",
+      "designRegime": "SHARED_CUE_PRIVATE_CORRECTION",
+      "fromCheckpoint": 0,
+      "toCheckpoint": 1,
+      "completeMatchedRoster": true,
+      "replicateComparableAgentCount": 4,
+      "resolvedMoverAgentIds": [],
+      "resolvedMoverFraction": 0,
+      "meanAgentTotalVariation": 0,
+      "pooledTotalVariation": 0,
+      "endpointMeanReplicateTotalVariation": 0,
+      "exactPrimaryPlateau": true,
+      "classification": "within_repeatability_envelope_all_agents"
+    },
+    {
+      "taskId": "thermometer-transport:aerial-navigation:q1",
+      "baseScenarioId": "aerial-navigation",
+      "designRegime": "SHARED_CUE_PRIVATE_CORRECTION",
+      "fromCheckpoint": 1,
+      "toCheckpoint": 2,
+      "completeMatchedRoster": true,
+      "replicateComparableAgentCount": 4,
+      "resolvedMoverAgentIds": [
+        "agent_1",
+        "agent_2",
+        "agent_3",
+        "agent_4"
+      ],
+      "resolvedMoverFraction": 1,
+      "meanAgentTotalVariation": 0.19999999999999998,
+      "pooledTotalVariation": 0.19999999999999998,
+      "endpointMeanReplicateTotalVariation": 0,
+      "exactPrimaryPlateau": false,
+      "classification": "resolved_majority_motion"
+    },
+    {
+      "taskId": "thermometer-transport:aerial-navigation:q1",
+      "baseScenarioId": "aerial-navigation",
+      "designRegime": "SHARED_CUE_PRIVATE_CORRECTION",
+      "fromCheckpoint": 2,
+      "toCheckpoint": 3,
+      "completeMatchedRoster": true,
+      "replicateComparableAgentCount": 4,
+      "resolvedMoverAgentIds": [
+        "agent_1",
+        "agent_2",
+        "agent_3",
+        "agent_4"
+      ],
+      "resolvedMoverFraction": 1,
+      "meanAgentTotalVariation": 0.09999999999999998,
+      "pooledTotalVariation": 0.09999999999999998,
+      "endpointMeanReplicateTotalVariation": 0,
+      "exactPrimaryPlateau": false,
+      "classification": "resolved_majority_motion"
+    },
+    {
+      "taskId": "thermometer-transport:aerial-navigation:q1",
+      "baseScenarioId": "aerial-navigation",
+      "designRegime": "SHARED_CUE_PRIVATE_CORRECTION",
+      "fromCheckpoint": 3,
+      "toCheckpoint": 4,
+      "completeMatchedRoster": true,
+      "replicateComparableAgentCount": 4,
+      "resolvedMoverAgentIds": [],
+      "resolvedMoverFraction": 0,
+      "meanAgentTotalVariation": 0,
+      "pooledTotalVariation": 0,
+      "endpointMeanReplicateTotalVariation": 0,
+      "exactPrimaryPlateau": true,
+      "classification": "within_repeatability_envelope_all_agents"
+    },
+    {
+      "taskId": "thermometer-transport:aerial-navigation:q2",
+      "baseScenarioId": "aerial-navigation",
+      "designRegime": "POLARIZED_PRIVATE_BLOCKS",
+      "fromCheckpoint": 0,
+      "toCheckpoint": 1,
+      "completeMatchedRoster": true,
+      "replicateComparableAgentCount": 4,
+      "resolvedMoverAgentIds": [],
+      "resolvedMoverFraction": 0,
+      "meanAgentTotalVariation": 0,
+      "pooledTotalVariation": 0,
+      "endpointMeanReplicateTotalVariation": 0,
+      "exactPrimaryPlateau": true,
+      "classification": "within_repeatability_envelope_all_agents"
+    },
+    {
+      "taskId": "thermometer-transport:aerial-navigation:q2",
+      "baseScenarioId": "aerial-navigation",
+      "designRegime": "POLARIZED_PRIVATE_BLOCKS",
+      "fromCheckpoint": 1,
+      "toCheckpoint": 2,
+      "completeMatchedRoster": true,
+      "replicateComparableAgentCount": 4,
+      "resolvedMoverAgentIds": [
+        "agent_1",
+        "agent_2",
+        "agent_3",
+        "agent_4"
+      ],
+      "resolvedMoverFraction": 1,
+      "meanAgentTotalVariation": 0.19999999999999998,
+      "pooledTotalVariation": 0.19999999999999998,
+      "endpointMeanReplicateTotalVariation": 0,
+      "exactPrimaryPlateau": false,
+      "classification": "resolved_majority_motion"
+    },
+    {
+      "taskId": "thermometer-transport:aerial-navigation:q2",
+      "baseScenarioId": "aerial-navigation",
+      "designRegime": "POLARIZED_PRIVATE_BLOCKS",
+      "fromCheckpoint": 2,
+      "toCheckpoint": 3,
+      "completeMatchedRoster": true,
+      "replicateComparableAgentCount": 4,
+      "resolvedMoverAgentIds": [
+        "agent_1",
+        "agent_2",
+        "agent_3",
+        "agent_4"
+      ],
+      "resolvedMoverFraction": 1,
+      "meanAgentTotalVariation": 0.09999999999999998,
+      "pooledTotalVariation": 0.09999999999999998,
+      "endpointMeanReplicateTotalVariation": 0,
+      "exactPrimaryPlateau": false,
+      "classification": "resolved_majority_motion"
+    },
+    {
+      "taskId": "thermometer-transport:aerial-navigation:q2",
+      "baseScenarioId": "aerial-navigation",
+      "designRegime": "POLARIZED_PRIVATE_BLOCKS",
+      "fromCheckpoint": 3,
+      "toCheckpoint": 4,
+      "completeMatchedRoster": true,
+      "replicateComparableAgentCount": 4,
+      "resolvedMoverAgentIds": [],
+      "resolvedMoverFraction": 0,
+      "meanAgentTotalVariation": 0,
+      "pooledTotalVariation": 0,
+      "endpointMeanReplicateTotalVariation": 0,
+      "exactPrimaryPlateau": true,
+      "classification": "within_repeatability_envelope_all_agents"
+    }
+  ],
+  "executionCompleteness": {
+    "taskCount": 4,
+    "checkpointCountPerTrajectory": 5,
+    "transitionCountPerTrajectory": 4,
+    "observedTransitionCount": 16
+  },
+  "registeredRules": {
+    "polarizedLateEnvelopeTransport": {
+      "requiredConsecutiveLateEnvelopeTransitionsPerBase": 2,
+      "byBase": [
+        {
+          "baseScenarioId": "backup-power",
+          "lateClasses": [
+            "resolved_majority_motion",
+            "resolved_majority_motion",
+            "within_repeatability_envelope_all_agents"
+          ],
+          "maximumConsecutiveEnvelopeTransitions": 1,
+          "pass": false
+        },
+        {
+          "baseScenarioId": "aerial-navigation",
+          "lateClasses": [
+            "resolved_majority_motion",
+            "resolved_majority_motion",
+            "within_repeatability_envelope_all_agents"
+          ],
+          "maximumConsecutiveEnvelopeTransitions": 1,
+          "pass": false
+        }
+      ],
+      "pass": false
+    },
+    "sharedCueMotionResourceTransport": {
+      "requiredResolvedMajorityTransitionsPerBase": 1,
+      "byBase": [
+        {
+          "baseScenarioId": "backup-power",
+          "transitionClasses": [
+            "within_repeatability_envelope_all_agents",
+            "resolved_majority_motion",
+            "resolved_majority_motion",
+            "within_repeatability_envelope_all_agents"
+          ],
+          "resolvedMajorityTransitionCount": 2,
+          "pass": true
+        },
+        {
+          "baseScenarioId": "aerial-navigation",
+          "transitionClasses": [
+            "within_repeatability_envelope_all_agents",
+            "resolved_majority_motion",
+            "resolved_majority_motion",
+            "within_repeatability_envelope_all_agents"
+          ],
+          "resolvedMajorityTransitionCount": 2,
+          "pass": true
+        }
+      ],
+      "pass": true
+    }
+  },
+  "overallRegisteredRulesPass": false,
+  "interpretationStatus": "MOCK_WIRING_ONLY",
+  "identificationCeiling": "A provider pass supports transport of the two registered observation resources to these two prospective scenario families at exact-duplicate resolution. It does not establish universal task transport, latent-state validity, correctness, dwell-time distributions, hazards, attractors, metastability, intervention effects, or governance value.",
+  "contentHash": "sha256:c53b1388a2e2ce690ee946929ef83f851be82cc6ea560f64a80045433d4b1314"
+}

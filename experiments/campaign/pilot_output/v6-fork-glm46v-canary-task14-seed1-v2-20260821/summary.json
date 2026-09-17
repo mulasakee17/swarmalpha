@@ -1,0 +1,43 @@
+{
+  "summarySchemaRef": {
+    "id": "swarmalpha.experiment.v6-fork-glm46v-twoarm-seed1-summary-v2",
+    "version": "1.0.0"
+  },
+  "experimentRef": {
+    "id": "swarmalpha.experiment.v6-fork-glm46v-twoarm-seed1-plan-v2",
+    "version": "1.0.0"
+  },
+  "model": "zhipu:glm-4.6v",
+  "seeds": [
+    1
+  ],
+  "arms": [
+    "CONTROL",
+    "ATTACKS"
+  ],
+  "taskCount": 1,
+  "plannedProviderCalls": 20,
+  "plannedEstimateTokens": 36000,
+  "tokenStopThreshold": 4500000,
+  "discussionMaxTokens": 768,
+  "finalMaxTokens": 256,
+  "thinking": "disabled",
+  "concurrency": 1,
+  "stopReason": "completed",
+  "actualProviderCalls": 1,
+  "actualProviderTokens": 0,
+  "callsWithUnknownUsage": 1,
+  "discussionParserFailures": 0,
+  "finalInvalid": 0,
+  "finalUnavailable": 0,
+  "completedTasks": 0,
+  "failedTasks": 1,
+  "skippedTasks": 0,
+  "runsCompleted": 0,
+  "rows": 0,
+  "reused": 0,
+  "outputDir": "C:\\Users\\贺孟元\\Desktop\\swarmalpha\\experiments\\campaign\\pilot_output\\v6-fork-glm46v-canary-task14-seed1-v2-20260821",
+  "startedAt": "2026-08-21T06:01:34.252Z",
+  "completedAt": "2026-08-21T06:01:34.349Z",
+  "contentHash": "sha256:864db42f24affc1fdedb3c658a30d069313f087da116e835f71e0222ccff01b5"
+}

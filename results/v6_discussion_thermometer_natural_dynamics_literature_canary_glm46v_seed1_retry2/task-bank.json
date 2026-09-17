@@ -1,0 +1,114 @@
+[
+  {
+    "schemaRef": {
+      "id": "swarmalpha.experiment.v6.discussion-thermometer-natural-dynamics-literature-canary-task-bank",
+      "version": "1.0.0",
+      "sourceRepository": "Yassellee/HiddenBench_ICML",
+      "sourceCommit": "3be6ca16",
+      "sourceCanonicalContentHash": "sha256:901c94b6e4edbeebe51f3ecba7baf069cde1e64f8d0bdec0f4d5314b4258f123",
+      "sourceLicense": "MIT"
+    },
+    "taskId": "task:hiddenbench:4",
+    "sourceTaskId": 4,
+    "sourceTaskName": "toma_butera_2009",
+    "publicContext": "You are participating in a study, acting as an investigator working on a traffic accident. The collision took place at the St. Georges intersection, on Monday at 7 p.m. The road is narrow and poorly lit. Two cars and one motorcycle are involved.\nYour Task:\nYou will discuss with other participants, who are also acting as investigators, to decide who to prosecute. You have four suspects:\n- Mr. X\n- Mr. X's son\n- Mrs. Y\n- Mr. Z\nThere is only one true perpetrator. After the discussion:\n- If you choose the correct person, you will earn $1.\n- If all other participants also choose the correct one, you will earn an additional $1 (for a total of $2).\nThis means that coordinating with others is critical to maximize your rewards. However, the exact time when the chat will end is unknown.\n\nShared information:\n1. In the first car, Mr. X—who is 53 years old and has held a driving license for 30 years—and his 17-year-old son return home. The father had just drunk several glasses of spirits during a dinner with his friends.\n2. In the second car, Mrs. Y, 27 years old and having held a driving license for only 1 year, is going shopping. Her car's lights are damaged.\n3. On the motorcycle, Mr. Z, 28 years old, who has held a driving license for 5 years, is going to meet his sick father who asked him to come rapidly. He is speeding on the N13 road.",
+    "claim": {
+      "claimId": "claim:hiddenbench:4:answer",
+      "proposition": "Select the single correct answer for HiddenBench task 4 (toma_butera_2009).",
+      "options": [
+        {
+          "optionId": "opt_1",
+          "label": "Mr. X"
+        },
+        {
+          "optionId": "opt_2",
+          "label": "Mr. X's son"
+        },
+        {
+          "optionId": "opt_3",
+          "label": "Mrs. Y"
+        },
+        {
+          "optionId": "opt_4",
+          "label": "Mr. Z"
+        }
+      ]
+    },
+    "agents": [
+      {
+        "agentId": "agent_1",
+        "privateInformation": "The guilty person is driving a car. During police inspection, the guilty car owner was discovered to have a 1.5 level of alcohol. The guilty person admits that he was inattentive at the time of the collision."
+      },
+      {
+        "agentId": "agent_2",
+        "privateInformation": "The guilty person is less than 30 years old. Due to inexperience, the guilty person wasn't able to avoid the collision. The guilty person claims that he or she did not see others approaching the intersection."
+      },
+      {
+        "agentId": "agent_3",
+        "privateInformation": "The guilty person is a man. His father is indirectly responsible for the accident. The guilty person was driving at 110 km/h."
+      }
+    ],
+    "offlineResolution": {
+      "correctOptionId": "opt_2",
+      "resolverId": "resolver:hiddenbench-data-3be6ca16",
+      "role": "offline_evaluation_only_not_monitor_input"
+    },
+    "contentHash": "sha256:e00f75f54c8d64d4c519d168e12caffee4d86920a54745f060bea7d8d3ce9768"
+  },
+  {
+    "schemaRef": {
+      "id": "swarmalpha.experiment.v6.discussion-thermometer-natural-dynamics-literature-canary-task-bank",
+      "version": "1.0.0",
+      "sourceRepository": "Yassellee/HiddenBench_ICML",
+      "sourceCommit": "3be6ca16",
+      "sourceCanonicalContentHash": "sha256:901c94b6e4edbeebe51f3ecba7baf069cde1e64f8d0bdec0f4d5314b4258f123",
+      "sourceLicense": "MIT"
+    },
+    "taskId": "task:hiddenbench:6",
+    "sourceTaskId": 6,
+    "sourceTaskName": "schulz_hardt_mojzisch_2012",
+    "publicContext": "You are participating in a study, acting as a personnel manager in an airline company that is looking to hire a new pilot for long-distance flights.\nYour Task:\nYou will discuss with other participants, who are also acting as personnel managers, to decide who to recruit. You have four candidates:\n- Candidate A\n- Candidate B\n- Candidate C\n- Candidate D\nThere is only one best candidate. You have lists of information drawn from interviews, references, personal observations, etc. After the discussion:\n- If you choose the correct person, you will earn $1.\n- If all other participants also choose the correct one, you will earn an additional $1 (for a total of $2).\nThis means that coordinating with others is critical to maximize your rewards. However, the exact time when the chat will end is unknown.\n\nShared information:\n1. Candidate A:\n- can anticipate dangerous situations\n- is able to see complex connections\n- has excellent spatial vision\n- has very good leadership qualities.\n2. Candidate B:\n- keeps calm in a crisis\n- known to be very reliable\n- good at assessing weather conditions\n- has excellent computer skills.\n3. Candidate C:\n- has difficulty communicating ideas\n- is regarded as egocentric\n- is not very willing to further his education.\n4. Candidate D:\n- responds to unexpected events adequately\n- can concentrate very well\n- solves problems extremely well\n- takes responsibility seriously.",
+    "claim": {
+      "claimId": "claim:hiddenbench:6:answer",
+      "proposition": "Select the single correct answer for HiddenBench task 6 (schulz_hardt_mojzisch_2012).",
+      "options": [
+        {
+          "optionId": "opt_1",
+          "label": "Candidate A"
+        },
+        {
+          "optionId": "opt_2",
+          "label": "Candidate B"
+        },
+        {
+          "optionId": "opt_3",
+          "label": "Candidate C"
+        },
+        {
+          "optionId": "opt_4",
+          "label": "Candidate D"
+        }
+      ]
+    },
+    "agents": [
+      {
+        "agentId": "agent_1",
+        "privateInformation": "Candidate A:\n- is sometimes not good at taking criticism\n- can be unorganised\nCandidate B:\n- can be grumpy\n- can be uncooperative\nCandidate C:\n- can make correct decisions quickly\n- handles stress very well\nCandidate D:\n- is regarded as arrogant\n- has relatively weak leadership skills"
+      },
+      {
+        "agentId": "agent_2",
+        "privateInformation": "Candidate A:\n- is regarded as a show-off\n- is regarded as being not open to new ideas\nCandidate B:\n- has a relatively weak memory for numbers\n- makes nasty remarks about his colleagues\nCandidate C:\n- creates a positive atmosphere with his crew\n- is very conscientious\nCandidate D:\n- is regarded as a 'know-it-all'\n- has a hot temper"
+      },
+      {
+        "agentId": "agent_3",
+        "privateInformation": "Candidate A:\n- is unfriendly\n- eats unhealthily\nCandidate B:\n- is regarded as pretentious\n- sometimes adopts the wrong tone when communicating\nCandidate C:\n- understands complicated technology\n- puts concern for others above everything\nhas excellent attention skills\nCandidate D:\n- is considered moody\n- is regarded as a loner"
+      }
+    ],
+    "offlineResolution": {
+      "correctOptionId": "opt_3",
+      "resolverId": "resolver:hiddenbench-data-3be6ca16",
+      "role": "offline_evaluation_only_not_monitor_input"
+    },
+    "contentHash": "sha256:fc15dc2e79893a5c87b66f6c4cbba7bf90c6846b63b6c4c98887f43e11121ea8"
+  }
+]

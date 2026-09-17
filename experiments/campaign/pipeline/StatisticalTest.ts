@@ -6,7 +6,7 @@
  */
 
 import type { ExperimentMetrics, TestResult } from "../types";
-import { mean, sampleStd, mulberry32, PERMUTATION_SEED, BOOTSTRAP_SEED } from "../../v2/statsShared";
+import { mean, sampleStd, mulberry32, PERMUTATION_SEED, BOOTSTRAP_SEED } from "../../../legacy/experiments/v2/statsShared";
 
 // ============================================================================
 // 分布函数：F 分布 CDF（用于 E5 Granger 因果精确 p 值）

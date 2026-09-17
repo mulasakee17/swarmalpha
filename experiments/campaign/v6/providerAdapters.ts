@@ -47,10 +47,15 @@ export interface SingleAttemptTextInvokeRequest {
 
 export interface SingleAttemptTextInvokeResult {
   rawContent: string;
+  providerMetadata?: {
+    model?: string;
+    requestId?: string;
+  };
   usage?: {
     promptTokens?: number;
     completionTokens?: number;
     totalTokens?: number;
+    cachedPromptTokens?: number;
     latencyMs?: number;
   };
 }
@@ -117,9 +122,15 @@ function buildDiscussionPrompts(request: V6DiscussionRequestV1): { systemPrompt:
     .map(entry => `[round ${entry.round}] ${entry.agentId}${entry.source === "governance" ? " (governance)" : ""}: ${entry.content}`)
     .join("\n");
   const categoricalOptions = "options" in request.claim ? request.claim.options : undefined;
+  const lineageInstruction =
+    'For each evidence item, "lineageId" must be omitted unless you know a non-empty string for it; never output "lineageId": null.';
   const beliefInstruction = request.claim.resolutionPolicy.kind === "binary"
-    ? "Return exactly one strict JSON object with fields: message (string), belief ({kind:'binary', probability: 0..1}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). No other fields."
-    : `Return exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: ${(categoricalOptions ?? []).join(" | ")}. No other fields.`;
+    ? `Return exactly one strict JSON object with fields: message (string), belief ({kind:'binary', probability: 0..1}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). Example: {"message": "My assessment.", "belief": {"kind": "binary", "probability": 0.6}, "evidence": [{"content": "Observed fact.", "relation": "supports"}]}. ${lineageInstruction} No other fields.`
+    : (() => {
+        const opts = categoricalOptions ?? [];
+        const rest = opts.slice(1).map(option => `"${option}": ${(0.5 / Math.max(1, opts.length - 1)).toFixed(4)}`);
+        return `Return exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: ${opts.join(" | ")}. Example: {"message": "My assessment.", "belief": {"kind": "categorical", "probabilities": {"${opts[0] ?? "A"}": 0.5, ${rest.join(", ")}}}, "evidence": [{"content": "Observed fact.", "relation": "supports"}]}. ${lineageInstruction} No other fields.`;
+      })();
   const userPrompt = [
     `Task public context:\n${request.publicContext}`,
     `Your private information:\n${request.ownPrivateInformation}`,
@@ -127,12 +138,28 @@ function buildDiscussionPrompts(request: V6DiscussionRequestV1): { systemPrompt:
     `Claim ${request.claim.id}: ${request.claim.proposition}`,
     request.responseContract === "plain_text"
       ? "Return your public view as plain text only."
-      : beliefInstruction,
+      : request.responseContract === "choice_message_json_v1"
+        ? (() => {
+            if (request.claim.resolutionPolicy.kind !== "categorical" || !("options" in request.claim)) {
+              throw new Error("choice_message_json_requires_categorical_claim");
+            }
+            const options = request.claim.options.map((label, index) => `opt_${index + 1} = ${label}`);
+            return [
+              "Return exactly one strict JSON object with exactly two fields: choiceId and message.",
+              `choiceId must be exactly one of: ${request.claim.options.map((_, index) => `opt_${index + 1}`).join(" | ")}.`,
+              `Opaque option mapping: ${options.join("; ")}.`,
+              "message must be a non-empty public discussion message explaining the evidence relevant to your current choice.",
+              "Do not output probabilities, confidence, evidence arrays, markdown fences, or any other fields.",
+            ].join(" ");
+          })()
+        : beliefInstruction,
   ].join("\n\n");
   return {
     systemPrompt: request.responseContract === "plain_text"
       ? "You are an analyst in a multi-agent group discussion."
-      : "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      : request.responseContract === "choice_message_json_v1"
+        ? "You are an analyst in a multi-agent group discussion. Return the required choice and message as strict JSON."
+        : "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
     userPrompt,
   };
 }
@@ -159,7 +186,14 @@ export function createV6DiscussionAdapter(input: {
         modelRef: structuredClone(request.modelRef),
         invocationConfig: nonSecretConfig(request.invocationConfig, "v6 discussion invocationConfig"),
       }, signal);
-      return { status: "response", rawResponse: result.rawContent, ...withUsage(result) };
+      return {
+        status: "response",
+        rawResponse: result.rawContent,
+        ...(result.providerMetadata
+          ? { providerMetadata: structuredClone(result.providerMetadata) }
+          : {}),
+        ...withUsage(result),
+      };
     },
   };
 }

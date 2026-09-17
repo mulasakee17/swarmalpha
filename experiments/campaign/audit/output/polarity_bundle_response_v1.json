@@ -1,0 +1,3305 @@
+{
+  "analysisRef": {
+    "id": "swarmalpha.analysis.polarity-bundle-response",
+    "version": "1.0.0"
+  },
+  "inferenceStatus": "post_hoc_bundle_response_only",
+  "freezeFile": "docs/experiments/V6_POLARITY_BUNDLE_RESPONSE_ANALYSIS_FREEZE_V1.md",
+  "freezeSha256": "sha256:5add4e3131290ff30f7d2d83b1e56e3416360365849f2e80e4c739e3be8bb102",
+  "dataset": "experiments/campaign/tasks/hiddenbench/benchmark.json",
+  "datasetSha256": "sha256:2815afffca4e470d1dfbc81e625160447df1109ce371968181c9e1e6b90443a3",
+  "bootstrap": {
+    "method": "percentile_task_bootstrap",
+    "repetitions": 10000,
+    "seed": 6221071
+  },
+  "batches": {
+    "deepseek_v3": {
+      "label": "DeepSeek v3",
+      "directory": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816",
+      "inputFiles": [
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-14_seed-0.eb8d4d31126b.jsonl",
+          "sha256": "sha256:243649351820c4c35fddeee61f44aeb60f2e05365e7cf4aa8c1606105a0fe964"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-14_seed-1.f9d630ceb73e.jsonl",
+          "sha256": "sha256:98c51e1bc5a113e11cf4d103ee54a76bc086a6a79d9d79ddae5263698dbdf364"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-15_seed-0.6aea874ee26d.jsonl",
+          "sha256": "sha256:df78bb3d58d3024d65f862825f6bbeacef43ec01b17f402fb2cfbb0d2196f68c"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-15_seed-1.d3e50a24fa9a.jsonl",
+          "sha256": "sha256:8d3fbfd65cdc80b6bf2b06fcef5995458ba107027188fc17b6d54ebd647086db"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-16_seed-0.35956435b0e9.jsonl",
+          "sha256": "sha256:de8fdc276e8d0d76182a031a8fe601ecc17af3df843dc04864e079207b50f1c3"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-16_seed-1.e18ae652881b.jsonl",
+          "sha256": "sha256:63a0c3ac9b35c1b8d7ef8d3dc518858ae958233e337754eb2e6dad661fc19c2b"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-17_seed-0.94eb1384645b.jsonl",
+          "sha256": "sha256:6aa7c1142477350832e717ce953a357f6d9c56b7132903fcf766c599e03899ea"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-17_seed-1.0a5cee8907c9.jsonl",
+          "sha256": "sha256:d675d0e6e9f6bdaca12ef7ba5277eb6eea93ef18aa94c31b912ffedc0d8d6057"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-18_seed-0.1f8b48b87d8e.jsonl",
+          "sha256": "sha256:68f9240d3453a14f3934f2a6adf3bbaff587b5f0e93a19567996d91d73bd7959"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-18_seed-1.4add9e92c168.jsonl",
+          "sha256": "sha256:0445ad2e25357c3729365e135682307c839004e95991b9a129fdc354bd90c40c"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-19_seed-0.c335a5d4cc3a.jsonl",
+          "sha256": "sha256:c9650e9ff74b7b8a977c449e0b4f045698e1f235913a932369cd9576b73e10ee"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-19_seed-1.7d7ab208355b.jsonl",
+          "sha256": "sha256:9cf1a8a4f9a2df40f2ff4f45b41c985205e3cbdd63207d8ba16cbf9aabb9e7fa"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-20_seed-0.e09b86a1da56.jsonl",
+          "sha256": "sha256:518159f1a8450acfff314a3361bb5404f8b1713954bd53dabe6ba2c5f12b040c"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-20_seed-1.5dbe276cc0cc.jsonl",
+          "sha256": "sha256:0714391e97e51b433d8b02372cf010150837791b995c6660a8d80e62de67144e"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-21_seed-0.cfd708dd09b2.jsonl",
+          "sha256": "sha256:6bcc8d58f2d6432a96598326c486ad77c0afff46e91aa5996eb44518118874f6"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-21_seed-1.1d5f2969c420.jsonl",
+          "sha256": "sha256:857a7a0ebce0de87bafca696d994ba484f5cde5871b18a987999751569994ab8"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-22_seed-0.8bdb10e16f81.jsonl",
+          "sha256": "sha256:7052e0f9b9f1fd748039afdf3b91a7a33e2ffa11c2122f03d419880beab94048"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-22_seed-1.6ca02ab0760f.jsonl",
+          "sha256": "sha256:15449d9fffa292e844c4694805c664645549e4186267021827ad69b901777e96"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-23_seed-0.559b4607e2a4.jsonl",
+          "sha256": "sha256:2674f631b8746279537757c79cbad7e0e711918c68992d514e426e7e79e9393f"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-23_seed-1.f625f280a388.jsonl",
+          "sha256": "sha256:5bc2efcfdc10f1bb104b361311576f3e4d741940572c8ce11dd24ca309fd5be1"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-25_seed-0.0d221b156c10.jsonl",
+          "sha256": "sha256:bace99ad48abe1b4d0a084cfc161b6039c440ea47cbc2327c49dfc8e1a716695"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-25_seed-1.39e2bb0287ca.jsonl",
+          "sha256": "sha256:a51a82ac288c345ba6e91a2d8e9dade578fc6349201083ac26c36bb1ab3b8833"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-26_seed-0.3dcf1680bbe6.jsonl",
+          "sha256": "sha256:299b38243c06cfffe0874b623c7d316d7b2013da420346738cec50fd9a123b82"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-26_seed-1.8464fb341343.jsonl",
+          "sha256": "sha256:7bf59c67671162e40dc54582e522b75dce2691fb79a966b05f93898aa5b7e1c8"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-27_seed-0.87f8a0c4d1a4.jsonl",
+          "sha256": "sha256:d8bb9e62b778c81009d5bbf48927b0d774383c4ebe9e5435c43fac3f719f6bdc"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-27_seed-1.9bdd655eacd2.jsonl",
+          "sha256": "sha256:daf33f887f01ac4a363816b7f039e8de3d4ebbb7392e7c34faacb81d8b8cfae7"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-29_seed-0.55d132ce5848.jsonl",
+          "sha256": "sha256:53bbe68000cfb7bb1a56471667b16ad042fe0a9268541a1b6a7bf0f688026a12"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-29_seed-1.a2e5e5985454.jsonl",
+          "sha256": "sha256:dc7d72e28f99fbae330c7e41b7d3998c82c0b25f6f96437223be13d9e67464e0"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-30_seed-0.4a0e09b14c78.jsonl",
+          "sha256": "sha256:b17ac8214cc606359ec0efac29ddfc4d612c8a698a67ed35a2dbcb7e6de3ac45"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-30_seed-1.905bd4579cf8.jsonl",
+          "sha256": "sha256:5a27bb3fc2f2a1fb94fd3e68adab6c8044b82773d7d9d3c064530c46422ca178"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-31_seed-0.0049724ec2c8.jsonl",
+          "sha256": "sha256:363413f8943f3d63ee30dace0abd450dd889fecbba7913f27a8f17ffc30f9035"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-31_seed-1.0d42d425a798.jsonl",
+          "sha256": "sha256:bf71e5b5a28af7e0ed6b1e6d084a5ff110dcb302389a98138c261c028cfa5053"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-34_seed-0.a63d07512985.jsonl",
+          "sha256": "sha256:e4fd907ef97433271778491c49772652e2987c2447a7810d5361b4d2d6f813a8"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-34_seed-1.2b5def693384.jsonl",
+          "sha256": "sha256:151c5ba8dd49074897ea4d7a3569ebe7fbc9c241f9c0377990a8f50f9c61e434"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-35_seed-0.42d7e4fdc22e.jsonl",
+          "sha256": "sha256:aacb3ae3d6a010f8d2d4c0d27ad648c5facae0be607e5353a925ecefb65c4f92"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-35_seed-1.2d3136ddc574.jsonl",
+          "sha256": "sha256:40b88c3451c27ea49c7be5daec527bd5fba1eb752c63b2046fc440acde9b73c3"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-36_seed-0.af33b343d749.jsonl",
+          "sha256": "sha256:0182c244c4832250e39703be723b1b00ed9057f9d0a2dce0f3711bef2f872dfe"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-36_seed-1.69f1ba8fc4ee.jsonl",
+          "sha256": "sha256:ad901f8991f8481006fd7118917405e3d28b2b780cf65551266286e4f5baa744"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-37_seed-0.f58921cb6ab2.jsonl",
+          "sha256": "sha256:ec0276a268f7c8e55962d68809bb28551a7b6ae87c1ca197cadc8606de28acf8"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-37_seed-1.1362f42fd58f.jsonl",
+          "sha256": "sha256:c3b2a67187b4a690c1455583d21c193de1aebffb0602a3928aff8b9ccd2cd31b"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-38_seed-0.88b8601a1355.jsonl",
+          "sha256": "sha256:1f67bd66d23cdabe6346080cd1c8c6d212924f92908f204f3047a5f114d7389e"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-38_seed-1.9df785122a57.jsonl",
+          "sha256": "sha256:10e868a8c9cbc0757a5e3a0a7221fa0de96af3c5da2b8c34726e163af0467353"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-40_seed-0.5affbc86186b.jsonl",
+          "sha256": "sha256:6c61ee5dffa809d2a31765cb7b2207096dbd690b9f93b2fbd819c8d9fd68c26c"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-40_seed-1.47086f007ade.jsonl",
+          "sha256": "sha256:cd31ae86f28f7ef2cf6df48bf3c86659321af1c01b3c966f78057891c3393fec"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-41_seed-0.5e69103b4af0.jsonl",
+          "sha256": "sha256:9bf37e3e5459b3058b2fde2ac99f196d1b85eca5045eae3eaaf2282728d5941f"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-41_seed-1.1d0333d50244.jsonl",
+          "sha256": "sha256:a0cad49aacf2b42ef88564b172f60bf01fbe60f3e7505b7f41fc73617c913b09"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-42_seed-0.d481f1eb942b.jsonl",
+          "sha256": "sha256:e79b2c50ab867b68319c8466da7e0987e94617bdca429ef2e9ab128da10d9d2e"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-42_seed-1.a63942fecc26.jsonl",
+          "sha256": "sha256:0f023d19791128e400bb4ae0ed52269b7653fcfbeee6c0a2011ffc607d4e5eb5"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-43_seed-0.4d93908d4c86.jsonl",
+          "sha256": "sha256:3af40fa1a663ab408bd3431df8b170db24a9d12b11ce2bfd3175f072347ab2aa"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-43_seed-1.6af6bea366f4.jsonl",
+          "sha256": "sha256:26e0d6f1b1adfac31fc48b8d40fe98c1a16df2b8ea692ca59fd1b3025befa5bd"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-44_seed-0.231bba17c5f0.jsonl",
+          "sha256": "sha256:d8cf0164f89e2a5ce6bd05906c37d87afcd0026b7aab78c2514edaa887e467f7"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-44_seed-1.e0f9953deb86.jsonl",
+          "sha256": "sha256:ec5163d1758bae487b2bc4934b633ddf7670b205a154aeb2f7c2932201147fd1"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-46_seed-0.4ab7fd9d563d.jsonl",
+          "sha256": "sha256:50dbf59b72658ebbd4b6cf3d8e72b62d67271c1641c6a968636557db21708d85"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-46_seed-1.3591b8da083e.jsonl",
+          "sha256": "sha256:c42fcf240dba2ead0c4dc38fe3659e8a80a2b7b1f82660038e10c78b4810e226"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-47_seed-0.a76569bfebfc.jsonl",
+          "sha256": "sha256:cf5028615444a8f62dac8d83c86d66ab56de83809459c947d80c2c598de1f8be"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-47_seed-1.0ad303060ed4.jsonl",
+          "sha256": "sha256:37806b2f6f8b63cb40532da0834d16edd78d6eb9ea9497b278569a78b2b14aca"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-48_seed-0.aa4367a2d37e.jsonl",
+          "sha256": "sha256:02823082f9581d1ad90143e638e6dd7d1a72dc255d770211394554ad2922baed"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-48_seed-1.876ff4baa6c1.jsonl",
+          "sha256": "sha256:2f99438e01a66d891fc6f7b1580edf8c9a2462e46a716cbc3b0519c7c81e7a2d"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-49_seed-0.a7818273f528.jsonl",
+          "sha256": "sha256:e969f5461f8537c588f95c32bd5f2918b93a314078a2867dc905caaf6244a2d5"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-49_seed-1.b3e8f06d04f0.jsonl",
+          "sha256": "sha256:2206a0af55053a6b28deda59b35f51ec20dd9d4480cb338fd958df2c2c7dd115"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-50_seed-0.6409dbb1a2d5.jsonl",
+          "sha256": "sha256:7f97a5e6f2a768a1b50287000bb1876ce7ecc59f886e68450903f2a3cd314e48"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-50_seed-1.63308d59f51d.jsonl",
+          "sha256": "sha256:dbbbd6a22d21e3a4a8076381be07d90a14eb4eaada4a486367cd5b82679c0165"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-51_seed-0.3e87f9d3dba5.jsonl",
+          "sha256": "sha256:8b7a8eef3b7eb1f93e9bb6065048fdd22fc3af49d75ac783e5e7d8a606b71b9f"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-51_seed-1.83d618e44397.jsonl",
+          "sha256": "sha256:76f2cff452852e01b22b5588ffb7683852a1ef732c78fa0b9667167e031b993f"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-52_seed-0.7c8116ad58b1.jsonl",
+          "sha256": "sha256:46ffccfaf1e64150c7abd86bb119765f2554c0a13d9cd5918f3d891108f54cf3"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-52_seed-1.07a18013fd88.jsonl",
+          "sha256": "sha256:5513909d802444d714d3a9daf41c20f986501d8fb73e358be8e4569bc7f8e99d"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-53_seed-0.a60ffd59fb44.jsonl",
+          "sha256": "sha256:d65e66055279b0b5d18ee26150e2ec66a93a1df2b4640c413edb364812aa549d"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-53_seed-1.ab660ae808b7.jsonl",
+          "sha256": "sha256:8fb573655be69fbe0a2af3b4b04d2424e82c4223a003adaa314b7914e4923a8f"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-55_seed-0.ac2c03ec2dc2.jsonl",
+          "sha256": "sha256:c4c527f6bfc7bbd36a252277c3001b3c319927771ab7ad181723e8b1adf92e78"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-55_seed-1.c6d2ea72aa59.jsonl",
+          "sha256": "sha256:149489ad03f72beb48dfd44492619bcac7f5109ba4c6793080f9deb5ca9dc97e"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-56_seed-0.4afe27cdad6e.jsonl",
+          "sha256": "sha256:cade13b0da70bd924eeccc843dc71f405e22aa5ccb0bf04b1a87b898682e2d07"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-56_seed-1.d8b88b08b46a.jsonl",
+          "sha256": "sha256:8df279b9a8652ced444b6d29cd42425f1b42ff06bd3cf0b9cecdad0c3c4e6283"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-57_seed-0.e2fe0efc0601.jsonl",
+          "sha256": "sha256:b51ba679f06c64214299fe3f4b040b4776a15b850ec7fb6e437e94da6edcba35"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-57_seed-1.9929d784ea19.jsonl",
+          "sha256": "sha256:4578b164b41fd4d61b35fe6504c3b15a6214284f1149ae852c41b2fe4aca5011"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-58_seed-0.4f4688ec342f.jsonl",
+          "sha256": "sha256:e6c02fadae8cac6398a4450621478b13d79f35cefdf87b1ad4a037412c140a61"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-58_seed-1.7f72d5877bd1.jsonl",
+          "sha256": "sha256:7558943545f0824b5adf2241848fb78693ae1bb35d5484c7d8a256caff2799ca"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-59_seed-0.e784ee109929.jsonl",
+          "sha256": "sha256:21d1c4725cb37e873712f03669cc588edd97331986cf4e92b15e3ea02e0829ea"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-59_seed-1.536413761805.jsonl",
+          "sha256": "sha256:446f1f4257d5c5c689dc9de4a2cacc2c7a5b0ebdad0c9db1bd834e2776a05a63"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-60_seed-0.e78526eac3aa.jsonl",
+          "sha256": "sha256:c73cec9da926973a5e94ef488ccf44123ac6c2f0cb7156aca3195164d886e6ef"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-60_seed-1.62e7a6b0fb10.jsonl",
+          "sha256": "sha256:7c0ac1f88b639a39c2e7fcf0004315c543986c9c2c451f9ccb325bfff1f3af4a"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-61_seed-0.f4d709093c8e.jsonl",
+          "sha256": "sha256:d283276104bcaaf5c8f7e507e91aa10fcb0554c198dff5cfd426046471b51477"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-61_seed-1.923c341b58ff.jsonl",
+          "sha256": "sha256:ece037b52b261ca0d9791e447a5e012f1cd99032a170d1f2e202d3e0460e1a56"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-62_seed-0.700391c5b1c0.jsonl",
+          "sha256": "sha256:8c05117fe7456558bd6acb1c7d40acd224516df32dc6e96809dd1a0f2b55b294"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-62_seed-1.441b9524071e.jsonl",
+          "sha256": "sha256:6c95860995a2ba423c604d1c5ad81405820b9471b8d386bb84a844c245a21220"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-63_seed-0.610bb2e9bc2d.jsonl",
+          "sha256": "sha256:eff19f0420ffc2b50d36f57a47ee4639756072ae99f83f18c556a3b9587c93df"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-63_seed-1.b613cca91e6f.jsonl",
+          "sha256": "sha256:41f1c2277749dbc6ee5c897408fc26a58df033da6871e670df10c03522302fd8"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-64_seed-0.f8ddcb693da4.jsonl",
+          "sha256": "sha256:acdb4c475d45831f643b1b1713f52b2097d594d6f6ef1d12cac1486cbd7309b0"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-64_seed-1.d4e4d751ae88.jsonl",
+          "sha256": "sha256:95685f3ae97a27bd337fa7ced27673a36be113f7f6879b9c3b65591d11d54d0a"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-65_seed-0.59c5e5568746.jsonl",
+          "sha256": "sha256:d6f7937fa34d9bd7f7d803cec5d6f8bd4f85daba3e595adb2d0433ddbb4e29b8"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/run_fork-v1_task-65_seed-1.ddde622720fb.jsonl",
+          "sha256": "sha256:905d0d6d7efd56eb260f259183821f8f1e9e6d424662adfc4d53a59d9a1c3fdf"
+        }
+      ],
+      "totalBlocks": 90,
+      "completeBlocks": 89,
+      "missingBlocks": 1
+    },
+    "glm_threearm_seed2": {
+      "label": "GLM-4.6V three-arm seed 2",
+      "directory": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821",
+      "inputFiles": [
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-15_seed-2.2b1fee9b1378.jsonl",
+          "sha256": "sha256:d98e6ce2817e9af87fe4fa840e77698f3c066376fa84610fc662a25597cf70de"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-16_seed-2.359ab8231b7a.jsonl",
+          "sha256": "sha256:6c5a4f22a9e34170feb92c6cfb687e706d764fd5e4b3128b7ee92a44233cec45"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-17_seed-2.b91b68205114.jsonl",
+          "sha256": "sha256:ae8d5a2d89bef9d1cce0702ce57c43205a90b060904e5c3e499e3b504581c674"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-18_seed-2.7df8d8e5906b.jsonl",
+          "sha256": "sha256:4d8da44e4656ad51abdb579bab113f92fdc486c4c4a9bf3d4a47fa896d693074"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-19_seed-2.d2a14be96f9e.jsonl",
+          "sha256": "sha256:f11370a9e883bb0ab94ed374865f55efd7bd4d4694f726c3c165bc3d8c22b81c"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-20_seed-2.8e45adb8debd.jsonl",
+          "sha256": "sha256:13ae9daa0366998e8f45dc75b8caffbbb108f17515aef2e03d0fe29d9b3eb233"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-21_seed-2.ba2dc380ba8c.jsonl",
+          "sha256": "sha256:f41775a27e2332b55571ee0a2e1a7f95617670c98937617b6c85ff792785ef92"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-22_seed-2.3122f46e1a4a.jsonl",
+          "sha256": "sha256:99779ca7fc50eec184d2606c1f7c407850e17692eb187682d7422ba5f1313146"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-23_seed-2.262da8152bc3.jsonl",
+          "sha256": "sha256:6cdedae6b0855bc789fa8900f7aac3efc5e4e89571b577b6a9ab6876ac0f8571"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-25_seed-2.c22bf2a1af6c.jsonl",
+          "sha256": "sha256:5f24e033cd4c4020862f910e6c7605648706595e8b4ed8be708e5a0a18ad0709"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-26_seed-2.93f4252d96d4.jsonl",
+          "sha256": "sha256:9880aa1e6677e83eacf2cf677e7260fc58e7af0b04b60582e52bc2ab5c9b1b7c"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-27_seed-2.281a60207788.jsonl",
+          "sha256": "sha256:b449e4c079a602aecbf7e1b1f79fae951aa76664b476bd2fdca7b7dee73eefa0"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-29_seed-2.476b60851560.jsonl",
+          "sha256": "sha256:78b591634308d06175e4eedf3fd3cb0fc6f66b11018f5ae2a74d179bb85390eb"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-30_seed-2.71a4ffdc8666.jsonl",
+          "sha256": "sha256:7c5ba449985903fcb0d425ddfb83a9a6808f3907653fa4c53e12910e0a0f8628"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-31_seed-2.eed7060445cd.jsonl",
+          "sha256": "sha256:cbbc1c88283979771027b1c65a337367129a8857edb199d9a816d55bfc81e32a"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-34_seed-2.6e2279418abb.jsonl",
+          "sha256": "sha256:d69a7370b4a7b2bfb13122f3b114f26329d7804b04c39a6bbb14113666ce4741"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-35_seed-2.62d3c292f80c.jsonl",
+          "sha256": "sha256:9b6d871f487f278852a6bfa7bed2eedb220637efbe44c45acf2a60e3a8cb3787"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-36_seed-2.5411b41305a3.jsonl",
+          "sha256": "sha256:0501305ab5b07bb26cf5711f427904e360ddbedbe9d50bc55dff72ba11d3f9e9"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-37_seed-2.8262d4d7b676.jsonl",
+          "sha256": "sha256:940b1773eafc89e91ca9fa158723e5e2b946b5da4ac70b05dcc0b04b860a5871"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-40_seed-2.b52292497c85.jsonl",
+          "sha256": "sha256:5e7ad17f26149b00f9c11078e55d93b3c2262b73d6ea55509d1347fd7db1e0e9"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-41_seed-2.1000df09c18d.jsonl",
+          "sha256": "sha256:af76534840e10052b47f4cbbf5abe91cd1d55a9156934a136fe4d8042c6e4476"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-42_seed-2.82d6daa87871.jsonl",
+          "sha256": "sha256:f4364d37fd505df21470b4d124819a0be9596bd326394579298568cad6a56bc0"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-43_seed-2.00ca75cbd998.jsonl",
+          "sha256": "sha256:3f439afdd5d5332e1479ae5abf36544e80133eba2cc617c58973da3ad5c44066"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-44_seed-2.aaf1b4ca0089.jsonl",
+          "sha256": "sha256:eadc3ee76a0de4d0d74d83791593a029134492004c645bb1e2efe1a13eae0397"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-46_seed-2.a4de795861c2.jsonl",
+          "sha256": "sha256:c190101c5ee26df25018af2c6f7837505a75d5d23e22c3deef73149c04a2d0fb"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-47_seed-2.d122440ca798.jsonl",
+          "sha256": "sha256:9e70b9d79e254bba6bfc3e933cc8ea078c340baf4af1037aa31507ec8910468b"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-48_seed-2.97c220e7726f.jsonl",
+          "sha256": "sha256:6550f95a181d164edce944a8462138710e4fe422673b50bd32c766383eff9bc3"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-49_seed-2.9c1e631d00a0.jsonl",
+          "sha256": "sha256:04a56978c84515e503d23ec4b88229a0dd89e745bd596921f14d3a7fc054e3fb"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-50_seed-2.582a1db81dc3.jsonl",
+          "sha256": "sha256:78871999d39b3f48b1b47e0a06348ddee5ab0e934df345e74a8be4a32a6644a1"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-51_seed-2.cef9cfc76962.jsonl",
+          "sha256": "sha256:87b5168734117d34cec14f018850268c01bebeae5485bf2cd0df11ab7070d279"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-52_seed-2.88a7eb2034da.jsonl",
+          "sha256": "sha256:422eefa261564fa8aad446b427207a494d7d73a8a9ca06369e1fe34dc5dad614"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-55_seed-2.92e2c56637e7.jsonl",
+          "sha256": "sha256:5469c387edf3155b6f01e33a634cd94ef271fdbfad3c49ed655e88512e2a62d6"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-56_seed-2.906c3e2610e8.jsonl",
+          "sha256": "sha256:54fa9bf28ca677491cb726905788714c0edbbc4ad35a6d3c0ea9b8e89f74999a"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-57_seed-2.4fa9f82f1647.jsonl",
+          "sha256": "sha256:265bf1176545d18dcb14142cbaa0ec21dd68e90620374b0d4cfb9a5bed5dc848"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-58_seed-2.049fd46dd0d1.jsonl",
+          "sha256": "sha256:4bcabe88701f14b953651d570cd1d93088d9a0ceef3fdd7dae07af920b476370"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-59_seed-2.774e47c88e7d.jsonl",
+          "sha256": "sha256:266f7d8a595e24f8a931194f087c04e3f979e5d4439677ec4dc357ef6c30ddbb"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-60_seed-2.72b5852f0196.jsonl",
+          "sha256": "sha256:ce2655e80a7fc90f91d083b12f52c5abc8a4273db31432cf518ff8905b7b5f4d"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-62_seed-2.1c59f45e50c0.jsonl",
+          "sha256": "sha256:79df8e9150e3f8e62b5d8b4d0fe01817a9e3107af427efd00aa52b6c233140c2"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-63_seed-2.8428b73185ce.jsonl",
+          "sha256": "sha256:50511378eba2834e5106d881a06b03c145b473490b49ccd0f974366657fcd42e"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-64_seed-2.1748e4d4771e.jsonl",
+          "sha256": "sha256:047a5164f73195388b1c5af99f42ddb980cd83d90625e86c0ee3dc2e354210f4"
+        },
+        {
+          "path": "experiments/campaign/pilot_output/v6-fork-glm46v-threearm-seed2-20260821/run_fork-v1_task-65_seed-2.f953f8fb0fed.jsonl",
+          "sha256": "sha256:08623d1964f47000381002c09bc3cd53182604e5bf572fb10c56c74d2f09a26f"
+        }
+      ],
+      "totalBlocks": 41,
+      "completeBlocks": 41,
+      "missingBlocks": 0
+    }
+  },
+  "views": {
+    "deepseek_seed0": {
+      "name": "deepseek_seed0",
+      "label": "DeepSeek seed 0",
+      "selectedSeeds": [
+        0
+      ],
+      "totalBlocks": 45,
+      "completeBlocks": 45,
+      "missingBlocks": 0,
+      "strata": {
+        "wrong": {
+          "eligibleTaskIds": [
+            14,
+            16,
+            17,
+            19,
+            20,
+            21,
+            22,
+            23,
+            25,
+            26,
+            36,
+            37,
+            38,
+            40,
+            41,
+            42,
+            44,
+            46,
+            48,
+            49,
+            50,
+            51,
+            53,
+            55,
+            56,
+            57,
+            58,
+            60,
+            61,
+            62,
+            63
+          ],
+          "valueAttacks": {
+            "taskCount": 31,
+            "blockCount": 31,
+            "mean": 0.44100470430107525,
+            "median": 0.21826388888888903,
+            "ci95": [
+              0.21413754480286737,
+              0.6913172043010752
+            ],
+            "positiveTasks": 24,
+            "negativeTasks": 3,
+            "zeroTasks": 4,
+            "loto": {
+              "min": 0.38903819444444443,
+              "max": 0.4847048611111111,
+              "mostInfluentialTask": 51,
+              "signChanges": false
+            }
+          },
+          "valueSupports": {
+            "taskCount": 31,
+            "blockCount": 31,
+            "mean": -0.029808960573476727,
+            "median": 0.0,
+            "ci95": [
+              -0.24637706093189962,
+              0.20585250896057347
+            ],
+            "positiveTasks": 14,
+            "negativeTasks": 15,
+            "zeroTasks": 2,
+            "loto": {
+              "min": -0.09746925925925928,
+              "max": 0.007067777777777758,
+              "mostInfluentialTask": 21,
+              "signChanges": true
+            }
+          },
+          "gapAS": {
+            "taskCount": 31,
+            "blockCount": 31,
+            "mean": 0.47081366487455195,
+            "median": 0.3131249999999999,
+            "ci95": [
+              0.263309811827957,
+              0.6855094982078853
+            ],
+            "positiveTasks": 22,
+            "negativeTasks": 6,
+            "zeroTasks": 3,
+            "loto": {
+              "min": 0.42471578703703705,
+              "max": 0.5103268981481481,
+              "mostInfluentialTask": 51,
+              "signChanges": false
+            }
+          }
+        },
+        "correct": {
+          "eligibleTaskIds": [
+            15,
+            18,
+            27,
+            29,
+            30,
+            31,
+            34,
+            35,
+            43,
+            47,
+            52,
+            59,
+            64,
+            65
+          ],
+          "valueAttacks": {
+            "taskCount": 14,
+            "blockCount": 14,
+            "mean": 0.012254464285714287,
+            "median": 0.0,
+            "ci95": [
+              -0.010446428571428563,
+              0.04604910714285714
+            ],
+            "positiveTasks": 2,
+            "negativeTasks": 2,
+            "zeroTasks": 10,
+            "loto": {
+              "min": -0.003269230769230768,
+              "max": 0.016658653846153844,
+              "mostInfluentialTask": 35,
+              "signChanges": true
+            }
+          },
+          "valueSupports": {
+            "taskCount": 14,
+            "blockCount": 14,
+            "mean": -0.048660714285714286,
+            "median": 0.0,
+            "ci95": [
+              -0.12464285714285715,
+              0.0029464285714285725
+            ],
+            "positiveTasks": 2,
+            "negativeTasks": 2,
+            "zeroTasks": 10,
+            "loto": {
+              "min": -0.05346153846153846,
+              "max": -0.024711538461538465,
+              "mostInfluentialTask": 35,
+              "signChanges": false
+            }
+          },
+          "gapAS": {
+            "taskCount": 14,
+            "blockCount": 14,
+            "mean": 0.06091517857142858,
+            "median": 0.0,
+            "ci95": [
+              -0.01169642857142857,
+              0.1614732142857143
+            ],
+            "positiveTasks": 2,
+            "negativeTasks": 3,
+            "zeroTasks": 9,
+            "loto": {
+              "min": 0.02144230769230769,
+              "max": 0.06992788461538461,
+              "mostInfluentialTask": 35,
+              "signChanges": false
+            }
+          }
+        }
+      },
+      "perTask": [
+        {
+          "taskId": 15,
+          "stratum": "correct",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0,
+          "valueSupports": 0.0,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 18,
+          "stratum": "correct",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": -0.044999999999999964,
+          "valueSupports": 0.011250000000000013,
+          "gapAS": -0.05624999999999998
+        },
+        {
+          "taskId": 27,
+          "stratum": "correct",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0,
+          "valueSupports": 0.0,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 29,
+          "stratum": "correct",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0,
+          "valueSupports": 0.0,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 30,
+          "stratum": "correct",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0,
+          "valueSupports": 0.0,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 31,
+          "stratum": "correct",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0,
+          "valueSupports": 0.0,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 34,
+          "stratum": "correct",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0,
+          "valueSupports": 0.0,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 35,
+          "stratum": "correct",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.2140625,
+          "valueSupports": -0.36,
+          "gapAS": 0.5740625
+        },
+        {
+          "taskId": 43,
+          "stratum": "correct",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": -0.03125,
+          "valueSupports": 0.0,
+          "gapAS": -0.03125
+        },
+        {
+          "taskId": 47,
+          "stratum": "correct",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.033749999999999974,
+          "valueSupports": -0.34625000000000006,
+          "gapAS": 0.38
+        },
+        {
+          "taskId": 52,
+          "stratum": "correct",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0,
+          "valueSupports": 0.0,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 59,
+          "stratum": "correct",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0,
+          "valueSupports": 0.0,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 64,
+          "stratum": "correct",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0,
+          "valueSupports": 0.013750000000000005,
+          "gapAS": -0.013750000000000005
+        },
+        {
+          "taskId": 65,
+          "stratum": "correct",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0,
+          "valueSupports": 0.0,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 14,
+          "stratum": "wrong",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.5,
+          "valueSupports": -0.625,
+          "gapAS": 1.125
+        },
+        {
+          "taskId": 16,
+          "stratum": "wrong",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.77625,
+          "valueSupports": 0.15999999999999992,
+          "gapAS": 0.6162500000000001
+        },
+        {
+          "taskId": 17,
+          "stratum": "wrong",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": -0.20833333333333348,
+          "valueSupports": 0.5062499999999999,
+          "gapAS": -0.7145833333333333
+        },
+        {
+          "taskId": 19,
+          "stratum": "wrong",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.05375000000000001,
+          "valueSupports": 0.05375000000000001,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 20,
+          "stratum": "wrong",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.335,
+          "valueSupports": -1.0650000000000002,
+          "gapAS": 1.4000000000000001
+        },
+        {
+          "taskId": 21,
+          "stratum": "wrong",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 1.98,
+          "valueSupports": 2.0,
+          "gapAS": -0.019999999999999997
+        },
+        {
+          "taskId": 22,
+          "stratum": "wrong",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 1.84875,
+          "valueSupports": 0.4574999999999998,
+          "gapAS": 1.3912500000000003
+        },
+        {
+          "taskId": 23,
+          "stratum": "wrong",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": -0.87,
+          "valueSupports": -0.4524999999999999,
+          "gapAS": -0.4175000000000001
+        },
+        {
+          "taskId": 25,
+          "stratum": "wrong",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.2555555555555555,
+          "valueSupports": 0.15305555555555542,
+          "gapAS": 0.10250000000000006
+        },
+        {
+          "taskId": 26,
+          "stratum": "wrong",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.6462500000000001,
+          "valueSupports": 0.6900000000000002,
+          "gapAS": -0.04375000000000007
+        },
+        {
+          "taskId": 36,
+          "stratum": "wrong",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 1.4112500000000001,
+          "valueSupports": 1.13,
+          "gapAS": 0.28125
+        },
+        {
+          "taskId": 37,
+          "stratum": "wrong",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.48374999999999985,
+          "valueSupports": -0.2900000000000001,
+          "gapAS": 0.7737499999999999
+        },
+        {
+          "taskId": 38,
+          "stratum": "wrong",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.21826388888888903,
+          "valueSupports": -0.09486111111111084,
+          "gapAS": 0.3131249999999999
+        },
+        {
+          "taskId": 40,
+          "stratum": "wrong",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.125,
+          "valueSupports": -0.65625,
+          "gapAS": 0.78125
+        },
+        {
+          "taskId": 41,
+          "stratum": "wrong",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.059999999999999984,
+          "valueSupports": -0.7999999999999999,
+          "gapAS": 0.8599999999999999
+        },
+        {
+          "taskId": 42,
+          "stratum": "wrong",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": -0.011250000000000012,
+          "valueSupports": 0.0,
+          "gapAS": -0.011250000000000012
+        },
+        {
+          "taskId": 44,
+          "stratum": "wrong",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.19500000000000006,
+          "valueSupports": -0.10125,
+          "gapAS": 0.29625000000000007
+        },
+        {
+          "taskId": 46,
+          "stratum": "wrong",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.3131944444444441,
+          "valueSupports": -0.16500000000000026,
+          "gapAS": 0.47819444444444437
+        },
+        {
+          "taskId": 48,
+          "stratum": "wrong",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0,
+          "valueSupports": -0.595,
+          "gapAS": 0.595
+        },
+        {
+          "taskId": 49,
+          "stratum": "wrong",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.15375,
+          "valueSupports": 0.09375000000000001,
+          "gapAS": 0.05999999999999997
+        },
+        {
+          "taskId": 50,
+          "stratum": "wrong",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.22222222222222224,
+          "valueSupports": 0.22222222222222224,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 51,
+          "stratum": "wrong",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 2.0,
+          "valueSupports": 0.14625,
+          "gapAS": 1.85375
+        },
+        {
+          "taskId": 53,
+          "stratum": "wrong",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 2.0,
+          "valueSupports": 0.5775000000000001,
+          "gapAS": 1.4224999999999999
+        },
+        {
+          "taskId": 55,
+          "stratum": "wrong",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0,
+          "valueSupports": 0.0,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 56,
+          "stratum": "wrong",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.6600000000000001,
+          "valueSupports": 0.5399999999999998,
+          "gapAS": 0.12000000000000033
+        },
+        {
+          "taskId": 57,
+          "stratum": "wrong",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.13124999999999987,
+          "valueSupports": -0.2849999999999999,
+          "gapAS": 0.4162499999999998
+        },
+        {
+          "taskId": 58,
+          "stratum": "wrong",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.30874999999999997,
+          "valueSupports": -0.95125,
+          "gapAS": 1.26
+        },
+        {
+          "taskId": 60,
+          "stratum": "wrong",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.06482638888888881,
+          "valueSupports": -1.1361111111111113,
+          "gapAS": 1.2009375
+        },
+        {
+          "taskId": 61,
+          "stratum": "wrong",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0,
+          "valueSupports": -0.14879999999999982,
+          "gapAS": 0.14879999999999982
+        },
+        {
+          "taskId": 62,
+          "stratum": "wrong",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.017916666666666692,
+          "valueSupports": 0.18666666666666654,
+          "gapAS": -0.16874999999999984
+        },
+        {
+          "taskId": 63,
+          "stratum": "wrong",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0,
+          "valueSupports": -0.4750000000000001,
+          "gapAS": 0.4750000000000001
+        }
+      ]
+    },
+    "deepseek_seed1": {
+      "name": "deepseek_seed1",
+      "label": "DeepSeek seed 1",
+      "selectedSeeds": [
+        1
+      ],
+      "totalBlocks": 45,
+      "completeBlocks": 44,
+      "missingBlocks": 1,
+      "strata": {
+        "wrong": {
+          "eligibleTaskIds": [
+            14,
+            16,
+            17,
+            19,
+            20,
+            21,
+            22,
+            23,
+            25,
+            26,
+            36,
+            37,
+            38,
+            40,
+            44,
+            46,
+            48,
+            50,
+            51,
+            53,
+            55,
+            56,
+            57,
+            58,
+            59,
+            61,
+            62,
+            63
+          ],
+          "valueAttacks": {
+            "taskCount": 28,
+            "blockCount": 28,
+            "mean": 0.5520870535714286,
+            "median": 0.26999999999999996,
+            "ci95": [
+              0.3055357142857143,
+              0.8240066964285714
+            ],
+            "positiveTasks": 20,
+            "negativeTasks": 3,
+            "zeroTasks": 5,
+            "loto": {
+              "min": 0.49846064814814817,
+              "max": 0.5895717592592592,
+              "mostInfluentialTask": 38,
+              "signChanges": false
+            }
+          },
+          "valueSupports": {
+            "taskCount": 28,
+            "blockCount": 28,
+            "mean": -0.17690892857142856,
+            "median": -0.011875000000000059,
+            "ci95": [
+              -0.3404022321428571,
+              -0.020044642857142855
+            ],
+            "positiveTasks": 8,
+            "negativeTasks": 15,
+            "zeroTasks": 5,
+            "loto": {
+              "min": -0.20248888888888888,
+              "max": -0.14290555555555556,
+              "mostInfluentialTask": 26,
+              "signChanges": false
+            }
+          },
+          "gapAS": {
+            "taskCount": 28,
+            "blockCount": 28,
+            "mean": 0.7289959821428571,
+            "median": 0.515,
+            "ci95": [
+              0.47033482142857147,
+              1.000883482142857
+            ],
+            "positiveTasks": 22,
+            "negativeTasks": 2,
+            "zeroTasks": 4,
+            "loto": {
+              "min": 0.6819217592592592,
+              "max": 0.7587736111111111,
+              "mostInfluentialTask": 36,
+              "signChanges": false
+            }
+          }
+        },
+        "correct": {
+          "eligibleTaskIds": [
+            15,
+            18,
+            27,
+            29,
+            30,
+            31,
+            34,
+            35,
+            41,
+            42,
+            43,
+            47,
+            49,
+            52,
+            64,
+            65
+          ],
+          "valueAttacks": {
+            "taskCount": 16,
+            "blockCount": 16,
+            "mean": 0.02270833333333333,
+            "median": 0.0,
+            "ci95": [
+              -0.054453125000000026,
+              0.13437500000000002
+            ],
+            "positiveTasks": 3,
+            "negativeTasks": 3,
+            "zeroTasks": 10,
+            "loto": {
+              "min": -0.02733333333333334,
+              "max": 0.03922222222222223,
+              "mostInfluentialTask": 30,
+              "signChanges": true
+            }
+          },
+          "valueSupports": {
+            "taskCount": 16,
+            "blockCount": 16,
+            "mean": -0.05419053819444445,
+            "median": 0.0,
+            "ci95": [
+              -0.21083116319444448,
+              0.11258463541666668
+            ],
+            "positiveTasks": 2,
+            "negativeTasks": 6,
+            "zeroTasks": 8,
+            "loto": {
+              "min": -0.11706250000000001,
+              "max": -0.00980324074074074,
+              "mostInfluentialTask": 30,
+              "signChanges": false
+            }
+          },
+          "gapAS": {
+            "taskCount": 16,
+            "blockCount": 16,
+            "mean": 0.07689887152777777,
+            "median": 0.0,
+            "ci95": [
+              -0.00040147569444443695,
+              0.18707465277777774
+            ],
+            "positiveTasks": 6,
+            "negativeTasks": 1,
+            "zeroTasks": 9,
+            "loto": {
+              "min": 0.03302546296296296,
+              "max": 0.08972916666666667,
+              "mostInfluentialTask": 49,
+              "signChanges": false
+            }
+          }
+        }
+      },
+      "perTask": [
+        {
+          "taskId": 15,
+          "stratum": "correct",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0,
+          "valueSupports": -0.0037500000000000046,
+          "gapAS": 0.0037500000000000046
+        },
+        {
+          "taskId": 18,
+          "stratum": "correct",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": -0.0037500000000000046,
+          "valueSupports": -0.059999999999999984,
+          "gapAS": 0.05624999999999998
+        },
+        {
+          "taskId": 27,
+          "stratum": "correct",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0,
+          "valueSupports": 0.0,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 29,
+          "stratum": "correct",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0,
+          "valueSupports": 0.0,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 30,
+          "stratum": "correct",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.7733333333333334,
+          "valueSupports": 0.888888888888889,
+          "gapAS": -0.11555555555555552
+        },
+        {
+          "taskId": 31,
+          "stratum": "correct",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0,
+          "valueSupports": 0.0,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 34,
+          "stratum": "correct",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0,
+          "valueSupports": 0.0,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 35,
+          "stratum": "correct",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": -0.2,
+          "valueSupports": -0.41375000000000006,
+          "gapAS": 0.21375000000000005
+        },
+        {
+          "taskId": 41,
+          "stratum": "correct",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0037500000000000046,
+          "valueSupports": 0.0037500000000000046,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 42,
+          "stratum": "correct",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0,
+          "valueSupports": 0.0,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 43,
+          "stratum": "correct",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0,
+          "valueSupports": 0.0,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 47,
+          "stratum": "correct",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": -0.22500000000000014,
+          "valueSupports": -0.55125,
+          "gapAS": 0.3262499999999998
+        },
+        {
+          "taskId": 49,
+          "stratum": "correct",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.014999999999999996,
+          "valueSupports": -0.7200000000000001,
+          "gapAS": 0.7350000000000001
+        },
+        {
+          "taskId": 52,
+          "stratum": "correct",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0,
+          "valueSupports": 0.0,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 64,
+          "stratum": "correct",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0,
+          "valueSupports": -0.010937500000000003,
+          "gapAS": 0.010937500000000003
+        },
+        {
+          "taskId": 65,
+          "stratum": "correct",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0,
+          "valueSupports": 0.0,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 14,
+          "stratum": "wrong",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 1.125,
+          "valueSupports": 0.0,
+          "gapAS": 1.125
+        },
+        {
+          "taskId": 16,
+          "stratum": "wrong",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.29999999999999993,
+          "valueSupports": -1.0612499999999998,
+          "gapAS": 1.3612499999999996
+        },
+        {
+          "taskId": 17,
+          "stratum": "wrong",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.62,
+          "valueSupports": 0.3903125,
+          "gapAS": 0.22968749999999996
+        },
+        {
+          "taskId": 19,
+          "stratum": "wrong",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.15500000000000003,
+          "valueSupports": 0.15500000000000003,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 20,
+          "stratum": "wrong",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.45875000000000005,
+          "valueSupports": -0.38624999999999987,
+          "gapAS": 0.845
+        },
+        {
+          "taskId": 21,
+          "stratum": "wrong",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0,
+          "valueSupports": 0.0,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 22,
+          "stratum": "wrong",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 1.35375,
+          "valueSupports": -0.04125000000000001,
+          "gapAS": 1.395
+        },
+        {
+          "taskId": 23,
+          "stratum": "wrong",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": -0.011250000000000012,
+          "valueSupports": -0.008749999999999994,
+          "gapAS": -0.002500000000000018
+        },
+        {
+          "taskId": 25,
+          "stratum": "wrong",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.16375000000000006,
+          "valueSupports": 0.16000000000000006,
+          "gapAS": 0.0037500000000000046
+        },
+        {
+          "taskId": 26,
+          "stratum": "wrong",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.5600000000000002,
+          "valueSupports": -1.095,
+          "gapAS": 1.655
+        },
+        {
+          "taskId": 36,
+          "stratum": "wrong",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 1.7834375000000002,
+          "valueSupports": -0.21656249999999977,
+          "gapAS": 2.0
+        },
+        {
+          "taskId": 37,
+          "stratum": "wrong",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.02375,
+          "valueSupports": -0.28500000000000003,
+          "gapAS": 0.30875
+        },
+        {
+          "taskId": 38,
+          "stratum": "wrong",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 2.0,
+          "valueSupports": 0.5137499999999999,
+          "gapAS": 1.48625
+        },
+        {
+          "taskId": 40,
+          "stratum": "wrong",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 2.0,
+          "valueSupports": 0.0,
+          "gapAS": 2.0
+        },
+        {
+          "taskId": 44,
+          "stratum": "wrong",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.14000000000000004,
+          "valueSupports": -0.53625,
+          "gapAS": 0.67625
+        },
+        {
+          "taskId": 46,
+          "stratum": "wrong",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.9187499999999997,
+          "valueSupports": -0.6262500000000002,
+          "gapAS": 1.545
+        },
+        {
+          "taskId": 48,
+          "stratum": "wrong",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0,
+          "valueSupports": 0.07499999999999984,
+          "gapAS": -0.07499999999999984
+        },
+        {
+          "taskId": 50,
+          "stratum": "wrong",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0,
+          "valueSupports": 0.0,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 51,
+          "stratum": "wrong",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.6950000000000001,
+          "valueSupports": -0.9137499999999997,
+          "gapAS": 1.6087499999999997
+        },
+        {
+          "taskId": 53,
+          "stratum": "wrong",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 2.0,
+          "valueSupports": 0.375,
+          "gapAS": 1.625
+        },
+        {
+          "taskId": 55,
+          "stratum": "wrong",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.47625,
+          "valueSupports": 0.47125,
+          "gapAS": 0.0050000000000000044
+        },
+        {
+          "taskId": 56,
+          "stratum": "wrong",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": -0.45999999999999996,
+          "valueSupports": -0.81375,
+          "gapAS": 0.35375
+        },
+        {
+          "taskId": 57,
+          "stratum": "wrong",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": -0.13875000000000015,
+          "valueSupports": -0.28500000000000014,
+          "gapAS": 0.14625
+        },
+        {
+          "taskId": 58,
+          "stratum": "wrong",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.8599999999999999,
+          "valueSupports": -0.015000000000000124,
+          "gapAS": 0.875
+        },
+        {
+          "taskId": 59,
+          "stratum": "wrong",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0,
+          "valueSupports": 0.0,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 61,
+          "stratum": "wrong",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0,
+          "valueSupports": -0.20594999999999986,
+          "gapAS": 0.20594999999999986
+        },
+        {
+          "taskId": 62,
+          "stratum": "wrong",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.23999999999999996,
+          "valueSupports": -0.66,
+          "gapAS": 0.9
+        },
+        {
+          "taskId": 63,
+          "stratum": "wrong",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.19499999999999973,
+          "valueSupports": 0.0562499999999998,
+          "gapAS": 0.13874999999999993
+        }
+      ]
+    },
+    "deepseek_pooled": {
+      "name": "deepseek_pooled",
+      "label": "DeepSeek pooled task-equal",
+      "selectedSeeds": null,
+      "totalBlocks": 90,
+      "completeBlocks": 89,
+      "missingBlocks": 1,
+      "strata": {
+        "wrong": {
+          "eligibleTaskIds": [
+            14,
+            16,
+            17,
+            19,
+            20,
+            21,
+            22,
+            23,
+            25,
+            26,
+            36,
+            37,
+            38,
+            40,
+            41,
+            42,
+            44,
+            46,
+            48,
+            49,
+            50,
+            51,
+            53,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63
+          ],
+          "valueAttacks": {
+            "taskCount": 32,
+            "blockCount": 59,
+            "mean": 0.4593267144097222,
+            "median": 0.2077430555555555,
+            "ci95": [
+              0.27357150607638886,
+              0.6570567491319445
+            ],
+            "positiveTasks": 26,
+            "negativeTasks": 3,
+            "zeroTasks": 3,
+            "loto": {
+              "min": 0.40962757616487455,
+              "max": 0.4883574148745519,
+              "mostInfluentialTask": 53,
+              "signChanges": false
+            }
+          },
+          "valueSupports": {
+            "taskCount": 32,
+            "blockCount": 59,
+            "mean": -0.1206232638888889,
+            "median": -0.20593750000000002,
+            "ci95": [
+              -0.259580078125,
+              0.0219819878472222
+            ],
+            "positiveTasks": 11,
+            "negativeTasks": 19,
+            "zeroTasks": 2,
+            "loto": {
+              "min": -0.15677240143369175,
+              "max": -0.08786559139784947,
+              "mostInfluentialTask": 21,
+              "signChanges": false
+            }
+          },
+          "gapAS": {
+            "taskCount": 32,
+            "blockCount": 59,
+            "mean": 0.5799499782986111,
+            "median": 0.4259375000000001,
+            "ci95": [
+              0.3804739583333333,
+              0.7754123263888889
+            ],
+            "positiveTasks": 25,
+            "negativeTasks": 4,
+            "zeroTasks": 3,
+            "loto": {
+              "min": 0.5428112679211469,
+              "max": 0.6064789426523297,
+              "mostInfluentialTask": 51,
+              "signChanges": false
+            }
+          }
+        },
+        "correct": {
+          "eligibleTaskIds": [
+            15,
+            18,
+            27,
+            29,
+            30,
+            31,
+            34,
+            35,
+            41,
+            42,
+            43,
+            47,
+            49,
+            52,
+            59,
+            64,
+            65
+          ],
+          "valueAttacks": {
+            "taskCount": 17,
+            "blockCount": 30,
+            "mean": 0.016283700980392155,
+            "median": 0.0,
+            "ci95": [
+              -0.0166544117647059,
+              0.06762867647058825
+            ],
+            "positiveTasks": 4,
+            "negativeTasks": 3,
+            "zeroTasks": 10,
+            "loto": {
+              "min": -0.006865234375000005,
+              "max": 0.02327799479166667,
+              "mostInfluentialTask": 30,
+              "signChanges": true
+            }
+          },
+          "valueSupports": {
+            "taskCount": 17,
+            "blockCount": 30,
+            "mean": -0.06660437091503268,
+            "median": 0.0,
+            "ci95": [
+              -0.1920588235294118,
+              0.038554942810457515
+            ],
+            "positiveTasks": 3,
+            "negativeTasks": 5,
+            "zeroTasks": 9,
+            "loto": {
+              "min": -0.09854492187500001,
+              "max": -0.025767144097222222,
+              "mostInfluentialTask": 49,
+              "signChanges": false
+            }
+          },
+          "gapAS": {
+            "taskCount": 17,
+            "blockCount": 30,
+            "mean": 0.08288807189542484,
+            "median": 0.0,
+            "ci95": [
+              -0.0031781045751633976,
+              0.19396343954248366
+            ],
+            "positiveTasks": 4,
+            "negativeTasks": 3,
+            "zeroTasks": 10,
+            "loto": {
+              "min": 0.04213107638888888,
+              "max": 0.0916796875,
+              "mostInfluentialTask": 49,
+              "signChanges": false
+            }
+          }
+        }
+      },
+      "perTask": [
+        {
+          "taskId": 15,
+          "stratum": "correct",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": 0.0,
+          "valueSupports": -0.0018750000000000023,
+          "gapAS": 0.0018750000000000023
+        },
+        {
+          "taskId": 18,
+          "stratum": "correct",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": -0.024374999999999983,
+          "valueSupports": -0.024374999999999987,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 27,
+          "stratum": "correct",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": 0.0,
+          "valueSupports": 0.0,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 29,
+          "stratum": "correct",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": 0.0,
+          "valueSupports": 0.0,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 30,
+          "stratum": "correct",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": 0.3866666666666667,
+          "valueSupports": 0.4444444444444445,
+          "gapAS": -0.05777777777777776
+        },
+        {
+          "taskId": 31,
+          "stratum": "correct",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": 0.0,
+          "valueSupports": 0.0,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 34,
+          "stratum": "correct",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": 0.0,
+          "valueSupports": 0.0,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 35,
+          "stratum": "correct",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": 0.007031249999999989,
+          "valueSupports": -0.386875,
+          "gapAS": 0.39390625
+        },
+        {
+          "taskId": 41,
+          "stratum": "correct",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0037500000000000046,
+          "valueSupports": 0.0037500000000000046,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 42,
+          "stratum": "correct",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0,
+          "valueSupports": 0.0,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 43,
+          "stratum": "correct",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": -0.015625,
+          "valueSupports": 0.0,
+          "gapAS": -0.015625
+        },
+        {
+          "taskId": 47,
+          "stratum": "correct",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": -0.09562500000000008,
+          "valueSupports": -0.44875000000000004,
+          "gapAS": 0.3531249999999999
+        },
+        {
+          "taskId": 49,
+          "stratum": "correct",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.014999999999999996,
+          "valueSupports": -0.7200000000000001,
+          "gapAS": 0.7350000000000001
+        },
+        {
+          "taskId": 52,
+          "stratum": "correct",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": 0.0,
+          "valueSupports": 0.0,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 59,
+          "stratum": "correct",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0,
+          "valueSupports": 0.0,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 64,
+          "stratum": "correct",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": 0.0,
+          "valueSupports": 0.0014062500000000012,
+          "gapAS": -0.0014062500000000012
+        },
+        {
+          "taskId": 65,
+          "stratum": "correct",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": 0.0,
+          "valueSupports": 0.0,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 14,
+          "stratum": "wrong",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": 0.8125,
+          "valueSupports": -0.3125,
+          "gapAS": 1.125
+        },
+        {
+          "taskId": 16,
+          "stratum": "wrong",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": 0.538125,
+          "valueSupports": -0.45062499999999994,
+          "gapAS": 0.9887499999999998
+        },
+        {
+          "taskId": 17,
+          "stratum": "wrong",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": 0.20583333333333326,
+          "valueSupports": 0.44828124999999996,
+          "gapAS": -0.2424479166666667
+        },
+        {
+          "taskId": 19,
+          "stratum": "wrong",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": 0.10437500000000002,
+          "valueSupports": 0.10437500000000002,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 20,
+          "stratum": "wrong",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": 0.39687500000000003,
+          "valueSupports": -0.725625,
+          "gapAS": 1.1225
+        },
+        {
+          "taskId": 21,
+          "stratum": "wrong",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": 0.99,
+          "valueSupports": 1.0,
+          "gapAS": -0.009999999999999998
+        },
+        {
+          "taskId": 22,
+          "stratum": "wrong",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": 1.6012499999999998,
+          "valueSupports": 0.2081249999999999,
+          "gapAS": 1.3931250000000002
+        },
+        {
+          "taskId": 23,
+          "stratum": "wrong",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": -0.440625,
+          "valueSupports": -0.23062499999999994,
+          "gapAS": -0.21000000000000005
+        },
+        {
+          "taskId": 25,
+          "stratum": "wrong",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": 0.20965277777777777,
+          "valueSupports": 0.15652777777777774,
+          "gapAS": 0.05312500000000003
+        },
+        {
+          "taskId": 26,
+          "stratum": "wrong",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": 0.6031250000000001,
+          "valueSupports": -0.2024999999999999,
+          "gapAS": 0.805625
+        },
+        {
+          "taskId": 36,
+          "stratum": "wrong",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": 1.5973437500000003,
+          "valueSupports": 0.45671875000000006,
+          "gapAS": 1.140625
+        },
+        {
+          "taskId": 37,
+          "stratum": "wrong",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": 0.2537499999999999,
+          "valueSupports": -0.2875000000000001,
+          "gapAS": 0.54125
+        },
+        {
+          "taskId": 38,
+          "stratum": "wrong",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": 1.1091319444444445,
+          "valueSupports": 0.20944444444444454,
+          "gapAS": 0.8996875
+        },
+        {
+          "taskId": 40,
+          "stratum": "wrong",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": 1.0625,
+          "valueSupports": -0.328125,
+          "gapAS": 1.390625
+        },
+        {
+          "taskId": 41,
+          "stratum": "wrong",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.059999999999999984,
+          "valueSupports": -0.7999999999999999,
+          "gapAS": 0.8599999999999999
+        },
+        {
+          "taskId": 42,
+          "stratum": "wrong",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": -0.011250000000000012,
+          "valueSupports": 0.0,
+          "gapAS": -0.011250000000000012
+        },
+        {
+          "taskId": 44,
+          "stratum": "wrong",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": 0.16750000000000004,
+          "valueSupports": -0.31875,
+          "gapAS": 0.48625000000000007
+        },
+        {
+          "taskId": 46,
+          "stratum": "wrong",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": 0.6159722222222219,
+          "valueSupports": -0.3956250000000002,
+          "gapAS": 1.011597222222222
+        },
+        {
+          "taskId": 48,
+          "stratum": "wrong",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": 0.0,
+          "valueSupports": -0.26000000000000006,
+          "gapAS": 0.26000000000000006
+        },
+        {
+          "taskId": 49,
+          "stratum": "wrong",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.15375,
+          "valueSupports": 0.09375000000000001,
+          "gapAS": 0.05999999999999997
+        },
+        {
+          "taskId": 50,
+          "stratum": "wrong",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": 0.11111111111111112,
+          "valueSupports": 0.11111111111111112,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 51,
+          "stratum": "wrong",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": 1.3475000000000001,
+          "valueSupports": -0.38374999999999987,
+          "gapAS": 1.7312499999999997
+        },
+        {
+          "taskId": 53,
+          "stratum": "wrong",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": 2.0,
+          "valueSupports": 0.47625000000000006,
+          "gapAS": 1.52375
+        },
+        {
+          "taskId": 55,
+          "stratum": "wrong",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": 0.238125,
+          "valueSupports": 0.235625,
+          "gapAS": 0.0025000000000000022
+        },
+        {
+          "taskId": 56,
+          "stratum": "wrong",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": 0.10000000000000009,
+          "valueSupports": -0.13687500000000008,
+          "gapAS": 0.23687500000000017
+        },
+        {
+          "taskId": 57,
+          "stratum": "wrong",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": -0.003750000000000142,
+          "valueSupports": -0.28500000000000003,
+          "gapAS": 0.2812499999999999
+        },
+        {
+          "taskId": 58,
+          "stratum": "wrong",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": 0.5843749999999999,
+          "valueSupports": -0.4831250000000001,
+          "gapAS": 1.0675
+        },
+        {
+          "taskId": 59,
+          "stratum": "wrong",
+          "seeds": [
+            1
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0,
+          "valueSupports": 0.0,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 60,
+          "stratum": "wrong",
+          "seeds": [
+            0
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.06482638888888881,
+          "valueSupports": -1.1361111111111113,
+          "gapAS": 1.2009375
+        },
+        {
+          "taskId": 61,
+          "stratum": "wrong",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": 0.0,
+          "valueSupports": -0.17737499999999984,
+          "gapAS": 0.17737499999999984
+        },
+        {
+          "taskId": 62,
+          "stratum": "wrong",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": 0.12895833333333334,
+          "valueSupports": -0.23666666666666675,
+          "gapAS": 0.3656250000000001
+        },
+        {
+          "taskId": 63,
+          "stratum": "wrong",
+          "seeds": [
+            0,
+            1
+          ],
+          "blockCount": 2,
+          "valueAttacks": 0.09749999999999986,
+          "valueSupports": -0.20937500000000014,
+          "gapAS": 0.306875
+        }
+      ]
+    },
+    "glm_seed2": {
+      "name": "glm_seed2",
+      "label": "GLM-4.6V seed 2",
+      "selectedSeeds": [
+        2
+      ],
+      "totalBlocks": 41,
+      "completeBlocks": 41,
+      "missingBlocks": 0,
+      "strata": {
+        "wrong": {
+          "eligibleTaskIds": [
+            15,
+            17,
+            19,
+            20,
+            21,
+            22,
+            23,
+            25,
+            26,
+            31,
+            35,
+            36,
+            40,
+            44,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            62,
+            63,
+            64
+          ],
+          "valueAttacks": {
+            "taskCount": 29,
+            "blockCount": 29,
+            "mean": 0.7180215589224138,
+            "median": 0.8150000000000001,
+            "ci95": [
+              0.5373599137931034,
+              0.9050581968534482
+            ],
+            "positiveTasks": 24,
+            "negativeTasks": 3,
+            "zeroTasks": 2,
+            "loto": {
+              "min": 0.6722366145982143,
+              "max": 0.7492009003125001,
+              "mostInfluentialTask": 40,
+              "signChanges": false
+            }
+          },
+          "valueSupports": {
+            "taskCount": 29,
+            "blockCount": 29,
+            "mean": 0.31083966237068966,
+            "median": 0.25499999999999967,
+            "ci95": [
+              0.14055517241379306,
+              0.46637716956896547
+            ],
+            "positiveTasks": 19,
+            "negativeTasks": 4,
+            "zeroTasks": 6,
+            "loto": {
+              "min": 0.2833696503125,
+              "max": 0.36069107888392854,
+              "mostInfluentialTask": 22,
+              "signChanges": false
+            }
+          },
+          "gapAS": {
+            "taskCount": 29,
+            "blockCount": 29,
+            "mean": 0.40718189655172415,
+            "median": 0.31499999999999995,
+            "ci95": [
+              0.16266120689655178,
+              0.6536689655172414
+            ],
+            "positiveTasks": 20,
+            "negativeTasks": 5,
+            "zeroTasks": 4,
+            "loto": {
+              "min": 0.35029553571428573,
+              "max": 0.46583125000000003,
+              "mostInfluentialTask": 47,
+              "signChanges": false
+            }
+          }
+        },
+        "correct": {
+          "eligibleTaskIds": [
+            16,
+            18,
+            27,
+            29,
+            30,
+            34,
+            37,
+            41,
+            42,
+            43,
+            52,
+            65
+          ],
+          "valueAttacks": {
+            "taskCount": 12,
+            "blockCount": 12,
+            "mean": 0.32048321759259263,
+            "median": 0.12173611111111107,
+            "ci95": [
+              0.08048611111111112,
+              0.6749016203703704
+            ],
+            "positiveTasks": 9,
+            "negativeTasks": 1,
+            "zeroTasks": 2,
+            "loto": {
+              "min": 0.16779987373737373,
+              "max": 0.3526862373737374,
+              "mostInfluentialTask": 29,
+              "signChanges": false
+            }
+          },
+          "valueSupports": {
+            "taskCount": 12,
+            "blockCount": 12,
+            "mean": -0.014380787037037058,
+            "median": 0.0,
+            "ci95": [
+              -0.10152777777777779,
+              0.08118055555555555
+            ],
+            "positiveTasks": 4,
+            "negativeTasks": 4,
+            "zeroTasks": 4,
+            "loto": {
+              "min": -0.050435606060606084,
+              "max": 0.008099747474747456,
+              "mostInfluentialTask": 30,
+              "signChanges": true
+            }
+          },
+          "gapAS": {
+            "taskCount": 12,
+            "blockCount": 12,
+            "mean": 0.3348640046296296,
+            "median": 0.10562500000000004,
+            "ci95": [
+              0.08825520833333335,
+              0.6868287037037036
+            ],
+            "positiveTasks": 9,
+            "negativeTasks": 1,
+            "zeroTasks": 2,
+            "loto": {
+              "min": 0.18348800505050508,
+              "max": 0.36837436868686874,
+              "mostInfluentialTask": 29,
+              "signChanges": false
+            }
+          }
+        }
+      },
+      "perTask": [
+        {
+          "taskId": 16,
+          "stratum": "correct",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": -0.033749999999999974,
+          "valueSupports": 0.0,
+          "gapAS": -0.033749999999999974
+        },
+        {
+          "taskId": 18,
+          "stratum": "correct",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0,
+          "valueSupports": -0.11625000000000008,
+          "gapAS": 0.11625000000000008
+        },
+        {
+          "taskId": 27,
+          "stratum": "correct",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0037500000000000046,
+          "valueSupports": 0.0037500000000000046,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 29,
+          "stratum": "correct",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 2.0,
+          "valueSupports": 0.0,
+          "gapAS": 2.0
+        },
+        {
+          "taskId": 30,
+          "stratum": "correct",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.3888888888888889,
+          "valueSupports": 0.38222222222222224,
+          "gapAS": 0.00666666666666668
+        },
+        {
+          "taskId": 34,
+          "stratum": "correct",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.1272222222222222,
+          "valueSupports": -0.2616666666666667,
+          "gapAS": 0.3888888888888889
+        },
+        {
+          "taskId": 37,
+          "stratum": "correct",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.11624999999999995,
+          "valueSupports": 0.02124999999999995,
+          "gapAS": 0.095
+        },
+        {
+          "taskId": 41,
+          "stratum": "correct",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.011250000000000013,
+          "valueSupports": -0.245,
+          "gapAS": 0.25625
+        },
+        {
+          "taskId": 42,
+          "stratum": "correct",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.14625000000000002,
+          "valueSupports": 0.13125,
+          "gapAS": 0.015000000000000019
+        },
+        {
+          "taskId": 43,
+          "stratum": "correct",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.59375,
+          "valueSupports": 0.0,
+          "gapAS": 0.59375
+        },
+        {
+          "taskId": 52,
+          "stratum": "correct",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.4921875,
+          "valueSupports": -0.08812500000000012,
+          "gapAS": 0.5803125000000001
+        },
+        {
+          "taskId": 65,
+          "stratum": "correct",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0,
+          "valueSupports": 0.0,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 15,
+          "stratum": "wrong",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.8150000000000001,
+          "valueSupports": 0.0,
+          "gapAS": 0.8150000000000001
+        },
+        {
+          "taskId": 17,
+          "stratum": "wrong",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.9253124999999999,
+          "valueSupports": 0.8953124999999998,
+          "gapAS": 0.029999999999999978
+        },
+        {
+          "taskId": 19,
+          "stratum": "wrong",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.87,
+          "valueSupports": 0.875,
+          "gapAS": -0.0050000000000000044
+        },
+        {
+          "taskId": 20,
+          "stratum": "wrong",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 1.05125,
+          "valueSupports": -0.03375000000000017,
+          "gapAS": 1.0850000000000002
+        },
+        {
+          "taskId": 21,
+          "stratum": "wrong",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.8150000000000001,
+          "valueSupports": 0.8150000000000001,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 22,
+          "stratum": "wrong",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.37124999999999997,
+          "valueSupports": -1.0850000000000002,
+          "gapAS": 1.4562500000000003
+        },
+        {
+          "taskId": 23,
+          "stratum": "wrong",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 1.5762500000000002,
+          "valueSupports": 0.5840625000000002,
+          "gapAS": 0.9921875
+        },
+        {
+          "taskId": 25,
+          "stratum": "wrong",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.4040625,
+          "valueSupports": 0.4040625,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 26,
+          "stratum": "wrong",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 1.2012500000000002,
+          "valueSupports": 0.5015625000000002,
+          "gapAS": 0.6996874999999999
+        },
+        {
+          "taskId": 31,
+          "stratum": "wrong",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.9921875,
+          "valueSupports": 0.549375,
+          "gapAS": 0.4428125
+        },
+        {
+          "taskId": 35,
+          "stratum": "wrong",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.8450000000000002,
+          "valueSupports": -0.006249999999999645,
+          "gapAS": 0.8512499999999998
+        },
+        {
+          "taskId": 36,
+          "stratum": "wrong",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.86,
+          "valueSupports": 0.0,
+          "gapAS": 0.86
+        },
+        {
+          "taskId": 40,
+          "stratum": "wrong",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 2.0,
+          "valueSupports": 0.0,
+          "gapAS": 2.0
+        },
+        {
+          "taskId": 44,
+          "stratum": "wrong",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 1.4887499999999998,
+          "valueSupports": 0.25499999999999967,
+          "gapAS": 1.2337500000000001
+        },
+        {
+          "taskId": 46,
+          "stratum": "wrong",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.45512520874999995,
+          "valueSupports": 0.45512520874999995,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 47,
+          "stratum": "wrong",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": -0.15500000000000025,
+          "valueSupports": 1.0799999999999996,
+          "gapAS": -1.2349999999999999
+        },
+        {
+          "taskId": 48,
+          "stratum": "wrong",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": -0.022812499999999902,
+          "valueSupports": 0.9787499999999999,
+          "gapAS": -1.0015624999999997
+        },
+        {
+          "taskId": 49,
+          "stratum": "wrong",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.4921875,
+          "valueSupports": 0.0,
+          "gapAS": 0.4921875
+        },
+        {
+          "taskId": 50,
+          "stratum": "wrong",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.6800000000000002,
+          "valueSupports": 0.6000000000000002,
+          "gapAS": 0.08000000000000003
+        },
+        {
+          "taskId": 51,
+          "stratum": "wrong",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.4262499999999999,
+          "valueSupports": 0.11593749999999992,
+          "gapAS": 0.3103125
+        },
+        {
+          "taskId": 55,
+          "stratum": "wrong",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.5234375,
+          "valueSupports": 0.21875,
+          "gapAS": 0.3046875
+        },
+        {
+          "taskId": 56,
+          "stratum": "wrong",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.7228125000000003,
+          "valueSupports": -0.1784374999999998,
+          "gapAS": 0.9012500000000001
+        },
+        {
+          "taskId": 57,
+          "stratum": "wrong",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0,
+          "valueSupports": 0.029849999999999932,
+          "gapAS": -0.029849999999999932
+        },
+        {
+          "taskId": 58,
+          "stratum": "wrong",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.8703125,
+          "valueSupports": 0.6425000000000001,
+          "gapAS": 0.22781249999999997
+        },
+        {
+          "taskId": 59,
+          "stratum": "wrong",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 1.125,
+          "valueSupports": 0.0,
+          "gapAS": 1.125
+        },
+        {
+          "taskId": 60,
+          "stratum": "wrong",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": -0.0462499999999999,
+          "valueSupports": 0.4275,
+          "gapAS": -0.4737499999999999
+        },
+        {
+          "taskId": 62,
+          "stratum": "wrong",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.41624999999999995,
+          "valueSupports": 0.08500000000000002,
+          "gapAS": 0.33124999999999993
+        },
+        {
+          "taskId": 63,
+          "stratum": "wrong",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 0.0,
+          "valueSupports": 0.0,
+          "gapAS": 0.0
+        },
+        {
+          "taskId": 64,
+          "stratum": "wrong",
+          "seeds": [
+            2
+          ],
+          "blockCount": 1,
+          "valueAttacks": 1.12,
+          "valueSupports": 0.8050000000000002,
+          "gapAS": 0.31499999999999995
+        }
+      ]
+    }
+  },
+  "l1Decision": {
+    "verdict": "GO_L1",
+    "reasons": [
+      "all frozen L1 conditions satisfied"
+    ]
+  },
+  "limitations": [
+    "This is a post-hoc complete-block bundle analysis, not message-level trajectory value.",
+    "supports/attacks are model-self-labeled relations without a target option.",
+    "Round-1 correctness is an offline evaluator stratum and has no online detector authority.",
+    "No cross-model grand pool is computed.",
+    "A task may appear in both descriptive DeepSeek strata when seeds realize different Round-1 top choices; no formal between-stratum contrast is made."
+  ]
+}

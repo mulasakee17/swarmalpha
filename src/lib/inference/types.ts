@@ -1,4 +1,4 @@
-import type { AgentOpinion, InteractionGraph, InteractionEdge, InfluenceType } from "../discussion/types";
+import type { AgentOpinion, InteractionGraph, InteractionEdge, InfluenceType } from "../../../legacy/src/lib/discussion/types";
 import type { CollectiveDecisionState } from "../discussion-types/types";
 
 export interface StateDelta {

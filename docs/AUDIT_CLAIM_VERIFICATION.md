@@ -111,7 +111,7 @@
 
 ### P1.7 AutoGen 模拟器 — PARTIAL（审计 OVERSTATED）
 
-模拟器**属实**：`autogen.ts:45/53` 随机 belief/confidence、L25-27 echo-only `sendMessage`、L76 硬编码 "positive"。但：(1) opt-in，无实验/默认路径选择它（全实验用 `CustomAgent` + LLM provider）；(2) `AutoGenAgent` 未导出、`runInteraction` 单 adapter 建全 agent → 同 run 内不可与真 LLM 混用，"混合污染"需整体替换才会发生。另注 `src/runtime/adapters/AutoGenAdapter.ts` 是真 HTTP sidecar 集成，审计"AutoGen 不是集成"仅对该 lib 文件成立。
+模拟器**属实**：`autogen.ts:45/53` 随机 belief/confidence、L25-27 echo-only `sendMessage`、L76 硬编码 "positive"。但：(1) opt-in，无实验/默认路径选择它（全实验用 `CustomAgent` + LLM provider）；(2) `AutoGenAgent` 未导出、`runInteraction` 单 adapter 建全 agent → 同 run 内不可与真 LLM 混用，"混合污染"需整体替换才会发生。另注 `legacy/src/runtime/adapters/AutoGenAdapter.ts` 是真 HTTP sidecar 集成，审计"AutoGen 不是集成"仅对该 lib 文件成立。
 
 ---
 
@@ -236,10 +236,10 @@
 
 | Claim | 判定 | 证据 | 处理 |
 |---|---|---|---|
-| P0a 收敛绕过治理 | **CONFIRMED** | `src/lib/discussion/index.ts:307` `if (this.checkConvergence(opinions)) break;` 位于 belief 更新/`applyGovernance` 之前 → 收敛轮不经过治理与审计 | 延后（生命周期重构） |
+| P0a 收敛绕过治理 | **CONFIRMED** | `legacy/src/lib/discussion/index.ts:307` `if (this.checkConvergence(opinions)) break;` 位于 belief 更新/`applyGovernance` 之前 → 收敛轮不经过治理与审计 | 延后（生命周期重构） |
 | P0b 终止丢弃最后一轮 | **CONFIRMED** | `index.ts:350` `if (this.shouldTerminateEarly(round)) break;` 位于 `roundDataArray.push`（:357-364）之前 → 热力学终止轮不入审计 trace | 延后（生命周期重构） |
 | P0c 位置回退制造准确率 | **误报（复核更正）** | 回退逻辑确在旧版存在（`0f17e85` 已移除，现 fail-closed）；但 `measure_pos_fallback.ts` 量化判定的 24 个"污染 run"为**误报**——脚本用缺终轮的 `roundOpinions` 重算，而 `finalRanking` 实来自真实终轮（`result.roundResults`）。详见 §9.2b | 撤销重标计划，E12 数据维持有效 |
-| P0d 低 F 单独触发结晶 | **CONFIRMED** | `src/lib/thermodynamics/TerminationDecider.ts:268` `if (F < this.thresholds.strongCrystallF)` 单独即可触发 strong_crystallized（:265-274），未要求 R 高 ∧ H 低 ∧ T 低同时成立 | 延后（需消融） |
+| P0d 低 F 单独触发结晶 | **CONFIRMED** | `legacy/src/lib/thermodynamics/TerminationDecider.ts:268` `if (F < this.thresholds.strongCrystallF)` 单独即可触发 strong_crystallized（:265-274），未要求 R 高 ∧ H 低 ∧ T 低同时成立 | 延后（需消融） |
 | P1a seed 不在协议 | **CONFIRMED（低严重度）** | `experiments/campaign/pipeline/Runner.ts:309-314` llmConfig 无 seed 字段 → 参考协议 LLM 调用未锁种子 | 延后 |
 | P1b "官方协议"表述过强 | **CONFIRMED + 已修复** | 7 处改为"参考协议/第三方 reference implementation（非论文作者官方仓库），协议细节以 arXiv:2505.11556 为准" | **已修复** |
 | P1c 运行后归一化 | **CONFIRMED** | `Runner.ts:500-533` 归一化在 `engine.run()` **之后**执行 → 在线 δ/热力学测量不受影响，无法事后修正 | 延后（需在线归一化） |
@@ -312,7 +312,7 @@
 
 ### 9.5 延后清单（按"先放一放"约束 + 项目健康度优先级）
 
-1. **P0a/P0b（生命周期重构）✅ 已完成**：主循环统一收尾——单点 `finalizeRound`（`src/lib/discussion/index.ts`），保证收敛/终止轮也写入 `roundDataArray` + `round_end` + 治理（治理在终止判定之前、push 在 break 之前）；补收敛轮轮数一致性测试（`test/discussion.test.ts`）。**注意：此修复使未来 run 的 roundOpinions 包含终轮，与历史数据（缺终轮）口径不同，跨版本合并需标注**；
+1. **P0a/P0b（生命周期重构）✅ 已完成**：主循环统一收尾——单点 `finalizeRound`（`legacy/src/lib/discussion/index.ts`），保证收敛/终止轮也写入 `roundDataArray` + `round_end` + 治理（治理在终止判定之前、push 在 break 之前）；补收敛轮轮数一致性测试（`test/discussion.test.ts`）。**注意：此修复使未来 run 的 roundOpinions 包含终轮，与历史数据（缺终轮）口径不同，跨版本合并需标注**；
 2. **P0c（数据缺陷）✅ 已闭环**：代码层位置回退已在 `0f17e85` 移除（现 fail-closed invalid 标记 + 抛错）；"24 runs 重标"判定经 2026-08-07 复核为**误报**，撤销重标计划（见 §9.2b）。遗留关注点：历史 run 缺终轮轨迹 + LLM 部分轮次占位符输出（写入论文 LIMITATIONS）。
 3. **P0d（终止条件）**：F 不单独触发；要求 R 高 ∧ H 低 ∧ T 低同时成立；补消融；
 4. **P1a**：协议调用补 seed 透传（锁种子）;
@@ -334,6 +334,6 @@
 | paper/TECHNICAL_APPENDIX.md :328 | semantic 行 n=3→3（有效 2）⚠️；80.0% 与 idrEndMean=0.6375 矛盾说明 |
 | paper/PAPER_DRAFT.md :195 | n=3→3（有效 2）⚠️；mean τ=0.381 含退化 run2，有效 n=2 时 τ=0.571 |
 | paper/PAPER_PROFESSOR_VERSION.md :453 | 同上（中文标注） |
-| paper/LIMITATIONS.md §25.4 | "C 组从未实际运行"→已运行 run0/1（有效）但结论级验证未跑；Bug 已被 fix#3/#4 坐实；缓解方案改为重跑 n≥10 |
+| archive/paper/LIMITATIONS.md §25.4 | "C 组从未实际运行"→已运行 run0/1（有效）但结论级验证未跑；Bug 已被 fix#3/#4 坐实；缓解方案改为重跑 n≥10 |
 
 > ⚠️ 本轮 8 个修复（08-06）+ 8 个文档修正均**只写文档/改类型与逻辑**，未改动任何实验输出 JSON 数据文件。

@@ -1,0 +1,97 @@
+{
+  "schema": "swarmalpha.audit.cross-model-protocol-diff.v1",
+  "generatedFrom": [
+    "experiments/campaign/v6/v6_fork_confirmatory_v3.plan.json",
+    "experiments/campaign/pilot_output/v6-fork-confirmatory-v3-20260816/manifest.json",
+    "experiments/campaign/pilot_output/v6-fork-glm46v-twoarm-v4-20260820/plan.json",
+    "experiments/campaign/pilot_output/v6-fork-glm46v-twoarm-v4-20260820/execution.json",
+    "experiments/campaign/pilot_output/v6-fork-glm46v-twoarm-seed1-v3-20260821/plan.json",
+    "experiments/campaign/pilot_output/v6-fork-glm46v-twoarm-seed1-v3-20260821/execution.json",
+    "experiments/campaign/v6/run_v6_fork.ts",
+    "experiments/campaign/v6/deepseekSingleAttemptInvoker.ts",
+    "experiments/campaign/v6/zhipuSingleAttemptInvoker.ts"
+  ],
+  "comparison": {
+    "clientModelLabel": {
+      "deepseek": "deepseek:deepseek-chat",
+      "glmSeed0": "zhipu:glm-4.6v",
+      "glmSeed1": "zhipu:glm-4.6v",
+      "equivalent": false
+    },
+    "serverModelProvenance": {
+      "deepseek": "not recorded in the historical manifest/rows",
+      "glmSeed0": "0/808 finished attempts record providerModel or providerRequestId",
+      "glmSeed1": "803/803 providerModel=glm-4.6v; 803/803 unique providerRequestId",
+      "equivalent": false
+    },
+    "population": {
+      "deepseek": "45 tasks including task 14",
+      "glmSeed0": "44 tasks; task 14 excluded after prior GLM observation",
+      "glmSeed1": "same 44 tasks",
+      "equivalent": false
+    },
+    "arms": {
+      "deepseek": ["CONTROL", "SUPPORTS", "ATTACKS"],
+      "glmSeed0": ["CONTROL", "ATTACKS"],
+      "glmSeed1": ["CONTROL", "ATTACKS"],
+      "equivalent": false,
+      "note": "Only ATTACKS-minus-CONTROL is common to these completed batches."
+    },
+    "roundsAndForkConstruction": {
+      "deepseek": "shared runFork path: one R1 then sequential arms with frozen per-round transcript",
+      "glmSeed0": "same runFork path",
+      "glmSeed1": "same runFork path",
+      "equivalent": true
+    },
+    "temperature": {
+      "deepseek": 0,
+      "glmSeed0": 0,
+      "glmSeed1": 0,
+      "equivalent": true
+    },
+    "providerSeedDerivation": {
+      "deepseek": "taskId*7919 + experimentalSeed*104729 modulo 2^32",
+      "glmSeed0": "same",
+      "glmSeed1": "same",
+      "equivalent": true,
+      "providerHonor": "not independently guaranteed"
+    },
+    "generationCaps": {
+      "deepseek": "final maxTokens=256; discussion cap comes from historical fixture and is not committed in the result manifest",
+      "glmSeed0": "discussion=768, final=256, thinking=disabled",
+      "glmSeed1": "discussion=768, final=256, thinking=disabled",
+      "equivalent": false
+    },
+    "responseNormalization": {
+      "deepseek": "no adapter code-fence stripping",
+      "glmSeed0": "stripCodeFence applied before every discussion and final parse/hash",
+      "glmSeed1": "stripCodeFence applied before every discussion and final parse/hash",
+      "equivalent": false
+    },
+    "beliefParser": {
+      "deepseek": "not recorded in historical execution metadata",
+      "glmSeed0": "swarmalpha.v6.belief-json-parser@1.0.0",
+      "glmSeed1": "swarmalpha.v6.belief-json-parser@2.0.0 (lineageId:null normalized to absent)",
+      "equivalent": false
+    },
+    "completionAndMissingness": {
+      "deepseek": "lenient rows: valid final reports pooled; null arm possible",
+      "glmSeed0": "v4-strict: any missing/invalid R1, R2, or final report fails entire task; no run file",
+      "glmSeed1": "same v4-strict rule",
+      "equivalent": false
+    },
+    "poolingAndScoring": {
+      "deepseek": "mean valid final probability vectors; multiclass Brier sum",
+      "glmSeed0": "same mathematical pooling/scoring implementation",
+      "glmSeed1": "same mathematical pooling/scoring implementation",
+      "equivalent": true
+    },
+    "rawReconstructability": {
+      "deepseek": "no raw final responses, outbound prompt bytes, call records, execution identity, or forkInputHash in historical rows",
+      "glmSeed0": "post-normalization raw final responses and call hashes present; outbound prompts and raw HTTP bytes absent",
+      "glmSeed1": "same, plus server model/request IDs in ledger",
+      "equivalent": false
+    }
+  },
+  "auditConclusion": "The common ATTACKS-minus-CONTROL result is a cross-model-plus-adapter/parser/completion-policy replication, not a pure one-variable model swap."
+}

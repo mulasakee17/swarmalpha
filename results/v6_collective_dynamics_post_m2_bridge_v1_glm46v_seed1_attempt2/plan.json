@@ -1,0 +1,69 @@
+{
+  "planRef": {
+    "id": "swarmalpha.experiment.v6.collective-dynamics-post-m2-bridge",
+    "version": "1.0.0"
+  },
+  "sourceTaskIds": [
+    36,
+    43,
+    50,
+    57,
+    64
+  ],
+  "sourceTaskSelection": "remaining_five_of_preexisting_truth_free_systematic_dev10_order",
+  "sourceAgentCounts": [
+    4,
+    4,
+    3,
+    4,
+    4
+  ],
+  "registeredAgentCount": 19,
+  "seed": 1,
+  "modelRef": {
+    "id": "zhipu:glm-4.6v",
+    "version": "1.0.0"
+  },
+  "publicRounds": [
+    1,
+    2,
+    3
+  ],
+  "checkpoints": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "interaction": "synchronous_previous_round_only",
+  "publicResponseContract": "plain_text",
+  "publicInvocation": {
+    "temperature": 0,
+    "seed": 1,
+    "maxTokens": 768,
+    "thinking": "disabled",
+    "attemptsPerCell": 1,
+    "retry": "none"
+  },
+  "sensorRepeats": [
+    "A",
+    "B"
+  ],
+  "sensorEstimator": "equal_weight_mean_of_two_exact_canonical_repeats",
+  "sensorInvocation": {
+    "temperature": 0,
+    "seed": 1,
+    "maxTokens": 256,
+    "thinking": "disabled",
+    "attemptsPerCell": 1,
+    "retry": "none"
+  },
+  "sensorTiming": "after_complete_public_trajectory_freeze",
+  "publicCallCount": 57,
+  "sensorCallCount": 152,
+  "totalProviderCallCount": 209,
+  "runIdPrefix": "collective-dynamics-m2-bridge",
+  "truthAccess": "offline_analyzer_only",
+  "status": "proposed_no_provider_calls_executed",
+  "contentHash": "sha256:012fbe8b9974250820100bbaefcd04c9cf4603ea976404aa5aa5a4fa87c5413c"
+}

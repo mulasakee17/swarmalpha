@@ -1,0 +1,118 @@
+{
+  "protocolRef": {
+    "id": "swarmalpha.experiment.v6.controlled-wrong-state-formation",
+    "version": "1.0.0"
+  },
+  "planRef": {
+    "id": "swarmalpha.experiment.v6.controlled-wrong-state-formation.plan",
+    "version": "1.0.0"
+  },
+  "taskBankHash": "sha256:4ca471081ccfd325449a69ef6b0cb059bbdca25f0c060f29c5560c33fb6a07ad",
+  "variantTaskIds": [
+    "task:controlled:industrial-cooling:v1",
+    "task:controlled:industrial-cooling:v1:mirror",
+    "task:controlled:network-incident:v1",
+    "task:controlled:network-incident:v1:mirror",
+    "task:controlled:watershed-source:v1",
+    "task:controlled:watershed-source:v1:mirror",
+    "task:controlled:shipment-delay:v1",
+    "task:controlled:shipment-delay:v1:mirror"
+  ],
+  "clusterIds": [
+    "cluster:controlled:industrial-cooling",
+    "cluster:controlled:network-incident",
+    "cluster:controlled:watershed-source",
+    "cluster:controlled:shipment-delay"
+  ],
+  "agentIds": [
+    "agent_1",
+    "agent_2",
+    "agent_3",
+    "agent_4"
+  ],
+  "initialRound": 0,
+  "formationRounds": [
+    1,
+    2
+  ],
+  "arms": [
+    "ISOLATED",
+    "PEER"
+  ],
+  "armOrderPolicy": "within_cluster_base_mirror_counterbalanced_v1",
+  "armOrderByVariant": [
+    {
+      "taskId": "task:controlled:industrial-cooling:v1",
+      "order": [
+        "ISOLATED",
+        "PEER"
+      ]
+    },
+    {
+      "taskId": "task:controlled:industrial-cooling:v1:mirror",
+      "order": [
+        "PEER",
+        "ISOLATED"
+      ]
+    },
+    {
+      "taskId": "task:controlled:network-incident:v1",
+      "order": [
+        "ISOLATED",
+        "PEER"
+      ]
+    },
+    {
+      "taskId": "task:controlled:network-incident:v1:mirror",
+      "order": [
+        "PEER",
+        "ISOLATED"
+      ]
+    },
+    {
+      "taskId": "task:controlled:watershed-source:v1",
+      "order": [
+        "ISOLATED",
+        "PEER"
+      ]
+    },
+    {
+      "taskId": "task:controlled:watershed-source:v1:mirror",
+      "order": [
+        "PEER",
+        "ISOLATED"
+      ]
+    },
+    {
+      "taskId": "task:controlled:shipment-delay:v1",
+      "order": [
+        "ISOLATED",
+        "PEER"
+      ]
+    },
+    {
+      "taskId": "task:controlled:shipment-delay:v1:mirror",
+      "order": [
+        "PEER",
+        "ISOLATED"
+      ]
+    }
+  ],
+  "responseContract": "controlled_choice_json_v1",
+  "modelRef": {
+    "id": "zhipu:glm-4.6v",
+    "version": "1.0.0"
+  },
+  "invocation": {
+    "temperature": 0,
+    "seed": 1,
+    "maxTokens": 512,
+    "thinking": "disabled",
+    "attemptsPerCell": 1,
+    "retry": "none"
+  },
+  "interaction": "synchronous_previous_round_only",
+  "plannedProviderCalls": 160,
+  "truthAccess": "none",
+  "contentHash": "sha256:b1ef10c6d610c69b79d1d6c74c617b7037b6ce621bf94d2d27dbc41f72270645"
+}

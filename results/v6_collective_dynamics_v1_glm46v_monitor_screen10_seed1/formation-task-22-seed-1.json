@@ -1,0 +1,1474 @@
+{
+  "artifactRef": {
+    "id": "swarmalpha.experiment.v6.collective-epistemic-dynamics.formation",
+    "version": "1.0.0"
+  },
+  "planHash": "sha256:c5b6e20b332cdf9a6d0b40964deb0249da63407111b9e415f7cee388eab449e9",
+  "runId": "collective-dynamics:22:seed-1",
+  "seed": 1,
+  "modelRef": {
+    "id": "zhipu:glm-4.6v",
+    "version": "1.0.0"
+  },
+  "onlineTask": {
+    "sourceTaskId": 22,
+    "taskId": "task:hiddenbench:22",
+    "publicContext": "You and three other participants are scientists at an Antarctic research station. A massive, fast-moving storm is approaching. You must rapidly decide, as a group, which facility to seek shelter in for the next 48 hours. You have snow vehicles and limited time to reach only one location before the blizzard begins. Your three choices:\n- Main Base: The largest facility, but farther away.\n- Retreat Camp: A small, nearby camp rated for storms.\n- Rescue Outpost: Smaller, medium distance, typically used for emergencies.\nWhichever location you pick, you'll be unable to contact others until the storm passes. Supplies, infrastructure, and route safety may differ. Only one option will keep you safe and supplied until rescue teams arrive.\n\nShared information:\n1. A radio update confirms Retreat Camp is the closest shelter and is built to withstand severe weather.\n2. Supply records say that Retreat Camp offers food, water, and sleeping bags for four people.\n3. The snow vehicle has just enough fuel to reach any of the three locations before the storm hits, but not to try multiple.\n4. The Rescue Outpost's exterior was recently checked and found structurally sound.",
+    "claim": {
+      "id": "claim:hiddenbench:22:answer",
+      "proposition": "Select the single correct answer for HiddenBench task 22 (Antarctic Storm Safe Haven).",
+      "domain": "hiddenbench-categorical-decision",
+      "createdAt": "2026-08-11T00:00:00.000Z",
+      "options": [
+        "Main Base",
+        "Retreat Camp",
+        "Rescue Outpost"
+      ],
+      "resolutionPolicy": {
+        "kind": "categorical",
+        "resolverId": "resolver:hiddenbench-data-3be6ca16"
+      }
+    },
+    "agents": [
+      {
+        "agentId": "agent:hiddenbench:22:1",
+        "privateInformation": "The most recent supply delivery to Retreat Camp was delayed, so the promised food and water may not be there."
+      },
+      {
+        "agentId": "agent:hiddenbench:22:2",
+        "privateInformation": "Main Base appears to have uninterrupted generator power, working communications, and fully stocked rations according to a direct radio call just before the storm warning."
+      },
+      {
+        "agentId": "agent:hiddenbench:22:3",
+        "privateInformation": "The snow route to Rescue Outpost is fully snowed in since the last storm; the path isn't navigable even with the vehicle."
+      },
+      {
+        "agentId": "agent:hiddenbench:22:4",
+        "privateInformation": "Satellite imagery from this morning shows the ice bridge leading to Retreat Camp has collapsed, making it dangerous to reach by foot or vehicle."
+      }
+    ]
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "messages": [
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:22:1",
+          "content": "Based on the information, Retreat Camp is the closest and rated for storms, but its supplies are uncertain due to a delayed delivery. Rescue Outpost is structurally sound and medium distance, while Main Base is farther. Given the storm's speed and the need for immediate shelter, Retreat Camp remains the most logical choice despite supply concerns, as it is the closest and designed for severe weather.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:22:2",
+          "content": "Based on the information, Retreat Camp is the most logical choice. It is the closest shelter, specifically rated for severe weather, and has confirmed supplies for four people. While Main Base has power and communications, its greater distance makes it riskier to reach before the storm. Rescue Outpost is structurally sound but lacks specific supply details and is farther than Retreat Camp.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:22:3",
+          "content": "Based on the information, Retreat Camp is the safest and most reliable option. It is the closest shelter, built to withstand severe weather, and has sufficient supplies for four people. The route to Rescue Outpost is impassable, and while Main Base is an option, Retreat Camp's proximity and storm rating make it the superior choice.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:22:4",
+          "content": "Based on the satellite imagery showing the collapsed ice bridge to Retreat Camp, it is now inaccessible. The Rescue Outpost is the safest remaining option, as it is structurally sound and reachable with the available fuel.",
+          "source": "agent"
+        }
+      ],
+      "reports": [
+        {
+          "id": "belief:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:1",
+          "claimId": "claim:hiddenbench:22:answer",
+          "agentId": "agent:hiddenbench:22:1",
+          "round": 1,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Main Base": 0.1,
+              "Retreat Camp": 0.7,
+              "Rescue Outpost": 0.2
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:1:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:1:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:1:3",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:1:4",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:1:5",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:01:01.000Z"
+        },
+        {
+          "id": "belief:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:2",
+          "claimId": "claim:hiddenbench:22:answer",
+          "agentId": "agent:hiddenbench:22:2",
+          "round": 1,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Main Base": 0.1,
+              "Retreat Camp": 0.8,
+              "Rescue Outpost": 0.1
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:2:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:2:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:2:3",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:2:4",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:01:02.000Z"
+        },
+        {
+          "id": "belief:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:3",
+          "claimId": "claim:hiddenbench:22:answer",
+          "agentId": "agent:hiddenbench:22:3",
+          "round": 1,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Main Base": 0,
+              "Retreat Camp": 1,
+              "Rescue Outpost": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:3:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:3:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:3:3",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:01:03.000Z"
+        },
+        {
+          "id": "belief:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:4",
+          "claimId": "claim:hiddenbench:22:answer",
+          "agentId": "agent:hiddenbench:22:4",
+          "round": 1,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Main Base": 0.1,
+              "Retreat Camp": 0,
+              "Rescue Outpost": 0.9
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:4:1",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:4:2",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:01:04.000Z"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:1:1",
+          "content": "Retreat Camp is the closest shelter and built to withstand severe weather.",
+          "createdAt": "2026-08-24T00:01:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:1",
+            "contentHash": "sha256:fec7dbf76873a369affd83effe42273f8f7161404afbd1ef526a89069d148d71"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:1:2",
+          "content": "Supply records say Retreat Camp offers food, water, and sleeping bags for four people.",
+          "createdAt": "2026-08-24T00:01:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:1",
+            "contentHash": "sha256:6cb4fdc4d7e8552784d1129ef50740895625636e7dc47fd48294501b01cf191f"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:1:3",
+          "content": "The most recent supply delivery to Retreat Camp was delayed, so the promised food and water may not be there.",
+          "createdAt": "2026-08-24T00:01:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:1",
+            "contentHash": "sha256:46b516ecfa8930fa0736c04cc57822dac182eb9c29830ce688f971859071660a"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:1:4",
+          "content": "The snow vehicle has just enough fuel to reach any of the three locations before the storm hits, but not to try multiple.",
+          "createdAt": "2026-08-24T00:01:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:1",
+            "contentHash": "sha256:61d2eadc2d5926985060f9c00eb6abd3defe4dba3468d0a1ecfe1299db5ac183"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:1:5",
+          "content": "The Rescue Outpost's exterior was recently checked and found structurally sound.",
+          "createdAt": "2026-08-24T00:01:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:1",
+            "contentHash": "sha256:e97e41bb32ff6f3ad9dc9f6f320aa55a731b8bb8a5ca6c709437cf238d1d5369"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:2:1",
+          "content": "A radio update confirms Retreat Camp is the closest shelter and is built to withstand severe weather.",
+          "createdAt": "2026-08-24T00:01:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:2",
+            "contentHash": "sha256:1ec4a0b7348b5c6ddd7f2baa7c58a3a439d9f841dcc384b3ce4a33384c53641d"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:2:2",
+          "content": "Supply records say that Retreat Camp offers food, water, and sleeping bags for four people.",
+          "createdAt": "2026-08-24T00:01:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:2",
+            "contentHash": "sha256:d213dd475a8ea8e935afec0c84909250fea29f0385c655e6672984178f804f20"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:2:3",
+          "content": "The snow vehicle has just enough fuel to reach any of the three locations before the storm hits, but not to try multiple.",
+          "createdAt": "2026-08-24T00:01:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:2",
+            "contentHash": "sha256:61d2eadc2d5926985060f9c00eb6abd3defe4dba3468d0a1ecfe1299db5ac183"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:2:4",
+          "content": "Main Base appears to have uninterrupted generator power, working communications, and fully stocked rations according to a direct radio call just before the storm warning.",
+          "createdAt": "2026-08-24T00:01:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:2",
+            "contentHash": "sha256:f41e0677935d9198aab3f9965b2b159d3e27c2c642e84872fedf9e69abfc8299"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:3:1",
+          "content": "A radio update confirms Retreat Camp is the closest shelter and is built to withstand severe weather.",
+          "createdAt": "2026-08-24T00:01:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:3",
+            "contentHash": "sha256:1ec4a0b7348b5c6ddd7f2baa7c58a3a439d9f841dcc384b3ce4a33384c53641d"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:3:2",
+          "content": "Supply records say that Retreat Camp offers food, water, and sleeping bags for four people.",
+          "createdAt": "2026-08-24T00:01:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:3",
+            "contentHash": "sha256:d213dd475a8ea8e935afec0c84909250fea29f0385c655e6672984178f804f20"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:3:3",
+          "content": "The snow route to Rescue Outpost is fully snowed in since the last storm; the path isn't navigable even with the vehicle.",
+          "createdAt": "2026-08-24T00:01:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:3",
+            "contentHash": "sha256:0ed139c641b6146bd8028aff015be853f06bd43da38c28a26398f7b6d9224753"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:4:1",
+          "content": "Satellite imagery from this morning shows the ice bridge leading to Retreat Camp has collapsed, making it dangerous to reach by foot or vehicle.",
+          "createdAt": "2026-08-24T00:01:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:4",
+            "contentHash": "sha256:cca27736bc5f2abbb7c79c1dd923e105693c230e67d662f636435198ec44326f"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:4:2",
+          "content": "The Rescue Outpost's exterior was recently checked and found structurally sound.",
+          "createdAt": "2026-08-24T00:01:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:4",
+            "contentHash": "sha256:e97e41bb32ff6f3ad9dc9f6f320aa55a731b8bb8a5ca6c709437cf238d1d5369"
+          }
+        }
+      ],
+      "state": {
+        "activeAgentIds": [
+          "agent:hiddenbench:22:1",
+          "agent:hiddenbench:22:2",
+          "agent:hiddenbench:22:3",
+          "agent:hiddenbench:22:4"
+        ],
+        "artifactSchemaRef": {
+          "id": "swarmalpha.collective-epistemic-state",
+          "version": "1.0.0"
+        },
+        "asOfRound": 1,
+        "beliefKind": "categorical",
+        "betweenAgentDisagreement": 0.3711325685996739,
+        "claimId": "claim:hiddenbench:22:answer",
+        "claimOptionCount": 3,
+        "contentHash": "sha256:7199cb470d6da849776ec1163fee818244b80056c4e7e9cfa10081bdf93f44ab",
+        "declaredLineageDiversity": {
+          "completeness": "missing",
+          "distinctDeclaredLineageCount": 0,
+          "effectiveLineageCount": null,
+          "missingLineageReportIds": [
+            "belief:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:1",
+            "belief:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:2",
+            "belief:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:3",
+            "belief:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:4"
+          ],
+          "normalizedLineageEntropy": null,
+          "reportsMissingDeclaredLineage": 4,
+          "reportsWithDeclaredLineage": 0
+        },
+        "expectedAgentIds": [
+          "agent:hiddenbench:22:1",
+          "agent:hiddenbench:22:2",
+          "agent:hiddenbench:22:3",
+          "agent:hiddenbench:22:4"
+        ],
+        "exposureConditionedRevision": {
+          "meanBeliefDistance": null,
+          "revisionCount": 0,
+          "targetAgentCount": 0,
+          "totalBeliefDistance": 0
+        },
+        "inferenceStatus": "descriptive_macrostate_only",
+        "latestReportIds": [
+          "belief:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:1",
+          "belief:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:2",
+          "belief:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:3",
+          "belief:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:4"
+        ],
+        "missingExpectedAgentIds": [],
+        "observedResponseConcentration": {
+          "herfindahlIndex": null,
+          "normalizedHerfindahl": null,
+          "responseMassBySourceAgent": {},
+          "sourceAgentCount": 0,
+          "status": "unavailable",
+          "unavailableReason": "no_exposure_conditioned_response_mass"
+        },
+        "pooledBelief": {
+          "kind": "categorical",
+          "probabilities": {
+            "Main Base": 0.07500000000000001,
+            "Rescue Outpost": 0.30000000000000004,
+            "Retreat Camp": 0.625
+          }
+        },
+        "pooledCertainty": 0.625,
+        "pooledPredictedOutcomes": [
+          "Retreat Camp"
+        ],
+        "pooledUncertainty": 0.7729880283920162,
+        "populationBasis": "declared_roster",
+        "sourceFingerprints": {
+          "claim": "sha256:cc731af7693c398a6f885cd8ea6f198ebea113a11bbd394464ebbac90c505a85",
+          "evidence": "sha256:d5bf8ed1c1e1a4f442a9f978a06985277eb646b43d37efd33561248bab3db73f",
+          "exposures": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "reports": "sha256:1f05a8a773716523d147e066d59cb879d9191fc64dfe47f83ebd5dbcb36ae07a"
+        },
+        "withinAgentUncertainty": 0.4018554597923423
+      },
+      "updateActivityFromPrior": null
+    },
+    {
+      "round": 2,
+      "messages": [
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:22:1",
+          "content": "The satellite imagery reveals a collapsed ice bridge to Retreat Camp, making it inaccessible. Rescue Outpost is structurally sound and reachable with the available fuel, while Main Base is farther away. Given the storm's speed and the need for immediate shelter, Rescue Outpost is the safest remaining option.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:22:2",
+          "content": "The satellite imagery reveals a collapsed ice bridge to Retreat Camp, making it inaccessible. Rescue Outpost is structurally sound and reachable with the available fuel, while Main Base is farther away. Given the storm's speed and the need for immediate shelter, Rescue Outpost is the safest remaining option.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:22:3",
+          "content": "The Retreat Camp is the safest and most reliable option. It is the closest shelter, built to withstand severe weather, and has sufficient supplies for four people. The route to Rescue Outpost is impassable, and while Main Base is an option, Retreat Camp's proximity and storm rating make it the superior choice.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:22:4",
+          "content": "The satellite imagery reveals the ice bridge to Retreat Camp has collapsed, making it inaccessible. Rescue Outpost is structurally sound and reachable with the available fuel, while Main Base is farther away. Given the storm's urgency and the need for immediate shelter, Rescue Outpost is the safest remaining option.",
+          "source": "agent"
+        }
+      ],
+      "reports": [
+        {
+          "id": "belief:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:1",
+          "claimId": "claim:hiddenbench:22:answer",
+          "agentId": "agent:hiddenbench:22:1",
+          "round": 2,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Main Base": 0.1,
+              "Retreat Camp": 0,
+              "Rescue Outpost": 0.9
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:1:1",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:1:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:1:3",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:02:01.000Z",
+          "supersedesReportId": "belief:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:1"
+        },
+        {
+          "id": "belief:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:2",
+          "claimId": "claim:hiddenbench:22:answer",
+          "agentId": "agent:hiddenbench:22:2",
+          "round": 2,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Main Base": 0.1,
+              "Retreat Camp": 0,
+              "Rescue Outpost": 0.9
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:2:1",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:2:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:2:3",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:02:02.000Z",
+          "supersedesReportId": "belief:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:2"
+        },
+        {
+          "id": "belief:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:3",
+          "claimId": "claim:hiddenbench:22:answer",
+          "agentId": "agent:hiddenbench:22:3",
+          "round": 2,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Main Base": 0,
+              "Retreat Camp": 1,
+              "Rescue Outpost": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:3:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:3:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:3:3",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:02:03.000Z",
+          "supersedesReportId": "belief:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:3"
+        },
+        {
+          "id": "belief:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:4",
+          "claimId": "claim:hiddenbench:22:answer",
+          "agentId": "agent:hiddenbench:22:4",
+          "round": 2,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Main Base": 0.1,
+              "Retreat Camp": 0,
+              "Rescue Outpost": 0.9
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:4:1",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:4:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:4:3",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:02:04.000Z",
+          "supersedesReportId": "belief:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:4"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:1:1",
+          "content": "Satellite imagery shows a collapsed ice bridge to Retreat Camp, making it inaccessible.",
+          "createdAt": "2026-08-24T00:02:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:1",
+            "contentHash": "sha256:7da86c321b812fdf7f58967683ffe3b0322c66bef2d292190879ba3ba831d041"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:1:2",
+          "content": "Rescue Outpost's exterior was recently checked and found structurally sound.",
+          "createdAt": "2026-08-24T00:02:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:1",
+            "contentHash": "sha256:a71aa63c798bc328bded4de8a7c14923049a653b76f9ded0f672810e253b6be5"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:1:3",
+          "content": "The snow vehicle has just enough fuel to reach any of the three locations before the storm hits, but not to try multiple.",
+          "createdAt": "2026-08-24T00:02:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:1",
+            "contentHash": "sha256:61d2eadc2d5926985060f9c00eb6abd3defe4dba3468d0a1ecfe1299db5ac183"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:2:1",
+          "content": "Satellite imagery shows the collapsed ice bridge to Retreat Camp, making it inaccessible.",
+          "createdAt": "2026-08-24T00:02:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:2",
+            "contentHash": "sha256:ac6123ffcfa439f183478ab7b0c36b5bf871f7997e6b7d1cd3eb9a4be735f22a"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:2:2",
+          "content": "Rescue Outpost's exterior was recently checked and found structurally sound.",
+          "createdAt": "2026-08-24T00:02:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:2",
+            "contentHash": "sha256:a71aa63c798bc328bded4de8a7c14923049a653b76f9ded0f672810e253b6be5"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:2:3",
+          "content": "The snow vehicle has just enough fuel to reach any of the three locations before the storm hits, but not to try multiple.",
+          "createdAt": "2026-08-24T00:02:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:2",
+            "contentHash": "sha256:61d2eadc2d5926985060f9c00eb6abd3defe4dba3468d0a1ecfe1299db5ac183"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:3:1",
+          "content": "A radio update confirms Retreat Camp is the closest shelter and is built to withstand severe weather.",
+          "createdAt": "2026-08-24T00:02:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:3",
+            "contentHash": "sha256:1ec4a0b7348b5c6ddd7f2baa7c58a3a439d9f841dcc384b3ce4a33384c53641d"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:3:2",
+          "content": "Supply records say that Retreat Camp offers food, water, and sleeping bags for four people.",
+          "createdAt": "2026-08-24T00:02:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:3",
+            "contentHash": "sha256:d213dd475a8ea8e935afec0c84909250fea29f0385c655e6672984178f804f20"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:3:3",
+          "content": "The snow route to Rescue Outpost is fully snowed in since the last storm; the path isn't navigable even with the vehicle.",
+          "createdAt": "2026-08-24T00:02:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:3",
+            "contentHash": "sha256:0ed139c641b6146bd8028aff015be853f06bd43da38c28a26398f7b6d9224753"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:4:1",
+          "content": "Satellite imagery from this morning shows the ice bridge leading to Retreat Camp has collapsed, making it dangerous to reach by foot or vehicle.",
+          "createdAt": "2026-08-24T00:02:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:4",
+            "contentHash": "sha256:cca27736bc5f2abbb7c79c1dd923e105693c230e67d662f636435198ec44326f"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:4:2",
+          "content": "The Rescue Outpost's exterior was recently checked and found structurally sound.",
+          "createdAt": "2026-08-24T00:02:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:4",
+            "contentHash": "sha256:e97e41bb32ff6f3ad9dc9f6f320aa55a731b8bb8a5ca6c709437cf238d1d5369"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:4:3",
+          "content": "The snow vehicle has just enough fuel to reach any of the three locations before the storm hits, but not to try multiple.",
+          "createdAt": "2026-08-24T00:02:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:4",
+            "contentHash": "sha256:61d2eadc2d5926985060f9c00eb6abd3defe4dba3468d0a1ecfe1299db5ac183"
+          }
+        }
+      ],
+      "state": {
+        "activeAgentIds": [
+          "agent:hiddenbench:22:1",
+          "agent:hiddenbench:22:2",
+          "agent:hiddenbench:22:3",
+          "agent:hiddenbench:22:4"
+        ],
+        "artifactSchemaRef": {
+          "id": "swarmalpha.collective-epistemic-state",
+          "version": "1.0.0"
+        },
+        "asOfRound": 2,
+        "beliefKind": "categorical",
+        "betweenAgentDisagreement": 0.5118595071429148,
+        "claimId": "claim:hiddenbench:22:answer",
+        "claimOptionCount": 3,
+        "contentHash": "sha256:d766005db9be088a26e899b46969324ec371e15bca94aaa4401b8711fd12eece",
+        "declaredLineageDiversity": {
+          "completeness": "missing",
+          "distinctDeclaredLineageCount": 0,
+          "effectiveLineageCount": null,
+          "missingLineageReportIds": [
+            "belief:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:1",
+            "belief:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:2",
+            "belief:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:3",
+            "belief:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:4"
+          ],
+          "normalizedLineageEntropy": null,
+          "reportsMissingDeclaredLineage": 4,
+          "reportsWithDeclaredLineage": 0
+        },
+        "expectedAgentIds": [
+          "agent:hiddenbench:22:1",
+          "agent:hiddenbench:22:2",
+          "agent:hiddenbench:22:3",
+          "agent:hiddenbench:22:4"
+        ],
+        "exposureConditionedRevision": {
+          "meanBeliefDistance": null,
+          "revisionCount": 0,
+          "targetAgentCount": 0,
+          "totalBeliefDistance": 0
+        },
+        "inferenceStatus": "descriptive_macrostate_only",
+        "latestReportIds": [
+          "belief:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:1",
+          "belief:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:2",
+          "belief:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:3",
+          "belief:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:4"
+        ],
+        "missingExpectedAgentIds": [],
+        "observedResponseConcentration": {
+          "herfindahlIndex": null,
+          "normalizedHerfindahl": null,
+          "responseMassBySourceAgent": {},
+          "sourceAgentCount": 0,
+          "status": "unavailable",
+          "unavailableReason": "no_exposure_conditioned_response_mass"
+        },
+        "pooledBelief": {
+          "kind": "categorical",
+          "probabilities": {
+            "Main Base": 0.07500000000000001,
+            "Rescue Outpost": 0.675,
+            "Retreat Camp": 0.25
+          }
+        },
+        "pooledCertainty": 0.675,
+        "pooledPredictedOutcomes": [
+          "Rescue Outpost"
+        ],
+        "pooledUncertainty": 0.7337869628599534,
+        "populationBasis": "declared_roster",
+        "sourceFingerprints": {
+          "claim": "sha256:cc731af7693c398a6f885cd8ea6f198ebea113a11bbd394464ebbac90c505a85",
+          "evidence": "sha256:6736f4719f731ee6e6319e333ff3605346aee45ba910955714f3fc6fd3a8d68d",
+          "exposures": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "reports": "sha256:1d678d11fa18abc84e312b62ee977abf6b0e2b04ffa4622ff2c92f3aff222f16"
+        },
+        "withinAgentUncertainty": 0.22192745571703848
+      },
+      "updateActivityFromPrior": 0.375
+    },
+    {
+      "round": 3,
+      "messages": [
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:22:1",
+          "content": "Based on the discussion, the ice bridge to Retreat Camp is collapsed, making it inaccessible. Rescue Outpost is structurally sound and reachable with the available fuel, while Main Base is farther away. Given the storm's urgency and the need for immediate shelter, Rescue Outpost is the safest remaining option.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:22:2",
+          "content": "Based on the satellite imagery showing a collapsed ice bridge to Retreat Camp, making it inaccessible, and the structural soundness of Rescue Outpost, it is the safest remaining option. Main Base is farther away, and Retreat Camp is no longer reachable. Rescue Outpost is the most logical choice given the storm's urgency and available fuel.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:22:3",
+          "content": "Based on the evidence, Retreat Camp is the safest and most reliable option. It is the closest shelter, built to withstand severe weather, and has sufficient supplies for four people. The route to Rescue Outpost is impassable, and while Main Base is an option, Retreat Camp's proximity and storm rating make it the superior choice.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:22:4",
+          "content": "The satellite imagery shows the ice bridge to Retreat Camp has collapsed, making it inaccessible. Rescue Outpost is structurally sound and reachable with the available fuel, while Main Base is farther away. Given the storm's urgency and the need for immediate shelter, Rescue Outpost is the safest remaining option.",
+          "source": "agent"
+        }
+      ],
+      "reports": [
+        {
+          "id": "belief:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:1",
+          "claimId": "claim:hiddenbench:22:answer",
+          "agentId": "agent:hiddenbench:22:1",
+          "round": 3,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Main Base": 0,
+              "Retreat Camp": 0,
+              "Rescue Outpost": 1
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:1:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:1:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:1:3",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:1:4",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:03:01.000Z",
+          "supersedesReportId": "belief:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:1"
+        },
+        {
+          "id": "belief:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:2",
+          "claimId": "claim:hiddenbench:22:answer",
+          "agentId": "agent:hiddenbench:22:2",
+          "round": 3,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Main Base": 0,
+              "Retreat Camp": 0,
+              "Rescue Outpost": 1
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:2:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:2:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:2:3",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "supersedesReportId": "belief:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:2"
+        },
+        {
+          "id": "belief:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:3",
+          "claimId": "claim:hiddenbench:22:answer",
+          "agentId": "agent:hiddenbench:22:3",
+          "round": 3,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Main Base": 0,
+              "Retreat Camp": 1,
+              "Rescue Outpost": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:3:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:3:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:3:3",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:3:4",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "supersedesReportId": "belief:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:3"
+        },
+        {
+          "id": "belief:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:4",
+          "claimId": "claim:hiddenbench:22:answer",
+          "agentId": "agent:hiddenbench:22:4",
+          "round": 3,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Main Base": 0,
+              "Retreat Camp": 0,
+              "Rescue Outpost": 1
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:4:1",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:4:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:4:3",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:03:04.000Z",
+          "supersedesReportId": "belief:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:4"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:1:1",
+          "content": "The satellite imagery reveals a collapsed ice bridge to Retreat Camp, making it inaccessible.",
+          "createdAt": "2026-08-24T00:03:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:1",
+            "contentHash": "sha256:e6cee68fee9d6593b67c73931333ed8a310a5f1d002f333901d2ab9bf0aa2141"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:1:2",
+          "content": "Rescue Outpost is structurally sound and reachable with the available fuel.",
+          "createdAt": "2026-08-24T00:03:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:1",
+            "contentHash": "sha256:7ee3ae24d3da7bbab79bfd44ac7d7baa0dded4979a45e73ab45c53a4960af01e"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:1:3",
+          "content": "Main Base is farther away.",
+          "createdAt": "2026-08-24T00:03:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:1",
+            "contentHash": "sha256:b1de53fd67c6b58de13f690ef9c774a3453c1ed52f547115579582ccf9ec0415"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:1:4",
+          "content": "Given the storm's speed and the need for immediate shelter, Rescue Outpost is the safest remaining option.",
+          "createdAt": "2026-08-24T00:03:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:1",
+            "contentHash": "sha256:38ce71a9c08859408299c8760f040e3885b91d94c4a4ec3ef0c22a4dfbf4125b"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:2:1",
+          "content": "The satellite imagery reveals a collapsed ice bridge to Retreat Camp, making it inaccessible.",
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:2",
+            "contentHash": "sha256:e6cee68fee9d6593b67c73931333ed8a310a5f1d002f333901d2ab9bf0aa2141"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:2:2",
+          "content": "Rescue Outpost is structurally sound and reachable with the available fuel.",
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:2",
+            "contentHash": "sha256:7ee3ae24d3da7bbab79bfd44ac7d7baa0dded4979a45e73ab45c53a4960af01e"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:2:3",
+          "content": "Main Base is farther away, and Retreat Camp is no longer reachable.",
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:2",
+            "contentHash": "sha256:b08fa26a44fb06891fa653fdbe4b1eb3f6c3279c9440f92f2b987c8682139ccb"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:3:1",
+          "content": "A radio update confirms Retreat Camp is the closest shelter and is built to withstand severe weather.",
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:3",
+            "contentHash": "sha256:1ec4a0b7348b5c6ddd7f2baa7c58a3a439d9f841dcc384b3ce4a33384c53641d"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:3:2",
+          "content": "Supply records say that Retreat Camp offers food, water, and sleeping bags for four people.",
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:3",
+            "contentHash": "sha256:d213dd475a8ea8e935afec0c84909250fea29f0385c655e6672984178f804f20"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:3:3",
+          "content": "The snow route to Rescue Outpost is fully snowed in since the last storm; the path isn't navigable even with the vehicle.",
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:3",
+            "contentHash": "sha256:0ed139c641b6146bd8028aff015be853f06bd43da38c28a26398f7b6d9224753"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:3:4",
+          "content": "The Retreat Camp is the safest and most reliable option. It is the closest shelter, built to withstand severe weather, and has sufficient supplies for four people. The route to Rescue Outpost is impassable, and while Main Base is an option, Retreat Camp's proximity and storm rating make it the superior choice.",
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:3",
+            "contentHash": "sha256:cf6c8d08012bad23fd579ff31f8beb28cb044fb8051f0263344a58d356c69615"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:4:1",
+          "content": "Satellite imagery from this morning shows the ice bridge leading to Retreat Camp has collapsed, making it dangerous to reach by foot or vehicle.",
+          "createdAt": "2026-08-24T00:03:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:4",
+            "contentHash": "sha256:cca27736bc5f2abbb7c79c1dd923e105693c230e67d662f636435198ec44326f"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:4:2",
+          "content": "The Rescue Outpost's exterior was recently checked and found structurally sound.",
+          "createdAt": "2026-08-24T00:03:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:4",
+            "contentHash": "sha256:e97e41bb32ff6f3ad9dc9f6f320aa55a731b8bb8a5ca6c709437cf238d1d5369"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:4:3",
+          "content": "The snow vehicle has just enough fuel to reach any of the three locations before the storm hits, but not to try multiple.",
+          "createdAt": "2026-08-24T00:03:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:22:4",
+            "contentHash": "sha256:61d2eadc2d5926985060f9c00eb6abd3defe4dba3468d0a1ecfe1299db5ac183"
+          }
+        }
+      ],
+      "state": {
+        "activeAgentIds": [
+          "agent:hiddenbench:22:1",
+          "agent:hiddenbench:22:2",
+          "agent:hiddenbench:22:3",
+          "agent:hiddenbench:22:4"
+        ],
+        "artifactSchemaRef": {
+          "id": "swarmalpha.collective-epistemic-state",
+          "version": "1.0.0"
+        },
+        "asOfRound": 3,
+        "beliefKind": "categorical",
+        "betweenAgentDisagreement": 0.5118595071429148,
+        "claimId": "claim:hiddenbench:22:answer",
+        "claimOptionCount": 3,
+        "contentHash": "sha256:5590c3a2609f5af4c9b5dbf15b104b09c428601cccfd6a5befbb34462ae29aa9",
+        "declaredLineageDiversity": {
+          "completeness": "missing",
+          "distinctDeclaredLineageCount": 0,
+          "effectiveLineageCount": null,
+          "missingLineageReportIds": [
+            "belief:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:1",
+            "belief:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:2",
+            "belief:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:3",
+            "belief:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:4"
+          ],
+          "normalizedLineageEntropy": null,
+          "reportsMissingDeclaredLineage": 4,
+          "reportsWithDeclaredLineage": 0
+        },
+        "expectedAgentIds": [
+          "agent:hiddenbench:22:1",
+          "agent:hiddenbench:22:2",
+          "agent:hiddenbench:22:3",
+          "agent:hiddenbench:22:4"
+        ],
+        "exposureConditionedRevision": {
+          "meanBeliefDistance": null,
+          "revisionCount": 0,
+          "targetAgentCount": 0,
+          "totalBeliefDistance": 0
+        },
+        "inferenceStatus": "descriptive_macrostate_only",
+        "latestReportIds": [
+          "belief:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:1",
+          "belief:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:2",
+          "belief:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:3",
+          "belief:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:4"
+        ],
+        "missingExpectedAgentIds": [],
+        "observedResponseConcentration": {
+          "herfindahlIndex": null,
+          "normalizedHerfindahl": null,
+          "responseMassBySourceAgent": {},
+          "sourceAgentCount": 0,
+          "status": "unavailable",
+          "unavailableReason": "no_exposure_conditioned_response_mass"
+        },
+        "pooledBelief": {
+          "kind": "categorical",
+          "probabilities": {
+            "Main Base": 0,
+            "Rescue Outpost": 0.75,
+            "Retreat Camp": 0.25
+          }
+        },
+        "pooledCertainty": 0.75,
+        "pooledPredictedOutcomes": [
+          "Rescue Outpost"
+        ],
+        "pooledUncertainty": 0.5118595071429148,
+        "populationBasis": "declared_roster",
+        "sourceFingerprints": {
+          "claim": "sha256:cc731af7693c398a6f885cd8ea6f198ebea113a11bbd394464ebbac90c505a85",
+          "evidence": "sha256:5c3408a7ba55babde51a4dd6022a78fcab2da21e4e4ecef18d170ac4f24e4689",
+          "exposures": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "reports": "sha256:6a843b2d5dd00e0f89fea7cbc615b04feb565e38bfb8b1b2b56b78debe9c13d8"
+        },
+        "withinAgentUncertainty": 0
+      },
+      "updateActivityFromPrior": 0.075
+    }
+  ],
+  "providerCalls": [
+    {
+      "requestId": "discussion:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:1",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou and three other participants are scientists at an Antarctic research station. A massive, fast-moving storm is approaching. You must rapidly decide, as a group, which facility to seek shelter in for the next 48 hours. You have snow vehicles and limited time to reach only one location before the blizzard begins. Your three choices:\n- Main Base: The largest facility, but farther away.\n- Retreat Camp: A small, nearby camp rated for storms.\n- Rescue Outpost: Smaller, medium distance, typically used for emergencies.\nWhichever location you pick, you'll be unable to contact others until the storm passes. Supplies, infrastructure, and route safety may differ. Only one option will keep you safe and supplied until rescue teams arrive.\n\nShared information:\n1. A radio update confirms Retreat Camp is the closest shelter and is built to withstand severe weather.\n2. Supply records say that Retreat Camp offers food, water, and sleeping bags for four people.\n3. The snow vehicle has just enough fuel to reach any of the three locations before the storm hits, but not to try multiple.\n4. The Rescue Outpost's exterior was recently checked and found structurally sound.\n\nYour private information:\nThe most recent supply delivery to Retreat Camp was delayed, so the promised food and water may not be there.\n\nVisible discussion transcript:\n(none)\n\nClaim claim:hiddenbench:22:answer: Select the single correct answer for HiddenBench task 22 (Antarctic Storm Safe Haven).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Main Base | Retreat Camp | Rescue Outpost. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Main Base\": 0.5, \"Retreat Camp\": 0.2500, \"Rescue Outpost\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:b3d84e6f0595af4b71000efb55866e9f27ce5d7b4d84bbd1140d5460467f7a43",
+      "responseHash": "sha256:7b4d61e2015782d1ce319c33b6dc1359c30e17bf1c0819e59abe7e2fc597dc1e",
+      "rawResponse": "{\"message\":\"Based on the information, Retreat Camp is the closest and rated for storms, but its supplies are uncertain due to a delayed delivery. Rescue Outpost is structurally sound and medium distance, while Main Base is farther. Given the storm's speed and the need for immediate shelter, Retreat Camp remains the most logical choice despite supply concerns, as it is the closest and designed for severe weather.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Main Base\":0.1,\"Retreat Camp\":0.7,\"Rescue Outpost\":0.2}},\"evidence\":[{\"content\":\"Retreat Camp is the closest shelter and built to withstand severe weather.\",\"relation\":\"supports\"},{\"content\":\"Supply records say Retreat Camp offers food, water, and sleeping bags for four people.\",\"relation\":\"supports\"},{\"content\":\"The most recent supply delivery to Retreat Camp was delayed, so the promised food and water may not be there.\",\"relation\":\"attacks\"},{\"content\":\"The snow vehicle has just enough fuel to reach any of the three locations before the storm hits, but not to try multiple.\",\"relation\":\"supports\"},{\"content\":\"The Rescue Outpost's exterior was recently checked and found structurally sound.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 569,
+        "completionTokens": 328,
+        "totalTokens": 897,
+        "latencyMs": 16438
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:2",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou and three other participants are scientists at an Antarctic research station. A massive, fast-moving storm is approaching. You must rapidly decide, as a group, which facility to seek shelter in for the next 48 hours. You have snow vehicles and limited time to reach only one location before the blizzard begins. Your three choices:\n- Main Base: The largest facility, but farther away.\n- Retreat Camp: A small, nearby camp rated for storms.\n- Rescue Outpost: Smaller, medium distance, typically used for emergencies.\nWhichever location you pick, you'll be unable to contact others until the storm passes. Supplies, infrastructure, and route safety may differ. Only one option will keep you safe and supplied until rescue teams arrive.\n\nShared information:\n1. A radio update confirms Retreat Camp is the closest shelter and is built to withstand severe weather.\n2. Supply records say that Retreat Camp offers food, water, and sleeping bags for four people.\n3. The snow vehicle has just enough fuel to reach any of the three locations before the storm hits, but not to try multiple.\n4. The Rescue Outpost's exterior was recently checked and found structurally sound.\n\nYour private information:\nMain Base appears to have uninterrupted generator power, working communications, and fully stocked rations according to a direct radio call just before the storm warning.\n\nVisible discussion transcript:\n(none)\n\nClaim claim:hiddenbench:22:answer: Select the single correct answer for HiddenBench task 22 (Antarctic Storm Safe Haven).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Main Base | Retreat Camp | Rescue Outpost. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Main Base\": 0.5, \"Retreat Camp\": 0.2500, \"Rescue Outpost\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:0cb1269ada20b58088d4bf760a3e7f5e9b3d14ea1e628442618eede1ef91f5e5",
+      "responseHash": "sha256:ab90ec2eeb3bdf73d5d1c96ecfbb6c5e69483e2a4d1d724e88612b4bd19fe706",
+      "rawResponse": "{\"message\":\"Based on the information, Retreat Camp is the most logical choice. It is the closest shelter, specifically rated for severe weather, and has confirmed supplies for four people. While Main Base has power and communications, its greater distance makes it riskier to reach before the storm. Rescue Outpost is structurally sound but lacks specific supply details and is farther than Retreat Camp.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Main Base\":0.10,\"Retreat Camp\":0.80,\"Rescue Outpost\":0.10}},\"evidence\":[{\"content\":\"A radio update confirms Retreat Camp is the closest shelter and is built to withstand severe weather.\",\"relation\":\"supports\"},{\"content\":\"Supply records say that Retreat Camp offers food, water, and sleeping bags for four people.\",\"relation\":\"supports\"},{\"content\":\"The snow vehicle has just enough fuel to reach any of the three locations before the storm hits, but not to try multiple.\",\"relation\":\"supports\"},{\"content\":\"Main Base appears to have uninterrupted generator power, working communications, and fully stocked rations according to a direct radio call just before the storm warning.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 576,
+        "completionTokens": 303,
+        "totalTokens": 879,
+        "latencyMs": 11427
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:3",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou and three other participants are scientists at an Antarctic research station. A massive, fast-moving storm is approaching. You must rapidly decide, as a group, which facility to seek shelter in for the next 48 hours. You have snow vehicles and limited time to reach only one location before the blizzard begins. Your three choices:\n- Main Base: The largest facility, but farther away.\n- Retreat Camp: A small, nearby camp rated for storms.\n- Rescue Outpost: Smaller, medium distance, typically used for emergencies.\nWhichever location you pick, you'll be unable to contact others until the storm passes. Supplies, infrastructure, and route safety may differ. Only one option will keep you safe and supplied until rescue teams arrive.\n\nShared information:\n1. A radio update confirms Retreat Camp is the closest shelter and is built to withstand severe weather.\n2. Supply records say that Retreat Camp offers food, water, and sleeping bags for four people.\n3. The snow vehicle has just enough fuel to reach any of the three locations before the storm hits, but not to try multiple.\n4. The Rescue Outpost's exterior was recently checked and found structurally sound.\n\nYour private information:\nThe snow route to Rescue Outpost is fully snowed in since the last storm; the path isn't navigable even with the vehicle.\n\nVisible discussion transcript:\n(none)\n\nClaim claim:hiddenbench:22:answer: Select the single correct answer for HiddenBench task 22 (Antarctic Storm Safe Haven).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Main Base | Retreat Camp | Rescue Outpost. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Main Base\": 0.5, \"Retreat Camp\": 0.2500, \"Rescue Outpost\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:2a00e61cb93413d112f2be491ace387dc87e5516f6456006308d99ef4857c5cc",
+      "responseHash": "sha256:6b2856349d25512492a51dcff78144ae2ec1e7b851be5ecc1c19685df276f94e",
+      "rawResponse": "{\"message\":\"Based on the information, Retreat Camp is the safest and most reliable option. It is the closest shelter, built to withstand severe weather, and has sufficient supplies for four people. The route to Rescue Outpost is impassable, and while Main Base is an option, Retreat Camp's proximity and storm rating make it the superior choice.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Main Base\":0.0,\"Retreat Camp\":1.0,\"Rescue Outpost\":0.0}},\"evidence\":[{\"content\":\"A radio update confirms Retreat Camp is the closest shelter and is built to withstand severe weather.\",\"relation\":\"supports\"},{\"content\":\"Supply records say that Retreat Camp offers food, water, and sleeping bags for four people.\",\"relation\":\"supports\"},{\"content\":\"The snow route to Rescue Outpost is fully snowed in since the last storm; the path isn't navigable even with the vehicle.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 575,
+        "completionTokens": 254,
+        "totalTokens": 829,
+        "latencyMs": 6845
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:22:seed-1:r1:agent:hiddenbench:22:4",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou and three other participants are scientists at an Antarctic research station. A massive, fast-moving storm is approaching. You must rapidly decide, as a group, which facility to seek shelter in for the next 48 hours. You have snow vehicles and limited time to reach only one location before the blizzard begins. Your three choices:\n- Main Base: The largest facility, but farther away.\n- Retreat Camp: A small, nearby camp rated for storms.\n- Rescue Outpost: Smaller, medium distance, typically used for emergencies.\nWhichever location you pick, you'll be unable to contact others until the storm passes. Supplies, infrastructure, and route safety may differ. Only one option will keep you safe and supplied until rescue teams arrive.\n\nShared information:\n1. A radio update confirms Retreat Camp is the closest shelter and is built to withstand severe weather.\n2. Supply records say that Retreat Camp offers food, water, and sleeping bags for four people.\n3. The snow vehicle has just enough fuel to reach any of the three locations before the storm hits, but not to try multiple.\n4. The Rescue Outpost's exterior was recently checked and found structurally sound.\n\nYour private information:\nSatellite imagery from this morning shows the ice bridge leading to Retreat Camp has collapsed, making it dangerous to reach by foot or vehicle.\n\nVisible discussion transcript:\n(none)\n\nClaim claim:hiddenbench:22:answer: Select the single correct answer for HiddenBench task 22 (Antarctic Storm Safe Haven).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Main Base | Retreat Camp | Rescue Outpost. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Main Base\": 0.5, \"Retreat Camp\": 0.2500, \"Rescue Outpost\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:b73ee49b9bab825b18a1262e9eb449c28b7fea562c4783b244979ba7e0e45c7d",
+      "responseHash": "sha256:2b3cff99641c9669ca8b1cb0658bf21b64fe595284488b250f640ed2e2d0fe0f",
+      "rawResponse": "{\"message\":\"Based on the satellite imagery showing the collapsed ice bridge to Retreat Camp, it is now inaccessible. The Rescue Outpost is the safest remaining option, as it is structurally sound and reachable with the available fuel.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Main Base\":0.1,\"Retreat Camp\":0.0,\"Rescue Outpost\":0.9}},\"evidence\":[{\"content\":\"Satellite imagery from this morning shows the ice bridge leading to Retreat Camp has collapsed, making it dangerous to reach by foot or vehicle.\",\"relation\":\"attacks\"},{\"content\":\"The Rescue Outpost's exterior was recently checked and found structurally sound.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 574,
+        "completionTokens": 192,
+        "totalTokens": 766,
+        "latencyMs": 4400
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:1",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou and three other participants are scientists at an Antarctic research station. A massive, fast-moving storm is approaching. You must rapidly decide, as a group, which facility to seek shelter in for the next 48 hours. You have snow vehicles and limited time to reach only one location before the blizzard begins. Your three choices:\n- Main Base: The largest facility, but farther away.\n- Retreat Camp: A small, nearby camp rated for storms.\n- Rescue Outpost: Smaller, medium distance, typically used for emergencies.\nWhichever location you pick, you'll be unable to contact others until the storm passes. Supplies, infrastructure, and route safety may differ. Only one option will keep you safe and supplied until rescue teams arrive.\n\nShared information:\n1. A radio update confirms Retreat Camp is the closest shelter and is built to withstand severe weather.\n2. Supply records say that Retreat Camp offers food, water, and sleeping bags for four people.\n3. The snow vehicle has just enough fuel to reach any of the three locations before the storm hits, but not to try multiple.\n4. The Rescue Outpost's exterior was recently checked and found structurally sound.\n\nYour private information:\nThe most recent supply delivery to Retreat Camp was delayed, so the promised food and water may not be there.\n\nVisible discussion transcript:\n[round 1] agent:hiddenbench:22:1: Based on the information, Retreat Camp is the closest and rated for storms, but its supplies are uncertain due to a delayed delivery. Rescue Outpost is structurally sound and medium distance, while Main Base is farther. Given the storm's speed and the need for immediate shelter, Retreat Camp remains the most logical choice despite supply concerns, as it is the closest and designed for severe weather.\n[round 1] agent:hiddenbench:22:2: Based on the information, Retreat Camp is the most logical choice. It is the closest shelter, specifically rated for severe weather, and has confirmed supplies for four people. While Main Base has power and communications, its greater distance makes it riskier to reach before the storm. Rescue Outpost is structurally sound but lacks specific supply details and is farther than Retreat Camp.\n[round 1] agent:hiddenbench:22:3: Based on the information, Retreat Camp is the safest and most reliable option. It is the closest shelter, built to withstand severe weather, and has sufficient supplies for four people. The route to Rescue Outpost is impassable, and while Main Base is an option, Retreat Camp's proximity and storm rating make it the superior choice.\n[round 1] agent:hiddenbench:22:4: Based on the satellite imagery showing the collapsed ice bridge to Retreat Camp, it is now inaccessible. The Rescue Outpost is the safest remaining option, as it is structurally sound and reachable with the available fuel.\n\nClaim claim:hiddenbench:22:answer: Select the single correct answer for HiddenBench task 22 (Antarctic Storm Safe Haven).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Main Base | Retreat Camp | Rescue Outpost. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Main Base\": 0.5, \"Retreat Camp\": 0.2500, \"Rescue Outpost\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:25b36ed2092bf2c95c6518b792a02e86085803174f538bc5137ffa01e45fe4e1",
+      "responseHash": "sha256:405692cae1c393eb734eb6140068c7c4afcd3eb606ecb1558286e1bc927910c1",
+      "rawResponse": "{\"message\":\"The satellite imagery reveals a collapsed ice bridge to Retreat Camp, making it inaccessible. Rescue Outpost is structurally sound and reachable with the available fuel, while Main Base is farther away. Given the storm's speed and the need for immediate shelter, Rescue Outpost is the safest remaining option.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Main Base\":0.1,\"Retreat Camp\":0.0,\"Rescue Outpost\":0.9}},\"evidence\":[{\"content\":\"Satellite imagery shows a collapsed ice bridge to Retreat Camp, making it inaccessible.\",\"relation\":\"attacks\"},{\"content\":\"Rescue Outpost's exterior was recently checked and found structurally sound.\",\"relation\":\"supports\"},{\"content\":\"The snow vehicle has just enough fuel to reach any of the three locations before the storm hits, but not to try multiple.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 876,
+        "completionTokens": 238,
+        "totalTokens": 1114,
+        "latencyMs": 5500
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:2",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou and three other participants are scientists at an Antarctic research station. A massive, fast-moving storm is approaching. You must rapidly decide, as a group, which facility to seek shelter in for the next 48 hours. You have snow vehicles and limited time to reach only one location before the blizzard begins. Your three choices:\n- Main Base: The largest facility, but farther away.\n- Retreat Camp: A small, nearby camp rated for storms.\n- Rescue Outpost: Smaller, medium distance, typically used for emergencies.\nWhichever location you pick, you'll be unable to contact others until the storm passes. Supplies, infrastructure, and route safety may differ. Only one option will keep you safe and supplied until rescue teams arrive.\n\nShared information:\n1. A radio update confirms Retreat Camp is the closest shelter and is built to withstand severe weather.\n2. Supply records say that Retreat Camp offers food, water, and sleeping bags for four people.\n3. The snow vehicle has just enough fuel to reach any of the three locations before the storm hits, but not to try multiple.\n4. The Rescue Outpost's exterior was recently checked and found structurally sound.\n\nYour private information:\nMain Base appears to have uninterrupted generator power, working communications, and fully stocked rations according to a direct radio call just before the storm warning.\n\nVisible discussion transcript:\n[round 1] agent:hiddenbench:22:1: Based on the information, Retreat Camp is the closest and rated for storms, but its supplies are uncertain due to a delayed delivery. Rescue Outpost is structurally sound and medium distance, while Main Base is farther. Given the storm's speed and the need for immediate shelter, Retreat Camp remains the most logical choice despite supply concerns, as it is the closest and designed for severe weather.\n[round 1] agent:hiddenbench:22:2: Based on the information, Retreat Camp is the most logical choice. It is the closest shelter, specifically rated for severe weather, and has confirmed supplies for four people. While Main Base has power and communications, its greater distance makes it riskier to reach before the storm. Rescue Outpost is structurally sound but lacks specific supply details and is farther than Retreat Camp.\n[round 1] agent:hiddenbench:22:3: Based on the information, Retreat Camp is the safest and most reliable option. It is the closest shelter, built to withstand severe weather, and has sufficient supplies for four people. The route to Rescue Outpost is impassable, and while Main Base is an option, Retreat Camp's proximity and storm rating make it the superior choice.\n[round 1] agent:hiddenbench:22:4: Based on the satellite imagery showing the collapsed ice bridge to Retreat Camp, it is now inaccessible. The Rescue Outpost is the safest remaining option, as it is structurally sound and reachable with the available fuel.\n\nClaim claim:hiddenbench:22:answer: Select the single correct answer for HiddenBench task 22 (Antarctic Storm Safe Haven).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Main Base | Retreat Camp | Rescue Outpost. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Main Base\": 0.5, \"Retreat Camp\": 0.2500, \"Rescue Outpost\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:750e0a26a13ef879a426ad3134ba83c63b23af43371278a9e3afe03bc2f399c6",
+      "responseHash": "sha256:adf113480389ae9e96a529dfce929100ed58fd7c8192e3a0d4de1433adabfdc3",
+      "rawResponse": "{\"message\":\"The satellite imagery reveals a collapsed ice bridge to Retreat Camp, making it inaccessible. Rescue Outpost is structurally sound and reachable with the available fuel, while Main Base is farther away. Given the storm's speed and the need for immediate shelter, Rescue Outpost is the safest remaining option.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Main Base\":0.1,\"Retreat Camp\":0.0,\"Rescue Outpost\":0.9}},\"evidence\":[{\"content\":\"Satellite imagery shows the collapsed ice bridge to Retreat Camp, making it inaccessible.\",\"relation\":\"attacks\"},{\"content\":\"Rescue Outpost's exterior was recently checked and found structurally sound.\",\"relation\":\"supports\"},{\"content\":\"The snow vehicle has just enough fuel to reach any of the three locations before the storm hits, but not to try multiple.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 883,
+        "completionTokens": 238,
+        "totalTokens": 1121,
+        "latencyMs": 6478
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:3",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou and three other participants are scientists at an Antarctic research station. A massive, fast-moving storm is approaching. You must rapidly decide, as a group, which facility to seek shelter in for the next 48 hours. You have snow vehicles and limited time to reach only one location before the blizzard begins. Your three choices:\n- Main Base: The largest facility, but farther away.\n- Retreat Camp: A small, nearby camp rated for storms.\n- Rescue Outpost: Smaller, medium distance, typically used for emergencies.\nWhichever location you pick, you'll be unable to contact others until the storm passes. Supplies, infrastructure, and route safety may differ. Only one option will keep you safe and supplied until rescue teams arrive.\n\nShared information:\n1. A radio update confirms Retreat Camp is the closest shelter and is built to withstand severe weather.\n2. Supply records say that Retreat Camp offers food, water, and sleeping bags for four people.\n3. The snow vehicle has just enough fuel to reach any of the three locations before the storm hits, but not to try multiple.\n4. The Rescue Outpost's exterior was recently checked and found structurally sound.\n\nYour private information:\nThe snow route to Rescue Outpost is fully snowed in since the last storm; the path isn't navigable even with the vehicle.\n\nVisible discussion transcript:\n[round 1] agent:hiddenbench:22:1: Based on the information, Retreat Camp is the closest and rated for storms, but its supplies are uncertain due to a delayed delivery. Rescue Outpost is structurally sound and medium distance, while Main Base is farther. Given the storm's speed and the need for immediate shelter, Retreat Camp remains the most logical choice despite supply concerns, as it is the closest and designed for severe weather.\n[round 1] agent:hiddenbench:22:2: Based on the information, Retreat Camp is the most logical choice. It is the closest shelter, specifically rated for severe weather, and has confirmed supplies for four people. While Main Base has power and communications, its greater distance makes it riskier to reach before the storm. Rescue Outpost is structurally sound but lacks specific supply details and is farther than Retreat Camp.\n[round 1] agent:hiddenbench:22:3: Based on the information, Retreat Camp is the safest and most reliable option. It is the closest shelter, built to withstand severe weather, and has sufficient supplies for four people. The route to Rescue Outpost is impassable, and while Main Base is an option, Retreat Camp's proximity and storm rating make it the superior choice.\n[round 1] agent:hiddenbench:22:4: Based on the satellite imagery showing the collapsed ice bridge to Retreat Camp, it is now inaccessible. The Rescue Outpost is the safest remaining option, as it is structurally sound and reachable with the available fuel.\n\nClaim claim:hiddenbench:22:answer: Select the single correct answer for HiddenBench task 22 (Antarctic Storm Safe Haven).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Main Base | Retreat Camp | Rescue Outpost. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Main Base\": 0.5, \"Retreat Camp\": 0.2500, \"Rescue Outpost\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:cf09d89ef4135abe2f35cf9e2088c20f6fef2eb48d35542f02f708c1713fab32",
+      "responseHash": "sha256:08189de27e7175bec1dac46a1d3723d043550f3db4f995bbe0cfde0d5b95da35",
+      "rawResponse": "{\"message\":\"The Retreat Camp is the safest and most reliable option. It is the closest shelter, built to withstand severe weather, and has sufficient supplies for four people. The route to Rescue Outpost is impassable, and while Main Base is an option, Retreat Camp's proximity and storm rating make it the superior choice.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Main Base\":0.0,\"Retreat Camp\":1.0,\"Rescue Outpost\":0.0}},\"evidence\":[{\"content\":\"A radio update confirms Retreat Camp is the closest shelter and is built to withstand severe weather.\",\"relation\":\"supports\"},{\"content\":\"Supply records say that Retreat Camp offers food, water, and sleeping bags for four people.\",\"relation\":\"supports\"},{\"content\":\"The snow route to Rescue Outpost is fully snowed in since the last storm; the path isn't navigable even with the vehicle.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 882,
+        "completionTokens": 250,
+        "totalTokens": 1132,
+        "latencyMs": 8023
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:22:seed-1:r2:agent:hiddenbench:22:4",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou and three other participants are scientists at an Antarctic research station. A massive, fast-moving storm is approaching. You must rapidly decide, as a group, which facility to seek shelter in for the next 48 hours. You have snow vehicles and limited time to reach only one location before the blizzard begins. Your three choices:\n- Main Base: The largest facility, but farther away.\n- Retreat Camp: A small, nearby camp rated for storms.\n- Rescue Outpost: Smaller, medium distance, typically used for emergencies.\nWhichever location you pick, you'll be unable to contact others until the storm passes. Supplies, infrastructure, and route safety may differ. Only one option will keep you safe and supplied until rescue teams arrive.\n\nShared information:\n1. A radio update confirms Retreat Camp is the closest shelter and is built to withstand severe weather.\n2. Supply records say that Retreat Camp offers food, water, and sleeping bags for four people.\n3. The snow vehicle has just enough fuel to reach any of the three locations before the storm hits, but not to try multiple.\n4. The Rescue Outpost's exterior was recently checked and found structurally sound.\n\nYour private information:\nSatellite imagery from this morning shows the ice bridge leading to Retreat Camp has collapsed, making it dangerous to reach by foot or vehicle.\n\nVisible discussion transcript:\n[round 1] agent:hiddenbench:22:1: Based on the information, Retreat Camp is the closest and rated for storms, but its supplies are uncertain due to a delayed delivery. Rescue Outpost is structurally sound and medium distance, while Main Base is farther. Given the storm's speed and the need for immediate shelter, Retreat Camp remains the most logical choice despite supply concerns, as it is the closest and designed for severe weather.\n[round 1] agent:hiddenbench:22:2: Based on the information, Retreat Camp is the most logical choice. It is the closest shelter, specifically rated for severe weather, and has confirmed supplies for four people. While Main Base has power and communications, its greater distance makes it riskier to reach before the storm. Rescue Outpost is structurally sound but lacks specific supply details and is farther than Retreat Camp.\n[round 1] agent:hiddenbench:22:3: Based on the information, Retreat Camp is the safest and most reliable option. It is the closest shelter, built to withstand severe weather, and has sufficient supplies for four people. The route to Rescue Outpost is impassable, and while Main Base is an option, Retreat Camp's proximity and storm rating make it the superior choice.\n[round 1] agent:hiddenbench:22:4: Based on the satellite imagery showing the collapsed ice bridge to Retreat Camp, it is now inaccessible. The Rescue Outpost is the safest remaining option, as it is structurally sound and reachable with the available fuel.\n\nClaim claim:hiddenbench:22:answer: Select the single correct answer for HiddenBench task 22 (Antarctic Storm Safe Haven).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Main Base | Retreat Camp | Rescue Outpost. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Main Base\": 0.5, \"Retreat Camp\": 0.2500, \"Rescue Outpost\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:c43225f069ddc14bc32c198b105a6e28c4da535558a0437385cb2ecac9f9dc88",
+      "responseHash": "sha256:f34b459794aebb96fcd01aad331255ab5226dd330f28b59d8eacecf600e5ae10",
+      "rawResponse": "{\"message\":\"The satellite imagery reveals the ice bridge to Retreat Camp has collapsed, making it inaccessible. Rescue Outpost is structurally sound and reachable with the available fuel, while Main Base is farther away. Given the storm's urgency and the need for immediate shelter, Rescue Outpost is the safest remaining option.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Main Base\":0.1,\"Retreat Camp\":0.0,\"Rescue Outpost\":0.9}},\"evidence\":[{\"content\":\"Satellite imagery from this morning shows the ice bridge leading to Retreat Camp has collapsed, making it dangerous to reach by foot or vehicle.\",\"relation\":\"attacks\"},{\"content\":\"The Rescue Outpost's exterior was recently checked and found structurally sound.\",\"relation\":\"supports\"},{\"content\":\"The snow vehicle has just enough fuel to reach any of the three locations before the storm hits, but not to try multiple.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 881,
+        "completionTokens": 250,
+        "totalTokens": 1131,
+        "latencyMs": 5643
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:1",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou and three other participants are scientists at an Antarctic research station. A massive, fast-moving storm is approaching. You must rapidly decide, as a group, which facility to seek shelter in for the next 48 hours. You have snow vehicles and limited time to reach only one location before the blizzard begins. Your three choices:\n- Main Base: The largest facility, but farther away.\n- Retreat Camp: A small, nearby camp rated for storms.\n- Rescue Outpost: Smaller, medium distance, typically used for emergencies.\nWhichever location you pick, you'll be unable to contact others until the storm passes. Supplies, infrastructure, and route safety may differ. Only one option will keep you safe and supplied until rescue teams arrive.\n\nShared information:\n1. A radio update confirms Retreat Camp is the closest shelter and is built to withstand severe weather.\n2. Supply records say that Retreat Camp offers food, water, and sleeping bags for four people.\n3. The snow vehicle has just enough fuel to reach any of the three locations before the storm hits, but not to try multiple.\n4. The Rescue Outpost's exterior was recently checked and found structurally sound.\n\nYour private information:\nThe most recent supply delivery to Retreat Camp was delayed, so the promised food and water may not be there.\n\nVisible discussion transcript:\n[round 2] agent:hiddenbench:22:1: The satellite imagery reveals a collapsed ice bridge to Retreat Camp, making it inaccessible. Rescue Outpost is structurally sound and reachable with the available fuel, while Main Base is farther away. Given the storm's speed and the need for immediate shelter, Rescue Outpost is the safest remaining option.\n[round 2] agent:hiddenbench:22:2: The satellite imagery reveals a collapsed ice bridge to Retreat Camp, making it inaccessible. Rescue Outpost is structurally sound and reachable with the available fuel, while Main Base is farther away. Given the storm's speed and the need for immediate shelter, Rescue Outpost is the safest remaining option.\n[round 2] agent:hiddenbench:22:3: The Retreat Camp is the safest and most reliable option. It is the closest shelter, built to withstand severe weather, and has sufficient supplies for four people. The route to Rescue Outpost is impassable, and while Main Base is an option, Retreat Camp's proximity and storm rating make it the superior choice.\n[round 2] agent:hiddenbench:22:4: The satellite imagery reveals the ice bridge to Retreat Camp has collapsed, making it inaccessible. Rescue Outpost is structurally sound and reachable with the available fuel, while Main Base is farther away. Given the storm's urgency and the need for immediate shelter, Rescue Outpost is the safest remaining option.\n\nClaim claim:hiddenbench:22:answer: Select the single correct answer for HiddenBench task 22 (Antarctic Storm Safe Haven).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Main Base | Retreat Camp | Rescue Outpost. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Main Base\": 0.5, \"Retreat Camp\": 0.2500, \"Rescue Outpost\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:e8ee367a5871bb7fbc178ef1534c24955fb450b4cbea214ecfe8307749acd796",
+      "responseHash": "sha256:dbad2ea3b77fbc653bf6eca83c556ad4a3d8cc45a70ccc2bf1afe0628c956cce",
+      "rawResponse": "{\"message\":\"Based on the discussion, the ice bridge to Retreat Camp is collapsed, making it inaccessible. Rescue Outpost is structurally sound and reachable with the available fuel, while Main Base is farther away. Given the storm's urgency and the need for immediate shelter, Rescue Outpost is the safest remaining option.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Main Base\":0.0,\"Retreat Camp\":0.0,\"Rescue Outpost\":1.0}},\"evidence\":[{\"content\":\"The satellite imagery reveals a collapsed ice bridge to Retreat Camp, making it inaccessible.\",\"relation\":\"supports\"},{\"content\":\"Rescue Outpost is structurally sound and reachable with the available fuel.\",\"relation\":\"supports\"},{\"content\":\"Main Base is farther away.\",\"relation\":\"supports\"},{\"content\":\"Given the storm's speed and the need for immediate shelter, Rescue Outpost is the safest remaining option.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 855,
+        "completionTokens": 258,
+        "totalTokens": 1113,
+        "latencyMs": 8318
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:2",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou and three other participants are scientists at an Antarctic research station. A massive, fast-moving storm is approaching. You must rapidly decide, as a group, which facility to seek shelter in for the next 48 hours. You have snow vehicles and limited time to reach only one location before the blizzard begins. Your three choices:\n- Main Base: The largest facility, but farther away.\n- Retreat Camp: A small, nearby camp rated for storms.\n- Rescue Outpost: Smaller, medium distance, typically used for emergencies.\nWhichever location you pick, you'll be unable to contact others until the storm passes. Supplies, infrastructure, and route safety may differ. Only one option will keep you safe and supplied until rescue teams arrive.\n\nShared information:\n1. A radio update confirms Retreat Camp is the closest shelter and is built to withstand severe weather.\n2. Supply records say that Retreat Camp offers food, water, and sleeping bags for four people.\n3. The snow vehicle has just enough fuel to reach any of the three locations before the storm hits, but not to try multiple.\n4. The Rescue Outpost's exterior was recently checked and found structurally sound.\n\nYour private information:\nMain Base appears to have uninterrupted generator power, working communications, and fully stocked rations according to a direct radio call just before the storm warning.\n\nVisible discussion transcript:\n[round 2] agent:hiddenbench:22:1: The satellite imagery reveals a collapsed ice bridge to Retreat Camp, making it inaccessible. Rescue Outpost is structurally sound and reachable with the available fuel, while Main Base is farther away. Given the storm's speed and the need for immediate shelter, Rescue Outpost is the safest remaining option.\n[round 2] agent:hiddenbench:22:2: The satellite imagery reveals a collapsed ice bridge to Retreat Camp, making it inaccessible. Rescue Outpost is structurally sound and reachable with the available fuel, while Main Base is farther away. Given the storm's speed and the need for immediate shelter, Rescue Outpost is the safest remaining option.\n[round 2] agent:hiddenbench:22:3: The Retreat Camp is the safest and most reliable option. It is the closest shelter, built to withstand severe weather, and has sufficient supplies for four people. The route to Rescue Outpost is impassable, and while Main Base is an option, Retreat Camp's proximity and storm rating make it the superior choice.\n[round 2] agent:hiddenbench:22:4: The satellite imagery reveals the ice bridge to Retreat Camp has collapsed, making it inaccessible. Rescue Outpost is structurally sound and reachable with the available fuel, while Main Base is farther away. Given the storm's urgency and the need for immediate shelter, Rescue Outpost is the safest remaining option.\n\nClaim claim:hiddenbench:22:answer: Select the single correct answer for HiddenBench task 22 (Antarctic Storm Safe Haven).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Main Base | Retreat Camp | Rescue Outpost. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Main Base\": 0.5, \"Retreat Camp\": 0.2500, \"Rescue Outpost\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:058ac4d5db84bbebd204b7a0376dd5d62103b2f58b3a1e7143b6285c7912df5c",
+      "responseHash": "sha256:1c871a655be39dfb0c7064471f8c063a1eac6a774e219f7d586c7bd501578087",
+      "rawResponse": "{\"message\":\"Based on the satellite imagery showing a collapsed ice bridge to Retreat Camp, making it inaccessible, and the structural soundness of Rescue Outpost, it is the safest remaining option. Main Base is farther away, and Retreat Camp is no longer reachable. Rescue Outpost is the most logical choice given the storm's urgency and available fuel.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Main Base\":0.0,\"Retreat Camp\":0.0,\"Rescue Outpost\":1.0}},\"evidence\":[{\"content\":\"The satellite imagery reveals a collapsed ice bridge to Retreat Camp, making it inaccessible.\",\"relation\":\"supports\"},{\"content\":\"Rescue Outpost is structurally sound and reachable with the available fuel.\",\"relation\":\"supports\"},{\"content\":\"Main Base is farther away, and Retreat Camp is no longer reachable.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 862,
+        "completionTokens": 235,
+        "totalTokens": 1097,
+        "latencyMs": 7089
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:3",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou and three other participants are scientists at an Antarctic research station. A massive, fast-moving storm is approaching. You must rapidly decide, as a group, which facility to seek shelter in for the next 48 hours. You have snow vehicles and limited time to reach only one location before the blizzard begins. Your three choices:\n- Main Base: The largest facility, but farther away.\n- Retreat Camp: A small, nearby camp rated for storms.\n- Rescue Outpost: Smaller, medium distance, typically used for emergencies.\nWhichever location you pick, you'll be unable to contact others until the storm passes. Supplies, infrastructure, and route safety may differ. Only one option will keep you safe and supplied until rescue teams arrive.\n\nShared information:\n1. A radio update confirms Retreat Camp is the closest shelter and is built to withstand severe weather.\n2. Supply records say that Retreat Camp offers food, water, and sleeping bags for four people.\n3. The snow vehicle has just enough fuel to reach any of the three locations before the storm hits, but not to try multiple.\n4. The Rescue Outpost's exterior was recently checked and found structurally sound.\n\nYour private information:\nThe snow route to Rescue Outpost is fully snowed in since the last storm; the path isn't navigable even with the vehicle.\n\nVisible discussion transcript:\n[round 2] agent:hiddenbench:22:1: The satellite imagery reveals a collapsed ice bridge to Retreat Camp, making it inaccessible. Rescue Outpost is structurally sound and reachable with the available fuel, while Main Base is farther away. Given the storm's speed and the need for immediate shelter, Rescue Outpost is the safest remaining option.\n[round 2] agent:hiddenbench:22:2: The satellite imagery reveals a collapsed ice bridge to Retreat Camp, making it inaccessible. Rescue Outpost is structurally sound and reachable with the available fuel, while Main Base is farther away. Given the storm's speed and the need for immediate shelter, Rescue Outpost is the safest remaining option.\n[round 2] agent:hiddenbench:22:3: The Retreat Camp is the safest and most reliable option. It is the closest shelter, built to withstand severe weather, and has sufficient supplies for four people. The route to Rescue Outpost is impassable, and while Main Base is an option, Retreat Camp's proximity and storm rating make it the superior choice.\n[round 2] agent:hiddenbench:22:4: The satellite imagery reveals the ice bridge to Retreat Camp has collapsed, making it inaccessible. Rescue Outpost is structurally sound and reachable with the available fuel, while Main Base is farther away. Given the storm's urgency and the need for immediate shelter, Rescue Outpost is the safest remaining option.\n\nClaim claim:hiddenbench:22:answer: Select the single correct answer for HiddenBench task 22 (Antarctic Storm Safe Haven).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Main Base | Retreat Camp | Rescue Outpost. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Main Base\": 0.5, \"Retreat Camp\": 0.2500, \"Rescue Outpost\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:98fe9b49ceb6c80ea9c3235a84d3d8862f68ab79238f4f29d2c70bf5fd9d8831",
+      "responseHash": "sha256:df6a91f619a5c6a60f87c22e4179ac7e24fd1971fc41d323a8fb1c9fe53fb6c3",
+      "rawResponse": "{\"message\":\"Based on the evidence, Retreat Camp is the safest and most reliable option. It is the closest shelter, built to withstand severe weather, and has sufficient supplies for four people. The route to Rescue Outpost is impassable, and while Main Base is an option, Retreat Camp's proximity and storm rating make it the superior choice.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Main Base\":0.0,\"Retreat Camp\":1.0,\"Rescue Outpost\":0.0}},\"evidence\":[{\"content\":\"A radio update confirms Retreat Camp is the closest shelter and is built to withstand severe weather.\",\"relation\":\"supports\"},{\"content\":\"Supply records say that Retreat Camp offers food, water, and sleeping bags for four people.\",\"relation\":\"supports\"},{\"content\":\"The snow route to Rescue Outpost is fully snowed in since the last storm; the path isn't navigable even with the vehicle.\",\"relation\":\"attacks\"},{\"content\":\"The Retreat Camp is the safest and most reliable option. It is the closest shelter, built to withstand severe weather, and has sufficient supplies for four people. The route to Rescue Outpost is impassable, and while Main Base is an option, Retreat Camp's proximity and storm rating make it the superior choice.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 861,
+        "completionTokens": 332,
+        "totalTokens": 1193,
+        "latencyMs": 9486
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:22:seed-1:r3:agent:hiddenbench:22:4",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou and three other participants are scientists at an Antarctic research station. A massive, fast-moving storm is approaching. You must rapidly decide, as a group, which facility to seek shelter in for the next 48 hours. You have snow vehicles and limited time to reach only one location before the blizzard begins. Your three choices:\n- Main Base: The largest facility, but farther away.\n- Retreat Camp: A small, nearby camp rated for storms.\n- Rescue Outpost: Smaller, medium distance, typically used for emergencies.\nWhichever location you pick, you'll be unable to contact others until the storm passes. Supplies, infrastructure, and route safety may differ. Only one option will keep you safe and supplied until rescue teams arrive.\n\nShared information:\n1. A radio update confirms Retreat Camp is the closest shelter and is built to withstand severe weather.\n2. Supply records say that Retreat Camp offers food, water, and sleeping bags for four people.\n3. The snow vehicle has just enough fuel to reach any of the three locations before the storm hits, but not to try multiple.\n4. The Rescue Outpost's exterior was recently checked and found structurally sound.\n\nYour private information:\nSatellite imagery from this morning shows the ice bridge leading to Retreat Camp has collapsed, making it dangerous to reach by foot or vehicle.\n\nVisible discussion transcript:\n[round 2] agent:hiddenbench:22:1: The satellite imagery reveals a collapsed ice bridge to Retreat Camp, making it inaccessible. Rescue Outpost is structurally sound and reachable with the available fuel, while Main Base is farther away. Given the storm's speed and the need for immediate shelter, Rescue Outpost is the safest remaining option.\n[round 2] agent:hiddenbench:22:2: The satellite imagery reveals a collapsed ice bridge to Retreat Camp, making it inaccessible. Rescue Outpost is structurally sound and reachable with the available fuel, while Main Base is farther away. Given the storm's speed and the need for immediate shelter, Rescue Outpost is the safest remaining option.\n[round 2] agent:hiddenbench:22:3: The Retreat Camp is the safest and most reliable option. It is the closest shelter, built to withstand severe weather, and has sufficient supplies for four people. The route to Rescue Outpost is impassable, and while Main Base is an option, Retreat Camp's proximity and storm rating make it the superior choice.\n[round 2] agent:hiddenbench:22:4: The satellite imagery reveals the ice bridge to Retreat Camp has collapsed, making it inaccessible. Rescue Outpost is structurally sound and reachable with the available fuel, while Main Base is farther away. Given the storm's urgency and the need for immediate shelter, Rescue Outpost is the safest remaining option.\n\nClaim claim:hiddenbench:22:answer: Select the single correct answer for HiddenBench task 22 (Antarctic Storm Safe Haven).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Main Base | Retreat Camp | Rescue Outpost. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Main Base\": 0.5, \"Retreat Camp\": 0.2500, \"Rescue Outpost\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:c1b8803da987ccd7246536fb4aec449f800878fb824ae2eca4f772bd2c807801",
+      "responseHash": "sha256:8005515d6c12a276245fe37f21035652a86d1fc5459ea6d9e3dd4c1e33875397",
+      "rawResponse": "{\"message\":\"The satellite imagery shows the ice bridge to Retreat Camp has collapsed, making it inaccessible. Rescue Outpost is structurally sound and reachable with the available fuel, while Main Base is farther away. Given the storm's urgency and the need for immediate shelter, Rescue Outpost is the safest remaining option.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Main Base\":0.0,\"Retreat Camp\":0.0,\"Rescue Outpost\":1.0}},\"evidence\":[{\"content\":\"Satellite imagery from this morning shows the ice bridge leading to Retreat Camp has collapsed, making it dangerous to reach by foot or vehicle.\",\"relation\":\"attacks\"},{\"content\":\"The Rescue Outpost's exterior was recently checked and found structurally sound.\",\"relation\":\"supports\"},{\"content\":\"The snow vehicle has just enough fuel to reach any of the three locations before the storm hits, but not to try multiple.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 860,
+        "completionTokens": 250,
+        "totalTokens": 1110,
+        "latencyMs": 13681
+      }
+    }
+  ],
+  "r3SnapshotHash": "sha256:0171c06641bf70a3ac9af40c7f49bf94c801bcb51a43b4f13eb77f75220ff331",
+  "contentHash": "sha256:c0a1ab2fe43cd1f097cb64c26ce1849ac20c36492f6444586c4637b5ce00dcca"
+}

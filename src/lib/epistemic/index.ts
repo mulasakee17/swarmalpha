@@ -14,3 +14,5 @@ export * from "./beliefGeometry";
 export * from "./calibration";
 export * from "./domainContracts";
 export * from "./collectiveState";
+export * from "./discussionThermometer";
+export * from "./collectiveDecisionProcessState";

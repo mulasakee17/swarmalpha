@@ -1,5 +1,5 @@
 import type { RawObservation, ObservationConfig, PromptBuilder, OpinionParser, ObserverAgent } from "./types";
-import type { AgentOpinion, DiscussionTask, DiscussionMemoryEntry } from "../discussion/types";
+import type { AgentOpinion, DiscussionTask, DiscussionMemoryEntry } from "../../../legacy/src/lib/discussion/types";
 import type { RuntimeContext } from "../discussion-types/types";
 import { safeJsonParse } from "../utils/jsonUtils";
 import { parseClaimReports } from "./claimReports";

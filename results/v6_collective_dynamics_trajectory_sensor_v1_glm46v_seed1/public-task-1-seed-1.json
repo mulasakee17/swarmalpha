@@ -1,0 +1,370 @@
+{
+  "artifactRef": {
+    "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-public-artifact",
+    "version": "1.0.0"
+  },
+  "planHash": "sha256:7212455275fefee6c988d23bdfe480775b07b8f03a86872eda2bef1f424aa528",
+  "runId": "collective-dynamics-m2:1:seed-1",
+  "seed": 1,
+  "modelRef": {
+    "id": "zhipu:glm-4.6v",
+    "version": "1.0.0"
+  },
+  "onlineTask": {
+    "sourceTaskId": 1,
+    "taskId": "task:hiddenbench:1",
+    "publicContext": "You are participating in a study, acting as a community leader of a small village surrounded by mountains and rivers. Most villagers own cars, but there are also elderly people and children who may need additional assistance when walking. Earlier today, heavy rain began to fall, and the local government issued a warning about a potential disaster.\nHours ago, you requested relief supplies, but the supply truck has yet to arrive. Now, the rain has temporarily stopped, giving you and the other three community leaders a short window to decide on the safest evacuation route before the rain resumes. You don’t know how much time you have left to make this critical decision.\nYour Task:\nYou will discuss with three other participants, who are also acting as community leaders, to decide where to evacuate. You have three options:\n- West City: Accessible through a bridge over the river.\n- East Town: Accessible through a tunnel on middle ground.\n- North Hill: Accessible through a driveway and walking trails.\nUsually, it takes the same time to reach all three places by car, but some routes may be inaccessible now.\nThere is only one correct evacuation location. After the discussion:\n- If you choose the correct location, you will earn $1.\n- If all other participants also choose the correct location, you will earn an additional $1 (for a total of $2).\nThis means that coordinating with others is critical to maximize your rewards. The chat will at most take 15 minutes. However, the exact time when the chat will end is unknown.\n\nShared information:\n1. The local government announced that hotels in West City are prepared to accommodate evacuees. While these hotels are fully stocked with food, they may lack medical supplies.\n2. The mayor of East Town has offered accommodations for any evacuees. She also ensures that volunteers are available to assist them.\n3. The school at North Hill can serve as a temporary evacuation center, providing a two-week supply of essentials and sleeping space in the gym.\n4. The river level is still below the bridge to West City.",
+    "claim": {
+      "id": "claim:hiddenbench:1:answer",
+      "proposition": "Select the single correct answer for HiddenBench task 1 (evacuation_west_city).",
+      "domain": "hiddenbench-categorical-decision",
+      "createdAt": "2026-08-11T00:00:00.000Z",
+      "options": [
+        "West City",
+        "East Town",
+        "North Hill"
+      ],
+      "resolutionPolicy": {
+        "kind": "categorical",
+        "resolverId": "resolver:hiddenbench-data-3be6ca16"
+      }
+    },
+    "agents": [
+      {
+        "agentId": "agent:hiddenbench:1:1",
+        "privateInformation": "The supply truck headed to the village from East Town was stuck in the tunnel."
+      },
+      {
+        "agentId": "agent:hiddenbench:1:2",
+        "privateInformation": "A massive fire has blocked the supply truck and all other traffic."
+      },
+      {
+        "agentId": "agent:hiddenbench:1:3",
+        "privateInformation": "The walking trails have been closed since last weekend due to fallen trees."
+      },
+      {
+        "agentId": "agent:hiddenbench:1:4",
+        "privateInformation": "A mudslide just occurred, covering the driveway to North Hill."
+      }
+    ]
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "messages": [
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:1:1",
+          "content": "West City",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:1:2",
+          "content": "I propose we evacuate to West City. The bridge is still accessible as the river level is below it, and the hotels there are prepared to accommodate us. While they may lack medical supplies, the immediate safety of the bridge is our top priority.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:1:3",
+          "content": "West City",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:1:4",
+          "content": "West City",
+          "source": "agent"
+        }
+      ],
+      "calls": [
+        {
+          "requestId": "discussion:collective-dynamics-m2:1:seed-1:r1:agent:hiddenbench:1:1",
+          "round": 1,
+          "agentId": "agent:hiddenbench:1:1",
+          "requestHash": "sha256:92dd7c0fd86ba27976e59cdc6d13688bada34269312f0bb70b43955b178be83a",
+          "responseHash": "sha256:19500460ca2a3a396f9c0c583d9f31fbe72f91a9058adb98bed13622f54264e7"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2:1:seed-1:r1:agent:hiddenbench:1:2",
+          "round": 1,
+          "agentId": "agent:hiddenbench:1:2",
+          "requestHash": "sha256:ab688aae94fa6916b7f7bd5e54fa863222d846092d4a63e7f22dd2f55540a1b1",
+          "responseHash": "sha256:8e598f7c772282d019cd0aff9519cbbd912e721dc9bd63012e594c141bc1a322"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2:1:seed-1:r1:agent:hiddenbench:1:3",
+          "round": 1,
+          "agentId": "agent:hiddenbench:1:3",
+          "requestHash": "sha256:e2c5cbed02715b9247343746e36cf02c86b3a43fe7a8bbc3b536626f9e9e5e40",
+          "responseHash": "sha256:19500460ca2a3a396f9c0c583d9f31fbe72f91a9058adb98bed13622f54264e7"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2:1:seed-1:r1:agent:hiddenbench:1:4",
+          "round": 1,
+          "agentId": "agent:hiddenbench:1:4",
+          "requestHash": "sha256:d630431ea09db2990e36b24cb2db50b70ca5c25434708ca8ba849ffe75c6b27c",
+          "responseHash": "sha256:19500460ca2a3a396f9c0c583d9f31fbe72f91a9058adb98bed13622f54264e7"
+        }
+      ],
+      "contentHash": "sha256:1cf1c6bcb89e060e9e6ccd9d067611297827aa071d607c513f05553a40d0ba0a"
+    },
+    {
+      "round": 2,
+      "messages": [
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:1:1",
+          "content": "West City",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:1:2",
+          "content": "West City",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:1:3",
+          "content": "West City",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:1:4",
+          "content": "West City",
+          "source": "agent"
+        }
+      ],
+      "calls": [
+        {
+          "requestId": "discussion:collective-dynamics-m2:1:seed-1:r2:agent:hiddenbench:1:1",
+          "round": 2,
+          "agentId": "agent:hiddenbench:1:1",
+          "requestHash": "sha256:96cb2a8456b5f84629f6c1e75eb80f59195edccec1256221b2bbf23c7e3150c8",
+          "responseHash": "sha256:19500460ca2a3a396f9c0c583d9f31fbe72f91a9058adb98bed13622f54264e7"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2:1:seed-1:r2:agent:hiddenbench:1:2",
+          "round": 2,
+          "agentId": "agent:hiddenbench:1:2",
+          "requestHash": "sha256:8db5d03b8866fd23908854ea86cbaae57962c469efbab2174850e5a72f3437e0",
+          "responseHash": "sha256:19500460ca2a3a396f9c0c583d9f31fbe72f91a9058adb98bed13622f54264e7"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2:1:seed-1:r2:agent:hiddenbench:1:3",
+          "round": 2,
+          "agentId": "agent:hiddenbench:1:3",
+          "requestHash": "sha256:1404c808a3d97214be6752e6eb54ad4ffe23150f446add5fd6aefadaeaa48f35",
+          "responseHash": "sha256:19500460ca2a3a396f9c0c583d9f31fbe72f91a9058adb98bed13622f54264e7"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2:1:seed-1:r2:agent:hiddenbench:1:4",
+          "round": 2,
+          "agentId": "agent:hiddenbench:1:4",
+          "requestHash": "sha256:d3206fd289de22fe30803f216312c8078d20ba0c92324a90dbe56a2f6d086aec",
+          "responseHash": "sha256:19500460ca2a3a396f9c0c583d9f31fbe72f91a9058adb98bed13622f54264e7"
+        }
+      ],
+      "contentHash": "sha256:117697a97c929e2f212460d786599c0c722ac638bf76a58f2a8fbda4be91aecb"
+    },
+    {
+      "round": 3,
+      "messages": [
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:1:1",
+          "content": "West City",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:1:2",
+          "content": "West City",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:1:3",
+          "content": "West City",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:1:4",
+          "content": "West City",
+          "source": "agent"
+        }
+      ],
+      "calls": [
+        {
+          "requestId": "discussion:collective-dynamics-m2:1:seed-1:r3:agent:hiddenbench:1:1",
+          "round": 3,
+          "agentId": "agent:hiddenbench:1:1",
+          "requestHash": "sha256:7988395006a4205bc3de391c37e4d9d8e1cddc6650c8e37636531688fd42b68c",
+          "responseHash": "sha256:19500460ca2a3a396f9c0c583d9f31fbe72f91a9058adb98bed13622f54264e7"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2:1:seed-1:r3:agent:hiddenbench:1:2",
+          "round": 3,
+          "agentId": "agent:hiddenbench:1:2",
+          "requestHash": "sha256:cd48f6ec58c1f5cc63bafd9a6271bd19528decacdea4b75187a28a867ee5709e",
+          "responseHash": "sha256:19500460ca2a3a396f9c0c583d9f31fbe72f91a9058adb98bed13622f54264e7"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2:1:seed-1:r3:agent:hiddenbench:1:3",
+          "round": 3,
+          "agentId": "agent:hiddenbench:1:3",
+          "requestHash": "sha256:397a4dcf5078c7bf370836c94fe8fffeea0ffc19478ef3b5ca896074c3c369cf",
+          "responseHash": "sha256:19500460ca2a3a396f9c0c583d9f31fbe72f91a9058adb98bed13622f54264e7"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2:1:seed-1:r3:agent:hiddenbench:1:4",
+          "round": 3,
+          "agentId": "agent:hiddenbench:1:4",
+          "requestHash": "sha256:576b1015bd14f040edeee3400451d33efcde1b862fe23821dd509de8fd09cbc6",
+          "responseHash": "sha256:19500460ca2a3a396f9c0c583d9f31fbe72f91a9058adb98bed13622f54264e7"
+        }
+      ],
+      "contentHash": "sha256:6fceb7aedb96dae0f5a5dc3b30b86aed0a3361dfb2a5652864763910171c571c"
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointRef": {
+        "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-checkpoint",
+        "version": "1.0.0"
+      },
+      "checkpointId": "task:hiddenbench:1:collective-dynamics-m2:1:seed-1:X0",
+      "checkpointRound": 0,
+      "visibleMessages": [],
+      "sourceRequestHashes": [],
+      "contentHash": "sha256:e91e86a5f17e83bff89bc521aa1403b5735229a859a22513c01ea5411f7bc9e4"
+    },
+    {
+      "checkpointRef": {
+        "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-checkpoint",
+        "version": "1.0.0"
+      },
+      "checkpointId": "task:hiddenbench:1:collective-dynamics-m2:1:seed-1:X1",
+      "checkpointRound": 1,
+      "visibleMessages": [
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:1:1",
+          "content": "West City",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:1:2",
+          "content": "I propose we evacuate to West City. The bridge is still accessible as the river level is below it, and the hotels there are prepared to accommodate us. While they may lack medical supplies, the immediate safety of the bridge is our top priority.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:1:3",
+          "content": "West City",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:1:4",
+          "content": "West City",
+          "source": "agent"
+        }
+      ],
+      "sourceRequestHashes": [
+        "sha256:92dd7c0fd86ba27976e59cdc6d13688bada34269312f0bb70b43955b178be83a",
+        "sha256:ab688aae94fa6916b7f7bd5e54fa863222d846092d4a63e7f22dd2f55540a1b1",
+        "sha256:e2c5cbed02715b9247343746e36cf02c86b3a43fe7a8bbc3b536626f9e9e5e40",
+        "sha256:d630431ea09db2990e36b24cb2db50b70ca5c25434708ca8ba849ffe75c6b27c"
+      ],
+      "contentHash": "sha256:7dc7d74677aca3f1f65c738ad93c0de93e9b9ab574103fdbdd671b0b74c3382f"
+    },
+    {
+      "checkpointRef": {
+        "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-checkpoint",
+        "version": "1.0.0"
+      },
+      "checkpointId": "task:hiddenbench:1:collective-dynamics-m2:1:seed-1:X2",
+      "checkpointRound": 2,
+      "visibleMessages": [
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:1:1",
+          "content": "West City",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:1:2",
+          "content": "West City",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:1:3",
+          "content": "West City",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:1:4",
+          "content": "West City",
+          "source": "agent"
+        }
+      ],
+      "sourceRequestHashes": [
+        "sha256:96cb2a8456b5f84629f6c1e75eb80f59195edccec1256221b2bbf23c7e3150c8",
+        "sha256:8db5d03b8866fd23908854ea86cbaae57962c469efbab2174850e5a72f3437e0",
+        "sha256:1404c808a3d97214be6752e6eb54ad4ffe23150f446add5fd6aefadaeaa48f35",
+        "sha256:d3206fd289de22fe30803f216312c8078d20ba0c92324a90dbe56a2f6d086aec"
+      ],
+      "contentHash": "sha256:0d6894374413f88773ec07326c1862a4f018e26822b8d851189953378673bbb3"
+    },
+    {
+      "checkpointRef": {
+        "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-checkpoint",
+        "version": "1.0.0"
+      },
+      "checkpointId": "task:hiddenbench:1:collective-dynamics-m2:1:seed-1:X3",
+      "checkpointRound": 3,
+      "visibleMessages": [
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:1:1",
+          "content": "West City",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:1:2",
+          "content": "West City",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:1:3",
+          "content": "West City",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:1:4",
+          "content": "West City",
+          "source": "agent"
+        }
+      ],
+      "sourceRequestHashes": [
+        "sha256:7988395006a4205bc3de391c37e4d9d8e1cddc6650c8e37636531688fd42b68c",
+        "sha256:cd48f6ec58c1f5cc63bafd9a6271bd19528decacdea4b75187a28a867ee5709e",
+        "sha256:397a4dcf5078c7bf370836c94fe8fffeea0ffc19478ef3b5ca896074c3c369cf",
+        "sha256:576b1015bd14f040edeee3400451d33efcde1b862fe23821dd509de8fd09cbc6"
+      ],
+      "contentHash": "sha256:9c1458406e19d20c7eba57161d83aa7c47ecf43db1bebfa3a4163a19d08ef920"
+    }
+  ],
+  "contentHash": "sha256:7afa76dcfeccf88f2fff6cd4a4e6cfea20d3af9606dd5727c547192669165de8"
+}

@@ -1,0 +1,422 @@
+[
+  {
+    "schemaRef": {
+      "id": "swarmalpha.experiment.v6.discussion-thermometer-state-space-task-bank",
+      "version": "1.0.0"
+    },
+    "taskId": "thermometer-transport:backup-power:q1",
+    "baseScenarioId": "backup-power",
+    "designRegime": "SHARED_CUE_PRIVATE_CORRECTION",
+    "publicContext": "A remote facility's battery-backed power unit shows one primary anomaly. Determine which listed cause best explains the supplied observations.\n\nThe service guide says battery aging usually combines reduced measured capacity, increased internal resistance, and voltage sag under an ordinary load. A persistent parasitic load usually leaves battery health tests ordinary but produces a continuous independently measured background draw. A current-sensor offset usually creates disagreement between the electronic current channel and an external clamp meter while physical runtime and voltage behavior remain ordinary.\n\nEvery observation is fallible. A single observation is not conclusive, and source identity is not statistical independence.",
+    "claim": {
+      "claimId": "claim:transport:backup-power",
+      "proposition": "Which primary cause generated the backup-power anomaly?",
+      "options": [
+        {
+          "optionId": "opt_1",
+          "label": "battery aging"
+        },
+        {
+          "optionId": "opt_2",
+          "label": "persistent parasitic load"
+        },
+        {
+          "optionId": "opt_3",
+          "label": "current-sensor offset"
+        }
+      ]
+    },
+    "agents": [
+      {
+        "agentId": "agent_1",
+        "privateEvidence": [
+          {
+            "evidenceId": "bp-sc-1a",
+            "sourceId": "central-dashboard",
+            "lineageId": "dashboard-lineage",
+            "statement": "The central dashboard flagged an unexplained continuous background load."
+          },
+          {
+            "evidenceId": "bp-sc-1b",
+            "sourceId": "capacity-tester",
+            "lineageId": "capacity-test-lineage",
+            "statement": "A controlled discharge test measured substantially less usable capacity than the unit's rated baseline."
+          }
+        ]
+      },
+      {
+        "agentId": "agent_2",
+        "privateEvidence": [
+          {
+            "evidenceId": "bp-sc-2a",
+            "sourceId": "central-dashboard",
+            "lineageId": "dashboard-lineage",
+            "statement": "The central dashboard flagged an unexplained continuous background load."
+          },
+          {
+            "evidenceId": "bp-sc-2b",
+            "sourceId": "load-step-recorder",
+            "lineageId": "voltage-response-lineage",
+            "statement": "An ordinary load step produced a deeper voltage sag than the maintenance reference."
+          }
+        ]
+      },
+      {
+        "agentId": "agent_3",
+        "privateEvidence": [
+          {
+            "evidenceId": "bp-sc-3a",
+            "sourceId": "central-dashboard",
+            "lineageId": "dashboard-lineage",
+            "statement": "The central dashboard flagged an unexplained continuous background load."
+          },
+          {
+            "evidenceId": "bp-sc-3b",
+            "sourceId": "impedance-meter",
+            "lineageId": "impedance-test-lineage",
+            "statement": "An independent impedance test found internal resistance above the service limit."
+          }
+        ]
+      },
+      {
+        "agentId": "agent_4",
+        "privateEvidence": [
+          {
+            "evidenceId": "bp-sc-4a",
+            "sourceId": "central-dashboard",
+            "lineageId": "dashboard-lineage",
+            "statement": "The central dashboard flagged an unexplained continuous background load."
+          },
+          {
+            "evidenceId": "bp-sc-4b",
+            "sourceId": "clamp-meter",
+            "lineageId": "external-current-lineage",
+            "statement": "An external clamp meter did not reproduce the dashboard's claimed continuous background draw."
+          }
+        ]
+      }
+    ],
+    "offlineDesignRecord": {
+      "latentOutcomeOptionId": "opt_1",
+      "role": "semantic_coherence_review_only_not_monitor_input",
+      "causalComparisonAcrossRegimes": "not_authorized"
+    },
+    "humanSemanticReview": "PENDING",
+    "contentHash": "sha256:ad14ddbc70bf50e5df7892971ef8ba23d15ce91cfde1e1018b3c41d326e535fb"
+  },
+  {
+    "schemaRef": {
+      "id": "swarmalpha.experiment.v6.discussion-thermometer-state-space-task-bank",
+      "version": "1.0.0"
+    },
+    "taskId": "thermometer-transport:backup-power:q2",
+    "baseScenarioId": "backup-power",
+    "designRegime": "POLARIZED_PRIVATE_BLOCKS",
+    "publicContext": "A remote facility's battery-backed power unit shows one primary anomaly. Determine which listed cause best explains the supplied observations.\n\nThe service guide says battery aging usually combines reduced measured capacity, increased internal resistance, and voltage sag under an ordinary load. A persistent parasitic load usually leaves battery health tests ordinary but produces a continuous independently measured background draw. A current-sensor offset usually creates disagreement between the electronic current channel and an external clamp meter while physical runtime and voltage behavior remain ordinary.\n\nEvery observation is fallible. A single observation is not conclusive, and source identity is not statistical independence.",
+    "claim": {
+      "claimId": "claim:transport:backup-power",
+      "proposition": "Which primary cause generated the backup-power anomaly?",
+      "options": [
+        {
+          "optionId": "opt_1",
+          "label": "battery aging"
+        },
+        {
+          "optionId": "opt_2",
+          "label": "persistent parasitic load"
+        },
+        {
+          "optionId": "opt_3",
+          "label": "current-sensor offset"
+        }
+      ]
+    },
+    "agents": [
+      {
+        "agentId": "agent_1",
+        "privateEvidence": [
+          {
+            "evidenceId": "bp-pb-1a",
+            "sourceId": "capacity-brief-a",
+            "lineageId": "capacity-brief-lineage",
+            "statement": "A capacity brief reported substantially reduced usable capacity."
+          },
+          {
+            "evidenceId": "bp-pb-1b",
+            "sourceId": "impedance-brief-a",
+            "lineageId": "impedance-brief-lineage",
+            "statement": "An impedance brief reported internal resistance above the service limit."
+          }
+        ]
+      },
+      {
+        "agentId": "agent_2",
+        "privateEvidence": [
+          {
+            "evidenceId": "bp-pb-2a",
+            "sourceId": "capacity-brief-a",
+            "lineageId": "capacity-brief-lineage",
+            "statement": "A capacity brief reported substantially reduced usable capacity."
+          },
+          {
+            "evidenceId": "bp-pb-2b",
+            "sourceId": "impedance-brief-a",
+            "lineageId": "impedance-brief-lineage",
+            "statement": "An impedance brief reported internal resistance above the service limit."
+          }
+        ]
+      },
+      {
+        "agentId": "agent_3",
+        "privateEvidence": [
+          {
+            "evidenceId": "bp-pb-3a",
+            "sourceId": "sensor-brief-b",
+            "lineageId": "sensor-brief-lineage",
+            "statement": "A sensor brief reported that the electronic current channel showed a draw that an external clamp meter did not reproduce."
+          },
+          {
+            "evidenceId": "bp-pb-3b",
+            "sourceId": "runtime-brief-b",
+            "lineageId": "runtime-brief-lineage",
+            "statement": "A runtime brief reported ordinary physical runtime during a short field check."
+          }
+        ]
+      },
+      {
+        "agentId": "agent_4",
+        "privateEvidence": [
+          {
+            "evidenceId": "bp-pb-4a",
+            "sourceId": "sensor-brief-b",
+            "lineageId": "sensor-brief-lineage",
+            "statement": "A sensor brief reported that the electronic current channel showed a draw that an external clamp meter did not reproduce."
+          },
+          {
+            "evidenceId": "bp-pb-4b",
+            "sourceId": "runtime-brief-b",
+            "lineageId": "runtime-brief-lineage",
+            "statement": "A runtime brief reported ordinary physical runtime during a short field check."
+          }
+        ]
+      }
+    ],
+    "offlineDesignRecord": {
+      "latentOutcomeOptionId": "opt_1",
+      "role": "semantic_coherence_review_only_not_monitor_input",
+      "causalComparisonAcrossRegimes": "not_authorized"
+    },
+    "humanSemanticReview": "PENDING",
+    "contentHash": "sha256:984a9a54a7fe7eeb91c2e3360bcc90f0630af39cc78e26025f8596831904b612"
+  },
+  {
+    "schemaRef": {
+      "id": "swarmalpha.experiment.v6.discussion-thermometer-state-space-task-bank",
+      "version": "1.0.0"
+    },
+    "taskId": "thermometer-transport:aerial-navigation:q1",
+    "baseScenarioId": "aerial-navigation",
+    "designRegime": "SHARED_CUE_PRIVATE_CORRECTION",
+    "publicContext": "An autonomous survey drone shows one primary navigation anomaly. Determine which listed cause best explains the supplied observations.\n\nThe flight guide says magnetic-compass interference usually distorts heading while independent position and inertial motion remain coherent. GPS multipath usually creates position jumps near reflective structures while compass and inertial heading agree. Actuator imbalance usually creates persistent yaw under level-flight commands together with unequal motor current, without isolated position jumps.\n\nEvery observation is fallible. A single observation is not conclusive, and source identity is not statistical independence.",
+    "claim": {
+      "claimId": "claim:transport:aerial-navigation",
+      "proposition": "Which primary cause generated the navigation anomaly?",
+      "options": [
+        {
+          "optionId": "opt_1",
+          "label": "magnetic-compass interference"
+        },
+        {
+          "optionId": "opt_2",
+          "label": "GPS multipath"
+        },
+        {
+          "optionId": "opt_3",
+          "label": "actuator imbalance"
+        }
+      ]
+    },
+    "agents": [
+      {
+        "agentId": "agent_1",
+        "privateEvidence": [
+          {
+            "evidenceId": "an-sc-1a",
+            "sourceId": "flight-dashboard",
+            "lineageId": "dashboard-lineage",
+            "statement": "The flight dashboard flagged a possible actuator-balance problem."
+          },
+          {
+            "evidenceId": "an-sc-1b",
+            "sourceId": "position-log",
+            "lineageId": "position-lineage",
+            "statement": "Position estimates jumped only when the drone passed beside a reflective warehouse wall."
+          }
+        ]
+      },
+      {
+        "agentId": "agent_2",
+        "privateEvidence": [
+          {
+            "evidenceId": "an-sc-2a",
+            "sourceId": "flight-dashboard",
+            "lineageId": "dashboard-lineage",
+            "statement": "The flight dashboard flagged a possible actuator-balance problem."
+          },
+          {
+            "evidenceId": "an-sc-2b",
+            "sourceId": "heading-comparison",
+            "lineageId": "heading-lineage",
+            "statement": "Compass and inertial heading agreed while the reported position jumped."
+          }
+        ]
+      },
+      {
+        "agentId": "agent_3",
+        "privateEvidence": [
+          {
+            "evidenceId": "an-sc-3a",
+            "sourceId": "flight-dashboard",
+            "lineageId": "dashboard-lineage",
+            "statement": "The flight dashboard flagged a possible actuator-balance problem."
+          },
+          {
+            "evidenceId": "an-sc-3b",
+            "sourceId": "motor-current-log",
+            "lineageId": "motor-current-lineage",
+            "statement": "Motor currents remained balanced during the position excursions."
+          }
+        ]
+      },
+      {
+        "agentId": "agent_4",
+        "privateEvidence": [
+          {
+            "evidenceId": "an-sc-4a",
+            "sourceId": "flight-dashboard",
+            "lineageId": "dashboard-lineage",
+            "statement": "The flight dashboard flagged a possible actuator-balance problem."
+          },
+          {
+            "evidenceId": "an-sc-4b",
+            "sourceId": "open-field-check",
+            "lineageId": "environment-check-lineage",
+            "statement": "The position jumps disappeared during an open-field repeat away from reflective structures."
+          }
+        ]
+      }
+    ],
+    "offlineDesignRecord": {
+      "latentOutcomeOptionId": "opt_2",
+      "role": "semantic_coherence_review_only_not_monitor_input",
+      "causalComparisonAcrossRegimes": "not_authorized"
+    },
+    "humanSemanticReview": "PENDING",
+    "contentHash": "sha256:8242aa4a33218c2aab020d5d334e4b473d721c9ee9272ba1cc68ab1ed70aae79"
+  },
+  {
+    "schemaRef": {
+      "id": "swarmalpha.experiment.v6.discussion-thermometer-state-space-task-bank",
+      "version": "1.0.0"
+    },
+    "taskId": "thermometer-transport:aerial-navigation:q2",
+    "baseScenarioId": "aerial-navigation",
+    "designRegime": "POLARIZED_PRIVATE_BLOCKS",
+    "publicContext": "An autonomous survey drone shows one primary navigation anomaly. Determine which listed cause best explains the supplied observations.\n\nThe flight guide says magnetic-compass interference usually distorts heading while independent position and inertial motion remain coherent. GPS multipath usually creates position jumps near reflective structures while compass and inertial heading agree. Actuator imbalance usually creates persistent yaw under level-flight commands together with unequal motor current, without isolated position jumps.\n\nEvery observation is fallible. A single observation is not conclusive, and source identity is not statistical independence.",
+    "claim": {
+      "claimId": "claim:transport:aerial-navigation",
+      "proposition": "Which primary cause generated the navigation anomaly?",
+      "options": [
+        {
+          "optionId": "opt_1",
+          "label": "magnetic-compass interference"
+        },
+        {
+          "optionId": "opt_2",
+          "label": "GPS multipath"
+        },
+        {
+          "optionId": "opt_3",
+          "label": "actuator imbalance"
+        }
+      ]
+    },
+    "agents": [
+      {
+        "agentId": "agent_1",
+        "privateEvidence": [
+          {
+            "evidenceId": "an-pb-1a",
+            "sourceId": "structure-brief-a",
+            "lineageId": "structure-brief-lineage",
+            "statement": "A navigation brief reported position jumps only beside reflective structures."
+          },
+          {
+            "evidenceId": "an-pb-1b",
+            "sourceId": "heading-brief-a",
+            "lineageId": "heading-brief-lineage",
+            "statement": "A heading brief reported compass and inertial agreement during the jumps."
+          }
+        ]
+      },
+      {
+        "agentId": "agent_2",
+        "privateEvidence": [
+          {
+            "evidenceId": "an-pb-2a",
+            "sourceId": "structure-brief-a",
+            "lineageId": "structure-brief-lineage",
+            "statement": "A navigation brief reported position jumps only beside reflective structures."
+          },
+          {
+            "evidenceId": "an-pb-2b",
+            "sourceId": "heading-brief-a",
+            "lineageId": "heading-brief-lineage",
+            "statement": "A heading brief reported compass and inertial agreement during the jumps."
+          }
+        ]
+      },
+      {
+        "agentId": "agent_3",
+        "privateEvidence": [
+          {
+            "evidenceId": "an-pb-3a",
+            "sourceId": "compass-brief-b",
+            "lineageId": "compass-brief-lineage",
+            "statement": "A compass brief reported heading distortion near powered equipment."
+          },
+          {
+            "evidenceId": "an-pb-3b",
+            "sourceId": "position-brief-b",
+            "lineageId": "position-brief-lineage",
+            "statement": "A position brief reported otherwise coherent inertial motion during the anomaly."
+          }
+        ]
+      },
+      {
+        "agentId": "agent_4",
+        "privateEvidence": [
+          {
+            "evidenceId": "an-pb-4a",
+            "sourceId": "compass-brief-b",
+            "lineageId": "compass-brief-lineage",
+            "statement": "A compass brief reported heading distortion near powered equipment."
+          },
+          {
+            "evidenceId": "an-pb-4b",
+            "sourceId": "position-brief-b",
+            "lineageId": "position-brief-lineage",
+            "statement": "A position brief reported otherwise coherent inertial motion during the anomaly."
+          }
+        ]
+      }
+    ],
+    "offlineDesignRecord": {
+      "latentOutcomeOptionId": "opt_2",
+      "role": "semantic_coherence_review_only_not_monitor_input",
+      "causalComparisonAcrossRegimes": "not_authorized"
+    },
+    "humanSemanticReview": "PENDING",
+    "contentHash": "sha256:fff20eb8c33ac1d426b911f5a4dea700d02a85fb9662a04191225e829bb22e1c"
+  }
+]

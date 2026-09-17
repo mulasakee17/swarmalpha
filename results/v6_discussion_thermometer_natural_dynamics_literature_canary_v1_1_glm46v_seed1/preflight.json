@@ -1,0 +1,62 @@
+{
+  "preflightRef": {
+    "id": "swarmalpha.preflight.v6.discussion-thermometer-natural-dynamics-literature-canary",
+    "version": "1.1.0",
+    "providerCalls": 0
+  },
+  "planHash": "sha256:1ddf8a7af82332dcea9a73d56a1532f4961620aefa1fa4fa80dff5693a71e2bb",
+  "manifestHash": "sha256:ba774c11d4b2e36edba3929e6c05ee9165a4775f8efec12def4b4f87244bc876",
+  "taskBankHash": "sha256:ce4e42a824ddfa628cc0d7657eb1b334d9b98b7b335d064066f752f073ad3947",
+  "providerCalls": 0,
+  "checks": [
+    {
+      "id": "OFFICIAL_SOURCE_BINDING",
+      "pass": true,
+      "detail": "The canary is sourced from the pinned official HiddenBench content."
+    },
+    {
+      "id": "PUBLISHED_MANUAL_ADAPTATION_SCOPE",
+      "pass": true,
+      "detail": "Only the two official manual/adapted 3-agent, 4-option tasks are selected."
+    },
+    {
+      "id": "VARIABLE_ROSTER_AND_OPTION_COUNT",
+      "pass": true,
+      "detail": "This is the smallest canary that tests non-4-agent and non-3-option support."
+    },
+    {
+      "id": "UNCHANGED_OBSERVATION_DEPTH",
+      "pass": true,
+      "detail": "Discussion depth and duplicate-adjusted observation are unchanged."
+    },
+    {
+      "id": "CALL_BUDGET_ARITHMETIC",
+      "pass": true,
+      "detail": "24 public calls at 512 tokens plus 60 sensor calls at 256 tokens equals 27,648 maximum completion tokens."
+    },
+    {
+      "id": "TRUTH_FIREWALL",
+      "pass": true,
+      "detail": "The actual projected online task inputs contain no correct answer or resolver outcome."
+    },
+    {
+      "id": "ONLINE_IDENTITY_FIREWALL",
+      "pass": true,
+      "detail": "The projected online task inputs use opaque canary identities and do not disclose the public benchmark family, source task IDs, or source task names."
+    },
+    {
+      "id": "TASK_BANK_BINDING",
+      "pass": true,
+      "detail": "The plan binds the exact projected task-bank hash."
+    },
+    {
+      "id": "NO_EXECUTION_AUTHORITY",
+      "pass": true,
+      "detail": "Preflight freezes the design but cannot authorize paid calls."
+    }
+  ],
+  "allChecksPass": true,
+  "executionReady": false,
+  "nextRequiredStep": "MANUAL_SEMANTIC_REVIEW_AND_EXPLICIT_EXECUTION_AUTHORITY",
+  "contentHash": "sha256:7c34508f1054d7a168f81f43b70aecb8bd4576592c0506f06946cb6aa626babb"
+}

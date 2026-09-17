@@ -1,0 +1,38 @@
+{
+  "failureRef": {
+    "id": "swarmalpha.experiment.v6.controlled-wrong-state-formation.failure",
+    "version": "1.0.0"
+  },
+  "planHash": "sha256:b1ef10c6d610c69b79d1d6c74c617b7037b6ce621bf94d2d27dbc41f72270645",
+  "manifestHash": "sha256:62208b9f89cbe27195bf11862a38b2c58dd4cf3864a3a126b56ffbdce6d7042d",
+  "scientificRole": "engineering_development_canary_only",
+  "status": "HALTED_FAIL_CLOSED",
+  "providerAttempts": 56,
+  "parseValidBeforeFailure": 55,
+  "failure": {
+    "sequence": 56,
+    "requestId": "controlled-formation:controlled-wrong-state-formation-v1-glm46v-seed1:task:controlled:network-incident:v1:peer:r1:agent_4",
+    "providerStatus": "response",
+    "parseFailureCode": "controlled_choice_fields_invalid",
+    "rawResponseHash": "sha256:ed855bcd5e145bfab53f2805b8a2a22f3f651b9a05225455ba10bd7df19759a5",
+    "observedExtraFields": [
+      "opt_1",
+      "opt_2",
+      "opt_3"
+    ],
+    "terminalTimestamp": "2026-08-29T14:29:53.750Z",
+    "retry": "none"
+  },
+  "usage": {
+    "promptTokens": 44652,
+    "completionTokens": 5292,
+    "totalTokens": 49944,
+    "cachedPromptTokens": 9585
+  },
+  "artifacts": {
+    "attemptLedger": "attempts.jsonl",
+    "runArtifact": "not_created",
+    "analysisArtifact": "not_created"
+  },
+  "contentHash": "sha256:a80d1cf4b1de526f4f815bce096d04d8441274b2265e91852ed755d56743fa0c"
+}

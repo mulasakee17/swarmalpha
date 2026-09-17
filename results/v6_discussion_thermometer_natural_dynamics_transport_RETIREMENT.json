@@ -1,0 +1,13 @@
+{
+  "status": "RETIRED_FROM_SCIENTIFIC_EXECUTION",
+  "effectiveDate": "2026-08-31",
+  "scope": [
+    "v6_discussion_thermometer_natural_dynamics_transport_glm46v_seed1",
+    "v6_discussion_thermometer_natural_dynamics_transport_mock_v1",
+    "v6_discussion_thermometer_natural_dynamics_transport_preflight_v1"
+  ],
+  "providerCallsInFormalTransportBatch": 0,
+  "reason": "The four custom scenarios were authored after observing the same-task development result and can therefore serve engineering mock coverage only, not independent scientific transport evidence.",
+  "replacementRequirement": "Use a pinned external literature task authority selected without reference to new thermometer outcomes.",
+  "recoverability": "Artifacts are preserved for audit; provider execution is hard-blocked in the current runner."
+}

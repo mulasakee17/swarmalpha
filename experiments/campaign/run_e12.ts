@@ -140,7 +140,7 @@ class APhaseRunner extends PhaseRunner {
 
   async run(task: TaskSpec, seed: number): Promise<TaskResult> {
     if (task === "crisis") {
-      const { TASK_CRISIS_V2 } = require("../v2/task_crisis");
+      const { TASK_CRISIS_V2 } = require("../../legacy/experiments/v2/task_crisis");
       const llmConfig = this.makeLLMConfig();
       const r = await runHiddenBenchProtocol(TASK_CRISIS_V2, llmConfig, seed, this.rounds);
       return {
@@ -253,7 +253,7 @@ class BCPhaseRunner extends PhaseRunner {
     try {
       let taskConfig: any;
       if (task === "crisis") {
-        taskConfig = require("../v2/task_crisis").TASK_CRISIS_V2;
+        taskConfig = require("../../legacy/experiments/v2/task_crisis").TASK_CRISIS_V2;
       } else {
         const { loadAllConfigs } = require("./tasks/hiddenbench/adapter");
         const tasks = loadAllConfigs(undefined, 4, "nohint");
@@ -319,7 +319,7 @@ class FPhaseRunner extends PhaseRunner {
 
   async run(task: TaskSpec, _seed: number): Promise<TaskResult> {
     if (task === "crisis") {
-      const { TASK_CRISIS_V2 } = require("../v2/task_crisis");
+      const { TASK_CRISIS_V2 } = require("../../legacy/experiments/v2/task_crisis");
       return this.runFullProfile(TASK_CRISIS_V2, "crisis_v2");
     }
     const { loadAllConfigs } = require("./tasks/hiddenbench/adapter");

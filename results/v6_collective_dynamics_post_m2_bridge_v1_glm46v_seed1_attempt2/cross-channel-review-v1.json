@@ -1,0 +1,2278 @@
+{
+  "reviewRef": {
+    "id": "swarmalpha.review.v6.collective-dynamics-cross-channel",
+    "version": "1.0.0"
+  },
+  "planHash": "sha256:012fbe8b9974250820100bbaefcd04c9cf4603ea976404aa5aa5a4fa87c5413c",
+  "analysisHash": "sha256:98f29c23a84efd3e9883061d5c30a2b064f269fcb5183f69884ca022142dd72c",
+  "sourceTrajectoryHashes": [
+    "sha256:09b1689d69568ad0b6570c64be6a6ab19208e4bfd286d95d8022836ef1604ef1",
+    "sha256:6ca0a580f911ad2190422311f3766363f3e2a9dd307c303eeb8b17c83c25cd58",
+    "sha256:43eccc248b1b2558f33e7ed546ec5450c3352644f329f34548259c7d441a95d6",
+    "sha256:f91ea33dd3376a2e1534593b0b4f7d9aa4dca41185bff35b6abae9d39f604780",
+    "sha256:a24377f0bc3a69122ee24ef58f32a1a10cc466a848dcd7ae0e704245bb84444f"
+  ],
+  "truthAccess": "none",
+  "timeAlignment": "checkpoint_t_predicts_public_round_t_plus_1",
+  "semanticInference": "none_human_coding_required",
+  "codingTarget": "next_public_message_categorical_choice",
+  "rows": [
+    {
+      "reviewUnitId": "task-36:X0->R1",
+      "sourceTaskId": 36,
+      "checkpointRound": 0,
+      "nextPublicRound": 1,
+      "sourceCheckpointHash": "sha256:98d41b90d343d4beb870b414ce3535b799c85b06f3cb081037366e590d2c0b69",
+      "sourcePublicRoundHash": "sha256:90e241b9060f70ab20bfc2ee11d824353af4a789f67d7ab7a90ed0f298dec4d3",
+      "optionMapping": [
+        {
+          "sensorOptionId": "opt_1",
+          "publicOptionLabel": "Datacenter Alpha"
+        },
+        {
+          "sensorOptionId": "opt_2",
+          "publicOptionLabel": "Datacenter Beta"
+        },
+        {
+          "sensorOptionId": "opt_3",
+          "publicOptionLabel": "Datacenter Gamma"
+        }
+      ],
+      "expectedAgentIds": [
+        "agent:hiddenbench:36:1",
+        "agent:hiddenbench:36:2",
+        "agent:hiddenbench:36:3",
+        "agent:hiddenbench:36:4"
+      ],
+      "comparableAgentIds": [
+        "agent:hiddenbench:36:1",
+        "agent:hiddenbench:36:2",
+        "agent:hiddenbench:36:3",
+        "agent:hiddenbench:36:4"
+      ],
+      "missingOrInvalidAgentIds": [],
+      "pooledProbabilities": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1666665,
+          0.5416665,
+          0.291666625
+        ]
+      },
+      "sensorReports": [
+        {
+          "agentId": "agent:hiddenbench:36:1",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0.333333,
+              0.333333,
+              0.3333335
+            ]
+          },
+          "duplicateTotalVariation": 5.000000000143778e-7,
+          "repeatUniqueTops": {
+            "A": "opt_3",
+            "B": null
+          },
+          "averagedUniqueTop": "opt_3"
+        },
+        {
+          "agentId": "agent:hiddenbench:36:2",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0.333333,
+              0.333333,
+              0.333333
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": null,
+            "B": null
+          },
+          "averagedUniqueTop": null
+        },
+        {
+          "agentId": "agent:hiddenbench:36:3",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0,
+              1,
+              0
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_2",
+            "B": "opt_2"
+          },
+          "averagedUniqueTop": "opt_2"
+        },
+        {
+          "agentId": "agent:hiddenbench:36:4",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0,
+              0.5,
+              0.5
+            ]
+          },
+          "duplicateTotalVariation": 1,
+          "repeatUniqueTops": {
+            "A": "opt_2",
+            "B": "opt_3"
+          },
+          "averagedUniqueTop": null
+        }
+      ],
+      "nextPublicMessages": [
+        {
+          "agentId": "agent:hiddenbench:36:1",
+          "content": "Based on the information provided, the correct datacenter to re-route all mission-critical operations is Datacenter Alpha.",
+          "messageHash": "sha256:aaec1f01d010efe99300f39c34586973de4f29950e51ffa46834b2daad79942b"
+        },
+        {
+          "agentId": "agent:hiddenbench:36:2",
+          "content": "Based on the information provided, I recommend we re-route all mission-critical operations to Datacenter Alpha.\n\nHere is my reasoning:\n*   **Datacenter Beta** is the most obvious choice due to its recent upgrade and low utilization. However, my private information indicates a significant, ongoing external connectivity issue that will prevent it from safely taking the load for several hours.\n*   **Datacenter Gamma** is a risk due to the active flood warning in its region, which could lead to unforeseen downtime.\n*   **Datacenter Alpha** is confirmed to be online with its on-call engineers available and no scheduled maintenance. This makes it the most reliable and immediately available option to handle the failover.",
+          "messageHash": "sha256:b22fd4ac15d20a1c5260f7e591f4c0c3bcefd24bd08b228fd82fdfec22814ce5"
+        },
+        {
+          "agentId": "agent:hiddenbench:36:3",
+          "content": "Based on the information provided, the correct datacenter to re-route all mission-critical operations is Datacenter Beta.",
+          "messageHash": "sha256:3493010bb460471d6cb4bd773b6bc716bddc1715fb8973d282c142958c6b6a32"
+        },
+        {
+          "agentId": "agent:hiddenbench:36:4",
+          "content": "Based on the information provided, I recommend we immediately re-route all mission-critical operations to Datacenter Gamma. While there is a flood warning, my private information confirms that the flood defenses are fully operational and the flooding is minor, posing no threat to the datacenter's uptime or access. This makes it the only datacenter that can safely take the load right now.",
+          "messageHash": "sha256:a24083087020a1a596912ea9904f86540162cf2b3cf0010163bf5a199be728c7"
+        }
+      ],
+      "humanCodingStatus": "not_collected"
+    },
+    {
+      "reviewUnitId": "task-36:X1->R2",
+      "sourceTaskId": 36,
+      "checkpointRound": 1,
+      "nextPublicRound": 2,
+      "sourceCheckpointHash": "sha256:3e40464861f8af5ef962f17cf945726c3db30271807e57db47dbe16bec8a4d7c",
+      "sourcePublicRoundHash": "sha256:0deb068ec4357785ff98e97d729397823924bc5aca3667bd55643483ec3d263f",
+      "optionMapping": [
+        {
+          "sensorOptionId": "opt_1",
+          "publicOptionLabel": "Datacenter Alpha"
+        },
+        {
+          "sensorOptionId": "opt_2",
+          "publicOptionLabel": "Datacenter Beta"
+        },
+        {
+          "sensorOptionId": "opt_3",
+          "publicOptionLabel": "Datacenter Gamma"
+        }
+      ],
+      "expectedAgentIds": [
+        "agent:hiddenbench:36:1",
+        "agent:hiddenbench:36:2",
+        "agent:hiddenbench:36:3",
+        "agent:hiddenbench:36:4"
+      ],
+      "comparableAgentIds": [
+        "agent:hiddenbench:36:1",
+        "agent:hiddenbench:36:2",
+        "agent:hiddenbench:36:3",
+        "agent:hiddenbench:36:4"
+      ],
+      "missingOrInvalidAgentIds": [],
+      "pooledProbabilities": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.4375,
+          0.28125,
+          0.28125
+        ]
+      },
+      "sensorReports": [
+        {
+          "agentId": "agent:hiddenbench:36:1",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0.9,
+              0.05,
+              0.05
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_1",
+            "B": "opt_1"
+          },
+          "averagedUniqueTop": "opt_1"
+        },
+        {
+          "agentId": "agent:hiddenbench:36:2",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0.8500000000000001,
+              0.07500000000000001,
+              0.07500000000000001
+            ]
+          },
+          "duplicateTotalVariation": 0.09999999999999998,
+          "repeatUniqueTops": {
+            "A": "opt_1",
+            "B": "opt_1"
+          },
+          "averagedUniqueTop": "opt_1"
+        },
+        {
+          "agentId": "agent:hiddenbench:36:3",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0,
+              1,
+              0
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_2",
+            "B": "opt_2"
+          },
+          "averagedUniqueTop": "opt_2"
+        },
+        {
+          "agentId": "agent:hiddenbench:36:4",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0,
+              0,
+              1
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_3",
+            "B": "opt_3"
+          },
+          "averagedUniqueTop": "opt_3"
+        }
+      ],
+      "nextPublicMessages": [
+        {
+          "agentId": "agent:hiddenbench:36:1",
+          "content": "Based on the information provided, the correct datacenter to re-route all mission-critical operations is Datacenter Alpha.\n\nHere is my reasoning:\n*   **Datacenter Beta** is the most obvious choice due to its recent upgrade and low utilization. However, my private information indicates a significant, ongoing external connectivity issue that will prevent it from safely taking the load for several hours.\n*   **Datacenter Gamma** is a risk due to the active flood warning in its region, which could lead to unforeseen downtime.\n*   **Datacenter Alpha** is confirmed to be online with its on-call engineers available and no scheduled maintenance. This makes it the most reliable and immediately available option to handle the failover.",
+          "messageHash": "sha256:cead80151ca1bc61702985153eb6b863eccf132b978835d22c98bb31462582d2"
+        },
+        {
+          "agentId": "agent:hiddenbench:36:2",
+          "content": "Based on the information provided, the correct datacenter to re-route all mission-critical operations is Datacenter Alpha.",
+          "messageHash": "sha256:0eb0d2727ac0a6338b8d282ab192e80307cf874bc93fe055edc9fa23b27295ce"
+        },
+        {
+          "agentId": "agent:hiddenbench:36:3",
+          "content": "Based on the information provided, the correct datacenter to re-route all mission-critical operations is Datacenter Beta.",
+          "messageHash": "sha256:7a9ce82789077caec66abb790ca6652fa8aa69fb928471ce710b81d16425fe67"
+        },
+        {
+          "agentId": "agent:hiddenbench:36:4",
+          "content": "Based on the information provided, I recommend we immediately re-route all mission-critical operations to Datacenter Gamma. While there is a flood warning, my private information confirms that the flood defenses are fully operational and the flooding is minor, posing no threat to the datacenter's uptime or access. This makes it the only datacenter that can safely take the load right now.",
+          "messageHash": "sha256:62c23cc9e7a34e9d79d61dce3cc08a0323924e318da16bdc4ebbd3c9c4bf4315"
+        }
+      ],
+      "humanCodingStatus": "not_collected"
+    },
+    {
+      "reviewUnitId": "task-36:X2->R3",
+      "sourceTaskId": 36,
+      "checkpointRound": 2,
+      "nextPublicRound": 3,
+      "sourceCheckpointHash": "sha256:5dcc8d2c8830af22a03a8cdbeae65af123f6986e31fe535760c4f3a08918760d",
+      "sourcePublicRoundHash": "sha256:5ba720a2280b01bec282966b965ae98658a0135e52ae3d03196600ebbbbadd9f",
+      "optionMapping": [
+        {
+          "sensorOptionId": "opt_1",
+          "publicOptionLabel": "Datacenter Alpha"
+        },
+        {
+          "sensorOptionId": "opt_2",
+          "publicOptionLabel": "Datacenter Beta"
+        },
+        {
+          "sensorOptionId": "opt_3",
+          "publicOptionLabel": "Datacenter Gamma"
+        }
+      ],
+      "expectedAgentIds": [
+        "agent:hiddenbench:36:1",
+        "agent:hiddenbench:36:2",
+        "agent:hiddenbench:36:3",
+        "agent:hiddenbench:36:4"
+      ],
+      "comparableAgentIds": [
+        "agent:hiddenbench:36:1",
+        "agent:hiddenbench:36:2",
+        "agent:hiddenbench:36:3",
+        "agent:hiddenbench:36:4"
+      ],
+      "missingOrInvalidAgentIds": [],
+      "pooledProbabilities": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.45,
+          0.275,
+          0.275
+        ]
+      },
+      "sensorReports": [
+        {
+          "agentId": "agent:hiddenbench:36:1",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0.9,
+              0.05,
+              0.05
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_1",
+            "B": "opt_1"
+          },
+          "averagedUniqueTop": "opt_1"
+        },
+        {
+          "agentId": "agent:hiddenbench:36:2",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0.9,
+              0.05,
+              0.05
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_1",
+            "B": "opt_1"
+          },
+          "averagedUniqueTop": "opt_1"
+        },
+        {
+          "agentId": "agent:hiddenbench:36:3",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0,
+              1,
+              0
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_2",
+            "B": "opt_2"
+          },
+          "averagedUniqueTop": "opt_2"
+        },
+        {
+          "agentId": "agent:hiddenbench:36:4",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0,
+              0,
+              1
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_3",
+            "B": "opt_3"
+          },
+          "averagedUniqueTop": "opt_3"
+        }
+      ],
+      "nextPublicMessages": [
+        {
+          "agentId": "agent:hiddenbench:36:1",
+          "content": "Based on the information provided, the correct datacenter to re-route all mission-critical operations is Datacenter Alpha.\n\nHere is my reasoning:\n*   **Datacenter Beta** is the most obvious choice due to its recent upgrade and low utilization. However, my private information indicates a significant, ongoing external connectivity issue that will prevent it from safely taking the load for several hours.\n*   **Datacenter Gamma** is a risk due to the active flood warning in its region, which could lead to unforeseen downtime.\n*   **Datacenter Alpha** is confirmed to be online with its on-call engineers available and no scheduled maintenance. This makes it the most reliable and immediately available option to handle the failover.",
+          "messageHash": "sha256:af3317e7332735d9dcdfeb485b17dd24f20f5e35185e802582099c602a1e7140"
+        },
+        {
+          "agentId": "agent:hiddenbench:36:2",
+          "content": "Based on the information provided, the correct datacenter to re-route all mission-critical operations is Datacenter Alpha.\n\nHere is my reasoning:\n*   **Datacenter Beta** is the most obvious choice due to its recent upgrade and low utilization. However, my private information indicates a significant, ongoing external connectivity issue that will prevent it from safely taking the load for several hours.\n*   **Datacenter Gamma** is a risk due to the active flood warning in its region, which could lead to unforeseen downtime.\n*   **Datacenter Alpha** is confirmed to be online with its on-call engineers available and no scheduled maintenance. This makes it the most reliable and immediately available option to handle the failover.",
+          "messageHash": "sha256:025076d30df0b4671dfb68c2c1cc6657f24ee65627d3a0698d8f80403e02c866"
+        },
+        {
+          "agentId": "agent:hiddenbench:36:3",
+          "content": "Based on the information provided, the correct datacenter to re-route all mission-critical operations is Datacenter Beta.\n\nHere is my reasoning:\n*   **Datacenter Alpha** is confirmed to be online with its on-call engineers available and no scheduled maintenance. However, my private information indicates that its main power feed was cut by the fire and it is running only on backup generators, with a maximum of 12 hours' capacity left. This makes it an unreliable long-term solution.\n*   **Datacenter Gamma** is a risk due to the active flood warning in its region, which could lead to unforeseen downtime.\n*   **Datacenter Beta** is fully online, was just upgraded last month, and currently has low utilization. This makes it the most reliable and immediately available option to handle the failover.",
+          "messageHash": "sha256:b11094075099c2e982b9e34d6c208e3f3c99168157d4882db12323c8a7503782"
+        },
+        {
+          "agentId": "agent:hiddenbench:36:4",
+          "content": "Based on the information provided, the correct datacenter to re-route all mission-critical operations is Datacenter Gamma. While there is a flood warning, my private information confirms that the flood defenses are fully operational and the flooding is minor, posing no threat to the datacenter's uptime or access. This makes it the only datacenter that can safely take the load right now.",
+          "messageHash": "sha256:e63eb185b3a81e0a46fb8da9a6980ee122e9e10c7bf3597e5362830d192106c8"
+        }
+      ],
+      "humanCodingStatus": "not_collected"
+    },
+    {
+      "reviewUnitId": "task-43:X0->R1",
+      "sourceTaskId": 43,
+      "checkpointRound": 0,
+      "nextPublicRound": 1,
+      "sourceCheckpointHash": "sha256:e118cc2a863715e67b6df0ea59d8c832a099ad361f8937210f03d9d9394f5f03",
+      "sourcePublicRoundHash": "sha256:4654502062972b7503c42ebd2d2de4c3daa9fba93394c471e60a1f55f828730a",
+      "optionMapping": [
+        {
+          "sensorOptionId": "opt_1",
+          "publicOptionLabel": "Aurora Station"
+        },
+        {
+          "sensorOptionId": "opt_2",
+          "publicOptionLabel": "Beacon Post"
+        },
+        {
+          "sensorOptionId": "opt_3",
+          "publicOptionLabel": "Canyon Depot"
+        }
+      ],
+      "expectedAgentIds": [
+        "agent:hiddenbench:43:1",
+        "agent:hiddenbench:43:2",
+        "agent:hiddenbench:43:3",
+        "agent:hiddenbench:43:4"
+      ],
+      "comparableAgentIds": [
+        "agent:hiddenbench:43:1",
+        "agent:hiddenbench:43:2",
+        "agent:hiddenbench:43:3",
+        "agent:hiddenbench:43:4"
+      ],
+      "missingOrInvalidAgentIds": [],
+      "pooledProbabilities": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.2125,
+          0.35624999999999996,
+          0.43125
+        ]
+      },
+      "sensorReports": [
+        {
+          "agentId": "agent:hiddenbench:43:1",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0.1,
+              0.45,
+              0.45
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": null,
+            "B": null
+          },
+          "averagedUniqueTop": null
+        },
+        {
+          "agentId": "agent:hiddenbench:43:2",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0.7,
+              0,
+              0.3
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_1",
+            "B": "opt_1"
+          },
+          "averagedUniqueTop": "opt_1"
+        },
+        {
+          "agentId": "agent:hiddenbench:43:3",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0,
+              0.5,
+              0.5
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": null,
+            "B": null
+          },
+          "averagedUniqueTop": null
+        },
+        {
+          "agentId": "agent:hiddenbench:43:4",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0.05,
+              0.475,
+              0.475
+            ]
+          },
+          "duplicateTotalVariation": 0.09999999999999999,
+          "repeatUniqueTops": {
+            "A": null,
+            "B": null
+          },
+          "averagedUniqueTop": null
+        }
+      ],
+      "nextPublicMessages": [
+        {
+          "agentId": "agent:hiddenbench:43:1",
+          "content": "Aurora Station",
+          "messageHash": "sha256:d8af4846131e015de7b55dff77c0e56243b65324c650e32bf0acbfcad2aed41d"
+        },
+        {
+          "agentId": "agent:hiddenbench:43:2",
+          "content": "Aurora Station",
+          "messageHash": "sha256:e35da9fcec980f4efc6a0242fb9a2dcd2311b7844b0d80fe63db6dfababb49a1"
+        },
+        {
+          "agentId": "agent:hiddenbench:43:3",
+          "content": "Aurora Station",
+          "messageHash": "sha256:7cfda516ec9b9495638e29f8e2905f130eb09f691a0249497d5a255af1eb31ed"
+        },
+        {
+          "agentId": "agent:hiddenbench:43:4",
+          "content": "Aurora Station",
+          "messageHash": "sha256:f98b4c95513a182ad7293ccd985790e002b112693517eb215b349de89594d40e"
+        }
+      ],
+      "humanCodingStatus": "not_collected"
+    },
+    {
+      "reviewUnitId": "task-43:X1->R2",
+      "sourceTaskId": 43,
+      "checkpointRound": 1,
+      "nextPublicRound": 2,
+      "sourceCheckpointHash": "sha256:80968c828a92f1277e67f3cbd51d608fd269c74d53a125fc89ae99c9d4c8efe8",
+      "sourcePublicRoundHash": "sha256:7b9da102b0985b29ed00a29822944e4d1b6fe7d73531bb204e0ed40178141403",
+      "optionMapping": [
+        {
+          "sensorOptionId": "opt_1",
+          "publicOptionLabel": "Aurora Station"
+        },
+        {
+          "sensorOptionId": "opt_2",
+          "publicOptionLabel": "Beacon Post"
+        },
+        {
+          "sensorOptionId": "opt_3",
+          "publicOptionLabel": "Canyon Depot"
+        }
+      ],
+      "expectedAgentIds": [
+        "agent:hiddenbench:43:1",
+        "agent:hiddenbench:43:2",
+        "agent:hiddenbench:43:3",
+        "agent:hiddenbench:43:4"
+      ],
+      "comparableAgentIds": [
+        "agent:hiddenbench:43:1",
+        "agent:hiddenbench:43:2",
+        "agent:hiddenbench:43:3",
+        "agent:hiddenbench:43:4"
+      ],
+      "missingOrInvalidAgentIds": [],
+      "pooledProbabilities": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.2125,
+          0.375,
+          0.4125
+        ]
+      },
+      "sensorReports": [
+        {
+          "agentId": "agent:hiddenbench:43:1",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0.1,
+              0.45,
+              0.45
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": null,
+            "B": null
+          },
+          "averagedUniqueTop": null
+        },
+        {
+          "agentId": "agent:hiddenbench:43:2",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0.75,
+              0.05,
+              0.2
+            ]
+          },
+          "duplicateTotalVariation": 0.20000000000000004,
+          "repeatUniqueTops": {
+            "A": "opt_1",
+            "B": "opt_1"
+          },
+          "averagedUniqueTop": "opt_1"
+        },
+        {
+          "agentId": "agent:hiddenbench:43:3",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0,
+              0.5,
+              0.5
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": null,
+            "B": null
+          },
+          "averagedUniqueTop": null
+        },
+        {
+          "agentId": "agent:hiddenbench:43:4",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0,
+              0.5,
+              0.5
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": null,
+            "B": null
+          },
+          "averagedUniqueTop": null
+        }
+      ],
+      "nextPublicMessages": [
+        {
+          "agentId": "agent:hiddenbench:43:1",
+          "content": "Aurora Station",
+          "messageHash": "sha256:3f5f13ba09ae0f75401ca20e72636645e18b368d39d597bfc7a0383b232d3d70"
+        },
+        {
+          "agentId": "agent:hiddenbench:43:2",
+          "content": "Aurora Station",
+          "messageHash": "sha256:2f85cd3d2649a14c07fd033c956e38b890ae82fcaaa1d88f0c26583a9407c237"
+        },
+        {
+          "agentId": "agent:hiddenbench:43:3",
+          "content": "Aurora Station",
+          "messageHash": "sha256:6134c40275b35356e2071678c16fa44441e06497d962ff3c2c420f91b70823c7"
+        },
+        {
+          "agentId": "agent:hiddenbench:43:4",
+          "content": "Aurora Station",
+          "messageHash": "sha256:984c2003882c1431fd3fbde734360a93666da751e3d66627ec6395120a38ce74"
+        }
+      ],
+      "humanCodingStatus": "not_collected"
+    },
+    {
+      "reviewUnitId": "task-43:X2->R3",
+      "sourceTaskId": 43,
+      "checkpointRound": 2,
+      "nextPublicRound": 3,
+      "sourceCheckpointHash": "sha256:64248f0d9e7a03948da6030e112868d422a06e49ae5aa6ad55a42f3804c4a7da",
+      "sourcePublicRoundHash": "sha256:7376cfe6bf73f8f6b45249520f3e85d1265c7834f50abab368846fc4af19a575",
+      "optionMapping": [
+        {
+          "sensorOptionId": "opt_1",
+          "publicOptionLabel": "Aurora Station"
+        },
+        {
+          "sensorOptionId": "opt_2",
+          "publicOptionLabel": "Beacon Post"
+        },
+        {
+          "sensorOptionId": "opt_3",
+          "publicOptionLabel": "Canyon Depot"
+        }
+      ],
+      "expectedAgentIds": [
+        "agent:hiddenbench:43:1",
+        "agent:hiddenbench:43:2",
+        "agent:hiddenbench:43:3",
+        "agent:hiddenbench:43:4"
+      ],
+      "comparableAgentIds": [
+        "agent:hiddenbench:43:1",
+        "agent:hiddenbench:43:2",
+        "agent:hiddenbench:43:3",
+        "agent:hiddenbench:43:4"
+      ],
+      "missingOrInvalidAgentIds": [],
+      "pooledProbabilities": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.23750000000000002,
+          0.38125,
+          0.38125
+        ]
+      },
+      "sensorReports": [
+        {
+          "agentId": "agent:hiddenbench:43:1",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0.1,
+              0.45,
+              0.45
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": null,
+            "B": null
+          },
+          "averagedUniqueTop": null
+        },
+        {
+          "agentId": "agent:hiddenbench:43:2",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0.8500000000000001,
+              0.07500000000000001,
+              0.07500000000000001
+            ]
+          },
+          "duplicateTotalVariation": 0.09999999999999998,
+          "repeatUniqueTops": {
+            "A": "opt_1",
+            "B": "opt_1"
+          },
+          "averagedUniqueTop": "opt_1"
+        },
+        {
+          "agentId": "agent:hiddenbench:43:3",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0,
+              0.5,
+              0.5
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": null,
+            "B": null
+          },
+          "averagedUniqueTop": null
+        },
+        {
+          "agentId": "agent:hiddenbench:43:4",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0,
+              0.5,
+              0.5
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": null,
+            "B": null
+          },
+          "averagedUniqueTop": null
+        }
+      ],
+      "nextPublicMessages": [
+        {
+          "agentId": "agent:hiddenbench:43:1",
+          "content": "Aurora Station",
+          "messageHash": "sha256:fa7c9f5c67d8299adb3ec0df732d017df38c178576177dcfc6b94147196ec137"
+        },
+        {
+          "agentId": "agent:hiddenbench:43:2",
+          "content": "Aurora Station",
+          "messageHash": "sha256:266c4b7114eea7940eed37dad742af52c1d233dbda72e0cbfe25f91b6599fc9a"
+        },
+        {
+          "agentId": "agent:hiddenbench:43:3",
+          "content": "Aurora Station",
+          "messageHash": "sha256:c4dad9a847e38d3c688fe40513235477038697e095b5cec36b33344539d12023"
+        },
+        {
+          "agentId": "agent:hiddenbench:43:4",
+          "content": "Aurora Station",
+          "messageHash": "sha256:e7a31f36408dc4f7cfbb3d0f1f01947a0fb203ed58b347066b7bcd3b9aa90ebc"
+        }
+      ],
+      "humanCodingStatus": "not_collected"
+    },
+    {
+      "reviewUnitId": "task-50:X0->R1",
+      "sourceTaskId": 50,
+      "checkpointRound": 0,
+      "nextPublicRound": 1,
+      "sourceCheckpointHash": "sha256:bf122842eaaecf8eb73397776e1443cc72cd1ed1b5506be0caf6d4aab417869c",
+      "sourcePublicRoundHash": "sha256:dbc67abcf89d61e2fb1aa13d680aa2b4a668aa5a062299bf8e24069ce535a4e3",
+      "optionMapping": [
+        {
+          "sensorOptionId": "opt_1",
+          "publicOptionLabel": "Conference Room Alpha"
+        },
+        {
+          "sensorOptionId": "opt_2",
+          "publicOptionLabel": "Conference Room Beta"
+        },
+        {
+          "sensorOptionId": "opt_3",
+          "publicOptionLabel": "Conference Room Gamma"
+        }
+      ],
+      "expectedAgentIds": [
+        "agent:hiddenbench:50:1",
+        "agent:hiddenbench:50:2",
+        "agent:hiddenbench:50:3"
+      ],
+      "comparableAgentIds": [
+        "agent:hiddenbench:50:1",
+        "agent:hiddenbench:50:2",
+        "agent:hiddenbench:50:3"
+      ],
+      "missingOrInvalidAgentIds": [],
+      "pooledProbabilities": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.07222216666666666,
+          0.3888888333333333,
+          0.538889
+        ]
+      },
+      "sensorReports": [
+        {
+          "agentId": "agent:hiddenbench:50:1",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0,
+              0,
+              1
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_3",
+            "B": "opt_3"
+          },
+          "averagedUniqueTop": "opt_3"
+        },
+        {
+          "agentId": "agent:hiddenbench:50:2",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0.21666649999999998,
+              0.1666665,
+              0.6166670000000001
+            ]
+          },
+          "duplicateTotalVariation": 0.566666,
+          "repeatUniqueTops": {
+            "A": "opt_3",
+            "B": "opt_3"
+          },
+          "averagedUniqueTop": "opt_3"
+        },
+        {
+          "agentId": "agent:hiddenbench:50:3",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0,
+              1,
+              0
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_2",
+            "B": "opt_2"
+          },
+          "averagedUniqueTop": "opt_2"
+        }
+      ],
+      "nextPublicMessages": [
+        {
+          "agentId": "agent:hiddenbench:50:1",
+          "content": "Based on the information provided, the correct room for the critical, confidential meeting is Conference Room Gamma.",
+          "messageHash": "sha256:e5392500a87fd584e4ed5884d2637ba63ca5340ccfadbf1f4a6e9def28bf4197"
+        },
+        {
+          "agentId": "agent:hiddenbench:50:2",
+          "content": "Based on the information provided, the correct room for the meeting is Conference Room Alpha.\n\nHere is the reasoning:\n\n*   **Conference Room Beta** is unsuitable because the building's fire alarm system is being tested in its zone at the exact time of the meeting, which would cause an immediate and disruptive evacuation.\n*   **Conference Room Gamma** is unsuitable because the security team has not yet completed its review of the new locks, meaning it does not meet the required security standards.\n*   **Conference Room Alpha**, while next to a construction site, is the only room that is not explicitly stated to have a critical, immediate flaw that would prevent the meeting from taking place. The noise is a potential disturbance, but it is a known and manageable issue, unlike the guaranteed evacuation of Beta or the unknown security status of Gamma.",
+          "messageHash": "sha256:e6e515c6749118df1326bd44db31c23753bc2e07991297e25a5bd3717a137395"
+        },
+        {
+          "agentId": "agent:hiddenbench:50:3",
+          "content": "Based on the information provided, the correct room for the meeting is Conference Room Beta. It is the only room that has been cleared by the IT team for secure devices and has soundproofing, making it suitable for a confidential, high-stakes discussion.",
+          "messageHash": "sha256:28115eda245ea81915b9847c49b9757a6db5a3cfa1e63836ae4f9b9c3edb9435"
+        }
+      ],
+      "humanCodingStatus": "not_collected"
+    },
+    {
+      "reviewUnitId": "task-50:X1->R2",
+      "sourceTaskId": 50,
+      "checkpointRound": 1,
+      "nextPublicRound": 2,
+      "sourceCheckpointHash": "sha256:af32fc95f41fc3c2af824e15a814ec970d1bea7e2184e201dcf07f413cf66aeb",
+      "sourcePublicRoundHash": "sha256:7679de53eda67606a136f6292ed63e7af7a350f170afb5228a3eb53bd71fd208",
+      "optionMapping": [
+        {
+          "sensorOptionId": "opt_1",
+          "publicOptionLabel": "Conference Room Alpha"
+        },
+        {
+          "sensorOptionId": "opt_2",
+          "publicOptionLabel": "Conference Room Beta"
+        },
+        {
+          "sensorOptionId": "opt_3",
+          "publicOptionLabel": "Conference Room Gamma"
+        }
+      ],
+      "expectedAgentIds": [
+        "agent:hiddenbench:50:1",
+        "agent:hiddenbench:50:2",
+        "agent:hiddenbench:50:3"
+      ],
+      "comparableAgentIds": [
+        "agent:hiddenbench:50:1",
+        "agent:hiddenbench:50:2",
+        "agent:hiddenbench:50:3"
+      ],
+      "missingOrInvalidAgentIds": [],
+      "pooledProbabilities": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.33,
+          0.33666666666666667,
+          0.3333333333333333
+        ]
+      },
+      "sensorReports": [
+        {
+          "agentId": "agent:hiddenbench:50:1",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0,
+              0,
+              1
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_3",
+            "B": "opt_3"
+          },
+          "averagedUniqueTop": "opt_3"
+        },
+        {
+          "agentId": "agent:hiddenbench:50:2",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0.99,
+              0.01,
+              0
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_1",
+            "B": "opt_1"
+          },
+          "averagedUniqueTop": "opt_1"
+        },
+        {
+          "agentId": "agent:hiddenbench:50:3",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0,
+              1,
+              0
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_2",
+            "B": "opt_2"
+          },
+          "averagedUniqueTop": "opt_2"
+        }
+      ],
+      "nextPublicMessages": [
+        {
+          "agentId": "agent:hiddenbench:50:1",
+          "content": "Based on the information provided, the correct room for the critical, confidential meeting is Conference Room Gamma.",
+          "messageHash": "sha256:a6e9467e92097c0e2750d9cbc9d908b7af23458a6d211fdc8b1a1c56c8dd98e4"
+        },
+        {
+          "agentId": "agent:hiddenbench:50:2",
+          "content": "Based on the information provided, the correct room for the meeting is Conference Room Alpha.",
+          "messageHash": "sha256:4b50ed690e836f1cccc4ac24a5e217188f86b7a05642c75ab66f95a6cca897b8"
+        },
+        {
+          "agentId": "agent:hiddenbench:50:3",
+          "content": "Based on the information provided, the correct room for the critical, confidential meeting is Conference Room Beta. It is the only room that has been cleared by the IT team for secure devices and has soundproofing, making it suitable for a confidential, high-stakes discussion.",
+          "messageHash": "sha256:11e94979a861f3abc2f037f76a4494d42992fa9e0b3e3b9633cfd1df624e6c59"
+        }
+      ],
+      "humanCodingStatus": "not_collected"
+    },
+    {
+      "reviewUnitId": "task-50:X2->R3",
+      "sourceTaskId": 50,
+      "checkpointRound": 2,
+      "nextPublicRound": 3,
+      "sourceCheckpointHash": "sha256:b22df27e17edf337800114397571370b92bf6050e0eb9e3b25083a3a94c3637b",
+      "sourcePublicRoundHash": "sha256:9ad0cab0fc4a2e61010ea0c9c1ad468fc4428ca73953a81c1fabb4443c34b29b",
+      "optionMapping": [
+        {
+          "sensorOptionId": "opt_1",
+          "publicOptionLabel": "Conference Room Alpha"
+        },
+        {
+          "sensorOptionId": "opt_2",
+          "publicOptionLabel": "Conference Room Beta"
+        },
+        {
+          "sensorOptionId": "opt_3",
+          "publicOptionLabel": "Conference Room Gamma"
+        }
+      ],
+      "expectedAgentIds": [
+        "agent:hiddenbench:50:1",
+        "agent:hiddenbench:50:2",
+        "agent:hiddenbench:50:3"
+      ],
+      "comparableAgentIds": [
+        "agent:hiddenbench:50:1",
+        "agent:hiddenbench:50:2",
+        "agent:hiddenbench:50:3"
+      ],
+      "missingOrInvalidAgentIds": [],
+      "pooledProbabilities": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          0.3333333333333333,
+          0.6666666666666666
+        ]
+      },
+      "sensorReports": [
+        {
+          "agentId": "agent:hiddenbench:50:1",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0,
+              0,
+              1
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_3",
+            "B": "opt_3"
+          },
+          "averagedUniqueTop": "opt_3"
+        },
+        {
+          "agentId": "agent:hiddenbench:50:2",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0,
+              0,
+              1
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_3",
+            "B": "opt_3"
+          },
+          "averagedUniqueTop": "opt_3"
+        },
+        {
+          "agentId": "agent:hiddenbench:50:3",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0,
+              1,
+              0
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_2",
+            "B": "opt_2"
+          },
+          "averagedUniqueTop": "opt_2"
+        }
+      ],
+      "nextPublicMessages": [
+        {
+          "agentId": "agent:hiddenbench:50:1",
+          "content": "Based on the information provided, the correct room for the critical, confidential meeting is Conference Room Gamma.",
+          "messageHash": "sha256:0c000b7182ff49325210a37d10087c2c079be5a0b00840029e825170f1bf9e5a"
+        },
+        {
+          "agentId": "agent:hiddenbench:50:2",
+          "content": "Based on the information provided, the correct room for the critical, confidential meeting is Conference Room Gamma.",
+          "messageHash": "sha256:7eb349380dd32321a00dfc17a74d9f62c023230e5454f1001cb388196d2c7082"
+        },
+        {
+          "agentId": "agent:hiddenbench:50:3",
+          "content": "Based on the information provided, the correct room for the critical, confidential meeting is Conference Room Beta. It is the only room that has been cleared by the IT team for secure devices and has soundproofing, making it suitable for a confidential, high-stakes discussion.",
+          "messageHash": "sha256:8d780da498dc8a9de097a036b8a49af5f98daf48f1418052596fd14b32a811eb"
+        }
+      ],
+      "humanCodingStatus": "not_collected"
+    },
+    {
+      "reviewUnitId": "task-57:X0->R1",
+      "sourceTaskId": 57,
+      "checkpointRound": 0,
+      "nextPublicRound": 1,
+      "sourceCheckpointHash": "sha256:5fc7594d6b24bd0c8f2ba0b2b9f16ede1e72d3cf8f4e2ad13807090d624523cd",
+      "sourcePublicRoundHash": "sha256:eb9fac0e446c75ec01ed2ac5b1227ec78dd9e6d88567ec1c336e5533ef1fbbaa",
+      "optionMapping": [
+        {
+          "sensorOptionId": "opt_1",
+          "publicOptionLabel": "Site A"
+        },
+        {
+          "sensorOptionId": "opt_2",
+          "publicOptionLabel": "Site B"
+        },
+        {
+          "sensorOptionId": "opt_3",
+          "publicOptionLabel": "Site C"
+        }
+      ],
+      "expectedAgentIds": [
+        "agent:hiddenbench:57:1",
+        "agent:hiddenbench:57:2",
+        "agent:hiddenbench:57:3",
+        "agent:hiddenbench:57:4"
+      ],
+      "comparableAgentIds": [
+        "agent:hiddenbench:57:1",
+        "agent:hiddenbench:57:2",
+        "agent:hiddenbench:57:3",
+        "agent:hiddenbench:57:4"
+      ],
+      "missingOrInvalidAgentIds": [],
+      "pooledProbabilities": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.10375000000000001,
+          0.5387500000000001,
+          0.35749999999999993
+        ]
+      },
+      "sensorReports": [
+        {
+          "agentId": "agent:hiddenbench:57:1",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0.1,
+              0.3,
+              0.6
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_3",
+            "B": "opt_3"
+          },
+          "averagedUniqueTop": "opt_3"
+        },
+        {
+          "agentId": "agent:hiddenbench:57:2",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0,
+              0.7,
+              0.3
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_2",
+            "B": "opt_2"
+          },
+          "averagedUniqueTop": "opt_2"
+        },
+        {
+          "agentId": "agent:hiddenbench:57:3",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0.21500000000000002,
+              0.405,
+              0.38
+            ]
+          },
+          "duplicateTotalVariation": 0.79,
+          "repeatUniqueTops": {
+            "A": "opt_3",
+            "B": "opt_2"
+          },
+          "averagedUniqueTop": "opt_2"
+        },
+        {
+          "agentId": "agent:hiddenbench:57:4",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0.1,
+              0.75,
+              0.15000000000000002
+            ]
+          },
+          "duplicateTotalVariation": 0.10000000000000005,
+          "repeatUniqueTops": {
+            "A": "opt_2",
+            "B": "opt_2"
+          },
+          "averagedUniqueTop": "opt_2"
+        }
+      ],
+      "nextPublicMessages": [
+        {
+          "agentId": "agent:hiddenbench:57:1",
+          "content": "Site B",
+          "messageHash": "sha256:7da7996723386a3cd6b51328c3df7619022d4074815a996256fbb727daf84f5f"
+        },
+        {
+          "agentId": "agent:hiddenbench:57:2",
+          "content": "Site B",
+          "messageHash": "sha256:84ce850381dcb5fb27bfa2d7d888700a1bf9172117d1090df755905d4adfdb8f"
+        },
+        {
+          "agentId": "agent:hiddenbench:57:3",
+          "content": "Site B is the correct choice. The private information about the scheduled blasting for foundations in the morning makes it the most urgent site to salvage. While the topsoil is soft and undisturbed, the imminent construction activity poses an immediate and irreversible threat to any artifacts there. Sites A and C, while having their own challenges, do not have a confirmed, imminent destruction event scheduled for tomorrow.",
+          "messageHash": "sha256:4b7c06dcb8d02de7699e40093b5cd9ebd9d6558848a74575f6c9771601713332"
+        },
+        {
+          "agentId": "agent:hiddenbench:57:4",
+          "content": "Site B. The plateau's stable ground and undisturbed, soft topsoil provide the most reliable conditions for a rapid and successful recovery. Site A is inaccessible due to the road closure, and Site C's rocky soil and rodent activity present significant obstacles to a quick dig.",
+          "messageHash": "sha256:50f168209b53e091a55a3c287cc12e20e6495125a612f51f2308b2f0a1d8666b"
+        }
+      ],
+      "humanCodingStatus": "not_collected"
+    },
+    {
+      "reviewUnitId": "task-57:X1->R2",
+      "sourceTaskId": 57,
+      "checkpointRound": 1,
+      "nextPublicRound": 2,
+      "sourceCheckpointHash": "sha256:1862facf23a372e44e329f6c96c064b38e3da385f16c486bd9614e1dd4c64175",
+      "sourcePublicRoundHash": "sha256:5e8674f18817bcad111d1ecb587bc232969bf64b538ec6a3060c68f578494a39",
+      "optionMapping": [
+        {
+          "sensorOptionId": "opt_1",
+          "publicOptionLabel": "Site A"
+        },
+        {
+          "sensorOptionId": "opt_2",
+          "publicOptionLabel": "Site B"
+        },
+        {
+          "sensorOptionId": "opt_3",
+          "publicOptionLabel": "Site C"
+        }
+      ],
+      "expectedAgentIds": [
+        "agent:hiddenbench:57:1",
+        "agent:hiddenbench:57:2",
+        "agent:hiddenbench:57:3",
+        "agent:hiddenbench:57:4"
+      ],
+      "comparableAgentIds": [
+        "agent:hiddenbench:57:1",
+        "agent:hiddenbench:57:2",
+        "agent:hiddenbench:57:3",
+        "agent:hiddenbench:57:4"
+      ],
+      "missingOrInvalidAgentIds": [],
+      "pooledProbabilities": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.025,
+          0.95,
+          0.025
+        ]
+      },
+      "sensorReports": [
+        {
+          "agentId": "agent:hiddenbench:57:1",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0.1,
+              0.8,
+              0.1
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_2",
+            "B": "opt_2"
+          },
+          "averagedUniqueTop": "opt_2"
+        },
+        {
+          "agentId": "agent:hiddenbench:57:2",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0,
+              1,
+              0
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_2",
+            "B": "opt_2"
+          },
+          "averagedUniqueTop": "opt_2"
+        },
+        {
+          "agentId": "agent:hiddenbench:57:3",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0,
+              1,
+              0
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_2",
+            "B": "opt_2"
+          },
+          "averagedUniqueTop": "opt_2"
+        },
+        {
+          "agentId": "agent:hiddenbench:57:4",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0,
+              1,
+              0
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_2",
+            "B": "opt_2"
+          },
+          "averagedUniqueTop": "opt_2"
+        }
+      ],
+      "nextPublicMessages": [
+        {
+          "agentId": "agent:hiddenbench:57:1",
+          "content": "Site B. The plateau's stable ground and undisturbed, soft topsoil provide the most reliable conditions for a rapid and successful recovery. Site A is inaccessible due to the road closure, and Site C's rocky soil and rodent activity present significant obstacles to a quick dig.",
+          "messageHash": "sha256:bf869729e169a25dd714277e8688d6854aa348bff296c56fa0d56584b7f84518"
+        },
+        {
+          "agentId": "agent:hiddenbench:57:2",
+          "content": "Site A",
+          "messageHash": "sha256:775919e79da311dc1a11038b63849cfa2399dc3784ab9b0ab33a40c758052310"
+        },
+        {
+          "agentId": "agent:hiddenbench:57:3",
+          "content": "Site B. The private information about the scheduled blasting for foundations in the morning makes it the most urgent site to salvage. While the topsoil is soft and undisturbed, the imminent construction activity poses an immediate and irreversible threat to any artifacts there. Sites A and C, while having their own challenges, do not have a confirmed, imminent destruction event scheduled for tomorrow.",
+          "messageHash": "sha256:3cf93e6476d75828aed693806b9576fa8fbfee36de009277abdcccab3c28e3b3"
+        },
+        {
+          "agentId": "agent:hiddenbench:57:4",
+          "content": "Site B. The plateau's stable ground and undisturbed, soft topsoil provide the most reliable conditions for a rapid and successful recovery. Site A is inaccessible due to the road closure, and Site C's rocky soil and rodent activity present significant obstacles to a quick dig.",
+          "messageHash": "sha256:6f713f9cc410a4ed0f031ec5b2e1cd4d14ecd3e8ca7670e9a53d2044507e9d56"
+        }
+      ],
+      "humanCodingStatus": "not_collected"
+    },
+    {
+      "reviewUnitId": "task-57:X2->R3",
+      "sourceTaskId": 57,
+      "checkpointRound": 2,
+      "nextPublicRound": 3,
+      "sourceCheckpointHash": "sha256:10344ab94ab4a521c3ffc2fefbf3e90591f56bfb2834954e9b51889e023728e8",
+      "sourcePublicRoundHash": "sha256:7786b0c15cdb63b07eb7d846f60c5c1c8b243c0f8764b24795e4f84ef39305ae",
+      "optionMapping": [
+        {
+          "sensorOptionId": "opt_1",
+          "publicOptionLabel": "Site A"
+        },
+        {
+          "sensorOptionId": "opt_2",
+          "publicOptionLabel": "Site B"
+        },
+        {
+          "sensorOptionId": "opt_3",
+          "publicOptionLabel": "Site C"
+        }
+      ],
+      "expectedAgentIds": [
+        "agent:hiddenbench:57:1",
+        "agent:hiddenbench:57:2",
+        "agent:hiddenbench:57:3",
+        "agent:hiddenbench:57:4"
+      ],
+      "comparableAgentIds": [
+        "agent:hiddenbench:57:1",
+        "agent:hiddenbench:57:2",
+        "agent:hiddenbench:57:3",
+        "agent:hiddenbench:57:4"
+      ],
+      "missingOrInvalidAgentIds": [],
+      "pooledProbabilities": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.025,
+          0.95,
+          0.025
+        ]
+      },
+      "sensorReports": [
+        {
+          "agentId": "agent:hiddenbench:57:1",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0.1,
+              0.8,
+              0.1
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_2",
+            "B": "opt_2"
+          },
+          "averagedUniqueTop": "opt_2"
+        },
+        {
+          "agentId": "agent:hiddenbench:57:2",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0,
+              1,
+              0
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_2",
+            "B": "opt_2"
+          },
+          "averagedUniqueTop": "opt_2"
+        },
+        {
+          "agentId": "agent:hiddenbench:57:3",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0,
+              1,
+              0
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_2",
+            "B": "opt_2"
+          },
+          "averagedUniqueTop": "opt_2"
+        },
+        {
+          "agentId": "agent:hiddenbench:57:4",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0,
+              1,
+              0
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_2",
+            "B": "opt_2"
+          },
+          "averagedUniqueTop": "opt_2"
+        }
+      ],
+      "nextPublicMessages": [
+        {
+          "agentId": "agent:hiddenbench:57:1",
+          "content": "Site B. The plateau's stable ground and undisturbed, soft topsoil provide the most reliable conditions for a rapid and successful recovery. Site A is inaccessible due to the road closure, and Site C's rocky soil and rodent activity present significant obstacles to a quick dig.",
+          "messageHash": "sha256:54b99dd1946d4653db58eff693ae649bdeb1046756dbe0a487bf3f6b51e19664"
+        },
+        {
+          "agentId": "agent:hiddenbench:57:2",
+          "content": "Site A",
+          "messageHash": "sha256:085e4ef87390c86614941c744ffc4ff1dae68dbf1736815acd6eda1cc819ff49"
+        },
+        {
+          "agentId": "agent:hiddenbench:57:3",
+          "content": "Site B",
+          "messageHash": "sha256:5210e97fc3c6dd82e73d538eaaed42c2f711b78ab0b595e2681010635b1638b4"
+        },
+        {
+          "agentId": "agent:hiddenbench:57:4",
+          "content": "Site B",
+          "messageHash": "sha256:f50bc2ffe96f6832d2b3ffead87e0de8736a6adddb6ecef4444679ec01a032f3"
+        }
+      ],
+      "humanCodingStatus": "not_collected"
+    },
+    {
+      "reviewUnitId": "task-64:X0->R1",
+      "sourceTaskId": 64,
+      "checkpointRound": 0,
+      "nextPublicRound": 1,
+      "sourceCheckpointHash": "sha256:f0d10443289b9143bfbaa110dd67788c63c84abb12129c06bb169244773ed3ba",
+      "sourcePublicRoundHash": "sha256:0b1d78f2b83d5993bb178a00acaa454d9c0c1b9dfddfcdb22ca4e251ad72cd7b",
+      "optionMapping": [
+        {
+          "sensorOptionId": "opt_1",
+          "publicOptionLabel": "Cafeteria Food"
+        },
+        {
+          "sensorOptionId": "opt_2",
+          "publicOptionLabel": "Contaminated Water Supply"
+        },
+        {
+          "sensorOptionId": "opt_3",
+          "publicOptionLabel": "Airborne Toxin from HVAC"
+        }
+      ],
+      "expectedAgentIds": [
+        "agent:hiddenbench:64:1",
+        "agent:hiddenbench:64:2",
+        "agent:hiddenbench:64:3",
+        "agent:hiddenbench:64:4"
+      ],
+      "comparableAgentIds": [
+        "agent:hiddenbench:64:1",
+        "agent:hiddenbench:64:2",
+        "agent:hiddenbench:64:3",
+        "agent:hiddenbench:64:4"
+      ],
+      "missingOrInvalidAgentIds": [],
+      "pooledProbabilities": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.6874999999999999,
+          0.125,
+          0.1875
+        ]
+      },
+      "sensorReports": [
+        {
+          "agentId": "agent:hiddenbench:64:1",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0.7,
+              0.2,
+              0.1
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_1",
+            "B": "opt_1"
+          },
+          "averagedUniqueTop": "opt_1"
+        },
+        {
+          "agentId": "agent:hiddenbench:64:2",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0.7,
+              0.1,
+              0.2
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_1",
+            "B": "opt_1"
+          },
+          "averagedUniqueTop": "opt_1"
+        },
+        {
+          "agentId": "agent:hiddenbench:64:3",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0.7,
+              0.1,
+              0.2
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_1",
+            "B": "opt_1"
+          },
+          "averagedUniqueTop": "opt_1"
+        },
+        {
+          "agentId": "agent:hiddenbench:64:4",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0.6499999999999999,
+              0.1,
+              0.25
+            ]
+          },
+          "duplicateTotalVariation": 0.09999999999999998,
+          "repeatUniqueTops": {
+            "A": "opt_1",
+            "B": "opt_1"
+          },
+          "averagedUniqueTop": "opt_1"
+        }
+      ],
+      "nextPublicMessages": [
+        {
+          "agentId": "agent:hiddenbench:64:1",
+          "content": "Based on the information provided, the most likely cause of the outbreak is food poisoning from the cafeteria. The fact that all affected individuals, including cafeteria staff, consumed food from the same source and developed symptoms within a short timeframe strongly points to a contaminated food item. The preliminary water tests and the airborne toxin hypothesis are less likely given the current data.",
+          "messageHash": "sha256:8d521aab4d80e8ee02760ad1ec72d57040097f5e48a111a14ad72b133cbb2bc0"
+        },
+        {
+          "agentId": "agent:hiddenbench:64:2",
+          "content": "Food poisoning from the cafeteria",
+          "messageHash": "sha256:6e8d912d047f822a46697fdd8d0b9b0946e14b87d088c30a534bf20c04d464d0"
+        },
+        {
+          "agentId": "agent:hiddenbench:64:3",
+          "content": "Based on the information provided, the most likely cause of the outbreak is food poisoning from the cafeteria.",
+          "messageHash": "sha256:c62c58fa3e59124f62f6536d3e0102e3825e2ec57f829dd496893c5e0604d8e8"
+        },
+        {
+          "agentId": "agent:hiddenbench:64:4",
+          "content": "Based on the information provided, the most likely cause of the outbreak is **Food poisoning from the cafeteria**.\n\nHere is the reasoning:\n1.  **Strongest Correlation:** The most significant piece of evidence is that all 12 affected employees had lunch in the cafeteria on the day symptoms began. This provides a very strong, direct link between the location and the illness.\n2.  **Supporting Evidence:** The fact that cafeteria staff are also reporting symptoms further strengthens the hypothesis that the source is within the cafeteria itself.\n3.  **Timing:** The symptoms appearing within an hour of lunch are consistent with the rapid onset typical of food poisoning.\n4.  **Weighing Other Hypotheses:**\n    *   **Contaminated water supply:** This is less likely given that preliminary water tests showed no contamination.\n    *   **Airborne toxin from the HVAC system:** While the private information about an airborne compound is interesting, its presence was found *outside* the cafeteria, not in the kitchen or dining area where the sick employees were. The primary correlation remains the shared meal.\n\nTherefore, the evidence strongly points to the cafeteria as the source of the illness.",
+          "messageHash": "sha256:e2d187211a10fae6396b5dba541bbaa0682e9ffa4c97d9b85ca0c1d8e502e6ce"
+        }
+      ],
+      "humanCodingStatus": "not_collected"
+    },
+    {
+      "reviewUnitId": "task-64:X1->R2",
+      "sourceTaskId": 64,
+      "checkpointRound": 1,
+      "nextPublicRound": 2,
+      "sourceCheckpointHash": "sha256:67de1fdee991fbd05735c7afd4b5c06fc3ef5027ce804329e716d38f119a6eb9",
+      "sourcePublicRoundHash": "sha256:a18b8d2336eb9a6f3b61f3dda0b109bfd140b73be6cf71d1735534ed92ecc90d",
+      "optionMapping": [
+        {
+          "sensorOptionId": "opt_1",
+          "publicOptionLabel": "Cafeteria Food"
+        },
+        {
+          "sensorOptionId": "opt_2",
+          "publicOptionLabel": "Contaminated Water Supply"
+        },
+        {
+          "sensorOptionId": "opt_3",
+          "publicOptionLabel": "Airborne Toxin from HVAC"
+        }
+      ],
+      "expectedAgentIds": [
+        "agent:hiddenbench:64:1",
+        "agent:hiddenbench:64:2",
+        "agent:hiddenbench:64:3",
+        "agent:hiddenbench:64:4"
+      ],
+      "comparableAgentIds": [
+        "agent:hiddenbench:64:1",
+        "agent:hiddenbench:64:2",
+        "agent:hiddenbench:64:3",
+        "agent:hiddenbench:64:4"
+      ],
+      "missingOrInvalidAgentIds": [],
+      "pooledProbabilities": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.85,
+          0.05625000000000001,
+          0.09375
+        ]
+      },
+      "sensorReports": [
+        {
+          "agentId": "agent:hiddenbench:64:1",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0.85,
+              0.05,
+              0.1
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_1",
+            "B": "opt_1"
+          },
+          "averagedUniqueTop": "opt_1"
+        },
+        {
+          "agentId": "agent:hiddenbench:64:2",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0.85,
+              0.05,
+              0.1
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_1",
+            "B": "opt_1"
+          },
+          "averagedUniqueTop": "opt_1"
+        },
+        {
+          "agentId": "agent:hiddenbench:64:3",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0.85,
+              0.07500000000000001,
+              0.07500000000000001
+            ]
+          },
+          "duplicateTotalVariation": 0.05,
+          "repeatUniqueTops": {
+            "A": "opt_1",
+            "B": "opt_1"
+          },
+          "averagedUniqueTop": "opt_1"
+        },
+        {
+          "agentId": "agent:hiddenbench:64:4",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0.85,
+              0.05,
+              0.1
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_1",
+            "B": "opt_1"
+          },
+          "averagedUniqueTop": "opt_1"
+        }
+      ],
+      "nextPublicMessages": [
+        {
+          "agentId": "agent:hiddenbench:64:1",
+          "content": "Food poisoning from the cafeteria",
+          "messageHash": "sha256:c60d257b5803978cc17178340750731bcabd975f0a3c362fde0547226f7d7952"
+        },
+        {
+          "agentId": "agent:hiddenbench:64:2",
+          "content": "Food poisoning from the cafeteria",
+          "messageHash": "sha256:9c0c37e6e1a38e5acb78ba4c73a1a7e1bd3528d5407d8d6b62d1e837f2c0fd12"
+        },
+        {
+          "agentId": "agent:hiddenbench:64:3",
+          "content": "Food poisoning from the cafeteria",
+          "messageHash": "sha256:6c10e836f1a5c888423bdd207c0cd214110461230511c61695fe6fc242f337b8"
+        },
+        {
+          "agentId": "agent:hiddenbench:64:4",
+          "content": "Food poisoning from the cafeteria",
+          "messageHash": "sha256:a882d59470cb58ae4dd4df593b31816ed89cb4756d511f6340d36dc79911a5cf"
+        }
+      ],
+      "humanCodingStatus": "not_collected"
+    },
+    {
+      "reviewUnitId": "task-64:X2->R3",
+      "sourceTaskId": 64,
+      "checkpointRound": 2,
+      "nextPublicRound": 3,
+      "sourceCheckpointHash": "sha256:0907e8521cf12a5620f8ed42de1aaf5eb06c2d919c042ddffa5813f54e1dfc6c",
+      "sourcePublicRoundHash": "sha256:482e6a418cbc515f2e6c16377e68cf915b9f77800b2ee34efc324db21cce93b3",
+      "optionMapping": [
+        {
+          "sensorOptionId": "opt_1",
+          "publicOptionLabel": "Cafeteria Food"
+        },
+        {
+          "sensorOptionId": "opt_2",
+          "publicOptionLabel": "Contaminated Water Supply"
+        },
+        {
+          "sensorOptionId": "opt_3",
+          "publicOptionLabel": "Airborne Toxin from HVAC"
+        }
+      ],
+      "expectedAgentIds": [
+        "agent:hiddenbench:64:1",
+        "agent:hiddenbench:64:2",
+        "agent:hiddenbench:64:3",
+        "agent:hiddenbench:64:4"
+      ],
+      "comparableAgentIds": [
+        "agent:hiddenbench:64:1",
+        "agent:hiddenbench:64:2",
+        "agent:hiddenbench:64:3",
+        "agent:hiddenbench:64:4"
+      ],
+      "missingOrInvalidAgentIds": [],
+      "pooledProbabilities": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.75,
+          0.0875,
+          0.16249999999999998
+        ]
+      },
+      "sensorReports": [
+        {
+          "agentId": "agent:hiddenbench:64:1",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0.85,
+              0.1,
+              0.05
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_1",
+            "B": "opt_1"
+          },
+          "averagedUniqueTop": "opt_1"
+        },
+        {
+          "agentId": "agent:hiddenbench:64:2",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0.7,
+              0.1,
+              0.2
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_1",
+            "B": "opt_1"
+          },
+          "averagedUniqueTop": "opt_1"
+        },
+        {
+          "agentId": "agent:hiddenbench:64:3",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0.85,
+              0.05,
+              0.1
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_1",
+            "B": "opt_1"
+          },
+          "averagedUniqueTop": "opt_1"
+        },
+        {
+          "agentId": "agent:hiddenbench:64:4",
+          "averagedReport": {
+            "optionIds": [
+              "opt_1",
+              "opt_2",
+              "opt_3"
+            ],
+            "values": [
+              0.6,
+              0.1,
+              0.3
+            ]
+          },
+          "duplicateTotalVariation": 0,
+          "repeatUniqueTops": {
+            "A": "opt_1",
+            "B": "opt_1"
+          },
+          "averagedUniqueTop": "opt_1"
+        }
+      ],
+      "nextPublicMessages": [
+        {
+          "agentId": "agent:hiddenbench:64:1",
+          "content": "Airborne toxin from the HVAC system",
+          "messageHash": "sha256:78e398243d4d8d95d9ad286f57b0d555aa9d53b95b41375400903f7e8f2d30df"
+        },
+        {
+          "agentId": "agent:hiddenbench:64:2",
+          "content": "Food poisoning from the cafeteria",
+          "messageHash": "sha256:40228340eabbbde7b0f6ff96c4343d86909f944932939285a29ceb1e4860fd4a"
+        },
+        {
+          "agentId": "agent:hiddenbench:64:3",
+          "content": "Airborne toxin from the HVAC system",
+          "messageHash": "sha256:0958a897f629c16a941384a4fa8ca47b07556acd7664748abfb87026eb186740"
+        },
+        {
+          "agentId": "agent:hiddenbench:64:4",
+          "content": "Airborne toxin from the HVAC system",
+          "messageHash": "sha256:879ac53a5cb8ba05b38fd587790506ff2999b39e88cca30edcb293bb28702ed0"
+        }
+      ],
+      "humanCodingStatus": "not_collected"
+    }
+  ],
+  "contentHash": "sha256:64b1d9b24671c8bef34f7a21d047c31bf05cf0457f13e5261005a16023b10c78"
+}

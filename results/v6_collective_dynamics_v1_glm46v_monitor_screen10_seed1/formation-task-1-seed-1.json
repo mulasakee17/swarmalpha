@@ -1,0 +1,1446 @@
+{
+  "artifactRef": {
+    "id": "swarmalpha.experiment.v6.collective-epistemic-dynamics.formation",
+    "version": "1.0.0"
+  },
+  "planHash": "sha256:c5b6e20b332cdf9a6d0b40964deb0249da63407111b9e415f7cee388eab449e9",
+  "runId": "collective-dynamics:1:seed-1",
+  "seed": 1,
+  "modelRef": {
+    "id": "zhipu:glm-4.6v",
+    "version": "1.0.0"
+  },
+  "onlineTask": {
+    "sourceTaskId": 1,
+    "taskId": "task:hiddenbench:1",
+    "publicContext": "You are participating in a study, acting as a community leader of a small village surrounded by mountains and rivers. Most villagers own cars, but there are also elderly people and children who may need additional assistance when walking. Earlier today, heavy rain began to fall, and the local government issued a warning about a potential disaster.\nHours ago, you requested relief supplies, but the supply truck has yet to arrive. Now, the rain has temporarily stopped, giving you and the other three community leaders a short window to decide on the safest evacuation route before the rain resumes. You don’t know how much time you have left to make this critical decision.\nYour Task:\nYou will discuss with three other participants, who are also acting as community leaders, to decide where to evacuate. You have three options:\n- West City: Accessible through a bridge over the river.\n- East Town: Accessible through a tunnel on middle ground.\n- North Hill: Accessible through a driveway and walking trails.\nUsually, it takes the same time to reach all three places by car, but some routes may be inaccessible now.\nThere is only one correct evacuation location. After the discussion:\n- If you choose the correct location, you will earn $1.\n- If all other participants also choose the correct location, you will earn an additional $1 (for a total of $2).\nThis means that coordinating with others is critical to maximize your rewards. The chat will at most take 15 minutes. However, the exact time when the chat will end is unknown.\n\nShared information:\n1. The local government announced that hotels in West City are prepared to accommodate evacuees. While these hotels are fully stocked with food, they may lack medical supplies.\n2. The mayor of East Town has offered accommodations for any evacuees. She also ensures that volunteers are available to assist them.\n3. The school at North Hill can serve as a temporary evacuation center, providing a two-week supply of essentials and sleeping space in the gym.\n4. The river level is still below the bridge to West City.",
+    "claim": {
+      "id": "claim:hiddenbench:1:answer",
+      "proposition": "Select the single correct answer for HiddenBench task 1 (evacuation_west_city).",
+      "domain": "hiddenbench-categorical-decision",
+      "createdAt": "2026-08-11T00:00:00.000Z",
+      "options": [
+        "West City",
+        "East Town",
+        "North Hill"
+      ],
+      "resolutionPolicy": {
+        "kind": "categorical",
+        "resolverId": "resolver:hiddenbench-data-3be6ca16"
+      }
+    },
+    "agents": [
+      {
+        "agentId": "agent:hiddenbench:1:1",
+        "privateInformation": "The supply truck headed to the village from East Town was stuck in the tunnel."
+      },
+      {
+        "agentId": "agent:hiddenbench:1:2",
+        "privateInformation": "A massive fire has blocked the supply truck and all other traffic."
+      },
+      {
+        "agentId": "agent:hiddenbench:1:3",
+        "privateInformation": "The walking trails have been closed since last weekend due to fallen trees."
+      },
+      {
+        "agentId": "agent:hiddenbench:1:4",
+        "privateInformation": "A mudslide just occurred, covering the driveway to North Hill."
+      }
+    ]
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "messages": [
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:1:1",
+          "content": "Based on the shared information, West City is the most reliable evacuation location. The river level is below the bridge, ensuring the route is accessible. While East Town's mayor offered accommodations, the supply truck from there is stuck in the tunnel, indicating potential inaccessibility. North Hill's school is a backup, but West City's hotels are fully stocked and prepared, making it the safest choice.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:1:2",
+          "content": "Based on the shared information, West City is the most viable evacuation location. The river level is below the bridge, ensuring accessibility, and hotels there are prepared with food. While medical supplies may be lacking, the immediate safety of the bridge and established accommodations make it the best choice. I will advocate for West City in the discussion.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:1:3",
+          "content": "Based on the shared information, West City is the most viable evacuation location. The bridge to West City is accessible as the river level is below the bridge, and hotels there are prepared to accommodate evacuees with food. East Town and North Hill have uncertainties: East Town's mayor's offer is less concrete, and North Hill's walking trails are closed, which could hinder access for elderly and children. I recommend West City.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:1:4",
+          "content": "Based on the shared information and my private knowledge, I believe West City is the safest evacuation location. The river level is below the bridge, making it accessible, and the hotels there are prepared with food. However, I'm concerned about the lack of medical supplies. I will wait for others' input before finalizing my decision.",
+          "source": "agent"
+        }
+      ],
+      "reports": [
+        {
+          "id": "belief:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:1",
+          "claimId": "claim:hiddenbench:1:answer",
+          "agentId": "agent:hiddenbench:1:1",
+          "round": 1,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "West City": 0.8,
+              "East Town": 0.1,
+              "North Hill": 0.1
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:1:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:1:2",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:1:3",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:01:01.000Z"
+        },
+        {
+          "id": "belief:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:2",
+          "claimId": "claim:hiddenbench:1:answer",
+          "agentId": "agent:hiddenbench:1:2",
+          "round": 1,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "West City": 0.8,
+              "East Town": 0.1,
+              "North Hill": 0.1
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:2:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:2:2",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:01:02.000Z"
+        },
+        {
+          "id": "belief:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:3",
+          "claimId": "claim:hiddenbench:1:answer",
+          "agentId": "agent:hiddenbench:1:3",
+          "round": 1,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "West City": 0.8,
+              "East Town": 0.1,
+              "North Hill": 0.1
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:3:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:3:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:3:3",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:01:03.000Z"
+        },
+        {
+          "id": "belief:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:4",
+          "claimId": "claim:hiddenbench:1:answer",
+          "agentId": "agent:hiddenbench:1:4",
+          "round": 1,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "West City": 0.6,
+              "East Town": 0.3,
+              "North Hill": 0.1
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:4:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:4:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:4:3",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:01:04.000Z"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:1:1",
+          "content": "The river level is still below the bridge to West City.",
+          "createdAt": "2026-08-24T00:01:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:1",
+            "contentHash": "sha256:17e971949005909305d8fec922fa33a944919155eb702500837283c6f2bf37ed"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:1:2",
+          "content": "The supply truck headed to the village from East Town was stuck in the tunnel.",
+          "createdAt": "2026-08-24T00:01:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:1",
+            "contentHash": "sha256:0f2eeae9cdd2982c44b1780c8db6fb8469c1df863232e7af1a6eeb6ed55b8f0d"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:1:3",
+          "content": "Hotels in West City are prepared to accommodate evacuees and are fully stocked with food.",
+          "createdAt": "2026-08-24T00:01:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:1",
+            "contentHash": "sha256:784785248654aaa27ca7a6510b297b53e1ddfb9980e50620acba259c49940f9c"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:2:1",
+          "content": "The river level is still below the bridge to West City.",
+          "createdAt": "2026-08-24T00:01:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:2",
+            "contentHash": "sha256:17e971949005909305d8fec922fa33a944919155eb702500837283c6f2bf37ed"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:2:2",
+          "content": "Hotels in West City are prepared to accommodate evacuees.",
+          "createdAt": "2026-08-24T00:01:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:2",
+            "contentHash": "sha256:ba9f7273d332c49b1e76bc17a3d7da618808811b7796c94def76bc0f4b6f8662"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:3:1",
+          "content": "The river level is still below the bridge to West City.",
+          "createdAt": "2026-08-24T00:01:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:3",
+            "contentHash": "sha256:17e971949005909305d8fec922fa33a944919155eb702500837283c6f2bf37ed"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:3:2",
+          "content": "Hotels in West City are prepared to accommodate evacuees.",
+          "createdAt": "2026-08-24T00:01:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:3",
+            "contentHash": "sha256:ba9f7273d332c49b1e76bc17a3d7da618808811b7796c94def76bc0f4b6f8662"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:3:3",
+          "content": "The walking trails to North Hill have been closed since last weekend due to fallen trees.",
+          "createdAt": "2026-08-24T00:01:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:3",
+            "contentHash": "sha256:fde57fc7dbfa9577264edcfe8a953eb36076003a5dee23676c6391f2b59ebe8e"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:4:1",
+          "content": "The river level is still below the bridge to West City.",
+          "createdAt": "2026-08-24T00:01:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:4",
+            "contentHash": "sha256:17e971949005909305d8fec922fa33a944919155eb702500837283c6f2bf37ed"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:4:2",
+          "content": "The local government announced that hotels in West City are prepared to accommodate evacuees.",
+          "createdAt": "2026-08-24T00:01:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:4",
+            "contentHash": "sha256:0db07bcc95bac42814f4c9a43d9014e8e9ca007d23d8054306c96d2c67c18cbe"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:4:3",
+          "content": "A mudslide just occurred, covering the driveway to North Hill.",
+          "createdAt": "2026-08-24T00:01:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:4",
+            "contentHash": "sha256:19f383387ff59296b8a8d5be9bbc8fa3494b61cc51bac06a493798fdb1d97f08"
+          }
+        }
+      ],
+      "state": {
+        "activeAgentIds": [
+          "agent:hiddenbench:1:1",
+          "agent:hiddenbench:1:2",
+          "agent:hiddenbench:1:3",
+          "agent:hiddenbench:1:4"
+        ],
+        "artifactSchemaRef": {
+          "id": "swarmalpha.collective-epistemic-state",
+          "version": "1.0.0"
+        },
+        "asOfRound": 1,
+        "beliefKind": "categorical",
+        "betweenAgentDisagreement": 0.024419657140208217,
+        "claimId": "claim:hiddenbench:1:answer",
+        "claimOptionCount": 3,
+        "contentHash": "sha256:4a20cd82649b314881c55981d31099727e782715fc3b9efc4bea74d63e6ba01b",
+        "declaredLineageDiversity": {
+          "completeness": "missing",
+          "distinctDeclaredLineageCount": 0,
+          "effectiveLineageCount": null,
+          "missingLineageReportIds": [
+            "belief:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:1",
+            "belief:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:2",
+            "belief:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:3",
+            "belief:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:4"
+          ],
+          "normalizedLineageEntropy": null,
+          "reportsMissingDeclaredLineage": 4,
+          "reportsWithDeclaredLineage": 0
+        },
+        "expectedAgentIds": [
+          "agent:hiddenbench:1:1",
+          "agent:hiddenbench:1:2",
+          "agent:hiddenbench:1:3",
+          "agent:hiddenbench:1:4"
+        ],
+        "exposureConditionedRevision": {
+          "meanBeliefDistance": null,
+          "revisionCount": 0,
+          "targetAgentCount": 0,
+          "totalBeliefDistance": 0
+        },
+        "inferenceStatus": "descriptive_macrostate_only",
+        "latestReportIds": [
+          "belief:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:1",
+          "belief:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:2",
+          "belief:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:3",
+          "belief:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:4"
+        ],
+        "missingExpectedAgentIds": [],
+        "observedResponseConcentration": {
+          "herfindahlIndex": null,
+          "normalizedHerfindahl": null,
+          "responseMassBySourceAgent": {},
+          "sourceAgentCount": 0,
+          "status": "unavailable",
+          "unavailableReason": "no_exposure_conditioned_response_mass"
+        },
+        "pooledBelief": {
+          "kind": "categorical",
+          "probabilities": {
+            "East Town": 0.15000000000000002,
+            "North Hill": 0.1,
+            "West City": 0.7500000000000001
+          }
+        },
+        "pooledCertainty": 0.7500000000000001,
+        "pooledPredictedOutcomes": [
+          "West City"
+        ],
+        "pooledUncertainty": 0.6650099119652509,
+        "populationBasis": "declared_roster",
+        "sourceFingerprints": {
+          "claim": "sha256:80070de0fa8710faaef1e800f13fe160a7e392f9cae16d13eb19e024d8c6c4ec",
+          "evidence": "sha256:c5bc5c3456ade771117c04156a8793c543b1066e6f047cd846c8936eba564b6b",
+          "exposures": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "reports": "sha256:b48a21dbf38945f347977df9abfb87e53eb29ec0583d51597d1cf894aa1f9a67"
+        },
+        "withinAgentUncertainty": 0.6405902548250427
+      },
+      "updateActivityFromPrior": null
+    },
+    {
+      "round": 2,
+      "messages": [
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:1:1",
+          "content": "Based on the shared information and the private knowledge that the supply truck from East Town is stuck in the tunnel, West City is the most reliable evacuation location. The river level is below the bridge, ensuring accessibility, and the hotels there are prepared with food. East Town's tunnel is currently inaccessible, and North Hill's walking trails may pose challenges for elderly and children. Therefore, West City is the safest choice.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:1:2",
+          "content": "After reviewing the shared information and considering the private knowledge of a blocked supply truck, West City remains the most viable evacuation location. The bridge is accessible (river level below), hotels are prepared with food, and while medical supplies are a concern, the immediate safety of the route and established accommodations make it the best choice. I will advocate for West City in the discussion.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:1:3",
+          "content": "After reviewing the shared information and private knowledge, I conclude West City is the correct evacuation location. The river level is below the bridge, ensuring accessibility, and hotels there are prepared with food. While medical supplies may be lacking, the immediate safety of the bridge and established accommodations make it the best choice. I will advocate for West City in the discussion.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:1:4",
+          "content": "Based on the shared information and my private knowledge, West City is the safest evacuation location. The river level is below the bridge, ensuring accessibility, and hotels there are prepared with food. While medical supplies may be lacking, the immediate safety of the bridge and established accommodations make it the best choice. I will advocate for West City in the discussion.",
+          "source": "agent"
+        }
+      ],
+      "reports": [
+        {
+          "id": "belief:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:1",
+          "claimId": "claim:hiddenbench:1:answer",
+          "agentId": "agent:hiddenbench:1:1",
+          "round": 2,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "West City": 0.9,
+              "East Town": 0.05,
+              "North Hill": 0.05
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:1:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:1:2",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:1:3",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:02:01.000Z",
+          "supersedesReportId": "belief:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:1"
+        },
+        {
+          "id": "belief:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:2",
+          "claimId": "claim:hiddenbench:1:answer",
+          "agentId": "agent:hiddenbench:1:2",
+          "round": 2,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "West City": 0.8,
+              "East Town": 0.1,
+              "North Hill": 0.1
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:2:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:2:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:2:3",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:02:02.000Z",
+          "supersedesReportId": "belief:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:2"
+        },
+        {
+          "id": "belief:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:3",
+          "claimId": "claim:hiddenbench:1:answer",
+          "agentId": "agent:hiddenbench:1:3",
+          "round": 2,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "West City": 1,
+              "East Town": 0,
+              "North Hill": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:3:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:3:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:3:3",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:02:03.000Z",
+          "supersedesReportId": "belief:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:3"
+        },
+        {
+          "id": "belief:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:4",
+          "claimId": "claim:hiddenbench:1:answer",
+          "agentId": "agent:hiddenbench:1:4",
+          "round": 2,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "West City": 0.9,
+              "East Town": 0.05,
+              "North Hill": 0.05
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:4:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:4:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:4:3",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:02:04.000Z",
+          "supersedesReportId": "belief:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:4"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:1:1",
+          "content": "The river level is still below the bridge to West City.",
+          "createdAt": "2026-08-24T00:02:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:1",
+            "contentHash": "sha256:17e971949005909305d8fec922fa33a944919155eb702500837283c6f2bf37ed"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:1:2",
+          "content": "The supply truck headed to the village from East Town was stuck in the tunnel.",
+          "createdAt": "2026-08-24T00:02:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:1",
+            "contentHash": "sha256:0f2eeae9cdd2982c44b1780c8db6fb8469c1df863232e7af1a6eeb6ed55b8f0d"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:1:3",
+          "content": "Hotels in West City are prepared to accommodate evacuees and are fully stocked with food.",
+          "createdAt": "2026-08-24T00:02:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:1",
+            "contentHash": "sha256:784785248654aaa27ca7a6510b297b53e1ddfb9980e50620acba259c49940f9c"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:2:1",
+          "content": "The river level is still below the bridge to West City, ensuring the route is accessible.",
+          "createdAt": "2026-08-24T00:02:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:2",
+            "contentHash": "sha256:c9aa62d26b378836d01fa82ab905bf7ee910fc843bb3eda42fb23a01cb9e4449"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:2:2",
+          "content": "Hotels in West City are prepared to accommodate evacuees and are fully stocked with food.",
+          "createdAt": "2026-08-24T00:02:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:2",
+            "contentHash": "sha256:784785248654aaa27ca7a6510b297b53e1ddfb9980e50620acba259c49940f9c"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:2:3",
+          "content": "A massive fire has blocked the supply truck and all other traffic, making East Town and North Hill potentially inaccessible or less reliable.",
+          "createdAt": "2026-08-24T00:02:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:2",
+            "contentHash": "sha256:31b6a8b8947affc0d1e40610a731f763ec5d90cdbe46e493d2d9bbcc3ece1111"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:3:1",
+          "content": "The river level is still below the bridge to West City.",
+          "createdAt": "2026-08-24T00:02:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:3",
+            "contentHash": "sha256:17e971949005909305d8fec922fa33a944919155eb702500837283c6f2bf37ed"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:3:2",
+          "content": "Hotels in West City are prepared to accommodate evacuees and are fully stocked with food.",
+          "createdAt": "2026-08-24T00:02:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:3",
+            "contentHash": "sha256:784785248654aaa27ca7a6510b297b53e1ddfb9980e50620acba259c49940f9c"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:3:3",
+          "content": "The walking trails to North Hill have been closed since last weekend due to fallen trees.",
+          "createdAt": "2026-08-24T00:02:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:3",
+            "contentHash": "sha256:fde57fc7dbfa9577264edcfe8a953eb36076003a5dee23676c6391f2b59ebe8e"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:4:1",
+          "content": "The river level is still below the bridge to West City.",
+          "createdAt": "2026-08-24T00:02:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:4",
+            "contentHash": "sha256:17e971949005909305d8fec922fa33a944919155eb702500837283c6f2bf37ed"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:4:2",
+          "content": "Hotels in West City are prepared to accommodate evacuees and are fully stocked with food.",
+          "createdAt": "2026-08-24T00:02:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:4",
+            "contentHash": "sha256:784785248654aaa27ca7a6510b297b53e1ddfb9980e50620acba259c49940f9c"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:4:3",
+          "content": "A mudslide just occurred, covering the driveway to North Hill.",
+          "createdAt": "2026-08-24T00:02:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:4",
+            "contentHash": "sha256:19f383387ff59296b8a8d5be9bbc8fa3494b61cc51bac06a493798fdb1d97f08"
+          }
+        }
+      ],
+      "state": {
+        "activeAgentIds": [
+          "agent:hiddenbench:1:1",
+          "agent:hiddenbench:1:2",
+          "agent:hiddenbench:1:3",
+          "agent:hiddenbench:1:4"
+        ],
+        "artifactSchemaRef": {
+          "id": "swarmalpha.collective-epistemic-state",
+          "version": "1.0.0"
+        },
+        "asOfRound": 2,
+        "beliefKind": "categorical",
+        "betweenAgentDisagreement": 0.03408015839379347,
+        "claimId": "claim:hiddenbench:1:answer",
+        "claimOptionCount": 3,
+        "contentHash": "sha256:cf269dacb1a92b97bedcc8be8b3d75747f8ed17676eccd832289b97217348df0",
+        "declaredLineageDiversity": {
+          "completeness": "missing",
+          "distinctDeclaredLineageCount": 0,
+          "effectiveLineageCount": null,
+          "missingLineageReportIds": [
+            "belief:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:1",
+            "belief:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:2",
+            "belief:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:3",
+            "belief:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:4"
+          ],
+          "normalizedLineageEntropy": null,
+          "reportsMissingDeclaredLineage": 4,
+          "reportsWithDeclaredLineage": 0
+        },
+        "expectedAgentIds": [
+          "agent:hiddenbench:1:1",
+          "agent:hiddenbench:1:2",
+          "agent:hiddenbench:1:3",
+          "agent:hiddenbench:1:4"
+        ],
+        "exposureConditionedRevision": {
+          "meanBeliefDistance": null,
+          "revisionCount": 0,
+          "targetAgentCount": 0,
+          "totalBeliefDistance": 0
+        },
+        "inferenceStatus": "descriptive_macrostate_only",
+        "latestReportIds": [
+          "belief:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:1",
+          "belief:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:2",
+          "belief:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:3",
+          "belief:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:4"
+        ],
+        "missingExpectedAgentIds": [],
+        "observedResponseConcentration": {
+          "herfindahlIndex": null,
+          "normalizedHerfindahl": null,
+          "responseMassBySourceAgent": {},
+          "sourceAgentCount": 0,
+          "status": "unavailable",
+          "unavailableReason": "no_exposure_conditioned_response_mass"
+        },
+        "pooledBelief": {
+          "kind": "categorical",
+          "probabilities": {
+            "East Town": 0.05,
+            "North Hill": 0.05,
+            "West City": 0.9
+          }
+        },
+        "pooledCertainty": 0.9,
+        "pooledPredictedOutcomes": [
+          "West City"
+        ],
+        "pooledUncertainty": 0.3589962496465304,
+        "populationBasis": "declared_roster",
+        "sourceFingerprints": {
+          "claim": "sha256:80070de0fa8710faaef1e800f13fe160a7e392f9cae16d13eb19e024d8c6c4ec",
+          "evidence": "sha256:671f21384744b144f0dc888df6a4c0d05ad446c562fa9586c8c6928fe6cbcc55",
+          "exposures": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "reports": "sha256:62625b2e942ac2a427175939a29a51e4c5c8656f0506cc10ed416ab84b1236da"
+        },
+        "withinAgentUncertainty": 0.3249160912527369
+      },
+      "updateActivityFromPrior": 0.15
+    },
+    {
+      "round": 3,
+      "messages": [
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:1:1",
+          "content": "Based on the shared information and private knowledge that the supply truck from East Town is stuck in the tunnel, West City is the most reliable evacuation location. The river level is below the bridge, ensuring accessibility, and hotels there are prepared with food. East Town's tunnel is inaccessible, and North Hill's walking trails may pose challenges for elderly and children. Therefore, West City is the safest choice.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:1:2",
+          "content": "Based on the shared information and private knowledge of a blocked supply truck, West City is the most reliable evacuation location. The river level is below the bridge, ensuring accessibility, and hotels there are prepared with food. East Town's tunnel is inaccessible, and North Hill's walking trails pose challenges for vulnerable groups. Coordinating on West City maximizes safety and rewards.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:1:3",
+          "content": "Based on the shared information and private knowledge, West City is the safest evacuation location. The river level is below the bridge, ensuring accessibility, and hotels there are prepared with food. While medical supplies may be lacking, the immediate safety of the bridge and established accommodations make it the best choice.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:1:4",
+          "content": "Based on the shared information and private knowledge, West City is the safest evacuation location. The river level is below the bridge, ensuring accessibility, and hotels there are prepared with food. While medical supplies may be lacking, the immediate safety of the bridge and established accommodations make it the best choice.",
+          "source": "agent"
+        }
+      ],
+      "reports": [
+        {
+          "id": "belief:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:1",
+          "claimId": "claim:hiddenbench:1:answer",
+          "agentId": "agent:hiddenbench:1:1",
+          "round": 3,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "West City": 1,
+              "East Town": 0,
+              "North Hill": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:1:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:1:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:1:3",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:03:01.000Z",
+          "supersedesReportId": "belief:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:1"
+        },
+        {
+          "id": "belief:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:2",
+          "claimId": "claim:hiddenbench:1:answer",
+          "agentId": "agent:hiddenbench:1:2",
+          "round": 3,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "West City": 1,
+              "East Town": 0,
+              "North Hill": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:2:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:2:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:2:3",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:2:4",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "supersedesReportId": "belief:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:2"
+        },
+        {
+          "id": "belief:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:3",
+          "claimId": "claim:hiddenbench:1:answer",
+          "agentId": "agent:hiddenbench:1:3",
+          "round": 3,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "West City": 1,
+              "East Town": 0,
+              "North Hill": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:3:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:3:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:3:3",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:3:4",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "supersedesReportId": "belief:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:3"
+        },
+        {
+          "id": "belief:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:4",
+          "claimId": "claim:hiddenbench:1:answer",
+          "agentId": "agent:hiddenbench:1:4",
+          "round": 3,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "West City": 1,
+              "East Town": 0,
+              "North Hill": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:4:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:4:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:4:3",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:4:4",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:03:04.000Z",
+          "supersedesReportId": "belief:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:4"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:1:1",
+          "content": "The river level is still below the bridge to West City.",
+          "createdAt": "2026-08-24T00:03:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:1",
+            "contentHash": "sha256:17e971949005909305d8fec922fa33a944919155eb702500837283c6f2bf37ed"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:1:2",
+          "content": "The supply truck headed to the village from East Town was stuck in the tunnel.",
+          "createdAt": "2026-08-24T00:03:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:1",
+            "contentHash": "sha256:0f2eeae9cdd2982c44b1780c8db6fb8469c1df863232e7af1a6eeb6ed55b8f0d"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:1:3",
+          "content": "Hotels in West City are prepared to accommodate evacuees with food.",
+          "createdAt": "2026-08-24T00:03:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:1",
+            "contentHash": "sha256:ed6fa7f9ad81d1d428214ab919684e5151b2b5da1a850f617bce4b7209a45b1b"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:2:1",
+          "content": "The river level is below the bridge to West City, ensuring accessibility.",
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:2",
+            "contentHash": "sha256:0a216ef06a11d12b22c236991c65e12e853dff306cde57cd84acc9cf98c24eec"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:2:2",
+          "content": "Hotels in West City are prepared to accommodate evacuees with food.",
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:2",
+            "contentHash": "sha256:ed6fa7f9ad81d1d428214ab919684e5151b2b5da1a850f617bce4b7209a45b1b"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:2:3",
+          "content": "A massive fire has blocked the supply truck and all other traffic, making East Town's tunnel inaccessible.",
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:2",
+            "contentHash": "sha256:836561436ab3581221d2148fc891a19bbcfa61286948f94cd344d6b5973ebdcc"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:2:4",
+          "content": "North Hill's walking trails may pose challenges for elderly and children.",
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:2",
+            "contentHash": "sha256:a5fee36ee9c419f25839c1ed2b8b677090e5275fbb20a6711fd00a7ff2fa82ab"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:3:1",
+          "content": "The river level is still below the bridge to West City.",
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:3",
+            "contentHash": "sha256:17e971949005909305d8fec922fa33a944919155eb702500837283c6f2bf37ed"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:3:2",
+          "content": "Hotels in West City are prepared to accommodate evacuees and are fully stocked with food.",
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:3",
+            "contentHash": "sha256:784785248654aaa27ca7a6510b297b53e1ddfb9980e50620acba259c49940f9c"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:3:3",
+          "content": "The supply truck from East Town is stuck in the tunnel, making East Town inaccessible.",
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:3",
+            "contentHash": "sha256:5bae5f7aaed5bab984837ef298090340dcb9a91054dc76ab5eb5a65d3b799cd3"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:3:4",
+          "content": "The walking trails to North Hill have been closed since last weekend due to fallen trees.",
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:3",
+            "contentHash": "sha256:fde57fc7dbfa9577264edcfe8a953eb36076003a5dee23676c6391f2b59ebe8e"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:4:1",
+          "content": "The river level is still below the bridge to West City.",
+          "createdAt": "2026-08-24T00:03:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:4",
+            "contentHash": "sha256:17e971949005909305d8fec922fa33a944919155eb702500837283c6f2bf37ed"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:4:2",
+          "content": "Hotels in West City are prepared to accommodate evacuees and are fully stocked with food.",
+          "createdAt": "2026-08-24T00:03:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:4",
+            "contentHash": "sha256:784785248654aaa27ca7a6510b297b53e1ddfb9980e50620acba259c49940f9c"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:4:3",
+          "content": "A mudslide just occurred, covering the driveway to North Hill.",
+          "createdAt": "2026-08-24T00:03:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:4",
+            "contentHash": "sha256:19f383387ff59296b8a8d5be9bbc8fa3494b61cc51bac06a493798fdb1d97f08"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:4:4",
+          "content": "The supply truck from East Town is stuck in the tunnel.",
+          "createdAt": "2026-08-24T00:03:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:1:4",
+            "contentHash": "sha256:002431b61d4bbb79c8d0f42866b3d2c6ca2b36ff1d3b2e15a2a9f4631c31aaa1"
+          }
+        }
+      ],
+      "state": {
+        "activeAgentIds": [
+          "agent:hiddenbench:1:1",
+          "agent:hiddenbench:1:2",
+          "agent:hiddenbench:1:3",
+          "agent:hiddenbench:1:4"
+        ],
+        "artifactSchemaRef": {
+          "id": "swarmalpha.collective-epistemic-state",
+          "version": "1.0.0"
+        },
+        "asOfRound": 3,
+        "beliefKind": "categorical",
+        "betweenAgentDisagreement": 0,
+        "claimId": "claim:hiddenbench:1:answer",
+        "claimOptionCount": 3,
+        "contentHash": "sha256:43f4989698a427bc12e0d666b5fa70c421409c63497c07896ffb8a8cf1223ae7",
+        "declaredLineageDiversity": {
+          "completeness": "missing",
+          "distinctDeclaredLineageCount": 0,
+          "effectiveLineageCount": null,
+          "missingLineageReportIds": [
+            "belief:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:1",
+            "belief:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:2",
+            "belief:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:3",
+            "belief:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:4"
+          ],
+          "normalizedLineageEntropy": null,
+          "reportsMissingDeclaredLineage": 4,
+          "reportsWithDeclaredLineage": 0
+        },
+        "expectedAgentIds": [
+          "agent:hiddenbench:1:1",
+          "agent:hiddenbench:1:2",
+          "agent:hiddenbench:1:3",
+          "agent:hiddenbench:1:4"
+        ],
+        "exposureConditionedRevision": {
+          "meanBeliefDistance": null,
+          "revisionCount": 0,
+          "targetAgentCount": 0,
+          "totalBeliefDistance": 0
+        },
+        "inferenceStatus": "descriptive_macrostate_only",
+        "latestReportIds": [
+          "belief:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:1",
+          "belief:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:2",
+          "belief:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:3",
+          "belief:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:4"
+        ],
+        "missingExpectedAgentIds": [],
+        "observedResponseConcentration": {
+          "herfindahlIndex": null,
+          "normalizedHerfindahl": null,
+          "responseMassBySourceAgent": {},
+          "sourceAgentCount": 0,
+          "status": "unavailable",
+          "unavailableReason": "no_exposure_conditioned_response_mass"
+        },
+        "pooledBelief": {
+          "kind": "categorical",
+          "probabilities": {
+            "East Town": 0,
+            "North Hill": 0,
+            "West City": 1
+          }
+        },
+        "pooledCertainty": 1,
+        "pooledPredictedOutcomes": [
+          "West City"
+        ],
+        "pooledUncertainty": 0,
+        "populationBasis": "declared_roster",
+        "sourceFingerprints": {
+          "claim": "sha256:80070de0fa8710faaef1e800f13fe160a7e392f9cae16d13eb19e024d8c6c4ec",
+          "evidence": "sha256:8319210a577f65bad5d4eee3c2617811f0b86204811f0407b2ae2176cdeec819",
+          "exposures": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "reports": "sha256:9e2e4a80b7b9a5742096f449e4833d39c6cd9864d6fa893966fd79e119894a4c"
+        },
+        "withinAgentUncertainty": 0
+      },
+      "updateActivityFromPrior": 0.09999999999999998
+    }
+  ],
+  "providerCalls": [
+    {
+      "requestId": "discussion:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:1",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are participating in a study, acting as a community leader of a small village surrounded by mountains and rivers. Most villagers own cars, but there are also elderly people and children who may need additional assistance when walking. Earlier today, heavy rain began to fall, and the local government issued a warning about a potential disaster.\nHours ago, you requested relief supplies, but the supply truck has yet to arrive. Now, the rain has temporarily stopped, giving you and the other three community leaders a short window to decide on the safest evacuation route before the rain resumes. You don’t know how much time you have left to make this critical decision.\nYour Task:\nYou will discuss with three other participants, who are also acting as community leaders, to decide where to evacuate. You have three options:\n- West City: Accessible through a bridge over the river.\n- East Town: Accessible through a tunnel on middle ground.\n- North Hill: Accessible through a driveway and walking trails.\nUsually, it takes the same time to reach all three places by car, but some routes may be inaccessible now.\nThere is only one correct evacuation location. After the discussion:\n- If you choose the correct location, you will earn $1.\n- If all other participants also choose the correct location, you will earn an additional $1 (for a total of $2).\nThis means that coordinating with others is critical to maximize your rewards. The chat will at most take 15 minutes. However, the exact time when the chat will end is unknown.\n\nShared information:\n1. The local government announced that hotels in West City are prepared to accommodate evacuees. While these hotels are fully stocked with food, they may lack medical supplies.\n2. The mayor of East Town has offered accommodations for any evacuees. She also ensures that volunteers are available to assist them.\n3. The school at North Hill can serve as a temporary evacuation center, providing a two-week supply of essentials and sleeping space in the gym.\n4. The river level is still below the bridge to West City.\n\nYour private information:\nThe supply truck headed to the village from East Town was stuck in the tunnel.\n\nVisible discussion transcript:\n(none)\n\nClaim claim:hiddenbench:1:answer: Select the single correct answer for HiddenBench task 1 (evacuation_west_city).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: West City | East Town | North Hill. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"West City\": 0.5, \"East Town\": 0.2500, \"North Hill\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:6493015d1cda6803af44b1aec559404eb9ab53f1fcc9b9c5b55c43c2177fae1d",
+      "responseHash": "sha256:11e59a22a5d5e009efc718efaee9ddea440e4f13948b3768dd79613d00fa8d16",
+      "rawResponse": "{\"message\":\"Based on the shared information, West City is the most reliable evacuation location. The river level is below the bridge, ensuring the route is accessible. While East Town's mayor offered accommodations, the supply truck from there is stuck in the tunnel, indicating potential inaccessibility. North Hill's school is a backup, but West City's hotels are fully stocked and prepared, making it the safest choice.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"West City\":0.8,\"East Town\":0.1,\"North Hill\":0.1}},\"evidence\":[{\"content\":\"The river level is still below the bridge to West City.\",\"relation\":\"supports\"},{\"content\":\"The supply truck headed to the village from East Town was stuck in the tunnel.\",\"relation\":\"attacks\"},{\"content\":\"Hotels in West City are prepared to accommodate evacuees and are fully stocked with food.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 738,
+        "completionTokens": 249,
+        "totalTokens": 987,
+        "latencyMs": 9607
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:2",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are participating in a study, acting as a community leader of a small village surrounded by mountains and rivers. Most villagers own cars, but there are also elderly people and children who may need additional assistance when walking. Earlier today, heavy rain began to fall, and the local government issued a warning about a potential disaster.\nHours ago, you requested relief supplies, but the supply truck has yet to arrive. Now, the rain has temporarily stopped, giving you and the other three community leaders a short window to decide on the safest evacuation route before the rain resumes. You don’t know how much time you have left to make this critical decision.\nYour Task:\nYou will discuss with three other participants, who are also acting as community leaders, to decide where to evacuate. You have three options:\n- West City: Accessible through a bridge over the river.\n- East Town: Accessible through a tunnel on middle ground.\n- North Hill: Accessible through a driveway and walking trails.\nUsually, it takes the same time to reach all three places by car, but some routes may be inaccessible now.\nThere is only one correct evacuation location. After the discussion:\n- If you choose the correct location, you will earn $1.\n- If all other participants also choose the correct location, you will earn an additional $1 (for a total of $2).\nThis means that coordinating with others is critical to maximize your rewards. The chat will at most take 15 minutes. However, the exact time when the chat will end is unknown.\n\nShared information:\n1. The local government announced that hotels in West City are prepared to accommodate evacuees. While these hotels are fully stocked with food, they may lack medical supplies.\n2. The mayor of East Town has offered accommodations for any evacuees. She also ensures that volunteers are available to assist them.\n3. The school at North Hill can serve as a temporary evacuation center, providing a two-week supply of essentials and sleeping space in the gym.\n4. The river level is still below the bridge to West City.\n\nYour private information:\nA massive fire has blocked the supply truck and all other traffic.\n\nVisible discussion transcript:\n(none)\n\nClaim claim:hiddenbench:1:answer: Select the single correct answer for HiddenBench task 1 (evacuation_west_city).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: West City | East Town | North Hill. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"West City\": 0.5, \"East Town\": 0.2500, \"North Hill\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:bbdb8a1afcd6282a53cc86a0771abdfb56f815e5103e38e5a1965d39ad448b74",
+      "responseHash": "sha256:23a58b18a70fe668faec828650eed94095c0dd319643eadf28a378def09591e2",
+      "rawResponse": "{\"message\":\"Based on the shared information, West City is the most viable evacuation location. The river level is below the bridge, ensuring accessibility, and hotels there are prepared with food. While medical supplies may be lacking, the immediate safety of the bridge and established accommodations make it the best choice. I will advocate for West City in the discussion.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"West City\":0.8,\"East Town\":0.1,\"North Hill\":0.1}},\"evidence\":[{\"content\":\"The river level is still below the bridge to West City.\",\"relation\":\"supports\"},{\"content\":\"Hotels in West City are prepared to accommodate evacuees.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 735,
+        "completionTokens": 198,
+        "totalTokens": 933,
+        "latencyMs": 5244
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:3",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are participating in a study, acting as a community leader of a small village surrounded by mountains and rivers. Most villagers own cars, but there are also elderly people and children who may need additional assistance when walking. Earlier today, heavy rain began to fall, and the local government issued a warning about a potential disaster.\nHours ago, you requested relief supplies, but the supply truck has yet to arrive. Now, the rain has temporarily stopped, giving you and the other three community leaders a short window to decide on the safest evacuation route before the rain resumes. You don’t know how much time you have left to make this critical decision.\nYour Task:\nYou will discuss with three other participants, who are also acting as community leaders, to decide where to evacuate. You have three options:\n- West City: Accessible through a bridge over the river.\n- East Town: Accessible through a tunnel on middle ground.\n- North Hill: Accessible through a driveway and walking trails.\nUsually, it takes the same time to reach all three places by car, but some routes may be inaccessible now.\nThere is only one correct evacuation location. After the discussion:\n- If you choose the correct location, you will earn $1.\n- If all other participants also choose the correct location, you will earn an additional $1 (for a total of $2).\nThis means that coordinating with others is critical to maximize your rewards. The chat will at most take 15 minutes. However, the exact time when the chat will end is unknown.\n\nShared information:\n1. The local government announced that hotels in West City are prepared to accommodate evacuees. While these hotels are fully stocked with food, they may lack medical supplies.\n2. The mayor of East Town has offered accommodations for any evacuees. She also ensures that volunteers are available to assist them.\n3. The school at North Hill can serve as a temporary evacuation center, providing a two-week supply of essentials and sleeping space in the gym.\n4. The river level is still below the bridge to West City.\n\nYour private information:\nThe walking trails have been closed since last weekend due to fallen trees.\n\nVisible discussion transcript:\n(none)\n\nClaim claim:hiddenbench:1:answer: Select the single correct answer for HiddenBench task 1 (evacuation_west_city).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: West City | East Town | North Hill. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"West City\": 0.5, \"East Town\": 0.2500, \"North Hill\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:a5c367faff2e5ec2f9d6fc6f65c70a9b6971f589f468918d6f0945a46fbce755",
+      "responseHash": "sha256:c18191e4a4486dc53dbb9be6e7f9c85abe968c9e298dae020539206fbc6b126d",
+      "rawResponse": "{\"message\":\"Based on the shared information, West City is the most viable evacuation location. The bridge to West City is accessible as the river level is below the bridge, and hotels there are prepared to accommodate evacuees with food. East Town and North Hill have uncertainties: East Town's mayor's offer is less concrete, and North Hill's walking trails are closed, which could hinder access for elderly and children. I recommend West City.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"West City\":0.8,\"East Town\":0.1,\"North Hill\":0.1}},\"evidence\":[{\"content\":\"The river level is still below the bridge to West City.\",\"relation\":\"supports\"},{\"content\":\"Hotels in West City are prepared to accommodate evacuees.\",\"relation\":\"supports\"},{\"content\":\"The walking trails to North Hill have been closed since last weekend due to fallen trees.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 736,
+        "completionTokens": 250,
+        "totalTokens": 986,
+        "latencyMs": 8812
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:1:seed-1:r1:agent:hiddenbench:1:4",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are participating in a study, acting as a community leader of a small village surrounded by mountains and rivers. Most villagers own cars, but there are also elderly people and children who may need additional assistance when walking. Earlier today, heavy rain began to fall, and the local government issued a warning about a potential disaster.\nHours ago, you requested relief supplies, but the supply truck has yet to arrive. Now, the rain has temporarily stopped, giving you and the other three community leaders a short window to decide on the safest evacuation route before the rain resumes. You don’t know how much time you have left to make this critical decision.\nYour Task:\nYou will discuss with three other participants, who are also acting as community leaders, to decide where to evacuate. You have three options:\n- West City: Accessible through a bridge over the river.\n- East Town: Accessible through a tunnel on middle ground.\n- North Hill: Accessible through a driveway and walking trails.\nUsually, it takes the same time to reach all three places by car, but some routes may be inaccessible now.\nThere is only one correct evacuation location. After the discussion:\n- If you choose the correct location, you will earn $1.\n- If all other participants also choose the correct location, you will earn an additional $1 (for a total of $2).\nThis means that coordinating with others is critical to maximize your rewards. The chat will at most take 15 minutes. However, the exact time when the chat will end is unknown.\n\nShared information:\n1. The local government announced that hotels in West City are prepared to accommodate evacuees. While these hotels are fully stocked with food, they may lack medical supplies.\n2. The mayor of East Town has offered accommodations for any evacuees. She also ensures that volunteers are available to assist them.\n3. The school at North Hill can serve as a temporary evacuation center, providing a two-week supply of essentials and sleeping space in the gym.\n4. The river level is still below the bridge to West City.\n\nYour private information:\nA mudslide just occurred, covering the driveway to North Hill.\n\nVisible discussion transcript:\n(none)\n\nClaim claim:hiddenbench:1:answer: Select the single correct answer for HiddenBench task 1 (evacuation_west_city).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: West City | East Town | North Hill. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"West City\": 0.5, \"East Town\": 0.2500, \"North Hill\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:dd4b2a46332e9b7f2c28ed127141557fc0797a27cc609359292a7178c64d11e0",
+      "responseHash": "sha256:7fd59a1d6d40a2b925e623d1371782dd6cca02a1a6ec6bee529d6dfa191517d3",
+      "rawResponse": "{\"message\":\"Based on the shared information and my private knowledge, I believe West City is the safest evacuation location. The river level is below the bridge, making it accessible, and the hotels there are prepared with food. However, I'm concerned about the lack of medical supplies. I will wait for others' input before finalizing my decision.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"West City\":0.6,\"East Town\":0.3,\"North Hill\":0.1}},\"evidence\":[{\"content\":\"The river level is still below the bridge to West City.\",\"relation\":\"supports\"},{\"content\":\"The local government announced that hotels in West City are prepared to accommodate evacuees.\",\"relation\":\"supports\"},{\"content\":\"A mudslide just occurred, covering the driveway to North Hill.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 735,
+        "completionTokens": 231,
+        "totalTokens": 966,
+        "latencyMs": 8450
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:1",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are participating in a study, acting as a community leader of a small village surrounded by mountains and rivers. Most villagers own cars, but there are also elderly people and children who may need additional assistance when walking. Earlier today, heavy rain began to fall, and the local government issued a warning about a potential disaster.\nHours ago, you requested relief supplies, but the supply truck has yet to arrive. Now, the rain has temporarily stopped, giving you and the other three community leaders a short window to decide on the safest evacuation route before the rain resumes. You don’t know how much time you have left to make this critical decision.\nYour Task:\nYou will discuss with three other participants, who are also acting as community leaders, to decide where to evacuate. You have three options:\n- West City: Accessible through a bridge over the river.\n- East Town: Accessible through a tunnel on middle ground.\n- North Hill: Accessible through a driveway and walking trails.\nUsually, it takes the same time to reach all three places by car, but some routes may be inaccessible now.\nThere is only one correct evacuation location. After the discussion:\n- If you choose the correct location, you will earn $1.\n- If all other participants also choose the correct location, you will earn an additional $1 (for a total of $2).\nThis means that coordinating with others is critical to maximize your rewards. The chat will at most take 15 minutes. However, the exact time when the chat will end is unknown.\n\nShared information:\n1. The local government announced that hotels in West City are prepared to accommodate evacuees. While these hotels are fully stocked with food, they may lack medical supplies.\n2. The mayor of East Town has offered accommodations for any evacuees. She also ensures that volunteers are available to assist them.\n3. The school at North Hill can serve as a temporary evacuation center, providing a two-week supply of essentials and sleeping space in the gym.\n4. The river level is still below the bridge to West City.\n\nYour private information:\nThe supply truck headed to the village from East Town was stuck in the tunnel.\n\nVisible discussion transcript:\n[round 1] agent:hiddenbench:1:1: Based on the shared information, West City is the most reliable evacuation location. The river level is below the bridge, ensuring the route is accessible. While East Town's mayor offered accommodations, the supply truck from there is stuck in the tunnel, indicating potential inaccessibility. North Hill's school is a backup, but West City's hotels are fully stocked and prepared, making it the safest choice.\n[round 1] agent:hiddenbench:1:2: Based on the shared information, West City is the most viable evacuation location. The river level is below the bridge, ensuring accessibility, and hotels there are prepared with food. While medical supplies may be lacking, the immediate safety of the bridge and established accommodations make it the best choice. I will advocate for West City in the discussion.\n[round 1] agent:hiddenbench:1:3: Based on the shared information, West City is the most viable evacuation location. The bridge to West City is accessible as the river level is below the bridge, and hotels there are prepared to accommodate evacuees with food. East Town and North Hill have uncertainties: East Town's mayor's offer is less concrete, and North Hill's walking trails are closed, which could hinder access for elderly and children. I recommend West City.\n[round 1] agent:hiddenbench:1:4: Based on the shared information and my private knowledge, I believe West City is the safest evacuation location. The river level is below the bridge, making it accessible, and the hotels there are prepared with food. However, I'm concerned about the lack of medical supplies. I will wait for others' input before finalizing my decision.\n\nClaim claim:hiddenbench:1:answer: Select the single correct answer for HiddenBench task 1 (evacuation_west_city).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: West City | East Town | North Hill. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"West City\": 0.5, \"East Town\": 0.2500, \"North Hill\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:e0d5a65391594dfc87e25a67c8cf8663c484a94ed485c65439c35ec75abf8d4b",
+      "responseHash": "sha256:3aeddf5c91760d68509c4cbad4c1c115902069518603378daf8a51dbfe1ed175",
+      "rawResponse": "{\"message\":\"Based on the shared information and the private knowledge that the supply truck from East Town is stuck in the tunnel, West City is the most reliable evacuation location. The river level is below the bridge, ensuring accessibility, and the hotels there are prepared with food. East Town's tunnel is currently inaccessible, and North Hill's walking trails may pose challenges for elderly and children. Therefore, West City is the safest choice.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"West City\":0.9,\"East Town\":0.05,\"North Hill\":0.05}},\"evidence\":[{\"content\":\"The river level is still below the bridge to West City.\",\"relation\":\"supports\"},{\"content\":\"The supply truck headed to the village from East Town was stuck in the tunnel.\",\"relation\":\"attacks\"},{\"content\":\"Hotels in West City are prepared to accommodate evacuees and are fully stocked with food.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 1083,
+        "completionTokens": 250,
+        "totalTokens": 1333,
+        "latencyMs": 12029
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:2",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are participating in a study, acting as a community leader of a small village surrounded by mountains and rivers. Most villagers own cars, but there are also elderly people and children who may need additional assistance when walking. Earlier today, heavy rain began to fall, and the local government issued a warning about a potential disaster.\nHours ago, you requested relief supplies, but the supply truck has yet to arrive. Now, the rain has temporarily stopped, giving you and the other three community leaders a short window to decide on the safest evacuation route before the rain resumes. You don’t know how much time you have left to make this critical decision.\nYour Task:\nYou will discuss with three other participants, who are also acting as community leaders, to decide where to evacuate. You have three options:\n- West City: Accessible through a bridge over the river.\n- East Town: Accessible through a tunnel on middle ground.\n- North Hill: Accessible through a driveway and walking trails.\nUsually, it takes the same time to reach all three places by car, but some routes may be inaccessible now.\nThere is only one correct evacuation location. After the discussion:\n- If you choose the correct location, you will earn $1.\n- If all other participants also choose the correct location, you will earn an additional $1 (for a total of $2).\nThis means that coordinating with others is critical to maximize your rewards. The chat will at most take 15 minutes. However, the exact time when the chat will end is unknown.\n\nShared information:\n1. The local government announced that hotels in West City are prepared to accommodate evacuees. While these hotels are fully stocked with food, they may lack medical supplies.\n2. The mayor of East Town has offered accommodations for any evacuees. She also ensures that volunteers are available to assist them.\n3. The school at North Hill can serve as a temporary evacuation center, providing a two-week supply of essentials and sleeping space in the gym.\n4. The river level is still below the bridge to West City.\n\nYour private information:\nA massive fire has blocked the supply truck and all other traffic.\n\nVisible discussion transcript:\n[round 1] agent:hiddenbench:1:1: Based on the shared information, West City is the most reliable evacuation location. The river level is below the bridge, ensuring the route is accessible. While East Town's mayor offered accommodations, the supply truck from there is stuck in the tunnel, indicating potential inaccessibility. North Hill's school is a backup, but West City's hotels are fully stocked and prepared, making it the safest choice.\n[round 1] agent:hiddenbench:1:2: Based on the shared information, West City is the most viable evacuation location. The river level is below the bridge, ensuring accessibility, and hotels there are prepared with food. While medical supplies may be lacking, the immediate safety of the bridge and established accommodations make it the best choice. I will advocate for West City in the discussion.\n[round 1] agent:hiddenbench:1:3: Based on the shared information, West City is the most viable evacuation location. The bridge to West City is accessible as the river level is below the bridge, and hotels there are prepared to accommodate evacuees with food. East Town and North Hill have uncertainties: East Town's mayor's offer is less concrete, and North Hill's walking trails are closed, which could hinder access for elderly and children. I recommend West City.\n[round 1] agent:hiddenbench:1:4: Based on the shared information and my private knowledge, I believe West City is the safest evacuation location. The river level is below the bridge, making it accessible, and the hotels there are prepared with food. However, I'm concerned about the lack of medical supplies. I will wait for others' input before finalizing my decision.\n\nClaim claim:hiddenbench:1:answer: Select the single correct answer for HiddenBench task 1 (evacuation_west_city).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: West City | East Town | North Hill. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"West City\": 0.5, \"East Town\": 0.2500, \"North Hill\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:fd2161ca6860580ce7e17adcbdc49df18b32dfc381b6187c55169473d6597df0",
+      "responseHash": "sha256:d03179e48c8c713169455dcb00e92cae13e37d6e7eb73302bd3298f6a3365a11",
+      "rawResponse": "{\"message\":\"After reviewing the shared information and considering the private knowledge of a blocked supply truck, West City remains the most viable evacuation location. The bridge is accessible (river level below), hotels are prepared with food, and while medical supplies are a concern, the immediate safety of the route and established accommodations make it the best choice. I will advocate for West City in the discussion.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"West City\":0.8000,\"East Town\":0.1000,\"North Hill\":0.1000}},\"evidence\":[{\"content\":\"The river level is still below the bridge to West City, ensuring the route is accessible.\",\"relation\":\"supports\"},{\"content\":\"Hotels in West City are prepared to accommodate evacuees and are fully stocked with food.\",\"relation\":\"supports\"},{\"content\":\"A massive fire has blocked the supply truck and all other traffic, making East Town and North Hill potentially inaccessible or less reliable.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 1080,
+        "completionTokens": 259,
+        "totalTokens": 1339,
+        "latencyMs": 14742
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:3",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are participating in a study, acting as a community leader of a small village surrounded by mountains and rivers. Most villagers own cars, but there are also elderly people and children who may need additional assistance when walking. Earlier today, heavy rain began to fall, and the local government issued a warning about a potential disaster.\nHours ago, you requested relief supplies, but the supply truck has yet to arrive. Now, the rain has temporarily stopped, giving you and the other three community leaders a short window to decide on the safest evacuation route before the rain resumes. You don’t know how much time you have left to make this critical decision.\nYour Task:\nYou will discuss with three other participants, who are also acting as community leaders, to decide where to evacuate. You have three options:\n- West City: Accessible through a bridge over the river.\n- East Town: Accessible through a tunnel on middle ground.\n- North Hill: Accessible through a driveway and walking trails.\nUsually, it takes the same time to reach all three places by car, but some routes may be inaccessible now.\nThere is only one correct evacuation location. After the discussion:\n- If you choose the correct location, you will earn $1.\n- If all other participants also choose the correct location, you will earn an additional $1 (for a total of $2).\nThis means that coordinating with others is critical to maximize your rewards. The chat will at most take 15 minutes. However, the exact time when the chat will end is unknown.\n\nShared information:\n1. The local government announced that hotels in West City are prepared to accommodate evacuees. While these hotels are fully stocked with food, they may lack medical supplies.\n2. The mayor of East Town has offered accommodations for any evacuees. She also ensures that volunteers are available to assist them.\n3. The school at North Hill can serve as a temporary evacuation center, providing a two-week supply of essentials and sleeping space in the gym.\n4. The river level is still below the bridge to West City.\n\nYour private information:\nThe walking trails have been closed since last weekend due to fallen trees.\n\nVisible discussion transcript:\n[round 1] agent:hiddenbench:1:1: Based on the shared information, West City is the most reliable evacuation location. The river level is below the bridge, ensuring the route is accessible. While East Town's mayor offered accommodations, the supply truck from there is stuck in the tunnel, indicating potential inaccessibility. North Hill's school is a backup, but West City's hotels are fully stocked and prepared, making it the safest choice.\n[round 1] agent:hiddenbench:1:2: Based on the shared information, West City is the most viable evacuation location. The river level is below the bridge, ensuring accessibility, and hotels there are prepared with food. While medical supplies may be lacking, the immediate safety of the bridge and established accommodations make it the best choice. I will advocate for West City in the discussion.\n[round 1] agent:hiddenbench:1:3: Based on the shared information, West City is the most viable evacuation location. The bridge to West City is accessible as the river level is below the bridge, and hotels there are prepared to accommodate evacuees with food. East Town and North Hill have uncertainties: East Town's mayor's offer is less concrete, and North Hill's walking trails are closed, which could hinder access for elderly and children. I recommend West City.\n[round 1] agent:hiddenbench:1:4: Based on the shared information and my private knowledge, I believe West City is the safest evacuation location. The river level is below the bridge, making it accessible, and the hotels there are prepared with food. However, I'm concerned about the lack of medical supplies. I will wait for others' input before finalizing my decision.\n\nClaim claim:hiddenbench:1:answer: Select the single correct answer for HiddenBench task 1 (evacuation_west_city).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: West City | East Town | North Hill. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"West City\": 0.5, \"East Town\": 0.2500, \"North Hill\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:8eb85bdb768e2f6dbde4ace1f94818855f24329abf3fe31396e821bd59289f83",
+      "responseHash": "sha256:d56019350af5eb30f5d9e83fe920a4e594cb69be4f13238ffaac21b273a9f8d5",
+      "rawResponse": "{\"message\":\"After reviewing the shared information and private knowledge, I conclude West City is the correct evacuation location. The river level is below the bridge, ensuring accessibility, and hotels there are prepared with food. While medical supplies may be lacking, the immediate safety of the bridge and established accommodations make it the best choice. I will advocate for West City in the discussion.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"West City\":1.0,\"East Town\":0.0,\"North Hill\":0.0}},\"evidence\":[{\"content\":\"The river level is still below the bridge to West City.\",\"relation\":\"supports\"},{\"content\":\"Hotels in West City are prepared to accommodate evacuees and are fully stocked with food.\",\"relation\":\"supports\"},{\"content\":\"The walking trails to North Hill have been closed since last weekend due to fallen trees.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 1081,
+        "completionTokens": 239,
+        "totalTokens": 1320,
+        "latencyMs": 8981
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:1:seed-1:r2:agent:hiddenbench:1:4",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are participating in a study, acting as a community leader of a small village surrounded by mountains and rivers. Most villagers own cars, but there are also elderly people and children who may need additional assistance when walking. Earlier today, heavy rain began to fall, and the local government issued a warning about a potential disaster.\nHours ago, you requested relief supplies, but the supply truck has yet to arrive. Now, the rain has temporarily stopped, giving you and the other three community leaders a short window to decide on the safest evacuation route before the rain resumes. You don’t know how much time you have left to make this critical decision.\nYour Task:\nYou will discuss with three other participants, who are also acting as community leaders, to decide where to evacuate. You have three options:\n- West City: Accessible through a bridge over the river.\n- East Town: Accessible through a tunnel on middle ground.\n- North Hill: Accessible through a driveway and walking trails.\nUsually, it takes the same time to reach all three places by car, but some routes may be inaccessible now.\nThere is only one correct evacuation location. After the discussion:\n- If you choose the correct location, you will earn $1.\n- If all other participants also choose the correct location, you will earn an additional $1 (for a total of $2).\nThis means that coordinating with others is critical to maximize your rewards. The chat will at most take 15 minutes. However, the exact time when the chat will end is unknown.\n\nShared information:\n1. The local government announced that hotels in West City are prepared to accommodate evacuees. While these hotels are fully stocked with food, they may lack medical supplies.\n2. The mayor of East Town has offered accommodations for any evacuees. She also ensures that volunteers are available to assist them.\n3. The school at North Hill can serve as a temporary evacuation center, providing a two-week supply of essentials and sleeping space in the gym.\n4. The river level is still below the bridge to West City.\n\nYour private information:\nA mudslide just occurred, covering the driveway to North Hill.\n\nVisible discussion transcript:\n[round 1] agent:hiddenbench:1:1: Based on the shared information, West City is the most reliable evacuation location. The river level is below the bridge, ensuring the route is accessible. While East Town's mayor offered accommodations, the supply truck from there is stuck in the tunnel, indicating potential inaccessibility. North Hill's school is a backup, but West City's hotels are fully stocked and prepared, making it the safest choice.\n[round 1] agent:hiddenbench:1:2: Based on the shared information, West City is the most viable evacuation location. The river level is below the bridge, ensuring accessibility, and hotels there are prepared with food. While medical supplies may be lacking, the immediate safety of the bridge and established accommodations make it the best choice. I will advocate for West City in the discussion.\n[round 1] agent:hiddenbench:1:3: Based on the shared information, West City is the most viable evacuation location. The bridge to West City is accessible as the river level is below the bridge, and hotels there are prepared to accommodate evacuees with food. East Town and North Hill have uncertainties: East Town's mayor's offer is less concrete, and North Hill's walking trails are closed, which could hinder access for elderly and children. I recommend West City.\n[round 1] agent:hiddenbench:1:4: Based on the shared information and my private knowledge, I believe West City is the safest evacuation location. The river level is below the bridge, making it accessible, and the hotels there are prepared with food. However, I'm concerned about the lack of medical supplies. I will wait for others' input before finalizing my decision.\n\nClaim claim:hiddenbench:1:answer: Select the single correct answer for HiddenBench task 1 (evacuation_west_city).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: West City | East Town | North Hill. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"West City\": 0.5, \"East Town\": 0.2500, \"North Hill\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:26fd6e7af9a8abcd380e36f371a2a94ffe2b82696ee4758ad0938f8d7007875e",
+      "responseHash": "sha256:c7ce374fbd83ff45ac018a8f11922336239af9ddc23ba0ecc01d47d4adaaf070",
+      "rawResponse": "{\"message\":\"Based on the shared information and my private knowledge, West City is the safest evacuation location. The river level is below the bridge, ensuring accessibility, and hotels there are prepared with food. While medical supplies may be lacking, the immediate safety of the bridge and established accommodations make it the best choice. I will advocate for West City in the discussion.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"West City\":0.9,\"East Town\":0.05,\"North Hill\":0.05}},\"evidence\":[{\"content\":\"The river level is still below the bridge to West City.\",\"relation\":\"supports\"},{\"content\":\"Hotels in West City are prepared to accommodate evacuees and are fully stocked with food.\",\"relation\":\"supports\"},{\"content\":\"A mudslide just occurred, covering the driveway to North Hill.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 1080,
+        "completionTokens": 234,
+        "totalTokens": 1314,
+        "latencyMs": 5015
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:1",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are participating in a study, acting as a community leader of a small village surrounded by mountains and rivers. Most villagers own cars, but there are also elderly people and children who may need additional assistance when walking. Earlier today, heavy rain began to fall, and the local government issued a warning about a potential disaster.\nHours ago, you requested relief supplies, but the supply truck has yet to arrive. Now, the rain has temporarily stopped, giving you and the other three community leaders a short window to decide on the safest evacuation route before the rain resumes. You don’t know how much time you have left to make this critical decision.\nYour Task:\nYou will discuss with three other participants, who are also acting as community leaders, to decide where to evacuate. You have three options:\n- West City: Accessible through a bridge over the river.\n- East Town: Accessible through a tunnel on middle ground.\n- North Hill: Accessible through a driveway and walking trails.\nUsually, it takes the same time to reach all three places by car, but some routes may be inaccessible now.\nThere is only one correct evacuation location. After the discussion:\n- If you choose the correct location, you will earn $1.\n- If all other participants also choose the correct location, you will earn an additional $1 (for a total of $2).\nThis means that coordinating with others is critical to maximize your rewards. The chat will at most take 15 minutes. However, the exact time when the chat will end is unknown.\n\nShared information:\n1. The local government announced that hotels in West City are prepared to accommodate evacuees. While these hotels are fully stocked with food, they may lack medical supplies.\n2. The mayor of East Town has offered accommodations for any evacuees. She also ensures that volunteers are available to assist them.\n3. The school at North Hill can serve as a temporary evacuation center, providing a two-week supply of essentials and sleeping space in the gym.\n4. The river level is still below the bridge to West City.\n\nYour private information:\nThe supply truck headed to the village from East Town was stuck in the tunnel.\n\nVisible discussion transcript:\n[round 2] agent:hiddenbench:1:1: Based on the shared information and the private knowledge that the supply truck from East Town is stuck in the tunnel, West City is the most reliable evacuation location. The river level is below the bridge, ensuring accessibility, and the hotels there are prepared with food. East Town's tunnel is currently inaccessible, and North Hill's walking trails may pose challenges for elderly and children. Therefore, West City is the safest choice.\n[round 2] agent:hiddenbench:1:2: After reviewing the shared information and considering the private knowledge of a blocked supply truck, West City remains the most viable evacuation location. The bridge is accessible (river level below), hotels are prepared with food, and while medical supplies are a concern, the immediate safety of the route and established accommodations make it the best choice. I will advocate for West City in the discussion.\n[round 2] agent:hiddenbench:1:3: After reviewing the shared information and private knowledge, I conclude West City is the correct evacuation location. The river level is below the bridge, ensuring accessibility, and hotels there are prepared with food. While medical supplies may be lacking, the immediate safety of the bridge and established accommodations make it the best choice. I will advocate for West City in the discussion.\n[round 2] agent:hiddenbench:1:4: Based on the shared information and my private knowledge, West City is the safest evacuation location. The river level is below the bridge, ensuring accessibility, and hotels there are prepared with food. While medical supplies may be lacking, the immediate safety of the bridge and established accommodations make it the best choice. I will advocate for West City in the discussion.\n\nClaim claim:hiddenbench:1:answer: Select the single correct answer for HiddenBench task 1 (evacuation_west_city).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: West City | East Town | North Hill. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"West City\": 0.5, \"East Town\": 0.2500, \"North Hill\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:d97619fa17bdb0af56950da0f894fc2eb76cf479fb989a50cf6ae227fc0575b7",
+      "responseHash": "sha256:e079437d2d3fe017497fa325e84917eb7a0473e585fe96a260a187fbec797e9e",
+      "rawResponse": "{\"message\":\"Based on the shared information and private knowledge that the supply truck from East Town is stuck in the tunnel, West City is the most reliable evacuation location. The river level is below the bridge, ensuring accessibility, and hotels there are prepared with food. East Town's tunnel is inaccessible, and North Hill's walking trails may pose challenges for elderly and children. Therefore, West City is the safest choice.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"West City\":1.0,\"East Town\":0.0,\"North Hill\":0.0}},\"evidence\":[{\"content\":\"The river level is still below the bridge to West City.\",\"relation\":\"supports\"},{\"content\":\"The supply truck headed to the village from East Town was stuck in the tunnel.\",\"relation\":\"supports\"},{\"content\":\"Hotels in West City are prepared to accommodate evacuees with food.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 1081,
+        "completionTokens": 243,
+        "totalTokens": 1324,
+        "latencyMs": 6180
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:2",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are participating in a study, acting as a community leader of a small village surrounded by mountains and rivers. Most villagers own cars, but there are also elderly people and children who may need additional assistance when walking. Earlier today, heavy rain began to fall, and the local government issued a warning about a potential disaster.\nHours ago, you requested relief supplies, but the supply truck has yet to arrive. Now, the rain has temporarily stopped, giving you and the other three community leaders a short window to decide on the safest evacuation route before the rain resumes. You don’t know how much time you have left to make this critical decision.\nYour Task:\nYou will discuss with three other participants, who are also acting as community leaders, to decide where to evacuate. You have three options:\n- West City: Accessible through a bridge over the river.\n- East Town: Accessible through a tunnel on middle ground.\n- North Hill: Accessible through a driveway and walking trails.\nUsually, it takes the same time to reach all three places by car, but some routes may be inaccessible now.\nThere is only one correct evacuation location. After the discussion:\n- If you choose the correct location, you will earn $1.\n- If all other participants also choose the correct location, you will earn an additional $1 (for a total of $2).\nThis means that coordinating with others is critical to maximize your rewards. The chat will at most take 15 minutes. However, the exact time when the chat will end is unknown.\n\nShared information:\n1. The local government announced that hotels in West City are prepared to accommodate evacuees. While these hotels are fully stocked with food, they may lack medical supplies.\n2. The mayor of East Town has offered accommodations for any evacuees. She also ensures that volunteers are available to assist them.\n3. The school at North Hill can serve as a temporary evacuation center, providing a two-week supply of essentials and sleeping space in the gym.\n4. The river level is still below the bridge to West City.\n\nYour private information:\nA massive fire has blocked the supply truck and all other traffic.\n\nVisible discussion transcript:\n[round 2] agent:hiddenbench:1:1: Based on the shared information and the private knowledge that the supply truck from East Town is stuck in the tunnel, West City is the most reliable evacuation location. The river level is below the bridge, ensuring accessibility, and the hotels there are prepared with food. East Town's tunnel is currently inaccessible, and North Hill's walking trails may pose challenges for elderly and children. Therefore, West City is the safest choice.\n[round 2] agent:hiddenbench:1:2: After reviewing the shared information and considering the private knowledge of a blocked supply truck, West City remains the most viable evacuation location. The bridge is accessible (river level below), hotels are prepared with food, and while medical supplies are a concern, the immediate safety of the route and established accommodations make it the best choice. I will advocate for West City in the discussion.\n[round 2] agent:hiddenbench:1:3: After reviewing the shared information and private knowledge, I conclude West City is the correct evacuation location. The river level is below the bridge, ensuring accessibility, and hotels there are prepared with food. While medical supplies may be lacking, the immediate safety of the bridge and established accommodations make it the best choice. I will advocate for West City in the discussion.\n[round 2] agent:hiddenbench:1:4: Based on the shared information and my private knowledge, West City is the safest evacuation location. The river level is below the bridge, ensuring accessibility, and hotels there are prepared with food. While medical supplies may be lacking, the immediate safety of the bridge and established accommodations make it the best choice. I will advocate for West City in the discussion.\n\nClaim claim:hiddenbench:1:answer: Select the single correct answer for HiddenBench task 1 (evacuation_west_city).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: West City | East Town | North Hill. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"West City\": 0.5, \"East Town\": 0.2500, \"North Hill\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:d1dc1baa19e96f21a30141c85fe6ebb56e1af04aa82f40cc56642e8cc3750fbd",
+      "responseHash": "sha256:1b4b5b2b65ea941da546fa1218d3aefb3e28b2f566ddbcc2c744f318067d318c",
+      "rawResponse": "{\"message\":\"Based on the shared information and private knowledge of a blocked supply truck, West City is the most reliable evacuation location. The river level is below the bridge, ensuring accessibility, and hotels there are prepared with food. East Town's tunnel is inaccessible, and North Hill's walking trails pose challenges for vulnerable groups. Coordinating on West City maximizes safety and rewards.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"West City\":1.0,\"East Town\":0.0,\"North Hill\":0.0}},\"evidence\":[{\"content\":\"The river level is below the bridge to West City, ensuring accessibility.\",\"relation\":\"supports\"},{\"content\":\"Hotels in West City are prepared to accommodate evacuees with food.\",\"relation\":\"supports\"},{\"content\":\"A massive fire has blocked the supply truck and all other traffic, making East Town's tunnel inaccessible.\",\"relation\":\"supports\"},{\"content\":\"North Hill's walking trails may pose challenges for elderly and children.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 1078,
+        "completionTokens": 272,
+        "totalTokens": 1350,
+        "latencyMs": 9365
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:3",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are participating in a study, acting as a community leader of a small village surrounded by mountains and rivers. Most villagers own cars, but there are also elderly people and children who may need additional assistance when walking. Earlier today, heavy rain began to fall, and the local government issued a warning about a potential disaster.\nHours ago, you requested relief supplies, but the supply truck has yet to arrive. Now, the rain has temporarily stopped, giving you and the other three community leaders a short window to decide on the safest evacuation route before the rain resumes. You don’t know how much time you have left to make this critical decision.\nYour Task:\nYou will discuss with three other participants, who are also acting as community leaders, to decide where to evacuate. You have three options:\n- West City: Accessible through a bridge over the river.\n- East Town: Accessible through a tunnel on middle ground.\n- North Hill: Accessible through a driveway and walking trails.\nUsually, it takes the same time to reach all three places by car, but some routes may be inaccessible now.\nThere is only one correct evacuation location. After the discussion:\n- If you choose the correct location, you will earn $1.\n- If all other participants also choose the correct location, you will earn an additional $1 (for a total of $2).\nThis means that coordinating with others is critical to maximize your rewards. The chat will at most take 15 minutes. However, the exact time when the chat will end is unknown.\n\nShared information:\n1. The local government announced that hotels in West City are prepared to accommodate evacuees. While these hotels are fully stocked with food, they may lack medical supplies.\n2. The mayor of East Town has offered accommodations for any evacuees. She also ensures that volunteers are available to assist them.\n3. The school at North Hill can serve as a temporary evacuation center, providing a two-week supply of essentials and sleeping space in the gym.\n4. The river level is still below the bridge to West City.\n\nYour private information:\nThe walking trails have been closed since last weekend due to fallen trees.\n\nVisible discussion transcript:\n[round 2] agent:hiddenbench:1:1: Based on the shared information and the private knowledge that the supply truck from East Town is stuck in the tunnel, West City is the most reliable evacuation location. The river level is below the bridge, ensuring accessibility, and the hotels there are prepared with food. East Town's tunnel is currently inaccessible, and North Hill's walking trails may pose challenges for elderly and children. Therefore, West City is the safest choice.\n[round 2] agent:hiddenbench:1:2: After reviewing the shared information and considering the private knowledge of a blocked supply truck, West City remains the most viable evacuation location. The bridge is accessible (river level below), hotels are prepared with food, and while medical supplies are a concern, the immediate safety of the route and established accommodations make it the best choice. I will advocate for West City in the discussion.\n[round 2] agent:hiddenbench:1:3: After reviewing the shared information and private knowledge, I conclude West City is the correct evacuation location. The river level is below the bridge, ensuring accessibility, and hotels there are prepared with food. While medical supplies may be lacking, the immediate safety of the bridge and established accommodations make it the best choice. I will advocate for West City in the discussion.\n[round 2] agent:hiddenbench:1:4: Based on the shared information and my private knowledge, West City is the safest evacuation location. The river level is below the bridge, ensuring accessibility, and hotels there are prepared with food. While medical supplies may be lacking, the immediate safety of the bridge and established accommodations make it the best choice. I will advocate for West City in the discussion.\n\nClaim claim:hiddenbench:1:answer: Select the single correct answer for HiddenBench task 1 (evacuation_west_city).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: West City | East Town | North Hill. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"West City\": 0.5, \"East Town\": 0.2500, \"North Hill\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:f90ce352d8630d26e63b48149b415536ad4099a498ecf7b743af418d094728c3",
+      "responseHash": "sha256:14639a9632c0e192e3abbc1096b6b3934eb12579b6c093d1c344054702763f44",
+      "rawResponse": "{\"message\":\"Based on the shared information and private knowledge, West City is the safest evacuation location. The river level is below the bridge, ensuring accessibility, and hotels there are prepared with food. While medical supplies may be lacking, the immediate safety of the bridge and established accommodations make it the best choice.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"West City\":1.0,\"East Town\":0.0,\"North Hill\":0.0}},\"evidence\":[{\"content\":\"The river level is still below the bridge to West City.\",\"relation\":\"supports\"},{\"content\":\"Hotels in West City are prepared to accommodate evacuees and are fully stocked with food.\",\"relation\":\"supports\"},{\"content\":\"The supply truck from East Town is stuck in the tunnel, making East Town inaccessible.\",\"relation\":\"supports\"},{\"content\":\"The walking trails to North Hill have been closed since last weekend due to fallen trees.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 1079,
+        "completionTokens": 260,
+        "totalTokens": 1339,
+        "latencyMs": 6826
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:1:seed-1:r3:agent:hiddenbench:1:4",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou are participating in a study, acting as a community leader of a small village surrounded by mountains and rivers. Most villagers own cars, but there are also elderly people and children who may need additional assistance when walking. Earlier today, heavy rain began to fall, and the local government issued a warning about a potential disaster.\nHours ago, you requested relief supplies, but the supply truck has yet to arrive. Now, the rain has temporarily stopped, giving you and the other three community leaders a short window to decide on the safest evacuation route before the rain resumes. You don’t know how much time you have left to make this critical decision.\nYour Task:\nYou will discuss with three other participants, who are also acting as community leaders, to decide where to evacuate. You have three options:\n- West City: Accessible through a bridge over the river.\n- East Town: Accessible through a tunnel on middle ground.\n- North Hill: Accessible through a driveway and walking trails.\nUsually, it takes the same time to reach all three places by car, but some routes may be inaccessible now.\nThere is only one correct evacuation location. After the discussion:\n- If you choose the correct location, you will earn $1.\n- If all other participants also choose the correct location, you will earn an additional $1 (for a total of $2).\nThis means that coordinating with others is critical to maximize your rewards. The chat will at most take 15 minutes. However, the exact time when the chat will end is unknown.\n\nShared information:\n1. The local government announced that hotels in West City are prepared to accommodate evacuees. While these hotels are fully stocked with food, they may lack medical supplies.\n2. The mayor of East Town has offered accommodations for any evacuees. She also ensures that volunteers are available to assist them.\n3. The school at North Hill can serve as a temporary evacuation center, providing a two-week supply of essentials and sleeping space in the gym.\n4. The river level is still below the bridge to West City.\n\nYour private information:\nA mudslide just occurred, covering the driveway to North Hill.\n\nVisible discussion transcript:\n[round 2] agent:hiddenbench:1:1: Based on the shared information and the private knowledge that the supply truck from East Town is stuck in the tunnel, West City is the most reliable evacuation location. The river level is below the bridge, ensuring accessibility, and the hotels there are prepared with food. East Town's tunnel is currently inaccessible, and North Hill's walking trails may pose challenges for elderly and children. Therefore, West City is the safest choice.\n[round 2] agent:hiddenbench:1:2: After reviewing the shared information and considering the private knowledge of a blocked supply truck, West City remains the most viable evacuation location. The bridge is accessible (river level below), hotels are prepared with food, and while medical supplies are a concern, the immediate safety of the route and established accommodations make it the best choice. I will advocate for West City in the discussion.\n[round 2] agent:hiddenbench:1:3: After reviewing the shared information and private knowledge, I conclude West City is the correct evacuation location. The river level is below the bridge, ensuring accessibility, and hotels there are prepared with food. While medical supplies may be lacking, the immediate safety of the bridge and established accommodations make it the best choice. I will advocate for West City in the discussion.\n[round 2] agent:hiddenbench:1:4: Based on the shared information and my private knowledge, West City is the safest evacuation location. The river level is below the bridge, ensuring accessibility, and hotels there are prepared with food. While medical supplies may be lacking, the immediate safety of the bridge and established accommodations make it the best choice. I will advocate for West City in the discussion.\n\nClaim claim:hiddenbench:1:answer: Select the single correct answer for HiddenBench task 1 (evacuation_west_city).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: West City | East Town | North Hill. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"West City\": 0.5, \"East Town\": 0.2500, \"North Hill\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:b4cc44158f7404f452c7f5720d0c531c8d3543431cf3ff0796f157001db57323",
+      "responseHash": "sha256:7c93fd1e0ecac975e23f43453a95a3e911500969c8f2b7228352c2cd2126b362",
+      "rawResponse": "{\"message\":\"Based on the shared information and private knowledge, West City is the safest evacuation location. The river level is below the bridge, ensuring accessibility, and hotels there are prepared with food. While medical supplies may be lacking, the immediate safety of the bridge and established accommodations make it the best choice.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"West City\":1.0,\"East Town\":0.0,\"North Hill\":0.0}},\"evidence\":[{\"content\":\"The river level is still below the bridge to West City.\",\"relation\":\"supports\"},{\"content\":\"Hotels in West City are prepared to accommodate evacuees and are fully stocked with food.\",\"relation\":\"supports\"},{\"content\":\"A mudslide just occurred, covering the driveway to North Hill.\",\"relation\":\"attacks\"},{\"content\":\"The supply truck from East Town is stuck in the tunnel.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 1078,
+        "completionTokens": 251,
+        "totalTokens": 1329,
+        "latencyMs": 5290
+      }
+    }
+  ],
+  "r3SnapshotHash": "sha256:e9a74a306f27a50d5a797954da4327ca2b3bbba24b9dd2e45497906f12432ac8",
+  "contentHash": "sha256:9aaf470e55946c22600854b5fce8eb6bb8c3778c3cff2a38f88e66bb28fdf0d8"
+}

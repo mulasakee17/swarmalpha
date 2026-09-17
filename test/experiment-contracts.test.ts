@@ -12,7 +12,7 @@
  */
 
 import { describe, expect, it } from "vitest";
-import type { TaskConfig } from "../experiments/lunar_survival/config";
+import type { TaskConfig } from "../legacy/experiments/lunar_survival/config";
 import {
   validateTaskBundle,
   freezeTaskBundle,

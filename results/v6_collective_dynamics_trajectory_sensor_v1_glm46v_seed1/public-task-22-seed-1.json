@@ -1,0 +1,370 @@
+{
+  "artifactRef": {
+    "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-public-artifact",
+    "version": "1.0.0"
+  },
+  "planHash": "sha256:7212455275fefee6c988d23bdfe480775b07b8f03a86872eda2bef1f424aa528",
+  "runId": "collective-dynamics-m2:22:seed-1",
+  "seed": 1,
+  "modelRef": {
+    "id": "zhipu:glm-4.6v",
+    "version": "1.0.0"
+  },
+  "onlineTask": {
+    "sourceTaskId": 22,
+    "taskId": "task:hiddenbench:22",
+    "publicContext": "You and three other participants are scientists at an Antarctic research station. A massive, fast-moving storm is approaching. You must rapidly decide, as a group, which facility to seek shelter in for the next 48 hours. You have snow vehicles and limited time to reach only one location before the blizzard begins. Your three choices:\n- Main Base: The largest facility, but farther away.\n- Retreat Camp: A small, nearby camp rated for storms.\n- Rescue Outpost: Smaller, medium distance, typically used for emergencies.\nWhichever location you pick, you'll be unable to contact others until the storm passes. Supplies, infrastructure, and route safety may differ. Only one option will keep you safe and supplied until rescue teams arrive.\n\nShared information:\n1. A radio update confirms Retreat Camp is the closest shelter and is built to withstand severe weather.\n2. Supply records say that Retreat Camp offers food, water, and sleeping bags for four people.\n3. The snow vehicle has just enough fuel to reach any of the three locations before the storm hits, but not to try multiple.\n4. The Rescue Outpost's exterior was recently checked and found structurally sound.",
+    "claim": {
+      "id": "claim:hiddenbench:22:answer",
+      "proposition": "Select the single correct answer for HiddenBench task 22 (Antarctic Storm Safe Haven).",
+      "domain": "hiddenbench-categorical-decision",
+      "createdAt": "2026-08-11T00:00:00.000Z",
+      "options": [
+        "Main Base",
+        "Retreat Camp",
+        "Rescue Outpost"
+      ],
+      "resolutionPolicy": {
+        "kind": "categorical",
+        "resolverId": "resolver:hiddenbench-data-3be6ca16"
+      }
+    },
+    "agents": [
+      {
+        "agentId": "agent:hiddenbench:22:1",
+        "privateInformation": "The most recent supply delivery to Retreat Camp was delayed, so the promised food and water may not be there."
+      },
+      {
+        "agentId": "agent:hiddenbench:22:2",
+        "privateInformation": "Main Base appears to have uninterrupted generator power, working communications, and fully stocked rations according to a direct radio call just before the storm warning."
+      },
+      {
+        "agentId": "agent:hiddenbench:22:3",
+        "privateInformation": "The snow route to Rescue Outpost is fully snowed in since the last storm; the path isn't navigable even with the vehicle."
+      },
+      {
+        "agentId": "agent:hiddenbench:22:4",
+        "privateInformation": "Satellite imagery from this morning shows the ice bridge leading to Retreat Camp has collapsed, making it dangerous to reach by foot or vehicle."
+      }
+    ]
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "messages": [
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:22:1",
+          "content": "Retreat Camp",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:22:2",
+          "content": "Retreat Camp",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:22:3",
+          "content": "Retreat Camp",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:22:4",
+          "content": "Retreat Camp",
+          "source": "agent"
+        }
+      ],
+      "calls": [
+        {
+          "requestId": "discussion:collective-dynamics-m2:22:seed-1:r1:agent:hiddenbench:22:1",
+          "round": 1,
+          "agentId": "agent:hiddenbench:22:1",
+          "requestHash": "sha256:bbd04d9953e2772d4d0929148408976243bb0e77a56c87c342968fd22680eb53",
+          "responseHash": "sha256:a2f42101ed63b129f3d64cf0beb6dac09c9c532b1d7551261f5f0c906a60073c"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2:22:seed-1:r1:agent:hiddenbench:22:2",
+          "round": 1,
+          "agentId": "agent:hiddenbench:22:2",
+          "requestHash": "sha256:269274ae7792e6e373810bbcc6c287228808dd51efce6550380edc6e28b2039f",
+          "responseHash": "sha256:a2f42101ed63b129f3d64cf0beb6dac09c9c532b1d7551261f5f0c906a60073c"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2:22:seed-1:r1:agent:hiddenbench:22:3",
+          "round": 1,
+          "agentId": "agent:hiddenbench:22:3",
+          "requestHash": "sha256:bd367c8c4bf768b67b641ed899ffd8cae581234cab4c06695e7c05aa8c2a1985",
+          "responseHash": "sha256:a2f42101ed63b129f3d64cf0beb6dac09c9c532b1d7551261f5f0c906a60073c"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2:22:seed-1:r1:agent:hiddenbench:22:4",
+          "round": 1,
+          "agentId": "agent:hiddenbench:22:4",
+          "requestHash": "sha256:39e6474e5af2fd4afdc1707625b018a67e677540c2fed02682a7f2b6b4f5ac53",
+          "responseHash": "sha256:a2f42101ed63b129f3d64cf0beb6dac09c9c532b1d7551261f5f0c906a60073c"
+        }
+      ],
+      "contentHash": "sha256:967cee55d89af829d0cbaf34f6e772feccace0a5e9c7bad82a9ce3d71d784c2b"
+    },
+    {
+      "round": 2,
+      "messages": [
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:22:1",
+          "content": "Retreat Camp",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:22:2",
+          "content": "Retreat Camp",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:22:3",
+          "content": "Retreat Camp",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:22:4",
+          "content": "Retreat Camp",
+          "source": "agent"
+        }
+      ],
+      "calls": [
+        {
+          "requestId": "discussion:collective-dynamics-m2:22:seed-1:r2:agent:hiddenbench:22:1",
+          "round": 2,
+          "agentId": "agent:hiddenbench:22:1",
+          "requestHash": "sha256:7c7b0aa8b9de3119df2dce88dd85c67f7dcf309bdadc5e97ec96b075a51c469e",
+          "responseHash": "sha256:a2f42101ed63b129f3d64cf0beb6dac09c9c532b1d7551261f5f0c906a60073c"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2:22:seed-1:r2:agent:hiddenbench:22:2",
+          "round": 2,
+          "agentId": "agent:hiddenbench:22:2",
+          "requestHash": "sha256:6d4bbbde32d79e02801e65189f83cfda468cfb705f92d5a7c66c6df9c0038b8a",
+          "responseHash": "sha256:a2f42101ed63b129f3d64cf0beb6dac09c9c532b1d7551261f5f0c906a60073c"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2:22:seed-1:r2:agent:hiddenbench:22:3",
+          "round": 2,
+          "agentId": "agent:hiddenbench:22:3",
+          "requestHash": "sha256:5647bc4497a928bfe50a93138766b2c856b0f539e8b618ca8aefe6140d94845e",
+          "responseHash": "sha256:a2f42101ed63b129f3d64cf0beb6dac09c9c532b1d7551261f5f0c906a60073c"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2:22:seed-1:r2:agent:hiddenbench:22:4",
+          "round": 2,
+          "agentId": "agent:hiddenbench:22:4",
+          "requestHash": "sha256:8009e79f554d3cbc66abbadd355a2516781f074b3381e1a0c55883a93dc82552",
+          "responseHash": "sha256:a2f42101ed63b129f3d64cf0beb6dac09c9c532b1d7551261f5f0c906a60073c"
+        }
+      ],
+      "contentHash": "sha256:bc0322610ef7c21d66d3f02de3e33a1e927f37a1de646bfb4ab443ee2da51ea8"
+    },
+    {
+      "round": 3,
+      "messages": [
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:22:1",
+          "content": "Retreat Camp",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:22:2",
+          "content": "Retreat Camp",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:22:3",
+          "content": "Retreat Camp",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:22:4",
+          "content": "Retreat Camp",
+          "source": "agent"
+        }
+      ],
+      "calls": [
+        {
+          "requestId": "discussion:collective-dynamics-m2:22:seed-1:r3:agent:hiddenbench:22:1",
+          "round": 3,
+          "agentId": "agent:hiddenbench:22:1",
+          "requestHash": "sha256:da4b6e1424f78cfcbb11d089ac17fa472302307ecf47e8109467afe89e615a6c",
+          "responseHash": "sha256:a2f42101ed63b129f3d64cf0beb6dac09c9c532b1d7551261f5f0c906a60073c"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2:22:seed-1:r3:agent:hiddenbench:22:2",
+          "round": 3,
+          "agentId": "agent:hiddenbench:22:2",
+          "requestHash": "sha256:c72bde17cb8e33807f56af9a6dcc7633c1167798943f0dbc43d5f28d2c341749",
+          "responseHash": "sha256:a2f42101ed63b129f3d64cf0beb6dac09c9c532b1d7551261f5f0c906a60073c"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2:22:seed-1:r3:agent:hiddenbench:22:3",
+          "round": 3,
+          "agentId": "agent:hiddenbench:22:3",
+          "requestHash": "sha256:c6df53fd35dccf181559b91306f33f91fc1c57bed825b271c8ee29d69ba85fb9",
+          "responseHash": "sha256:a2f42101ed63b129f3d64cf0beb6dac09c9c532b1d7551261f5f0c906a60073c"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2:22:seed-1:r3:agent:hiddenbench:22:4",
+          "round": 3,
+          "agentId": "agent:hiddenbench:22:4",
+          "requestHash": "sha256:c2cdb0fca6c173ad49a97487509fa0ed65a4a967f35eae854c701d49985bb8c8",
+          "responseHash": "sha256:a2f42101ed63b129f3d64cf0beb6dac09c9c532b1d7551261f5f0c906a60073c"
+        }
+      ],
+      "contentHash": "sha256:cb00e12ce89c96899dae62c8fc24b2d49f074318079b2ab333892ac12d3716c7"
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointRef": {
+        "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-checkpoint",
+        "version": "1.0.0"
+      },
+      "checkpointId": "task:hiddenbench:22:collective-dynamics-m2:22:seed-1:X0",
+      "checkpointRound": 0,
+      "visibleMessages": [],
+      "sourceRequestHashes": [],
+      "contentHash": "sha256:bb8b93ba3ec0687fb4d2338969419be8b86b4ca748dffb592105a86ea86d037f"
+    },
+    {
+      "checkpointRef": {
+        "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-checkpoint",
+        "version": "1.0.0"
+      },
+      "checkpointId": "task:hiddenbench:22:collective-dynamics-m2:22:seed-1:X1",
+      "checkpointRound": 1,
+      "visibleMessages": [
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:22:1",
+          "content": "Retreat Camp",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:22:2",
+          "content": "Retreat Camp",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:22:3",
+          "content": "Retreat Camp",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:22:4",
+          "content": "Retreat Camp",
+          "source": "agent"
+        }
+      ],
+      "sourceRequestHashes": [
+        "sha256:bbd04d9953e2772d4d0929148408976243bb0e77a56c87c342968fd22680eb53",
+        "sha256:269274ae7792e6e373810bbcc6c287228808dd51efce6550380edc6e28b2039f",
+        "sha256:bd367c8c4bf768b67b641ed899ffd8cae581234cab4c06695e7c05aa8c2a1985",
+        "sha256:39e6474e5af2fd4afdc1707625b018a67e677540c2fed02682a7f2b6b4f5ac53"
+      ],
+      "contentHash": "sha256:310f8671e2183a26e60d27a2831044766269787faecbaff3ef28d3a13cc809b8"
+    },
+    {
+      "checkpointRef": {
+        "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-checkpoint",
+        "version": "1.0.0"
+      },
+      "checkpointId": "task:hiddenbench:22:collective-dynamics-m2:22:seed-1:X2",
+      "checkpointRound": 2,
+      "visibleMessages": [
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:22:1",
+          "content": "Retreat Camp",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:22:2",
+          "content": "Retreat Camp",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:22:3",
+          "content": "Retreat Camp",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:22:4",
+          "content": "Retreat Camp",
+          "source": "agent"
+        }
+      ],
+      "sourceRequestHashes": [
+        "sha256:7c7b0aa8b9de3119df2dce88dd85c67f7dcf309bdadc5e97ec96b075a51c469e",
+        "sha256:6d4bbbde32d79e02801e65189f83cfda468cfb705f92d5a7c66c6df9c0038b8a",
+        "sha256:5647bc4497a928bfe50a93138766b2c856b0f539e8b618ca8aefe6140d94845e",
+        "sha256:8009e79f554d3cbc66abbadd355a2516781f074b3381e1a0c55883a93dc82552"
+      ],
+      "contentHash": "sha256:6f6e2e4ef7004e31ee7bce3766af02f1fcea518f871f49ea65c2450445cf6266"
+    },
+    {
+      "checkpointRef": {
+        "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-checkpoint",
+        "version": "1.0.0"
+      },
+      "checkpointId": "task:hiddenbench:22:collective-dynamics-m2:22:seed-1:X3",
+      "checkpointRound": 3,
+      "visibleMessages": [
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:22:1",
+          "content": "Retreat Camp",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:22:2",
+          "content": "Retreat Camp",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:22:3",
+          "content": "Retreat Camp",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:22:4",
+          "content": "Retreat Camp",
+          "source": "agent"
+        }
+      ],
+      "sourceRequestHashes": [
+        "sha256:da4b6e1424f78cfcbb11d089ac17fa472302307ecf47e8109467afe89e615a6c",
+        "sha256:c72bde17cb8e33807f56af9a6dcc7633c1167798943f0dbc43d5f28d2c341749",
+        "sha256:c6df53fd35dccf181559b91306f33f91fc1c57bed825b271c8ee29d69ba85fb9",
+        "sha256:c2cdb0fca6c173ad49a97487509fa0ed65a4a967f35eae854c701d49985bb8c8"
+      ],
+      "contentHash": "sha256:2e28fc13d10b92e31c70619c6bd89a950682a5a423d6e37182814f6907f8c020"
+    }
+  ],
+  "contentHash": "sha256:a9df57c677a0b09c41568068de8eaaa8b5af27245adbe0f2a974a2950b98e993"
+}

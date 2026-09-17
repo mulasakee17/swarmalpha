@@ -1,0 +1,92 @@
+{
+  "analysisRef": {
+    "id": "swarmalpha.analysis.v6.controlled-interaction-canary",
+    "version": "1.1.0"
+  },
+  "planHash": "sha256:21900265206bc0a43e799f95e226d0a4528bdf85724e9ce34fe4d049cce9e5a7",
+  "runHash": "sha256:e0a14aa6d612f0581fdd0dfcf17f7a5e538cce67a4ac1a214743ad044996dfba",
+  "inferenceScope": "single_finite_system_instrument_diagnostic",
+  "states": {
+    "X0": {
+      "histogram": {
+        "opt_1": 3,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "concentration": 0.75,
+      "pottsOrder": 0.625,
+      "pairwiseDisagreement": 0.5,
+      "wrongSupermajority75": true
+    },
+    "ISOLATED_R1": {
+      "histogram": {
+        "opt_1": 3,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "concentration": 0.75,
+      "pottsOrder": 0.625,
+      "pairwiseDisagreement": 0.5,
+      "wrongSupermajority75": true
+    },
+    "ISOLATED_R2": {
+      "histogram": {
+        "opt_1": 3,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "concentration": 0.75,
+      "pottsOrder": 0.625,
+      "pairwiseDisagreement": 0.5,
+      "wrongSupermajority75": true
+    },
+    "PEER_R1": {
+      "histogram": {
+        "opt_1": 3,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "concentration": 0.75,
+      "pottsOrder": 0.625,
+      "pairwiseDisagreement": 0.5,
+      "wrongSupermajority75": true
+    },
+    "PEER_R2": {
+      "histogram": {
+        "opt_1": 3,
+        "opt_2": 1,
+        "opt_3": 0
+      },
+      "concentration": 0.75,
+      "pottsOrder": 0.625,
+      "pairwiseDisagreement": 0.5,
+      "wrongSupermajority75": true
+    }
+  },
+  "switching": {
+    "isolatedR1": 0,
+    "isolatedR2": 0,
+    "peerR1": 0,
+    "peerR2": 0,
+    "isolatedTotal": 0,
+    "peerTotal": 0
+  },
+  "branchResponse": {
+    "hammingDivergenceR1": 0,
+    "hammingDivergenceR2": 0,
+    "pottsOrderDifferenceR1": 0,
+    "pottsOrderDifferenceR2": 0
+  },
+  "instrument": {
+    "parsedChoiceCount": 20,
+    "extraFieldResponseCount": 0,
+    "completionCeilingHitCount": 0
+  },
+  "qualification": {
+    "x0Heterogeneous": true,
+    "peerHasExtraSwitching": false,
+    "branchesDiverge": false,
+    "decision": "NO_INTERACTION_SIGNAL"
+  },
+  "contentHash": "sha256:7ca93d2a5cf2a2ad1c54b25cd3eaafa45c2af47a8d6728f1d43e7c53e4e1abf6"
+}

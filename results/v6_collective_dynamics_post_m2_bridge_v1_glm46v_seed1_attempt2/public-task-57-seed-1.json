@@ -1,0 +1,370 @@
+{
+  "artifactRef": {
+    "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-public-artifact",
+    "version": "1.0.0"
+  },
+  "planHash": "sha256:012fbe8b9974250820100bbaefcd04c9cf4603ea976404aa5aa5a4fa87c5413c",
+  "runId": "collective-dynamics-m2-bridge:57:seed-1",
+  "seed": 1,
+  "modelRef": {
+    "id": "zhipu:glm-4.6v",
+    "version": "1.0.0"
+  },
+  "onlineTask": {
+    "sourceTaskId": 57,
+    "taskId": "task:hiddenbench:57",
+    "publicContext": "You and three colleagues are archaeologists tasked with selecting a site to salvage crucial artifacts before construction begins. There are tight time constraints: you can only pick one location, and you must choose by the end of the hour. There are three candidate sites: Site A, Site B, and Site C. You must maximize your chances of a successful recovery, as failure means the artifacts may be lost forever.\n\nShared information:\n1. Site A: Riverbank, frequent flooding in spring, unknown artifact depth.\n2. Site B: Plateau, stable ground, topsoil is soft and undisturbed.\n3. Site C: Woods edge, soil is rocky, some evidence of rodent burrows.\n4. The main developer has announced all construction will start tomorrow, but precise order is unknown.",
+    "claim": {
+      "id": "claim:hiddenbench:57:answer",
+      "proposition": "Select the single correct answer for HiddenBench task 57 (archaeological_dig_site).",
+      "domain": "hiddenbench-categorical-decision",
+      "createdAt": "2026-08-11T00:00:00.000Z",
+      "options": [
+        "Site A",
+        "Site B",
+        "Site C"
+      ],
+      "resolutionPolicy": {
+        "kind": "categorical",
+        "resolverId": "resolver:hiddenbench-data-3be6ca16"
+      }
+    },
+    "agents": [
+      {
+        "agentId": "agent:hiddenbench:57:1",
+        "privateInformation": "In a recent survey, Site C’s rodent burrows were found to be abandoned, with no damage to deep soil layers."
+      },
+      {
+        "agentId": "agent:hiddenbench:57:2",
+        "privateInformation": "You overheard that Site A is predicted to flood tonight due to sudden rain upstream."
+      },
+      {
+        "agentId": "agent:hiddenbench:57:3",
+        "privateInformation": "You have seen construction crews preparing explosive charges at Site B because blasting for foundations is scheduled for the morning."
+      },
+      {
+        "agentId": "agent:hiddenbench:57:4",
+        "privateInformation": "Site A’s access road is being closed off for bridge repairs overnight and won't reopen for two days."
+      }
+    ]
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "messages": [
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:57:1",
+          "content": "Site B",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:57:2",
+          "content": "Site B",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:57:3",
+          "content": "Site B is the correct choice. The private information about the scheduled blasting for foundations in the morning makes it the most urgent site to salvage. While the topsoil is soft and undisturbed, the imminent construction activity poses an immediate and irreversible threat to any artifacts there. Sites A and C, while having their own challenges, do not have a confirmed, imminent destruction event scheduled for tomorrow.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:57:4",
+          "content": "Site B. The plateau's stable ground and undisturbed, soft topsoil provide the most reliable conditions for a rapid and successful recovery. Site A is inaccessible due to the road closure, and Site C's rocky soil and rodent activity present significant obstacles to a quick dig.",
+          "source": "agent"
+        }
+      ],
+      "calls": [
+        {
+          "requestId": "discussion:collective-dynamics-m2-bridge:57:seed-1:r1:agent:hiddenbench:57:1",
+          "round": 1,
+          "agentId": "agent:hiddenbench:57:1",
+          "requestHash": "sha256:fde607c51af4733bed0c294b9fd186f1557d8334587b292fda8fb28390cf1475",
+          "responseHash": "sha256:6d1e348699728cc9e68719c3a474a4b68f6d4becdc77e535131276c3cd098811"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2-bridge:57:seed-1:r1:agent:hiddenbench:57:2",
+          "round": 1,
+          "agentId": "agent:hiddenbench:57:2",
+          "requestHash": "sha256:b979babc9bb6534fa1c25bdcf2aba4b4ac80e22d6d74ded8f72fc260ba9308aa",
+          "responseHash": "sha256:6d1e348699728cc9e68719c3a474a4b68f6d4becdc77e535131276c3cd098811"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2-bridge:57:seed-1:r1:agent:hiddenbench:57:3",
+          "round": 1,
+          "agentId": "agent:hiddenbench:57:3",
+          "requestHash": "sha256:f626c1f105d8fed4f31eb0c832f651916e35712b22588dee6830b5b1d310dde4",
+          "responseHash": "sha256:71cff0bee7721c9407897c2503eeb161a5fb110cf1389d0cd2c87031087ae8ea"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2-bridge:57:seed-1:r1:agent:hiddenbench:57:4",
+          "round": 1,
+          "agentId": "agent:hiddenbench:57:4",
+          "requestHash": "sha256:2c63c0972cfe4a4efd01326fdf663ca2b0bea6debadcce307fe2d400a129529a",
+          "responseHash": "sha256:c6b5d10c6f71386f7034d71fe96588015e6c4122b7303e6766f022b578593352"
+        }
+      ],
+      "contentHash": "sha256:eb9fac0e446c75ec01ed2ac5b1227ec78dd9e6d88567ec1c336e5533ef1fbbaa"
+    },
+    {
+      "round": 2,
+      "messages": [
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:57:1",
+          "content": "Site B. The plateau's stable ground and undisturbed, soft topsoil provide the most reliable conditions for a rapid and successful recovery. Site A is inaccessible due to the road closure, and Site C's rocky soil and rodent activity present significant obstacles to a quick dig.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:57:2",
+          "content": "Site A",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:57:3",
+          "content": "Site B. The private information about the scheduled blasting for foundations in the morning makes it the most urgent site to salvage. While the topsoil is soft and undisturbed, the imminent construction activity poses an immediate and irreversible threat to any artifacts there. Sites A and C, while having their own challenges, do not have a confirmed, imminent destruction event scheduled for tomorrow.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:57:4",
+          "content": "Site B. The plateau's stable ground and undisturbed, soft topsoil provide the most reliable conditions for a rapid and successful recovery. Site A is inaccessible due to the road closure, and Site C's rocky soil and rodent activity present significant obstacles to a quick dig.",
+          "source": "agent"
+        }
+      ],
+      "calls": [
+        {
+          "requestId": "discussion:collective-dynamics-m2-bridge:57:seed-1:r2:agent:hiddenbench:57:1",
+          "round": 2,
+          "agentId": "agent:hiddenbench:57:1",
+          "requestHash": "sha256:7f132adff31e61a97b09724d67b80f0b635deeba2f5810d7c566c5f1ae045385",
+          "responseHash": "sha256:c6b5d10c6f71386f7034d71fe96588015e6c4122b7303e6766f022b578593352"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2-bridge:57:seed-1:r2:agent:hiddenbench:57:2",
+          "round": 2,
+          "agentId": "agent:hiddenbench:57:2",
+          "requestHash": "sha256:9ca55ff5e20d13e028403960446dc8661925718635c4efd747e5b12853916d46",
+          "responseHash": "sha256:54de773a3dcef90d0631752c7d2de72afd82ff108f396e2be08f05bd5cdee2c2"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2-bridge:57:seed-1:r2:agent:hiddenbench:57:3",
+          "round": 2,
+          "agentId": "agent:hiddenbench:57:3",
+          "requestHash": "sha256:041df5acf8743a9b4e3d9605d25e6a08a73a905821cd7f72713e39a1a413d317",
+          "responseHash": "sha256:21d2368276b4057a47b17475330cabfb6c3bcb2d5973718f1f63bd03f8ad3ba1"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2-bridge:57:seed-1:r2:agent:hiddenbench:57:4",
+          "round": 2,
+          "agentId": "agent:hiddenbench:57:4",
+          "requestHash": "sha256:d46feae3069fec6e46b2db2deecf0152bd7483bcce28cf0aafdb06ff58d627b8",
+          "responseHash": "sha256:c6b5d10c6f71386f7034d71fe96588015e6c4122b7303e6766f022b578593352"
+        }
+      ],
+      "contentHash": "sha256:5e8674f18817bcad111d1ecb587bc232969bf64b538ec6a3060c68f578494a39"
+    },
+    {
+      "round": 3,
+      "messages": [
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:57:1",
+          "content": "Site B. The plateau's stable ground and undisturbed, soft topsoil provide the most reliable conditions for a rapid and successful recovery. Site A is inaccessible due to the road closure, and Site C's rocky soil and rodent activity present significant obstacles to a quick dig.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:57:2",
+          "content": "Site A",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:57:3",
+          "content": "Site B",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:57:4",
+          "content": "Site B",
+          "source": "agent"
+        }
+      ],
+      "calls": [
+        {
+          "requestId": "discussion:collective-dynamics-m2-bridge:57:seed-1:r3:agent:hiddenbench:57:1",
+          "round": 3,
+          "agentId": "agent:hiddenbench:57:1",
+          "requestHash": "sha256:8ea71c0eb13d8a380ed917a4294f3b4a9a60fd29d45f11cebb5be91f38563629",
+          "responseHash": "sha256:c6b5d10c6f71386f7034d71fe96588015e6c4122b7303e6766f022b578593352"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2-bridge:57:seed-1:r3:agent:hiddenbench:57:2",
+          "round": 3,
+          "agentId": "agent:hiddenbench:57:2",
+          "requestHash": "sha256:e3e5657b7a7742c542d5e5a0593d62ec3177fbd6fe337f6264d875c72f60277e",
+          "responseHash": "sha256:54de773a3dcef90d0631752c7d2de72afd82ff108f396e2be08f05bd5cdee2c2"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2-bridge:57:seed-1:r3:agent:hiddenbench:57:3",
+          "round": 3,
+          "agentId": "agent:hiddenbench:57:3",
+          "requestHash": "sha256:4db55cdb6b9c9dbaebea55036e946b050a61f768a5a126eb44b1ba68f2bec1b4",
+          "responseHash": "sha256:6d1e348699728cc9e68719c3a474a4b68f6d4becdc77e535131276c3cd098811"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-m2-bridge:57:seed-1:r3:agent:hiddenbench:57:4",
+          "round": 3,
+          "agentId": "agent:hiddenbench:57:4",
+          "requestHash": "sha256:cc2affe5d348c235f0f59699aeecef89f83bc0a9460875fa3e81a4ce0acfb9b6",
+          "responseHash": "sha256:6d1e348699728cc9e68719c3a474a4b68f6d4becdc77e535131276c3cd098811"
+        }
+      ],
+      "contentHash": "sha256:7786b0c15cdb63b07eb7d846f60c5c1c8b243c0f8764b24795e4f84ef39305ae"
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointRef": {
+        "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-checkpoint",
+        "version": "1.0.0"
+      },
+      "checkpointId": "task:hiddenbench:57:collective-dynamics-m2-bridge:57:seed-1:X0",
+      "checkpointRound": 0,
+      "visibleMessages": [],
+      "sourceRequestHashes": [],
+      "contentHash": "sha256:5fc7594d6b24bd0c8f2ba0b2b9f16ede1e72d3cf8f4e2ad13807090d624523cd"
+    },
+    {
+      "checkpointRef": {
+        "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-checkpoint",
+        "version": "1.0.0"
+      },
+      "checkpointId": "task:hiddenbench:57:collective-dynamics-m2-bridge:57:seed-1:X1",
+      "checkpointRound": 1,
+      "visibleMessages": [
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:57:1",
+          "content": "Site B",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:57:2",
+          "content": "Site B",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:57:3",
+          "content": "Site B is the correct choice. The private information about the scheduled blasting for foundations in the morning makes it the most urgent site to salvage. While the topsoil is soft and undisturbed, the imminent construction activity poses an immediate and irreversible threat to any artifacts there. Sites A and C, while having their own challenges, do not have a confirmed, imminent destruction event scheduled for tomorrow.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:57:4",
+          "content": "Site B. The plateau's stable ground and undisturbed, soft topsoil provide the most reliable conditions for a rapid and successful recovery. Site A is inaccessible due to the road closure, and Site C's rocky soil and rodent activity present significant obstacles to a quick dig.",
+          "source": "agent"
+        }
+      ],
+      "sourceRequestHashes": [
+        "sha256:fde607c51af4733bed0c294b9fd186f1557d8334587b292fda8fb28390cf1475",
+        "sha256:b979babc9bb6534fa1c25bdcf2aba4b4ac80e22d6d74ded8f72fc260ba9308aa",
+        "sha256:f626c1f105d8fed4f31eb0c832f651916e35712b22588dee6830b5b1d310dde4",
+        "sha256:2c63c0972cfe4a4efd01326fdf663ca2b0bea6debadcce307fe2d400a129529a"
+      ],
+      "contentHash": "sha256:1862facf23a372e44e329f6c96c064b38e3da385f16c486bd9614e1dd4c64175"
+    },
+    {
+      "checkpointRef": {
+        "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-checkpoint",
+        "version": "1.0.0"
+      },
+      "checkpointId": "task:hiddenbench:57:collective-dynamics-m2-bridge:57:seed-1:X2",
+      "checkpointRound": 2,
+      "visibleMessages": [
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:57:1",
+          "content": "Site B. The plateau's stable ground and undisturbed, soft topsoil provide the most reliable conditions for a rapid and successful recovery. Site A is inaccessible due to the road closure, and Site C's rocky soil and rodent activity present significant obstacles to a quick dig.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:57:2",
+          "content": "Site A",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:57:3",
+          "content": "Site B. The private information about the scheduled blasting for foundations in the morning makes it the most urgent site to salvage. While the topsoil is soft and undisturbed, the imminent construction activity poses an immediate and irreversible threat to any artifacts there. Sites A and C, while having their own challenges, do not have a confirmed, imminent destruction event scheduled for tomorrow.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:57:4",
+          "content": "Site B. The plateau's stable ground and undisturbed, soft topsoil provide the most reliable conditions for a rapid and successful recovery. Site A is inaccessible due to the road closure, and Site C's rocky soil and rodent activity present significant obstacles to a quick dig.",
+          "source": "agent"
+        }
+      ],
+      "sourceRequestHashes": [
+        "sha256:7f132adff31e61a97b09724d67b80f0b635deeba2f5810d7c566c5f1ae045385",
+        "sha256:9ca55ff5e20d13e028403960446dc8661925718635c4efd747e5b12853916d46",
+        "sha256:041df5acf8743a9b4e3d9605d25e6a08a73a905821cd7f72713e39a1a413d317",
+        "sha256:d46feae3069fec6e46b2db2deecf0152bd7483bcce28cf0aafdb06ff58d627b8"
+      ],
+      "contentHash": "sha256:10344ab94ab4a521c3ffc2fefbf3e90591f56bfb2834954e9b51889e023728e8"
+    },
+    {
+      "checkpointRef": {
+        "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-checkpoint",
+        "version": "1.0.0"
+      },
+      "checkpointId": "task:hiddenbench:57:collective-dynamics-m2-bridge:57:seed-1:X3",
+      "checkpointRound": 3,
+      "visibleMessages": [
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:57:1",
+          "content": "Site B. The plateau's stable ground and undisturbed, soft topsoil provide the most reliable conditions for a rapid and successful recovery. Site A is inaccessible due to the road closure, and Site C's rocky soil and rodent activity present significant obstacles to a quick dig.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:57:2",
+          "content": "Site A",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:57:3",
+          "content": "Site B",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:57:4",
+          "content": "Site B",
+          "source": "agent"
+        }
+      ],
+      "sourceRequestHashes": [
+        "sha256:8ea71c0eb13d8a380ed917a4294f3b4a9a60fd29d45f11cebb5be91f38563629",
+        "sha256:e3e5657b7a7742c542d5e5a0593d62ec3177fbd6fe337f6264d875c72f60277e",
+        "sha256:4db55cdb6b9c9dbaebea55036e946b050a61f768a5a126eb44b1ba68f2bec1b4",
+        "sha256:cc2affe5d348c235f0f59699aeecef89f83bc0a9460875fa3e81a4ce0acfb9b6"
+      ],
+      "contentHash": "sha256:1d4dc54d7f7276b63cac1171605bebf42245a4547547bfe267bbad2f95463361"
+    }
+  ],
+  "contentHash": "sha256:f91ea33dd3376a2e1534593b0b4f7d9aa4dca41185bff35b6abae9d39f604780"
+}

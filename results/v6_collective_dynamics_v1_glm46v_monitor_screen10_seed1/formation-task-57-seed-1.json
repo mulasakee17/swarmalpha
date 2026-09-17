@@ -1,0 +1,1502 @@
+{
+  "artifactRef": {
+    "id": "swarmalpha.experiment.v6.collective-epistemic-dynamics.formation",
+    "version": "1.0.0"
+  },
+  "planHash": "sha256:c5b6e20b332cdf9a6d0b40964deb0249da63407111b9e415f7cee388eab449e9",
+  "runId": "collective-dynamics:57:seed-1",
+  "seed": 1,
+  "modelRef": {
+    "id": "zhipu:glm-4.6v",
+    "version": "1.0.0"
+  },
+  "onlineTask": {
+    "sourceTaskId": 57,
+    "taskId": "task:hiddenbench:57",
+    "publicContext": "You and three colleagues are archaeologists tasked with selecting a site to salvage crucial artifacts before construction begins. There are tight time constraints: you can only pick one location, and you must choose by the end of the hour. There are three candidate sites: Site A, Site B, and Site C. You must maximize your chances of a successful recovery, as failure means the artifacts may be lost forever.\n\nShared information:\n1. Site A: Riverbank, frequent flooding in spring, unknown artifact depth.\n2. Site B: Plateau, stable ground, topsoil is soft and undisturbed.\n3. Site C: Woods edge, soil is rocky, some evidence of rodent burrows.\n4. The main developer has announced all construction will start tomorrow, but precise order is unknown.",
+    "claim": {
+      "id": "claim:hiddenbench:57:answer",
+      "proposition": "Select the single correct answer for HiddenBench task 57 (archaeological_dig_site).",
+      "domain": "hiddenbench-categorical-decision",
+      "createdAt": "2026-08-11T00:00:00.000Z",
+      "options": [
+        "Site A",
+        "Site B",
+        "Site C"
+      ],
+      "resolutionPolicy": {
+        "kind": "categorical",
+        "resolverId": "resolver:hiddenbench-data-3be6ca16"
+      }
+    },
+    "agents": [
+      {
+        "agentId": "agent:hiddenbench:57:1",
+        "privateInformation": "In a recent survey, Site C’s rodent burrows were found to be abandoned, with no damage to deep soil layers."
+      },
+      {
+        "agentId": "agent:hiddenbench:57:2",
+        "privateInformation": "You overheard that Site A is predicted to flood tonight due to sudden rain upstream."
+      },
+      {
+        "agentId": "agent:hiddenbench:57:3",
+        "privateInformation": "You have seen construction crews preparing explosive charges at Site B because blasting for foundations is scheduled for the morning."
+      },
+      {
+        "agentId": "agent:hiddenbench:57:4",
+        "privateInformation": "Site A’s access road is being closed off for bridge repairs overnight and won't reopen for two days."
+      }
+    ]
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "messages": [
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:57:1",
+          "content": "Based on the information, Site B is the most promising for artifact recovery due to its stable ground and undisturbed topsoil, which increases the likelihood of finding artifacts in good condition. Site A's frequent flooding poses a risk to artifact preservation, and while Site C's rodent burrows are abandoned, the rocky soil may still hinder excavation. Therefore, Site B offers the best balance of stability and potential for successful recovery.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:57:2",
+          "content": "Based on the private information about the imminent flood at Site A, it is no longer a viable option. Site B offers stable, undisturbed ground, making it the most promising for a successful recovery. Site C's rocky soil and rodent activity present significant challenges. Therefore, Site B is the optimal choice.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:57:3",
+          "content": "Site B is the most urgent choice due to the imminent blasting, which poses an immediate threat to artifacts. While Site A's flooding is a risk, it is seasonal and less immediate than the planned construction activity at Site B. Site C's rocky soil and rodent burrows suggest lower artifact preservation potential compared to Site B's undisturbed topsoil. Prioritizing Site B maximizes the chance of salvaging artifacts before destruction.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:57:4",
+          "content": "Site B is the most promising choice due to its stable ground and undisturbed topsoil, which increases the likelihood of successful artifact recovery. Site A is inaccessible due to road closures, and Site C's rocky soil and rodent burrows pose significant challenges.",
+          "source": "agent"
+        }
+      ],
+      "reports": [
+        {
+          "id": "belief:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:1",
+          "claimId": "claim:hiddenbench:57:answer",
+          "agentId": "agent:hiddenbench:57:1",
+          "round": 1,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Site A": 0.1,
+              "Site B": 0.8,
+              "Site C": 0.1
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:1:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:1:2",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:1:3",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:1:4",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:01:01.000Z"
+        },
+        {
+          "id": "belief:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:2",
+          "claimId": "claim:hiddenbench:57:answer",
+          "agentId": "agent:hiddenbench:57:2",
+          "round": 1,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Site A": 0,
+              "Site B": 0.9,
+              "Site C": 0.1
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:2:1",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:2:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:2:3",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:01:02.000Z"
+        },
+        {
+          "id": "belief:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:3",
+          "claimId": "claim:hiddenbench:57:answer",
+          "agentId": "agent:hiddenbench:57:3",
+          "round": 1,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Site A": 0.15,
+              "Site B": 0.75,
+              "Site C": 0.1
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:3:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:3:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:3:3",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:3:4",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:01:03.000Z"
+        },
+        {
+          "id": "belief:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:4",
+          "claimId": "claim:hiddenbench:57:answer",
+          "agentId": "agent:hiddenbench:57:4",
+          "round": 1,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Site A": 0,
+              "Site B": 0.8,
+              "Site C": 0.2
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:4:1",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:4:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:4:3",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:01:04.000Z"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:1:1",
+          "content": "Site B: Plateau, stable ground, topsoil is soft and undisturbed.",
+          "createdAt": "2026-08-24T00:01:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:1",
+            "contentHash": "sha256:a3cb9f1799df6c9d26025d0b06c8b63a8de4de2beeaf23659241a01fd4c480ef"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:1:2",
+          "content": "Site A: Riverbank, frequent flooding in spring, unknown artifact depth.",
+          "createdAt": "2026-08-24T00:01:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:1",
+            "contentHash": "sha256:2750086ab888a9e04ea2ceb9c9d9150093dadca0cb5f4565867e08d6400ed5dc"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:1:3",
+          "content": "Site C: Woods edge, soil is rocky, some evidence of rodent burrows.",
+          "createdAt": "2026-08-24T00:01:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:1",
+            "contentHash": "sha256:e1113912330e50a42ad74bd1a12285983ac8cab1a02854e47526171938362bb7"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:1:4",
+          "content": "In a recent survey, Site C’s rodent burrows were found to be abandoned, with no damage to deep soil layers.",
+          "createdAt": "2026-08-24T00:01:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:1",
+            "contentHash": "sha256:e4193f16430c4a89a25a52aca30d2dc5f276f1b32b22b5e027b5cfac67d3513a"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:2:1",
+          "content": "Site A is predicted to flood tonight due to sudden rain upstream.",
+          "createdAt": "2026-08-24T00:01:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:2",
+            "contentHash": "sha256:e6cf2c0c8b2192a797cdd71beb0d892eab40d5d09858a5cb987d4d8e46ca08df"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:2:2",
+          "content": "Site B has stable ground and soft, undisturbed topsoil.",
+          "createdAt": "2026-08-24T00:01:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:2",
+            "contentHash": "sha256:eefd3412b727c2ea5d6fdb1f1528c34f63cc0b5d5c079ac3c776a10e9c85ca58"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:2:3",
+          "content": "Site C has rocky soil and rodent burrows.",
+          "createdAt": "2026-08-24T00:01:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:2",
+            "contentHash": "sha256:efaa40c5b3c99f4eceef03d5fa8533e43e836f563428acab804a58f632c54d87"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:3:1",
+          "content": "Construction crews are preparing explosive charges at Site B for blasting tomorrow morning.",
+          "createdAt": "2026-08-24T00:01:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:3",
+            "contentHash": "sha256:7ca6d89942ccafeeb66421808bab885f2457bced754568d8975e559929ffec08"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:3:2",
+          "content": "Site B has stable ground with soft, undisturbed topsoil, indicating higher potential for artifact preservation.",
+          "createdAt": "2026-08-24T00:01:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:3",
+            "contentHash": "sha256:4f0245f8cb803a0d098e7470687f57f182ea6db1d36132e81676508cec4c8fa7"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:3:3",
+          "content": "Site A's frequent spring flooding is a seasonal risk, less immediate than Site B's imminent blasting.",
+          "createdAt": "2026-08-24T00:01:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:3",
+            "contentHash": "sha256:7cdbb2c3a87f454424378d31c87ca438fb54ccf41dfc96e0eacd93708bd35982"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:3:4",
+          "content": "Site C's rocky soil and rodent burrows suggest lower artifact preservation potential compared to Site B.",
+          "createdAt": "2026-08-24T00:01:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:3",
+            "contentHash": "sha256:8b8f80c7807515018c769f0d8049e5a1fd0846d343757fe8f8ceb0acc7afbb97"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:4:1",
+          "content": "Site A’s access road is being closed off for bridge repairs overnight and won't reopen for two days.",
+          "createdAt": "2026-08-24T00:01:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:4",
+            "contentHash": "sha256:d3fe792a31e7a766a110a95f4baf13499cdbf7a380f5c0015bc5084c8e70e926"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:4:2",
+          "content": "Site B: Plateau, stable ground, topsoil is soft and undisturbed.",
+          "createdAt": "2026-08-24T00:01:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:4",
+            "contentHash": "sha256:a3cb9f1799df6c9d26025d0b06c8b63a8de4de2beeaf23659241a01fd4c480ef"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:4:3",
+          "content": "Site C: Woods edge, soil is rocky, some evidence of rodent burrows.",
+          "createdAt": "2026-08-24T00:01:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:4",
+            "contentHash": "sha256:e1113912330e50a42ad74bd1a12285983ac8cab1a02854e47526171938362bb7"
+          }
+        }
+      ],
+      "state": {
+        "activeAgentIds": [
+          "agent:hiddenbench:57:1",
+          "agent:hiddenbench:57:2",
+          "agent:hiddenbench:57:3",
+          "agent:hiddenbench:57:4"
+        ],
+        "artifactSchemaRef": {
+          "id": "swarmalpha.collective-epistemic-state",
+          "version": "1.0.0"
+        },
+        "asOfRound": 1,
+        "beliefKind": "categorical",
+        "betweenAgentDisagreement": 0.04837706877372411,
+        "claimId": "claim:hiddenbench:57:answer",
+        "claimOptionCount": 3,
+        "contentHash": "sha256:bf52baafda13b817ef3f84b65307c1d9c72afc098ea38ab2f70e2b79230ec683",
+        "declaredLineageDiversity": {
+          "completeness": "missing",
+          "distinctDeclaredLineageCount": 0,
+          "effectiveLineageCount": null,
+          "missingLineageReportIds": [
+            "belief:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:1",
+            "belief:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:2",
+            "belief:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:3",
+            "belief:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:4"
+          ],
+          "normalizedLineageEntropy": null,
+          "reportsMissingDeclaredLineage": 4,
+          "reportsWithDeclaredLineage": 0
+        },
+        "expectedAgentIds": [
+          "agent:hiddenbench:57:1",
+          "agent:hiddenbench:57:2",
+          "agent:hiddenbench:57:3",
+          "agent:hiddenbench:57:4"
+        ],
+        "exposureConditionedRevision": {
+          "meanBeliefDistance": null,
+          "revisionCount": 0,
+          "targetAgentCount": 0,
+          "totalBeliefDistance": 0
+        },
+        "inferenceStatus": "descriptive_macrostate_only",
+        "latestReportIds": [
+          "belief:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:1",
+          "belief:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:2",
+          "belief:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:3",
+          "belief:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:4"
+        ],
+        "missingExpectedAgentIds": [],
+        "observedResponseConcentration": {
+          "herfindahlIndex": null,
+          "normalizedHerfindahl": null,
+          "responseMassBySourceAgent": {},
+          "sourceAgentCount": 0,
+          "status": "unavailable",
+          "unavailableReason": "no_exposure_conditioned_response_mass"
+        },
+        "pooledBelief": {
+          "kind": "categorical",
+          "probabilities": {
+            "Site A": 0.0625,
+            "Site B": 0.8125,
+            "Site C": 0.125
+          }
+        },
+        "pooledCertainty": 0.8125,
+        "pooledPredictedOutcomes": [
+          "Site B"
+        ],
+        "pooledUncertainty": 0.5478948105177536,
+        "populationBasis": "declared_roster",
+        "sourceFingerprints": {
+          "claim": "sha256:08453607db11a61bb85742130232a4732c3214942e82d52d2c787504a80273c1",
+          "evidence": "sha256:15d4204fda4cdbe3b10cd84738f489924d07eeb8f2afbc92c696401fa87c1ecc",
+          "exposures": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "reports": "sha256:0f879a493a98221db85d4358fd67298a2c989a5a1ca0c23f57512007584879b5"
+        },
+        "withinAgentUncertainty": 0.49951774174402946
+      },
+      "updateActivityFromPrior": null
+    },
+    {
+      "round": 2,
+      "messages": [
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:57:1",
+          "content": "Site B is the optimal choice due to its stable ground and undisturbed topsoil, which maximizes the likelihood of successful artifact recovery. Site A's frequent flooding poses preservation risks, and Site C's rocky soil and rodent burrows (even if abandoned) hinder excavation. The shared consensus and Site B's inherent advantages make it the most promising option.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:57:2",
+          "content": "Site B is the optimal choice due to its stable, undisturbed topsoil, which maximizes the likelihood of successful artifact recovery. The imminent flood at Site A makes it inaccessible, and Site C's rocky soil and rodent burrows pose significant excavation challenges. Prioritizing Site B ensures the best chance of salvaging artifacts before construction begins.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:57:3",
+          "content": "Site B is the most urgent and promising choice due to the imminent blasting, which poses an immediate threat to artifacts. Its stable ground and undisturbed topsoil increase the likelihood of successful recovery, while Site A's flooding is seasonal and less immediate, and Site C's rocky soil and rodent burrows suggest lower preservation potential.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:57:4",
+          "content": "Site B is the optimal choice due to its stable, undisturbed topsoil, which maximizes the likelihood of successful artifact recovery. Site A is inaccessible due to road closures, and Site C's rocky soil and rodent burrows pose significant challenges.",
+          "source": "agent"
+        }
+      ],
+      "reports": [
+        {
+          "id": "belief:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:1",
+          "claimId": "claim:hiddenbench:57:answer",
+          "agentId": "agent:hiddenbench:57:1",
+          "round": 2,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Site A": 0.05,
+              "Site B": 0.9,
+              "Site C": 0.05
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:1:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:1:2",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:1:3",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:1:4",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:02:01.000Z",
+          "supersedesReportId": "belief:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:1"
+        },
+        {
+          "id": "belief:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:2",
+          "claimId": "claim:hiddenbench:57:answer",
+          "agentId": "agent:hiddenbench:57:2",
+          "round": 2,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Site A": 0,
+              "Site B": 1,
+              "Site C": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:2:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:2:2",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:2:3",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:02:02.000Z",
+          "supersedesReportId": "belief:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:2"
+        },
+        {
+          "id": "belief:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:3",
+          "claimId": "claim:hiddenbench:57:answer",
+          "agentId": "agent:hiddenbench:57:3",
+          "round": 2,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Site A": 0,
+              "Site B": 1,
+              "Site C": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:3:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:3:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:3:3",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:3:4",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:02:03.000Z",
+          "supersedesReportId": "belief:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:3"
+        },
+        {
+          "id": "belief:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:4",
+          "claimId": "claim:hiddenbench:57:answer",
+          "agentId": "agent:hiddenbench:57:4",
+          "round": 2,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Site A": 0,
+              "Site B": 1,
+              "Site C": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:4:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:4:2",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:4:3",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:02:04.000Z",
+          "supersedesReportId": "belief:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:4"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:1:1",
+          "content": "Site B: Plateau, stable ground, topsoil is soft and undisturbed.",
+          "createdAt": "2026-08-24T00:02:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:1",
+            "contentHash": "sha256:a3cb9f1799df6c9d26025d0b06c8b63a8de4de2beeaf23659241a01fd4c480ef"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:1:2",
+          "content": "Site A: Riverbank, frequent flooding in spring, unknown artifact depth.",
+          "createdAt": "2026-08-24T00:02:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:1",
+            "contentHash": "sha256:2750086ab888a9e04ea2ceb9c9d9150093dadca0cb5f4565867e08d6400ed5dc"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:1:3",
+          "content": "Site C: Woods edge, soil is rocky, some evidence of rodent burrows.",
+          "createdAt": "2026-08-24T00:02:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:1",
+            "contentHash": "sha256:e1113912330e50a42ad74bd1a12285983ac8cab1a02854e47526171938362bb7"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:1:4",
+          "content": "All agents in the discussion prioritized Site B as the most promising choice.",
+          "createdAt": "2026-08-24T00:02:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:1",
+            "contentHash": "sha256:9326d1a67c7ee416121885abaa6f1206ca0eb386b5d8a79d3eac9338904a689e"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:2:1",
+          "content": "Site B: Plateau, stable ground, topsoil is soft and undisturbed.",
+          "createdAt": "2026-08-24T00:02:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:2",
+            "contentHash": "sha256:a3cb9f1799df6c9d26025d0b06c8b63a8de4de2beeaf23659241a01fd4c480ef"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:2:2",
+          "content": "Site A is predicted to flood tonight due to sudden rain upstream.",
+          "createdAt": "2026-08-24T00:02:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:2",
+            "contentHash": "sha256:e6cf2c0c8b2192a797cdd71beb0d892eab40d5d09858a5cb987d4d8e46ca08df"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:2:3",
+          "content": "Site C: Woods edge, soil is rocky, some evidence of rodent burrows.",
+          "createdAt": "2026-08-24T00:02:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:2",
+            "contentHash": "sha256:e1113912330e50a42ad74bd1a12285983ac8cab1a02854e47526171938362bb7"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:3:1",
+          "content": "Site B: Plateau, stable ground, topsoil is soft and undisturbed.",
+          "createdAt": "2026-08-24T00:02:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:3",
+            "contentHash": "sha256:a3cb9f1799df6c9d26025d0b06c8b63a8de4de2beeaf23659241a01fd4c480ef"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:3:2",
+          "content": "You have seen construction crews preparing explosive charges at Site B because blasting for foundations is scheduled for the morning.",
+          "createdAt": "2026-08-24T00:02:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:3",
+            "contentHash": "sha256:ba866789228d3f97a30677115857274bcc386129e76fd9beadcf8041e6287a40"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:3:3",
+          "content": "Site A: Riverbank, frequent flooding in spring, unknown artifact depth.",
+          "createdAt": "2026-08-24T00:02:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:3",
+            "contentHash": "sha256:2750086ab888a9e04ea2ceb9c9d9150093dadca0cb5f4565867e08d6400ed5dc"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:3:4",
+          "content": "Site C: Woods edge, soil is rocky, some evidence of rodent burrows.",
+          "createdAt": "2026-08-24T00:02:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:3",
+            "contentHash": "sha256:e1113912330e50a42ad74bd1a12285983ac8cab1a02854e47526171938362bb7"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:4:1",
+          "content": "Site B: Plateau, stable ground, topsoil is soft and undisturbed.",
+          "createdAt": "2026-08-24T00:02:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:4",
+            "contentHash": "sha256:a3cb9f1799df6c9d26025d0b06c8b63a8de4de2beeaf23659241a01fd4c480ef"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:4:2",
+          "content": "Site A’s access road is being closed off for bridge repairs overnight and won't reopen for two days.",
+          "createdAt": "2026-08-24T00:02:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:4",
+            "contentHash": "sha256:d3fe792a31e7a766a110a95f4baf13499cdbf7a380f5c0015bc5084c8e70e926"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:4:3",
+          "content": "Site C: Woods edge, soil is rocky, some evidence of rodent burrows.",
+          "createdAt": "2026-08-24T00:02:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:4",
+            "contentHash": "sha256:e1113912330e50a42ad74bd1a12285983ac8cab1a02854e47526171938362bb7"
+          }
+        }
+      ],
+      "state": {
+        "activeAgentIds": [
+          "agent:hiddenbench:57:1",
+          "agent:hiddenbench:57:2",
+          "agent:hiddenbench:57:3",
+          "agent:hiddenbench:57:4"
+        ],
+        "artifactSchemaRef": {
+          "id": "swarmalpha.collective-epistemic-state",
+          "version": "1.0.0"
+        },
+        "asOfRound": 2,
+        "beliefKind": "categorical",
+        "betweenAgentDisagreement": 0.03243738137398047,
+        "claimId": "claim:hiddenbench:57:answer",
+        "claimOptionCount": 3,
+        "contentHash": "sha256:ebd980b10ebe8ae125a140ab7c197a0495d3c846577cdabdbe0023f6b84d105d",
+        "declaredLineageDiversity": {
+          "completeness": "missing",
+          "distinctDeclaredLineageCount": 0,
+          "effectiveLineageCount": null,
+          "missingLineageReportIds": [
+            "belief:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:1",
+            "belief:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:2",
+            "belief:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:3",
+            "belief:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:4"
+          ],
+          "normalizedLineageEntropy": null,
+          "reportsMissingDeclaredLineage": 4,
+          "reportsWithDeclaredLineage": 0
+        },
+        "expectedAgentIds": [
+          "agent:hiddenbench:57:1",
+          "agent:hiddenbench:57:2",
+          "agent:hiddenbench:57:3",
+          "agent:hiddenbench:57:4"
+        ],
+        "exposureConditionedRevision": {
+          "meanBeliefDistance": null,
+          "revisionCount": 0,
+          "targetAgentCount": 0,
+          "totalBeliefDistance": 0
+        },
+        "inferenceStatus": "descriptive_macrostate_only",
+        "latestReportIds": [
+          "belief:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:1",
+          "belief:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:2",
+          "belief:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:3",
+          "belief:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:4"
+        ],
+        "missingExpectedAgentIds": [],
+        "observedResponseConcentration": {
+          "herfindahlIndex": null,
+          "normalizedHerfindahl": null,
+          "responseMassBySourceAgent": {},
+          "sourceAgentCount": 0,
+          "status": "unavailable",
+          "unavailableReason": "no_exposure_conditioned_response_mass"
+        },
+        "pooledBelief": {
+          "kind": "categorical",
+          "probabilities": {
+            "Site A": 0.0125,
+            "Site B": 0.975,
+            "Site C": 0.0125
+          }
+        },
+        "pooledCertainty": 0.975,
+        "pooledPredictedOutcomes": [
+          "Site B"
+        ],
+        "pooledUncertainty": 0.12218644378561307,
+        "populationBasis": "declared_roster",
+        "sourceFingerprints": {
+          "claim": "sha256:08453607db11a61bb85742130232a4732c3214942e82d52d2c787504a80273c1",
+          "evidence": "sha256:84b05d9a92e450fc0a4b184bd98fb71adcfe205b2525421087d84553f3abb59c",
+          "exposures": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "reports": "sha256:a68cd1297931a330a1b880149d493de998e67f0616f3ac68aa3323ad050a2fcc"
+        },
+        "withinAgentUncertainty": 0.0897490624116326
+      },
+      "updateActivityFromPrior": 0.16249999999999998
+    },
+    {
+      "round": 3,
+      "messages": [
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:57:1",
+          "content": "Site B is the optimal choice due to its stable ground and undisturbed topsoil, which maximizes the likelihood of successful artifact recovery. Site A's frequent flooding poses preservation risks, and Site C's rocky soil and rodent burrows (even if abandoned) hinder excavation. The shared consensus and Site B's inherent advantages make it the most promising option.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:57:2",
+          "content": "Site B is the optimal choice due to its stable, undisturbed topsoil, which maximizes the likelihood of successful artifact recovery. Site A is inaccessible due to the imminent flood, and Site C's rocky soil and rodent burrows pose significant excavation challenges.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:57:3",
+          "content": "Site B is the optimal choice due to its stable ground and undisturbed topsoil, which maximizes the likelihood of successful artifact recovery. The imminent blasting at Site B poses an immediate threat to artifacts, making it the most urgent and promising option. Site A's frequent flooding is less immediate, and Site C's rocky soil and rodent burrows suggest lower preservation potential.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:57:4",
+          "content": "Site B is the optimal choice due to its stable, undisturbed topsoil, which maximizes the likelihood of successful artifact recovery. Site A is inaccessible due to road closures, and Site C's rocky soil and rodent burrows pose significant challenges.",
+          "source": "agent"
+        }
+      ],
+      "reports": [
+        {
+          "id": "belief:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:1",
+          "claimId": "claim:hiddenbench:57:answer",
+          "agentId": "agent:hiddenbench:57:1",
+          "round": 3,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Site A": 0,
+              "Site B": 1,
+              "Site C": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:1:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:1:2",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:1:3",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:1:4",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:03:01.000Z",
+          "supersedesReportId": "belief:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:1"
+        },
+        {
+          "id": "belief:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:2",
+          "claimId": "claim:hiddenbench:57:answer",
+          "agentId": "agent:hiddenbench:57:2",
+          "round": 3,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Site A": 0,
+              "Site B": 1,
+              "Site C": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:2:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:2:2",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:2:3",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "supersedesReportId": "belief:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:2"
+        },
+        {
+          "id": "belief:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:3",
+          "claimId": "claim:hiddenbench:57:answer",
+          "agentId": "agent:hiddenbench:57:3",
+          "round": 3,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Site A": 0,
+              "Site B": 1,
+              "Site C": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:3:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:3:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:3:3",
+              "relation": "attacks"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:3:4",
+              "relation": "attacks"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "supersedesReportId": "belief:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:3"
+        },
+        {
+          "id": "belief:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:4",
+          "claimId": "claim:hiddenbench:57:answer",
+          "agentId": "agent:hiddenbench:57:4",
+          "round": 3,
+          "value": {
+            "kind": "categorical",
+            "probabilities": {
+              "Site A": 0,
+              "Site B": 1,
+              "Site C": 0
+            }
+          },
+          "evidence": [
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:4:1",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:4:2",
+              "relation": "supports"
+            },
+            {
+              "evidenceId": "evidence:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:4:3",
+              "relation": "supports"
+            }
+          ],
+          "stake": 0,
+          "createdAt": "2026-08-24T00:03:04.000Z",
+          "supersedesReportId": "belief:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:4"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:1:1",
+          "content": "Site B: Plateau, stable ground, topsoil is soft and undisturbed.",
+          "createdAt": "2026-08-24T00:03:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:1",
+            "contentHash": "sha256:a3cb9f1799df6c9d26025d0b06c8b63a8de4de2beeaf23659241a01fd4c480ef"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:1:2",
+          "content": "Site A: Riverbank, frequent flooding in spring, unknown artifact depth.",
+          "createdAt": "2026-08-24T00:03:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:1",
+            "contentHash": "sha256:2750086ab888a9e04ea2ceb9c9d9150093dadca0cb5f4565867e08d6400ed5dc"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:1:3",
+          "content": "Site C: Woods edge, soil is rocky, some evidence of rodent burrows.",
+          "createdAt": "2026-08-24T00:03:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:1",
+            "contentHash": "sha256:e1113912330e50a42ad74bd1a12285983ac8cab1a02854e47526171938362bb7"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:1:4",
+          "content": "In a recent survey, Site C’s rodent burrows were found to be abandoned, with no damage to deep soil layers.",
+          "createdAt": "2026-08-24T00:03:01.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:1",
+            "contentHash": "sha256:e4193f16430c4a89a25a52aca30d2dc5f276f1b32b22b5e027b5cfac67d3513a"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:2:1",
+          "content": "Site B: Plateau, stable ground, topsoil is soft and undisturbed.",
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:2",
+            "contentHash": "sha256:a3cb9f1799df6c9d26025d0b06c8b63a8de4de2beeaf23659241a01fd4c480ef"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:2:2",
+          "content": "Site A is predicted to flood tonight due to sudden rain upstream.",
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:2",
+            "contentHash": "sha256:e6cf2c0c8b2192a797cdd71beb0d892eab40d5d09858a5cb987d4d8e46ca08df"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:2:3",
+          "content": "Site C: Woods edge, soil is rocky, some evidence of rodent burrows.",
+          "createdAt": "2026-08-24T00:03:02.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:2",
+            "contentHash": "sha256:e1113912330e50a42ad74bd1a12285983ac8cab1a02854e47526171938362bb7"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:3:1",
+          "content": "Site B: Plateau, stable ground, topsoil is soft and undisturbed.",
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:3",
+            "contentHash": "sha256:a3cb9f1799df6c9d26025d0b06c8b63a8de4de2beeaf23659241a01fd4c480ef"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:3:2",
+          "content": "You have seen construction crews preparing explosive charges at Site B because blasting for foundations is scheduled for the morning.",
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:3",
+            "contentHash": "sha256:ba866789228d3f97a30677115857274bcc386129e76fd9beadcf8041e6287a40"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:3:3",
+          "content": "Site A: Riverbank, frequent flooding in spring, unknown artifact depth.",
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:3",
+            "contentHash": "sha256:2750086ab888a9e04ea2ceb9c9d9150093dadca0cb5f4565867e08d6400ed5dc"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:3:4",
+          "content": "Site C: Woods edge, soil is rocky, some evidence of rodent burrows.",
+          "createdAt": "2026-08-24T00:03:03.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:3",
+            "contentHash": "sha256:e1113912330e50a42ad74bd1a12285983ac8cab1a02854e47526171938362bb7"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:4:1",
+          "content": "Site B: Plateau, stable ground, topsoil is soft and undisturbed.",
+          "createdAt": "2026-08-24T00:03:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:4",
+            "contentHash": "sha256:a3cb9f1799df6c9d26025d0b06c8b63a8de4de2beeaf23659241a01fd4c480ef"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:4:2",
+          "content": "Site A’s access road is being closed off for bridge repairs overnight and won't reopen for two days.",
+          "createdAt": "2026-08-24T00:03:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:4",
+            "contentHash": "sha256:d3fe792a31e7a766a110a95f4baf13499cdbf7a380f5c0015bc5084c8e70e926"
+          }
+        },
+        {
+          "id": "evidence:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:4:3",
+          "content": "Site C: Woods edge, soil is rocky, some evidence of rodent burrows.",
+          "createdAt": "2026-08-24T00:03:04.000Z",
+          "provenance": {
+            "sourceKind": "agent",
+            "sourceId": "agent:hiddenbench:57:4",
+            "contentHash": "sha256:e1113912330e50a42ad74bd1a12285983ac8cab1a02854e47526171938362bb7"
+          }
+        }
+      ],
+      "state": {
+        "activeAgentIds": [
+          "agent:hiddenbench:57:1",
+          "agent:hiddenbench:57:2",
+          "agent:hiddenbench:57:3",
+          "agent:hiddenbench:57:4"
+        ],
+        "artifactSchemaRef": {
+          "id": "swarmalpha.collective-epistemic-state",
+          "version": "1.0.0"
+        },
+        "asOfRound": 3,
+        "beliefKind": "categorical",
+        "betweenAgentDisagreement": 0,
+        "claimId": "claim:hiddenbench:57:answer",
+        "claimOptionCount": 3,
+        "contentHash": "sha256:e73ac72203184f23228216fdef4651851cada4f0547a64ede41467e7da19ac28",
+        "declaredLineageDiversity": {
+          "completeness": "missing",
+          "distinctDeclaredLineageCount": 0,
+          "effectiveLineageCount": null,
+          "missingLineageReportIds": [
+            "belief:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:1",
+            "belief:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:2",
+            "belief:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:3",
+            "belief:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:4"
+          ],
+          "normalizedLineageEntropy": null,
+          "reportsMissingDeclaredLineage": 4,
+          "reportsWithDeclaredLineage": 0
+        },
+        "expectedAgentIds": [
+          "agent:hiddenbench:57:1",
+          "agent:hiddenbench:57:2",
+          "agent:hiddenbench:57:3",
+          "agent:hiddenbench:57:4"
+        ],
+        "exposureConditionedRevision": {
+          "meanBeliefDistance": null,
+          "revisionCount": 0,
+          "targetAgentCount": 0,
+          "totalBeliefDistance": 0
+        },
+        "inferenceStatus": "descriptive_macrostate_only",
+        "latestReportIds": [
+          "belief:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:1",
+          "belief:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:2",
+          "belief:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:3",
+          "belief:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:4"
+        ],
+        "missingExpectedAgentIds": [],
+        "observedResponseConcentration": {
+          "herfindahlIndex": null,
+          "normalizedHerfindahl": null,
+          "responseMassBySourceAgent": {},
+          "sourceAgentCount": 0,
+          "status": "unavailable",
+          "unavailableReason": "no_exposure_conditioned_response_mass"
+        },
+        "pooledBelief": {
+          "kind": "categorical",
+          "probabilities": {
+            "Site A": 0,
+            "Site B": 1,
+            "Site C": 0
+          }
+        },
+        "pooledCertainty": 1,
+        "pooledPredictedOutcomes": [
+          "Site B"
+        ],
+        "pooledUncertainty": 0,
+        "populationBasis": "declared_roster",
+        "sourceFingerprints": {
+          "claim": "sha256:08453607db11a61bb85742130232a4732c3214942e82d52d2c787504a80273c1",
+          "evidence": "sha256:ff215e004a7269e9cdd0c4f060b26ceff0c2278f2daf8fdc1879ab1401dbff9a",
+          "exposures": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "reports": "sha256:f6eeb667d65c025c693c73697d1402e67cb9492ceb266780bc46e949bf131026"
+        },
+        "withinAgentUncertainty": 0
+      },
+      "updateActivityFromPrior": 0.024999999999999994
+    }
+  ],
+  "providerCalls": [
+    {
+      "requestId": "discussion:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:1",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou and three colleagues are archaeologists tasked with selecting a site to salvage crucial artifacts before construction begins. There are tight time constraints: you can only pick one location, and you must choose by the end of the hour. There are three candidate sites: Site A, Site B, and Site C. You must maximize your chances of a successful recovery, as failure means the artifacts may be lost forever.\n\nShared information:\n1. Site A: Riverbank, frequent flooding in spring, unknown artifact depth.\n2. Site B: Plateau, stable ground, topsoil is soft and undisturbed.\n3. Site C: Woods edge, soil is rocky, some evidence of rodent burrows.\n4. The main developer has announced all construction will start tomorrow, but precise order is unknown.\n\nYour private information:\nIn a recent survey, Site C’s rodent burrows were found to be abandoned, with no damage to deep soil layers.\n\nVisible discussion transcript:\n(none)\n\nClaim claim:hiddenbench:57:answer: Select the single correct answer for HiddenBench task 57 (archaeological_dig_site).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Site A | Site B | Site C. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Site A\": 0.5, \"Site B\": 0.2500, \"Site C\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:b08d4ca2a17aa3307a229468a43a2fbf6c516fb0d7bc3e5d507d3ed7861ab67e",
+      "responseHash": "sha256:6eadc4979537ad5e956900a4b0091a7132749cd3b862dd7dde7e74d4d321ca9f",
+      "rawResponse": "{\"message\":\"Based on the information, Site B is the most promising for artifact recovery due to its stable ground and undisturbed topsoil, which increases the likelihood of finding artifacts in good condition. Site A's frequent flooding poses a risk to artifact preservation, and while Site C's rodent burrows are abandoned, the rocky soil may still hinder excavation. Therefore, Site B offers the best balance of stability and potential for successful recovery.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Site A\":0.1,\"Site B\":0.8,\"Site C\":0.1}},\"evidence\":[{\"content\":\"Site B: Plateau, stable ground, topsoil is soft and undisturbed.\",\"relation\":\"supports\"},{\"content\":\"Site A: Riverbank, frequent flooding in spring, unknown artifact depth.\",\"relation\":\"attacks\"},{\"content\":\"Site C: Woods edge, soil is rocky, some evidence of rodent burrows.\",\"relation\":\"attacks\"},{\"content\":\"In a recent survey, Site C’s rodent burrows were found to be abandoned, with no damage to deep soil layers.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 493,
+        "completionTokens": 303,
+        "totalTokens": 796,
+        "latencyMs": 11469
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:2",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou and three colleagues are archaeologists tasked with selecting a site to salvage crucial artifacts before construction begins. There are tight time constraints: you can only pick one location, and you must choose by the end of the hour. There are three candidate sites: Site A, Site B, and Site C. You must maximize your chances of a successful recovery, as failure means the artifacts may be lost forever.\n\nShared information:\n1. Site A: Riverbank, frequent flooding in spring, unknown artifact depth.\n2. Site B: Plateau, stable ground, topsoil is soft and undisturbed.\n3. Site C: Woods edge, soil is rocky, some evidence of rodent burrows.\n4. The main developer has announced all construction will start tomorrow, but precise order is unknown.\n\nYour private information:\nYou overheard that Site A is predicted to flood tonight due to sudden rain upstream.\n\nVisible discussion transcript:\n(none)\n\nClaim claim:hiddenbench:57:answer: Select the single correct answer for HiddenBench task 57 (archaeological_dig_site).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Site A | Site B | Site C. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Site A\": 0.5, \"Site B\": 0.2500, \"Site C\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:9d4c0a59f8418e744c775d94f29cb1b77f10135b29b9d91c717e23d43e32f2c3",
+      "responseHash": "sha256:b552cac2b7caae96f1a35b7165eb83a761f63391a41fb35e96d74be37b025727",
+      "rawResponse": "{\"message\":\"Based on the private information about the imminent flood at Site A, it is no longer a viable option. Site B offers stable, undisturbed ground, making it the most promising for a successful recovery. Site C's rocky soil and rodent activity present significant challenges. Therefore, Site B is the optimal choice.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Site A\":0.0,\"Site B\":0.9,\"Site C\":0.1}},\"evidence\":[{\"content\":\"Site A is predicted to flood tonight due to sudden rain upstream.\",\"relation\":\"attacks\"},{\"content\":\"Site B has stable ground and soft, undisturbed topsoil.\",\"relation\":\"supports\"},{\"content\":\"Site C has rocky soil and rodent burrows.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 484,
+        "completionTokens": 223,
+        "totalTokens": 707,
+        "latencyMs": 5970
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:3",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou and three colleagues are archaeologists tasked with selecting a site to salvage crucial artifacts before construction begins. There are tight time constraints: you can only pick one location, and you must choose by the end of the hour. There are three candidate sites: Site A, Site B, and Site C. You must maximize your chances of a successful recovery, as failure means the artifacts may be lost forever.\n\nShared information:\n1. Site A: Riverbank, frequent flooding in spring, unknown artifact depth.\n2. Site B: Plateau, stable ground, topsoil is soft and undisturbed.\n3. Site C: Woods edge, soil is rocky, some evidence of rodent burrows.\n4. The main developer has announced all construction will start tomorrow, but precise order is unknown.\n\nYour private information:\nYou have seen construction crews preparing explosive charges at Site B because blasting for foundations is scheduled for the morning.\n\nVisible discussion transcript:\n(none)\n\nClaim claim:hiddenbench:57:answer: Select the single correct answer for HiddenBench task 57 (archaeological_dig_site).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Site A | Site B | Site C. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Site A\": 0.5, \"Site B\": 0.2500, \"Site C\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:7ba1f140795f40173d58b7c65132527574476fb04e7b83e7f57dc6f45d87faa5",
+      "responseHash": "sha256:02b3e6b45b7e93dfb37d458eb56a3ecd03353059e257b52337f04c929813f8f2",
+      "rawResponse": "{\"message\":\"Site B is the most urgent choice due to the imminent blasting, which poses an immediate threat to artifacts. While Site A's flooding is a risk, it is seasonal and less immediate than the planned construction activity at Site B. Site C's rocky soil and rodent burrows suggest lower artifact preservation potential compared to Site B's undisturbed topsoil. Prioritizing Site B maximizes the chance of salvaging artifacts before destruction.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Site A\":0.15,\"Site B\":0.75,\"Site C\":0.10}},\"evidence\":[{\"content\":\"Construction crews are preparing explosive charges at Site B for blasting tomorrow morning.\",\"relation\":\"supports\"},{\"content\":\"Site B has stable ground with soft, undisturbed topsoil, indicating higher potential for artifact preservation.\",\"relation\":\"supports\"},{\"content\":\"Site A's frequent spring flooding is a seasonal risk, less immediate than Site B's imminent blasting.\",\"relation\":\"supports\"},{\"content\":\"Site C's rocky soil and rodent burrows suggest lower artifact preservation potential compared to Site B.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 488,
+        "completionTokens": 301,
+        "totalTokens": 789,
+        "latencyMs": 10304
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:57:seed-1:r1:agent:hiddenbench:57:4",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou and three colleagues are archaeologists tasked with selecting a site to salvage crucial artifacts before construction begins. There are tight time constraints: you can only pick one location, and you must choose by the end of the hour. There are three candidate sites: Site A, Site B, and Site C. You must maximize your chances of a successful recovery, as failure means the artifacts may be lost forever.\n\nShared information:\n1. Site A: Riverbank, frequent flooding in spring, unknown artifact depth.\n2. Site B: Plateau, stable ground, topsoil is soft and undisturbed.\n3. Site C: Woods edge, soil is rocky, some evidence of rodent burrows.\n4. The main developer has announced all construction will start tomorrow, but precise order is unknown.\n\nYour private information:\nSite A’s access road is being closed off for bridge repairs overnight and won't reopen for two days.\n\nVisible discussion transcript:\n(none)\n\nClaim claim:hiddenbench:57:answer: Select the single correct answer for HiddenBench task 57 (archaeological_dig_site).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Site A | Site B | Site C. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Site A\": 0.5, \"Site B\": 0.2500, \"Site C\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:3a817f52baef3af1a37817e4617375fe6aa6fe258d15d25498b2c1ff171a85d0",
+      "responseHash": "sha256:451cce54a40acde87b316fef11ec8a9c150b542663c2baf4d606e4c6e358e63d",
+      "rawResponse": "{\"message\":\"Site B is the most promising choice due to its stable ground and undisturbed topsoil, which increases the likelihood of successful artifact recovery. Site A is inaccessible due to road closures, and Site C's rocky soil and rodent burrows pose significant challenges.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Site A\":0.0,\"Site B\":0.8,\"Site C\":0.2}},\"evidence\":[{\"content\":\"Site A’s access road is being closed off for bridge repairs overnight and won't reopen for two days.\",\"relation\":\"attacks\"},{\"content\":\"Site B: Plateau, stable ground, topsoil is soft and undisturbed.\",\"relation\":\"supports\"},{\"content\":\"Site C: Woods edge, soil is rocky, some evidence of rodent burrows.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 488,
+        "completionTokens": 232,
+        "totalTokens": 720,
+        "latencyMs": 9594
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:1",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou and three colleagues are archaeologists tasked with selecting a site to salvage crucial artifacts before construction begins. There are tight time constraints: you can only pick one location, and you must choose by the end of the hour. There are three candidate sites: Site A, Site B, and Site C. You must maximize your chances of a successful recovery, as failure means the artifacts may be lost forever.\n\nShared information:\n1. Site A: Riverbank, frequent flooding in spring, unknown artifact depth.\n2. Site B: Plateau, stable ground, topsoil is soft and undisturbed.\n3. Site C: Woods edge, soil is rocky, some evidence of rodent burrows.\n4. The main developer has announced all construction will start tomorrow, but precise order is unknown.\n\nYour private information:\nIn a recent survey, Site C’s rodent burrows were found to be abandoned, with no damage to deep soil layers.\n\nVisible discussion transcript:\n[round 1] agent:hiddenbench:57:1: Based on the information, Site B is the most promising for artifact recovery due to its stable ground and undisturbed topsoil, which increases the likelihood of finding artifacts in good condition. Site A's frequent flooding poses a risk to artifact preservation, and while Site C's rodent burrows are abandoned, the rocky soil may still hinder excavation. Therefore, Site B offers the best balance of stability and potential for successful recovery.\n[round 1] agent:hiddenbench:57:2: Based on the private information about the imminent flood at Site A, it is no longer a viable option. Site B offers stable, undisturbed ground, making it the most promising for a successful recovery. Site C's rocky soil and rodent activity present significant challenges. Therefore, Site B is the optimal choice.\n[round 1] agent:hiddenbench:57:3: Site B is the most urgent choice due to the imminent blasting, which poses an immediate threat to artifacts. While Site A's flooding is a risk, it is seasonal and less immediate than the planned construction activity at Site B. Site C's rocky soil and rodent burrows suggest lower artifact preservation potential compared to Site B's undisturbed topsoil. Prioritizing Site B maximizes the chance of salvaging artifacts before destruction.\n[round 1] agent:hiddenbench:57:4: Site B is the most promising choice due to its stable ground and undisturbed topsoil, which increases the likelihood of successful artifact recovery. Site A is inaccessible due to road closures, and Site C's rocky soil and rodent burrows pose significant challenges.\n\nClaim claim:hiddenbench:57:answer: Select the single correct answer for HiddenBench task 57 (archaeological_dig_site).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Site A | Site B | Site C. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Site A\": 0.5, \"Site B\": 0.2500, \"Site C\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:16304a0bf335d3bcdc295d1207dc94bd176b577092d809866e9f4c9e215f5fc1",
+      "responseHash": "sha256:44195c8ba1fd097cba844d4f155e61d86c16818e67964fd84eee9d0f6cd6e748",
+      "rawResponse": "{\"message\":\"Site B is the optimal choice due to its stable ground and undisturbed topsoil, which maximizes the likelihood of successful artifact recovery. Site A's frequent flooding poses preservation risks, and Site C's rocky soil and rodent burrows (even if abandoned) hinder excavation. The shared consensus and Site B's inherent advantages make it the most promising option.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Site A\":0.05,\"Site B\":0.90,\"Site C\":0.05}},\"evidence\":[{\"content\":\"Site B: Plateau, stable ground, topsoil is soft and undisturbed.\",\"relation\":\"supports\"},{\"content\":\"Site A: Riverbank, frequent flooding in spring, unknown artifact depth.\",\"relation\":\"attacks\"},{\"content\":\"Site C: Woods edge, soil is rocky, some evidence of rodent burrows.\",\"relation\":\"attacks\"},{\"content\":\"All agents in the discussion prioritized Site B as the most promising choice.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 832,
+        "completionTokens": 277,
+        "totalTokens": 1109,
+        "latencyMs": 7903
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:2",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou and three colleagues are archaeologists tasked with selecting a site to salvage crucial artifacts before construction begins. There are tight time constraints: you can only pick one location, and you must choose by the end of the hour. There are three candidate sites: Site A, Site B, and Site C. You must maximize your chances of a successful recovery, as failure means the artifacts may be lost forever.\n\nShared information:\n1. Site A: Riverbank, frequent flooding in spring, unknown artifact depth.\n2. Site B: Plateau, stable ground, topsoil is soft and undisturbed.\n3. Site C: Woods edge, soil is rocky, some evidence of rodent burrows.\n4. The main developer has announced all construction will start tomorrow, but precise order is unknown.\n\nYour private information:\nYou overheard that Site A is predicted to flood tonight due to sudden rain upstream.\n\nVisible discussion transcript:\n[round 1] agent:hiddenbench:57:1: Based on the information, Site B is the most promising for artifact recovery due to its stable ground and undisturbed topsoil, which increases the likelihood of finding artifacts in good condition. Site A's frequent flooding poses a risk to artifact preservation, and while Site C's rodent burrows are abandoned, the rocky soil may still hinder excavation. Therefore, Site B offers the best balance of stability and potential for successful recovery.\n[round 1] agent:hiddenbench:57:2: Based on the private information about the imminent flood at Site A, it is no longer a viable option. Site B offers stable, undisturbed ground, making it the most promising for a successful recovery. Site C's rocky soil and rodent activity present significant challenges. Therefore, Site B is the optimal choice.\n[round 1] agent:hiddenbench:57:3: Site B is the most urgent choice due to the imminent blasting, which poses an immediate threat to artifacts. While Site A's flooding is a risk, it is seasonal and less immediate than the planned construction activity at Site B. Site C's rocky soil and rodent burrows suggest lower artifact preservation potential compared to Site B's undisturbed topsoil. Prioritizing Site B maximizes the chance of salvaging artifacts before destruction.\n[round 1] agent:hiddenbench:57:4: Site B is the most promising choice due to its stable ground and undisturbed topsoil, which increases the likelihood of successful artifact recovery. Site A is inaccessible due to road closures, and Site C's rocky soil and rodent burrows pose significant challenges.\n\nClaim claim:hiddenbench:57:answer: Select the single correct answer for HiddenBench task 57 (archaeological_dig_site).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Site A | Site B | Site C. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Site A\": 0.5, \"Site B\": 0.2500, \"Site C\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:574826f0df4a23b1995a71ca33bcdfcee0271feacd66af27feb8e2a409f7db1b",
+      "responseHash": "sha256:d10f546e40a0901ffec6e8d662367b484bf6e76120537952ecfbd49ef3be1847",
+      "rawResponse": "{\"message\":\"Site B is the optimal choice due to its stable, undisturbed topsoil, which maximizes the likelihood of successful artifact recovery. The imminent flood at Site A makes it inaccessible, and Site C's rocky soil and rodent burrows pose significant excavation challenges. Prioritizing Site B ensures the best chance of salvaging artifacts before construction begins.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Site A\":0.0,\"Site B\":1.0,\"Site C\":0.0}},\"evidence\":[{\"content\":\"Site B: Plateau, stable ground, topsoil is soft and undisturbed.\",\"relation\":\"supports\"},{\"content\":\"Site A is predicted to flood tonight due to sudden rain upstream.\",\"relation\":\"attacks\"},{\"content\":\"Site C: Woods edge, soil is rocky, some evidence of rodent burrows.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 823,
+        "completionTokens": 242,
+        "totalTokens": 1065,
+        "latencyMs": 7394
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:3",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou and three colleagues are archaeologists tasked with selecting a site to salvage crucial artifacts before construction begins. There are tight time constraints: you can only pick one location, and you must choose by the end of the hour. There are three candidate sites: Site A, Site B, and Site C. You must maximize your chances of a successful recovery, as failure means the artifacts may be lost forever.\n\nShared information:\n1. Site A: Riverbank, frequent flooding in spring, unknown artifact depth.\n2. Site B: Plateau, stable ground, topsoil is soft and undisturbed.\n3. Site C: Woods edge, soil is rocky, some evidence of rodent burrows.\n4. The main developer has announced all construction will start tomorrow, but precise order is unknown.\n\nYour private information:\nYou have seen construction crews preparing explosive charges at Site B because blasting for foundations is scheduled for the morning.\n\nVisible discussion transcript:\n[round 1] agent:hiddenbench:57:1: Based on the information, Site B is the most promising for artifact recovery due to its stable ground and undisturbed topsoil, which increases the likelihood of finding artifacts in good condition. Site A's frequent flooding poses a risk to artifact preservation, and while Site C's rodent burrows are abandoned, the rocky soil may still hinder excavation. Therefore, Site B offers the best balance of stability and potential for successful recovery.\n[round 1] agent:hiddenbench:57:2: Based on the private information about the imminent flood at Site A, it is no longer a viable option. Site B offers stable, undisturbed ground, making it the most promising for a successful recovery. Site C's rocky soil and rodent activity present significant challenges. Therefore, Site B is the optimal choice.\n[round 1] agent:hiddenbench:57:3: Site B is the most urgent choice due to the imminent blasting, which poses an immediate threat to artifacts. While Site A's flooding is a risk, it is seasonal and less immediate than the planned construction activity at Site B. Site C's rocky soil and rodent burrows suggest lower artifact preservation potential compared to Site B's undisturbed topsoil. Prioritizing Site B maximizes the chance of salvaging artifacts before destruction.\n[round 1] agent:hiddenbench:57:4: Site B is the most promising choice due to its stable ground and undisturbed topsoil, which increases the likelihood of successful artifact recovery. Site A is inaccessible due to road closures, and Site C's rocky soil and rodent burrows pose significant challenges.\n\nClaim claim:hiddenbench:57:answer: Select the single correct answer for HiddenBench task 57 (archaeological_dig_site).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Site A | Site B | Site C. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Site A\": 0.5, \"Site B\": 0.2500, \"Site C\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:1927d590f1502ea6d1afe25d89044b8e40b67aa947881fdef0fb0da74ae29a60",
+      "responseHash": "sha256:298b11b2933efecec0c1b686dbfd0f9d3b4178de7224611424b58e75e5519cc9",
+      "rawResponse": "{\"message\":\"Site B is the most urgent and promising choice due to the imminent blasting, which poses an immediate threat to artifacts. Its stable ground and undisturbed topsoil increase the likelihood of successful recovery, while Site A's flooding is seasonal and less immediate, and Site C's rocky soil and rodent burrows suggest lower preservation potential.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Site A\":0.0,\"Site B\":1.0,\"Site C\":0.0}},\"evidence\":[{\"content\":\"Site B: Plateau, stable ground, topsoil is soft and undisturbed.\",\"relation\":\"supports\"},{\"content\":\"You have seen construction crews preparing explosive charges at Site B because blasting for foundations is scheduled for the morning.\",\"relation\":\"supports\"},{\"content\":\"Site A: Riverbank, frequent flooding in spring, unknown artifact depth.\",\"relation\":\"attacks\"},{\"content\":\"Site C: Woods edge, soil is rocky, some evidence of rodent burrows.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 827,
+        "completionTokens": 277,
+        "totalTokens": 1104,
+        "latencyMs": 10741
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:57:seed-1:r2:agent:hiddenbench:57:4",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou and three colleagues are archaeologists tasked with selecting a site to salvage crucial artifacts before construction begins. There are tight time constraints: you can only pick one location, and you must choose by the end of the hour. There are three candidate sites: Site A, Site B, and Site C. You must maximize your chances of a successful recovery, as failure means the artifacts may be lost forever.\n\nShared information:\n1. Site A: Riverbank, frequent flooding in spring, unknown artifact depth.\n2. Site B: Plateau, stable ground, topsoil is soft and undisturbed.\n3. Site C: Woods edge, soil is rocky, some evidence of rodent burrows.\n4. The main developer has announced all construction will start tomorrow, but precise order is unknown.\n\nYour private information:\nSite A’s access road is being closed off for bridge repairs overnight and won't reopen for two days.\n\nVisible discussion transcript:\n[round 1] agent:hiddenbench:57:1: Based on the information, Site B is the most promising for artifact recovery due to its stable ground and undisturbed topsoil, which increases the likelihood of finding artifacts in good condition. Site A's frequent flooding poses a risk to artifact preservation, and while Site C's rodent burrows are abandoned, the rocky soil may still hinder excavation. Therefore, Site B offers the best balance of stability and potential for successful recovery.\n[round 1] agent:hiddenbench:57:2: Based on the private information about the imminent flood at Site A, it is no longer a viable option. Site B offers stable, undisturbed ground, making it the most promising for a successful recovery. Site C's rocky soil and rodent activity present significant challenges. Therefore, Site B is the optimal choice.\n[round 1] agent:hiddenbench:57:3: Site B is the most urgent choice due to the imminent blasting, which poses an immediate threat to artifacts. While Site A's flooding is a risk, it is seasonal and less immediate than the planned construction activity at Site B. Site C's rocky soil and rodent burrows suggest lower artifact preservation potential compared to Site B's undisturbed topsoil. Prioritizing Site B maximizes the chance of salvaging artifacts before destruction.\n[round 1] agent:hiddenbench:57:4: Site B is the most promising choice due to its stable ground and undisturbed topsoil, which increases the likelihood of successful artifact recovery. Site A is inaccessible due to road closures, and Site C's rocky soil and rodent burrows pose significant challenges.\n\nClaim claim:hiddenbench:57:answer: Select the single correct answer for HiddenBench task 57 (archaeological_dig_site).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Site A | Site B | Site C. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Site A\": 0.5, \"Site B\": 0.2500, \"Site C\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:4256919b55c5a043c14d1685ead106de4da90c9843fb44b9d080c6c2847cb50e",
+      "responseHash": "sha256:9c87e38ffb0e83753bbe23594bd926640041ba4427fc12aa04e168d4cd7c748c",
+      "rawResponse": "{\"message\":\"Site B is the optimal choice due to its stable, undisturbed topsoil, which maximizes the likelihood of successful artifact recovery. Site A is inaccessible due to road closures, and Site C's rocky soil and rodent burrows pose significant challenges.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Site A\":0.0,\"Site B\":1.0,\"Site C\":0.0}},\"evidence\":[{\"content\":\"Site B: Plateau, stable ground, topsoil is soft and undisturbed.\",\"relation\":\"supports\"},{\"content\":\"Site A’s access road is being closed off for bridge repairs overnight and won't reopen for two days.\",\"relation\":\"attacks\"},{\"content\":\"Site C: Woods edge, soil is rocky, some evidence of rodent burrows.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 827,
+        "completionTokens": 231,
+        "totalTokens": 1058,
+        "latencyMs": 8093
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:1",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou and three colleagues are archaeologists tasked with selecting a site to salvage crucial artifacts before construction begins. There are tight time constraints: you can only pick one location, and you must choose by the end of the hour. There are three candidate sites: Site A, Site B, and Site C. You must maximize your chances of a successful recovery, as failure means the artifacts may be lost forever.\n\nShared information:\n1. Site A: Riverbank, frequent flooding in spring, unknown artifact depth.\n2. Site B: Plateau, stable ground, topsoil is soft and undisturbed.\n3. Site C: Woods edge, soil is rocky, some evidence of rodent burrows.\n4. The main developer has announced all construction will start tomorrow, but precise order is unknown.\n\nYour private information:\nIn a recent survey, Site C’s rodent burrows were found to be abandoned, with no damage to deep soil layers.\n\nVisible discussion transcript:\n[round 2] agent:hiddenbench:57:1: Site B is the optimal choice due to its stable ground and undisturbed topsoil, which maximizes the likelihood of successful artifact recovery. Site A's frequent flooding poses preservation risks, and Site C's rocky soil and rodent burrows (even if abandoned) hinder excavation. The shared consensus and Site B's inherent advantages make it the most promising option.\n[round 2] agent:hiddenbench:57:2: Site B is the optimal choice due to its stable, undisturbed topsoil, which maximizes the likelihood of successful artifact recovery. The imminent flood at Site A makes it inaccessible, and Site C's rocky soil and rodent burrows pose significant excavation challenges. Prioritizing Site B ensures the best chance of salvaging artifacts before construction begins.\n[round 2] agent:hiddenbench:57:3: Site B is the most urgent and promising choice due to the imminent blasting, which poses an immediate threat to artifacts. Its stable ground and undisturbed topsoil increase the likelihood of successful recovery, while Site A's flooding is seasonal and less immediate, and Site C's rocky soil and rodent burrows suggest lower preservation potential.\n[round 2] agent:hiddenbench:57:4: Site B is the optimal choice due to its stable, undisturbed topsoil, which maximizes the likelihood of successful artifact recovery. Site A is inaccessible due to road closures, and Site C's rocky soil and rodent burrows pose significant challenges.\n\nClaim claim:hiddenbench:57:answer: Select the single correct answer for HiddenBench task 57 (archaeological_dig_site).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Site A | Site B | Site C. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Site A\": 0.5, \"Site B\": 0.2500, \"Site C\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:218b873826407d4f8b1fc5120e67c057b2d019105a10dc5301ddb33035537299",
+      "responseHash": "sha256:c92887f0b45062eee0446739b1cf2f20f8301a8c114fd8807fc4e777362dec69",
+      "rawResponse": "{\"message\":\"Site B is the optimal choice due to its stable ground and undisturbed topsoil, which maximizes the likelihood of successful artifact recovery. Site A's frequent flooding poses preservation risks, and Site C's rocky soil and rodent burrows (even if abandoned) hinder excavation. The shared consensus and Site B's inherent advantages make it the most promising option.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Site A\":0.0,\"Site B\":1.0,\"Site C\":0.0}},\"evidence\":[{\"content\":\"Site B: Plateau, stable ground, topsoil is soft and undisturbed.\",\"relation\":\"supports\"},{\"content\":\"Site A: Riverbank, frequent flooding in spring, unknown artifact depth.\",\"relation\":\"attacks\"},{\"content\":\"Site C: Woods edge, soil is rocky, some evidence of rodent burrows.\",\"relation\":\"attacks\"},{\"content\":\"In a recent survey, Site C’s rodent burrows were found to be abandoned, with no damage to deep soil layers.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 805,
+        "completionTokens": 288,
+        "totalTokens": 1093,
+        "latencyMs": 13544
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:2",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou and three colleagues are archaeologists tasked with selecting a site to salvage crucial artifacts before construction begins. There are tight time constraints: you can only pick one location, and you must choose by the end of the hour. There are three candidate sites: Site A, Site B, and Site C. You must maximize your chances of a successful recovery, as failure means the artifacts may be lost forever.\n\nShared information:\n1. Site A: Riverbank, frequent flooding in spring, unknown artifact depth.\n2. Site B: Plateau, stable ground, topsoil is soft and undisturbed.\n3. Site C: Woods edge, soil is rocky, some evidence of rodent burrows.\n4. The main developer has announced all construction will start tomorrow, but precise order is unknown.\n\nYour private information:\nYou overheard that Site A is predicted to flood tonight due to sudden rain upstream.\n\nVisible discussion transcript:\n[round 2] agent:hiddenbench:57:1: Site B is the optimal choice due to its stable ground and undisturbed topsoil, which maximizes the likelihood of successful artifact recovery. Site A's frequent flooding poses preservation risks, and Site C's rocky soil and rodent burrows (even if abandoned) hinder excavation. The shared consensus and Site B's inherent advantages make it the most promising option.\n[round 2] agent:hiddenbench:57:2: Site B is the optimal choice due to its stable, undisturbed topsoil, which maximizes the likelihood of successful artifact recovery. The imminent flood at Site A makes it inaccessible, and Site C's rocky soil and rodent burrows pose significant excavation challenges. Prioritizing Site B ensures the best chance of salvaging artifacts before construction begins.\n[round 2] agent:hiddenbench:57:3: Site B is the most urgent and promising choice due to the imminent blasting, which poses an immediate threat to artifacts. Its stable ground and undisturbed topsoil increase the likelihood of successful recovery, while Site A's flooding is seasonal and less immediate, and Site C's rocky soil and rodent burrows suggest lower preservation potential.\n[round 2] agent:hiddenbench:57:4: Site B is the optimal choice due to its stable, undisturbed topsoil, which maximizes the likelihood of successful artifact recovery. Site A is inaccessible due to road closures, and Site C's rocky soil and rodent burrows pose significant challenges.\n\nClaim claim:hiddenbench:57:answer: Select the single correct answer for HiddenBench task 57 (archaeological_dig_site).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Site A | Site B | Site C. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Site A\": 0.5, \"Site B\": 0.2500, \"Site C\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:d2b45892404ae99a5e90af539bf8b5c5daedfa4045cc8a4f92d9a57a1298fefa",
+      "responseHash": "sha256:8d7b6f70178c8d9eba1ef8dc42503f99c140dc4b5b96a41e08fc4675e9a70482",
+      "rawResponse": "{\"message\":\"Site B is the optimal choice due to its stable, undisturbed topsoil, which maximizes the likelihood of successful artifact recovery. Site A is inaccessible due to the imminent flood, and Site C's rocky soil and rodent burrows pose significant excavation challenges.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Site A\":0.0,\"Site B\":1.0,\"Site C\":0.0}},\"evidence\":[{\"content\":\"Site B: Plateau, stable ground, topsoil is soft and undisturbed.\",\"relation\":\"supports\"},{\"content\":\"Site A is predicted to flood tonight due to sudden rain upstream.\",\"relation\":\"attacks\"},{\"content\":\"Site C: Woods edge, soil is rocky, some evidence of rodent burrows.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 796,
+        "completionTokens": 225,
+        "totalTokens": 1021,
+        "latencyMs": 10682
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:3",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou and three colleagues are archaeologists tasked with selecting a site to salvage crucial artifacts before construction begins. There are tight time constraints: you can only pick one location, and you must choose by the end of the hour. There are three candidate sites: Site A, Site B, and Site C. You must maximize your chances of a successful recovery, as failure means the artifacts may be lost forever.\n\nShared information:\n1. Site A: Riverbank, frequent flooding in spring, unknown artifact depth.\n2. Site B: Plateau, stable ground, topsoil is soft and undisturbed.\n3. Site C: Woods edge, soil is rocky, some evidence of rodent burrows.\n4. The main developer has announced all construction will start tomorrow, but precise order is unknown.\n\nYour private information:\nYou have seen construction crews preparing explosive charges at Site B because blasting for foundations is scheduled for the morning.\n\nVisible discussion transcript:\n[round 2] agent:hiddenbench:57:1: Site B is the optimal choice due to its stable ground and undisturbed topsoil, which maximizes the likelihood of successful artifact recovery. Site A's frequent flooding poses preservation risks, and Site C's rocky soil and rodent burrows (even if abandoned) hinder excavation. The shared consensus and Site B's inherent advantages make it the most promising option.\n[round 2] agent:hiddenbench:57:2: Site B is the optimal choice due to its stable, undisturbed topsoil, which maximizes the likelihood of successful artifact recovery. The imminent flood at Site A makes it inaccessible, and Site C's rocky soil and rodent burrows pose significant excavation challenges. Prioritizing Site B ensures the best chance of salvaging artifacts before construction begins.\n[round 2] agent:hiddenbench:57:3: Site B is the most urgent and promising choice due to the imminent blasting, which poses an immediate threat to artifacts. Its stable ground and undisturbed topsoil increase the likelihood of successful recovery, while Site A's flooding is seasonal and less immediate, and Site C's rocky soil and rodent burrows suggest lower preservation potential.\n[round 2] agent:hiddenbench:57:4: Site B is the optimal choice due to its stable, undisturbed topsoil, which maximizes the likelihood of successful artifact recovery. Site A is inaccessible due to road closures, and Site C's rocky soil and rodent burrows pose significant challenges.\n\nClaim claim:hiddenbench:57:answer: Select the single correct answer for HiddenBench task 57 (archaeological_dig_site).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Site A | Site B | Site C. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Site A\": 0.5, \"Site B\": 0.2500, \"Site C\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:1d70ce553575bce4a03d0ab8a1b006c4960d7cd15348db438fdca54bb5ad2b1c",
+      "responseHash": "sha256:199af6691c753ab6888e3b38363e7ff09a05d42421d1940ed616ab7ce65e6c96",
+      "rawResponse": "{\"message\":\"Site B is the optimal choice due to its stable ground and undisturbed topsoil, which maximizes the likelihood of successful artifact recovery. The imminent blasting at Site B poses an immediate threat to artifacts, making it the most urgent and promising option. Site A's frequent flooding is less immediate, and Site C's rocky soil and rodent burrows suggest lower preservation potential.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Site A\":0.0,\"Site B\":1.0,\"Site C\":0.0}},\"evidence\":[{\"content\":\"Site B: Plateau, stable ground, topsoil is soft and undisturbed.\",\"relation\":\"supports\"},{\"content\":\"You have seen construction crews preparing explosive charges at Site B because blasting for foundations is scheduled for the morning.\",\"relation\":\"supports\"},{\"content\":\"Site A: Riverbank, frequent flooding in spring, unknown artifact depth.\",\"relation\":\"attacks\"},{\"content\":\"Site C: Woods edge, soil is rocky, some evidence of rodent burrows.\",\"relation\":\"attacks\"}]}",
+      "usage": {
+        "promptTokens": 800,
+        "completionTokens": 286,
+        "totalTokens": 1086,
+        "latencyMs": 8386
+      }
+    },
+    {
+      "requestId": "discussion:collective-dynamics:57:seed-1:r3:agent:hiddenbench:57:4",
+      "systemPrompt": "You are an analyst in a multi-agent group discussion. Report your final belief as strict JSON.",
+      "userPrompt": "Task public context:\nYou and three colleagues are archaeologists tasked with selecting a site to salvage crucial artifacts before construction begins. There are tight time constraints: you can only pick one location, and you must choose by the end of the hour. There are three candidate sites: Site A, Site B, and Site C. You must maximize your chances of a successful recovery, as failure means the artifacts may be lost forever.\n\nShared information:\n1. Site A: Riverbank, frequent flooding in spring, unknown artifact depth.\n2. Site B: Plateau, stable ground, topsoil is soft and undisturbed.\n3. Site C: Woods edge, soil is rocky, some evidence of rodent burrows.\n4. The main developer has announced all construction will start tomorrow, but precise order is unknown.\n\nYour private information:\nSite A’s access road is being closed off for bridge repairs overnight and won't reopen for two days.\n\nVisible discussion transcript:\n[round 2] agent:hiddenbench:57:1: Site B is the optimal choice due to its stable ground and undisturbed topsoil, which maximizes the likelihood of successful artifact recovery. Site A's frequent flooding poses preservation risks, and Site C's rocky soil and rodent burrows (even if abandoned) hinder excavation. The shared consensus and Site B's inherent advantages make it the most promising option.\n[round 2] agent:hiddenbench:57:2: Site B is the optimal choice due to its stable, undisturbed topsoil, which maximizes the likelihood of successful artifact recovery. The imminent flood at Site A makes it inaccessible, and Site C's rocky soil and rodent burrows pose significant excavation challenges. Prioritizing Site B ensures the best chance of salvaging artifacts before construction begins.\n[round 2] agent:hiddenbench:57:3: Site B is the most urgent and promising choice due to the imminent blasting, which poses an immediate threat to artifacts. Its stable ground and undisturbed topsoil increase the likelihood of successful recovery, while Site A's flooding is seasonal and less immediate, and Site C's rocky soil and rodent burrows suggest lower preservation potential.\n[round 2] agent:hiddenbench:57:4: Site B is the optimal choice due to its stable, undisturbed topsoil, which maximizes the likelihood of successful artifact recovery. Site A is inaccessible due to road closures, and Site C's rocky soil and rodent burrows pose significant challenges.\n\nClaim claim:hiddenbench:57:answer: Select the single correct answer for HiddenBench task 57 (archaeological_dig_site).\n\nReturn exactly one strict JSON object with fields: message (string), belief ({kind:'categorical', probabilities:{...}}), evidence (array of {content, relation:'supports'|'attacks', lineageId?}). The probabilities object must contain exactly these canonical options in this order and sum to 1: Site A | Site B | Site C. Example: {\"message\": \"My assessment.\", \"belief\": {\"kind\": \"categorical\", \"probabilities\": {\"Site A\": 0.5, \"Site B\": 0.2500, \"Site C\": 0.2500}}, \"evidence\": [{\"content\": \"Observed fact.\", \"relation\": \"supports\"}]}. For each evidence item, \"lineageId\" must be omitted unless you know a non-empty string for it; never output \"lineageId\": null. No other fields.",
+      "modelRef": {
+        "id": "zhipu:glm-4.6v",
+        "version": "1.0.0"
+      },
+      "invocationConfig": {
+        "temperature": 0,
+        "seed": 1,
+        "maxTokens": 768,
+        "thinking": "disabled"
+      },
+      "requestHash": "sha256:874743a63d47b5c0b06824209622e6d05619634854a9d643c168d6d8bfb840d5",
+      "responseHash": "sha256:35ada3398ce70ecb7a7e55fb9eedfbd9cab5414e8e2e7f9baf8625a2917a3e65",
+      "rawResponse": "{\"message\":\"Site B is the optimal choice due to its stable, undisturbed topsoil, which maximizes the likelihood of successful artifact recovery. Site A is inaccessible due to road closures, and Site C's rocky soil and rodent burrows pose significant challenges.\",\"belief\":{\"kind\":\"categorical\",\"probabilities\":{\"Site A\":0.0,\"Site B\":1.0,\"Site C\":0.0}},\"evidence\":[{\"content\":\"Site B: Plateau, stable ground, topsoil is soft and undisturbed.\",\"relation\":\"supports\"},{\"content\":\"Site A’s access road is being closed off for bridge repairs overnight and won't reopen for two days.\",\"relation\":\"supports\"},{\"content\":\"Site C: Woods edge, soil is rocky, some evidence of rodent burrows.\",\"relation\":\"supports\"}]}",
+      "usage": {
+        "promptTokens": 800,
+        "completionTokens": 231,
+        "totalTokens": 1031,
+        "latencyMs": 7949
+      }
+    }
+  ],
+  "r3SnapshotHash": "sha256:4bcfa52bb2527aaf68588a6c01db1841bab6f1a134fee242df011e64e31b6c6b",
+  "contentHash": "sha256:63d8c1422a8591dc394a967e6c128d778df1c1ffc8aa3d67b50f754068e32254"
+}

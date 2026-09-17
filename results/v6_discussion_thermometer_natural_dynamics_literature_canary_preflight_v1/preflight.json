@@ -1,0 +1,57 @@
+{
+  "preflightRef": {
+    "id": "swarmalpha.preflight.v6.discussion-thermometer-natural-dynamics-literature-canary",
+    "version": "1.0.0",
+    "providerCalls": 0
+  },
+  "planHash": "sha256:ffdd7c4f48cab5c2f874f9075ecd3fb6709bee4c16456a6f346db0a491c591cf",
+  "manifestHash": "sha256:c614018f13c11b5e9435135949bb2af67e11174d3371c83b00835131a6fd6625",
+  "taskBankHash": "sha256:c151dba4f9767d40d69946710f4e35995ec170ef0e38fb3658f2898fc6c3e434",
+  "providerCalls": 0,
+  "checks": [
+    {
+      "id": "OFFICIAL_SOURCE_BINDING",
+      "pass": true,
+      "detail": "The canary is sourced from the pinned official HiddenBench content."
+    },
+    {
+      "id": "PUBLISHED_MANUAL_ADAPTATION_SCOPE",
+      "pass": true,
+      "detail": "Only the two official manual/adapted 3-agent, 4-option tasks are selected."
+    },
+    {
+      "id": "VARIABLE_ROSTER_AND_OPTION_COUNT",
+      "pass": true,
+      "detail": "This is the smallest canary that tests non-4-agent and non-3-option support."
+    },
+    {
+      "id": "UNCHANGED_OBSERVATION_DEPTH",
+      "pass": true,
+      "detail": "Discussion depth and duplicate-adjusted observation are unchanged."
+    },
+    {
+      "id": "CALL_BUDGET_ARITHMETIC",
+      "pass": true,
+      "detail": "24 public + 60 sensor = 84 provider calls."
+    },
+    {
+      "id": "TRUTH_FIREWALL",
+      "pass": true,
+      "detail": "The online prompt receives no correct answer or resolver outcome."
+    },
+    {
+      "id": "TASK_BANK_BINDING",
+      "pass": true,
+      "detail": "The plan binds the exact projected task-bank hash."
+    },
+    {
+      "id": "NO_EXECUTION_AUTHORITY",
+      "pass": true,
+      "detail": "Preflight freezes the design but cannot authorize paid calls."
+    }
+  ],
+  "allChecksPass": true,
+  "executionReady": false,
+  "nextRequiredStep": "MANUAL_SEMANTIC_REVIEW_AND_EXPLICIT_EXECUTION_AUTHORITY",
+  "contentHash": "sha256:a9a007ee0cfa99aae233b9db7c92a0e19a966a0487567c7cd14cc6cf3d20b44b"
+}

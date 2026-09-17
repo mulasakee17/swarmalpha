@@ -8,7 +8,7 @@ import {
   buildChallengePrompt,
   synthesizeVerdict,
   computeBeliefShift,
-} from "@/lib/discussion/crossExamination";
+} from "../legacy/src/lib/discussion/crossExamination";
 
 describe("Cross-Examination Engine", () => {
   // -- Phase 1: 分歧检测 --

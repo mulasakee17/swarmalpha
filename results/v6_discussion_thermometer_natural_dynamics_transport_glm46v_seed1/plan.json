@@ -1,0 +1,88 @@
+{
+  "planRef": {
+    "id": "swarmalpha.experiment.v6.discussion-thermometer-natural-dynamics-transport-plan",
+    "version": "1.0.0"
+  },
+  "sourceReplicationEvaluationHash": "sha256:f56588edc512d0eddff738565070a30f5d2eb46d3538fc1358427109a214f492",
+  "selectionStatus": "prospective_new_scenario_transport_before_provider_observation",
+  "taskBankHash": "sha256:fea7cfb71fd3c2b1044cc9cdb06aea716d0db97e9654075566c8d74159928c1d",
+  "taskIds": [
+    "thermometer-transport:backup-power:q1",
+    "thermometer-transport:backup-power:q2",
+    "thermometer-transport:aerial-navigation:q1",
+    "thermometer-transport:aerial-navigation:q2"
+  ],
+  "baseScenarioIds": [
+    "backup-power",
+    "aerial-navigation"
+  ],
+  "targetRegimes": [
+    "SHARED_CUE_PRIVATE_CORRECTION",
+    "POLARIZED_PRIVATE_BLOCKS"
+  ],
+  "agentIds": [
+    "agent_1",
+    "agent_2",
+    "agent_3",
+    "agent_4"
+  ],
+  "publicRounds": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "checkpoints": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "sensorRepeats": [
+    "A",
+    "B"
+  ],
+  "executionMode": "new_full_within_batch_transport_not_historical_append",
+  "interaction": "synchronous_previous_round_only",
+  "stateEstimator": "primary_canonical_self_report",
+  "duplicateRole": "local_transition_resolution_reference_only",
+  "modelRef": {
+    "id": "zhipu:glm-4.6v",
+    "version": "1.0.0"
+  },
+  "publicInvocation": {
+    "temperature": 0,
+    "seed": 1,
+    "maxTokens": 512,
+    "thinking": "disabled",
+    "attemptsPerCell": 1,
+    "retry": "none"
+  },
+  "sensorInvocation": {
+    "temperature": 0,
+    "seed": 1,
+    "maxTokens": 256,
+    "thinking": "disabled",
+    "attemptsPerCell": 1,
+    "retry": "none"
+  },
+  "callBudget": {
+    "publicCalls": 64,
+    "sensorCalls": 160,
+    "totalProviderCalls": 224,
+    "maximumCompletionTokens": 73728
+  },
+  "registeredTransportRules": {
+    "polarizedLateEnvelopeReplication": "In each new base scenario, POLARIZED_PRIVATE_BLOCKS must contain at least two consecutive late transitions classified within_repeatability_envelope_all_agents.",
+    "sharedCueMotionResourceReplication": "In each new base scenario, SHARED_CUE_PRIVATE_CORRECTION must contain at least one transition classified resolved_majority_motion.",
+    "failureMeaning": "Failure rejects transport of the corresponding observation resource to these new scenarios; it does not invalidate the operational belief-state measurement contract."
+  },
+  "onlineTruthAccess": "none",
+  "sensorWriteback": "none",
+  "predictionUsed": false,
+  "actionUsed": false,
+  "providerCallsAuthorized": 0,
+  "executionAuthority": "none",
+  "contentHash": "sha256:b6e7bfdcbdca0f9e4ec0d70511c530ae8c48ebb080c3ae2b1fb2a5dcb54b6f64"
+}

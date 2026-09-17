@@ -1,7 +1,9 @@
 # SwarmAlpha Task Contamination Registry v1
 
-日期：2026-08-13
+日期：2026-08-29（D1 执行后同步）
 状态：NORMATIVE SPLIT BOUNDARY；登记已观察任务与尚未取得科学准入的候选任务。
+
+> **2026-08-20 scope clarification:** 本登记对 measurement validity、detector heldout 与需要 task/semantic-family 独立性的主张继续有效。它原文中的 blanket `confirmatory` 排除没有区分“同一机制的结果复用”与“后来新增且前瞻冻结的 treatment contrast”，因而不能被解释为“任务曾在任何其他机制中出现，就永远不能用于新的同状态对照”。当前 fork 论文的精确裁决、必须披露的既往使用边界与 18-task exclusion sensitivity 见 `docs/experiments/FORK_CONFIRMATORY_SCOPE_RESOLUTION_2026-08-20.md`。该澄清不构成外部预注册，也不授予 semantic-family heldout 权威。
 
 ## 1. 权威规则
 
@@ -26,9 +28,12 @@
 ```text
 2, 6, 10, 25, 26, 30, 34, 36, 41, 42,
 43, 44, 46, 48, 53, 56, 58, 59, 60, 62
+50, 57, 64
 ```
 
-这些任务进入了 2026-08-12 的 80-run Verification Verdict V2 探索实验，结果、arm 分布、Brier、置信度和 verdict 已被观察。它们可继续用于：
+前一组任务进入了 2026-08-12 的 80-run Verification Verdict V2 探索实验；
+`50/57/64` 则在 2026-08-29 D1 trajectory bridge 中首次进入观察。所有这些
+任务都只能作为 development/calibration evidence，可继续用于：
 
 - 离线 detector census；
 - calibration/development；
@@ -42,16 +47,20 @@
 - confirmatory outcome；
 - 看过结果后重新挑 threshold，再声称是独立验证。
 
+`50/57/64` 的 D1 结果属于 development evidence，不改变其不得进入 held-out
+或 confirmatory split 的限制。
+
 ### 2.3 Unreviewed scientific candidates — no held-out authority
 
 ```text
 3, 5, 7, 11, 12, 13, 14, 15, 16, 18,
 19, 20, 21, 22, 23, 24, 27, 28, 29, 31,
 32, 33, 35, 37, 38, 39, 40, 45, 47, 49,
-50, 51, 52, 54, 55, 57, 61, 63, 64, 65
+51, 52, 54, 55, 61, 63, 65
 ```
 
-FACT：这些 task ID 未进入上述 80-run 计划，也不属于列出的 canary 集合。
+FACT：这些 task ID 未进入上述 80-run 计划，也不属于列出的 canary 集合或
+2026-08-29 D1 trajectory bridge。
 
 UNKNOWN：它们是否与已观察任务共享模板、语义结构、rationale family、答案构造或其他 leakage group；当前没有 accepted semantic review manifest。
 

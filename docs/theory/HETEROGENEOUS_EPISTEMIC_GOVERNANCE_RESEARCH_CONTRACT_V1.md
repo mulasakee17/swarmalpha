@@ -2,7 +2,7 @@
 日期：2026-08-13
 状态：P5 权威理论与实验设计基线（DESIGN INTENT；尚未进入实现或付费实验）
 上位依据：[`SWARMALPHA_WHITEPAPER_V1.md`](../strategy/SWARMALPHA_WHITEPAPER_V1.md)
-执行依据：[`SWARMALPHA_STRATEGIC_EXECUTION_PLAN_V1.md`](../plans/SWARMALPHA_STRATEGIC_EXECUTION_PLAN_V1.md)
+历史执行依据：[`SWARMALPHA_STRATEGIC_EXECUTION_PLAN_V1.md`](../../legacy/docs/archive/plans/SWARMALPHA_STRATEGIC_EXECUTION_PLAN_V1.md)
 
 > 本文吸收“SwarmAlpha: A Governance Runtime for Heterogeneous Intelligence”候选方案中关于能力异质性、错误依赖、少数派保护、外部验证、预算与停止的思想，并将其收缩为可识别、可证伪的 P5 研究合同。它不改变第一篇 AAMAS 候选论文的 RQ、arms、Gate 或 claim ceiling。
 

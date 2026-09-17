@@ -1,0 +1,370 @@
+{
+  "artifactRef": {
+    "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-public-artifact",
+    "version": "1.0.0"
+  },
+  "planHash": "sha256:a59b041ed048ea4f2db01b0565e37c710caf1256f36c321ce315efa1dbc0603b",
+  "runId": "collective-dynamics-l4-dev-stage1:16:seed-1",
+  "seed": 1,
+  "modelRef": {
+    "id": "zhipu:glm-4.6v",
+    "version": "1.0.0"
+  },
+  "onlineTask": {
+    "sourceTaskId": 16,
+    "taskId": "task:hiddenbench:16",
+    "publicContext": "Your company’s IT systems have just suffered a major ransomware attack. Senior management is demanding you make an immediate group decision: choose where to send the next full backup copy of all systems. You have contracts in place with three geographically separate data centers—Alpha, Bravo, and Charlie—each with a track record of reliability. Only one can receive the backup now (due to bandwidth limitations), and there's no opportunity to create a second backup for at least a week. If the chosen center fails, company data may be permanently lost, so your group must agree which site offers the best security and continuity under urgent conditions. Each of you has received a short briefing: some details are shared; an additional confidential update has been given to each person, which might affect your assessment of the risks.\n\nShared information:\n1. Data Center Bravo is currently rated as having the best firewall and intrusion protection according to the latest independent audit report.\n2. Alpha, Bravo, and Charlie all report no power outages or physical damage in the past year.\n3. The company’s legal department says any site failure could have major regulatory consequences; the primary concern is ensuring the backup stays both physically secure and rapidly accessible.\n4. The latest IT operations dashboard reports Alpha is busiest but still within normal usage; Bravo and Charlie at normal load.",
+    "claim": {
+      "id": "claim:hiddenbench:16:answer",
+      "proposition": "Select the single correct answer for HiddenBench task 16 (Crisis Backup Decision).",
+      "domain": "hiddenbench-categorical-decision",
+      "createdAt": "2026-08-11T00:00:00.000Z",
+      "options": [
+        "Alpha",
+        "Bravo",
+        "Charlie"
+      ],
+      "resolutionPolicy": {
+        "kind": "categorical",
+        "resolverId": "resolver:hiddenbench-data-3be6ca16"
+      }
+    },
+    "agents": [
+      {
+        "agentId": "agent:hiddenbench:16:1",
+        "privateInformation": "Bravo has just received a legal notice from a government agency about possible asset freezes due to an ongoing investigation; details are not being shared publicly yet, and services may be disrupted pending developments."
+      },
+      {
+        "agentId": "agent:hiddenbench:16:2",
+        "privateInformation": "Construction crews are scheduled to do electrical maintenance near Data Center Alpha within the next 24 hours, with a risk of power cuts (but the data center has not announced an outage)."
+      },
+      {
+        "agentId": "agent:hiddenbench:16:3",
+        "privateInformation": "A cable cut near Data Center Charlie last month has been fully repaired, and the center has recently passed an extra security audit prompted by that incident."
+      },
+      {
+        "agentId": "agent:hiddenbench:16:4",
+        "privateInformation": "An internal alert notes Bravo’s site manager for this weekend is a temp unfamiliar with emergency protocols, but nothing has gone wrong so far."
+      }
+    ]
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "messages": [
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:16:1",
+          "content": "[choiceId=opt_3]\nGiven the shared information, Bravo has the best firewall and intrusion protection, but my private update reveals a legal notice about possible asset freezes that could disrupt services. Alpha is busy but operational, and Charlie is at normal load with no reported issues. To ensure the backup remains physically secure and rapidly accessible, Charlie is the safest choice as it avoids the legal risks associated with Bravo and the potential load-related issues with Alpha.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:16:2",
+          "content": "[choiceId=opt_3]\nI recommend Charlie. While Bravo has the best firewall, Alpha has scheduled electrical maintenance with power cut risks, and Charlie offers a safer alternative with no reported issues, ensuring continuity and avoiding potential outages.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:16:3",
+          "content": "[choiceId=opt_3]\nI recommend Charlie. While Bravo has the best firewall, Charlie recently passed an extra security audit after a cable cut incident, showing proactive risk management. All centers have no recent outages, but Charlie’s recent audit and repaired infrastructure make it the most resilient choice for urgent backup under current conditions.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:16:4",
+          "content": "[choiceId=opt_3]\nI recommend Charlie. While Bravo has the best firewall, its temporary site manager raises a critical risk during this urgent crisis. Alpha is already busy, increasing potential strain. Charlie offers a balanced, reliable option with no recent issues, ensuring the backup is secure and accessible without additional operational risks.",
+          "source": "agent"
+        }
+      ],
+      "calls": [
+        {
+          "requestId": "discussion:collective-dynamics-l4-dev-stage1:16:seed-1:r1:agent:hiddenbench:16:1",
+          "round": 1,
+          "agentId": "agent:hiddenbench:16:1",
+          "requestHash": "sha256:2dc8c60c7b97da4d431b562e9ee33974ac91c672433290ddde9864615e1a461d",
+          "responseHash": "sha256:7d9f76243fcfca623981d9049214e8f181645acf4c839ced7f9396596e586de0"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-l4-dev-stage1:16:seed-1:r1:agent:hiddenbench:16:2",
+          "round": 1,
+          "agentId": "agent:hiddenbench:16:2",
+          "requestHash": "sha256:53d40025ac666b5d6c51a147099ec48148796d48686feb09b104b1b2d1c8e107",
+          "responseHash": "sha256:25b366db87f76198afe440a90f8bd2aa6e5fd0d3ec241c1038cefa5956e69f95"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-l4-dev-stage1:16:seed-1:r1:agent:hiddenbench:16:3",
+          "round": 1,
+          "agentId": "agent:hiddenbench:16:3",
+          "requestHash": "sha256:fa5966a354b315749b3cb5156ad196557efc08f817d2f6a9c9dcb9e5f08852a4",
+          "responseHash": "sha256:0393cb8773766c1e4b74ed4d90c198802723ce09e75e9db27f4290cd61c45358"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-l4-dev-stage1:16:seed-1:r1:agent:hiddenbench:16:4",
+          "round": 1,
+          "agentId": "agent:hiddenbench:16:4",
+          "requestHash": "sha256:ad77aa94c70cbfacfa92ab3ddb36aa647dec860c2957e2c3092f05c9e06fd1e2",
+          "responseHash": "sha256:719e9720ee8c6b7a63acbc015ae7aae6aa9fbdde458dbd6772d991d74e81da2c"
+        }
+      ],
+      "contentHash": "sha256:57d67ccb80ce4c21a79b1ecbb1852a0892b23388d9d536a6ccfd6e83fe66fb32"
+    },
+    {
+      "round": 2,
+      "messages": [
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:16:1",
+          "content": "[choiceId=opt_3]\nCharlie is the safest choice. While Bravo has the best firewall, my private update reveals a legal notice about possible asset freezes that could disrupt services. Alpha is busy, increasing potential strain. Charlie has no reported issues, ensuring the backup remains physically secure and rapidly accessible without additional operational risks.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:16:2",
+          "content": "[choiceId=opt_3]\nI recommend Charlie. While Bravo has the best firewall, Alpha has scheduled electrical maintenance with power cut risks, and Charlie offers a safer alternative with no reported issues, ensuring continuity and avoiding potential outages.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:16:3",
+          "content": "[choiceId=opt_3]\nI recommend Charlie. While Bravo has the best firewall, Charlie recently passed an extra security audit after a cable cut incident, showing proactive risk management. All centers have no recent outages, but Charlie’s recent audit and repaired infrastructure make it the most resilient choice for urgent backup under current conditions.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:16:4",
+          "content": "[choiceId=opt_3]\nI recommend Charlie. While Bravo has the best firewall, its temporary site manager raises a critical risk during this urgent crisis. Alpha is already busy, increasing potential strain. Charlie offers a balanced, reliable option with no recent issues, ensuring the backup is secure and accessible without additional operational risks.",
+          "source": "agent"
+        }
+      ],
+      "calls": [
+        {
+          "requestId": "discussion:collective-dynamics-l4-dev-stage1:16:seed-1:r2:agent:hiddenbench:16:1",
+          "round": 2,
+          "agentId": "agent:hiddenbench:16:1",
+          "requestHash": "sha256:bb96f6695adc303600d90cda96f37177f085f18f55862f5151ed921476172068",
+          "responseHash": "sha256:4f8dc1ab308a1e6c291f5b7972ff3fa1b8a33897b311fca6f00af1c55b2a759a"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-l4-dev-stage1:16:seed-1:r2:agent:hiddenbench:16:2",
+          "round": 2,
+          "agentId": "agent:hiddenbench:16:2",
+          "requestHash": "sha256:03c89d408cc541bfd95bf970b0af1e31c7d3d534e7f9765d0585f91210b3db0d",
+          "responseHash": "sha256:25b366db87f76198afe440a90f8bd2aa6e5fd0d3ec241c1038cefa5956e69f95"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-l4-dev-stage1:16:seed-1:r2:agent:hiddenbench:16:3",
+          "round": 2,
+          "agentId": "agent:hiddenbench:16:3",
+          "requestHash": "sha256:7eb92241f79b2cdfc265ca2cfebe79c056b94dc19f7436b3f823661bb9e9e286",
+          "responseHash": "sha256:0393cb8773766c1e4b74ed4d90c198802723ce09e75e9db27f4290cd61c45358"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-l4-dev-stage1:16:seed-1:r2:agent:hiddenbench:16:4",
+          "round": 2,
+          "agentId": "agent:hiddenbench:16:4",
+          "requestHash": "sha256:436a0b67a7f1bca027444ba6112e91f4fe434db2318606690e225e5c4a421b74",
+          "responseHash": "sha256:719e9720ee8c6b7a63acbc015ae7aae6aa9fbdde458dbd6772d991d74e81da2c"
+        }
+      ],
+      "contentHash": "sha256:76bb8ad25aab067417464a86c4b155d1a33a4be79aa321bebe56fb17079509b3"
+    },
+    {
+      "round": 3,
+      "messages": [
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:16:1",
+          "content": "[choiceId=opt_3]\nCharlie is the safest choice. While Bravo has the best firewall, my private update reveals a legal notice about possible asset freezes that could disrupt services. Alpha is busy, increasing potential strain. Charlie has no reported issues, ensuring the backup remains physically secure and rapidly accessible without additional operational risks.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:16:2",
+          "content": "[choiceId=opt_3]\nI recommend Charlie. While Bravo has the best firewall, Alpha has scheduled electrical maintenance with power cut risks, and Charlie offers a safer alternative with no reported issues, ensuring continuity and avoiding potential outages.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:16:3",
+          "content": "[choiceId=opt_3]\nI recommend Charlie. While Bravo has the best firewall, my private update reveals a legal notice about possible asset freezes that could disrupt services. Alpha is busy, increasing potential strain. Charlie has no reported issues, ensuring the backup remains physically secure and rapidly accessible without additional operational risks.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:16:4",
+          "content": "[choiceId=opt_3]\nI recommend Charlie. While Bravo has the best firewall, its temporary site manager raises a critical risk during this urgent crisis. Alpha is already busy, increasing potential strain. Charlie offers a balanced, reliable option with no recent issues, ensuring the backup is secure and accessible without additional operational risks.",
+          "source": "agent"
+        }
+      ],
+      "calls": [
+        {
+          "requestId": "discussion:collective-dynamics-l4-dev-stage1:16:seed-1:r3:agent:hiddenbench:16:1",
+          "round": 3,
+          "agentId": "agent:hiddenbench:16:1",
+          "requestHash": "sha256:a292843a1b14f56fc5e05a29ff2035ea21128a1297928814d54e774c420de8da",
+          "responseHash": "sha256:4f8dc1ab308a1e6c291f5b7972ff3fa1b8a33897b311fca6f00af1c55b2a759a"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-l4-dev-stage1:16:seed-1:r3:agent:hiddenbench:16:2",
+          "round": 3,
+          "agentId": "agent:hiddenbench:16:2",
+          "requestHash": "sha256:887021089e140c06911765cede0c39cbca3ebc5c052aadd3007286475818e4de",
+          "responseHash": "sha256:25b366db87f76198afe440a90f8bd2aa6e5fd0d3ec241c1038cefa5956e69f95"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-l4-dev-stage1:16:seed-1:r3:agent:hiddenbench:16:3",
+          "round": 3,
+          "agentId": "agent:hiddenbench:16:3",
+          "requestHash": "sha256:009e52d643531832060ea60ef56df573e1cb282c4ab4c5fdc693503f96621195",
+          "responseHash": "sha256:6c088acce23073e7ef84261f88682e0d032aa6713ce9d282b8076c4c65577eeb"
+        },
+        {
+          "requestId": "discussion:collective-dynamics-l4-dev-stage1:16:seed-1:r3:agent:hiddenbench:16:4",
+          "round": 3,
+          "agentId": "agent:hiddenbench:16:4",
+          "requestHash": "sha256:aef570657a54fd9c3a41f90e0e129ce9e8a87a14db0038001fc60f163db134f7",
+          "responseHash": "sha256:719e9720ee8c6b7a63acbc015ae7aae6aa9fbdde458dbd6772d991d74e81da2c"
+        }
+      ],
+      "contentHash": "sha256:2721fbf56c1fda7d7f325d3139cdf2374cf0a600b64d0a50815a0b4ac3f01481"
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointRef": {
+        "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-checkpoint",
+        "version": "1.0.0"
+      },
+      "checkpointId": "task:hiddenbench:16:collective-dynamics-l4-dev-stage1:16:seed-1:X0",
+      "checkpointRound": 0,
+      "visibleMessages": [],
+      "sourceRequestHashes": [],
+      "contentHash": "sha256:8ac9f23be3db15312d7f88448dac9c2a53888b0b6d75e8d5f0fb1d0a8ee687d9"
+    },
+    {
+      "checkpointRef": {
+        "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-checkpoint",
+        "version": "1.0.0"
+      },
+      "checkpointId": "task:hiddenbench:16:collective-dynamics-l4-dev-stage1:16:seed-1:X1",
+      "checkpointRound": 1,
+      "visibleMessages": [
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:16:1",
+          "content": "[choiceId=opt_3]\nGiven the shared information, Bravo has the best firewall and intrusion protection, but my private update reveals a legal notice about possible asset freezes that could disrupt services. Alpha is busy but operational, and Charlie is at normal load with no reported issues. To ensure the backup remains physically secure and rapidly accessible, Charlie is the safest choice as it avoids the legal risks associated with Bravo and the potential load-related issues with Alpha.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:16:2",
+          "content": "[choiceId=opt_3]\nI recommend Charlie. While Bravo has the best firewall, Alpha has scheduled electrical maintenance with power cut risks, and Charlie offers a safer alternative with no reported issues, ensuring continuity and avoiding potential outages.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:16:3",
+          "content": "[choiceId=opt_3]\nI recommend Charlie. While Bravo has the best firewall, Charlie recently passed an extra security audit after a cable cut incident, showing proactive risk management. All centers have no recent outages, but Charlie’s recent audit and repaired infrastructure make it the most resilient choice for urgent backup under current conditions.",
+          "source": "agent"
+        },
+        {
+          "round": 1,
+          "agentId": "agent:hiddenbench:16:4",
+          "content": "[choiceId=opt_3]\nI recommend Charlie. While Bravo has the best firewall, its temporary site manager raises a critical risk during this urgent crisis. Alpha is already busy, increasing potential strain. Charlie offers a balanced, reliable option with no recent issues, ensuring the backup is secure and accessible without additional operational risks.",
+          "source": "agent"
+        }
+      ],
+      "sourceRequestHashes": [
+        "sha256:2dc8c60c7b97da4d431b562e9ee33974ac91c672433290ddde9864615e1a461d",
+        "sha256:53d40025ac666b5d6c51a147099ec48148796d48686feb09b104b1b2d1c8e107",
+        "sha256:fa5966a354b315749b3cb5156ad196557efc08f817d2f6a9c9dcb9e5f08852a4",
+        "sha256:ad77aa94c70cbfacfa92ab3ddb36aa647dec860c2957e2c3092f05c9e06fd1e2"
+      ],
+      "contentHash": "sha256:19c1b5a94e7322ada288cdddf996b86701665734b1a624c43c23d58b40debbcd"
+    },
+    {
+      "checkpointRef": {
+        "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-checkpoint",
+        "version": "1.0.0"
+      },
+      "checkpointId": "task:hiddenbench:16:collective-dynamics-l4-dev-stage1:16:seed-1:X2",
+      "checkpointRound": 2,
+      "visibleMessages": [
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:16:1",
+          "content": "[choiceId=opt_3]\nCharlie is the safest choice. While Bravo has the best firewall, my private update reveals a legal notice about possible asset freezes that could disrupt services. Alpha is busy, increasing potential strain. Charlie has no reported issues, ensuring the backup remains physically secure and rapidly accessible without additional operational risks.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:16:2",
+          "content": "[choiceId=opt_3]\nI recommend Charlie. While Bravo has the best firewall, Alpha has scheduled electrical maintenance with power cut risks, and Charlie offers a safer alternative with no reported issues, ensuring continuity and avoiding potential outages.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:16:3",
+          "content": "[choiceId=opt_3]\nI recommend Charlie. While Bravo has the best firewall, Charlie recently passed an extra security audit after a cable cut incident, showing proactive risk management. All centers have no recent outages, but Charlie’s recent audit and repaired infrastructure make it the most resilient choice for urgent backup under current conditions.",
+          "source": "agent"
+        },
+        {
+          "round": 2,
+          "agentId": "agent:hiddenbench:16:4",
+          "content": "[choiceId=opt_3]\nI recommend Charlie. While Bravo has the best firewall, its temporary site manager raises a critical risk during this urgent crisis. Alpha is already busy, increasing potential strain. Charlie offers a balanced, reliable option with no recent issues, ensuring the backup is secure and accessible without additional operational risks.",
+          "source": "agent"
+        }
+      ],
+      "sourceRequestHashes": [
+        "sha256:bb96f6695adc303600d90cda96f37177f085f18f55862f5151ed921476172068",
+        "sha256:03c89d408cc541bfd95bf970b0af1e31c7d3d534e7f9765d0585f91210b3db0d",
+        "sha256:7eb92241f79b2cdfc265ca2cfebe79c056b94dc19f7436b3f823661bb9e9e286",
+        "sha256:436a0b67a7f1bca027444ba6112e91f4fe434db2318606690e225e5c4a421b74"
+      ],
+      "contentHash": "sha256:8c029c34b7adac1c868e6f8dcb3dad37154c80e52e3a96102104fe3a3d6930c5"
+    },
+    {
+      "checkpointRef": {
+        "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-checkpoint",
+        "version": "1.0.0"
+      },
+      "checkpointId": "task:hiddenbench:16:collective-dynamics-l4-dev-stage1:16:seed-1:X3",
+      "checkpointRound": 3,
+      "visibleMessages": [
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:16:1",
+          "content": "[choiceId=opt_3]\nCharlie is the safest choice. While Bravo has the best firewall, my private update reveals a legal notice about possible asset freezes that could disrupt services. Alpha is busy, increasing potential strain. Charlie has no reported issues, ensuring the backup remains physically secure and rapidly accessible without additional operational risks.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:16:2",
+          "content": "[choiceId=opt_3]\nI recommend Charlie. While Bravo has the best firewall, Alpha has scheduled electrical maintenance with power cut risks, and Charlie offers a safer alternative with no reported issues, ensuring continuity and avoiding potential outages.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:16:3",
+          "content": "[choiceId=opt_3]\nI recommend Charlie. While Bravo has the best firewall, my private update reveals a legal notice about possible asset freezes that could disrupt services. Alpha is busy, increasing potential strain. Charlie has no reported issues, ensuring the backup remains physically secure and rapidly accessible without additional operational risks.",
+          "source": "agent"
+        },
+        {
+          "round": 3,
+          "agentId": "agent:hiddenbench:16:4",
+          "content": "[choiceId=opt_3]\nI recommend Charlie. While Bravo has the best firewall, its temporary site manager raises a critical risk during this urgent crisis. Alpha is already busy, increasing potential strain. Charlie offers a balanced, reliable option with no recent issues, ensuring the backup is secure and accessible without additional operational risks.",
+          "source": "agent"
+        }
+      ],
+      "sourceRequestHashes": [
+        "sha256:a292843a1b14f56fc5e05a29ff2035ea21128a1297928814d54e774c420de8da",
+        "sha256:887021089e140c06911765cede0c39cbca3ebc5c052aadd3007286475818e4de",
+        "sha256:009e52d643531832060ea60ef56df573e1cb282c4ab4c5fdc693503f96621195",
+        "sha256:aef570657a54fd9c3a41f90e0e129ce9e8a87a14db0038001fc60f163db134f7"
+      ],
+      "contentHash": "sha256:03b424f0583de18de79775ae7a76ba256e9e2d77ab4dffb45c17fd3840886923"
+    }
+  ],
+  "contentHash": "sha256:a5cf93bed9deb9efecc99790e1a95d6f2b23ca0c5d684d44a09bcfcef48a0ba9"
+}

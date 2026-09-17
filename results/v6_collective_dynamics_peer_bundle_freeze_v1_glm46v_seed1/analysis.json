@@ -1,0 +1,1534 @@
+{
+  "analysisRef": {
+    "id": "swarmalpha.experiment.v6.collective-dynamics-peer-bundle-canary.analysis",
+    "version": "1.0.0"
+  },
+  "planHash": "sha256:db58c4195bac549c6471f5a63736d9bbec647b1f381e86aebc7ade2e9fec6f98",
+  "freezeHash": "sha256:5d05a7f3e15b4516174c79aebd2810537841de7840571bb983bef36bd7550ea1",
+  "runHash": "sha256:7b11b649fadf182ad0750c6016b250ccdd6656cdd424b2be20b62b3aaa2be11c",
+  "inferenceUnit": "task",
+  "pairedObservationUnit": "task_agent_frozen_view",
+  "truthAccess": "none",
+  "terminalCounts": {
+    "valid": 152
+  },
+  "unitRows": [
+    {
+      "unitId": "task-1:agent-1",
+      "sourceTaskId": 1,
+      "agentId": "agent:hiddenbench:1:1",
+      "conditionDuplicateTv": {
+        "noPeer": 0.20000000000000004,
+        "peer": 0
+      },
+      "peerResponseTv": 0.1,
+      "peerResponseExceedsBothDuplicateMeans": false,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.8,
+          0.125,
+          0.07500000000000001
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9,
+          0.05,
+          0.05
+        ]
+      }
+    },
+    {
+      "unitId": "task-1:agent-2",
+      "sourceTaskId": 1,
+      "agentId": "agent:hiddenbench:1:2",
+      "conditionDuplicateTv": {
+        "noPeer": 0,
+        "peer": 0
+      },
+      "peerResponseTv": 0.20000000000000004,
+      "peerResponseExceedsBothDuplicateMeans": true,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.2,
+          0.1
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9,
+          0.05,
+          0.05
+        ]
+      }
+    },
+    {
+      "unitId": "task-1:agent-3",
+      "sourceTaskId": 1,
+      "agentId": "agent:hiddenbench:1:3",
+      "conditionDuplicateTv": {
+        "noPeer": 0,
+        "peer": 0
+      },
+      "peerResponseTv": 0.20000000000000004,
+      "peerResponseExceedsBothDuplicateMeans": true,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.2,
+          0.1
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9,
+          0.05,
+          0.05
+        ]
+      }
+    },
+    {
+      "unitId": "task-1:agent-4",
+      "sourceTaskId": 1,
+      "agentId": "agent:hiddenbench:1:4",
+      "conditionDuplicateTv": {
+        "noPeer": 0,
+        "peer": 0.05
+      },
+      "peerResponseTv": 0.20000000000000004,
+      "peerResponseExceedsBothDuplicateMeans": true,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.2,
+          0.1
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9,
+          0.07500000000000001,
+          0.025
+        ]
+      }
+    },
+    {
+      "unitId": "task-8:agent-1",
+      "sourceTaskId": 8,
+      "agentId": "agent:hiddenbench:8:1",
+      "conditionDuplicateTv": {
+        "noPeer": 0,
+        "peer": 0
+      },
+      "peerResponseTv": 0.09999999999999999,
+      "peerResponseExceedsBothDuplicateMeans": true,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.6,
+          0.3,
+          0.1
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.6,
+          0.2,
+          0.2
+        ]
+      }
+    },
+    {
+      "unitId": "task-8:agent-2",
+      "sourceTaskId": 8,
+      "agentId": "agent:hiddenbench:8:2",
+      "conditionDuplicateTv": {
+        "noPeer": 0.09999999999999998,
+        "peer": 0
+      },
+      "peerResponseTv": 0.15000000000000008,
+      "peerResponseExceedsBothDuplicateMeans": true,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.25,
+          0.6499999999999999
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.1,
+          0.8
+        ]
+      }
+    },
+    {
+      "unitId": "task-8:agent-3",
+      "sourceTaskId": 8,
+      "agentId": "agent:hiddenbench:8:3",
+      "conditionDuplicateTv": {
+        "noPeer": 0,
+        "peer": 0
+      },
+      "peerResponseTv": 0,
+      "peerResponseExceedsBothDuplicateMeans": false,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.2,
+          0.1
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.2,
+          0.1
+        ]
+      }
+    },
+    {
+      "unitId": "task-15:agent-1",
+      "sourceTaskId": 15,
+      "agentId": "agent:hiddenbench:15:1",
+      "conditionDuplicateTv": {
+        "noPeer": 0,
+        "peer": 0
+      },
+      "peerResponseTv": 0.10000000000000005,
+      "peerResponseExceedsBothDuplicateMeans": true,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.2,
+          0.7
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.1,
+          0.8
+        ]
+      }
+    },
+    {
+      "unitId": "task-15:agent-2",
+      "sourceTaskId": 15,
+      "agentId": "agent:hiddenbench:15:2",
+      "conditionDuplicateTv": {
+        "noPeer": 0.09999999999999999,
+        "peer": 0
+      },
+      "peerResponseTv": 0.14999999999999994,
+      "peerResponseExceedsBothDuplicateMeans": true,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.15000000000000002,
+          0.6499999999999999,
+          0.2
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.25,
+          0.5,
+          0.25
+        ]
+      }
+    },
+    {
+      "unitId": "task-15:agent-3",
+      "sourceTaskId": 15,
+      "agentId": "agent:hiddenbench:15:3",
+      "conditionDuplicateTv": {
+        "noPeer": 0,
+        "peer": 0
+      },
+      "peerResponseTv": 0,
+      "peerResponseExceedsBothDuplicateMeans": false,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0,
+          0.3
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0,
+          0.3
+        ]
+      }
+    },
+    {
+      "unitId": "task-15:agent-4",
+      "sourceTaskId": 15,
+      "agentId": "agent:hiddenbench:15:4",
+      "conditionDuplicateTv": {
+        "noPeer": 0.19999999999999996,
+        "peer": 0
+      },
+      "peerResponseTv": 0.09999999999999998,
+      "peerResponseExceedsBothDuplicateMeans": false,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.05,
+          0.9,
+          0.05
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.8,
+          0.1
+        ]
+      }
+    },
+    {
+      "unitId": "task-22:agent-1",
+      "sourceTaskId": 22,
+      "agentId": "agent:hiddenbench:22:1",
+      "conditionDuplicateTv": {
+        "noPeer": 0,
+        "peer": 0.35
+      },
+      "peerResponseTv": 0.44999999999999996,
+      "peerResponseExceedsBothDuplicateMeans": true,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.7,
+          0.2
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.07500000000000001,
+          0.275,
+          0.65
+        ]
+      }
+    },
+    {
+      "unitId": "task-22:agent-2",
+      "sourceTaskId": 22,
+      "agentId": "agent:hiddenbench:22:2",
+      "conditionDuplicateTv": {
+        "noPeer": 0.10000000000000005,
+        "peer": 0
+      },
+      "peerResponseTv": 0.7000000000000001,
+      "peerResponseExceedsBothDuplicateMeans": true,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.15000000000000002,
+          0.75,
+          0.1
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.1,
+          0.8
+        ]
+      }
+    },
+    {
+      "unitId": "task-22:agent-3",
+      "sourceTaskId": 22,
+      "agentId": "agent:hiddenbench:22:3",
+      "conditionDuplicateTv": {
+        "noPeer": 0,
+        "peer": 0
+      },
+      "peerResponseTv": 0.9,
+      "peerResponseExceedsBothDuplicateMeans": true,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.8,
+          0.1
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "unitId": "task-22:agent-4",
+      "sourceTaskId": 22,
+      "agentId": "agent:hiddenbench:22:4",
+      "conditionDuplicateTv": {
+        "noPeer": 0,
+        "peer": 0
+      },
+      "peerResponseTv": 0,
+      "peerResponseExceedsBothDuplicateMeans": false,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          0,
+          1
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "unitId": "task-29:agent-1",
+      "sourceTaskId": 29,
+      "agentId": "agent:hiddenbench:29:1",
+      "conditionDuplicateTv": {
+        "noPeer": 0,
+        "peer": 1
+      },
+      "peerResponseTv": 0.4,
+      "peerResponseExceedsBothDuplicateMeans": false,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.8,
+          0.1
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          0.5,
+          0.5
+        ]
+      }
+    },
+    {
+      "unitId": "task-29:agent-2",
+      "sourceTaskId": 29,
+      "agentId": "agent:hiddenbench:29:2",
+      "conditionDuplicateTv": {
+        "noPeer": 0.34,
+        "peer": 0.6566665
+      },
+      "peerResponseTv": 0.16333324999999999,
+      "peerResponseExceedsBothDuplicateMeans": false,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.33,
+          0.5,
+          0.17
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1666665,
+          0.6616664999999999,
+          0.1716665
+        ]
+      }
+    },
+    {
+      "unitId": "task-29:agent-3",
+      "sourceTaskId": 29,
+      "agentId": "agent:hiddenbench:29:3",
+      "conditionDuplicateTv": {
+        "noPeer": 0,
+        "peer": 0
+      },
+      "peerResponseTv": 0,
+      "peerResponseExceedsBothDuplicateMeans": false,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          0.5,
+          0.5
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          0.5,
+          0.5
+        ]
+      }
+    },
+    {
+      "unitId": "task-29:agent-4",
+      "sourceTaskId": 29,
+      "agentId": "agent:hiddenbench:29:4",
+      "conditionDuplicateTv": {
+        "noPeer": 0,
+        "peer": 0.09999999999999999
+      },
+      "peerResponseTv": 0.04999999999999997,
+      "peerResponseExceedsBothDuplicateMeans": false,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0,
+          0.9
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.05,
+          0.8500000000000001
+        ]
+      }
+    },
+    {
+      "unitId": "task-36:agent-1",
+      "sourceTaskId": 36,
+      "agentId": "agent:hiddenbench:36:1",
+      "conditionDuplicateTv": {
+        "noPeer": 0.20000000000000004,
+        "peer": 0
+      },
+      "peerResponseTv": 0.18999999999999997,
+      "peerResponseExceedsBothDuplicateMeans": true,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.8,
+          0.07500000000000001,
+          0.125
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.99,
+          0.01,
+          0
+        ]
+      }
+    },
+    {
+      "unitId": "task-36:agent-2",
+      "sourceTaskId": 36,
+      "agentId": "agent:hiddenbench:36:2",
+      "conditionDuplicateTv": {
+        "noPeer": 0.20000000000000004,
+        "peer": 0
+      },
+      "peerResponseTv": 0.09999999999999999,
+      "peerResponseExceedsBothDuplicateMeans": false,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.8,
+          0.125,
+          0.07500000000000001
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.9,
+          0.1,
+          0
+        ]
+      }
+    },
+    {
+      "unitId": "task-36:agent-3",
+      "sourceTaskId": 36,
+      "agentId": "agent:hiddenbench:36:3",
+      "conditionDuplicateTv": {
+        "noPeer": 0,
+        "peer": 0
+      },
+      "peerResponseTv": 0,
+      "peerResponseExceedsBothDuplicateMeans": false,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          1,
+          0
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "unitId": "task-36:agent-4",
+      "sourceTaskId": 36,
+      "agentId": "agent:hiddenbench:36:4",
+      "conditionDuplicateTv": {
+        "noPeer": 0,
+        "peer": 0.19999999999999996
+      },
+      "peerResponseTv": 0.09999999999999998,
+      "peerResponseExceedsBothDuplicateMeans": false,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.8,
+          0.1
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.05,
+          0.9,
+          0.05
+        ]
+      }
+    },
+    {
+      "unitId": "task-43:agent-1",
+      "sourceTaskId": 43,
+      "agentId": "agent:hiddenbench:43:1",
+      "conditionDuplicateTv": {
+        "noPeer": 0,
+        "peer": 0
+      },
+      "peerResponseTv": 0,
+      "peerResponseExceedsBothDuplicateMeans": false,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.15,
+          0.15
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.15,
+          0.15
+        ]
+      }
+    },
+    {
+      "unitId": "task-43:agent-2",
+      "sourceTaskId": 43,
+      "agentId": "agent:hiddenbench:43:2",
+      "conditionDuplicateTv": {
+        "noPeer": 0,
+        "peer": 0
+      },
+      "peerResponseTv": 0,
+      "peerResponseExceedsBothDuplicateMeans": false,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0,
+          0.3
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0,
+          0.3
+        ]
+      }
+    },
+    {
+      "unitId": "task-43:agent-3",
+      "sourceTaskId": 43,
+      "agentId": "agent:hiddenbench:43:3",
+      "conditionDuplicateTv": {
+        "noPeer": 0.3,
+        "peer": 0.1
+      },
+      "peerResponseTv": 0.09999999999999992,
+      "peerResponseExceedsBothDuplicateMeans": false,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.55,
+          0.22499999999999998,
+          0.22499999999999998
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.6499999999999999,
+          0.175,
+          0.175
+        ]
+      }
+    },
+    {
+      "unitId": "task-43:agent-4",
+      "sourceTaskId": 43,
+      "agentId": "agent:hiddenbench:43:4",
+      "conditionDuplicateTv": {
+        "noPeer": 0,
+        "peer": 0
+      },
+      "peerResponseTv": 0,
+      "peerResponseExceedsBothDuplicateMeans": false,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.45,
+          0.45
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.45,
+          0.45
+        ]
+      }
+    },
+    {
+      "unitId": "task-50:agent-1",
+      "sourceTaskId": 50,
+      "agentId": "agent:hiddenbench:50:1",
+      "conditionDuplicateTv": {
+        "noPeer": 0,
+        "peer": 0
+      },
+      "peerResponseTv": 0,
+      "peerResponseExceedsBothDuplicateMeans": false,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          0,
+          1
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "unitId": "task-50:agent-2",
+      "sourceTaskId": 50,
+      "agentId": "agent:hiddenbench:50:2",
+      "conditionDuplicateTv": {
+        "noPeer": 0,
+        "peer": 0
+      },
+      "peerResponseTv": 0.299999,
+      "peerResponseExceedsBothDuplicateMeans": true,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.1,
+          0.2
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.999999,
+          0.000001,
+          0
+        ]
+      }
+    },
+    {
+      "unitId": "task-50:agent-3",
+      "sourceTaskId": 50,
+      "agentId": "agent:hiddenbench:50:3",
+      "conditionDuplicateTv": {
+        "noPeer": 0,
+        "peer": 0
+      },
+      "peerResponseTv": 0,
+      "peerResponseExceedsBothDuplicateMeans": false,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          1,
+          0
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "unitId": "task-57:agent-1",
+      "sourceTaskId": 57,
+      "agentId": "agent:hiddenbench:57:1",
+      "conditionDuplicateTv": {
+        "noPeer": 0,
+        "peer": 0
+      },
+      "peerResponseTv": 0.20000000000000004,
+      "peerResponseExceedsBothDuplicateMeans": true,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.7,
+          0.2
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.05,
+          0.9,
+          0.05
+        ]
+      }
+    },
+    {
+      "unitId": "task-57:agent-2",
+      "sourceTaskId": 57,
+      "agentId": "agent:hiddenbench:57:2",
+      "conditionDuplicateTv": {
+        "noPeer": 0,
+        "peer": 0
+      },
+      "peerResponseTv": 0,
+      "peerResponseExceedsBothDuplicateMeans": false,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          1,
+          0
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "unitId": "task-57:agent-3",
+      "sourceTaskId": 57,
+      "agentId": "agent:hiddenbench:57:3",
+      "conditionDuplicateTv": {
+        "noPeer": 0,
+        "peer": 0.07999999999999999
+      },
+      "peerResponseTv": 0.13999999999999996,
+      "peerResponseExceedsBothDuplicateMeans": true,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.8,
+          0.1
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.030000000000000002,
+          0.94,
+          0.030000000000000002
+        ]
+      }
+    },
+    {
+      "unitId": "task-57:agent-4",
+      "sourceTaskId": 57,
+      "agentId": "agent:hiddenbench:57:4",
+      "conditionDuplicateTv": {
+        "noPeer": 0,
+        "peer": 0
+      },
+      "peerResponseTv": 0.09999999999999999,
+      "peerResponseExceedsBothDuplicateMeans": true,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          0.9,
+          0.1
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0,
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "unitId": "task-64:agent-1",
+      "sourceTaskId": 64,
+      "agentId": "agent:hiddenbench:64:1",
+      "conditionDuplicateTv": {
+        "noPeer": 0,
+        "peer": 0
+      },
+      "peerResponseTv": 0,
+      "peerResponseExceedsBothDuplicateMeans": false,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.1,
+          0.8
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.1,
+          0.8
+        ]
+      }
+    },
+    {
+      "unitId": "task-64:agent-2",
+      "sourceTaskId": 64,
+      "agentId": "agent:hiddenbench:64:2",
+      "conditionDuplicateTv": {
+        "noPeer": 0,
+        "peer": 0
+      },
+      "peerResponseTv": 0.09999999999999998,
+      "peerResponseExceedsBothDuplicateMeans": true,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7,
+          0.1,
+          0.2
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.6,
+          0.1,
+          0.3
+        ]
+      }
+    },
+    {
+      "unitId": "task-64:agent-3",
+      "sourceTaskId": 64,
+      "agentId": "agent:hiddenbench:64:3",
+      "conditionDuplicateTv": {
+        "noPeer": 0,
+        "peer": 0
+      },
+      "peerResponseTv": 0,
+      "peerResponseExceedsBothDuplicateMeans": false,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.1,
+          0.8
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.1,
+          0.1,
+          0.8
+        ]
+      }
+    },
+    {
+      "unitId": "task-64:agent-4",
+      "sourceTaskId": 64,
+      "agentId": "agent:hiddenbench:64:4",
+      "conditionDuplicateTv": {
+        "noPeer": 0.15000000000000002,
+        "peer": 0.30000000000000004
+      },
+      "peerResponseTv": 0.5249999999999999,
+      "peerResponseExceedsBothDuplicateMeans": true,
+      "noPeerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.7749999999999999,
+          0.07500000000000001,
+          0.15000000000000002
+        ]
+      },
+      "peerMean": {
+        "optionIds": [
+          "opt_1",
+          "opt_2",
+          "opt_3"
+        ],
+        "values": [
+          0.25,
+          0.1,
+          0.65
+        ]
+      }
+    }
+  ],
+  "taskRows": [
+    {
+      "sourceTaskId": 1,
+      "agentCount": 4,
+      "meanPeerResponseTv": 0.17500000000000004,
+      "meanNoPeerDuplicateTv": 0.05000000000000001,
+      "meanPeerDuplicateTv": 0.0125,
+      "peerResponseExceedsBothDuplicateMeans": true,
+      "noPeerPooledEntropy": 0.6959860717290074,
+      "peerPooledEntropy": 0.3582832616921554,
+      "deltaPooledEntropy": -0.337702810036852,
+      "noPeerMeanAgentEntropy": 0.6913655436357553,
+      "peerMeanAgentEntropy": 0.3560194934858168,
+      "deltaMeanAgentEntropy": -0.3353460501499385,
+      "noPeerGeneralizedJsd": 0.004620528093252085,
+      "peerGeneralizedJsd": 0.002263768206338612,
+      "deltaGeneralizedJsd": -0.002356759886913473
+    },
+    {
+      "sourceTaskId": 8,
+      "agentCount": 3,
+      "meanPeerResponseTv": 0.08333333333333336,
+      "meanNoPeerDuplicateTv": 0.033333333333333326,
+      "meanPeerDuplicateTv": 0,
+      "peerResponseExceedsBothDuplicateMeans": true,
+      "noPeerPooledEntropy": 0.9644525831766094,
+      "peerPooledEntropy": 0.9304186620582025,
+      "deltaPooledEntropy": -0.03403392111840697,
+      "noPeerMeanAgentEntropy": 0.7757074686585024,
+      "peerMeanAgentEntropy": 0.7254973618659705,
+      "deltaMeanAgentEntropy": -0.050210106792531906,
+      "noPeerGeneralizedJsd": 0.18874511451810705,
+      "peerGeneralizedJsd": 0.20492130019223198,
+      "deltaGeneralizedJsd": 0.016176185674124932
+    },
+    {
+      "sourceTaskId": 15,
+      "agentCount": 4,
+      "meanPeerResponseTv": 0.0875,
+      "meanNoPeerDuplicateTv": 0.07499999999999998,
+      "meanPeerDuplicateTv": 0,
+      "peerResponseExceedsBothDuplicateMeans": true,
+      "noPeerPooledEntropy": 0.9755307720176266,
+      "peerPooledEntropy": 0.995488346474546,
+      "deltaPooledEntropy": 0.01995757445691937,
+      "noPeerMeanAgentEntropy": 0.6129425843649903,
+      "peerMeanAgentEntropy": 0.6664427529173372,
+      "deltaMeanAgentEntropy": 0.05350016855234696,
+      "noPeerGeneralizedJsd": 0.36258818765263634,
+      "peerGeneralizedJsd": 0.32904559355720875,
+      "deltaGeneralizedJsd": -0.03354259409542759
+    },
+    {
+      "sourceTaskId": 22,
+      "agentCount": 4,
+      "meanPeerResponseTv": 0.5125,
+      "meanNoPeerDuplicateTv": 0.025000000000000012,
+      "meanPeerDuplicateTv": 0.0875,
+      "peerResponseExceedsBothDuplicateMeans": true,
+      "noPeerPooledEntropy": 0.8230749618417805,
+      "peerPooledEntropy": 0.4427442159789806,
+      "deltaPooledEntropy": -0.3803307458627999,
+      "noPeerMeanAgentEntropy": 0.49413211921130884,
+      "peerMeanAgentEntropy": 0.3341332191360715,
+      "deltaMeanAgentEntropy": -0.15999890007523732,
+      "noPeerGeneralizedJsd": 0.3289428426304717,
+      "peerGeneralizedJsd": 0.10861099684290909,
+      "deltaGeneralizedJsd": -0.2203318457875626
+    },
+    {
+      "sourceTaskId": 29,
+      "agentCount": 4,
+      "meanPeerResponseTv": 0.15333331249999999,
+      "meanNoPeerDuplicateTv": 0.085,
+      "meanPeerDuplicateTv": 0.43916662500000003,
+      "peerResponseExceedsBothDuplicateMeans": false,
+      "noPeerPooledEntropy": 0.9027824276207062,
+      "peerPooledEntropy": 0.8088804495669634,
+      "deltaPooledEntropy": -0.09390197805374279,
+      "noPeerMeanAgentEntropy": 0.6077956164909101,
+      "peerMeanAgentEntropy": 0.6323618632019778,
+      "deltaMeanAgentEntropy": 0.024566246711067774,
+      "noPeerGeneralizedJsd": 0.2949868111297961,
+      "peerGeneralizedJsd": 0.17651858636498552,
+      "deltaGeneralizedJsd": -0.11846822476481056
+    },
+    {
+      "sourceTaskId": 36,
+      "agentCount": 4,
+      "meanPeerResponseTv": 0.09749999999999999,
+      "meanNoPeerDuplicateTv": 0.10000000000000002,
+      "meanPeerDuplicateTv": 0.04999999999999999,
+      "peerResponseExceedsBothDuplicateMeans": false,
+      "noPeerPooledEntropy": 0.8233129501577882,
+      "peerPooledEntropy": 0.6840672159859585,
+      "deltaPooledEntropy": -0.13924573417182962,
+      "noPeerMeanAgentEntropy": 0.4333790049578361,
+      "peerMeanAgentEntropy": 0.17646857931424687,
+      "deltaMeanAgentEntropy": -0.25691042564358924,
+      "noPeerGeneralizedJsd": 0.38993394519995206,
+      "peerGeneralizedJsd": 0.5075986366717117,
+      "deltaGeneralizedJsd": 0.11766469147175962
+    },
+    {
+      "sourceTaskId": 43,
+      "agentCount": 4,
+      "meanPeerResponseTv": 0.02499999999999998,
+      "meanNoPeerDuplicateTv": 0.075,
+      "meanPeerDuplicateTv": 0.025,
+      "peerResponseExceedsBothDuplicateMeans": false,
+      "noPeerPooledEntropy": 0.9329512347373449,
+      "peerPooledEntropy": 0.9146125543107553,
+      "deltaPooledEntropy": -0.018338680426589593,
+      "noPeerMeanAgentEntropy": 0.7688434022604085,
+      "peerMeanAgentEntropy": 0.7438102550187378,
+      "deltaMeanAgentEntropy": -0.025033147241670717,
+      "noPeerGeneralizedJsd": 0.1641078324769364,
+      "peerGeneralizedJsd": 0.1708022992920175,
+      "deltaGeneralizedJsd": 0.006694466815081124
+    },
+    {
+      "sourceTaskId": 50,
+      "agentCount": 3,
+      "meanPeerResponseTv": 0.09999966666666667,
+      "meanNoPeerDuplicateTv": 0,
+      "meanPeerDuplicateTv": 0,
+      "peerResponseExceedsBothDuplicateMeans": true,
+      "noPeerPooledEntropy": 0.9775612057917029,
+      "peerPooledEntropy": 0.9999999999996968,
+      "deltaPooledEntropy": 0.022438794207993884,
+      "noPeerMeanAgentEntropy": 0.24328223305403254,
+      "peerMeanAgentEntropy": 0.0000044952194724231845,
+      "deltaMeanAgentEntropy": -0.2432777378345601,
+      "noPeerGeneralizedJsd": 0.7342789727376704,
+      "peerGeneralizedJsd": 0.9999955047802244,
+      "deltaGeneralizedJsd": 0.26571653204255397
+    },
+    {
+      "sourceTaskId": 57,
+      "agentCount": 4,
+      "meanPeerResponseTv": 0.10999999999999999,
+      "meanNoPeerDuplicateTv": 0,
+      "meanPeerDuplicateTv": 0.019999999999999997,
+      "peerResponseExceedsBothDuplicateMeans": true,
+      "noPeerPooledEntropy": 0.47167341781551536,
+      "peerPooledEntropy": 0.17810654129291528,
+      "deltaPooledEntropy": -0.29356687652260005,
+      "noPeerMeanAgentEntropy": 0.4018554597923423,
+      "peerMeanAgentEntropy": 0.15086169425279433,
+      "deltaMeanAgentEntropy": -0.25099376553954794,
+      "noPeerGeneralizedJsd": 0.06981795802317309,
+      "peerGeneralizedJsd": 0.02724484704012095,
+      "deltaGeneralizedJsd": -0.04257311098305214
+    },
+    {
+      "sourceTaskId": 64,
+      "agentCount": 4,
+      "meanPeerResponseTv": 0.15624999999999997,
+      "meanNoPeerDuplicateTv": 0.037500000000000006,
+      "meanPeerDuplicateTv": 0.07500000000000001,
+      "peerResponseExceedsBothDuplicateMeans": true,
+      "noPeerPooledEntropy": 0.8526060842036727,
+      "peerPooledEntropy": 0.7904121487613106,
+      "deltaPooledEntropy": -0.06219393544236207,
+      "noPeerMeanAgentEntropy": 0.6272144024050664,
+      "peerMeanAgentEntropy": 0.6901548595622958,
+      "deltaMeanAgentEntropy": 0.0629404571572294,
+      "noPeerGeneralizedJsd": 0.22539168179860625,
+      "peerGeneralizedJsd": 0.10025728919901478,
+      "deltaGeneralizedJsd": -0.12513439259959147
+    }
+  ],
+  "summary": {
+    "registeredCellCount": 152,
+    "validCellCount": 152,
+    "invalidOrMissingCellCount": 0,
+    "registeredUnitCount": 38,
+    "validUnitCount": 38,
+    "meanPeerResponseTv": 0.1531140065789473,
+    "p90PeerResponseTv": 0.44999999999999996,
+    "meanNoPeerDuplicateTv": 0.04973684210526316,
+    "meanPeerDuplicateTv": 0.07464911842105265,
+    "taskCount": 10,
+    "tasksResponseExceedsBothDuplicateMeans": 7
+  },
+  "claimCeiling": "one_step_peer_bundle_response_only",
+  "contentHash": "sha256:9916a59908c77f4e517210a5263012bfebd4b7301349a15b2d7e8ae07ec0a512"
+}

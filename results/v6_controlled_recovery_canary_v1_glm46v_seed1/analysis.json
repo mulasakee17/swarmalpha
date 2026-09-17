@@ -1,0 +1,31 @@
+{
+  "analysisRef": {
+    "id": "swarmalpha.analysis.v6.controlled-recovery-canary",
+    "version": "1.0.0"
+  },
+  "planHash": "sha256:5e711d77bd8d8df1edef77a9d755eeed0194d36c86a32ffdab02e3f3f54c5dca",
+  "runHash": "sha256:d438c00ddeb47006ee5f4048efb65bafab8026b92b278c982734a3788b457b1b",
+  "inferenceScope": "single_finite_system_escape_probe",
+  "x0ChoiceHistogram": {
+    "opt_1": 3,
+    "opt_2": 1,
+    "opt_3": 0
+  },
+  "responseChoiceHistogram": {
+    "opt_1": 3,
+    "opt_2": 1,
+    "opt_3": 0
+  },
+  "x0Concentration": 0.75,
+  "responseConcentration": 0.75,
+  "x0PottsOrder": 0.625,
+  "responsePottsOrder": 0.625,
+  "x0PairwiseDisagreement": 0.5,
+  "responsePairwiseDisagreement": 0.5,
+  "switchingCount": 0,
+  "switchingRate": 0,
+  "escapeCount": 0,
+  "harmCount": 0,
+  "decision": "NO_ESCAPE_OBSERVED",
+  "contentHash": "sha256:697afdd6b46b2c8d87590357bdc74b707aaffbff32eef2fa9fcf5671454e9270"
+}

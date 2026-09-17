@@ -16,7 +16,7 @@ import {
   detectBehaviorEvents,
   createInitialBehaviorEvents,
   type ProgressiveEstimates,
-} from "@/lib/thermodynamics/ProgressiveEstimator";
+} from "../legacy/src/lib/thermodynamics/ProgressiveEstimator";
 import {
   computeDeltaPolarization,
   computeDelta1DMask,
@@ -29,10 +29,10 @@ import {
   computeDeltaDiagnosis,
   type DeltaDiagnosis,
   type DeltaConfig,
-} from "@/lib/thermodynamics/computeDelta";
+} from "../legacy/src/lib/thermodynamics/computeDelta";
 import type { AgentCognitiveState, BehaviorEvents } from "@/lib/agent/cognitiveState";
-import { MeasurementLayer } from "@/lib/thermodynamics/MeasurementLayer";
-import type { CognitiveMacroState, ThermoState } from "@/lib/thermodynamics/MeasurementLayer";
+import { MeasurementLayer } from "../legacy/src/lib/thermodynamics/MeasurementLayer";
+import type { CognitiveMacroState, ThermoState } from "../legacy/src/lib/thermodynamics/MeasurementLayer";
 
 // ============================================================================
 // Mock AgentCognitiveState 工厂

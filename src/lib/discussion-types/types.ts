@@ -20,7 +20,7 @@ import type {
   DecisionTrace,
   AgentOpinion,
   AgentState,
-} from "../discussion/types";
+} from "../../../legacy/src/lib/discussion/types";
 
 import type {
   EvaluationResult,

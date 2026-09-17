@@ -1,0 +1,73 @@
+{
+  "manifestSchemaRef": {
+    "id": "swarmalpha.experiment.v6-fork-glm46v-twoarm-seed1-manifest-v2",
+    "version": "1.0.0"
+  },
+  "experimentRef": {
+    "id": "swarmalpha.experiment.v6-fork-glm46v-twoarm-seed1-plan-v2",
+    "version": "1.0.0"
+  },
+  "plan": {
+    "planSchemaRef": {
+      "id": "swarmalpha.experiment.v6-fork-glm46v-twoarm-seed1-plan-v2",
+      "version": "1.0.0"
+    },
+    "model": "zhipu:glm-4.6v",
+    "taskIds": [
+      14
+    ],
+    "seeds": [
+      1
+    ],
+    "arms": [
+      "CONTROL",
+      "ATTACKS"
+    ],
+    "totalRuns": 1,
+    "plannedProviderCalls": 20,
+    "perCallTokenEstimate": 1800,
+    "plannedEstimateTokens": 36000,
+    "tokenStopThreshold": 4500000,
+    "totalTokenQuota": 5000000,
+    "estimateWithinStopThreshold": true,
+    "discussionMaxTokens": 768,
+    "finalMaxTokens": 256,
+    "thinking": "disabled",
+    "concurrency": 1,
+    "artifactPath": "experiments/campaign/pilot_output/v6-fork-glm46v-twoarm-seed1-v2-20260821",
+    "analysisSpec": {
+      "path": "docs/experiments/GLM46V_SEED1_REPLICATION_ANALYSIS_FREEZE_V1.md",
+      "contentHash": "sha256:75846e704714000dba71cabe262caf8488770e04a675bebffbead5e207fd3584"
+    },
+    "createdAt": "2026-08-21T00:00:00.000Z",
+    "contentHash": "sha256:7c17548e6bf683830e964db37c4576109a84672bdf68c659a03fd5c5445079fc"
+  },
+  "planHash": "sha256:7c17548e6bf683830e964db37c4576109a84672bdf68c659a03fd5c5445079fc",
+  "executionHash": "sha256:7c893f98a2077cafe4d37174efe6f6d14e3d5974a3700d610387d066fe4f86e6",
+  "ledgerHash": "sha256:33fbafbe6816da7f32ba039f1f978798574b0ec866e80502be54a7fe46e424cb",
+  "taskIds": [
+    14
+  ],
+  "seeds": [
+    1
+  ],
+  "arms": [
+    "CONTROL",
+    "ATTACKS"
+  ],
+  "taskStatus": [
+    {
+      "runId": "run:fork-v1:task-14:seed-1",
+      "taskId": 14,
+      "seed": 1,
+      "status": "failed",
+      "reason": "task_failed_event"
+    }
+  ],
+  "startedAt": "2026-08-21T06:01:34.252Z",
+  "completedAt": "2026-08-21T06:01:34.349Z",
+  "files": [],
+  "totalRuns": 1,
+  "totalRows": 0,
+  "contentHash": "sha256:75731a2c24b54f7fed97dff43db6a40c494d4063915f744abad9b31453ce6672"
+}

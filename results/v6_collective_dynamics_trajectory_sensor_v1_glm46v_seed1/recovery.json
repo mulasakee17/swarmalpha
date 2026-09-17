@@ -1,0 +1,17 @@
+{
+  "recoveryRef": {
+    "id": "swarmalpha.experiment.v6.collective-dynamics-trajectory-sensor-option-id-recovery",
+    "version": "1.0.0"
+  },
+  "planHash": "sha256:7212455275fefee6c988d23bdfe480775b07b8f03a86872eda2bef1f424aa528",
+  "freezeHash": "sha256:1c4508b1c9979726ab64ac91db03c475c41535db3dc666338d70c33a6e58f647",
+  "originalLedgerHash": "sha256:283757a0a1d1ebbd8b41a0fb591e833d77ddd37800a9f626ef620dfc3afe8636",
+  "defect": "trajectory_sensor_parser_used_canonical_labels_instead_of_frozen_option_ids",
+  "reparsedCapturedResponses": 52,
+  "interruptedUnobservedCellId": "trajectory-sensor:collective-dynamics-m2:8:seed-1:8:agent:hiddenbench:8:3:X2:a",
+  "resumedFirstSequence": 54,
+  "recoveryProviderCalls": 99,
+  "validTerminals": 151,
+  "interruptedTerminals": 1,
+  "runHash": "sha256:9b7c26777a11e281da57f466ae85d5380736d3509fca25ffe891c6ff0474b314"
+}
