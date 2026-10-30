@@ -18,6 +18,10 @@ SwarmAlpha 研究 LLM 多智能体的信息曝光与集体决策：信息不对�
 
 固定实验臂顺序、报告缺失及重新呈现对照不足，限制了机制解释。开发集中的任务内证据复用–Brier 关联未能复现，通用路由仍未验证。完整 V3 原始输出未进入公开 Git。
 
+## 研究演化
+
+SwarmAlpha 从“异质智能体的局部视角如何形成集体决策”出发，尝试在讨论之外建立可检查的数学观测层。共同起点的信息曝光实验把宽泛问题收敛为可检验的处理比较：ATTACKS 的平均 Brier 损失低于 SUPPORTS，反例却说明统一披露规则不足以应对不同任务。独立的[失败预测](docs/experiments/V6_PROCESS_STATE_FAILURE_PREDICTION_AUDIT_2026-08-13.md)与[跨通道审计](docs/experiments/COLLECTIVE_DYNAMICS_D1_CROSS_CHANNEL_CONSTRUCT_AUDIT_2026-08-29.md)，也未支持状态摘要能定位失败、或概率报告比既有公开选择提供更多预测信息的较强主张。这些检验帮助厘清过程描述、结果预测与干预选择的区别。后续工作将信念、信息曝光、显式讨论使用、来源记录和资源分别保留在多通道描述器中，并留下代码、测量合同和负面结果。描述器仍需经验效度验证，通用治理目标尚未实现。
+
 ## 证据与链接
 
 - [核心描述器](src/lib/epistemic/collectiveDecisionProcessState.ts) · [V3 分析代码](experiments/campaign/v6/analyze_v6_fork.ts)

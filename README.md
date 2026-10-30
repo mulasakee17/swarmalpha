@@ -18,6 +18,10 @@ The [V3 report](docs/experiments/FORK_CONFIRMATORY_RESULTS_V3_2026-08-16.md) rec
 
 Fixed arm order, missing reports, and insufficient re-presentation controls limit mechanism claims. The development within-task reuse–Brier association did not replicate; general routing remains unvalidated. Complete V3 raw outputs are absent from public Git.
 
+## Research Evolution
+
+SwarmAlpha began with a question: how do heterogeneous agents' local views produce collective decisions? An external observation layer sought to make discussion states mathematically inspectable. To test a narrower question, same-state fork experiments compared information-exposure conditions: ATTACKS had lower average Brier loss than SUPPORTS in the reported comparison, while counterexamples showed why a universal disclosure rule would be inadequate. Separate [failure-prediction](docs/experiments/V6_PROCESS_STATE_FAILURE_PREDICTION_AUDIT_2026-08-13.md) and [cross-channel audits](docs/experiments/COLLECTIVE_DYNAMICS_D1_CROSS_CHANNEL_CONSTRUCT_AUDIT_2026-08-29.md) did not establish the stronger claims that state summaries could locate failures or probability reports added predictive value over prior public choices. These findings helped sharpen the distinction between describing a process, predicting its outcome, and choosing an intervention. In subsequent work, a multi-channel descriptor was implemented to preserve beliefs, information exposure, explicit discussion use, source records, and resources alongside code, measurement contracts, and negative results. Its empirical validity and the broader governance goal remain unresolved.
+
 ## Evidence & links
 
 - [Core descriptor](src/lib/epistemic/collectiveDecisionProcessState.ts) · [V3 analysis](experiments/campaign/v6/analyze_v6_fork.ts)
